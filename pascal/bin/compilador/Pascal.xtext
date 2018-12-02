@@ -1,0 +1,207 @@
+grammar compilador.Pascal with org.eclipse.xtext.common.Terminals
+
+generate pascal "http://www.Pascal.compilador"
+
+pascal: program += program;
+
+program:
+	head=programHeading ("interface")? block=block ".";
+
+programHeading:
+	"program" identifer=identifier ("(" identifierList=identifierList ")")? ";";
+
+identifierList:	identifier+=identifier ("," identifier+=identifier)*;
+
+identifier: IDENT;
+
+//
+// )*	compoundStatement;
+block: {block} (label+=label_declaration_part | constantDefinitionPart+=constantDefinitionPart |typeDefinitionPart+=typeDefinitionPart	| variableDeclarationPart+=variableDeclarationPart |
+		procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart | usesUnitsPart+=usesUnitsPart | "implemetation"	)* compoundStatement=compoundStatement; 
+
+label_declaration_part: "label" label ("," label+=label)* ";";
+
+label: unsignedInteger=unsignedInteger | identifier=identifier;
+
+unsignedInteger: number=NUM;
+
+constantDefinitionPart:	"const" (constantDefinition+=constantDefinition ";")+;
+//
+constantDefinition:	identifier=identifier "=" constant=constant;
+//
+////STRING_LITERAL
+constant:	number=unsignedNumber	| sign=sign number1= unsignedNumber	| identifier=identifier | STRING_LITERAL= STRING_LITERAL | sign2+=sign identifier1+=identifier | constantChr= constantChr;
+
+constantChr: "chr" "(" unsignedInteger=unsignedInteger ")";
+
+unsignedNumber:	unsignedInteger=unsignedInteger	| unsignedReal=unsignedReal;
+
+unsignedReal:NUM_REAL;
+
+sign:	"+" | "-";
+
+usesUnitsPart:"uses" identifierList = identifierList ";";
+
+typeDefinitionPart:
+	"type" (typeDefinition +=typeDefinition ";")+;
+
+typeDefinition:
+	indentifier += identifier "=" (type = type | functionType = functionType | procedureType = procedureType);
+
+functionType:
+	"function" (formalParameterList = formalParameterList)? ":" resultType = resultType;
+
+resultType:
+	typeIdentifier;
+
+formalParameterList:
+	"(" formalParameterSection = formalParameterSection (";" formalParameterSection2 += formalParameterSection)* ")";
+
+formalParameterSection: parameterGroup=parameterGroup | "var" parameterGroup2 += parameterGroup | "function" parameterGroup3 += parameterGroup
+	| "procedure" parameterGroup4 +=parameterGroup;
+
+parameterGroup:
+	identifierList = identifierList ":" typeIdentifier= typeIdentifier;
+
+typeIdentifier:	identifier = identifier	| ({typeIdentifier} "char" | {typeIdentifier} "boolean" | {typeIdentifier} "integer" | {typeIdentifier} "real" | {typeIdentifier} "string");
+
+procedureType:
+	{procedureType} "procedure" (formalParameterList=formalParameterList)?;
+
+type:
+	simpleType = simpleType	| structuredType = structuredType| pointerType = pointerType;
+
+pointerType:
+	"^" typeIdentifier = typeIdentifier;
+
+simpleType:
+	scalarType = scalarType | subrangeType = subrangeType|typeIdentifier= typeIdentifier | stringtype = stringtype;
+
+scalarType:
+	"(" identifierList = identifierList ")";
+
+subrangeType:
+	constant = constant".."constant2 = constant;
+
+structuredType:
+	"packed" unpackedStructuredType = unpackedStructuredType
+	| unpackedStructuredType1 += unpackedStructuredType;
+
+unpackedStructuredType:
+	recordType = recordType;
+
+stringtype:
+	"string" "[" (identifier = identifier | unsignedNumber = unsignedNumber) "]";
+
+recordType:
+	{recordType} "record" fieldList =  fieldList? "end";
+
+fieldList:	fixedPart = fixedPart (";" variantPart = variantPart)?
+	| variantPart1 += variantPart;
+
+fixedPart:
+	recordSection = recordSection (";" recordSection1 += recordSection)*;
+
+recordSection:
+	identifierList=identifierList ":" type=type;
+
+variantPart:
+	"case" tag=tag "of" variant=variant (";" variant1 += variant)*;
+
+tag:
+	identifier = identifier ":" typeIdentifier=typeIdentifier
+	|typeIdentifier1 += typeIdentifier;
+
+variant:
+	constant (":" constant+=constant)*  ":" "(" fieldList =fieldList")";
+constList:
+	constant=constant (":" constant1+=constant)*;
+
+variableDeclarationPart:
+	"var" variableDeclaration=variableDeclaration (";" variableDeclaration1 += variableDeclaration)* ";";
+
+variableDeclaration:
+	identifierList = identifierList ":" type = type;
+
+procedureAndFunctionDeclarationPart:
+	procedureOrFunctionDeclaration = procedureOrFunctionDeclaration ";";
+
+procedureOrFunctionDeclaration:
+	procedureDeclaration = procedureDeclaration | functionDeclaration = functionDeclaration;
+
+procedureDeclaration:
+	"procedure" identifier = identifier (formalParameterList = formalParameterList)? ";" block = block;
+
+functionDeclaration:
+	"function" identifier = identifier (formalParameterList = formalParameterList)? ":" resultType = resultType ";" block = block;
+
+statement: label ":" unlabelledStatement=unlabelledStatement | unlabelledStatement=unlabelledStatement;
+
+//
+unlabelledStatement: simpleStatement = simpleStatement  | structuredStatement = structuredStatement | identifier=identifier ("(" parameterList = parameterList ")")?;
+
+////assignmentStatement | procedureStatement  -->  
+
+simpleStatement : {simpleStatement} ( gotoStatement = gotoStatement | assignmentStatement=assignmentStatement ) ?;
+
+assignmentStatement: variable = variable ":=" expression = expression   ;
+
+variable: ("@" identifier=identifier | identifier=identifier) ("[" expression+=expression ("," expression1 += expression)* "]" | "(." expression2 += expression ("," expression3+=expression)* ".)" | "." identifier2 += identifier | "^")*
+   ;
+//
+expression: simpleExpression = simpleExpression (relationaloperator = relationaloperator expression = expression)?;
+
+relationaloperator : "="   | "<>"   | "<"   | "<="   | ">="   | ">"   | "in"   ;
+
+simpleExpression : term = term ( additiveoperator = additiveoperator simpleExpression = simpleExpression)?   ;
+
+additiveoperator   : "+"   | "-"   | "or"   ;
+
+term: signedFactor = signedFactor (multiplicativeoperator = multiplicativeoperator term = term)?   ;
+
+multiplicativeoperator : "*"   | "/"   | "div"   | "mod"   | "and"   ;
+
+signedFactor: ("+" | "-")? factor = factor;
+
+factor: "(" expression = expression ")"  | unsignedConstant = unsignedConstant | "not" factor = factor  | bool = BOOL   | functionDesignator =  functionDesignator | variable = variable  ;
+
+unsignedConstant: unsignedNumber = unsignedNumber | string_literal = STRING_LITERAL  | constantChr = constantChr | {unsignedConstant} "nil";
+
+functionDesignator: identifier = identifier "(" parameterList = parameterList ")";
+
+parameterList: actualParameter ("," actualParameter+= actualParameter)*   ;
+
+actualParameter: expression = expression   ;
+
+gotoStatement: "goto" label = label ;
+
+structuredStatement: compoundStatement = compoundStatement | conditionalStatement = conditionalStatement;
+
+compoundStatement: "begin" statements "end" ;
+
+statements: statement+=statement  (";" statement += statement)* ;
+
+conditionalStatement: caseStatement = caseStatement;
+
+caseStatement: "case" expression = expression "of" caseListElement = caseListElement (";" caseListElement1 += caseListElement)* (";" "else" statements = statements)? "end";
+
+caseListElement: constList=constList ":" statement = statement;
+
+terminal BOOL: "true" | "false";
+
+terminal IDENT:
+	('a'..'z' | 'A'..'Z') ('a'..'z' | 'A'..'Z' | NUM | '_')*;
+
+terminal STRING_LITERAL:
+         '"' ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
+         "'" ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'"
+      ;
+
+terminal fragment EXPONENT:
+	('e') ('+' | '-')? NUM+;
+	
+terminal NUM:
+	'0'..'9'+;
+	
+terminal NUM_REAL:
+	NUM+ ('.' NUM+ (EXPONENT)?);
