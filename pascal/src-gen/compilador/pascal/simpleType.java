@@ -12,13 +12,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.simpleType#getScalarType <em>Scalar Type</em>}</li>
  *   <li>{@link compilador.pascal.simpleType#getSubrangeType <em>Subrange Type</em>}</li>
  *   <li>{@link compilador.pascal.simpleType#getTypeIdentifier <em>Type Identifier</em>}</li>
  *   <li>{@link compilador.pascal.simpleType#getStringtype <em>Stringtype</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getsimpleType()
  * @model

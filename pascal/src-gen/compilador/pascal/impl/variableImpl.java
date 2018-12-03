@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.variableImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.variableImpl#getExpression <em>Expression</em>}</li>
@@ -38,7 +39,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link compilador.pascal.impl.variableImpl#getExpression3 <em>Expression3</em>}</li>
  *   <li>{@link compilador.pascal.impl.variableImpl#getIdentifier2 <em>Identifier2</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

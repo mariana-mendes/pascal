@@ -14,10 +14,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.typeDefinitionPart#getTypeDefinition <em>Type Definition</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#gettypeDefinitionPart()
  * @model

@@ -111,6 +111,7 @@ public class PascalParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getVariableDeclarationPartAccess().getGroup(), "rule__VariableDeclarationPart__Group__0");
 			builder.put(grammarAccess.getVariableDeclarationPartAccess().getGroup_2(), "rule__VariableDeclarationPart__Group_2__0");
 			builder.put(grammarAccess.getVariableDeclarationAccess().getGroup(), "rule__VariableDeclaration__Group__0");
+			builder.put(grammarAccess.getVariableDeclarationAccess().getGroup_3(), "rule__VariableDeclaration__Group_3__0");
 			builder.put(grammarAccess.getProcedureAndFunctionDeclarationPartAccess().getGroup(), "rule__ProcedureAndFunctionDeclarationPart__Group__0");
 			builder.put(grammarAccess.getProcedureDeclarationAccess().getGroup(), "rule__ProcedureDeclaration__Group__0");
 			builder.put(grammarAccess.getFunctionDeclarationAccess().getGroup(), "rule__FunctionDeclaration__Group__0");
@@ -153,7 +154,7 @@ public class PascalParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getProgramHeadingAccess().getIdentiferAssignment_1(), "rule__ProgramHeading__IdentiferAssignment_1");
 			builder.put(grammarAccess.getProgramHeadingAccess().getIdentifierListAssignment_2_1(), "rule__ProgramHeading__IdentifierListAssignment_2_1");
 			builder.put(grammarAccess.getIdentifierListAccess().getIdentifierAssignment_0(), "rule__IdentifierList__IdentifierAssignment_0");
-			builder.put(grammarAccess.getIdentifierListAccess().getIdentifierAssignment_1_1(), "rule__IdentifierList__IdentifierAssignment_1_1");
+			builder.put(grammarAccess.getIdentifierListAccess().getIdentifierListAssignment_1_1(), "rule__IdentifierList__IdentifierListAssignment_1_1");
 			builder.put(grammarAccess.getBlockAccess().getLabelAssignment_1_0(), "rule__Block__LabelAssignment_1_0");
 			builder.put(grammarAccess.getBlockAccess().getConstantDefinitionPartAssignment_1_1(), "rule__Block__ConstantDefinitionPartAssignment_1_1");
 			builder.put(grammarAccess.getBlockAccess().getTypeDefinitionPartAssignment_1_2(), "rule__Block__TypeDefinitionPartAssignment_1_2");
@@ -235,6 +236,7 @@ public class PascalParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getVariableDeclarationPartAccess().getVariableDeclaration1Assignment_2_1(), "rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1");
 			builder.put(grammarAccess.getVariableDeclarationAccess().getIdentifierListAssignment_0(), "rule__VariableDeclaration__IdentifierListAssignment_0");
 			builder.put(grammarAccess.getVariableDeclarationAccess().getTypeAssignment_2(), "rule__VariableDeclaration__TypeAssignment_2");
+			builder.put(grammarAccess.getVariableDeclarationAccess().getExpressionAssignment_3_1(), "rule__VariableDeclaration__ExpressionAssignment_3_1");
 			builder.put(grammarAccess.getProcedureAndFunctionDeclarationPartAccess().getProcedureOrFunctionDeclarationAssignment_0(), "rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0");
 			builder.put(grammarAccess.getProcedureOrFunctionDeclarationAccess().getProcedureDeclarationAssignment_0(), "rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0");
 			builder.put(grammarAccess.getProcedureOrFunctionDeclarationAccess().getFunctionDeclarationAssignment_1(), "rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1");

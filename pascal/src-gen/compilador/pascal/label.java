@@ -12,12 +12,12 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.label#getLabel <em>Label</em>}</li>
  *   <li>{@link compilador.pascal.label#getUnsignedInteger <em>Unsigned Integer</em>}</li>
  *   <li>{@link compilador.pascal.label#getIdentifier <em>Identifier</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getlabel()
  * @model

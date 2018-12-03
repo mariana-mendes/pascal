@@ -14,11 +14,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.constList#getConstant <em>Constant</em>}</li>
  *   <li>{@link compilador.pascal.constList#getConstant1 <em>Constant1</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getconstList()
  * @model

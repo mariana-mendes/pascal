@@ -12,11 +12,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.actualParameter#getActualParameter <em>Actual Parameter</em>}</li>
  *   <li>{@link compilador.pascal.actualParameter#getExpression <em>Expression</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getactualParameter()
  * @model

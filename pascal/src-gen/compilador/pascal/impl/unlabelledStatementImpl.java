@@ -24,13 +24,13 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.unlabelledStatementImpl#getSimpleStatement <em>Simple Statement</em>}</li>
  *   <li>{@link compilador.pascal.impl.unlabelledStatementImpl#getStructuredStatement <em>Structured Statement</em>}</li>
  *   <li>{@link compilador.pascal.impl.unlabelledStatementImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.unlabelledStatementImpl#getParameterList <em>Parameter List</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

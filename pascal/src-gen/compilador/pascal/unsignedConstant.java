@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.unsignedConstant#getUnsignedNumber <em>Unsigned Number</em>}</li>
  *   <li>{@link compilador.pascal.unsignedConstant#getString_literal <em>String literal</em>}</li>
  *   <li>{@link compilador.pascal.unsignedConstant#getConstantChr <em>Constant Chr</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getunsignedConstant()
  * @model

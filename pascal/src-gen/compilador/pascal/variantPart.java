@@ -14,12 +14,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.variantPart#getTag <em>Tag</em>}</li>
  *   <li>{@link compilador.pascal.variantPart#getVariant <em>Variant</em>}</li>
  *   <li>{@link compilador.pascal.variantPart#getVariant1 <em>Variant1</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getvariantPart()
  * @model

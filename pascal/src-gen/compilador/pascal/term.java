@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.term#getSignedFactor <em>Signed Factor</em>}</li>
  *   <li>{@link compilador.pascal.term#getMultiplicativeoperator <em>Multiplicativeoperator</em>}</li>
  *   <li>{@link compilador.pascal.term#getTerm <em>Term</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getterm()
  * @model

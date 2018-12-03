@@ -25,13 +25,13 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.simpleTypeImpl#getScalarType <em>Scalar Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.simpleTypeImpl#getSubrangeType <em>Subrange Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.simpleTypeImpl#getTypeIdentifier <em>Type Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.simpleTypeImpl#getStringtype <em>Stringtype</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -35,6 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.blockImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link compilador.pascal.impl.blockImpl#getConstantDefinitionPart <em>Constant Definition Part</em>}</li>
@@ -44,7 +45,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link compilador.pascal.impl.blockImpl#getUsesUnitsPart <em>Uses Units Part</em>}</li>
  *   <li>{@link compilador.pascal.impl.blockImpl#getCompoundStatement <em>Compound Statement</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

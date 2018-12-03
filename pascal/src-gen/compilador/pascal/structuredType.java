@@ -14,11 +14,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.structuredType#getUnpackedStructuredType <em>Unpacked Structured Type</em>}</li>
  *   <li>{@link compilador.pascal.structuredType#getUnpackedStructuredType1 <em>Unpacked Structured Type1</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getstructuredType()
  * @model

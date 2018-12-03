@@ -22,10 +22,10 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.conditionalStatementImpl#getCaseStatement <em>Case Statement</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -14,12 +14,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.fieldList#getFixedPart <em>Fixed Part</em>}</li>
  *   <li>{@link compilador.pascal.fieldList#getVariantPart <em>Variant Part</em>}</li>
  *   <li>{@link compilador.pascal.fieldList#getVariantPart1 <em>Variant Part1</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getfieldList()
  * @model

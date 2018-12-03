@@ -17,7 +17,8 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="identifierList">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" unique="false"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifierList" unique="false"
         upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="block">
@@ -238,6 +239,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="identifierList" eType="#//identifierList"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//type" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expression" eType="#//expression"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="procedureAndFunctionDeclarationPart">
     <eStructuralFeatures xsi:type="ecore:EReference" name="procedureOrFunctionDeclaration"

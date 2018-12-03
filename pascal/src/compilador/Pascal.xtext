@@ -10,7 +10,7 @@ program:
 programHeading:
 	"program" identifer=identifier ("(" identifierList=identifierList ")")? ";";
 
-identifierList:	identifier+=identifier ("," identifier+=identifier)*;
+identifierList:	identifier=identifier ("," identifierList+=identifier)*;
 
 identifier: IDENT;
 
@@ -121,7 +121,7 @@ variableDeclarationPart:
 	"var" variableDeclaration=variableDeclaration (";" variableDeclaration1 += variableDeclaration)* ";";
 
 variableDeclaration:
-	identifierList = identifierList ":" type = type;
+	identifierList = identifierList ":" type = type ("=" expression=expression)?;
 
 procedureAndFunctionDeclarationPart:
 	procedureOrFunctionDeclaration = procedureOrFunctionDeclaration ";";

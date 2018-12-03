@@ -23,11 +23,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.functionTypeImpl#getFormalParameterList <em>Formal Parameter List</em>}</li>
  *   <li>{@link compilador.pascal.impl.functionTypeImpl#getResultType <em>Result Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

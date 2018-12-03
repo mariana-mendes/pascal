@@ -264,7 +264,7 @@ ruleidentifierList returns [EObject current=null]
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getIdentifierListRule());
 					}
-					add(
+					set(
 						$current,
 						"identifier",
 						lv_identifier_0_0,
@@ -281,17 +281,17 @@ ruleidentifierList returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getIdentifierListAccess().getIdentifierIdentifierParserRuleCall_1_1_0());
+						newCompositeNode(grammarAccess.getIdentifierListAccess().getIdentifierListIdentifierParserRuleCall_1_1_0());
 					}
-					lv_identifier_2_0=ruleidentifier
+					lv_identifierList_2_0=ruleidentifier
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getIdentifierListRule());
 						}
 						add(
 							$current,
-							"identifier",
-							lv_identifier_2_0,
+							"identifierList",
+							lv_identifierList_2_0,
 							"compilador.Pascal.identifier");
 						afterParserOrEnumRuleCall();
 					}
@@ -3000,6 +3000,31 @@ rulevariableDeclaration returns [EObject current=null]
 				}
 			)
 		)
+		(
+			otherlv_3='='
+			{
+				newLeafNode(otherlv_3, grammarAccess.getVariableDeclarationAccess().getEqualsSignKeyword_3_0());
+			}
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getVariableDeclarationAccess().getExpressionExpressionParserRuleCall_3_1_0());
+					}
+					lv_expression_4_0=ruleexpression
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getVariableDeclarationRule());
+						}
+						set(
+							$current,
+							"expression",
+							lv_expression_4_0,
+							"compilador.Pascal.expression");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+		)?
 	)
 ;
 

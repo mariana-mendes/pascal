@@ -30,12 +30,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.fieldListImpl#getFixedPart <em>Fixed Part</em>}</li>
  *   <li>{@link compilador.pascal.impl.fieldListImpl#getVariantPart <em>Variant Part</em>}</li>
  *   <li>{@link compilador.pascal.impl.fieldListImpl#getVariantPart1 <em>Variant Part1</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

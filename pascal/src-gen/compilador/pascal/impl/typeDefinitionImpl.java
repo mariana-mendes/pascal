@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getIndentifier <em>Indentifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getType <em>Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getFunctionType <em>Function Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getProcedureType <em>Procedure Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.programHeading#getIdentifer <em>Identifer</em>}</li>
  *   <li>{@link compilador.pascal.programHeading#getIdentifierList <em>Identifier List</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getprogramHeading()
  * @model

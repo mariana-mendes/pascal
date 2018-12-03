@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.structuredStatement#getCompoundStatement <em>Compound Statement</em>}</li>
  *   <li>{@link compilador.pascal.structuredStatement#getConditionalStatement <em>Conditional Statement</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getstructuredStatement()
  * @model

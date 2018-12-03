@@ -27,10 +27,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.typeDefinitionPartImpl#getTypeDefinition <em>Type Definition</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

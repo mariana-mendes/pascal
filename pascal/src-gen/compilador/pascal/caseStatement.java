@@ -14,13 +14,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.caseStatement#getExpression <em>Expression</em>}</li>
  *   <li>{@link compilador.pascal.caseStatement#getCaseListElement <em>Case List Element</em>}</li>
  *   <li>{@link compilador.pascal.caseStatement#getCaseListElement1 <em>Case List Element1</em>}</li>
  *   <li>{@link compilador.pascal.caseStatement#getStatements <em>Statements</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getcaseStatement()
  * @model

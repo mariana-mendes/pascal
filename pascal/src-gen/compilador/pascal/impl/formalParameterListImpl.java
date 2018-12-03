@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.formalParameterListImpl#getFormalParameterSection <em>Formal Parameter Section</em>}</li>
  *   <li>{@link compilador.pascal.impl.formalParameterListImpl#getFormalParameterSection2 <em>Formal Parameter Section2</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

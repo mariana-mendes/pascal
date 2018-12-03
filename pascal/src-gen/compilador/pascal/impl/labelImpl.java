@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.labelImpl#getUnlabelledStatement <em>Unlabelled Statement</em>}</li>
  *   <li>{@link compilador.pascal.impl.labelImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link compilador.pascal.impl.labelImpl#getUnsignedInteger <em>Unsigned Integer</em>}</li>
  *   <li>{@link compilador.pascal.impl.labelImpl#getIdentifier <em>Identifier</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

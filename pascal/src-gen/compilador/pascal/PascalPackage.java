@@ -170,7 +170,7 @@ public interface PascalPackage extends EPackage
   int IDENTIFIER_LIST = 3;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute list.
+   * The feature id for the '<em><b>Identifier</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -179,13 +179,22 @@ public interface PascalPackage extends EPackage
   int IDENTIFIER_LIST__IDENTIFIER = 0;
 
   /**
+   * The feature id for the '<em><b>Identifier List</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int IDENTIFIER_LIST__IDENTIFIER_LIST = 1;
+
+  /**
    * The number of structural features of the '<em>identifier List</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int IDENTIFIER_LIST_FEATURE_COUNT = 1;
+  int IDENTIFIER_LIST_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link compilador.pascal.impl.blockImpl <em>block</em>}' class.
@@ -1620,13 +1629,22 @@ public interface PascalPackage extends EPackage
   int VARIABLE_DECLARATION__TYPE = 1;
 
   /**
+   * The feature id for the '<em><b>Expression</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int VARIABLE_DECLARATION__EXPRESSION = 2;
+
+  /**
    * The number of structural features of the '<em>variable Declaration</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int VARIABLE_DECLARATION_FEATURE_COUNT = 2;
+  int VARIABLE_DECLARATION_FEATURE_COUNT = 3;
 
   /**
    * The meta object id for the '{@link compilador.pascal.impl.procedureAndFunctionDeclarationPartImpl <em>procedure And Function Declaration Part</em>}' class.
@@ -2731,15 +2749,26 @@ public interface PascalPackage extends EPackage
   EClass getidentifierList();
 
   /**
-   * Returns the meta object for the attribute list '{@link compilador.pascal.identifierList#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the attribute '{@link compilador.pascal.identifierList#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Identifier</em>'.
+   * @return the meta object for the attribute '<em>Identifier</em>'.
    * @see compilador.pascal.identifierList#getIdentifier()
    * @see #getidentifierList()
    * @generated
    */
   EAttribute getidentifierList_Identifier();
+
+  /**
+   * Returns the meta object for the attribute list '{@link compilador.pascal.identifierList#getIdentifierList <em>Identifier List</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Identifier List</em>'.
+   * @see compilador.pascal.identifierList#getIdentifierList()
+   * @see #getidentifierList()
+   * @generated
+   */
+  EAttribute getidentifierList_IdentifierList();
 
   /**
    * Returns the meta object for class '{@link compilador.pascal.block <em>block</em>}'.
@@ -4003,6 +4032,17 @@ public interface PascalPackage extends EPackage
   EReference getvariableDeclaration_Type();
 
   /**
+   * Returns the meta object for the containment reference '{@link compilador.pascal.variableDeclaration#getExpression <em>Expression</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Expression</em>'.
+   * @see compilador.pascal.variableDeclaration#getExpression()
+   * @see #getvariableDeclaration()
+   * @generated
+   */
+  EReference getvariableDeclaration_Expression();
+
+  /**
    * Returns the meta object for class '{@link compilador.pascal.procedureAndFunctionDeclarationPart <em>procedure And Function Declaration Part</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -5005,12 +5045,20 @@ public interface PascalPackage extends EPackage
     EClass IDENTIFIER_LIST = eINSTANCE.getidentifierList();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
     EAttribute IDENTIFIER_LIST__IDENTIFIER = eINSTANCE.getidentifierList_Identifier();
+
+    /**
+     * The meta object literal for the '<em><b>Identifier List</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute IDENTIFIER_LIST__IDENTIFIER_LIST = eINSTANCE.getidentifierList_IdentifierList();
 
     /**
      * The meta object literal for the '{@link compilador.pascal.impl.blockImpl <em>block</em>}' class.
@@ -6029,6 +6077,14 @@ public interface PascalPackage extends EPackage
      * @generated
      */
     EReference VARIABLE_DECLARATION__TYPE = eINSTANCE.getvariableDeclaration_Type();
+
+    /**
+     * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference VARIABLE_DECLARATION__EXPRESSION = eINSTANCE.getvariableDeclaration_Expression();
 
     /**
      * The meta object literal for the '{@link compilador.pascal.impl.procedureAndFunctionDeclarationPartImpl <em>procedure And Function Declaration Part</em>}' class.

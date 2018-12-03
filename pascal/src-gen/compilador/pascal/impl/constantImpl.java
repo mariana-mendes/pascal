@@ -31,6 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.constantImpl#getNumber <em>Number</em>}</li>
  *   <li>{@link compilador.pascal.impl.constantImpl#getSign <em>Sign</em>}</li>
@@ -43,7 +44,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link compilador.pascal.impl.constantImpl#getConstant <em>Constant</em>}</li>
  *   <li>{@link compilador.pascal.impl.constantImpl#getFieldList <em>Field List</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

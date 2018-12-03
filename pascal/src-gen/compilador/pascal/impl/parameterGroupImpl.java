@@ -23,11 +23,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.parameterGroupImpl#getIdentifierList <em>Identifier List</em>}</li>
  *   <li>{@link compilador.pascal.impl.parameterGroupImpl#getTypeIdentifier <em>Type Identifier</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.variable#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.variable#getExpression <em>Expression</em>}</li>
@@ -22,7 +23,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link compilador.pascal.variable#getExpression3 <em>Expression3</em>}</li>
  *   <li>{@link compilador.pascal.variable#getIdentifier2 <em>Identifier2</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getvariable()
  * @model

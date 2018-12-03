@@ -23,12 +23,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.unsignedConstantImpl#getUnsignedNumber <em>Unsigned Number</em>}</li>
  *   <li>{@link compilador.pascal.impl.unsignedConstantImpl#getString_literal <em>String literal</em>}</li>
  *   <li>{@link compilador.pascal.impl.unsignedConstantImpl#getConstantChr <em>Constant Chr</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

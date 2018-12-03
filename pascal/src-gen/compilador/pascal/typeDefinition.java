@@ -14,13 +14,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.typeDefinition#getIndentifier <em>Indentifier</em>}</li>
  *   <li>{@link compilador.pascal.typeDefinition#getType <em>Type</em>}</li>
  *   <li>{@link compilador.pascal.typeDefinition#getFunctionType <em>Function Type</em>}</li>
  *   <li>{@link compilador.pascal.typeDefinition#getProcedureType <em>Procedure Type</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#gettypeDefinition()
  * @model

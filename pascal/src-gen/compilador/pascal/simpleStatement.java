@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.simpleStatement#getGotoStatement <em>Goto Statement</em>}</li>
  *   <li>{@link compilador.pascal.simpleStatement#getAssignmentStatement <em>Assignment Statement</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getsimpleStatement()
  * @model

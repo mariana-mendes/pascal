@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.stringtype#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.stringtype#getUnsignedNumber <em>Unsigned Number</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getstringtype()
  * @model

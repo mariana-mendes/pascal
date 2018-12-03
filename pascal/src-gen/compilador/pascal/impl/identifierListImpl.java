@@ -8,10 +8,13 @@ import compilador.pascal.identifierList;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeEList;
@@ -22,24 +25,45 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.identifierListImpl#getIdentifier <em>Identifier</em>}</li>
+ *   <li>{@link compilador.pascal.impl.identifierListImpl#getIdentifierList <em>Identifier List</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class identifierListImpl extends MinimalEObjectImpl.Container implements identifierList
 {
   /**
-   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute list.
+   * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected EList<String> identifier;
+  protected static final String IDENTIFIER_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getIdentifier()
+   * @generated
+   * @ordered
+   */
+  protected String identifier = IDENTIFIER_EDEFAULT;
+
+  /**
+   * The cached value of the '{@link #getIdentifierList() <em>Identifier List</em>}' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getIdentifierList()
+   * @generated
+   * @ordered
+   */
+  protected EList<String> identifierList;
 
   /**
    * <!-- begin-user-doc -->
@@ -67,13 +91,36 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<String> getIdentifier()
+  public String getIdentifier()
   {
-    if (identifier == null)
-    {
-      identifier = new EDataTypeEList<String>(String.class, this, PascalPackage.IDENTIFIER_LIST__IDENTIFIER);
-    }
     return identifier;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifier(String newIdentifier)
+  {
+    String oldIdentifier = identifier;
+    identifier = newIdentifier;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.IDENTIFIER_LIST__IDENTIFIER, oldIdentifier, identifier));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EList<String> getIdentifierList()
+  {
+    if (identifierList == null)
+    {
+      identifierList = new EDataTypeEList<String>(String.class, this, PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST);
+    }
+    return identifierList;
   }
 
   /**
@@ -88,6 +135,8 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
     {
       case PascalPackage.IDENTIFIER_LIST__IDENTIFIER:
         return getIdentifier();
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST:
+        return getIdentifierList();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -104,8 +153,11 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PascalPackage.IDENTIFIER_LIST__IDENTIFIER:
-        getIdentifier().clear();
-        getIdentifier().addAll((Collection<? extends String>)newValue);
+        setIdentifier((String)newValue);
+        return;
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST:
+        getIdentifierList().clear();
+        getIdentifierList().addAll((Collection<? extends String>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -122,7 +174,10 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PascalPackage.IDENTIFIER_LIST__IDENTIFIER:
-        getIdentifier().clear();
+        setIdentifier(IDENTIFIER_EDEFAULT);
+        return;
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST:
+        getIdentifierList().clear();
         return;
     }
     super.eUnset(featureID);
@@ -139,7 +194,9 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PascalPackage.IDENTIFIER_LIST__IDENTIFIER:
-        return identifier != null && !identifier.isEmpty();
+        return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST:
+        return identifierList != null && !identifierList.isEmpty();
     }
     return super.eIsSet(featureID);
   }
@@ -157,6 +214,8 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
     StringBuffer result = new StringBuffer(super.toString());
     result.append(" (identifier: ");
     result.append(identifier);
+    result.append(", identifierList: ");
+    result.append(identifierList);
     result.append(')');
     return result.toString();
   }

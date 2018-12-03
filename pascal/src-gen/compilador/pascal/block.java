@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.block#getLabel <em>Label</em>}</li>
  *   <li>{@link compilador.pascal.block#getConstantDefinitionPart <em>Constant Definition Part</em>}</li>
@@ -23,7 +24,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link compilador.pascal.block#getUsesUnitsPart <em>Uses Units Part</em>}</li>
  *   <li>{@link compilador.pascal.block#getCompoundStatement <em>Compound Statement</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getblock()
  * @model

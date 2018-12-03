@@ -12,13 +12,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.functionDeclaration#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.functionDeclaration#getFormalParameterList <em>Formal Parameter List</em>}</li>
  *   <li>{@link compilador.pascal.functionDeclaration#getResultType <em>Result Type</em>}</li>
  *   <li>{@link compilador.pascal.functionDeclaration#getBlock <em>Block</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getfunctionDeclaration()
  * @model

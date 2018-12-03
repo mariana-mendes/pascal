@@ -11,10 +11,10 @@ package compilador.pascal;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.typeIdentifier#getIdentifier <em>Identifier</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#gettypeIdentifier()
  * @model

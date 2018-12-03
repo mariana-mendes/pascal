@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.factor#getExpression <em>Expression</em>}</li>
  *   <li>{@link compilador.pascal.factor#getUnsignedConstant <em>Unsigned Constant</em>}</li>
@@ -20,7 +21,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link compilador.pascal.factor#getFunctionDesignator <em>Function Designator</em>}</li>
  *   <li>{@link compilador.pascal.factor#getVariable <em>Variable</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getfactor()
  * @model

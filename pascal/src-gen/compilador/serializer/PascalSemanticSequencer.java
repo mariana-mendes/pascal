@@ -681,7 +681,7 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     identifierList returns identifierList
 	 *
 	 * Constraint:
-	 *     (identifier+=identifier identifier+=identifier*)
+	 *     (identifier=identifier identifierList+=identifier*)
 	 */
 	protected void sequence_identifierList(ISerializationContext context, identifierList semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -1235,19 +1235,10 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     variableDeclaration returns variableDeclaration
 	 *
 	 * Constraint:
-	 *     (identifierList=identifierList type=type)
+	 *     (identifierList=identifierList type=type expression=expression?)
 	 */
 	protected void sequence_variableDeclaration(ISerializationContext context, variableDeclaration semanticObject) {
-		if (errorAcceptor != null) {
-			if (transientValues.isValueTransient(semanticObject, PascalPackage.Literals.VARIABLE_DECLARATION__IDENTIFIER_LIST) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PascalPackage.Literals.VARIABLE_DECLARATION__IDENTIFIER_LIST));
-			if (transientValues.isValueTransient(semanticObject, PascalPackage.Literals.VARIABLE_DECLARATION__TYPE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PascalPackage.Literals.VARIABLE_DECLARATION__TYPE));
-		}
-		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getVariableDeclarationAccess().getIdentifierListIdentifierListParserRuleCall_0_0(), semanticObject.getIdentifierList());
-		feeder.accept(grammarAccess.getVariableDeclarationAccess().getTypeTypeParserRuleCall_2_0(), semanticObject.getType());
-		feeder.finish();
+		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	

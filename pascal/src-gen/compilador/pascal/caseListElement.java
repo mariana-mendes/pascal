@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.caseListElement#getConstList <em>Const List</em>}</li>
  *   <li>{@link compilador.pascal.caseListElement#getStatement <em>Statement</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getcaseListElement()
  * @model

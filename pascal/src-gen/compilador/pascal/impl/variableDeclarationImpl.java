@@ -4,6 +4,7 @@
 package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
+import compilador.pascal.expression;
 import compilador.pascal.identifierList;
 import compilador.pascal.type;
 import compilador.pascal.variableDeclaration;
@@ -23,11 +24,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.variableDeclarationImpl#getIdentifierList <em>Identifier List</em>}</li>
  *   <li>{@link compilador.pascal.impl.variableDeclarationImpl#getType <em>Type</em>}</li>
+ *   <li>{@link compilador.pascal.impl.variableDeclarationImpl#getExpression <em>Expression</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -52,6 +54,16 @@ public class variableDeclarationImpl extends MinimalEObjectImpl.Container implem
    * @ordered
    */
   protected type type;
+
+  /**
+   * The cached value of the '{@link #getExpression() <em>Expression</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getExpression()
+   * @generated
+   * @ordered
+   */
+  protected expression expression;
 
   /**
    * <!-- begin-user-doc -->
@@ -175,6 +187,54 @@ public class variableDeclarationImpl extends MinimalEObjectImpl.Container implem
    * <!-- end-user-doc -->
    * @generated
    */
+  public expression getExpression()
+  {
+    return expression;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetExpression(expression newExpression, NotificationChain msgs)
+  {
+    expression oldExpression = expression;
+    expression = newExpression;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.VARIABLE_DECLARATION__EXPRESSION, oldExpression, newExpression);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setExpression(expression newExpression)
+  {
+    if (newExpression != expression)
+    {
+      NotificationChain msgs = null;
+      if (expression != null)
+        msgs = ((InternalEObject)expression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.VARIABLE_DECLARATION__EXPRESSION, null, msgs);
+      if (newExpression != null)
+        msgs = ((InternalEObject)newExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.VARIABLE_DECLARATION__EXPRESSION, null, msgs);
+      msgs = basicSetExpression(newExpression, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.VARIABLE_DECLARATION__EXPRESSION, newExpression, newExpression));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -184,6 +244,8 @@ public class variableDeclarationImpl extends MinimalEObjectImpl.Container implem
         return basicSetIdentifierList(null, msgs);
       case PascalPackage.VARIABLE_DECLARATION__TYPE:
         return basicSetType(null, msgs);
+      case PascalPackage.VARIABLE_DECLARATION__EXPRESSION:
+        return basicSetExpression(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -202,6 +264,8 @@ public class variableDeclarationImpl extends MinimalEObjectImpl.Container implem
         return getIdentifierList();
       case PascalPackage.VARIABLE_DECLARATION__TYPE:
         return getType();
+      case PascalPackage.VARIABLE_DECLARATION__EXPRESSION:
+        return getExpression();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -221,6 +285,9 @@ public class variableDeclarationImpl extends MinimalEObjectImpl.Container implem
         return;
       case PascalPackage.VARIABLE_DECLARATION__TYPE:
         setType((type)newValue);
+        return;
+      case PascalPackage.VARIABLE_DECLARATION__EXPRESSION:
+        setExpression((expression)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -242,6 +309,9 @@ public class variableDeclarationImpl extends MinimalEObjectImpl.Container implem
       case PascalPackage.VARIABLE_DECLARATION__TYPE:
         setType((type)null);
         return;
+      case PascalPackage.VARIABLE_DECLARATION__EXPRESSION:
+        setExpression((expression)null);
+        return;
     }
     super.eUnset(featureID);
   }
@@ -260,6 +330,8 @@ public class variableDeclarationImpl extends MinimalEObjectImpl.Container implem
         return identifierList != null;
       case PascalPackage.VARIABLE_DECLARATION__TYPE:
         return type != null;
+      case PascalPackage.VARIABLE_DECLARATION__EXPRESSION:
+        return expression != null;
     }
     return super.eIsSet(featureID);
   }

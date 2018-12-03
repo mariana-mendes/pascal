@@ -5,6 +5,10 @@ package compilador.validation
 
 import org.eclipse.xtext.validation.Check
 import compilador.pascal.caseStatement;
+import compilador.pascal.*;
+
+import java.util.HashMap
+import java.util.Map
 
 /**
  * This class contains custom validation rules. 
@@ -13,23 +17,56 @@ import compilador.pascal.caseStatement;
  */
 class PascalValidator extends AbstractPascalValidator {
 	
-//	public static val INVALID_NAME = 'invalidName'
-//
-//	@Check
-//	def checkGreetingStartsWithCapital(Greeting greeting) {
-//		if (!Character.isUpperCase(greeting.name.charAt(0))) {
-//			warning('Name should start with a capital', 
-//					PascalPackage.Literals.GREETING__NAME,
-//					INVALID_NAME)
-//		}
-//	}
 	
+	public Map<String,String> variaveisDeclaradas = new HashMap<String,String>();
+	
+	
+	public Map<String,type> variaveisTipo = new HashMap<String,type> ();
+	
+	
+
+	/**
+	 * variableDeclaration: Podemos declarar mais de uma variavel usando apenas uma palavra chave 'var',
+	 *  Ex: var nome1, nome2...
+	 *  Então colocamos o id dessas variaveis no map, caso ja exista, retornar um erro de id duplicado
+	 *  Ao percorrer a lista, adicionar no mapa a variavel e o seu tipo declarado
+	 */
 	@Check
-	def checkCaseStatement( caseStatement cs){
-//		String type = cs.expression.
-//		if(cs.	 ){
+	def checkDeclaracaoVariavel(variableDeclaration vd){
+		var nomesVar = vd.identifierList.identifierList;
+		for ( nome : nomesVar) {
+//			//if(ja tem variavel) return Erro()
+//			variaveisDeclaradas.put(nome., nome);
+//			variaveisTipo.put(nome.intern, getTypeVar(nome.));
 //			
-//		}
+		}
+	}
+		
+		def type getTypeVar() {
+			throw new UnsupportedOperationException("TODO: auto-generated method stub")
+		}
+
+
+	/**
+	 * variableDeclarationPart: Pode ter varias declaracoes: 
+	 * 		Ex: var....; var ....;
+	 * Se for so uma, chama o metodo que verifica a declaracao
+	 * Se for uma lista, fazer um for na mesma e chamar o metodo que verifica a declaracao pra cada uma
+	 */
+	@Check
+	def checkDeclaracao(variableDeclarationPart decla){
+		var declaracaoUmaVar = decla.variableDeclaration;
+		var listaDeclaracoes = decla.variableDeclaration1;
+		
+		if(declaracaoUmaVar !== null){
+			checkDeclaracaoVariavel(declaracaoUmaVar);
+		}
+		
+		if(listaDeclaracoes !== null){
+			for (declaracao : listaDeclaracoes) {
+				 checkDeclaracaoVariavel(declaracao);
+			}
+		}
 		
 	}
 }

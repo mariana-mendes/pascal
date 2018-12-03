@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.structuredTypeImpl#getUnpackedStructuredType <em>Unpacked Structured Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.structuredTypeImpl#getUnpackedStructuredType1 <em>Unpacked Structured Type1</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

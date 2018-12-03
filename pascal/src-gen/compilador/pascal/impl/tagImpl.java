@@ -29,12 +29,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.tagImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.tagImpl#getTypeIdentifier <em>Type Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.tagImpl#getTypeIdentifier1 <em>Type Identifier1</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

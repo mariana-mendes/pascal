@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.variableDeclarationPartImpl#getVariableDeclaration <em>Variable Declaration</em>}</li>
  *   <li>{@link compilador.pascal.impl.variableDeclarationPartImpl#getVariableDeclaration1 <em>Variable Declaration1</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

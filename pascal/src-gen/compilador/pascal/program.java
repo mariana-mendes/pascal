@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link compilador.pascal.program#getHead <em>Head</em>}</li>
  *   <li>{@link compilador.pascal.program#getBlock <em>Block</em>}</li>
  * </ul>
- * </p>
  *
  * @see compilador.pascal.PascalPackage#getprogram()
  * @model
