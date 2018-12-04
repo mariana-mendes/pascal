@@ -12,6 +12,7 @@ import java.util.Map
 import compilador.pascal.structuredType
 import compilador.pascal.pointerType
 import compilador.pascal.identifier
+import compilador.pascal.recordType
 
 /**
  * This class contains custom validation rules. 
@@ -39,54 +40,58 @@ class PascalValidator extends AbstractPascalValidator {
 	def checkDeclaracaoVariavel(variableDeclaration vd) {
 		var declaracoes = vd.identifierList.identifierList1;
 		var declaracaoUnica = vd.identifierList.identifier;
-		
-		println(declaracoes);
-		println(declaracaoUnica);
+
 		if (!declaracoes.isNullOrEmpty()) {
-			println('lista')
 			for (identifier id : declaracoes) {
 				if (jaDeclarada(id)) {
-					error("id variavel duplicado: " + id, null)
+					error("id variavel duplicado: " + id.identifier, null, id.identifier);
 				} else {
 					variaveisDeclaradas.put(id.identifier, id);
 					variaveisTipo.put(id, getTypeVar(vd.type));
 				}
 			}
 		}
-		if(declaracaoUnica !== null && jaDeclarada(declaracaoUnica)) {
-				error("id variavel duplicado: " + declaracaoUnica, null);
-			} else {
-				variaveisDeclaradas.put(declaracaoUnica.identifier, declaracaoUnica);
-				variaveisTipo.put(declaracaoUnica, getTypeVar(vd.type));
-			}
-		
+		if (declaracaoUnica !== null && jaDeclarada(declaracaoUnica)) {
+			error("id variavel duplicado: " + declaracaoUnica.identifier, null, declaracaoUnica.identifier);
+		} else {
+			variaveisDeclaradas.put(declaracaoUnica.identifier, declaracaoUnica);
+			variaveisTipo.put(declaracaoUnica, getTypeVar(vd.type));
+		}
+
 	}
 
 	def boolean jaDeclarada(identifier variavel) {
-		if (this.variaveisDeclaradas.containsKey(variavel.identifier)) {
-			return true;
-		} else {
-			return false
-		}
+		return (this.variaveisDeclaradas.containsKey(variavel.identifier))
 	}
 
 	def String getTypeVar(type tipoVariavel) {
 		if (tipoVariavel.simpleType !== null) {
-			return checkSimpleType(tipoVariavel.simpleType);
+			return getSimpleType(tipoVariavel.simpleType);
 		}
-//		if (tipoVariavel.structuredType !== null) {
-//			return checkStructuredType(tipoVariavel.structuredType);
-//		}
-//
-//		if (tipoVariavel.pointerType !== null) {
-//			return checkPointerType(tipoVariavel.pointerType);
-//		}
+		if (tipoVariavel.structuredType !== null) {
+			return getStructuredType(tipoVariavel.structuredType);
+		}
+
+		if (tipoVariavel.pointerType !== null) {
+			return getPointerType(tipoVariavel.pointerType);
+		}
 	}
 
-	def checkSimpleType(simpleType st) {
-		// Essa verificação eh pra quando a pessoa mesmo define um tipo no programa
-//		if(tipoVariavel.simpleType.typeIdentifier !== null){
-//	}
+	def getSimpleType(simpleType st) {
+		// scalarType   TO-DO: NÃO ENTENDI MUITO BEM COMO FUNCIONA ESSE SCALARTYPE ://
+		
+		
+		
+		// subrangeType
+		if(st.subrangeType !== null){
+			if(st.subrangeType.constant !== null && st.subrangeType.constant2 !== null){
+				return "range";
+			}else{
+				error("sao necessarias duas constantes para  intervalo", null);
+			}
+		}
+		
+		// typeIdentifier
 		if (st.typeIdentifier !== null) {
 			if (st.typeIdentifier.char !== null) {
 				return (st.typeIdentifier.char);
@@ -110,14 +115,31 @@ class PascalValidator extends AbstractPascalValidator {
 				// precisa criar um Map de "tipos criados pra fazer essa verificação					
 			}
 		}
+		// stringType
+	//
 	}
 
-	def String checkPointerType(pointerType type) {
-//		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	/**
+	 * Retonar o tipo "record" da variavel, como na declaracao queremos apenas guardar qual o tipo daquela variavel
+	 * será guardado no mapa de declaracao <identifier, "record">
+	 */
+	def String getStructuredType(structuredType type) {
+		// Record eh structured type, nao sei seprecisaria verificar array, set, etc... 
+		var unpackeds = type.unpackedStructuredType1;
+		if (!unpackeds.isNullOrEmpty()) {
+			for (unpackedStructuredType t : unpackeds) {
+				var possivelRecord = t.recordType;
+				if (possivelRecord !== null) {
+					return "record";
+				}
+			}
+		}
 	}
 
-	def String checkStructuredType(structuredType type) {
-//		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	def String getPointerType(pointerType type) {
+		if (type.pointerType !== null) {
+			return "^"
+		}
 	}
 
 	/**
@@ -129,8 +151,8 @@ class PascalValidator extends AbstractPascalValidator {
 	def checkDeclaracao(variableDeclarationPart decla) {
 		var declaracaoUmaVar = decla.variableDeclaration;
 		var listaDeclaracoes = decla.variableDeclaration1;
-	
-		if (declaracaoUmaVar !== null  ) {
+
+		if (declaracaoUmaVar !== null) {
 			checkDeclaracaoVariavel(declaracaoUmaVar);
 		}
 
@@ -141,9 +163,9 @@ class PascalValidator extends AbstractPascalValidator {
 		}
 
 	}
-	
+
 	@Check
-	def runChecks(program  p){
+	def runChecks(program p) {
 		var declaracoes = p.block.variableDeclarationParts;
 		for (variableDeclarationPart e : declaracoes) {
 			checkDeclaracao(e);

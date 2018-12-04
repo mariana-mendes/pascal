@@ -6,17 +6,19 @@ package compilador.validation;
 import compilador.pascal.identifier;
 import compilador.pascal.pointerType;
 import compilador.pascal.program;
+import compilador.pascal.recordType;
 import compilador.pascal.simpleType;
 import compilador.pascal.structuredType;
+import compilador.pascal.subrangeType;
 import compilador.pascal.type;
 import compilador.pascal.typeIdentifier;
+import compilador.pascal.unpackedStructuredType;
 import compilador.pascal.variableDeclaration;
 import compilador.pascal.variableDeclarationPart;
 import compilador.validation.AbstractPascalValidator;
 import java.util.HashMap;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.validation.Check;
-import org.eclipse.xtext.xbase.lib.InputOutput;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
 /**
@@ -47,16 +49,15 @@ public class PascalValidator extends AbstractPascalValidator {
     {
       EList<identifier> declaracoes = vd.getIdentifierList().getIdentifierList1();
       identifier declaracaoUnica = vd.getIdentifierList().getIdentifier();
-      InputOutput.<EList<identifier>>println(declaracoes);
-      InputOutput.<identifier>println(declaracaoUnica);
       boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(declaracoes);
       boolean _not = (!_isNullOrEmpty);
       if (_not) {
-        InputOutput.<String>println("lista");
         for (final identifier id : declaracoes) {
           boolean _jaDeclarada = this.jaDeclarada(id);
           if (_jaDeclarada) {
-            this.error(("id variavel duplicado: " + id), null);
+            String _identifier = id.getIdentifier();
+            String _plus = ("id variavel duplicado: " + _identifier);
+            this.error(_plus, null, id.getIdentifier());
           } else {
             this.variaveisDeclaradas.put(id.getIdentifier(), id);
             this.variaveisTipo.put(id, this.getTypeVar(vd.getType()));
@@ -65,7 +66,9 @@ public class PascalValidator extends AbstractPascalValidator {
       }
       String _xifexpression = null;
       if (((declaracaoUnica != null) && this.jaDeclarada(declaracaoUnica))) {
-        this.error(("id variavel duplicado: " + declaracaoUnica), null);
+        String _identifier_1 = declaracaoUnica.getIdentifier();
+        String _plus_1 = ("id variavel duplicado: " + _identifier_1);
+        this.error(_plus_1, null, declaracaoUnica.getIdentifier());
       } else {
         String _xblockexpression_1 = null;
         {
@@ -80,73 +83,118 @@ public class PascalValidator extends AbstractPascalValidator {
   }
   
   public boolean jaDeclarada(final identifier variavel) {
-    boolean _containsKey = this.variaveisDeclaradas.containsKey(variavel.getIdentifier());
-    if (_containsKey) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.variaveisDeclaradas.containsKey(variavel.getIdentifier());
   }
   
   public String getTypeVar(final type tipoVariavel) {
     simpleType _simpleType = tipoVariavel.getSimpleType();
     boolean _tripleNotEquals = (_simpleType != null);
     if (_tripleNotEquals) {
-      return this.checkSimpleType(tipoVariavel.getSimpleType());
+      return this.getSimpleType(tipoVariavel.getSimpleType());
+    }
+    structuredType _structuredType = tipoVariavel.getStructuredType();
+    boolean _tripleNotEquals_1 = (_structuredType != null);
+    if (_tripleNotEquals_1) {
+      return this.getStructuredType(tipoVariavel.getStructuredType());
+    }
+    pointerType _pointerType = tipoVariavel.getPointerType();
+    boolean _tripleNotEquals_2 = (_pointerType != null);
+    if (_tripleNotEquals_2) {
+      return this.getPointerType(tipoVariavel.getPointerType());
     }
     return null;
   }
   
-  public String checkSimpleType(final simpleType st) {
-    Object _xifexpression = null;
-    typeIdentifier _typeIdentifier = st.getTypeIdentifier();
-    boolean _tripleNotEquals = (_typeIdentifier != null);
-    if (_tripleNotEquals) {
-      Object _xblockexpression = null;
-      {
-        String _char = st.getTypeIdentifier().getChar();
-        boolean _tripleNotEquals_1 = (_char != null);
-        if (_tripleNotEquals_1) {
-          return st.getTypeIdentifier().getChar();
+  public String getSimpleType(final simpleType st) {
+    Object _xblockexpression = null;
+    {
+      subrangeType _subrangeType = st.getSubrangeType();
+      boolean _tripleNotEquals = (_subrangeType != null);
+      if (_tripleNotEquals) {
+        if (((st.getSubrangeType().getConstant() != null) && (st.getSubrangeType().getConstant2() != null))) {
+          return "range";
+        } else {
+          this.error("sao necessarias duas constantes para  intervalo", null);
         }
-        String _boolean = st.getTypeIdentifier().getBoolean();
-        boolean _tripleNotEquals_2 = (_boolean != null);
-        if (_tripleNotEquals_2) {
-          return st.getTypeIdentifier().getBoolean();
-        }
-        String _integer = st.getTypeIdentifier().getInteger();
-        boolean _tripleNotEquals_3 = (_integer != null);
-        if (_tripleNotEquals_3) {
-          return st.getTypeIdentifier().getInteger();
-        }
-        String _real = st.getTypeIdentifier().getReal();
-        boolean _tripleNotEquals_4 = (_real != null);
-        if (_tripleNotEquals_4) {
-          return st.getTypeIdentifier().getReal();
-        }
-        String _string = st.getTypeIdentifier().getString();
-        boolean _tripleNotEquals_5 = (_string != null);
-        if (_tripleNotEquals_5) {
-          return st.getTypeIdentifier().getString();
-        }
-        Object _xifexpression_1 = null;
-        identifier _identifier = st.getTypeIdentifier().getIdentifier();
-        boolean _tripleNotEquals_6 = (_identifier != null);
-        if (_tripleNotEquals_6) {
-          _xifexpression_1 = null;
-        }
-        _xblockexpression = _xifexpression_1;
       }
-      _xifexpression = _xblockexpression;
+      Object _xifexpression = null;
+      typeIdentifier _typeIdentifier = st.getTypeIdentifier();
+      boolean _tripleNotEquals_1 = (_typeIdentifier != null);
+      if (_tripleNotEquals_1) {
+        Object _xblockexpression_1 = null;
+        {
+          String _char = st.getTypeIdentifier().getChar();
+          boolean _tripleNotEquals_2 = (_char != null);
+          if (_tripleNotEquals_2) {
+            return st.getTypeIdentifier().getChar();
+          }
+          String _boolean = st.getTypeIdentifier().getBoolean();
+          boolean _tripleNotEquals_3 = (_boolean != null);
+          if (_tripleNotEquals_3) {
+            return st.getTypeIdentifier().getBoolean();
+          }
+          String _integer = st.getTypeIdentifier().getInteger();
+          boolean _tripleNotEquals_4 = (_integer != null);
+          if (_tripleNotEquals_4) {
+            return st.getTypeIdentifier().getInteger();
+          }
+          String _real = st.getTypeIdentifier().getReal();
+          boolean _tripleNotEquals_5 = (_real != null);
+          if (_tripleNotEquals_5) {
+            return st.getTypeIdentifier().getReal();
+          }
+          String _string = st.getTypeIdentifier().getString();
+          boolean _tripleNotEquals_6 = (_string != null);
+          if (_tripleNotEquals_6) {
+            return st.getTypeIdentifier().getString();
+          }
+          Object _xifexpression_1 = null;
+          identifier _identifier = st.getTypeIdentifier().getIdentifier();
+          boolean _tripleNotEquals_7 = (_identifier != null);
+          if (_tripleNotEquals_7) {
+            _xifexpression_1 = null;
+          }
+          _xblockexpression_1 = _xifexpression_1;
+        }
+        _xifexpression = _xblockexpression_1;
+      }
+      _xblockexpression = _xifexpression;
     }
-    return ((String)_xifexpression);
+    return ((String)_xblockexpression);
   }
   
-  public String checkPointerType(final pointerType type) {
-    return null;
+  /**
+   * Retonar o tipo "record" da variavel, como na declaracao queremos apenas guardar qual o tipo daquela variavel
+   * será guardado no mapa de declaracao <identifier, "record">
+   */
+  public String getStructuredType(final structuredType type) {
+    Object _xblockexpression = null;
+    {
+      EList<unpackedStructuredType> unpackeds = type.getUnpackedStructuredType1();
+      Object _xifexpression = null;
+      boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(unpackeds);
+      boolean _not = (!_isNullOrEmpty);
+      if (_not) {
+        for (final unpackedStructuredType t : unpackeds) {
+          {
+            recordType possivelRecord = t.getRecordType();
+            if ((possivelRecord != null)) {
+              return "record";
+            }
+          }
+        }
+      }
+      _xblockexpression = _xifexpression;
+    }
+    return ((String)_xblockexpression);
   }
   
-  public String checkStructuredType(final structuredType type) {
+  public String getPointerType(final pointerType type) {
+    String _pointerType = this.getPointerType(type);
+    boolean _tripleNotEquals = (_pointerType != null);
+    if (_tripleNotEquals) {
+      return "^";
+    }
     return null;
   }
   
