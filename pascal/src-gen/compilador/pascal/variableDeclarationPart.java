@@ -14,11 +14,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.variableDeclarationPart#getVariableDeclaration <em>Variable Declaration</em>}</li>
  *   <li>{@link compilador.pascal.variableDeclarationPart#getVariableDeclaration1 <em>Variable Declaration1</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getvariableDeclarationPart()
  * @model

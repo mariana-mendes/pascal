@@ -9,21 +9,26 @@ import compilador.pascal.*;
 
 import java.util.HashMap
 import java.util.Map
+import compilador.pascal.structuredType
+import compilador.pascal.pointerType
+import compilador.pascal.identifier
 
 /**
  * This class contains custom validation rules. 
- *
+ * 
  * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#validation
  */
 class PascalValidator extends AbstractPascalValidator {
-	
-	
-	public Map<String,String> variaveisDeclaradas = new HashMap<String,String>();
-	
-	
-	public Map<String,type> variaveisTipo = new HashMap<String,type> ();
-	
-	
+
+	var variaveisDeclaradas = new HashMap<String, identifier>();
+
+	var variaveisTipo = new HashMap<identifier, String>();
+
+	@Check
+	def restart(program init) {
+		variaveisDeclaradas.clear();
+		variaveisTipo.clear();
+	}
 
 	/**
 	 * variableDeclaration: Podemos declarar mais de uma variavel usando apenas uma palavra chave 'var',
@@ -31,21 +36,89 @@ class PascalValidator extends AbstractPascalValidator {
 	 *  Então colocamos o id dessas variaveis no map, caso ja exista, retornar um erro de id duplicado
 	 *  Ao percorrer a lista, adicionar no mapa a variavel e o seu tipo declarado
 	 */
-	@Check
-	def checkDeclaracaoVariavel(variableDeclaration vd){
-		var nomesVar = vd.identifierList.identifierList;
-		for ( nome : nomesVar) {
-//			//if(ja tem variavel) return Erro()
-//			variaveisDeclaradas.put(nome., nome);
-//			variaveisTipo.put(nome.intern, getTypeVar(nome.));
-//			
+	def checkDeclaracaoVariavel(variableDeclaration vd) {
+		var declaracoes = vd.identifierList.identifierList1;
+		var declaracaoUnica = vd.identifierList.identifier;
+		
+		println(declaracoes);
+		println(declaracaoUnica);
+		if (!declaracoes.isNullOrEmpty()) {
+			println('lista')
+			for (identifier id : declaracoes) {
+				if (jaDeclarada(id)) {
+					error("id variavel duplicado: " + id, null)
+				} else {
+					variaveisDeclaradas.put(id.identifier, id);
+					variaveisTipo.put(id, getTypeVar(vd.type));
+				}
+			}
+		}
+		if(declaracaoUnica !== null && jaDeclarada(declaracaoUnica)) {
+				error("id variavel duplicado: " + declaracaoUnica, null);
+			} else {
+				variaveisDeclaradas.put(declaracaoUnica.identifier, declaracaoUnica);
+				variaveisTipo.put(declaracaoUnica, getTypeVar(vd.type));
+			}
+		
+	}
+
+	def boolean jaDeclarada(identifier variavel) {
+		if (this.variaveisDeclaradas.containsKey(variavel.identifier)) {
+			return true;
+		} else {
+			return false
 		}
 	}
-		
-		def type getTypeVar() {
-			throw new UnsupportedOperationException("TODO: auto-generated method stub")
-		}
 
+	def String getTypeVar(type tipoVariavel) {
+		if (tipoVariavel.simpleType !== null) {
+			return checkSimpleType(tipoVariavel.simpleType);
+		}
+//		if (tipoVariavel.structuredType !== null) {
+//			return checkStructuredType(tipoVariavel.structuredType);
+//		}
+//
+//		if (tipoVariavel.pointerType !== null) {
+//			return checkPointerType(tipoVariavel.pointerType);
+//		}
+	}
+
+	def checkSimpleType(simpleType st) {
+		// Essa verificação eh pra quando a pessoa mesmo define um tipo no programa
+//		if(tipoVariavel.simpleType.typeIdentifier !== null){
+//	}
+		if (st.typeIdentifier !== null) {
+			if (st.typeIdentifier.char !== null) {
+				return (st.typeIdentifier.char);
+			}
+
+			if (st.typeIdentifier.boolean !== null) {
+				return (st.typeIdentifier.boolean);
+			}
+			if (st.typeIdentifier.integer !== null) {
+				return (st.typeIdentifier.integer);
+			}
+			if (st.typeIdentifier.real !== null) {
+				return (st.typeIdentifier.real);
+			}
+			if (st.typeIdentifier.string !== null) {
+				return (st.typeIdentifier.string);
+			}
+
+			if (st.typeIdentifier.identifier !== null) {
+				// Verificacao pra quando sao criados tipos durante o programa,
+				// precisa criar um Map de "tipos criados pra fazer essa verificação					
+			}
+		}
+	}
+
+	def String checkPointerType(pointerType type) {
+//		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+
+	def String checkStructuredType(structuredType type) {
+//		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
 
 	/**
 	 * variableDeclarationPart: Pode ter varias declaracoes: 
@@ -53,20 +126,27 @@ class PascalValidator extends AbstractPascalValidator {
 	 * Se for so uma, chama o metodo que verifica a declaracao
 	 * Se for uma lista, fazer um for na mesma e chamar o metodo que verifica a declaracao pra cada uma
 	 */
-	@Check
-	def checkDeclaracao(variableDeclarationPart decla){
+	def checkDeclaracao(variableDeclarationPart decla) {
 		var declaracaoUmaVar = decla.variableDeclaration;
 		var listaDeclaracoes = decla.variableDeclaration1;
-		
-		if(declaracaoUmaVar !== null){
+	
+		if (declaracaoUmaVar !== null  ) {
 			checkDeclaracaoVariavel(declaracaoUmaVar);
 		}
-		
-		if(listaDeclaracoes !== null){
-			for (declaracao : listaDeclaracoes) {
-				 checkDeclaracaoVariavel(declaracao);
+
+		if (!listaDeclaracoes.isNullOrEmpty()) {
+			for (variableDeclaration declaracao : listaDeclaracoes) {
+				checkDeclaracaoVariavel(declaracao);
 			}
 		}
-		
+
+	}
+	
+	@Check
+	def runChecks(program  p){
+		var declaracoes = p.block.variableDeclarationParts;
+		for (variableDeclarationPart e : declaracoes) {
+			checkDeclaracao(e);
+		}
 	}
 }

@@ -23,11 +23,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.procedureOrFunctionDeclarationImpl#getProcedureDeclaration <em>Procedure Declaration</em>}</li>
  *   <li>{@link compilador.pascal.impl.procedureOrFunctionDeclarationImpl#getFunctionDeclaration <em>Function Declaration</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

@@ -5,6 +5,7 @@ package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
 import compilador.pascal.expression;
+import compilador.pascal.identifier;
 import compilador.pascal.variable;
 
 import java.util.Collection;
@@ -20,7 +21,6 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -30,7 +30,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.variableImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.variableImpl#getExpression <em>Expression</em>}</li>
@@ -39,30 +38,21 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link compilador.pascal.impl.variableImpl#getExpression3 <em>Expression3</em>}</li>
  *   <li>{@link compilador.pascal.impl.variableImpl#getIdentifier2 <em>Identifier2</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class variableImpl extends MinimalEObjectImpl.Container implements variable
 {
   /**
-   * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected static final String IDENTIFIER_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getIdentifier()
-   * @generated
-   * @ordered
-   */
-  protected String identifier = IDENTIFIER_EDEFAULT;
+  protected identifier identifier;
 
   /**
    * The cached value of the '{@link #getExpression() <em>Expression</em>}' containment reference list.
@@ -105,14 +95,14 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
   protected EList<expression> expression3;
 
   /**
-   * The cached value of the '{@link #getIdentifier2() <em>Identifier2</em>}' attribute list.
+   * The cached value of the '{@link #getIdentifier2() <em>Identifier2</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier2()
    * @generated
    * @ordered
    */
-  protected EList<String> identifier2;
+  protected EList<identifier> identifier2;
 
   /**
    * <!-- begin-user-doc -->
@@ -140,7 +130,7 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getIdentifier()
+  public identifier getIdentifier()
   {
     return identifier;
   }
@@ -150,12 +140,37 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setIdentifier(String newIdentifier)
+  public NotificationChain basicSetIdentifier(identifier newIdentifier, NotificationChain msgs)
   {
-    String oldIdentifier = identifier;
+    identifier oldIdentifier = identifier;
     identifier = newIdentifier;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.VARIABLE__IDENTIFIER, oldIdentifier, identifier));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.VARIABLE__IDENTIFIER, oldIdentifier, newIdentifier);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifier(identifier newIdentifier)
+  {
+    if (newIdentifier != identifier)
+    {
+      NotificationChain msgs = null;
+      if (identifier != null)
+        msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.VARIABLE__IDENTIFIER, null, msgs);
+      if (newIdentifier != null)
+        msgs = ((InternalEObject)newIdentifier).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.VARIABLE__IDENTIFIER, null, msgs);
+      msgs = basicSetIdentifier(newIdentifier, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.VARIABLE__IDENTIFIER, newIdentifier, newIdentifier));
   }
 
   /**
@@ -219,11 +234,11 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<String> getIdentifier2()
+  public EList<identifier> getIdentifier2()
   {
     if (identifier2 == null)
     {
-      identifier2 = new EDataTypeEList<String>(String.class, this, PascalPackage.VARIABLE__IDENTIFIER2);
+      identifier2 = new EObjectContainmentEList<identifier>(identifier.class, this, PascalPackage.VARIABLE__IDENTIFIER2);
     }
     return identifier2;
   }
@@ -238,6 +253,8 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
   {
     switch (featureID)
     {
+      case PascalPackage.VARIABLE__IDENTIFIER:
+        return basicSetIdentifier(null, msgs);
       case PascalPackage.VARIABLE__EXPRESSION:
         return ((InternalEList<?>)getExpression()).basicRemove(otherEnd, msgs);
       case PascalPackage.VARIABLE__EXPRESSION1:
@@ -246,6 +263,8 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
         return ((InternalEList<?>)getExpression2()).basicRemove(otherEnd, msgs);
       case PascalPackage.VARIABLE__EXPRESSION3:
         return ((InternalEList<?>)getExpression3()).basicRemove(otherEnd, msgs);
+      case PascalPackage.VARIABLE__IDENTIFIER2:
+        return ((InternalEList<?>)getIdentifier2()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -288,7 +307,7 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
     switch (featureID)
     {
       case PascalPackage.VARIABLE__IDENTIFIER:
-        setIdentifier((String)newValue);
+        setIdentifier((identifier)newValue);
         return;
       case PascalPackage.VARIABLE__EXPRESSION:
         getExpression().clear();
@@ -308,7 +327,7 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
         return;
       case PascalPackage.VARIABLE__IDENTIFIER2:
         getIdentifier2().clear();
-        getIdentifier2().addAll((Collection<? extends String>)newValue);
+        getIdentifier2().addAll((Collection<? extends identifier>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -325,7 +344,7 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
     switch (featureID)
     {
       case PascalPackage.VARIABLE__IDENTIFIER:
-        setIdentifier(IDENTIFIER_EDEFAULT);
+        setIdentifier((identifier)null);
         return;
       case PascalPackage.VARIABLE__EXPRESSION:
         getExpression().clear();
@@ -357,7 +376,7 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
     switch (featureID)
     {
       case PascalPackage.VARIABLE__IDENTIFIER:
-        return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
+        return identifier != null;
       case PascalPackage.VARIABLE__EXPRESSION:
         return expression != null && !expression.isEmpty();
       case PascalPackage.VARIABLE__EXPRESSION1:
@@ -370,25 +389,6 @@ public class variableImpl extends MinimalEObjectImpl.Container implements variab
         return identifier2 != null && !identifier2.isEmpty();
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (identifier: ");
-    result.append(identifier);
-    result.append(", identifier2: ");
-    result.append(identifier2);
-    result.append(')');
-    return result.toString();
   }
 
 } //variableImpl

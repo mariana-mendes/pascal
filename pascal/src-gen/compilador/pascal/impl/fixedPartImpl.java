@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.fixedPartImpl#getRecordSection <em>Record Section</em>}</li>
  *   <li>{@link compilador.pascal.impl.fixedPartImpl#getRecordSection1 <em>Record Section1</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

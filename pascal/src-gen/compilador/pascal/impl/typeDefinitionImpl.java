@@ -5,6 +5,7 @@ package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
 import compilador.pascal.functionType;
+import compilador.pascal.identifier;
 import compilador.pascal.procedureType;
 import compilador.pascal.type;
 import compilador.pascal.typeDefinition;
@@ -22,7 +23,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,27 +32,27 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getIndentifier <em>Indentifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getType <em>Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getFunctionType <em>Function Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getProcedureType <em>Procedure Type</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements typeDefinition
 {
   /**
-   * The cached value of the '{@link #getIndentifier() <em>Indentifier</em>}' attribute list.
+   * The cached value of the '{@link #getIndentifier() <em>Indentifier</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIndentifier()
    * @generated
    * @ordered
    */
-  protected EList<String> indentifier;
+  protected EList<identifier> indentifier;
 
   /**
    * The cached value of the '{@link #getType() <em>Type</em>}' containment reference.
@@ -108,11 +110,11 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<String> getIndentifier()
+  public EList<identifier> getIndentifier()
   {
     if (indentifier == null)
     {
-      indentifier = new EDataTypeEList<String>(String.class, this, PascalPackage.TYPE_DEFINITION__INDENTIFIER);
+      indentifier = new EObjectContainmentEList<identifier>(identifier.class, this, PascalPackage.TYPE_DEFINITION__INDENTIFIER);
     }
     return indentifier;
   }
@@ -271,6 +273,8 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
   {
     switch (featureID)
     {
+      case PascalPackage.TYPE_DEFINITION__INDENTIFIER:
+        return ((InternalEList<?>)getIndentifier()).basicRemove(otherEnd, msgs);
       case PascalPackage.TYPE_DEFINITION__TYPE:
         return basicSetType(null, msgs);
       case PascalPackage.TYPE_DEFINITION__FUNCTION_TYPE:
@@ -316,7 +320,7 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
     {
       case PascalPackage.TYPE_DEFINITION__INDENTIFIER:
         getIndentifier().clear();
-        getIndentifier().addAll((Collection<? extends String>)newValue);
+        getIndentifier().addAll((Collection<? extends identifier>)newValue);
         return;
       case PascalPackage.TYPE_DEFINITION__TYPE:
         setType((type)newValue);
@@ -377,23 +381,6 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
         return procedureType != null;
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (indentifier: ");
-    result.append(indentifier);
-    result.append(')');
-    return result.toString();
   }
 
 } //typeDefinitionImpl

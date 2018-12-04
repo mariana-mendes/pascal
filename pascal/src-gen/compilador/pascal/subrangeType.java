@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.subrangeType#getConstant <em>Constant</em>}</li>
  *   <li>{@link compilador.pascal.subrangeType#getConstant2 <em>Constant2</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getsubrangeType()
  * @model

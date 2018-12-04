@@ -4,11 +4,14 @@
 package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
+import compilador.pascal.identifier;
 import compilador.pascal.typeIdentifier;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
@@ -18,34 +21,129 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.typeIdentifierImpl#getIdentifier <em>Identifier</em>}</li>
+ *   <li>{@link compilador.pascal.impl.typeIdentifierImpl#getChar <em>Char</em>}</li>
+ *   <li>{@link compilador.pascal.impl.typeIdentifierImpl#getBoolean <em>Boolean</em>}</li>
+ *   <li>{@link compilador.pascal.impl.typeIdentifierImpl#getInteger <em>Integer</em>}</li>
+ *   <li>{@link compilador.pascal.impl.typeIdentifierImpl#getReal <em>Real</em>}</li>
+ *   <li>{@link compilador.pascal.impl.typeIdentifierImpl#getString <em>String</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class typeIdentifierImpl extends resultTypeImpl implements typeIdentifier
 {
   /**
-   * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected static final String IDENTIFIER_EDEFAULT = null;
+  protected identifier identifier;
 
   /**
-   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The default value of the '{@link #getChar() <em>Char</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getIdentifier()
+   * @see #getChar()
    * @generated
    * @ordered
    */
-  protected String identifier = IDENTIFIER_EDEFAULT;
+  protected static final String CHAR_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getChar() <em>Char</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getChar()
+   * @generated
+   * @ordered
+   */
+  protected String char_ = CHAR_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getBoolean() <em>Boolean</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getBoolean()
+   * @generated
+   * @ordered
+   */
+  protected static final String BOOLEAN_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getBoolean() <em>Boolean</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getBoolean()
+   * @generated
+   * @ordered
+   */
+  protected String boolean_ = BOOLEAN_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getInteger() <em>Integer</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getInteger()
+   * @generated
+   * @ordered
+   */
+  protected static final String INTEGER_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getInteger() <em>Integer</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getInteger()
+   * @generated
+   * @ordered
+   */
+  protected String integer = INTEGER_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getReal() <em>Real</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getReal()
+   * @generated
+   * @ordered
+   */
+  protected static final String REAL_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getReal() <em>Real</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getReal()
+   * @generated
+   * @ordered
+   */
+  protected String real = REAL_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getString() <em>String</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getString()
+   * @generated
+   * @ordered
+   */
+  protected static final String STRING_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getString() <em>String</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getString()
+   * @generated
+   * @ordered
+   */
+  protected String string = STRING_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -73,7 +171,7 @@ public class typeIdentifierImpl extends resultTypeImpl implements typeIdentifier
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getIdentifier()
+  public identifier getIdentifier()
   {
     return identifier;
   }
@@ -83,12 +181,168 @@ public class typeIdentifierImpl extends resultTypeImpl implements typeIdentifier
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setIdentifier(String newIdentifier)
+  public NotificationChain basicSetIdentifier(identifier newIdentifier, NotificationChain msgs)
   {
-    String oldIdentifier = identifier;
+    identifier oldIdentifier = identifier;
     identifier = newIdentifier;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_IDENTIFIER__IDENTIFIER, oldIdentifier, identifier));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_IDENTIFIER__IDENTIFIER, oldIdentifier, newIdentifier);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifier(identifier newIdentifier)
+  {
+    if (newIdentifier != identifier)
+    {
+      NotificationChain msgs = null;
+      if (identifier != null)
+        msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.TYPE_IDENTIFIER__IDENTIFIER, null, msgs);
+      if (newIdentifier != null)
+        msgs = ((InternalEObject)newIdentifier).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.TYPE_IDENTIFIER__IDENTIFIER, null, msgs);
+      msgs = basicSetIdentifier(newIdentifier, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_IDENTIFIER__IDENTIFIER, newIdentifier, newIdentifier));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getChar()
+  {
+    return char_;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setChar(String newChar)
+  {
+    String oldChar = char_;
+    char_ = newChar;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_IDENTIFIER__CHAR, oldChar, char_));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getBoolean()
+  {
+    return boolean_;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setBoolean(String newBoolean)
+  {
+    String oldBoolean = boolean_;
+    boolean_ = newBoolean;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_IDENTIFIER__BOOLEAN, oldBoolean, boolean_));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getInteger()
+  {
+    return integer;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setInteger(String newInteger)
+  {
+    String oldInteger = integer;
+    integer = newInteger;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_IDENTIFIER__INTEGER, oldInteger, integer));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getReal()
+  {
+    return real;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setReal(String newReal)
+  {
+    String oldReal = real;
+    real = newReal;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_IDENTIFIER__REAL, oldReal, real));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getString()
+  {
+    return string;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setString(String newString)
+  {
+    String oldString = string;
+    string = newString;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_IDENTIFIER__STRING, oldString, string));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  {
+    switch (featureID)
+    {
+      case PascalPackage.TYPE_IDENTIFIER__IDENTIFIER:
+        return basicSetIdentifier(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
   }
 
   /**
@@ -103,6 +357,16 @@ public class typeIdentifierImpl extends resultTypeImpl implements typeIdentifier
     {
       case PascalPackage.TYPE_IDENTIFIER__IDENTIFIER:
         return getIdentifier();
+      case PascalPackage.TYPE_IDENTIFIER__CHAR:
+        return getChar();
+      case PascalPackage.TYPE_IDENTIFIER__BOOLEAN:
+        return getBoolean();
+      case PascalPackage.TYPE_IDENTIFIER__INTEGER:
+        return getInteger();
+      case PascalPackage.TYPE_IDENTIFIER__REAL:
+        return getReal();
+      case PascalPackage.TYPE_IDENTIFIER__STRING:
+        return getString();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -118,7 +382,22 @@ public class typeIdentifierImpl extends resultTypeImpl implements typeIdentifier
     switch (featureID)
     {
       case PascalPackage.TYPE_IDENTIFIER__IDENTIFIER:
-        setIdentifier((String)newValue);
+        setIdentifier((identifier)newValue);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__CHAR:
+        setChar((String)newValue);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__BOOLEAN:
+        setBoolean((String)newValue);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__INTEGER:
+        setInteger((String)newValue);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__REAL:
+        setReal((String)newValue);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__STRING:
+        setString((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -135,7 +414,22 @@ public class typeIdentifierImpl extends resultTypeImpl implements typeIdentifier
     switch (featureID)
     {
       case PascalPackage.TYPE_IDENTIFIER__IDENTIFIER:
-        setIdentifier(IDENTIFIER_EDEFAULT);
+        setIdentifier((identifier)null);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__CHAR:
+        setChar(CHAR_EDEFAULT);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__BOOLEAN:
+        setBoolean(BOOLEAN_EDEFAULT);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__INTEGER:
+        setInteger(INTEGER_EDEFAULT);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__REAL:
+        setReal(REAL_EDEFAULT);
+        return;
+      case PascalPackage.TYPE_IDENTIFIER__STRING:
+        setString(STRING_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -152,7 +446,17 @@ public class typeIdentifierImpl extends resultTypeImpl implements typeIdentifier
     switch (featureID)
     {
       case PascalPackage.TYPE_IDENTIFIER__IDENTIFIER:
-        return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
+        return identifier != null;
+      case PascalPackage.TYPE_IDENTIFIER__CHAR:
+        return CHAR_EDEFAULT == null ? char_ != null : !CHAR_EDEFAULT.equals(char_);
+      case PascalPackage.TYPE_IDENTIFIER__BOOLEAN:
+        return BOOLEAN_EDEFAULT == null ? boolean_ != null : !BOOLEAN_EDEFAULT.equals(boolean_);
+      case PascalPackage.TYPE_IDENTIFIER__INTEGER:
+        return INTEGER_EDEFAULT == null ? integer != null : !INTEGER_EDEFAULT.equals(integer);
+      case PascalPackage.TYPE_IDENTIFIER__REAL:
+        return REAL_EDEFAULT == null ? real != null : !REAL_EDEFAULT.equals(real);
+      case PascalPackage.TYPE_IDENTIFIER__STRING:
+        return STRING_EDEFAULT == null ? string != null : !STRING_EDEFAULT.equals(string);
     }
     return super.eIsSet(featureID);
   }
@@ -168,8 +472,16 @@ public class typeIdentifierImpl extends resultTypeImpl implements typeIdentifier
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (identifier: ");
-    result.append(identifier);
+    result.append(" (char: ");
+    result.append(char_);
+    result.append(", boolean: ");
+    result.append(boolean_);
+    result.append(", integer: ");
+    result.append(integer);
+    result.append(", real: ");
+    result.append(real);
+    result.append(", string: ");
+    result.append(string);
     result.append(')');
     return result.toString();
   }

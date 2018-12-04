@@ -26,6 +26,7 @@ import compilador.pascal.functionDeclaration;
 import compilador.pascal.functionDesignator;
 import compilador.pascal.functionType;
 import compilador.pascal.gotoStatement;
+import compilador.pascal.identifier;
 import compilador.pascal.identifierList;
 import compilador.pascal.label;
 import compilador.pascal.parameterGroup;
@@ -168,6 +169,9 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 				return; 
 			case PascalPackage.GOTO_STATEMENT:
 				sequence_gotoStatement(context, (gotoStatement) semanticObject); 
+				return; 
+			case PascalPackage.IDENTIFIER:
+				sequence_identifier(context, (identifier) semanticObject); 
 				return; 
 			case PascalPackage.IDENTIFIER_LIST:
 				sequence_identifierList(context, (identifierList) semanticObject); 
@@ -366,7 +370,7 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *             label+=label_declaration_part | 
 	 *             constantDefinitionPart+=constantDefinitionPart | 
 	 *             typeDefinitionPart+=typeDefinitionPart | 
-	 *             variableDeclarationPart+=variableDeclarationPart | 
+	 *             variableDeclarationParts+=variableDeclarationPart | 
 	 *             procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart | 
 	 *             usesUnitsPart+=usesUnitsPart
 	 *         )* 
@@ -681,10 +685,28 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     identifierList returns identifierList
 	 *
 	 * Constraint:
-	 *     (identifier=identifier identifierList+=identifier*)
+	 *     (identifier=identifier identifierList1+=identifier*)
 	 */
 	protected void sequence_identifierList(ISerializationContext context, identifierList semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     identifier returns identifier
+	 *
+	 * Constraint:
+	 *     identifier=IDENT
+	 */
+	protected void sequence_identifier(ISerializationContext context, identifier semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, PascalPackage.Literals.IDENTIFIER__IDENTIFIER) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PascalPackage.Literals.IDENTIFIER__IDENTIFIER));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getIdentifierAccess().getIdentifierIDENTTerminalRuleCall_0(), semanticObject.getIdentifier());
+		feeder.finish();
 	}
 	
 	
@@ -1109,7 +1131,14 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     typeIdentifier returns typeIdentifier
 	 *
 	 * Constraint:
-	 *     identifier=identifier?
+	 *     (
+	 *         identifier=identifier | 
+	 *         char='char' | 
+	 *         boolean='boolean' | 
+	 *         integer='integer' | 
+	 *         real='real' | 
+	 *         string='string'
+	 *     )
 	 */
 	protected void sequence_typeIdentifier(ISerializationContext context, typeIdentifier semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

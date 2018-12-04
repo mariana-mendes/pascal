@@ -4,6 +4,7 @@
 package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
+import compilador.pascal.identifier;
 import compilador.pascal.identifierList;
 import compilador.pascal.programHeading;
 
@@ -22,35 +23,25 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.programHeadingImpl#getIdentifer <em>Identifer</em>}</li>
  *   <li>{@link compilador.pascal.impl.programHeadingImpl#getIdentifierList <em>Identifier List</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class programHeadingImpl extends MinimalEObjectImpl.Container implements programHeading
 {
   /**
-   * The default value of the '{@link #getIdentifer() <em>Identifer</em>}' attribute.
+   * The cached value of the '{@link #getIdentifer() <em>Identifer</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifer()
    * @generated
    * @ordered
    */
-  protected static final String IDENTIFER_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getIdentifer() <em>Identifer</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getIdentifer()
-   * @generated
-   * @ordered
-   */
-  protected String identifer = IDENTIFER_EDEFAULT;
+  protected identifier identifer;
 
   /**
    * The cached value of the '{@link #getIdentifierList() <em>Identifier List</em>}' containment reference.
@@ -88,7 +79,7 @@ public class programHeadingImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getIdentifer()
+  public identifier getIdentifer()
   {
     return identifer;
   }
@@ -98,12 +89,37 @@ public class programHeadingImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setIdentifer(String newIdentifer)
+  public NotificationChain basicSetIdentifer(identifier newIdentifer, NotificationChain msgs)
   {
-    String oldIdentifer = identifer;
+    identifier oldIdentifer = identifer;
     identifer = newIdentifer;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.PROGRAM_HEADING__IDENTIFER, oldIdentifer, identifer));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.PROGRAM_HEADING__IDENTIFER, oldIdentifer, newIdentifer);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifer(identifier newIdentifer)
+  {
+    if (newIdentifer != identifer)
+    {
+      NotificationChain msgs = null;
+      if (identifer != null)
+        msgs = ((InternalEObject)identifer).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.PROGRAM_HEADING__IDENTIFER, null, msgs);
+      if (newIdentifer != null)
+        msgs = ((InternalEObject)newIdentifer).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.PROGRAM_HEADING__IDENTIFER, null, msgs);
+      msgs = basicSetIdentifer(newIdentifer, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.PROGRAM_HEADING__IDENTIFER, newIdentifer, newIdentifer));
   }
 
   /**
@@ -164,6 +180,8 @@ public class programHeadingImpl extends MinimalEObjectImpl.Container implements 
   {
     switch (featureID)
     {
+      case PascalPackage.PROGRAM_HEADING__IDENTIFER:
+        return basicSetIdentifer(null, msgs);
       case PascalPackage.PROGRAM_HEADING__IDENTIFIER_LIST:
         return basicSetIdentifierList(null, msgs);
     }
@@ -199,7 +217,7 @@ public class programHeadingImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PascalPackage.PROGRAM_HEADING__IDENTIFER:
-        setIdentifer((String)newValue);
+        setIdentifer((identifier)newValue);
         return;
       case PascalPackage.PROGRAM_HEADING__IDENTIFIER_LIST:
         setIdentifierList((identifierList)newValue);
@@ -219,7 +237,7 @@ public class programHeadingImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PascalPackage.PROGRAM_HEADING__IDENTIFER:
-        setIdentifer(IDENTIFER_EDEFAULT);
+        setIdentifer((identifier)null);
         return;
       case PascalPackage.PROGRAM_HEADING__IDENTIFIER_LIST:
         setIdentifierList((identifierList)null);
@@ -239,28 +257,11 @@ public class programHeadingImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PascalPackage.PROGRAM_HEADING__IDENTIFER:
-        return IDENTIFER_EDEFAULT == null ? identifer != null : !IDENTIFER_EDEFAULT.equals(identifer);
+        return identifer != null;
       case PascalPackage.PROGRAM_HEADING__IDENTIFIER_LIST:
         return identifierList != null;
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (identifer: ");
-    result.append(identifer);
-    result.append(')');
-    return result.toString();
   }
 
 } //programHeadingImpl

@@ -4,6 +4,7 @@
 package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
+import compilador.pascal.identifier;
 import compilador.pascal.label;
 import compilador.pascal.statement;
 import compilador.pascal.unlabelledStatement;
@@ -30,13 +31,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.labelImpl#getUnlabelledStatement <em>Unlabelled Statement</em>}</li>
  *   <li>{@link compilador.pascal.impl.labelImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link compilador.pascal.impl.labelImpl#getUnsignedInteger <em>Unsigned Integer</em>}</li>
  *   <li>{@link compilador.pascal.impl.labelImpl#getIdentifier <em>Identifier</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -73,24 +74,14 @@ public class labelImpl extends label_declaration_partImpl implements label
   protected unsignedInteger unsignedInteger;
 
   /**
-   * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected static final String IDENTIFIER_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getIdentifier()
-   * @generated
-   * @ordered
-   */
-  protected String identifier = IDENTIFIER_EDEFAULT;
+  protected identifier identifier;
 
   /**
    * <!-- begin-user-doc -->
@@ -228,7 +219,7 @@ public class labelImpl extends label_declaration_partImpl implements label
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getIdentifier()
+  public identifier getIdentifier()
   {
     return identifier;
   }
@@ -238,12 +229,37 @@ public class labelImpl extends label_declaration_partImpl implements label
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setIdentifier(String newIdentifier)
+  public NotificationChain basicSetIdentifier(identifier newIdentifier, NotificationChain msgs)
   {
-    String oldIdentifier = identifier;
+    identifier oldIdentifier = identifier;
     identifier = newIdentifier;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.LABEL__IDENTIFIER, oldIdentifier, identifier));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.LABEL__IDENTIFIER, oldIdentifier, newIdentifier);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifier(identifier newIdentifier)
+  {
+    if (newIdentifier != identifier)
+    {
+      NotificationChain msgs = null;
+      if (identifier != null)
+        msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.LABEL__IDENTIFIER, null, msgs);
+      if (newIdentifier != null)
+        msgs = ((InternalEObject)newIdentifier).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.LABEL__IDENTIFIER, null, msgs);
+      msgs = basicSetIdentifier(newIdentifier, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.LABEL__IDENTIFIER, newIdentifier, newIdentifier));
   }
 
   /**
@@ -262,6 +278,8 @@ public class labelImpl extends label_declaration_partImpl implements label
         return ((InternalEList<?>)getLabel()).basicRemove(otherEnd, msgs);
       case PascalPackage.LABEL__UNSIGNED_INTEGER:
         return basicSetUnsignedInteger(null, msgs);
+      case PascalPackage.LABEL__IDENTIFIER:
+        return basicSetIdentifier(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -310,7 +328,7 @@ public class labelImpl extends label_declaration_partImpl implements label
         setUnsignedInteger((unsignedInteger)newValue);
         return;
       case PascalPackage.LABEL__IDENTIFIER:
-        setIdentifier((String)newValue);
+        setIdentifier((identifier)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -336,7 +354,7 @@ public class labelImpl extends label_declaration_partImpl implements label
         setUnsignedInteger((unsignedInteger)null);
         return;
       case PascalPackage.LABEL__IDENTIFIER:
-        setIdentifier(IDENTIFIER_EDEFAULT);
+        setIdentifier((identifier)null);
         return;
     }
     super.eUnset(featureID);
@@ -359,7 +377,7 @@ public class labelImpl extends label_declaration_partImpl implements label
       case PascalPackage.LABEL__UNSIGNED_INTEGER:
         return unsignedInteger != null;
       case PascalPackage.LABEL__IDENTIFIER:
-        return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
+        return identifier != null;
     }
     return super.eIsSet(featureID);
   }
@@ -400,23 +418,6 @@ public class labelImpl extends label_declaration_partImpl implements label
       }
     }
     return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (identifier: ");
-    result.append(identifier);
-    result.append(')');
-    return result.toString();
   }
 
 } //labelImpl

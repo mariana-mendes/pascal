@@ -10,9 +10,9 @@ program:
 programHeading:
 	"program" identifer=identifier ("(" identifierList=identifierList ")")? ";";
 
-identifierList:	identifier=identifier ("," identifierList+=identifier)*;
+identifierList:	{identifierList} identifier=identifier ("," identifierList1+=identifier)*;
 
-identifier: IDENT;
+identifier: identifier=IDENT;
 
 //
 // )*	compoundStatement;
@@ -63,7 +63,7 @@ formalParameterSection: parameterGroup=parameterGroup | "var" parameterGroup2 +=
 parameterGroup:
 	identifierList = identifierList ":" typeIdentifier= typeIdentifier;
 
-typeIdentifier:	identifier = identifier	| ({typeIdentifier} "char" | {typeIdentifier} "boolean" | {typeIdentifier} "integer" | {typeIdentifier} "real" | {typeIdentifier} "string");
+typeIdentifier:	identifier = identifier	| char="char" |  boolean="boolean" | integer="integer" | real="real" | string="string";
 
 procedureType:
 	{procedureType} "procedure" (formalParameterList=formalParameterList)?;

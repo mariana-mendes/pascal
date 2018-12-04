@@ -133,7 +133,7 @@ public interface PascalPackage extends EPackage
   int PROGRAM_HEADING = 2;
 
   /**
-   * The feature id for the '<em><b>Identifer</b></em>' attribute.
+   * The feature id for the '<em><b>Identifer</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -170,7 +170,7 @@ public interface PascalPackage extends EPackage
   int IDENTIFIER_LIST = 3;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -179,13 +179,13 @@ public interface PascalPackage extends EPackage
   int IDENTIFIER_LIST__IDENTIFIER = 0;
 
   /**
-   * The feature id for the '<em><b>Identifier List</b></em>' attribute list.
+   * The feature id for the '<em><b>Identifier List1</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int IDENTIFIER_LIST__IDENTIFIER_LIST = 1;
+  int IDENTIFIER_LIST__IDENTIFIER_LIST1 = 1;
 
   /**
    * The number of structural features of the '<em>identifier List</em>' class.
@@ -197,6 +197,34 @@ public interface PascalPackage extends EPackage
   int IDENTIFIER_LIST_FEATURE_COUNT = 2;
 
   /**
+   * The meta object id for the '{@link compilador.pascal.impl.identifierImpl <em>identifier</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see compilador.pascal.impl.identifierImpl
+   * @see compilador.pascal.impl.PascalPackageImpl#getidentifier()
+   * @generated
+   */
+  int IDENTIFIER = 4;
+
+  /**
+   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int IDENTIFIER__IDENTIFIER = 0;
+
+  /**
+   * The number of structural features of the '<em>identifier</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int IDENTIFIER_FEATURE_COUNT = 1;
+
+  /**
    * The meta object id for the '{@link compilador.pascal.impl.blockImpl <em>block</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -204,7 +232,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getblock()
    * @generated
    */
-  int BLOCK = 4;
+  int BLOCK = 5;
 
   /**
    * The feature id for the '<em><b>Label</b></em>' containment reference list.
@@ -234,13 +262,13 @@ public interface PascalPackage extends EPackage
   int BLOCK__TYPE_DEFINITION_PART = 2;
 
   /**
-   * The feature id for the '<em><b>Variable Declaration Part</b></em>' containment reference list.
+   * The feature id for the '<em><b>Variable Declaration Parts</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int BLOCK__VARIABLE_DECLARATION_PART = 3;
+  int BLOCK__VARIABLE_DECLARATION_PARTS = 3;
 
   /**
    * The feature id for the '<em><b>Procedure And Function Declaration Part</b></em>' containment reference list.
@@ -286,7 +314,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getlabel_declaration_part()
    * @generated
    */
-  int LABEL_DECLARATION_PART = 5;
+  int LABEL_DECLARATION_PART = 6;
 
   /**
    * The number of structural features of the '<em>label declaration part</em>' class.
@@ -305,7 +333,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getlabel()
    * @generated
    */
-  int LABEL = 6;
+  int LABEL = 7;
 
   /**
    * The feature id for the '<em><b>Unlabelled Statement</b></em>' containment reference.
@@ -335,7 +363,7 @@ public interface PascalPackage extends EPackage
   int LABEL__UNSIGNED_INTEGER = LABEL_DECLARATION_PART_FEATURE_COUNT + 2;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -360,7 +388,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getunsignedInteger()
    * @generated
    */
-  int UNSIGNED_INTEGER = 7;
+  int UNSIGNED_INTEGER = 8;
 
   /**
    * The feature id for the '<em><b>Number</b></em>' attribute.
@@ -388,7 +416,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getconstantDefinitionPart()
    * @generated
    */
-  int CONSTANT_DEFINITION_PART = 8;
+  int CONSTANT_DEFINITION_PART = 9;
 
   /**
    * The feature id for the '<em><b>Constant Definition</b></em>' containment reference list.
@@ -416,10 +444,10 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getconstantDefinition()
    * @generated
    */
-  int CONSTANT_DEFINITION = 9;
+  int CONSTANT_DEFINITION = 10;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -453,7 +481,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getvariant()
    * @generated
    */
-  int VARIANT = 37;
+  int VARIANT = 38;
 
   /**
    * The number of structural features of the '<em>variant</em>' class.
@@ -472,7 +500,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getconstant()
    * @generated
    */
-  int CONSTANT = 10;
+  int CONSTANT = 11;
 
   /**
    * The feature id for the '<em><b>Number</b></em>' containment reference.
@@ -502,7 +530,7 @@ public interface PascalPackage extends EPackage
   int CONSTANT__NUMBER1 = VARIANT_FEATURE_COUNT + 2;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -529,7 +557,7 @@ public interface PascalPackage extends EPackage
   int CONSTANT__SIGN2 = VARIANT_FEATURE_COUNT + 5;
 
   /**
-   * The feature id for the '<em><b>Identifier1</b></em>' attribute list.
+   * The feature id for the '<em><b>Identifier1</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -581,7 +609,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getconstantChr()
    * @generated
    */
-  int CONSTANT_CHR = 11;
+  int CONSTANT_CHR = 12;
 
   /**
    * The feature id for the '<em><b>Unsigned Integer</b></em>' containment reference.
@@ -609,7 +637,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getunsignedNumber()
    * @generated
    */
-  int UNSIGNED_NUMBER = 12;
+  int UNSIGNED_NUMBER = 13;
 
   /**
    * The feature id for the '<em><b>Unsigned Integer</b></em>' containment reference.
@@ -646,7 +674,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getusesUnitsPart()
    * @generated
    */
-  int USES_UNITS_PART = 13;
+  int USES_UNITS_PART = 14;
 
   /**
    * The feature id for the '<em><b>Identifier List</b></em>' containment reference.
@@ -674,7 +702,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#gettypeDefinitionPart()
    * @generated
    */
-  int TYPE_DEFINITION_PART = 14;
+  int TYPE_DEFINITION_PART = 15;
 
   /**
    * The feature id for the '<em><b>Type Definition</b></em>' containment reference list.
@@ -702,10 +730,10 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#gettypeDefinition()
    * @generated
    */
-  int TYPE_DEFINITION = 15;
+  int TYPE_DEFINITION = 16;
 
   /**
-   * The feature id for the '<em><b>Indentifier</b></em>' attribute list.
+   * The feature id for the '<em><b>Indentifier</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -757,7 +785,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getfunctionType()
    * @generated
    */
-  int FUNCTION_TYPE = 16;
+  int FUNCTION_TYPE = 17;
 
   /**
    * The feature id for the '<em><b>Formal Parameter List</b></em>' containment reference.
@@ -794,7 +822,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getresultType()
    * @generated
    */
-  int RESULT_TYPE = 17;
+  int RESULT_TYPE = 18;
 
   /**
    * The number of structural features of the '<em>result Type</em>' class.
@@ -813,7 +841,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getformalParameterList()
    * @generated
    */
-  int FORMAL_PARAMETER_LIST = 18;
+  int FORMAL_PARAMETER_LIST = 19;
 
   /**
    * The feature id for the '<em><b>Formal Parameter Section</b></em>' containment reference.
@@ -850,7 +878,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getformalParameterSection()
    * @generated
    */
-  int FORMAL_PARAMETER_SECTION = 19;
+  int FORMAL_PARAMETER_SECTION = 20;
 
   /**
    * The feature id for the '<em><b>Parameter Group</b></em>' containment reference.
@@ -905,7 +933,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getparameterGroup()
    * @generated
    */
-  int PARAMETER_GROUP = 20;
+  int PARAMETER_GROUP = 21;
 
   /**
    * The feature id for the '<em><b>Identifier List</b></em>' containment reference.
@@ -942,10 +970,10 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#gettypeIdentifier()
    * @generated
    */
-  int TYPE_IDENTIFIER = 21;
+  int TYPE_IDENTIFIER = 22;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -954,13 +982,58 @@ public interface PascalPackage extends EPackage
   int TYPE_IDENTIFIER__IDENTIFIER = RESULT_TYPE_FEATURE_COUNT + 0;
 
   /**
+   * The feature id for the '<em><b>Char</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TYPE_IDENTIFIER__CHAR = RESULT_TYPE_FEATURE_COUNT + 1;
+
+  /**
+   * The feature id for the '<em><b>Boolean</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TYPE_IDENTIFIER__BOOLEAN = RESULT_TYPE_FEATURE_COUNT + 2;
+
+  /**
+   * The feature id for the '<em><b>Integer</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TYPE_IDENTIFIER__INTEGER = RESULT_TYPE_FEATURE_COUNT + 3;
+
+  /**
+   * The feature id for the '<em><b>Real</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TYPE_IDENTIFIER__REAL = RESULT_TYPE_FEATURE_COUNT + 4;
+
+  /**
+   * The feature id for the '<em><b>String</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TYPE_IDENTIFIER__STRING = RESULT_TYPE_FEATURE_COUNT + 5;
+
+  /**
    * The number of structural features of the '<em>type Identifier</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int TYPE_IDENTIFIER_FEATURE_COUNT = RESULT_TYPE_FEATURE_COUNT + 1;
+  int TYPE_IDENTIFIER_FEATURE_COUNT = RESULT_TYPE_FEATURE_COUNT + 6;
 
   /**
    * The meta object id for the '{@link compilador.pascal.impl.procedureTypeImpl <em>procedure Type</em>}' class.
@@ -970,7 +1043,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getprocedureType()
    * @generated
    */
-  int PROCEDURE_TYPE = 22;
+  int PROCEDURE_TYPE = 23;
 
   /**
    * The feature id for the '<em><b>Formal Parameter List</b></em>' containment reference.
@@ -998,7 +1071,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#gettype()
    * @generated
    */
-  int TYPE = 23;
+  int TYPE = 24;
 
   /**
    * The feature id for the '<em><b>Simple Type</b></em>' containment reference.
@@ -1044,7 +1117,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getpointerType()
    * @generated
    */
-  int POINTER_TYPE = 24;
+  int POINTER_TYPE = 25;
 
   /**
    * The feature id for the '<em><b>Type Identifier</b></em>' containment reference.
@@ -1072,7 +1145,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getsimpleType()
    * @generated
    */
-  int SIMPLE_TYPE = 25;
+  int SIMPLE_TYPE = 26;
 
   /**
    * The feature id for the '<em><b>Scalar Type</b></em>' containment reference.
@@ -1127,7 +1200,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getscalarType()
    * @generated
    */
-  int SCALAR_TYPE = 26;
+  int SCALAR_TYPE = 27;
 
   /**
    * The feature id for the '<em><b>Identifier List</b></em>' containment reference.
@@ -1155,7 +1228,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getsubrangeType()
    * @generated
    */
-  int SUBRANGE_TYPE = 27;
+  int SUBRANGE_TYPE = 28;
 
   /**
    * The feature id for the '<em><b>Constant</b></em>' containment reference.
@@ -1192,7 +1265,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getstructuredType()
    * @generated
    */
-  int STRUCTURED_TYPE = 28;
+  int STRUCTURED_TYPE = 29;
 
   /**
    * The feature id for the '<em><b>Unpacked Structured Type</b></em>' containment reference.
@@ -1229,7 +1302,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getunpackedStructuredType()
    * @generated
    */
-  int UNPACKED_STRUCTURED_TYPE = 29;
+  int UNPACKED_STRUCTURED_TYPE = 30;
 
   /**
    * The feature id for the '<em><b>Record Type</b></em>' containment reference.
@@ -1257,10 +1330,10 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getstringtype()
    * @generated
    */
-  int STRINGTYPE = 30;
+  int STRINGTYPE = 31;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -1294,7 +1367,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getrecordType()
    * @generated
    */
-  int RECORD_TYPE = 31;
+  int RECORD_TYPE = 32;
 
   /**
    * The feature id for the '<em><b>Field List</b></em>' containment reference.
@@ -1322,7 +1395,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getfieldList()
    * @generated
    */
-  int FIELD_LIST = 32;
+  int FIELD_LIST = 33;
 
   /**
    * The feature id for the '<em><b>Fixed Part</b></em>' containment reference.
@@ -1368,7 +1441,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getfixedPart()
    * @generated
    */
-  int FIXED_PART = 33;
+  int FIXED_PART = 34;
 
   /**
    * The feature id for the '<em><b>Record Section</b></em>' containment reference.
@@ -1405,7 +1478,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getrecordSection()
    * @generated
    */
-  int RECORD_SECTION = 34;
+  int RECORD_SECTION = 35;
 
   /**
    * The feature id for the '<em><b>Identifier List</b></em>' containment reference.
@@ -1442,7 +1515,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getvariantPart()
    * @generated
    */
-  int VARIANT_PART = 35;
+  int VARIANT_PART = 36;
 
   /**
    * The feature id for the '<em><b>Tag</b></em>' containment reference.
@@ -1488,10 +1561,10 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#gettag()
    * @generated
    */
-  int TAG = 36;
+  int TAG = 37;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -1534,7 +1607,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getconstList()
    * @generated
    */
-  int CONST_LIST = 38;
+  int CONST_LIST = 39;
 
   /**
    * The feature id for the '<em><b>Constant</b></em>' containment reference.
@@ -1571,7 +1644,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getvariableDeclarationPart()
    * @generated
    */
-  int VARIABLE_DECLARATION_PART = 39;
+  int VARIABLE_DECLARATION_PART = 40;
 
   /**
    * The feature id for the '<em><b>Variable Declaration</b></em>' containment reference.
@@ -1608,7 +1681,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getvariableDeclaration()
    * @generated
    */
-  int VARIABLE_DECLARATION = 40;
+  int VARIABLE_DECLARATION = 41;
 
   /**
    * The feature id for the '<em><b>Identifier List</b></em>' containment reference.
@@ -1654,7 +1727,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getprocedureAndFunctionDeclarationPart()
    * @generated
    */
-  int PROCEDURE_AND_FUNCTION_DECLARATION_PART = 41;
+  int PROCEDURE_AND_FUNCTION_DECLARATION_PART = 42;
 
   /**
    * The feature id for the '<em><b>Procedure Or Function Declaration</b></em>' containment reference.
@@ -1682,7 +1755,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getprocedureOrFunctionDeclaration()
    * @generated
    */
-  int PROCEDURE_OR_FUNCTION_DECLARATION = 42;
+  int PROCEDURE_OR_FUNCTION_DECLARATION = 43;
 
   /**
    * The feature id for the '<em><b>Procedure Declaration</b></em>' containment reference.
@@ -1719,10 +1792,10 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getprocedureDeclaration()
    * @generated
    */
-  int PROCEDURE_DECLARATION = 43;
+  int PROCEDURE_DECLARATION = 44;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -1765,10 +1838,10 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getfunctionDeclaration()
    * @generated
    */
-  int FUNCTION_DECLARATION = 44;
+  int FUNCTION_DECLARATION = 45;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -1820,7 +1893,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getstatement()
    * @generated
    */
-  int STATEMENT = 45;
+  int STATEMENT = 46;
 
   /**
    * The feature id for the '<em><b>Unlabelled Statement</b></em>' containment reference.
@@ -1848,7 +1921,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getunlabelledStatement()
    * @generated
    */
-  int UNLABELLED_STATEMENT = 46;
+  int UNLABELLED_STATEMENT = 47;
 
   /**
    * The feature id for the '<em><b>Simple Statement</b></em>' containment reference.
@@ -1869,7 +1942,7 @@ public interface PascalPackage extends EPackage
   int UNLABELLED_STATEMENT__STRUCTURED_STATEMENT = 1;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -1903,7 +1976,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getsimpleStatement()
    * @generated
    */
-  int SIMPLE_STATEMENT = 47;
+  int SIMPLE_STATEMENT = 48;
 
   /**
    * The feature id for the '<em><b>Goto Statement</b></em>' containment reference.
@@ -1940,7 +2013,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getassignmentStatement()
    * @generated
    */
-  int ASSIGNMENT_STATEMENT = 48;
+  int ASSIGNMENT_STATEMENT = 49;
 
   /**
    * The feature id for the '<em><b>Variable</b></em>' containment reference.
@@ -1977,10 +2050,10 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getvariable()
    * @generated
    */
-  int VARIABLE = 49;
+  int VARIABLE = 50;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -2025,7 +2098,7 @@ public interface PascalPackage extends EPackage
   int VARIABLE__EXPRESSION3 = 4;
 
   /**
-   * The feature id for the '<em><b>Identifier2</b></em>' attribute list.
+   * The feature id for the '<em><b>Identifier2</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -2050,7 +2123,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getexpression()
    * @generated
    */
-  int EXPRESSION = 50;
+  int EXPRESSION = 51;
 
   /**
    * The feature id for the '<em><b>Simple Expression</b></em>' containment reference.
@@ -2096,7 +2169,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getsimpleExpression()
    * @generated
    */
-  int SIMPLE_EXPRESSION = 51;
+  int SIMPLE_EXPRESSION = 52;
 
   /**
    * The feature id for the '<em><b>Term</b></em>' containment reference.
@@ -2142,7 +2215,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getterm()
    * @generated
    */
-  int TERM = 52;
+  int TERM = 53;
 
   /**
    * The feature id for the '<em><b>Signed Factor</b></em>' containment reference.
@@ -2188,7 +2261,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getsignedFactor()
    * @generated
    */
-  int SIGNED_FACTOR = 53;
+  int SIGNED_FACTOR = 54;
 
   /**
    * The feature id for the '<em><b>Factor</b></em>' containment reference.
@@ -2216,7 +2289,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getfactor()
    * @generated
    */
-  int FACTOR = 54;
+  int FACTOR = 55;
 
   /**
    * The feature id for the '<em><b>Expression</b></em>' containment reference.
@@ -2289,7 +2362,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getunsignedConstant()
    * @generated
    */
-  int UNSIGNED_CONSTANT = 55;
+  int UNSIGNED_CONSTANT = 56;
 
   /**
    * The feature id for the '<em><b>Unsigned Number</b></em>' containment reference.
@@ -2335,10 +2408,10 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getfunctionDesignator()
    * @generated
    */
-  int FUNCTION_DESIGNATOR = 56;
+  int FUNCTION_DESIGNATOR = 57;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' attribute.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -2372,7 +2445,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getparameterList()
    * @generated
    */
-  int PARAMETER_LIST = 57;
+  int PARAMETER_LIST = 58;
 
   /**
    * The number of structural features of the '<em>parameter List</em>' class.
@@ -2391,7 +2464,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getactualParameter()
    * @generated
    */
-  int ACTUAL_PARAMETER = 58;
+  int ACTUAL_PARAMETER = 59;
 
   /**
    * The feature id for the '<em><b>Actual Parameter</b></em>' containment reference list.
@@ -2428,7 +2501,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getgotoStatement()
    * @generated
    */
-  int GOTO_STATEMENT = 59;
+  int GOTO_STATEMENT = 60;
 
   /**
    * The feature id for the '<em><b>Label</b></em>' containment reference.
@@ -2456,7 +2529,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getstructuredStatement()
    * @generated
    */
-  int STRUCTURED_STATEMENT = 60;
+  int STRUCTURED_STATEMENT = 61;
 
   /**
    * The feature id for the '<em><b>Compound Statement</b></em>' containment reference.
@@ -2493,7 +2566,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getcompoundStatement()
    * @generated
    */
-  int COMPOUND_STATEMENT = 61;
+  int COMPOUND_STATEMENT = 62;
 
   /**
    * The number of structural features of the '<em>compound Statement</em>' class.
@@ -2512,7 +2585,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getstatements()
    * @generated
    */
-  int STATEMENTS = 62;
+  int STATEMENTS = 63;
 
   /**
    * The feature id for the '<em><b>Statement</b></em>' containment reference list.
@@ -2540,7 +2613,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getconditionalStatement()
    * @generated
    */
-  int CONDITIONAL_STATEMENT = 63;
+  int CONDITIONAL_STATEMENT = 64;
 
   /**
    * The feature id for the '<em><b>Case Statement</b></em>' containment reference.
@@ -2568,7 +2641,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getcaseStatement()
    * @generated
    */
-  int CASE_STATEMENT = 64;
+  int CASE_STATEMENT = 65;
 
   /**
    * The feature id for the '<em><b>Expression</b></em>' containment reference.
@@ -2623,7 +2696,7 @@ public interface PascalPackage extends EPackage
    * @see compilador.pascal.impl.PascalPackageImpl#getcaseListElement()
    * @generated
    */
-  int CASE_LIST_ELEMENT = 65;
+  int CASE_LIST_ELEMENT = 66;
 
   /**
    * The feature id for the '<em><b>Const List</b></em>' containment reference.
@@ -2717,15 +2790,15 @@ public interface PascalPackage extends EPackage
   EClass getprogramHeading();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.programHeading#getIdentifer <em>Identifer</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.programHeading#getIdentifer <em>Identifer</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifer</em>'.
+   * @return the meta object for the containment reference '<em>Identifer</em>'.
    * @see compilador.pascal.programHeading#getIdentifer()
    * @see #getprogramHeading()
    * @generated
    */
-  EAttribute getprogramHeading_Identifer();
+  EReference getprogramHeading_Identifer();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.programHeading#getIdentifierList <em>Identifier List</em>}'.
@@ -2749,26 +2822,47 @@ public interface PascalPackage extends EPackage
   EClass getidentifierList();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.identifierList#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.identifierList#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.identifierList#getIdentifier()
    * @see #getidentifierList()
    * @generated
    */
-  EAttribute getidentifierList_Identifier();
+  EReference getidentifierList_Identifier();
 
   /**
-   * Returns the meta object for the attribute list '{@link compilador.pascal.identifierList#getIdentifierList <em>Identifier List</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.identifierList#getIdentifierList1 <em>Identifier List1</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Identifier List</em>'.
-   * @see compilador.pascal.identifierList#getIdentifierList()
+   * @return the meta object for the containment reference list '<em>Identifier List1</em>'.
+   * @see compilador.pascal.identifierList#getIdentifierList1()
    * @see #getidentifierList()
    * @generated
    */
-  EAttribute getidentifierList_IdentifierList();
+  EReference getidentifierList_IdentifierList1();
+
+  /**
+   * Returns the meta object for class '{@link compilador.pascal.identifier <em>identifier</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>identifier</em>'.
+   * @see compilador.pascal.identifier
+   * @generated
+   */
+  EClass getidentifier();
+
+  /**
+   * Returns the meta object for the attribute '{@link compilador.pascal.identifier#getIdentifier <em>Identifier</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @see compilador.pascal.identifier#getIdentifier()
+   * @see #getidentifier()
+   * @generated
+   */
+  EAttribute getidentifier_Identifier();
 
   /**
    * Returns the meta object for class '{@link compilador.pascal.block <em>block</em>}'.
@@ -2814,15 +2908,15 @@ public interface PascalPackage extends EPackage
   EReference getblock_TypeDefinitionPart();
 
   /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getVariableDeclarationPart <em>Variable Declaration Part</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getVariableDeclarationParts <em>Variable Declaration Parts</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Variable Declaration Part</em>'.
-   * @see compilador.pascal.block#getVariableDeclarationPart()
+   * @return the meta object for the containment reference list '<em>Variable Declaration Parts</em>'.
+   * @see compilador.pascal.block#getVariableDeclarationParts()
    * @see #getblock()
    * @generated
    */
-  EReference getblock_VariableDeclarationPart();
+  EReference getblock_VariableDeclarationParts();
 
   /**
    * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getProcedureAndFunctionDeclarationPart <em>Procedure And Function Declaration Part</em>}'.
@@ -2900,15 +2994,15 @@ public interface PascalPackage extends EPackage
   EReference getlabel_UnsignedInteger();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.label#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.label#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.label#getIdentifier()
    * @see #getlabel()
    * @generated
    */
-  EAttribute getlabel_Identifier();
+  EReference getlabel_Identifier();
 
   /**
    * Returns the meta object for class '{@link compilador.pascal.unsignedInteger <em>unsigned Integer</em>}'.
@@ -2963,15 +3057,15 @@ public interface PascalPackage extends EPackage
   EClass getconstantDefinition();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.constantDefinition#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.constantDefinition#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.constantDefinition#getIdentifier()
    * @see #getconstantDefinition()
    * @generated
    */
-  EAttribute getconstantDefinition_Identifier();
+  EReference getconstantDefinition_Identifier();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.constantDefinition#getConstant <em>Constant</em>}'.
@@ -3028,15 +3122,15 @@ public interface PascalPackage extends EPackage
   EReference getconstant_Number1();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.constant#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.constant#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.constant#getIdentifier()
    * @see #getconstant()
    * @generated
    */
-  EAttribute getconstant_Identifier();
+  EReference getconstant_Identifier();
 
   /**
    * Returns the meta object for the attribute '{@link compilador.pascal.constant#getSTRING_LITERAL <em>STRING LITERAL</em>}'.
@@ -3061,15 +3155,15 @@ public interface PascalPackage extends EPackage
   EAttribute getconstant_Sign2();
 
   /**
-   * Returns the meta object for the attribute list '{@link compilador.pascal.constant#getIdentifier1 <em>Identifier1</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.constant#getIdentifier1 <em>Identifier1</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Identifier1</em>'.
+   * @return the meta object for the containment reference list '<em>Identifier1</em>'.
    * @see compilador.pascal.constant#getIdentifier1()
    * @see #getconstant()
    * @generated
    */
-  EAttribute getconstant_Identifier1();
+  EReference getconstant_Identifier1();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.constant#getConstantChr <em>Constant Chr</em>}'.
@@ -3210,15 +3304,15 @@ public interface PascalPackage extends EPackage
   EClass gettypeDefinition();
 
   /**
-   * Returns the meta object for the attribute list '{@link compilador.pascal.typeDefinition#getIndentifier <em>Indentifier</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.typeDefinition#getIndentifier <em>Indentifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Indentifier</em>'.
+   * @return the meta object for the containment reference list '<em>Indentifier</em>'.
    * @see compilador.pascal.typeDefinition#getIndentifier()
    * @see #gettypeDefinition()
    * @generated
    */
-  EAttribute gettypeDefinition_Indentifier();
+  EReference gettypeDefinition_Indentifier();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.typeDefinition#getType <em>Type</em>}'.
@@ -3424,15 +3518,70 @@ public interface PascalPackage extends EPackage
   EClass gettypeIdentifier();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.typeIdentifier#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.typeIdentifier#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.typeIdentifier#getIdentifier()
    * @see #gettypeIdentifier()
    * @generated
    */
-  EAttribute gettypeIdentifier_Identifier();
+  EReference gettypeIdentifier_Identifier();
+
+  /**
+   * Returns the meta object for the attribute '{@link compilador.pascal.typeIdentifier#getChar <em>Char</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Char</em>'.
+   * @see compilador.pascal.typeIdentifier#getChar()
+   * @see #gettypeIdentifier()
+   * @generated
+   */
+  EAttribute gettypeIdentifier_Char();
+
+  /**
+   * Returns the meta object for the attribute '{@link compilador.pascal.typeIdentifier#getBoolean <em>Boolean</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Boolean</em>'.
+   * @see compilador.pascal.typeIdentifier#getBoolean()
+   * @see #gettypeIdentifier()
+   * @generated
+   */
+  EAttribute gettypeIdentifier_Boolean();
+
+  /**
+   * Returns the meta object for the attribute '{@link compilador.pascal.typeIdentifier#getInteger <em>Integer</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Integer</em>'.
+   * @see compilador.pascal.typeIdentifier#getInteger()
+   * @see #gettypeIdentifier()
+   * @generated
+   */
+  EAttribute gettypeIdentifier_Integer();
+
+  /**
+   * Returns the meta object for the attribute '{@link compilador.pascal.typeIdentifier#getReal <em>Real</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Real</em>'.
+   * @see compilador.pascal.typeIdentifier#getReal()
+   * @see #gettypeIdentifier()
+   * @generated
+   */
+  EAttribute gettypeIdentifier_Real();
+
+  /**
+   * Returns the meta object for the attribute '{@link compilador.pascal.typeIdentifier#getString <em>String</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>String</em>'.
+   * @see compilador.pascal.typeIdentifier#getString()
+   * @see #gettypeIdentifier()
+   * @generated
+   */
+  EAttribute gettypeIdentifier_String();
 
   /**
    * Returns the meta object for class '{@link compilador.pascal.procedureType <em>procedure Type</em>}'.
@@ -3690,15 +3839,15 @@ public interface PascalPackage extends EPackage
   EClass getstringtype();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.stringtype#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.stringtype#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.stringtype#getIdentifier()
    * @see #getstringtype()
    * @generated
    */
-  EAttribute getstringtype_Identifier();
+  EReference getstringtype_Identifier();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.stringtype#getUnsignedNumber <em>Unsigned Number</em>}'.
@@ -3893,15 +4042,15 @@ public interface PascalPackage extends EPackage
   EClass gettag();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.tag#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.tag#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.tag#getIdentifier()
    * @see #gettag()
    * @generated
    */
-  EAttribute gettag_Identifier();
+  EReference gettag_Identifier();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.tag#getTypeIdentifier <em>Type Identifier</em>}'.
@@ -4106,15 +4255,15 @@ public interface PascalPackage extends EPackage
   EClass getprocedureDeclaration();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.procedureDeclaration#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.procedureDeclaration#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.procedureDeclaration#getIdentifier()
    * @see #getprocedureDeclaration()
    * @generated
    */
-  EAttribute getprocedureDeclaration_Identifier();
+  EReference getprocedureDeclaration_Identifier();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.procedureDeclaration#getFormalParameterList <em>Formal Parameter List</em>}'.
@@ -4149,15 +4298,15 @@ public interface PascalPackage extends EPackage
   EClass getfunctionDeclaration();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.functionDeclaration#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.functionDeclaration#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.functionDeclaration#getIdentifier()
    * @see #getfunctionDeclaration()
    * @generated
    */
-  EAttribute getfunctionDeclaration_Identifier();
+  EReference getfunctionDeclaration_Identifier();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.functionDeclaration#getFormalParameterList <em>Formal Parameter List</em>}'.
@@ -4246,15 +4395,15 @@ public interface PascalPackage extends EPackage
   EReference getunlabelledStatement_StructuredStatement();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.unlabelledStatement#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.unlabelledStatement#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.unlabelledStatement#getIdentifier()
    * @see #getunlabelledStatement()
    * @generated
    */
-  EAttribute getunlabelledStatement_Identifier();
+  EReference getunlabelledStatement_Identifier();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.unlabelledStatement#getParameterList <em>Parameter List</em>}'.
@@ -4342,15 +4491,15 @@ public interface PascalPackage extends EPackage
   EClass getvariable();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.variable#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.variable#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.variable#getIdentifier()
    * @see #getvariable()
    * @generated
    */
-  EAttribute getvariable_Identifier();
+  EReference getvariable_Identifier();
 
   /**
    * Returns the meta object for the containment reference list '{@link compilador.pascal.variable#getExpression <em>Expression</em>}'.
@@ -4397,15 +4546,15 @@ public interface PascalPackage extends EPackage
   EReference getvariable_Expression3();
 
   /**
-   * Returns the meta object for the attribute list '{@link compilador.pascal.variable#getIdentifier2 <em>Identifier2</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.variable#getIdentifier2 <em>Identifier2</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Identifier2</em>'.
+   * @return the meta object for the containment reference list '<em>Identifier2</em>'.
    * @see compilador.pascal.variable#getIdentifier2()
    * @see #getvariable()
    * @generated
    */
-  EAttribute getvariable_Identifier2();
+  EReference getvariable_Identifier2();
 
   /**
    * Returns the meta object for class '{@link compilador.pascal.expression <em>expression</em>}'.
@@ -4687,15 +4836,15 @@ public interface PascalPackage extends EPackage
   EClass getfunctionDesignator();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.functionDesignator#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.functionDesignator#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Identifier</em>'.
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
    * @see compilador.pascal.functionDesignator#getIdentifier()
    * @see #getfunctionDesignator()
    * @generated
    */
-  EAttribute getfunctionDesignator_Identifier();
+  EReference getfunctionDesignator_Identifier();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.functionDesignator#getParameterList <em>Parameter List</em>}'.
@@ -5019,12 +5168,12 @@ public interface PascalPackage extends EPackage
     EClass PROGRAM_HEADING = eINSTANCE.getprogramHeading();
 
     /**
-     * The meta object literal for the '<em><b>Identifer</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifer</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PROGRAM_HEADING__IDENTIFER = eINSTANCE.getprogramHeading_Identifer();
+    EReference PROGRAM_HEADING__IDENTIFER = eINSTANCE.getprogramHeading_Identifer();
 
     /**
      * The meta object literal for the '<em><b>Identifier List</b></em>' containment reference feature.
@@ -5045,20 +5194,38 @@ public interface PascalPackage extends EPackage
     EClass IDENTIFIER_LIST = eINSTANCE.getidentifierList();
 
     /**
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference IDENTIFIER_LIST__IDENTIFIER = eINSTANCE.getidentifierList_Identifier();
+
+    /**
+     * The meta object literal for the '<em><b>Identifier List1</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference IDENTIFIER_LIST__IDENTIFIER_LIST1 = eINSTANCE.getidentifierList_IdentifierList1();
+
+    /**
+     * The meta object literal for the '{@link compilador.pascal.impl.identifierImpl <em>identifier</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see compilador.pascal.impl.identifierImpl
+     * @see compilador.pascal.impl.PascalPackageImpl#getidentifier()
+     * @generated
+     */
+    EClass IDENTIFIER = eINSTANCE.getidentifier();
+
+    /**
      * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute IDENTIFIER_LIST__IDENTIFIER = eINSTANCE.getidentifierList_Identifier();
-
-    /**
-     * The meta object literal for the '<em><b>Identifier List</b></em>' attribute list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute IDENTIFIER_LIST__IDENTIFIER_LIST = eINSTANCE.getidentifierList_IdentifierList();
+    EAttribute IDENTIFIER__IDENTIFIER = eINSTANCE.getidentifier_Identifier();
 
     /**
      * The meta object literal for the '{@link compilador.pascal.impl.blockImpl <em>block</em>}' class.
@@ -5095,12 +5262,12 @@ public interface PascalPackage extends EPackage
     EReference BLOCK__TYPE_DEFINITION_PART = eINSTANCE.getblock_TypeDefinitionPart();
 
     /**
-     * The meta object literal for the '<em><b>Variable Declaration Part</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Variable Declaration Parts</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference BLOCK__VARIABLE_DECLARATION_PART = eINSTANCE.getblock_VariableDeclarationPart();
+    EReference BLOCK__VARIABLE_DECLARATION_PARTS = eINSTANCE.getblock_VariableDeclarationParts();
 
     /**
      * The meta object literal for the '<em><b>Procedure And Function Declaration Part</b></em>' containment reference list feature.
@@ -5163,12 +5330,12 @@ public interface PascalPackage extends EPackage
     EReference LABEL__UNSIGNED_INTEGER = eINSTANCE.getlabel_UnsignedInteger();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute LABEL__IDENTIFIER = eINSTANCE.getlabel_Identifier();
+    EReference LABEL__IDENTIFIER = eINSTANCE.getlabel_Identifier();
 
     /**
      * The meta object literal for the '{@link compilador.pascal.impl.unsignedIntegerImpl <em>unsigned Integer</em>}' class.
@@ -5217,12 +5384,12 @@ public interface PascalPackage extends EPackage
     EClass CONSTANT_DEFINITION = eINSTANCE.getconstantDefinition();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute CONSTANT_DEFINITION__IDENTIFIER = eINSTANCE.getconstantDefinition_Identifier();
+    EReference CONSTANT_DEFINITION__IDENTIFIER = eINSTANCE.getconstantDefinition_Identifier();
 
     /**
      * The meta object literal for the '<em><b>Constant</b></em>' containment reference feature.
@@ -5267,12 +5434,12 @@ public interface PascalPackage extends EPackage
     EReference CONSTANT__NUMBER1 = eINSTANCE.getconstant_Number1();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute CONSTANT__IDENTIFIER = eINSTANCE.getconstant_Identifier();
+    EReference CONSTANT__IDENTIFIER = eINSTANCE.getconstant_Identifier();
 
     /**
      * The meta object literal for the '<em><b>STRING LITERAL</b></em>' attribute feature.
@@ -5291,12 +5458,12 @@ public interface PascalPackage extends EPackage
     EAttribute CONSTANT__SIGN2 = eINSTANCE.getconstant_Sign2();
 
     /**
-     * The meta object literal for the '<em><b>Identifier1</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Identifier1</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute CONSTANT__IDENTIFIER1 = eINSTANCE.getconstant_Identifier1();
+    EReference CONSTANT__IDENTIFIER1 = eINSTANCE.getconstant_Identifier1();
 
     /**
      * The meta object literal for the '<em><b>Constant Chr</b></em>' containment reference feature.
@@ -5413,12 +5580,12 @@ public interface PascalPackage extends EPackage
     EClass TYPE_DEFINITION = eINSTANCE.gettypeDefinition();
 
     /**
-     * The meta object literal for the '<em><b>Indentifier</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Indentifier</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute TYPE_DEFINITION__INDENTIFIER = eINSTANCE.gettypeDefinition_Indentifier();
+    EReference TYPE_DEFINITION__INDENTIFIER = eINSTANCE.gettypeDefinition_Indentifier();
 
     /**
      * The meta object literal for the '<em><b>Type</b></em>' containment reference feature.
@@ -5585,12 +5752,52 @@ public interface PascalPackage extends EPackage
     EClass TYPE_IDENTIFIER = eINSTANCE.gettypeIdentifier();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute TYPE_IDENTIFIER__IDENTIFIER = eINSTANCE.gettypeIdentifier_Identifier();
+    EReference TYPE_IDENTIFIER__IDENTIFIER = eINSTANCE.gettypeIdentifier_Identifier();
+
+    /**
+     * The meta object literal for the '<em><b>Char</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute TYPE_IDENTIFIER__CHAR = eINSTANCE.gettypeIdentifier_Char();
+
+    /**
+     * The meta object literal for the '<em><b>Boolean</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute TYPE_IDENTIFIER__BOOLEAN = eINSTANCE.gettypeIdentifier_Boolean();
+
+    /**
+     * The meta object literal for the '<em><b>Integer</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute TYPE_IDENTIFIER__INTEGER = eINSTANCE.gettypeIdentifier_Integer();
+
+    /**
+     * The meta object literal for the '<em><b>Real</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute TYPE_IDENTIFIER__REAL = eINSTANCE.gettypeIdentifier_Real();
+
+    /**
+     * The meta object literal for the '<em><b>String</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute TYPE_IDENTIFIER__STRING = eINSTANCE.gettypeIdentifier_String();
 
     /**
      * The meta object literal for the '{@link compilador.pascal.impl.procedureTypeImpl <em>procedure Type</em>}' class.
@@ -5803,12 +6010,12 @@ public interface PascalPackage extends EPackage
     EClass STRINGTYPE = eINSTANCE.getstringtype();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute STRINGTYPE__IDENTIFIER = eINSTANCE.getstringtype_Identifier();
+    EReference STRINGTYPE__IDENTIFIER = eINSTANCE.getstringtype_Identifier();
 
     /**
      * The meta object literal for the '<em><b>Unsigned Number</b></em>' containment reference feature.
@@ -5967,12 +6174,12 @@ public interface PascalPackage extends EPackage
     EClass TAG = eINSTANCE.gettag();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute TAG__IDENTIFIER = eINSTANCE.gettag_Identifier();
+    EReference TAG__IDENTIFIER = eINSTANCE.gettag_Identifier();
 
     /**
      * The meta object literal for the '<em><b>Type Identifier</b></em>' containment reference feature.
@@ -6141,12 +6348,12 @@ public interface PascalPackage extends EPackage
     EClass PROCEDURE_DECLARATION = eINSTANCE.getprocedureDeclaration();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PROCEDURE_DECLARATION__IDENTIFIER = eINSTANCE.getprocedureDeclaration_Identifier();
+    EReference PROCEDURE_DECLARATION__IDENTIFIER = eINSTANCE.getprocedureDeclaration_Identifier();
 
     /**
      * The meta object literal for the '<em><b>Formal Parameter List</b></em>' containment reference feature.
@@ -6175,12 +6382,12 @@ public interface PascalPackage extends EPackage
     EClass FUNCTION_DECLARATION = eINSTANCE.getfunctionDeclaration();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute FUNCTION_DECLARATION__IDENTIFIER = eINSTANCE.getfunctionDeclaration_Identifier();
+    EReference FUNCTION_DECLARATION__IDENTIFIER = eINSTANCE.getfunctionDeclaration_Identifier();
 
     /**
      * The meta object literal for the '<em><b>Formal Parameter List</b></em>' containment reference feature.
@@ -6251,12 +6458,12 @@ public interface PascalPackage extends EPackage
     EReference UNLABELLED_STATEMENT__STRUCTURED_STATEMENT = eINSTANCE.getunlabelledStatement_StructuredStatement();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute UNLABELLED_STATEMENT__IDENTIFIER = eINSTANCE.getunlabelledStatement_Identifier();
+    EReference UNLABELLED_STATEMENT__IDENTIFIER = eINSTANCE.getunlabelledStatement_Identifier();
 
     /**
      * The meta object literal for the '<em><b>Parameter List</b></em>' containment reference feature.
@@ -6329,12 +6536,12 @@ public interface PascalPackage extends EPackage
     EClass VARIABLE = eINSTANCE.getvariable();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute VARIABLE__IDENTIFIER = eINSTANCE.getvariable_Identifier();
+    EReference VARIABLE__IDENTIFIER = eINSTANCE.getvariable_Identifier();
 
     /**
      * The meta object literal for the '<em><b>Expression</b></em>' containment reference list feature.
@@ -6369,12 +6576,12 @@ public interface PascalPackage extends EPackage
     EReference VARIABLE__EXPRESSION3 = eINSTANCE.getvariable_Expression3();
 
     /**
-     * The meta object literal for the '<em><b>Identifier2</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Identifier2</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute VARIABLE__IDENTIFIER2 = eINSTANCE.getvariable_Identifier2();
+    EReference VARIABLE__IDENTIFIER2 = eINSTANCE.getvariable_Identifier2();
 
     /**
      * The meta object literal for the '{@link compilador.pascal.impl.expressionImpl <em>expression</em>}' class.
@@ -6599,12 +6806,12 @@ public interface PascalPackage extends EPackage
     EClass FUNCTION_DESIGNATOR = eINSTANCE.getfunctionDesignator();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute FUNCTION_DESIGNATOR__IDENTIFIER = eINSTANCE.getfunctionDesignator_Identifier();
+    EReference FUNCTION_DESIGNATOR__IDENTIFIER = eINSTANCE.getfunctionDesignator_Identifier();
 
     /**
      * The meta object literal for the '<em><b>Parameter List</b></em>' containment reference feature.

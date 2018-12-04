@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.programHeading#getIdentifer <em>Identifer</em>}</li>
  *   <li>{@link compilador.pascal.programHeading#getIdentifierList <em>Identifier List</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getprogramHeading()
  * @model
@@ -25,30 +25,30 @@ import org.eclipse.emf.ecore.EObject;
 public interface programHeading extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Identifer</b></em>' attribute.
+   * Returns the value of the '<em><b>Identifer</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Identifer</em>' attribute isn't clear,
+   * If the meaning of the '<em>Identifer</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Identifer</em>' attribute.
-   * @see #setIdentifer(String)
+   * @return the value of the '<em>Identifer</em>' containment reference.
+   * @see #setIdentifer(identifier)
    * @see compilador.pascal.PascalPackage#getprogramHeading_Identifer()
-   * @model
+   * @model containment="true"
    * @generated
    */
-  String getIdentifer();
+  identifier getIdentifer();
 
   /**
-   * Sets the value of the '{@link compilador.pascal.programHeading#getIdentifer <em>Identifer</em>}' attribute.
+   * Sets the value of the '{@link compilador.pascal.programHeading#getIdentifer <em>Identifer</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Identifer</em>' attribute.
+   * @param value the new value of the '<em>Identifer</em>' containment reference.
    * @see #getIdentifer()
    * @generated
    */
-  void setIdentifer(String value);
+  void setIdentifer(identifier value);
 
   /**
    * Returns the value of the '<em><b>Identifier List</b></em>' containment reference.

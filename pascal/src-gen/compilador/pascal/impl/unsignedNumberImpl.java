@@ -22,11 +22,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.unsignedNumberImpl#getUnsignedInteger <em>Unsigned Integer</em>}</li>
  *   <li>{@link compilador.pascal.impl.unsignedNumberImpl#getUnsignedReal <em>Unsigned Real</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

@@ -60,6 +60,15 @@ public interface PascalFactory extends EFactory
   identifierList createidentifierList();
 
   /**
+   * Returns a new object of class '<em>identifier</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>identifier</em>'.
+   * @generated
+   */
+  identifier createidentifier();
+
+  /**
    * Returns a new object of class '<em>block</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

@@ -12,10 +12,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.scalarType#getIdentifierList <em>Identifier List</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getscalarType()
  * @model

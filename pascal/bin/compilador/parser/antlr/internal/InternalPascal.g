@@ -255,11 +255,18 @@ ruleidentifierList returns [EObject current=null]
 }:
 	(
 		(
+			{
+				$current = forceCreateModelElement(
+					grammarAccess.getIdentifierListAccess().getIdentifierListAction_0(),
+					$current);
+			}
+		)
+		(
 			(
 				{
-					newCompositeNode(grammarAccess.getIdentifierListAccess().getIdentifierIdentifierParserRuleCall_0_0());
+					newCompositeNode(grammarAccess.getIdentifierListAccess().getIdentifierIdentifierParserRuleCall_1_0());
 				}
-				lv_identifier_0_0=ruleidentifier
+				lv_identifier_1_0=ruleidentifier
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getIdentifierListRule());
@@ -267,31 +274,31 @@ ruleidentifierList returns [EObject current=null]
 					set(
 						$current,
 						"identifier",
-						lv_identifier_0_0,
+						lv_identifier_1_0,
 						"compilador.Pascal.identifier");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_1=','
+			otherlv_2=','
 			{
-				newLeafNode(otherlv_1, grammarAccess.getIdentifierListAccess().getCommaKeyword_1_0());
+				newLeafNode(otherlv_2, grammarAccess.getIdentifierListAccess().getCommaKeyword_2_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getIdentifierListAccess().getIdentifierListIdentifierParserRuleCall_1_1_0());
+						newCompositeNode(grammarAccess.getIdentifierListAccess().getIdentifierList1IdentifierParserRuleCall_2_1_0());
 					}
-					lv_identifierList_2_0=ruleidentifier
+					lv_identifierList1_3_0=ruleidentifier
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getIdentifierListRule());
 						}
 						add(
 							$current,
-							"identifierList",
-							lv_identifierList_2_0,
+							"identifierList1",
+							lv_identifierList1_3_0,
 							"compilador.Pascal.identifier");
 						afterParserOrEnumRuleCall();
 					}
@@ -302,27 +309,38 @@ ruleidentifierList returns [EObject current=null]
 ;
 
 // Entry rule entryRuleidentifier
-entryRuleidentifier returns [String current=null]:
+entryRuleidentifier returns [EObject current=null]:
 	{ newCompositeNode(grammarAccess.getIdentifierRule()); }
 	iv_ruleidentifier=ruleidentifier
-	{ $current=$iv_ruleidentifier.current.getText(); }
+	{ $current=$iv_ruleidentifier.current; }
 	EOF;
 
 // Rule identifier
-ruleidentifier returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+ruleidentifier returns [EObject current=null]
 @init {
 	enterRule();
 }
 @after {
 	leaveRule();
 }:
-	this_IDENT_0=RULE_IDENT
-	{
-		$current.merge(this_IDENT_0);
-	}
-	{
-		newLeafNode(this_IDENT_0, grammarAccess.getIdentifierAccess().getIDENTTerminalRuleCall());
-	}
+	(
+		(
+			lv_identifier_0_0=RULE_IDENT
+			{
+				newLeafNode(lv_identifier_0_0, grammarAccess.getIdentifierAccess().getIdentifierIDENTTerminalRuleCall_0());
+			}
+			{
+				if ($current==null) {
+					$current = createModelElement(grammarAccess.getIdentifierRule());
+				}
+				setWithLastConsumed(
+					$current,
+					"identifier",
+					lv_identifier_0_0,
+					"compilador.Pascal.IDENT");
+			}
+		)
+	)
 ;
 
 // Entry rule entryRuleblock
@@ -412,17 +430,17 @@ ruleblock returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getBlockAccess().getVariableDeclarationPartVariableDeclarationPartParserRuleCall_1_3_0());
+						newCompositeNode(grammarAccess.getBlockAccess().getVariableDeclarationPartsVariableDeclarationPartParserRuleCall_1_3_0());
 					}
-					lv_variableDeclarationPart_4_0=rulevariableDeclarationPart
+					lv_variableDeclarationParts_4_0=rulevariableDeclarationPart
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getBlockRule());
 						}
 						add(
 							$current,
-							"variableDeclarationPart",
-							lv_variableDeclarationPart_4_0,
+							"variableDeclarationParts",
+							lv_variableDeclarationParts_4_0,
 							"compilador.Pascal.variableDeclarationPart");
 						afterParserOrEnumRuleCall();
 					}
@@ -1672,72 +1690,75 @@ ruletypeIdentifier returns [EObject current=null]
 		    |
 		(
 			(
-				(
-					{
-						$current = forceCreateModelElement(
-							grammarAccess.getTypeIdentifierAccess().getTypeIdentifierAction_1_0_0(),
-							$current);
-					}
-				)
-				otherlv_2='char'
+				lv_char_1_0='char'
 				{
-					newLeafNode(otherlv_2, grammarAccess.getTypeIdentifierAccess().getCharKeyword_1_0_1());
+					newLeafNode(lv_char_1_0, grammarAccess.getTypeIdentifierAccess().getCharCharKeyword_1_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getTypeIdentifierRule());
+					}
+					setWithLastConsumed($current, "char", lv_char_1_0, "char");
 				}
 			)
-			    |
+		)
+		    |
+		(
 			(
-				(
-					{
-						$current = forceCreateModelElement(
-							grammarAccess.getTypeIdentifierAccess().getTypeIdentifierAction_1_1_0(),
-							$current);
-					}
-				)
-				otherlv_4='boolean'
+				lv_boolean_2_0='boolean'
 				{
-					newLeafNode(otherlv_4, grammarAccess.getTypeIdentifierAccess().getBooleanKeyword_1_1_1());
+					newLeafNode(lv_boolean_2_0, grammarAccess.getTypeIdentifierAccess().getBooleanBooleanKeyword_2_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getTypeIdentifierRule());
+					}
+					setWithLastConsumed($current, "boolean", lv_boolean_2_0, "boolean");
 				}
 			)
-			    |
+		)
+		    |
+		(
 			(
-				(
-					{
-						$current = forceCreateModelElement(
-							grammarAccess.getTypeIdentifierAccess().getTypeIdentifierAction_1_2_0(),
-							$current);
-					}
-				)
-				otherlv_6='integer'
+				lv_integer_3_0='integer'
 				{
-					newLeafNode(otherlv_6, grammarAccess.getTypeIdentifierAccess().getIntegerKeyword_1_2_1());
+					newLeafNode(lv_integer_3_0, grammarAccess.getTypeIdentifierAccess().getIntegerIntegerKeyword_3_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getTypeIdentifierRule());
+					}
+					setWithLastConsumed($current, "integer", lv_integer_3_0, "integer");
 				}
 			)
-			    |
+		)
+		    |
+		(
 			(
-				(
-					{
-						$current = forceCreateModelElement(
-							grammarAccess.getTypeIdentifierAccess().getTypeIdentifierAction_1_3_0(),
-							$current);
-					}
-				)
-				otherlv_8='real'
+				lv_real_4_0='real'
 				{
-					newLeafNode(otherlv_8, grammarAccess.getTypeIdentifierAccess().getRealKeyword_1_3_1());
+					newLeafNode(lv_real_4_0, grammarAccess.getTypeIdentifierAccess().getRealRealKeyword_4_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getTypeIdentifierRule());
+					}
+					setWithLastConsumed($current, "real", lv_real_4_0, "real");
 				}
 			)
-			    |
+		)
+		    |
+		(
 			(
-				(
-					{
-						$current = forceCreateModelElement(
-							grammarAccess.getTypeIdentifierAccess().getTypeIdentifierAction_1_4_0(),
-							$current);
-					}
-				)
-				otherlv_10='string'
+				lv_string_5_0='string'
 				{
-					newLeafNode(otherlv_10, grammarAccess.getTypeIdentifierAccess().getStringKeyword_1_4_1());
+					newLeafNode(lv_string_5_0, grammarAccess.getTypeIdentifierAccess().getStringStringKeyword_5_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getTypeIdentifierRule());
+					}
+					setWithLastConsumed($current, "string", lv_string_5_0, "string");
 				}
 			)
 		)

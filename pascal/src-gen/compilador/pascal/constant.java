@@ -12,7 +12,6 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.constant#getNumber <em>Number</em>}</li>
  *   <li>{@link compilador.pascal.constant#getSign <em>Sign</em>}</li>
@@ -25,6 +24,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link compilador.pascal.constant#getConstant <em>Constant</em>}</li>
  *   <li>{@link compilador.pascal.constant#getFieldList <em>Field List</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getconstant()
  * @model
@@ -111,30 +111,30 @@ public interface constant extends variant
   void setNumber1(unsignedNumber value);
 
   /**
-   * Returns the value of the '<em><b>Identifier</b></em>' attribute.
+   * Returns the value of the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Identifier</em>' attribute isn't clear,
+   * If the meaning of the '<em>Identifier</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Identifier</em>' attribute.
-   * @see #setIdentifier(String)
+   * @return the value of the '<em>Identifier</em>' containment reference.
+   * @see #setIdentifier(identifier)
    * @see compilador.pascal.PascalPackage#getconstant_Identifier()
-   * @model
+   * @model containment="true"
    * @generated
    */
-  String getIdentifier();
+  identifier getIdentifier();
 
   /**
-   * Sets the value of the '{@link compilador.pascal.constant#getIdentifier <em>Identifier</em>}' attribute.
+   * Sets the value of the '{@link compilador.pascal.constant#getIdentifier <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Identifier</em>' attribute.
+   * @param value the new value of the '<em>Identifier</em>' containment reference.
    * @see #getIdentifier()
    * @generated
    */
-  void setIdentifier(String value);
+  void setIdentifier(identifier value);
 
   /**
    * Returns the value of the '<em><b>STRING LITERAL</b></em>' attribute.
@@ -179,20 +179,20 @@ public interface constant extends variant
   EList<String> getSign2();
 
   /**
-   * Returns the value of the '<em><b>Identifier1</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Returns the value of the '<em><b>Identifier1</b></em>' containment reference list.
+   * The list contents are of type {@link compilador.pascal.identifier}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Identifier1</em>' attribute list isn't clear,
+   * If the meaning of the '<em>Identifier1</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Identifier1</em>' attribute list.
+   * @return the value of the '<em>Identifier1</em>' containment reference list.
    * @see compilador.pascal.PascalPackage#getconstant_Identifier1()
-   * @model unique="false"
+   * @model containment="true"
    * @generated
    */
-  EList<String> getIdentifier1();
+  EList<identifier> getIdentifier1();
 
   /**
    * Returns the value of the '<em><b>Constant Chr</b></em>' containment reference.

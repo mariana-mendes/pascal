@@ -23,11 +23,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.structuredStatementImpl#getCompoundStatement <em>Compound Statement</em>}</li>
  *   <li>{@link compilador.pascal.impl.structuredStatementImpl#getConditionalStatement <em>Conditional Statement</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

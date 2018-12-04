@@ -4,6 +4,7 @@
 package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
+import compilador.pascal.identifier;
 import compilador.pascal.parameterList;
 import compilador.pascal.simpleStatement;
 import compilador.pascal.structuredStatement;
@@ -24,13 +25,13 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.unlabelledStatementImpl#getSimpleStatement <em>Simple Statement</em>}</li>
  *   <li>{@link compilador.pascal.impl.unlabelledStatementImpl#getStructuredStatement <em>Structured Statement</em>}</li>
  *   <li>{@link compilador.pascal.impl.unlabelledStatementImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.unlabelledStatementImpl#getParameterList <em>Parameter List</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -57,24 +58,14 @@ public class unlabelledStatementImpl extends MinimalEObjectImpl.Container implem
   protected structuredStatement structuredStatement;
 
   /**
-   * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected static final String IDENTIFIER_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getIdentifier()
-   * @generated
-   * @ordered
-   */
-  protected String identifier = IDENTIFIER_EDEFAULT;
+  protected identifier identifier;
 
   /**
    * The cached value of the '{@link #getParameterList() <em>Parameter List</em>}' containment reference.
@@ -208,7 +199,7 @@ public class unlabelledStatementImpl extends MinimalEObjectImpl.Container implem
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getIdentifier()
+  public identifier getIdentifier()
   {
     return identifier;
   }
@@ -218,12 +209,37 @@ public class unlabelledStatementImpl extends MinimalEObjectImpl.Container implem
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setIdentifier(String newIdentifier)
+  public NotificationChain basicSetIdentifier(identifier newIdentifier, NotificationChain msgs)
   {
-    String oldIdentifier = identifier;
+    identifier oldIdentifier = identifier;
     identifier = newIdentifier;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.UNLABELLED_STATEMENT__IDENTIFIER, oldIdentifier, identifier));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.UNLABELLED_STATEMENT__IDENTIFIER, oldIdentifier, newIdentifier);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifier(identifier newIdentifier)
+  {
+    if (newIdentifier != identifier)
+    {
+      NotificationChain msgs = null;
+      if (identifier != null)
+        msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.UNLABELLED_STATEMENT__IDENTIFIER, null, msgs);
+      if (newIdentifier != null)
+        msgs = ((InternalEObject)newIdentifier).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.UNLABELLED_STATEMENT__IDENTIFIER, null, msgs);
+      msgs = basicSetIdentifier(newIdentifier, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.UNLABELLED_STATEMENT__IDENTIFIER, newIdentifier, newIdentifier));
   }
 
   /**
@@ -288,6 +304,8 @@ public class unlabelledStatementImpl extends MinimalEObjectImpl.Container implem
         return basicSetSimpleStatement(null, msgs);
       case PascalPackage.UNLABELLED_STATEMENT__STRUCTURED_STATEMENT:
         return basicSetStructuredStatement(null, msgs);
+      case PascalPackage.UNLABELLED_STATEMENT__IDENTIFIER:
+        return basicSetIdentifier(null, msgs);
       case PascalPackage.UNLABELLED_STATEMENT__PARAMETER_LIST:
         return basicSetParameterList(null, msgs);
     }
@@ -333,7 +351,7 @@ public class unlabelledStatementImpl extends MinimalEObjectImpl.Container implem
         setStructuredStatement((structuredStatement)newValue);
         return;
       case PascalPackage.UNLABELLED_STATEMENT__IDENTIFIER:
-        setIdentifier((String)newValue);
+        setIdentifier((identifier)newValue);
         return;
       case PascalPackage.UNLABELLED_STATEMENT__PARAMETER_LIST:
         setParameterList((parameterList)newValue);
@@ -359,7 +377,7 @@ public class unlabelledStatementImpl extends MinimalEObjectImpl.Container implem
         setStructuredStatement((structuredStatement)null);
         return;
       case PascalPackage.UNLABELLED_STATEMENT__IDENTIFIER:
-        setIdentifier(IDENTIFIER_EDEFAULT);
+        setIdentifier((identifier)null);
         return;
       case PascalPackage.UNLABELLED_STATEMENT__PARAMETER_LIST:
         setParameterList((parameterList)null);
@@ -383,28 +401,11 @@ public class unlabelledStatementImpl extends MinimalEObjectImpl.Container implem
       case PascalPackage.UNLABELLED_STATEMENT__STRUCTURED_STATEMENT:
         return structuredStatement != null;
       case PascalPackage.UNLABELLED_STATEMENT__IDENTIFIER:
-        return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
+        return identifier != null;
       case PascalPackage.UNLABELLED_STATEMENT__PARAMETER_LIST:
         return parameterList != null;
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (identifier: ");
-    result.append(identifier);
-    result.append(')');
-    return result.toString();
   }
 
 } //unlabelledStatementImpl

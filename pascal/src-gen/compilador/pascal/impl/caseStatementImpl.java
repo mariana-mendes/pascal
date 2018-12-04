@@ -31,13 +31,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.caseStatementImpl#getExpression <em>Expression</em>}</li>
  *   <li>{@link compilador.pascal.impl.caseStatementImpl#getCaseListElement <em>Case List Element</em>}</li>
  *   <li>{@link compilador.pascal.impl.caseStatementImpl#getCaseListElement1 <em>Case List Element1</em>}</li>
  *   <li>{@link compilador.pascal.impl.caseStatementImpl#getStatements <em>Statements</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

@@ -30,12 +30,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.variantPartImpl#getTag <em>Tag</em>}</li>
  *   <li>{@link compilador.pascal.impl.variantPartImpl#getVariant <em>Variant</em>}</li>
  *   <li>{@link compilador.pascal.impl.variantPartImpl#getVariant1 <em>Variant1</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

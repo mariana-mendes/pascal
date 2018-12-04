@@ -4,6 +4,7 @@
 package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
+import compilador.pascal.identifier;
 import compilador.pascal.tag;
 import compilador.pascal.typeIdentifier;
 
@@ -29,36 +30,26 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.tagImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.tagImpl#getTypeIdentifier <em>Type Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.tagImpl#getTypeIdentifier1 <em>Type Identifier1</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class tagImpl extends MinimalEObjectImpl.Container implements tag
 {
   /**
-   * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected static final String IDENTIFIER_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getIdentifier()
-   * @generated
-   * @ordered
-   */
-  protected String identifier = IDENTIFIER_EDEFAULT;
+  protected identifier identifier;
 
   /**
    * The cached value of the '{@link #getTypeIdentifier() <em>Type Identifier</em>}' containment reference.
@@ -106,7 +97,7 @@ public class tagImpl extends MinimalEObjectImpl.Container implements tag
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getIdentifier()
+  public identifier getIdentifier()
   {
     return identifier;
   }
@@ -116,12 +107,37 @@ public class tagImpl extends MinimalEObjectImpl.Container implements tag
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setIdentifier(String newIdentifier)
+  public NotificationChain basicSetIdentifier(identifier newIdentifier, NotificationChain msgs)
   {
-    String oldIdentifier = identifier;
+    identifier oldIdentifier = identifier;
     identifier = newIdentifier;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TAG__IDENTIFIER, oldIdentifier, identifier));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.TAG__IDENTIFIER, oldIdentifier, newIdentifier);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifier(identifier newIdentifier)
+  {
+    if (newIdentifier != identifier)
+    {
+      NotificationChain msgs = null;
+      if (identifier != null)
+        msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.TAG__IDENTIFIER, null, msgs);
+      if (newIdentifier != null)
+        msgs = ((InternalEObject)newIdentifier).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.TAG__IDENTIFIER, null, msgs);
+      msgs = basicSetIdentifier(newIdentifier, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TAG__IDENTIFIER, newIdentifier, newIdentifier));
   }
 
   /**
@@ -196,6 +212,8 @@ public class tagImpl extends MinimalEObjectImpl.Container implements tag
   {
     switch (featureID)
     {
+      case PascalPackage.TAG__IDENTIFIER:
+        return basicSetIdentifier(null, msgs);
       case PascalPackage.TAG__TYPE_IDENTIFIER:
         return basicSetTypeIdentifier(null, msgs);
       case PascalPackage.TAG__TYPE_IDENTIFIER1:
@@ -236,7 +254,7 @@ public class tagImpl extends MinimalEObjectImpl.Container implements tag
     switch (featureID)
     {
       case PascalPackage.TAG__IDENTIFIER:
-        setIdentifier((String)newValue);
+        setIdentifier((identifier)newValue);
         return;
       case PascalPackage.TAG__TYPE_IDENTIFIER:
         setTypeIdentifier((typeIdentifier)newValue);
@@ -260,7 +278,7 @@ public class tagImpl extends MinimalEObjectImpl.Container implements tag
     switch (featureID)
     {
       case PascalPackage.TAG__IDENTIFIER:
-        setIdentifier(IDENTIFIER_EDEFAULT);
+        setIdentifier((identifier)null);
         return;
       case PascalPackage.TAG__TYPE_IDENTIFIER:
         setTypeIdentifier((typeIdentifier)null);
@@ -283,30 +301,13 @@ public class tagImpl extends MinimalEObjectImpl.Container implements tag
     switch (featureID)
     {
       case PascalPackage.TAG__IDENTIFIER:
-        return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
+        return identifier != null;
       case PascalPackage.TAG__TYPE_IDENTIFIER:
         return typeIdentifier != null;
       case PascalPackage.TAG__TYPE_IDENTIFIER1:
         return typeIdentifier1 != null && !typeIdentifier1.isEmpty();
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (identifier: ");
-    result.append(identifier);
-    result.append(')');
-    return result.toString();
   }
 
 } //tagImpl

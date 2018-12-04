@@ -22,11 +22,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.subrangeTypeImpl#getConstant <em>Constant</em>}</li>
  *   <li>{@link compilador.pascal.impl.subrangeTypeImpl#getConstant2 <em>Constant2</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

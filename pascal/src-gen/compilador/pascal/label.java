@@ -12,12 +12,12 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.label#getLabel <em>Label</em>}</li>
  *   <li>{@link compilador.pascal.label#getUnsignedInteger <em>Unsigned Integer</em>}</li>
  *   <li>{@link compilador.pascal.label#getIdentifier <em>Identifier</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getlabel()
  * @model
@@ -68,29 +68,29 @@ public interface label extends label_declaration_part, statement
   void setUnsignedInteger(unsignedInteger value);
 
   /**
-   * Returns the value of the '<em><b>Identifier</b></em>' attribute.
+   * Returns the value of the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Identifier</em>' attribute isn't clear,
+   * If the meaning of the '<em>Identifier</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Identifier</em>' attribute.
-   * @see #setIdentifier(String)
+   * @return the value of the '<em>Identifier</em>' containment reference.
+   * @see #setIdentifier(identifier)
    * @see compilador.pascal.PascalPackage#getlabel_Identifier()
-   * @model
+   * @model containment="true"
    * @generated
    */
-  String getIdentifier();
+  identifier getIdentifier();
 
   /**
-   * Sets the value of the '{@link compilador.pascal.label#getIdentifier <em>Identifier</em>}' attribute.
+   * Sets the value of the '{@link compilador.pascal.label#getIdentifier <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Identifier</em>' attribute.
+   * @param value the new value of the '<em>Identifier</em>' containment reference.
    * @see #getIdentifier()
    * @generated
    */
-  void setIdentifier(String value);
+  void setIdentifier(identifier value);
 
 } // label

@@ -14,13 +14,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.formalParameterSection#getParameterGroup <em>Parameter Group</em>}</li>
  *   <li>{@link compilador.pascal.formalParameterSection#getParameterGroup2 <em>Parameter Group2</em>}</li>
  *   <li>{@link compilador.pascal.formalParameterSection#getParameterGroup3 <em>Parameter Group3</em>}</li>
  *   <li>{@link compilador.pascal.formalParameterSection#getParameterGroup4 <em>Parameter Group4</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getformalParameterSection()
  * @model

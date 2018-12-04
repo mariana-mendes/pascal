@@ -96,6 +96,11 @@ public class PascalAdapterFactory extends AdapterFactoryImpl
         return createidentifierListAdapter();
       }
       @Override
+      public Adapter caseidentifier(identifier object)
+      {
+        return createidentifierAdapter();
+      }
+      @Override
       public Adapter caseblock(block object)
       {
         return createblockAdapter();
@@ -483,6 +488,21 @@ public class PascalAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createidentifierListAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link compilador.pascal.identifier <em>identifier</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see compilador.pascal.identifier
+   * @generated
+   */
+  public Adapter createidentifierAdapter()
   {
     return null;
   }

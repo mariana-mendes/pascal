@@ -14,11 +14,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.fixedPart#getRecordSection <em>Record Section</em>}</li>
  *   <li>{@link compilador.pascal.fixedPart#getRecordSection1 <em>Record Section1</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getfixedPart()
  * @model

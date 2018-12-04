@@ -22,12 +22,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.simpleExpressionImpl#getTerm <em>Term</em>}</li>
  *   <li>{@link compilador.pascal.impl.simpleExpressionImpl#getAdditiveoperator <em>Additiveoperator</em>}</li>
  *   <li>{@link compilador.pascal.impl.simpleExpressionImpl#getSimpleExpression <em>Simple Expression</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

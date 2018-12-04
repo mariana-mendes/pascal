@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.variableDeclaration#getIdentifierList <em>Identifier List</em>}</li>
  *   <li>{@link compilador.pascal.variableDeclaration#getType <em>Type</em>}</li>
  *   <li>{@link compilador.pascal.variableDeclaration#getExpression <em>Expression</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getvariableDeclaration()
  * @model

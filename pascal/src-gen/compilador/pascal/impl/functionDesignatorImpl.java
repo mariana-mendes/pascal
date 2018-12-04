@@ -5,6 +5,7 @@ package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
 import compilador.pascal.functionDesignator;
+import compilador.pascal.identifier;
 import compilador.pascal.parameterList;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -22,35 +23,25 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.functionDesignatorImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.functionDesignatorImpl#getParameterList <em>Parameter List</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class functionDesignatorImpl extends MinimalEObjectImpl.Container implements functionDesignator
 {
   /**
-   * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected static final String IDENTIFIER_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getIdentifier()
-   * @generated
-   * @ordered
-   */
-  protected String identifier = IDENTIFIER_EDEFAULT;
+  protected identifier identifier;
 
   /**
    * The cached value of the '{@link #getParameterList() <em>Parameter List</em>}' containment reference.
@@ -88,7 +79,7 @@ public class functionDesignatorImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getIdentifier()
+  public identifier getIdentifier()
   {
     return identifier;
   }
@@ -98,12 +89,37 @@ public class functionDesignatorImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setIdentifier(String newIdentifier)
+  public NotificationChain basicSetIdentifier(identifier newIdentifier, NotificationChain msgs)
   {
-    String oldIdentifier = identifier;
+    identifier oldIdentifier = identifier;
     identifier = newIdentifier;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.FUNCTION_DESIGNATOR__IDENTIFIER, oldIdentifier, identifier));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.FUNCTION_DESIGNATOR__IDENTIFIER, oldIdentifier, newIdentifier);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifier(identifier newIdentifier)
+  {
+    if (newIdentifier != identifier)
+    {
+      NotificationChain msgs = null;
+      if (identifier != null)
+        msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.FUNCTION_DESIGNATOR__IDENTIFIER, null, msgs);
+      if (newIdentifier != null)
+        msgs = ((InternalEObject)newIdentifier).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.FUNCTION_DESIGNATOR__IDENTIFIER, null, msgs);
+      msgs = basicSetIdentifier(newIdentifier, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.FUNCTION_DESIGNATOR__IDENTIFIER, newIdentifier, newIdentifier));
   }
 
   /**
@@ -164,6 +180,8 @@ public class functionDesignatorImpl extends MinimalEObjectImpl.Container impleme
   {
     switch (featureID)
     {
+      case PascalPackage.FUNCTION_DESIGNATOR__IDENTIFIER:
+        return basicSetIdentifier(null, msgs);
       case PascalPackage.FUNCTION_DESIGNATOR__PARAMETER_LIST:
         return basicSetParameterList(null, msgs);
     }
@@ -199,7 +217,7 @@ public class functionDesignatorImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.FUNCTION_DESIGNATOR__IDENTIFIER:
-        setIdentifier((String)newValue);
+        setIdentifier((identifier)newValue);
         return;
       case PascalPackage.FUNCTION_DESIGNATOR__PARAMETER_LIST:
         setParameterList((parameterList)newValue);
@@ -219,7 +237,7 @@ public class functionDesignatorImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.FUNCTION_DESIGNATOR__IDENTIFIER:
-        setIdentifier(IDENTIFIER_EDEFAULT);
+        setIdentifier((identifier)null);
         return;
       case PascalPackage.FUNCTION_DESIGNATOR__PARAMETER_LIST:
         setParameterList((parameterList)null);
@@ -239,28 +257,11 @@ public class functionDesignatorImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.FUNCTION_DESIGNATOR__IDENTIFIER:
-        return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
+        return identifier != null;
       case PascalPackage.FUNCTION_DESIGNATOR__PARAMETER_LIST:
         return parameterList != null;
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (identifier: ");
-    result.append(identifier);
-    result.append(')');
-    return result.toString();
   }
 
 } //functionDesignatorImpl

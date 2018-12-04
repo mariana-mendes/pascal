@@ -25,7 +25,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.factorImpl#getExpression <em>Expression</em>}</li>
  *   <li>{@link compilador.pascal.impl.factorImpl#getUnsignedConstant <em>Unsigned Constant</em>}</li>
@@ -34,6 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link compilador.pascal.impl.factorImpl#getFunctionDesignator <em>Function Designator</em>}</li>
  *   <li>{@link compilador.pascal.impl.factorImpl#getVariable <em>Variable</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

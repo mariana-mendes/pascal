@@ -23,11 +23,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.simpleStatementImpl#getGotoStatement <em>Goto Statement</em>}</li>
  *   <li>{@link compilador.pascal.impl.simpleStatementImpl#getAssignmentStatement <em>Assignment Statement</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

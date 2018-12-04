@@ -14,13 +14,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.typeDefinition#getIndentifier <em>Indentifier</em>}</li>
  *   <li>{@link compilador.pascal.typeDefinition#getType <em>Type</em>}</li>
  *   <li>{@link compilador.pascal.typeDefinition#getFunctionType <em>Function Type</em>}</li>
  *   <li>{@link compilador.pascal.typeDefinition#getProcedureType <em>Procedure Type</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#gettypeDefinition()
  * @model
@@ -29,20 +29,20 @@ import org.eclipse.emf.ecore.EObject;
 public interface typeDefinition extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Indentifier</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Returns the value of the '<em><b>Indentifier</b></em>' containment reference list.
+   * The list contents are of type {@link compilador.pascal.identifier}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Indentifier</em>' attribute list isn't clear,
+   * If the meaning of the '<em>Indentifier</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Indentifier</em>' attribute list.
+   * @return the value of the '<em>Indentifier</em>' containment reference list.
    * @see compilador.pascal.PascalPackage#gettypeDefinition_Indentifier()
-   * @model unique="false"
+   * @model containment="true"
    * @generated
    */
-  EList<String> getIndentifier();
+  EList<identifier> getIndentifier();
 
   /**
    * Returns the value of the '<em><b>Type</b></em>' containment reference.

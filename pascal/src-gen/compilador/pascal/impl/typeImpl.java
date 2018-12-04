@@ -24,12 +24,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.typeImpl#getSimpleType <em>Simple Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeImpl#getStructuredType <em>Structured Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeImpl#getPointerType <em>Pointer Type</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

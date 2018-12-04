@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.constListImpl#getConstant <em>Constant</em>}</li>
  *   <li>{@link compilador.pascal.impl.constListImpl#getConstant1 <em>Constant1</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

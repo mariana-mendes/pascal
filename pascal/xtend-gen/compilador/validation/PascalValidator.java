@@ -3,14 +3,21 @@
  */
 package compilador.validation;
 
+import compilador.pascal.identifier;
+import compilador.pascal.pointerType;
+import compilador.pascal.program;
+import compilador.pascal.simpleType;
+import compilador.pascal.structuredType;
 import compilador.pascal.type;
+import compilador.pascal.typeIdentifier;
 import compilador.pascal.variableDeclaration;
 import compilador.pascal.variableDeclarationPart;
 import compilador.validation.AbstractPascalValidator;
 import java.util.HashMap;
-import java.util.Map;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.validation.Check;
+import org.eclipse.xtext.xbase.lib.InputOutput;
+import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
 /**
  * This class contains custom validation rules.
@@ -19,9 +26,15 @@ import org.eclipse.xtext.validation.Check;
  */
 @SuppressWarnings("all")
 public class PascalValidator extends AbstractPascalValidator {
-  public Map<String, String> variaveisDeclaradas = new HashMap<String, String>();
+  private HashMap<String, identifier> variaveisDeclaradas = new HashMap<String, identifier>();
   
-  public Map<String, type> variaveisTipo = new HashMap<String, type>();
+  private HashMap<identifier, String> variaveisTipo = new HashMap<identifier, String>();
+  
+  @Check
+  public void restart(final program init) {
+    this.variaveisDeclaradas.clear();
+    this.variaveisTipo.clear();
+  }
   
   /**
    * variableDeclaration: Podemos declarar mais de uma variavel usando apenas uma palavra chave 'var',
@@ -29,15 +42,112 @@ public class PascalValidator extends AbstractPascalValidator {
    *  Então colocamos o id dessas variaveis no map, caso ja exista, retornar um erro de id duplicado
    *  Ao percorrer a lista, adicionar no mapa a variavel e o seu tipo declarado
    */
-  @Check
-  public void checkDeclaracaoVariavel(final variableDeclaration vd) {
-    EList<String> nomesVar = vd.getIdentifierList().getIdentifierList();
-    for (final String nome : nomesVar) {
+  public String checkDeclaracaoVariavel(final variableDeclaration vd) {
+    String _xblockexpression = null;
+    {
+      EList<identifier> declaracoes = vd.getIdentifierList().getIdentifierList1();
+      identifier declaracaoUnica = vd.getIdentifierList().getIdentifier();
+      InputOutput.<EList<identifier>>println(declaracoes);
+      InputOutput.<identifier>println(declaracaoUnica);
+      boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(declaracoes);
+      boolean _not = (!_isNullOrEmpty);
+      if (_not) {
+        InputOutput.<String>println("lista");
+        for (final identifier id : declaracoes) {
+          boolean _jaDeclarada = this.jaDeclarada(id);
+          if (_jaDeclarada) {
+            this.error(("id variavel duplicado: " + id), null);
+          } else {
+            this.variaveisDeclaradas.put(id.getIdentifier(), id);
+            this.variaveisTipo.put(id, this.getTypeVar(vd.getType()));
+          }
+        }
+      }
+      String _xifexpression = null;
+      if (((declaracaoUnica != null) && this.jaDeclarada(declaracaoUnica))) {
+        this.error(("id variavel duplicado: " + declaracaoUnica), null);
+      } else {
+        String _xblockexpression_1 = null;
+        {
+          this.variaveisDeclaradas.put(declaracaoUnica.getIdentifier(), declaracaoUnica);
+          _xblockexpression_1 = this.variaveisTipo.put(declaracaoUnica, this.getTypeVar(vd.getType()));
+        }
+        _xifexpression = _xblockexpression_1;
+      }
+      _xblockexpression = _xifexpression;
+    }
+    return _xblockexpression;
+  }
+  
+  public boolean jaDeclarada(final identifier variavel) {
+    boolean _containsKey = this.variaveisDeclaradas.containsKey(variavel.getIdentifier());
+    if (_containsKey) {
+      return true;
+    } else {
+      return false;
     }
   }
   
-  public type getTypeVar() {
-    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  public String getTypeVar(final type tipoVariavel) {
+    simpleType _simpleType = tipoVariavel.getSimpleType();
+    boolean _tripleNotEquals = (_simpleType != null);
+    if (_tripleNotEquals) {
+      return this.checkSimpleType(tipoVariavel.getSimpleType());
+    }
+    return null;
+  }
+  
+  public String checkSimpleType(final simpleType st) {
+    Object _xifexpression = null;
+    typeIdentifier _typeIdentifier = st.getTypeIdentifier();
+    boolean _tripleNotEquals = (_typeIdentifier != null);
+    if (_tripleNotEquals) {
+      Object _xblockexpression = null;
+      {
+        String _char = st.getTypeIdentifier().getChar();
+        boolean _tripleNotEquals_1 = (_char != null);
+        if (_tripleNotEquals_1) {
+          return st.getTypeIdentifier().getChar();
+        }
+        String _boolean = st.getTypeIdentifier().getBoolean();
+        boolean _tripleNotEquals_2 = (_boolean != null);
+        if (_tripleNotEquals_2) {
+          return st.getTypeIdentifier().getBoolean();
+        }
+        String _integer = st.getTypeIdentifier().getInteger();
+        boolean _tripleNotEquals_3 = (_integer != null);
+        if (_tripleNotEquals_3) {
+          return st.getTypeIdentifier().getInteger();
+        }
+        String _real = st.getTypeIdentifier().getReal();
+        boolean _tripleNotEquals_4 = (_real != null);
+        if (_tripleNotEquals_4) {
+          return st.getTypeIdentifier().getReal();
+        }
+        String _string = st.getTypeIdentifier().getString();
+        boolean _tripleNotEquals_5 = (_string != null);
+        if (_tripleNotEquals_5) {
+          return st.getTypeIdentifier().getString();
+        }
+        Object _xifexpression_1 = null;
+        identifier _identifier = st.getTypeIdentifier().getIdentifier();
+        boolean _tripleNotEquals_6 = (_identifier != null);
+        if (_tripleNotEquals_6) {
+          _xifexpression_1 = null;
+        }
+        _xblockexpression = _xifexpression_1;
+      }
+      _xifexpression = _xblockexpression;
+    }
+    return ((String)_xifexpression);
+  }
+  
+  public String checkPointerType(final pointerType type) {
+    return null;
+  }
+  
+  public String checkStructuredType(final structuredType type) {
+    return null;
   }
   
   /**
@@ -46,17 +156,26 @@ public class PascalValidator extends AbstractPascalValidator {
    * Se for so uma, chama o metodo que verifica a declaracao
    * Se for uma lista, fazer um for na mesma e chamar o metodo que verifica a declaracao pra cada uma
    */
-  @Check
   public void checkDeclaracao(final variableDeclarationPart decla) {
     variableDeclaration declaracaoUmaVar = decla.getVariableDeclaration();
     EList<variableDeclaration> listaDeclaracoes = decla.getVariableDeclaration1();
     if ((declaracaoUmaVar != null)) {
       this.checkDeclaracaoVariavel(declaracaoUmaVar);
     }
-    if ((listaDeclaracoes != null)) {
+    boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(listaDeclaracoes);
+    boolean _not = (!_isNullOrEmpty);
+    if (_not) {
       for (final variableDeclaration declaracao : listaDeclaracoes) {
         this.checkDeclaracaoVariavel(declaracao);
       }
+    }
+  }
+  
+  @Check
+  public void runChecks(final program p) {
+    EList<variableDeclarationPart> declaracoes = p.getBlock().getVariableDeclarationParts();
+    for (final variableDeclarationPart e : declaracoes) {
+      this.checkDeclaracao(e);
     }
   }
 }

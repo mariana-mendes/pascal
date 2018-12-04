@@ -11,10 +11,15 @@ package compilador.pascal;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.typeIdentifier#getIdentifier <em>Identifier</em>}</li>
+ *   <li>{@link compilador.pascal.typeIdentifier#getChar <em>Char</em>}</li>
+ *   <li>{@link compilador.pascal.typeIdentifier#getBoolean <em>Boolean</em>}</li>
+ *   <li>{@link compilador.pascal.typeIdentifier#getInteger <em>Integer</em>}</li>
+ *   <li>{@link compilador.pascal.typeIdentifier#getReal <em>Real</em>}</li>
+ *   <li>{@link compilador.pascal.typeIdentifier#getString <em>String</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#gettypeIdentifier()
  * @model
@@ -23,29 +28,159 @@ package compilador.pascal;
 public interface typeIdentifier extends resultType
 {
   /**
-   * Returns the value of the '<em><b>Identifier</b></em>' attribute.
+   * Returns the value of the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Identifier</em>' attribute isn't clear,
+   * If the meaning of the '<em>Identifier</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Identifier</em>' attribute.
-   * @see #setIdentifier(String)
+   * @return the value of the '<em>Identifier</em>' containment reference.
+   * @see #setIdentifier(identifier)
    * @see compilador.pascal.PascalPackage#gettypeIdentifier_Identifier()
-   * @model
+   * @model containment="true"
    * @generated
    */
-  String getIdentifier();
+  identifier getIdentifier();
 
   /**
-   * Sets the value of the '{@link compilador.pascal.typeIdentifier#getIdentifier <em>Identifier</em>}' attribute.
+   * Sets the value of the '{@link compilador.pascal.typeIdentifier#getIdentifier <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Identifier</em>' attribute.
+   * @param value the new value of the '<em>Identifier</em>' containment reference.
    * @see #getIdentifier()
    * @generated
    */
-  void setIdentifier(String value);
+  void setIdentifier(identifier value);
+
+  /**
+   * Returns the value of the '<em><b>Char</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Char</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Char</em>' attribute.
+   * @see #setChar(String)
+   * @see compilador.pascal.PascalPackage#gettypeIdentifier_Char()
+   * @model
+   * @generated
+   */
+  String getChar();
+
+  /**
+   * Sets the value of the '{@link compilador.pascal.typeIdentifier#getChar <em>Char</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Char</em>' attribute.
+   * @see #getChar()
+   * @generated
+   */
+  void setChar(String value);
+
+  /**
+   * Returns the value of the '<em><b>Boolean</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Boolean</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Boolean</em>' attribute.
+   * @see #setBoolean(String)
+   * @see compilador.pascal.PascalPackage#gettypeIdentifier_Boolean()
+   * @model
+   * @generated
+   */
+  String getBoolean();
+
+  /**
+   * Sets the value of the '{@link compilador.pascal.typeIdentifier#getBoolean <em>Boolean</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Boolean</em>' attribute.
+   * @see #getBoolean()
+   * @generated
+   */
+  void setBoolean(String value);
+
+  /**
+   * Returns the value of the '<em><b>Integer</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Integer</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Integer</em>' attribute.
+   * @see #setInteger(String)
+   * @see compilador.pascal.PascalPackage#gettypeIdentifier_Integer()
+   * @model
+   * @generated
+   */
+  String getInteger();
+
+  /**
+   * Sets the value of the '{@link compilador.pascal.typeIdentifier#getInteger <em>Integer</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Integer</em>' attribute.
+   * @see #getInteger()
+   * @generated
+   */
+  void setInteger(String value);
+
+  /**
+   * Returns the value of the '<em><b>Real</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Real</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Real</em>' attribute.
+   * @see #setReal(String)
+   * @see compilador.pascal.PascalPackage#gettypeIdentifier_Real()
+   * @model
+   * @generated
+   */
+  String getReal();
+
+  /**
+   * Sets the value of the '{@link compilador.pascal.typeIdentifier#getReal <em>Real</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Real</em>' attribute.
+   * @see #getReal()
+   * @generated
+   */
+  void setReal(String value);
+
+  /**
+   * Returns the value of the '<em><b>String</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>String</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>String</em>' attribute.
+   * @see #setString(String)
+   * @see compilador.pascal.PascalPackage#gettypeIdentifier_String()
+   * @model
+   * @generated
+   */
+  String getString();
+
+  /**
+   * Sets the value of the '{@link compilador.pascal.typeIdentifier#getString <em>String</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>String</em>' attribute.
+   * @see #getString()
+   * @generated
+   */
+  void setString(String value);
 
 } // typeIdentifier

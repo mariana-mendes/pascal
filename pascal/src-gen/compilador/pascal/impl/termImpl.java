@@ -22,12 +22,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.termImpl#getSignedFactor <em>Signed Factor</em>}</li>
  *   <li>{@link compilador.pascal.impl.termImpl#getMultiplicativeoperator <em>Multiplicativeoperator</em>}</li>
  *   <li>{@link compilador.pascal.impl.termImpl#getTerm <em>Term</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

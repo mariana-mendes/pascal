@@ -28,11 +28,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.actualParameterImpl#getActualParameter <em>Actual Parameter</em>}</li>
  *   <li>{@link compilador.pascal.impl.actualParameterImpl#getExpression <em>Expression</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

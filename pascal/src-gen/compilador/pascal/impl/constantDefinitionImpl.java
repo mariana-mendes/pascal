@@ -6,6 +6,7 @@ package compilador.pascal.impl;
 import compilador.pascal.PascalPackage;
 import compilador.pascal.constant;
 import compilador.pascal.constantDefinition;
+import compilador.pascal.identifier;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -22,35 +23,25 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.constantDefinitionImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.constantDefinitionImpl#getConstant <em>Constant</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class constantDefinitionImpl extends MinimalEObjectImpl.Container implements constantDefinition
 {
   /**
-   * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected static final String IDENTIFIER_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getIdentifier()
-   * @generated
-   * @ordered
-   */
-  protected String identifier = IDENTIFIER_EDEFAULT;
+  protected identifier identifier;
 
   /**
    * The cached value of the '{@link #getConstant() <em>Constant</em>}' containment reference.
@@ -88,7 +79,7 @@ public class constantDefinitionImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getIdentifier()
+  public identifier getIdentifier()
   {
     return identifier;
   }
@@ -98,12 +89,37 @@ public class constantDefinitionImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setIdentifier(String newIdentifier)
+  public NotificationChain basicSetIdentifier(identifier newIdentifier, NotificationChain msgs)
   {
-    String oldIdentifier = identifier;
+    identifier oldIdentifier = identifier;
     identifier = newIdentifier;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT_DEFINITION__IDENTIFIER, oldIdentifier, identifier));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT_DEFINITION__IDENTIFIER, oldIdentifier, newIdentifier);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifier(identifier newIdentifier)
+  {
+    if (newIdentifier != identifier)
+    {
+      NotificationChain msgs = null;
+      if (identifier != null)
+        msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.CONSTANT_DEFINITION__IDENTIFIER, null, msgs);
+      if (newIdentifier != null)
+        msgs = ((InternalEObject)newIdentifier).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.CONSTANT_DEFINITION__IDENTIFIER, null, msgs);
+      msgs = basicSetIdentifier(newIdentifier, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT_DEFINITION__IDENTIFIER, newIdentifier, newIdentifier));
   }
 
   /**
@@ -164,6 +180,8 @@ public class constantDefinitionImpl extends MinimalEObjectImpl.Container impleme
   {
     switch (featureID)
     {
+      case PascalPackage.CONSTANT_DEFINITION__IDENTIFIER:
+        return basicSetIdentifier(null, msgs);
       case PascalPackage.CONSTANT_DEFINITION__CONSTANT:
         return basicSetConstant(null, msgs);
     }
@@ -199,7 +217,7 @@ public class constantDefinitionImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.CONSTANT_DEFINITION__IDENTIFIER:
-        setIdentifier((String)newValue);
+        setIdentifier((identifier)newValue);
         return;
       case PascalPackage.CONSTANT_DEFINITION__CONSTANT:
         setConstant((constant)newValue);
@@ -219,7 +237,7 @@ public class constantDefinitionImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.CONSTANT_DEFINITION__IDENTIFIER:
-        setIdentifier(IDENTIFIER_EDEFAULT);
+        setIdentifier((identifier)null);
         return;
       case PascalPackage.CONSTANT_DEFINITION__CONSTANT:
         setConstant((constant)null);
@@ -239,28 +257,11 @@ public class constantDefinitionImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.CONSTANT_DEFINITION__IDENTIFIER:
-        return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
+        return identifier != null;
       case PascalPackage.CONSTANT_DEFINITION__CONSTANT:
         return constant != null;
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (identifier: ");
-    result.append(identifier);
-    result.append(')');
-    return result.toString();
   }
 
 } //constantDefinitionImpl

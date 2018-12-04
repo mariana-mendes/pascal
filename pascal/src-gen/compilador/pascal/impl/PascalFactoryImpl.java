@@ -69,6 +69,7 @@ public class PascalFactoryImpl extends EFactoryImpl implements PascalFactory
       case PascalPackage.PROGRAM: return createprogram();
       case PascalPackage.PROGRAM_HEADING: return createprogramHeading();
       case PascalPackage.IDENTIFIER_LIST: return createidentifierList();
+      case PascalPackage.IDENTIFIER: return createidentifier();
       case PascalPackage.BLOCK: return createblock();
       case PascalPackage.LABEL_DECLARATION_PART: return createlabel_declaration_part();
       case PascalPackage.LABEL: return createlabel();
@@ -178,6 +179,17 @@ public class PascalFactoryImpl extends EFactoryImpl implements PascalFactory
   {
     identifierListImpl identifierList = new identifierListImpl();
     return identifierList;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public identifier createidentifier()
+  {
+    identifierImpl identifier = new identifierImpl();
+    return identifier;
   }
 
   /**

@@ -14,7 +14,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.variable#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.variable#getExpression <em>Expression</em>}</li>
@@ -23,6 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link compilador.pascal.variable#getExpression3 <em>Expression3</em>}</li>
  *   <li>{@link compilador.pascal.variable#getIdentifier2 <em>Identifier2</em>}</li>
  * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getvariable()
  * @model
@@ -31,30 +31,30 @@ import org.eclipse.emf.ecore.EObject;
 public interface variable extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Identifier</b></em>' attribute.
+   * Returns the value of the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Identifier</em>' attribute isn't clear,
+   * If the meaning of the '<em>Identifier</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Identifier</em>' attribute.
-   * @see #setIdentifier(String)
+   * @return the value of the '<em>Identifier</em>' containment reference.
+   * @see #setIdentifier(identifier)
    * @see compilador.pascal.PascalPackage#getvariable_Identifier()
-   * @model
+   * @model containment="true"
    * @generated
    */
-  String getIdentifier();
+  identifier getIdentifier();
 
   /**
-   * Sets the value of the '{@link compilador.pascal.variable#getIdentifier <em>Identifier</em>}' attribute.
+   * Sets the value of the '{@link compilador.pascal.variable#getIdentifier <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Identifier</em>' attribute.
+   * @param value the new value of the '<em>Identifier</em>' containment reference.
    * @see #getIdentifier()
    * @generated
    */
-  void setIdentifier(String value);
+  void setIdentifier(identifier value);
 
   /**
    * Returns the value of the '<em><b>Expression</b></em>' containment reference list.
@@ -121,19 +121,19 @@ public interface variable extends EObject
   EList<expression> getExpression3();
 
   /**
-   * Returns the value of the '<em><b>Identifier2</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Returns the value of the '<em><b>Identifier2</b></em>' containment reference list.
+   * The list contents are of type {@link compilador.pascal.identifier}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Identifier2</em>' attribute list isn't clear,
+   * If the meaning of the '<em>Identifier2</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Identifier2</em>' attribute list.
+   * @return the value of the '<em>Identifier2</em>' containment reference list.
    * @see compilador.pascal.PascalPackage#getvariable_Identifier2()
-   * @model unique="false"
+   * @model containment="true"
    * @generated
    */
-  EList<String> getIdentifier2();
+  EList<identifier> getIdentifier2();
 
 } // variable

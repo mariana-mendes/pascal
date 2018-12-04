@@ -24,7 +24,6 @@ public class PascalSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_block_ImplemetationKeyword_1_6_a;
 	protected AbstractElementAlias match_program_InterfaceKeyword_1_q;
 	protected AbstractElementAlias match_signedFactor___HyphenMinusKeyword_0_1_or_PlusSignKeyword_0_0__q;
-	protected AbstractElementAlias match_typeIdentifier_BooleanKeyword_1_1_1_or_CharKeyword_1_0_1_or_IntegerKeyword_1_2_1_or_RealKeyword_1_3_1_or_StringKeyword_1_4_1;
 	protected AbstractElementAlias match_variable_CircumflexAccentKeyword_1_3_a;
 	
 	@Inject
@@ -33,7 +32,6 @@ public class PascalSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_block_ImplemetationKeyword_1_6_a = new TokenAlias(true, true, grammarAccess.getBlockAccess().getImplemetationKeyword_1_6());
 		match_program_InterfaceKeyword_1_q = new TokenAlias(false, true, grammarAccess.getProgramAccess().getInterfaceKeyword_1());
 		match_signedFactor___HyphenMinusKeyword_0_1_or_PlusSignKeyword_0_0__q = new AlternativeAlias(false, true, new TokenAlias(false, false, grammarAccess.getSignedFactorAccess().getHyphenMinusKeyword_0_1()), new TokenAlias(false, false, grammarAccess.getSignedFactorAccess().getPlusSignKeyword_0_0()));
-		match_typeIdentifier_BooleanKeyword_1_1_1_or_CharKeyword_1_0_1_or_IntegerKeyword_1_2_1_or_RealKeyword_1_3_1_or_StringKeyword_1_4_1 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getTypeIdentifierAccess().getBooleanKeyword_1_1_1()), new TokenAlias(false, false, grammarAccess.getTypeIdentifierAccess().getCharKeyword_1_0_1()), new TokenAlias(false, false, grammarAccess.getTypeIdentifierAccess().getIntegerKeyword_1_2_1()), new TokenAlias(false, false, grammarAccess.getTypeIdentifierAccess().getRealKeyword_1_3_1()), new TokenAlias(false, false, grammarAccess.getTypeIdentifierAccess().getStringKeyword_1_4_1()));
 		match_variable_CircumflexAccentKeyword_1_3_a = new TokenAlias(true, true, grammarAccess.getVariableAccess().getCircumflexAccentKeyword_1_3());
 	}
 	
@@ -55,8 +53,6 @@ public class PascalSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_program_InterfaceKeyword_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_signedFactor___HyphenMinusKeyword_0_1_or_PlusSignKeyword_0_0__q.equals(syntax))
 				emit_signedFactor___HyphenMinusKeyword_0_1_or_PlusSignKeyword_0_0__q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_typeIdentifier_BooleanKeyword_1_1_1_or_CharKeyword_1_0_1_or_IntegerKeyword_1_2_1_or_RealKeyword_1_3_1_or_StringKeyword_1_4_1.equals(syntax))
-				emit_typeIdentifier_BooleanKeyword_1_1_1_or_CharKeyword_1_0_1_or_IntegerKeyword_1_2_1_or_RealKeyword_1_3_1_or_StringKeyword_1_4_1(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_variable_CircumflexAccentKeyword_1_3_a.equals(syntax))
 				emit_variable_CircumflexAccentKeyword_1_3_a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else acceptNodes(getLastNavigableState(), syntaxNodes);
@@ -74,49 +70,49 @@ public class PascalSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (rule start) (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     (rule start) (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     (rule start) (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     (rule start) (ambiguity) variableDeclarationPart+=variableDeclarationPart
+	 *     (rule start) (ambiguity) variableDeclarationParts+=variableDeclarationPart
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) compoundStatement=compoundStatement
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) label+=label_declaration_part
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
+	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
 	 *     label+=label_declaration_part (ambiguity) compoundStatement=compoundStatement
 	 *     label+=label_declaration_part (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     label+=label_declaration_part (ambiguity) label+=label_declaration_part
 	 *     label+=label_declaration_part (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     label+=label_declaration_part (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     label+=label_declaration_part (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     label+=label_declaration_part (ambiguity) variableDeclarationPart+=variableDeclarationPart
+	 *     label+=label_declaration_part (ambiguity) variableDeclarationParts+=variableDeclarationPart
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) compoundStatement=compoundStatement
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) label+=label_declaration_part
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
+	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) compoundStatement=compoundStatement
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) label+=label_declaration_part
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
+	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) compoundStatement=compoundStatement
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) label+=label_declaration_part
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     usesUnitsPart+=usesUnitsPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
-	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) compoundStatement=compoundStatement
-	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
-	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) label+=label_declaration_part
-	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
-	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
-	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
+	 *     usesUnitsPart+=usesUnitsPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
+	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) compoundStatement=compoundStatement
+	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
+	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) label+=label_declaration_part
+	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
+	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
+	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) usesUnitsPart+=usesUnitsPart
+	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
 	 */
 	protected void emit_block_ImplemetationKeyword_1_6_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -141,17 +137,6 @@ public class PascalSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (rule start) (ambiguity) factor=factor
 	 */
 	protected void emit_signedFactor___HyphenMinusKeyword_0_1_or_PlusSignKeyword_0_0__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
-		acceptNodes(transition, nodes);
-	}
-	
-	/**
-	 * Ambiguous syntax:
-	 *     'char' | 'boolean' | 'integer' | 'real' | 'string'
-	 *
-	 * This ambiguous syntax occurs at:
-	 *     (rule start) (ambiguity) (rule start)
-	 */
-	protected void emit_typeIdentifier_BooleanKeyword_1_1_1_or_CharKeyword_1_0_1_or_IntegerKeyword_1_2_1_or_RealKeyword_1_3_1_or_StringKeyword_1_4_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

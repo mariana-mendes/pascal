@@ -29,13 +29,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.formalParameterSectionImpl#getParameterGroup <em>Parameter Group</em>}</li>
  *   <li>{@link compilador.pascal.impl.formalParameterSectionImpl#getParameterGroup2 <em>Parameter Group2</em>}</li>
  *   <li>{@link compilador.pascal.impl.formalParameterSectionImpl#getParameterGroup3 <em>Parameter Group3</em>}</li>
  *   <li>{@link compilador.pascal.impl.formalParameterSectionImpl#getParameterGroup4 <em>Parameter Group4</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

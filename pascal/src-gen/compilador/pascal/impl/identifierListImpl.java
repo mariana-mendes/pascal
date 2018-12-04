@@ -4,20 +4,24 @@
 package compilador.pascal.impl;
 
 import compilador.pascal.PascalPackage;
+import compilador.pascal.identifier;
 import compilador.pascal.identifierList;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,45 +29,35 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link compilador.pascal.impl.identifierListImpl#getIdentifier <em>Identifier</em>}</li>
- *   <li>{@link compilador.pascal.impl.identifierListImpl#getIdentifierList <em>Identifier List</em>}</li>
+ *   <li>{@link compilador.pascal.impl.identifierListImpl#getIdentifierList1 <em>Identifier List1</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class identifierListImpl extends MinimalEObjectImpl.Container implements identifierList
 {
   /**
-   * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected static final String IDENTIFIER_EDEFAULT = null;
+  protected identifier identifier;
 
   /**
-   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+   * The cached value of the '{@link #getIdentifierList1() <em>Identifier List1</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getIdentifier()
+   * @see #getIdentifierList1()
    * @generated
    * @ordered
    */
-  protected String identifier = IDENTIFIER_EDEFAULT;
-
-  /**
-   * The cached value of the '{@link #getIdentifierList() <em>Identifier List</em>}' attribute list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getIdentifierList()
-   * @generated
-   * @ordered
-   */
-  protected EList<String> identifierList;
+  protected EList<identifier> identifierList1;
 
   /**
    * <!-- begin-user-doc -->
@@ -91,7 +85,7 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getIdentifier()
+  public identifier getIdentifier()
   {
     return identifier;
   }
@@ -101,12 +95,16 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setIdentifier(String newIdentifier)
+  public NotificationChain basicSetIdentifier(identifier newIdentifier, NotificationChain msgs)
   {
-    String oldIdentifier = identifier;
+    identifier oldIdentifier = identifier;
     identifier = newIdentifier;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.IDENTIFIER_LIST__IDENTIFIER, oldIdentifier, identifier));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.IDENTIFIER_LIST__IDENTIFIER, oldIdentifier, newIdentifier);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
   }
 
   /**
@@ -114,13 +112,52 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<String> getIdentifierList()
+  public void setIdentifier(identifier newIdentifier)
   {
-    if (identifierList == null)
+    if (newIdentifier != identifier)
     {
-      identifierList = new EDataTypeEList<String>(String.class, this, PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST);
+      NotificationChain msgs = null;
+      if (identifier != null)
+        msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.IDENTIFIER_LIST__IDENTIFIER, null, msgs);
+      if (newIdentifier != null)
+        msgs = ((InternalEObject)newIdentifier).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.IDENTIFIER_LIST__IDENTIFIER, null, msgs);
+      msgs = basicSetIdentifier(newIdentifier, msgs);
+      if (msgs != null) msgs.dispatch();
     }
-    return identifierList;
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.IDENTIFIER_LIST__IDENTIFIER, newIdentifier, newIdentifier));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EList<identifier> getIdentifierList1()
+  {
+    if (identifierList1 == null)
+    {
+      identifierList1 = new EObjectContainmentEList<identifier>(identifier.class, this, PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST1);
+    }
+    return identifierList1;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  {
+    switch (featureID)
+    {
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER:
+        return basicSetIdentifier(null, msgs);
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST1:
+        return ((InternalEList<?>)getIdentifierList1()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
   }
 
   /**
@@ -135,8 +172,8 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
     {
       case PascalPackage.IDENTIFIER_LIST__IDENTIFIER:
         return getIdentifier();
-      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST:
-        return getIdentifierList();
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST1:
+        return getIdentifierList1();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -153,11 +190,11 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PascalPackage.IDENTIFIER_LIST__IDENTIFIER:
-        setIdentifier((String)newValue);
+        setIdentifier((identifier)newValue);
         return;
-      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST:
-        getIdentifierList().clear();
-        getIdentifierList().addAll((Collection<? extends String>)newValue);
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST1:
+        getIdentifierList1().clear();
+        getIdentifierList1().addAll((Collection<? extends identifier>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -174,10 +211,10 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PascalPackage.IDENTIFIER_LIST__IDENTIFIER:
-        setIdentifier(IDENTIFIER_EDEFAULT);
+        setIdentifier((identifier)null);
         return;
-      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST:
-        getIdentifierList().clear();
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST1:
+        getIdentifierList1().clear();
         return;
     }
     super.eUnset(featureID);
@@ -194,30 +231,11 @@ public class identifierListImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PascalPackage.IDENTIFIER_LIST__IDENTIFIER:
-        return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
-      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST:
-        return identifierList != null && !identifierList.isEmpty();
+        return identifier != null;
+      case PascalPackage.IDENTIFIER_LIST__IDENTIFIER_LIST1:
+        return identifierList1 != null && !identifierList1.isEmpty();
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (identifier: ");
-    result.append(identifier);
-    result.append(", identifierList: ");
-    result.append(identifierList);
-    result.append(')');
-    return result.toString();
   }
 
 } //identifierListImpl
