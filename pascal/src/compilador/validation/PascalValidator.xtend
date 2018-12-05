@@ -13,6 +13,7 @@ import compilador.pascal.structuredType
 import compilador.pascal.pointerType
 import compilador.pascal.identifier
 import compilador.pascal.recordType
+import java.util.HashSet
 
 /**
  * This class contains custom validation rules. 
@@ -22,8 +23,8 @@ import compilador.pascal.recordType
 class PascalValidator extends AbstractPascalValidator {
 
 	var variaveisDeclaradas = new HashMap<String, identifier>();
-
-	var variaveisTipo = new HashMap<identifier, String>();
+	var variaveisTipo = new HashMap<String, String>();
+	var tiposCriados = new HashSet<String>();
 
 	@Check
 	def restart(program init) {
@@ -31,6 +32,8 @@ class PascalValidator extends AbstractPascalValidator {
 		variaveisTipo.clear();
 	}
 
+	/* -------------------- block ----------------------  */
+	/* -------------------- block -> variableDeclarationPart ----------------------  */
 	/**
 	 * variableDeclaration: Podemos declarar mais de uma variavel usando apenas uma palavra chave 'var',
 	 *  Ex: var nome1, nome2...
@@ -47,7 +50,7 @@ class PascalValidator extends AbstractPascalValidator {
 					error("id variavel duplicado: " + id.identifier, null, id.identifier);
 				} else {
 					variaveisDeclaradas.put(id.identifier, id);
-					variaveisTipo.put(id, getTypeVar(vd.type));
+					variaveisTipo.put(id.identifier, getTypeVar(vd.type));
 				}
 			}
 		}
@@ -55,7 +58,8 @@ class PascalValidator extends AbstractPascalValidator {
 			error("id variavel duplicado: " + declaracaoUnica.identifier, null, declaracaoUnica.identifier);
 		} else {
 			variaveisDeclaradas.put(declaracaoUnica.identifier, declaracaoUnica);
-			variaveisTipo.put(declaracaoUnica, getTypeVar(vd.type));
+			println(declaracaoUnica.identifier);
+			variaveisTipo.put(declaracaoUnica.identifier, getTypeVar(vd.type));
 		}
 
 	}
@@ -65,6 +69,7 @@ class PascalValidator extends AbstractPascalValidator {
 	}
 
 	def String getTypeVar(type tipoVariavel) {
+
 		if (tipoVariavel.simpleType !== null) {
 			return getSimpleType(tipoVariavel.simpleType);
 		}
@@ -79,18 +84,15 @@ class PascalValidator extends AbstractPascalValidator {
 
 	def getSimpleType(simpleType st) {
 		// scalarType   TO-DO: NÃO ENTENDI MUITO BEM COMO FUNCIONA ESSE SCALARTYPE ://
-		
-		
-		
 		// subrangeType
-		if(st.subrangeType !== null){
-			if(st.subrangeType.constant !== null && st.subrangeType.constant2 !== null){
+		if (st.subrangeType !== null) {
+			if (st.subrangeType.constant !== null && st.subrangeType.constant2 !== null) {
 				return "range";
-			}else{
+			} else {
 				error("sao necessarias duas constantes para  intervalo", null);
 			}
 		}
-		
+
 		// typeIdentifier
 		if (st.typeIdentifier !== null) {
 			if (st.typeIdentifier.char !== null) {
@@ -111,11 +113,20 @@ class PascalValidator extends AbstractPascalValidator {
 			}
 
 			if (st.typeIdentifier.identifier !== null) {
-				// Verificacao pra quando sao criados tipos durante o programa,
-				// precisa criar um Map de "tipos criados pra fazer essa verificação					
+				if (!tiposCriados.contains(st.typeIdentifier.identifier)) {
+					error("tipo " + st.typeIdentifier.identifier + " nao existe!", null);
+				} else {
+					return st.typeIdentifier.identifier.identifier;
+				}
+			// Verificacao pra quando sao criados tipos durante o programa,
+			// precisa criar um Map de "tipos criados pra fazer essa verificação					
 			}
 		}
-		// stringType
+
+		if (st.stringtype !== null) {
+//			return st.stringtype;
+		}
+	// stringType
 	//
 	}
 
@@ -126,9 +137,11 @@ class PascalValidator extends AbstractPascalValidator {
 	def String getStructuredType(structuredType type) {
 		// Record eh structured type, nao sei seprecisaria verificar array, set, etc... 
 		var unpackeds = type.unpackedStructuredType1;
+		println(">>>" + type);
 		if (!unpackeds.isNullOrEmpty()) {
 			for (unpackedStructuredType t : unpackeds) {
 				var possivelRecord = t.recordType;
+
 				if (possivelRecord !== null) {
 					return "record";
 				}
@@ -148,6 +161,7 @@ class PascalValidator extends AbstractPascalValidator {
 	 * Se for so uma, chama o metodo que verifica a declaracao
 	 * Se for uma lista, fazer um for na mesma e chamar o metodo que verifica a declaracao pra cada uma
 	 */
+	@Check
 	def checkDeclaracao(variableDeclarationPart decla) {
 		var declaracaoUmaVar = decla.variableDeclaration;
 		var listaDeclaracoes = decla.variableDeclaration1;
@@ -164,11 +178,23 @@ class PascalValidator extends AbstractPascalValidator {
 
 	}
 
+	/* -------------------- block -> typeDefinitionPart ----------------------  */
 	@Check
-	def runChecks(program p) {
-		var declaracoes = p.block.variableDeclarationParts;
-		for (variableDeclarationPart e : declaracoes) {
-			checkDeclaracao(e);
+	def checkDefinicaoTipo(typeDefinitionPart deftype) {
+		var definicoes = deftype.typeDefinition1;
+		if (!definicoes.isNullOrEmpty()) {
+			for (defPart : definicoes) {
+				
+			}
 		}
+
+	}
+
+	@Check
+	def runChecks(block b) {
+//		var declaracoes = b.variableDeclarationParts;
+//		for (variableDeclarationPart e : declaracoes) {
+//			checkDeclaracao(e);
+//		}
 	}
 }

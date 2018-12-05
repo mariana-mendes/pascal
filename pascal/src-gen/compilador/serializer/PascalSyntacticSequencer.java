@@ -70,49 +70,49 @@ public class PascalSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (rule start) (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     (rule start) (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     (rule start) (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     (rule start) (ambiguity) variableDeclarationParts+=variableDeclarationPart
+	 *     (rule start) (ambiguity) variableDeclarationPart+=variableDeclarationPart
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) compoundStatement=compoundStatement
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) label+=label_declaration_part
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
+	 *     constantDefinitionPart+=constantDefinitionPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
 	 *     label+=label_declaration_part (ambiguity) compoundStatement=compoundStatement
 	 *     label+=label_declaration_part (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     label+=label_declaration_part (ambiguity) label+=label_declaration_part
 	 *     label+=label_declaration_part (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     label+=label_declaration_part (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     label+=label_declaration_part (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     label+=label_declaration_part (ambiguity) variableDeclarationParts+=variableDeclarationPart
+	 *     label+=label_declaration_part (ambiguity) variableDeclarationPart+=variableDeclarationPart
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) compoundStatement=compoundStatement
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) label+=label_declaration_part
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
+	 *     procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) compoundStatement=compoundStatement
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) label+=label_declaration_part
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
+	 *     typeDefinitionPart+=typeDefinitionPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) compoundStatement=compoundStatement
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) label+=label_declaration_part
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
 	 *     usesUnitsPart+=usesUnitsPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     usesUnitsPart+=usesUnitsPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
-	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) compoundStatement=compoundStatement
-	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
-	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) label+=label_declaration_part
-	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
-	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
-	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) usesUnitsPart+=usesUnitsPart
-	 *     variableDeclarationParts+=variableDeclarationPart (ambiguity) variableDeclarationParts+=variableDeclarationPart
+	 *     usesUnitsPart+=usesUnitsPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
+	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) compoundStatement=compoundStatement
+	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) constantDefinitionPart+=constantDefinitionPart
+	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) label+=label_declaration_part
+	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart
+	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) typeDefinitionPart+=typeDefinitionPart
+	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) usesUnitsPart+=usesUnitsPart
+	 *     variableDeclarationPart+=variableDeclarationPart (ambiguity) variableDeclarationPart+=variableDeclarationPart
 	 */
 	protected void emit_block_ImplemetationKeyword_1_6_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);

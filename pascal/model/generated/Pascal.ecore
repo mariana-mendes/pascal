@@ -33,7 +33,7 @@
         upperBound="-1" eType="#//constantDefinitionPart" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="typeDefinitionPart" upperBound="-1"
         eType="#//typeDefinitionPart" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="variableDeclarationParts"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variableDeclarationPart"
         upperBound="-1" eType="#//variableDeclarationPart" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="procedureAndFunctionDeclarationPart"
         upperBound="-1" eType="#//procedureAndFunctionDeclarationPart" containment="true"/>
@@ -98,7 +98,9 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="typeDefinitionPart">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="typeDefinition" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeDefinition" eType="#//typeDefinition"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeDefinition1" upperBound="-1"
         eType="#//typeDefinition" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="typeDefinition">

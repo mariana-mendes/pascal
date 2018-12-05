@@ -3,22 +3,28 @@
  */
 package compilador.validation;
 
+import compilador.pascal.block;
 import compilador.pascal.identifier;
 import compilador.pascal.pointerType;
 import compilador.pascal.program;
 import compilador.pascal.recordType;
 import compilador.pascal.simpleType;
+import compilador.pascal.stringtype;
 import compilador.pascal.structuredType;
 import compilador.pascal.subrangeType;
 import compilador.pascal.type;
+import compilador.pascal.typeDefinition;
+import compilador.pascal.typeDefinitionPart;
 import compilador.pascal.typeIdentifier;
 import compilador.pascal.unpackedStructuredType;
 import compilador.pascal.variableDeclaration;
 import compilador.pascal.variableDeclarationPart;
 import compilador.validation.AbstractPascalValidator;
 import java.util.HashMap;
+import java.util.HashSet;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.validation.Check;
+import org.eclipse.xtext.xbase.lib.InputOutput;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
 /**
@@ -30,7 +36,9 @@ import org.eclipse.xtext.xbase.lib.IterableExtensions;
 public class PascalValidator extends AbstractPascalValidator {
   private HashMap<String, identifier> variaveisDeclaradas = new HashMap<String, identifier>();
   
-  private HashMap<identifier, String> variaveisTipo = new HashMap<identifier, String>();
+  private HashMap<String, String> variaveisTipo = new HashMap<String, String>();
+  
+  private HashSet<String> tiposCriados = new HashSet<String>();
   
   @Check
   public void restart(final program init) {
@@ -60,7 +68,7 @@ public class PascalValidator extends AbstractPascalValidator {
             this.error(_plus, null, id.getIdentifier());
           } else {
             this.variaveisDeclaradas.put(id.getIdentifier(), id);
-            this.variaveisTipo.put(id, this.getTypeVar(vd.getType()));
+            this.variaveisTipo.put(id.getIdentifier(), this.getTypeVar(vd.getType()));
           }
         }
       }
@@ -73,7 +81,8 @@ public class PascalValidator extends AbstractPascalValidator {
         String _xblockexpression_1 = null;
         {
           this.variaveisDeclaradas.put(declaracaoUnica.getIdentifier(), declaracaoUnica);
-          _xblockexpression_1 = this.variaveisTipo.put(declaracaoUnica, this.getTypeVar(vd.getType()));
+          InputOutput.<String>println(declaracaoUnica.getIdentifier());
+          _xblockexpression_1 = this.variaveisTipo.put(declaracaoUnica.getIdentifier(), this.getTypeVar(vd.getType()));
         }
         _xifexpression = _xblockexpression_1;
       }
@@ -117,46 +126,54 @@ public class PascalValidator extends AbstractPascalValidator {
           this.error("sao necessarias duas constantes para  intervalo", null);
         }
       }
-      Object _xifexpression = null;
       typeIdentifier _typeIdentifier = st.getTypeIdentifier();
       boolean _tripleNotEquals_1 = (_typeIdentifier != null);
       if (_tripleNotEquals_1) {
-        Object _xblockexpression_1 = null;
-        {
-          String _char = st.getTypeIdentifier().getChar();
-          boolean _tripleNotEquals_2 = (_char != null);
-          if (_tripleNotEquals_2) {
-            return st.getTypeIdentifier().getChar();
-          }
-          String _boolean = st.getTypeIdentifier().getBoolean();
-          boolean _tripleNotEquals_3 = (_boolean != null);
-          if (_tripleNotEquals_3) {
-            return st.getTypeIdentifier().getBoolean();
-          }
-          String _integer = st.getTypeIdentifier().getInteger();
-          boolean _tripleNotEquals_4 = (_integer != null);
-          if (_tripleNotEquals_4) {
-            return st.getTypeIdentifier().getInteger();
-          }
-          String _real = st.getTypeIdentifier().getReal();
-          boolean _tripleNotEquals_5 = (_real != null);
-          if (_tripleNotEquals_5) {
-            return st.getTypeIdentifier().getReal();
-          }
-          String _string = st.getTypeIdentifier().getString();
-          boolean _tripleNotEquals_6 = (_string != null);
-          if (_tripleNotEquals_6) {
-            return st.getTypeIdentifier().getString();
-          }
-          Object _xifexpression_1 = null;
-          identifier _identifier = st.getTypeIdentifier().getIdentifier();
-          boolean _tripleNotEquals_7 = (_identifier != null);
-          if (_tripleNotEquals_7) {
-            _xifexpression_1 = null;
-          }
-          _xblockexpression_1 = _xifexpression_1;
+        String _char = st.getTypeIdentifier().getChar();
+        boolean _tripleNotEquals_2 = (_char != null);
+        if (_tripleNotEquals_2) {
+          return st.getTypeIdentifier().getChar();
         }
-        _xifexpression = _xblockexpression_1;
+        String _boolean = st.getTypeIdentifier().getBoolean();
+        boolean _tripleNotEquals_3 = (_boolean != null);
+        if (_tripleNotEquals_3) {
+          return st.getTypeIdentifier().getBoolean();
+        }
+        String _integer = st.getTypeIdentifier().getInteger();
+        boolean _tripleNotEquals_4 = (_integer != null);
+        if (_tripleNotEquals_4) {
+          return st.getTypeIdentifier().getInteger();
+        }
+        String _real = st.getTypeIdentifier().getReal();
+        boolean _tripleNotEquals_5 = (_real != null);
+        if (_tripleNotEquals_5) {
+          return st.getTypeIdentifier().getReal();
+        }
+        String _string = st.getTypeIdentifier().getString();
+        boolean _tripleNotEquals_6 = (_string != null);
+        if (_tripleNotEquals_6) {
+          return st.getTypeIdentifier().getString();
+        }
+        identifier _identifier = st.getTypeIdentifier().getIdentifier();
+        boolean _tripleNotEquals_7 = (_identifier != null);
+        if (_tripleNotEquals_7) {
+          boolean _contains = this.tiposCriados.contains(st.getTypeIdentifier().getIdentifier());
+          boolean _not = (!_contains);
+          if (_not) {
+            identifier _identifier_1 = st.getTypeIdentifier().getIdentifier();
+            String _plus = ("tipo " + _identifier_1);
+            String _plus_1 = (_plus + " nao existe!");
+            this.error(_plus_1, null);
+          } else {
+            return st.getTypeIdentifier().getIdentifier().getIdentifier();
+          }
+        }
+      }
+      Object _xifexpression = null;
+      stringtype _stringtype = st.getStringtype();
+      boolean _tripleNotEquals_8 = (_stringtype != null);
+      if (_tripleNotEquals_8) {
+        _xifexpression = null;
       }
       _xblockexpression = _xifexpression;
     }
@@ -171,6 +188,7 @@ public class PascalValidator extends AbstractPascalValidator {
     Object _xblockexpression = null;
     {
       EList<unpackedStructuredType> unpackeds = type.getUnpackedStructuredType1();
+      InputOutput.<String>println((">>>" + type));
       Object _xifexpression = null;
       boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(unpackeds);
       boolean _not = (!_isNullOrEmpty);
@@ -204,6 +222,7 @@ public class PascalValidator extends AbstractPascalValidator {
    * Se for so uma, chama o metodo que verifica a declaracao
    * Se for uma lista, fazer um for na mesma e chamar o metodo que verifica a declaracao pra cada uma
    */
+  @Check
   public void checkDeclaracao(final variableDeclarationPart decla) {
     variableDeclaration declaracaoUmaVar = decla.getVariableDeclaration();
     EList<variableDeclaration> listaDeclaracoes = decla.getVariableDeclaration1();
@@ -219,11 +238,22 @@ public class PascalValidator extends AbstractPascalValidator {
     }
   }
   
+  /**
+   * -------------------- block -> typeDefinitionPart ----------------------
+   */
   @Check
-  public void runChecks(final program p) {
-    EList<variableDeclarationPart> declaracoes = p.getBlock().getVariableDeclarationParts();
-    for (final variableDeclarationPart e : declaracoes) {
-      this.checkDeclaracao(e);
+  public void checkDefinicaoTipo(final typeDefinitionPart deftype) {
+    EList<typeDefinition> definicoes = deftype.getTypeDefinition1();
+    boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(definicoes);
+    boolean _not = (!_isNullOrEmpty);
+    if (_not) {
+      for (final typeDefinition defPart : definicoes) {
+      }
     }
+  }
+  
+  @Check
+  public Object runChecks(final block b) {
+    return null;
   }
 }

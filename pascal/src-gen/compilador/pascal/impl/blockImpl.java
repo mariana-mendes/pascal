@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link compilador.pascal.impl.blockImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link compilador.pascal.impl.blockImpl#getConstantDefinitionPart <em>Constant Definition Part</em>}</li>
  *   <li>{@link compilador.pascal.impl.blockImpl#getTypeDefinitionPart <em>Type Definition Part</em>}</li>
- *   <li>{@link compilador.pascal.impl.blockImpl#getVariableDeclarationParts <em>Variable Declaration Parts</em>}</li>
+ *   <li>{@link compilador.pascal.impl.blockImpl#getVariableDeclarationPart <em>Variable Declaration Part</em>}</li>
  *   <li>{@link compilador.pascal.impl.blockImpl#getProcedureAndFunctionDeclarationPart <em>Procedure And Function Declaration Part</em>}</li>
  *   <li>{@link compilador.pascal.impl.blockImpl#getUsesUnitsPart <em>Uses Units Part</em>}</li>
  *   <li>{@link compilador.pascal.impl.blockImpl#getCompoundStatement <em>Compound Statement</em>}</li>
@@ -81,14 +81,14 @@ public class blockImpl extends MinimalEObjectImpl.Container implements block
   protected EList<typeDefinitionPart> typeDefinitionPart;
 
   /**
-   * The cached value of the '{@link #getVariableDeclarationParts() <em>Variable Declaration Parts</em>}' containment reference list.
+   * The cached value of the '{@link #getVariableDeclarationPart() <em>Variable Declaration Part</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getVariableDeclarationParts()
+   * @see #getVariableDeclarationPart()
    * @generated
    * @ordered
    */
-  protected EList<variableDeclarationPart> variableDeclarationParts;
+  protected EList<variableDeclarationPart> variableDeclarationPart;
 
   /**
    * The cached value of the '{@link #getProcedureAndFunctionDeclarationPart() <em>Procedure And Function Declaration Part</em>}' containment reference list.
@@ -188,13 +188,13 @@ public class blockImpl extends MinimalEObjectImpl.Container implements block
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<variableDeclarationPart> getVariableDeclarationParts()
+  public EList<variableDeclarationPart> getVariableDeclarationPart()
   {
-    if (variableDeclarationParts == null)
+    if (variableDeclarationPart == null)
     {
-      variableDeclarationParts = new EObjectContainmentEList<variableDeclarationPart>(variableDeclarationPart.class, this, PascalPackage.BLOCK__VARIABLE_DECLARATION_PARTS);
+      variableDeclarationPart = new EObjectContainmentEList<variableDeclarationPart>(variableDeclarationPart.class, this, PascalPackage.BLOCK__VARIABLE_DECLARATION_PART);
     }
-    return variableDeclarationParts;
+    return variableDeclarationPart;
   }
 
   /**
@@ -289,8 +289,8 @@ public class blockImpl extends MinimalEObjectImpl.Container implements block
         return ((InternalEList<?>)getConstantDefinitionPart()).basicRemove(otherEnd, msgs);
       case PascalPackage.BLOCK__TYPE_DEFINITION_PART:
         return ((InternalEList<?>)getTypeDefinitionPart()).basicRemove(otherEnd, msgs);
-      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PARTS:
-        return ((InternalEList<?>)getVariableDeclarationParts()).basicRemove(otherEnd, msgs);
+      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PART:
+        return ((InternalEList<?>)getVariableDeclarationPart()).basicRemove(otherEnd, msgs);
       case PascalPackage.BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PART:
         return ((InternalEList<?>)getProcedureAndFunctionDeclarationPart()).basicRemove(otherEnd, msgs);
       case PascalPackage.BLOCK__USES_UNITS_PART:
@@ -317,8 +317,8 @@ public class blockImpl extends MinimalEObjectImpl.Container implements block
         return getConstantDefinitionPart();
       case PascalPackage.BLOCK__TYPE_DEFINITION_PART:
         return getTypeDefinitionPart();
-      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PARTS:
-        return getVariableDeclarationParts();
+      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PART:
+        return getVariableDeclarationPart();
       case PascalPackage.BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PART:
         return getProcedureAndFunctionDeclarationPart();
       case PascalPackage.BLOCK__USES_UNITS_PART:
@@ -352,9 +352,9 @@ public class blockImpl extends MinimalEObjectImpl.Container implements block
         getTypeDefinitionPart().clear();
         getTypeDefinitionPart().addAll((Collection<? extends typeDefinitionPart>)newValue);
         return;
-      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PARTS:
-        getVariableDeclarationParts().clear();
-        getVariableDeclarationParts().addAll((Collection<? extends variableDeclarationPart>)newValue);
+      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PART:
+        getVariableDeclarationPart().clear();
+        getVariableDeclarationPart().addAll((Collection<? extends variableDeclarationPart>)newValue);
         return;
       case PascalPackage.BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PART:
         getProcedureAndFunctionDeclarationPart().clear();
@@ -390,8 +390,8 @@ public class blockImpl extends MinimalEObjectImpl.Container implements block
       case PascalPackage.BLOCK__TYPE_DEFINITION_PART:
         getTypeDefinitionPart().clear();
         return;
-      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PARTS:
-        getVariableDeclarationParts().clear();
+      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PART:
+        getVariableDeclarationPart().clear();
         return;
       case PascalPackage.BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PART:
         getProcedureAndFunctionDeclarationPart().clear();
@@ -422,8 +422,8 @@ public class blockImpl extends MinimalEObjectImpl.Container implements block
         return constantDefinitionPart != null && !constantDefinitionPart.isEmpty();
       case PascalPackage.BLOCK__TYPE_DEFINITION_PART:
         return typeDefinitionPart != null && !typeDefinitionPart.isEmpty();
-      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PARTS:
-        return variableDeclarationParts != null && !variableDeclarationParts.isEmpty();
+      case PascalPackage.BLOCK__VARIABLE_DECLARATION_PART:
+        return variableDeclarationPart != null && !variableDeclarationPart.isEmpty();
       case PascalPackage.BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PART:
         return procedureAndFunctionDeclarationPart != null && !procedureAndFunctionDeclarationPart.isEmpty();
       case PascalPackage.BLOCK__USES_UNITS_PART:

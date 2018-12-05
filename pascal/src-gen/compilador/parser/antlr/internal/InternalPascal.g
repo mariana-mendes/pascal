@@ -430,17 +430,17 @@ ruleblock returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getBlockAccess().getVariableDeclarationPartsVariableDeclarationPartParserRuleCall_1_3_0());
+						newCompositeNode(grammarAccess.getBlockAccess().getVariableDeclarationPartVariableDeclarationPartParserRuleCall_1_3_0());
 					}
-					lv_variableDeclarationParts_4_0=rulevariableDeclarationPart
+					lv_variableDeclarationPart_4_0=rulevariableDeclarationPart
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getBlockRule());
 						}
 						add(
 							$current,
-							"variableDeclarationParts",
-							lv_variableDeclarationParts_4_0,
+							"variableDeclarationPart",
+							lv_variableDeclarationPart_4_0,
 							"compilador.Pascal.variableDeclarationPart");
 						afterParserOrEnumRuleCall();
 					}
@@ -1185,29 +1185,46 @@ ruletypeDefinitionPart returns [EObject current=null]
 		}
 		(
 			(
-				(
-					{
-						newCompositeNode(grammarAccess.getTypeDefinitionPartAccess().getTypeDefinitionTypeDefinitionParserRuleCall_1_0_0());
+				{
+					newCompositeNode(grammarAccess.getTypeDefinitionPartAccess().getTypeDefinitionTypeDefinitionParserRuleCall_1_0());
+				}
+				lv_typeDefinition_1_0=ruletypeDefinition
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getTypeDefinitionPartRule());
 					}
-					lv_typeDefinition_1_0=ruletypeDefinition
-					{
-						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getTypeDefinitionPartRule());
-						}
-						add(
-							$current,
-							"typeDefinition",
-							lv_typeDefinition_1_0,
-							"compilador.Pascal.typeDefinition");
-						afterParserOrEnumRuleCall();
-					}
-				)
+					set(
+						$current,
+						"typeDefinition",
+						lv_typeDefinition_1_0,
+						"compilador.Pascal.typeDefinition");
+					afterParserOrEnumRuleCall();
+				}
 			)
-			otherlv_2=';'
-			{
-				newLeafNode(otherlv_2, grammarAccess.getTypeDefinitionPartAccess().getSemicolonKeyword_1_1());
-			}
-		)+
+		)
+		(
+			(
+				{
+					newCompositeNode(grammarAccess.getTypeDefinitionPartAccess().getTypeDefinition1TypeDefinitionParserRuleCall_2_0());
+				}
+				lv_typeDefinition1_2_0=ruletypeDefinition
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getTypeDefinitionPartRule());
+					}
+					add(
+						$current,
+						"typeDefinition1",
+						lv_typeDefinition1_2_0,
+						"compilador.Pascal.typeDefinition");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)*
+		otherlv_3=';'
+		{
+			newLeafNode(otherlv_3, grammarAccess.getTypeDefinitionPartAccess().getSemicolonKeyword_3());
+		}
 	)
 ;
 

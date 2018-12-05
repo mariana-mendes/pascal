@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link compilador.pascal.typeDefinitionPart#getTypeDefinition <em>Type Definition</em>}</li>
+ *   <li>{@link compilador.pascal.typeDefinitionPart#getTypeDefinition1 <em>Type Definition1</em>}</li>
  * </ul>
  * </p>
  *
@@ -26,19 +27,45 @@ import org.eclipse.emf.ecore.EObject;
 public interface typeDefinitionPart extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Type Definition</b></em>' containment reference list.
-   * The list contents are of type {@link compilador.pascal.typeDefinition}.
+   * Returns the value of the '<em><b>Type Definition</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Type Definition</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Type Definition</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Type Definition</em>' containment reference list.
+   * @return the value of the '<em>Type Definition</em>' containment reference.
+   * @see #setTypeDefinition(typeDefinition)
    * @see compilador.pascal.PascalPackage#gettypeDefinitionPart_TypeDefinition()
    * @model containment="true"
    * @generated
    */
-  EList<typeDefinition> getTypeDefinition();
+  typeDefinition getTypeDefinition();
+
+  /**
+   * Sets the value of the '{@link compilador.pascal.typeDefinitionPart#getTypeDefinition <em>Type Definition</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Type Definition</em>' containment reference.
+   * @see #getTypeDefinition()
+   * @generated
+   */
+  void setTypeDefinition(typeDefinition value);
+
+  /**
+   * Returns the value of the '<em><b>Type Definition1</b></em>' containment reference list.
+   * The list contents are of type {@link compilador.pascal.typeDefinition}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Type Definition1</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Type Definition1</em>' containment reference list.
+   * @see compilador.pascal.PascalPackage#gettypeDefinitionPart_TypeDefinition1()
+   * @model containment="true"
+   * @generated
+   */
+  EList<typeDefinition> getTypeDefinition1();
 
 } // typeDefinitionPart

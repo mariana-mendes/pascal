@@ -795,7 +795,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getblock_VariableDeclarationParts()
+  public EReference getblock_VariableDeclarationPart()
   {
     return (EReference)blockEClass.getEStructuralFeatures().get(3);
   }
@@ -1148,6 +1148,16 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
   public EReference gettypeDefinitionPart_TypeDefinition()
   {
     return (EReference)typeDefinitionPartEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference gettypeDefinitionPart_TypeDefinition1()
+  {
+    return (EReference)typeDefinitionPartEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -2882,7 +2892,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
     createEReference(blockEClass, BLOCK__LABEL);
     createEReference(blockEClass, BLOCK__CONSTANT_DEFINITION_PART);
     createEReference(blockEClass, BLOCK__TYPE_DEFINITION_PART);
-    createEReference(blockEClass, BLOCK__VARIABLE_DECLARATION_PARTS);
+    createEReference(blockEClass, BLOCK__VARIABLE_DECLARATION_PART);
     createEReference(blockEClass, BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PART);
     createEReference(blockEClass, BLOCK__USES_UNITS_PART);
     createEReference(blockEClass, BLOCK__COMPOUND_STATEMENT);
@@ -2928,6 +2938,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
 
     typeDefinitionPartEClass = createEClass(TYPE_DEFINITION_PART);
     createEReference(typeDefinitionPartEClass, TYPE_DEFINITION_PART__TYPE_DEFINITION);
+    createEReference(typeDefinitionPartEClass, TYPE_DEFINITION_PART__TYPE_DEFINITION1);
 
     typeDefinitionEClass = createEClass(TYPE_DEFINITION);
     createEReference(typeDefinitionEClass, TYPE_DEFINITION__INDENTIFIER);
@@ -3208,7 +3219,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
     initEReference(getblock_Label(), this.getlabel_declaration_part(), null, "label", null, 0, -1, block.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getblock_ConstantDefinitionPart(), this.getconstantDefinitionPart(), null, "constantDefinitionPart", null, 0, -1, block.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getblock_TypeDefinitionPart(), this.gettypeDefinitionPart(), null, "typeDefinitionPart", null, 0, -1, block.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getblock_VariableDeclarationParts(), this.getvariableDeclarationPart(), null, "variableDeclarationParts", null, 0, -1, block.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getblock_VariableDeclarationPart(), this.getvariableDeclarationPart(), null, "variableDeclarationPart", null, 0, -1, block.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getblock_ProcedureAndFunctionDeclarationPart(), this.getprocedureAndFunctionDeclarationPart(), null, "procedureAndFunctionDeclarationPart", null, 0, -1, block.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getblock_UsesUnitsPart(), this.getusesUnitsPart(), null, "usesUnitsPart", null, 0, -1, block.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getblock_CompoundStatement(), this.getcompoundStatement(), null, "compoundStatement", null, 0, 1, block.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3253,7 +3264,8 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
     initEReference(getusesUnitsPart_IdentifierList(), this.getidentifierList(), null, "identifierList", null, 0, 1, usesUnitsPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(typeDefinitionPartEClass, typeDefinitionPart.class, "typeDefinitionPart", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(gettypeDefinitionPart_TypeDefinition(), this.gettypeDefinition(), null, "typeDefinition", null, 0, -1, typeDefinitionPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(gettypeDefinitionPart_TypeDefinition(), this.gettypeDefinition(), null, "typeDefinition", null, 0, 1, typeDefinitionPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(gettypeDefinitionPart_TypeDefinition1(), this.gettypeDefinition(), null, "typeDefinition1", null, 0, -1, typeDefinitionPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(typeDefinitionEClass, typeDefinition.class, "typeDefinition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(gettypeDefinition_Indentifier(), this.getidentifier(), null, "indentifier", null, 0, -1, typeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

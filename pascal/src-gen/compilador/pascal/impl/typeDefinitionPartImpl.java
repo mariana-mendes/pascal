@@ -9,6 +9,7 @@ import compilador.pascal.typeDefinitionPart;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -16,6 +17,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link compilador.pascal.impl.typeDefinitionPartImpl#getTypeDefinition <em>Type Definition</em>}</li>
+ *   <li>{@link compilador.pascal.impl.typeDefinitionPartImpl#getTypeDefinition1 <em>Type Definition1</em>}</li>
  * </ul>
  * </p>
  *
@@ -37,14 +40,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
 public class typeDefinitionPartImpl extends MinimalEObjectImpl.Container implements typeDefinitionPart
 {
   /**
-   * The cached value of the '{@link #getTypeDefinition() <em>Type Definition</em>}' containment reference list.
+   * The cached value of the '{@link #getTypeDefinition() <em>Type Definition</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getTypeDefinition()
    * @generated
    * @ordered
    */
-  protected EList<typeDefinition> typeDefinition;
+  protected typeDefinition typeDefinition;
+
+  /**
+   * The cached value of the '{@link #getTypeDefinition1() <em>Type Definition1</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getTypeDefinition1()
+   * @generated
+   * @ordered
+   */
+  protected EList<typeDefinition> typeDefinition1;
 
   /**
    * <!-- begin-user-doc -->
@@ -72,13 +85,61 @@ public class typeDefinitionPartImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<typeDefinition> getTypeDefinition()
+  public typeDefinition getTypeDefinition()
   {
-    if (typeDefinition == null)
-    {
-      typeDefinition = new EObjectContainmentEList<typeDefinition>(typeDefinition.class, this, PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION);
-    }
     return typeDefinition;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetTypeDefinition(typeDefinition newTypeDefinition, NotificationChain msgs)
+  {
+    typeDefinition oldTypeDefinition = typeDefinition;
+    typeDefinition = newTypeDefinition;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION, oldTypeDefinition, newTypeDefinition);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setTypeDefinition(typeDefinition newTypeDefinition)
+  {
+    if (newTypeDefinition != typeDefinition)
+    {
+      NotificationChain msgs = null;
+      if (typeDefinition != null)
+        msgs = ((InternalEObject)typeDefinition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION, null, msgs);
+      if (newTypeDefinition != null)
+        msgs = ((InternalEObject)newTypeDefinition).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION, null, msgs);
+      msgs = basicSetTypeDefinition(newTypeDefinition, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION, newTypeDefinition, newTypeDefinition));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EList<typeDefinition> getTypeDefinition1()
+  {
+    if (typeDefinition1 == null)
+    {
+      typeDefinition1 = new EObjectContainmentEList<typeDefinition>(typeDefinition.class, this, PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION1);
+    }
+    return typeDefinition1;
   }
 
   /**
@@ -92,7 +153,9 @@ public class typeDefinitionPartImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION:
-        return ((InternalEList<?>)getTypeDefinition()).basicRemove(otherEnd, msgs);
+        return basicSetTypeDefinition(null, msgs);
+      case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION1:
+        return ((InternalEList<?>)getTypeDefinition1()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -109,6 +172,8 @@ public class typeDefinitionPartImpl extends MinimalEObjectImpl.Container impleme
     {
       case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION:
         return getTypeDefinition();
+      case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION1:
+        return getTypeDefinition1();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -125,8 +190,11 @@ public class typeDefinitionPartImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION:
-        getTypeDefinition().clear();
-        getTypeDefinition().addAll((Collection<? extends typeDefinition>)newValue);
+        setTypeDefinition((typeDefinition)newValue);
+        return;
+      case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION1:
+        getTypeDefinition1().clear();
+        getTypeDefinition1().addAll((Collection<? extends typeDefinition>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -143,7 +211,10 @@ public class typeDefinitionPartImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION:
-        getTypeDefinition().clear();
+        setTypeDefinition((typeDefinition)null);
+        return;
+      case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION1:
+        getTypeDefinition1().clear();
         return;
     }
     super.eUnset(featureID);
@@ -160,7 +231,9 @@ public class typeDefinitionPartImpl extends MinimalEObjectImpl.Container impleme
     switch (featureID)
     {
       case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION:
-        return typeDefinition != null && !typeDefinition.isEmpty();
+        return typeDefinition != null;
+      case PascalPackage.TYPE_DEFINITION_PART__TYPE_DEFINITION1:
+        return typeDefinition1 != null && !typeDefinition1.isEmpty();
     }
     return super.eIsSet(featureID);
   }

@@ -370,7 +370,7 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *             label+=label_declaration_part | 
 	 *             constantDefinitionPart+=constantDefinitionPart | 
 	 *             typeDefinitionPart+=typeDefinitionPart | 
-	 *             variableDeclarationParts+=variableDeclarationPart | 
+	 *             variableDeclarationPart+=variableDeclarationPart | 
 	 *             procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart | 
 	 *             usesUnitsPart+=usesUnitsPart
 	 *         )* 
@@ -1106,7 +1106,7 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     typeDefinitionPart returns typeDefinitionPart
 	 *
 	 * Constraint:
-	 *     typeDefinition+=typeDefinition+
+	 *     (typeDefinition=typeDefinition typeDefinition1+=typeDefinition*)
 	 */
 	protected void sequence_typeDefinitionPart(ISerializationContext context, typeDefinitionPart semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

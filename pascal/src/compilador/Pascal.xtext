@@ -43,7 +43,7 @@ sign:	"+" | "-";
 usesUnitsPart:"uses" identifierList = identifierList ";";
 
 typeDefinitionPart:
-	"type" (typeDefinition +=typeDefinition ";")+;
+	"type" typeDefinition=typeDefinition (typeDefinition1+=typeDefinition )* ";";
 
 typeDefinition:
 	indentifier += identifier "=" (type = type | functionType = functionType | procedureType = procedureType);
@@ -75,7 +75,7 @@ pointerType:
 	"^" typeIdentifier = typeIdentifier;
 
 simpleType:
-	scalarType = scalarType | subrangeType = subrangeType|typeIdentifier= typeIdentifier | stringtype = stringtype;
+	scalarType = scalarType | subrangeType = subrangeType| typeIdentifier= typeIdentifier | stringtype = stringtype;
 
 scalarType:
 	"(" identifierList = identifierList ")";

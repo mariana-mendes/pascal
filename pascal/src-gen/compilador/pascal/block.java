@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link compilador.pascal.block#getLabel <em>Label</em>}</li>
  *   <li>{@link compilador.pascal.block#getConstantDefinitionPart <em>Constant Definition Part</em>}</li>
  *   <li>{@link compilador.pascal.block#getTypeDefinitionPart <em>Type Definition Part</em>}</li>
- *   <li>{@link compilador.pascal.block#getVariableDeclarationParts <em>Variable Declaration Parts</em>}</li>
+ *   <li>{@link compilador.pascal.block#getVariableDeclarationPart <em>Variable Declaration Part</em>}</li>
  *   <li>{@link compilador.pascal.block#getProcedureAndFunctionDeclarationPart <em>Procedure And Function Declaration Part</em>}</li>
  *   <li>{@link compilador.pascal.block#getUsesUnitsPart <em>Uses Units Part</em>}</li>
  *   <li>{@link compilador.pascal.block#getCompoundStatement <em>Compound Statement</em>}</li>
@@ -80,20 +80,20 @@ public interface block extends EObject
   EList<typeDefinitionPart> getTypeDefinitionPart();
 
   /**
-   * Returns the value of the '<em><b>Variable Declaration Parts</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Variable Declaration Part</b></em>' containment reference list.
    * The list contents are of type {@link compilador.pascal.variableDeclarationPart}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Variable Declaration Parts</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Variable Declaration Part</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Variable Declaration Parts</em>' containment reference list.
-   * @see compilador.pascal.PascalPackage#getblock_VariableDeclarationParts()
+   * @return the value of the '<em>Variable Declaration Part</em>' containment reference list.
+   * @see compilador.pascal.PascalPackage#getblock_VariableDeclarationPart()
    * @model containment="true"
    * @generated
    */
-  EList<variableDeclarationPart> getVariableDeclarationParts();
+  EList<variableDeclarationPart> getVariableDeclarationPart();
 
   /**
    * Returns the value of the '<em><b>Procedure And Function Declaration Part</b></em>' containment reference list.

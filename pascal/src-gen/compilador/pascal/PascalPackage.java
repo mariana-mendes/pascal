@@ -262,13 +262,13 @@ public interface PascalPackage extends EPackage
   int BLOCK__TYPE_DEFINITION_PART = 2;
 
   /**
-   * The feature id for the '<em><b>Variable Declaration Parts</b></em>' containment reference list.
+   * The feature id for the '<em><b>Variable Declaration Part</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int BLOCK__VARIABLE_DECLARATION_PARTS = 3;
+  int BLOCK__VARIABLE_DECLARATION_PART = 3;
 
   /**
    * The feature id for the '<em><b>Procedure And Function Declaration Part</b></em>' containment reference list.
@@ -705,7 +705,7 @@ public interface PascalPackage extends EPackage
   int TYPE_DEFINITION_PART = 15;
 
   /**
-   * The feature id for the '<em><b>Type Definition</b></em>' containment reference list.
+   * The feature id for the '<em><b>Type Definition</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -714,13 +714,22 @@ public interface PascalPackage extends EPackage
   int TYPE_DEFINITION_PART__TYPE_DEFINITION = 0;
 
   /**
+   * The feature id for the '<em><b>Type Definition1</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TYPE_DEFINITION_PART__TYPE_DEFINITION1 = 1;
+
+  /**
    * The number of structural features of the '<em>type Definition Part</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int TYPE_DEFINITION_PART_FEATURE_COUNT = 1;
+  int TYPE_DEFINITION_PART_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link compilador.pascal.impl.typeDefinitionImpl <em>type Definition</em>}' class.
@@ -2908,15 +2917,15 @@ public interface PascalPackage extends EPackage
   EReference getblock_TypeDefinitionPart();
 
   /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getVariableDeclarationParts <em>Variable Declaration Parts</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getVariableDeclarationPart <em>Variable Declaration Part</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Variable Declaration Parts</em>'.
-   * @see compilador.pascal.block#getVariableDeclarationParts()
+   * @return the meta object for the containment reference list '<em>Variable Declaration Part</em>'.
+   * @see compilador.pascal.block#getVariableDeclarationPart()
    * @see #getblock()
    * @generated
    */
-  EReference getblock_VariableDeclarationParts();
+  EReference getblock_VariableDeclarationPart();
 
   /**
    * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getProcedureAndFunctionDeclarationPart <em>Procedure And Function Declaration Part</em>}'.
@@ -3283,15 +3292,26 @@ public interface PascalPackage extends EPackage
   EClass gettypeDefinitionPart();
 
   /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.typeDefinitionPart#getTypeDefinition <em>Type Definition</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.typeDefinitionPart#getTypeDefinition <em>Type Definition</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Type Definition</em>'.
+   * @return the meta object for the containment reference '<em>Type Definition</em>'.
    * @see compilador.pascal.typeDefinitionPart#getTypeDefinition()
    * @see #gettypeDefinitionPart()
    * @generated
    */
   EReference gettypeDefinitionPart_TypeDefinition();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.typeDefinitionPart#getTypeDefinition1 <em>Type Definition1</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Type Definition1</em>'.
+   * @see compilador.pascal.typeDefinitionPart#getTypeDefinition1()
+   * @see #gettypeDefinitionPart()
+   * @generated
+   */
+  EReference gettypeDefinitionPart_TypeDefinition1();
 
   /**
    * Returns the meta object for class '{@link compilador.pascal.typeDefinition <em>type Definition</em>}'.
@@ -5262,12 +5282,12 @@ public interface PascalPackage extends EPackage
     EReference BLOCK__TYPE_DEFINITION_PART = eINSTANCE.getblock_TypeDefinitionPart();
 
     /**
-     * The meta object literal for the '<em><b>Variable Declaration Parts</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Variable Declaration Part</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference BLOCK__VARIABLE_DECLARATION_PARTS = eINSTANCE.getblock_VariableDeclarationParts();
+    EReference BLOCK__VARIABLE_DECLARATION_PART = eINSTANCE.getblock_VariableDeclarationPart();
 
     /**
      * The meta object literal for the '<em><b>Procedure And Function Declaration Part</b></em>' containment reference list feature.
@@ -5562,12 +5582,20 @@ public interface PascalPackage extends EPackage
     EClass TYPE_DEFINITION_PART = eINSTANCE.gettypeDefinitionPart();
 
     /**
-     * The meta object literal for the '<em><b>Type Definition</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Type Definition</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
     EReference TYPE_DEFINITION_PART__TYPE_DEFINITION = eINSTANCE.gettypeDefinitionPart_TypeDefinition();
+
+    /**
+     * The meta object literal for the '<em><b>Type Definition1</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference TYPE_DEFINITION_PART__TYPE_DEFINITION1 = eINSTANCE.gettypeDefinitionPart_TypeDefinition1();
 
     /**
      * The meta object literal for the '{@link compilador.pascal.impl.typeDefinitionImpl <em>type Definition</em>}' class.
