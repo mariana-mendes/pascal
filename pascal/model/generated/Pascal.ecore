@@ -104,8 +104,8 @@
         eType="#//typeDefinition" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="typeDefinition">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="indentifier" upperBound="-1"
-        eType="#//identifier" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="identifier" eType="#//identifier"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//type" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="functionType" eType="#//functionType"
         containment="true"/>

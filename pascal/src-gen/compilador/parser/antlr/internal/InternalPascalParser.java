@@ -3220,12 +3220,12 @@ public class InternalPascalParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruletypeDefinition"
-    // InternalPascal.g:1239:1: ruletypeDefinition returns [EObject current=null] : ( ( (lv_indentifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) ) ) ;
+    // InternalPascal.g:1239:1: ruletypeDefinition returns [EObject current=null] : ( ( (lv_identifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) ) ) ;
     public final EObject ruletypeDefinition() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
-        EObject lv_indentifier_0_0 = null;
+        EObject lv_identifier_0_0 = null;
 
         EObject lv_type_2_0 = null;
 
@@ -3238,23 +3238,23 @@ public class InternalPascalParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalPascal.g:1245:2: ( ( ( (lv_indentifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) ) ) )
-            // InternalPascal.g:1246:2: ( ( (lv_indentifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) ) )
+            // InternalPascal.g:1245:2: ( ( ( (lv_identifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) ) ) )
+            // InternalPascal.g:1246:2: ( ( (lv_identifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) ) )
             {
-            // InternalPascal.g:1246:2: ( ( (lv_indentifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) ) )
-            // InternalPascal.g:1247:3: ( (lv_indentifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) )
+            // InternalPascal.g:1246:2: ( ( (lv_identifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) ) )
+            // InternalPascal.g:1247:3: ( (lv_identifier_0_0= ruleidentifier ) ) otherlv_1= '=' ( ( (lv_type_2_0= ruletype ) ) | ( (lv_functionType_3_0= rulefunctionType ) ) | ( (lv_procedureType_4_0= ruleprocedureType ) ) )
             {
-            // InternalPascal.g:1247:3: ( (lv_indentifier_0_0= ruleidentifier ) )
-            // InternalPascal.g:1248:4: (lv_indentifier_0_0= ruleidentifier )
+            // InternalPascal.g:1247:3: ( (lv_identifier_0_0= ruleidentifier ) )
+            // InternalPascal.g:1248:4: (lv_identifier_0_0= ruleidentifier )
             {
-            // InternalPascal.g:1248:4: (lv_indentifier_0_0= ruleidentifier )
-            // InternalPascal.g:1249:5: lv_indentifier_0_0= ruleidentifier
+            // InternalPascal.g:1248:4: (lv_identifier_0_0= ruleidentifier )
+            // InternalPascal.g:1249:5: lv_identifier_0_0= ruleidentifier
             {
 
-            					newCompositeNode(grammarAccess.getTypeDefinitionAccess().getIndentifierIdentifierParserRuleCall_0_0());
+            					newCompositeNode(grammarAccess.getTypeDefinitionAccess().getIdentifierIdentifierParserRuleCall_0_0());
             				
             pushFollow(FOLLOW_13);
-            lv_indentifier_0_0=ruleidentifier();
+            lv_identifier_0_0=ruleidentifier();
 
             state._fsp--;
 
@@ -3262,10 +3262,10 @@ public class InternalPascalParser extends AbstractInternalAntlrParser {
             					if (current==null) {
             						current = createModelElementForParent(grammarAccess.getTypeDefinitionRule());
             					}
-            					add(
+            					set(
             						current,
-            						"indentifier",
-            						lv_indentifier_0_0,
+            						"identifier",
+            						lv_identifier_0_0,
             						"compilador.Pascal.identifier");
             					afterParserOrEnumRuleCall();
             				

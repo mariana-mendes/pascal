@@ -742,13 +742,13 @@ public interface PascalPackage extends EPackage
   int TYPE_DEFINITION = 16;
 
   /**
-   * The feature id for the '<em><b>Indentifier</b></em>' containment reference list.
+   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int TYPE_DEFINITION__INDENTIFIER = 0;
+  int TYPE_DEFINITION__IDENTIFIER = 0;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' containment reference.
@@ -3324,15 +3324,15 @@ public interface PascalPackage extends EPackage
   EClass gettypeDefinition();
 
   /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.typeDefinition#getIndentifier <em>Indentifier</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.typeDefinition#getIdentifier <em>Identifier</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Indentifier</em>'.
-   * @see compilador.pascal.typeDefinition#getIndentifier()
+   * @return the meta object for the containment reference '<em>Identifier</em>'.
+   * @see compilador.pascal.typeDefinition#getIdentifier()
    * @see #gettypeDefinition()
    * @generated
    */
-  EReference gettypeDefinition_Indentifier();
+  EReference gettypeDefinition_Identifier();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.typeDefinition#getType <em>Type</em>}'.
@@ -5608,12 +5608,12 @@ public interface PascalPackage extends EPackage
     EClass TYPE_DEFINITION = eINSTANCE.gettypeDefinition();
 
     /**
-     * The meta object literal for the '<em><b>Indentifier</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference TYPE_DEFINITION__INDENTIFIER = eINSTANCE.gettypeDefinition_Indentifier();
+    EReference TYPE_DEFINITION__IDENTIFIER = eINSTANCE.gettypeDefinition_Identifier();
 
     /**
      * The meta object literal for the '<em><b>Type</b></em>' containment reference feature.

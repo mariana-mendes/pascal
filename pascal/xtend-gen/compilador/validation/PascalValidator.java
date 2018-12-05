@@ -44,6 +44,44 @@ public class PascalValidator extends AbstractPascalValidator {
   public void restart(final program init) {
     this.variaveisDeclaradas.clear();
     this.variaveisTipo.clear();
+    this.tiposCriados.clear();
+  }
+  
+  /**
+   * -------------------- block -> typeDefinitionPart ----------------------
+   */
+  @Check
+  public void checkDefinicoesTipo(final typeDefinitionPart deftype) {
+    typeDefinition _typeDefinition = deftype.getTypeDefinition();
+    boolean _tripleNotEquals = (_typeDefinition != null);
+    if (_tripleNotEquals) {
+      this.checkDefTipo(deftype.getTypeDefinition());
+    }
+    EList<typeDefinition> definicoes = deftype.getTypeDefinition1();
+    boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(definicoes);
+    boolean _not = (!_isNullOrEmpty);
+    if (_not) {
+      for (final typeDefinition defPart : definicoes) {
+        this.checkDefTipo(defPart);
+      }
+    }
+  }
+  
+  public Boolean checkDefTipo(final typeDefinition definition) {
+    boolean _xblockexpression = false;
+    {
+      String tipoCriado = definition.getIdentifier().getIdentifier();
+      InputOutput.<String>println(tipoCriado);
+      boolean _xifexpression = false;
+      boolean _contains = this.tiposCriados.contains(tipoCriado);
+      if (_contains) {
+        this.error(("um tipo ja foi criado com id " + tipoCriado), null);
+      } else {
+        _xifexpression = this.tiposCriados.add(tipoCriado);
+      }
+      _xblockexpression = _xifexpression;
+    }
+    return Boolean.valueOf(_xblockexpression);
   }
   
   /**
@@ -99,7 +137,7 @@ public class PascalValidator extends AbstractPascalValidator {
     simpleType _simpleType = tipoVariavel.getSimpleType();
     boolean _tripleNotEquals = (_simpleType != null);
     if (_tripleNotEquals) {
-      return this.getSimpleType(tipoVariavel.getSimpleType());
+      return this.getSimpleType(tipoVariavel);
     }
     structuredType _structuredType = tipoVariavel.getStructuredType();
     boolean _tripleNotEquals_1 = (_structuredType != null);
@@ -114,63 +152,63 @@ public class PascalValidator extends AbstractPascalValidator {
     return null;
   }
   
-  public String getSimpleType(final simpleType st) {
+  public String getSimpleType(final type st) {
     Object _xblockexpression = null;
     {
-      subrangeType _subrangeType = st.getSubrangeType();
+      subrangeType _subrangeType = st.getSimpleType().getSubrangeType();
       boolean _tripleNotEquals = (_subrangeType != null);
       if (_tripleNotEquals) {
-        if (((st.getSubrangeType().getConstant() != null) && (st.getSubrangeType().getConstant2() != null))) {
+        if (((st.getSimpleType().getSubrangeType().getConstant() != null) && (st.getSimpleType().getSubrangeType().getConstant2() != null))) {
           return "range";
         } else {
           this.error("sao necessarias duas constantes para  intervalo", null);
         }
       }
-      typeIdentifier _typeIdentifier = st.getTypeIdentifier();
+      typeIdentifier _typeIdentifier = st.getSimpleType().getTypeIdentifier();
       boolean _tripleNotEquals_1 = (_typeIdentifier != null);
       if (_tripleNotEquals_1) {
-        String _char = st.getTypeIdentifier().getChar();
+        String _char = st.getSimpleType().getTypeIdentifier().getChar();
         boolean _tripleNotEquals_2 = (_char != null);
         if (_tripleNotEquals_2) {
-          return st.getTypeIdentifier().getChar();
+          return st.getSimpleType().getTypeIdentifier().getChar();
         }
-        String _boolean = st.getTypeIdentifier().getBoolean();
+        String _boolean = st.getSimpleType().getTypeIdentifier().getBoolean();
         boolean _tripleNotEquals_3 = (_boolean != null);
         if (_tripleNotEquals_3) {
-          return st.getTypeIdentifier().getBoolean();
+          return st.getSimpleType().getTypeIdentifier().getBoolean();
         }
-        String _integer = st.getTypeIdentifier().getInteger();
+        String _integer = st.getSimpleType().getTypeIdentifier().getInteger();
         boolean _tripleNotEquals_4 = (_integer != null);
         if (_tripleNotEquals_4) {
-          return st.getTypeIdentifier().getInteger();
+          return st.getSimpleType().getTypeIdentifier().getInteger();
         }
-        String _real = st.getTypeIdentifier().getReal();
+        String _real = st.getSimpleType().getTypeIdentifier().getReal();
         boolean _tripleNotEquals_5 = (_real != null);
         if (_tripleNotEquals_5) {
-          return st.getTypeIdentifier().getReal();
+          return st.getSimpleType().getTypeIdentifier().getReal();
         }
-        String _string = st.getTypeIdentifier().getString();
+        String _string = st.getSimpleType().getTypeIdentifier().getString();
         boolean _tripleNotEquals_6 = (_string != null);
         if (_tripleNotEquals_6) {
-          return st.getTypeIdentifier().getString();
+          return st.getSimpleType().getTypeIdentifier().getString();
         }
-        identifier _identifier = st.getTypeIdentifier().getIdentifier();
+        identifier _identifier = st.getSimpleType().getTypeIdentifier().getIdentifier();
         boolean _tripleNotEquals_7 = (_identifier != null);
         if (_tripleNotEquals_7) {
-          boolean _contains = this.tiposCriados.contains(st.getTypeIdentifier().getIdentifier());
+          boolean _contains = this.tiposCriados.contains(st.getSimpleType().getTypeIdentifier().getIdentifier().getIdentifier());
           boolean _not = (!_contains);
           if (_not) {
-            identifier _identifier_1 = st.getTypeIdentifier().getIdentifier();
+            String _identifier_1 = st.getSimpleType().getTypeIdentifier().getIdentifier().getIdentifier();
             String _plus = ("tipo " + _identifier_1);
             String _plus_1 = (_plus + " nao existe!");
             this.error(_plus_1, null);
           } else {
-            return st.getTypeIdentifier().getIdentifier().getIdentifier();
+            return st.getSimpleType().getTypeIdentifier().getIdentifier().getIdentifier();
           }
         }
       }
       Object _xifexpression = null;
-      stringtype _stringtype = st.getStringtype();
+      stringtype _stringtype = st.getSimpleType().getStringtype();
       boolean _tripleNotEquals_8 = (_stringtype != null);
       if (_tripleNotEquals_8) {
         _xifexpression = null;
@@ -188,7 +226,6 @@ public class PascalValidator extends AbstractPascalValidator {
     Object _xblockexpression = null;
     {
       EList<unpackedStructuredType> unpackeds = type.getUnpackedStructuredType1();
-      InputOutput.<String>println((">>>" + type));
       Object _xifexpression = null;
       boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(unpackeds);
       boolean _not = (!_isNullOrEmpty);
@@ -234,20 +271,6 @@ public class PascalValidator extends AbstractPascalValidator {
     if (_not) {
       for (final variableDeclaration declaracao : listaDeclaracoes) {
         this.checkDeclaracaoVariavel(declaracao);
-      }
-    }
-  }
-  
-  /**
-   * -------------------- block -> typeDefinitionPart ----------------------
-   */
-  @Check
-  public void checkDefinicaoTipo(final typeDefinitionPart deftype) {
-    EList<typeDefinition> definicoes = deftype.getTypeDefinition1();
-    boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(definicoes);
-    boolean _not = (!_isNullOrEmpty);
-    if (_not) {
-      for (final typeDefinition defPart : definicoes) {
       }
     }
   }

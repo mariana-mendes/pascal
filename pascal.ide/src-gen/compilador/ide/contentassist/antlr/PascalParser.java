@@ -177,7 +177,7 @@ public class PascalParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getUsesUnitsPartAccess().getIdentifierListAssignment_1(), "rule__UsesUnitsPart__IdentifierListAssignment_1");
 			builder.put(grammarAccess.getTypeDefinitionPartAccess().getTypeDefinitionAssignment_1(), "rule__TypeDefinitionPart__TypeDefinitionAssignment_1");
 			builder.put(grammarAccess.getTypeDefinitionPartAccess().getTypeDefinition1Assignment_2(), "rule__TypeDefinitionPart__TypeDefinition1Assignment_2");
-			builder.put(grammarAccess.getTypeDefinitionAccess().getIndentifierAssignment_0(), "rule__TypeDefinition__IndentifierAssignment_0");
+			builder.put(grammarAccess.getTypeDefinitionAccess().getIdentifierAssignment_0(), "rule__TypeDefinition__IdentifierAssignment_0");
 			builder.put(grammarAccess.getTypeDefinitionAccess().getTypeAssignment_2_0(), "rule__TypeDefinition__TypeAssignment_2_0");
 			builder.put(grammarAccess.getTypeDefinitionAccess().getFunctionTypeAssignment_2_1(), "rule__TypeDefinition__FunctionTypeAssignment_2_1");
 			builder.put(grammarAccess.getTypeDefinitionAccess().getProcedureTypeAssignment_2_2(), "rule__TypeDefinition__ProcedureTypeAssignment_2_2");

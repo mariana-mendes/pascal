@@ -648,8 +648,8 @@ public class PascalGrammarAccess extends AbstractGrammarElementFinder {
 	public class TypeDefinitionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "compilador.Pascal.typeDefinition");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cIndentifierAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cIndentifierIdentifierParserRuleCall_0_0 = (RuleCall)cIndentifierAssignment_0.eContents().get(0);
+		private final Assignment cIdentifierAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cIdentifierIdentifierParserRuleCall_0_0 = (RuleCall)cIdentifierAssignment_0.eContents().get(0);
 		private final Keyword cEqualsSignKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
 		private final Assignment cTypeAssignment_2_0 = (Assignment)cAlternatives_2.eContents().get(0);
@@ -660,17 +660,17 @@ public class PascalGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cProcedureTypeProcedureTypeParserRuleCall_2_2_0 = (RuleCall)cProcedureTypeAssignment_2_2.eContents().get(0);
 		
 		//typeDefinition:
-		//	indentifier+=identifier "=" (type=type | functionType=functionType | procedureType=procedureType);
+		//	identifier=identifier "=" (type=type | functionType=functionType | procedureType=procedureType);
 		@Override public ParserRule getRule() { return rule; }
 		
-		//indentifier+=identifier "=" (type=type | functionType=functionType | procedureType=procedureType)
+		//identifier=identifier "=" (type=type | functionType=functionType | procedureType=procedureType)
 		public Group getGroup() { return cGroup; }
 		
-		//indentifier+=identifier
-		public Assignment getIndentifierAssignment_0() { return cIndentifierAssignment_0; }
+		//identifier=identifier
+		public Assignment getIdentifierAssignment_0() { return cIdentifierAssignment_0; }
 		
 		//identifier
-		public RuleCall getIndentifierIdentifierParserRuleCall_0_0() { return cIndentifierIdentifierParserRuleCall_0_0; }
+		public RuleCall getIdentifierIdentifierParserRuleCall_0_0() { return cIdentifierIdentifierParserRuleCall_0_0; }
 		
 		//"="
 		public Keyword getEqualsSignKeyword_1() { return cEqualsSignKeyword_1; }
@@ -3163,7 +3163,7 @@ public class PascalGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//typeDefinition:
-	//	indentifier+=identifier "=" (type=type | functionType=functionType | procedureType=procedureType);
+	//	identifier=identifier "=" (type=type | functionType=functionType | procedureType=procedureType);
 	public TypeDefinitionElements getTypeDefinitionAccess() {
 		return pTypeDefinition;
 	}

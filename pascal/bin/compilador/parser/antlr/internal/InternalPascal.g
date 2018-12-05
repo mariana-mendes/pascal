@@ -1247,17 +1247,17 @@ ruletypeDefinition returns [EObject current=null]
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getTypeDefinitionAccess().getIndentifierIdentifierParserRuleCall_0_0());
+					newCompositeNode(grammarAccess.getTypeDefinitionAccess().getIdentifierIdentifierParserRuleCall_0_0());
 				}
-				lv_indentifier_0_0=ruleidentifier
+				lv_identifier_0_0=ruleidentifier
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getTypeDefinitionRule());
 					}
-					add(
+					set(
 						$current,
-						"indentifier",
-						lv_indentifier_0_0,
+						"identifier",
+						lv_identifier_0_0,
 						"compilador.Pascal.identifier");
 					afterParserOrEnumRuleCall();
 				}

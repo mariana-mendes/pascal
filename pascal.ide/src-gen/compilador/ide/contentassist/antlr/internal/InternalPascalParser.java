@@ -13113,31 +13113,31 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__Group__0__Impl"
-    // InternalPascal.g:3929:1: rule__TypeDefinition__Group__0__Impl : ( ( rule__TypeDefinition__IndentifierAssignment_0 ) ) ;
+    // InternalPascal.g:3929:1: rule__TypeDefinition__Group__0__Impl : ( ( rule__TypeDefinition__IdentifierAssignment_0 ) ) ;
     public final void rule__TypeDefinition__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3933:1: ( ( ( rule__TypeDefinition__IndentifierAssignment_0 ) ) )
-            // InternalPascal.g:3934:1: ( ( rule__TypeDefinition__IndentifierAssignment_0 ) )
+            // InternalPascal.g:3933:1: ( ( ( rule__TypeDefinition__IdentifierAssignment_0 ) ) )
+            // InternalPascal.g:3934:1: ( ( rule__TypeDefinition__IdentifierAssignment_0 ) )
             {
-            // InternalPascal.g:3934:1: ( ( rule__TypeDefinition__IndentifierAssignment_0 ) )
-            // InternalPascal.g:3935:2: ( rule__TypeDefinition__IndentifierAssignment_0 )
+            // InternalPascal.g:3934:1: ( ( rule__TypeDefinition__IdentifierAssignment_0 ) )
+            // InternalPascal.g:3935:2: ( rule__TypeDefinition__IdentifierAssignment_0 )
             {
-             before(grammarAccess.getTypeDefinitionAccess().getIndentifierAssignment_0()); 
-            // InternalPascal.g:3936:2: ( rule__TypeDefinition__IndentifierAssignment_0 )
-            // InternalPascal.g:3936:3: rule__TypeDefinition__IndentifierAssignment_0
+             before(grammarAccess.getTypeDefinitionAccess().getIdentifierAssignment_0()); 
+            // InternalPascal.g:3936:2: ( rule__TypeDefinition__IdentifierAssignment_0 )
+            // InternalPascal.g:3936:3: rule__TypeDefinition__IdentifierAssignment_0
             {
             pushFollow(FOLLOW_2);
-            rule__TypeDefinition__IndentifierAssignment_0();
+            rule__TypeDefinition__IdentifierAssignment_0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getTypeDefinitionAccess().getIndentifierAssignment_0()); 
+             after(grammarAccess.getTypeDefinitionAccess().getIdentifierAssignment_0()); 
 
             }
 
@@ -29646,9 +29646,9 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__TypeDefinitionPart__TypeDefinition1Assignment_2"
 
 
-    // $ANTLR start "rule__TypeDefinition__IndentifierAssignment_0"
-    // InternalPascal.g:9479:1: rule__TypeDefinition__IndentifierAssignment_0 : ( ruleidentifier ) ;
-    public final void rule__TypeDefinition__IndentifierAssignment_0() throws RecognitionException {
+    // $ANTLR start "rule__TypeDefinition__IdentifierAssignment_0"
+    // InternalPascal.g:9479:1: rule__TypeDefinition__IdentifierAssignment_0 : ( ruleidentifier ) ;
+    public final void rule__TypeDefinition__IdentifierAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
@@ -29659,13 +29659,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             // InternalPascal.g:9484:2: ( ruleidentifier )
             // InternalPascal.g:9485:3: ruleidentifier
             {
-             before(grammarAccess.getTypeDefinitionAccess().getIndentifierIdentifierParserRuleCall_0_0()); 
+             before(grammarAccess.getTypeDefinitionAccess().getIdentifierIdentifierParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
             ruleidentifier();
 
             state._fsp--;
 
-             after(grammarAccess.getTypeDefinitionAccess().getIndentifierIdentifierParserRuleCall_0_0()); 
+             after(grammarAccess.getTypeDefinitionAccess().getIdentifierIdentifierParserRuleCall_0_0()); 
 
             }
 
@@ -29684,7 +29684,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__TypeDefinition__IndentifierAssignment_0"
+    // $ANTLR end "rule__TypeDefinition__IdentifierAssignment_0"
 
 
     // $ANTLR start "rule__TypeDefinition__TypeAssignment_2_0"

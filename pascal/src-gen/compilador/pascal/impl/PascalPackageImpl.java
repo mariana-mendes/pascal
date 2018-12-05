@@ -1175,7 +1175,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference gettypeDefinition_Indentifier()
+  public EReference gettypeDefinition_Identifier()
   {
     return (EReference)typeDefinitionEClass.getEStructuralFeatures().get(0);
   }
@@ -2941,7 +2941,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
     createEReference(typeDefinitionPartEClass, TYPE_DEFINITION_PART__TYPE_DEFINITION1);
 
     typeDefinitionEClass = createEClass(TYPE_DEFINITION);
-    createEReference(typeDefinitionEClass, TYPE_DEFINITION__INDENTIFIER);
+    createEReference(typeDefinitionEClass, TYPE_DEFINITION__IDENTIFIER);
     createEReference(typeDefinitionEClass, TYPE_DEFINITION__TYPE);
     createEReference(typeDefinitionEClass, TYPE_DEFINITION__FUNCTION_TYPE);
     createEReference(typeDefinitionEClass, TYPE_DEFINITION__PROCEDURE_TYPE);
@@ -3268,7 +3268,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
     initEReference(gettypeDefinitionPart_TypeDefinition1(), this.gettypeDefinition(), null, "typeDefinition1", null, 0, -1, typeDefinitionPart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(typeDefinitionEClass, typeDefinition.class, "typeDefinition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(gettypeDefinition_Indentifier(), this.getidentifier(), null, "indentifier", null, 0, -1, typeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(gettypeDefinition_Identifier(), this.getidentifier(), null, "identifier", null, 0, 1, typeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(gettypeDefinition_Type(), this.gettype(), null, "type", null, 0, 1, typeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(gettypeDefinition_FunctionType(), this.getfunctionType(), null, "functionType", null, 0, 1, typeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(gettypeDefinition_ProcedureType(), this.getprocedureType(), null, "procedureType", null, 0, 1, typeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

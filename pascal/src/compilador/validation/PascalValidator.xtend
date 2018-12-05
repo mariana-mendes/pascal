@@ -14,6 +14,7 @@ import compilador.pascal.pointerType
 import compilador.pascal.identifier
 import compilador.pascal.recordType
 import java.util.HashSet
+import compilador.pascal.typeDefinition
 
 /**
  * This class contains custom validation rules. 
@@ -30,9 +31,35 @@ class PascalValidator extends AbstractPascalValidator {
 	def restart(program init) {
 		variaveisDeclaradas.clear();
 		variaveisTipo.clear();
+		tiposCriados.clear();
 	}
 
 	/* -------------------- block ----------------------  */
+	/* -------------------- block -> typeDefinitionPart ----------------------  */
+	@Check
+	def checkDefinicoesTipo(typeDefinitionPart deftype) {
+		if (deftype.typeDefinition !== null) {
+			checkDefTipo(deftype.typeDefinition);
+		}
+		var definicoes = deftype.typeDefinition1;
+		if (!definicoes.isNullOrEmpty()) {
+			for (typeDefinition defPart : definicoes) {
+				checkDefTipo(defPart);
+			}
+		}
+
+	}
+
+	def checkDefTipo(typeDefinition definition) {
+		var tipoCriado = definition.identifier.identifier;
+		println(tipoCriado);
+		if (tiposCriados.contains(tipoCriado)) {
+			error("um tipo ja foi criado com id " + tipoCriado, null);
+		} else {
+			tiposCriados.add(tipoCriado);
+		}
+	}
+
 	/* -------------------- block -> variableDeclarationPart ----------------------  */
 	/**
 	 * variableDeclaration: Podemos declarar mais de uma variavel usando apenas uma palavra chave 'var',
@@ -71,7 +98,7 @@ class PascalValidator extends AbstractPascalValidator {
 	def String getTypeVar(type tipoVariavel) {
 
 		if (tipoVariavel.simpleType !== null) {
-			return getSimpleType(tipoVariavel.simpleType);
+			return getSimpleType(tipoVariavel);
 		}
 		if (tipoVariavel.structuredType !== null) {
 			return getStructuredType(tipoVariavel.structuredType);
@@ -82,11 +109,11 @@ class PascalValidator extends AbstractPascalValidator {
 		}
 	}
 
-	def getSimpleType(simpleType st) {
+	def getSimpleType(type st) {
 		// scalarType   TO-DO: NÃO ENTENDI MUITO BEM COMO FUNCIONA ESSE SCALARTYPE ://
 		// subrangeType
-		if (st.subrangeType !== null) {
-			if (st.subrangeType.constant !== null && st.subrangeType.constant2 !== null) {
+		if (st.simpleType.subrangeType !== null) {
+			if (st.simpleType.subrangeType.constant !== null && st.simpleType.subrangeType.constant2 !== null) {
 				return "range";
 			} else {
 				error("sao necessarias duas constantes para  intervalo", null);
@@ -94,36 +121,36 @@ class PascalValidator extends AbstractPascalValidator {
 		}
 
 		// typeIdentifier
-		if (st.typeIdentifier !== null) {
-			if (st.typeIdentifier.char !== null) {
-				return (st.typeIdentifier.char);
+		if (st.simpleType.typeIdentifier !== null) {
+			if (st.simpleType.typeIdentifier.char !== null) {
+				return (st.simpleType.typeIdentifier.char);
 			}
 
-			if (st.typeIdentifier.boolean !== null) {
-				return (st.typeIdentifier.boolean);
+			if (st.simpleType.typeIdentifier.boolean !== null) {
+				return (st.simpleType.typeIdentifier.boolean);
 			}
-			if (st.typeIdentifier.integer !== null) {
-				return (st.typeIdentifier.integer);
+			if (st.simpleType.typeIdentifier.integer !== null) {
+				return (st.simpleType.typeIdentifier.integer);
 			}
-			if (st.typeIdentifier.real !== null) {
-				return (st.typeIdentifier.real);
+			if (st.simpleType.typeIdentifier.real !== null) {
+				return (st.simpleType.typeIdentifier.real);
 			}
-			if (st.typeIdentifier.string !== null) {
-				return (st.typeIdentifier.string);
+			if (st.simpleType.typeIdentifier.string !== null) {
+				return (st.simpleType.typeIdentifier.string);
 			}
 
-			if (st.typeIdentifier.identifier !== null) {
-				if (!tiposCriados.contains(st.typeIdentifier.identifier)) {
-					error("tipo " + st.typeIdentifier.identifier + " nao existe!", null);
+			if (st.simpleType.typeIdentifier.identifier !== null) {
+				if (!tiposCriados.contains(st.simpleType.typeIdentifier.identifier.identifier)) {
+					error("tipo " + st.simpleType.typeIdentifier.identifier.identifier + " nao existe!", null);
 				} else {
-					return st.typeIdentifier.identifier.identifier;
+					return st.simpleType.typeIdentifier.identifier.identifier;
 				}
 			// Verificacao pra quando sao criados tipos durante o programa,
 			// precisa criar um Map de "tipos criados pra fazer essa verificação					
 			}
 		}
 
-		if (st.stringtype !== null) {
+		if (st.simpleType.stringtype !== null) {
 //			return st.stringtype;
 		}
 	// stringType
@@ -137,7 +164,6 @@ class PascalValidator extends AbstractPascalValidator {
 	def String getStructuredType(structuredType type) {
 		// Record eh structured type, nao sei seprecisaria verificar array, set, etc... 
 		var unpackeds = type.unpackedStructuredType1;
-		println(">>>" + type);
 		if (!unpackeds.isNullOrEmpty()) {
 			for (unpackedStructuredType t : unpackeds) {
 				var possivelRecord = t.recordType;
@@ -173,18 +199,6 @@ class PascalValidator extends AbstractPascalValidator {
 		if (!listaDeclaracoes.isNullOrEmpty()) {
 			for (variableDeclaration declaracao : listaDeclaracoes) {
 				checkDeclaracaoVariavel(declaracao);
-			}
-		}
-
-	}
-
-	/* -------------------- block -> typeDefinitionPart ----------------------  */
-	@Check
-	def checkDefinicaoTipo(typeDefinitionPart deftype) {
-		var definicoes = deftype.typeDefinition1;
-		if (!definicoes.isNullOrEmpty()) {
-			for (defPart : definicoes) {
-				
 			}
 		}
 

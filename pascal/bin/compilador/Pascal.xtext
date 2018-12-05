@@ -46,7 +46,7 @@ typeDefinitionPart:
 	"type" typeDefinition=typeDefinition (typeDefinition1+=typeDefinition )* ";";
 
 typeDefinition:
-	indentifier += identifier "=" (type = type | functionType = functionType | procedureType = procedureType);
+	identifier = identifier "=" (type = type | functionType = functionType | procedureType = procedureType);
 
 functionType:
 	"function" (formalParameterList = formalParameterList)? ":" resultType = resultType;

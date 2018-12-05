@@ -1118,7 +1118,7 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     typeDefinition returns typeDefinition
 	 *
 	 * Constraint:
-	 *     (indentifier+=identifier (type=type | functionType=functionType | procedureType=procedureType))
+	 *     (identifier=identifier (type=type | functionType=functionType | procedureType=procedureType))
 	 */
 	protected void sequence_typeDefinition(ISerializationContext context, typeDefinition semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

@@ -3,8 +3,6 @@
  */
 package compilador.pascal;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -15,7 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link compilador.pascal.typeDefinition#getIndentifier <em>Indentifier</em>}</li>
+ *   <li>{@link compilador.pascal.typeDefinition#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.typeDefinition#getType <em>Type</em>}</li>
  *   <li>{@link compilador.pascal.typeDefinition#getFunctionType <em>Function Type</em>}</li>
  *   <li>{@link compilador.pascal.typeDefinition#getProcedureType <em>Procedure Type</em>}</li>
@@ -29,20 +27,30 @@ import org.eclipse.emf.ecore.EObject;
 public interface typeDefinition extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Indentifier</b></em>' containment reference list.
-   * The list contents are of type {@link compilador.pascal.identifier}.
+   * Returns the value of the '<em><b>Identifier</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Indentifier</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Identifier</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Indentifier</em>' containment reference list.
-   * @see compilador.pascal.PascalPackage#gettypeDefinition_Indentifier()
+   * @return the value of the '<em>Identifier</em>' containment reference.
+   * @see #setIdentifier(identifier)
+   * @see compilador.pascal.PascalPackage#gettypeDefinition_Identifier()
    * @model containment="true"
    * @generated
    */
-  EList<identifier> getIndentifier();
+  identifier getIdentifier();
+
+  /**
+   * Sets the value of the '{@link compilador.pascal.typeDefinition#getIdentifier <em>Identifier</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Identifier</em>' containment reference.
+   * @see #getIdentifier()
+   * @generated
+   */
+  void setIdentifier(identifier value);
 
   /**
    * Returns the value of the '<em><b>Type</b></em>' containment reference.

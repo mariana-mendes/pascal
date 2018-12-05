@@ -10,21 +10,14 @@ import compilador.pascal.procedureType;
 import compilador.pascal.type;
 import compilador.pascal.typeDefinition;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +26,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getIndentifier <em>Indentifier</em>}</li>
+ *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getType <em>Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getFunctionType <em>Function Type</em>}</li>
  *   <li>{@link compilador.pascal.impl.typeDefinitionImpl#getProcedureType <em>Procedure Type</em>}</li>
@@ -45,14 +38,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
 public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements typeDefinition
 {
   /**
-   * The cached value of the '{@link #getIndentifier() <em>Indentifier</em>}' containment reference list.
+   * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getIndentifier()
+   * @see #getIdentifier()
    * @generated
    * @ordered
    */
-  protected EList<identifier> indentifier;
+  protected identifier identifier;
 
   /**
    * The cached value of the '{@link #getType() <em>Type</em>}' containment reference.
@@ -110,13 +103,47 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<identifier> getIndentifier()
+  public identifier getIdentifier()
   {
-    if (indentifier == null)
+    return identifier;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetIdentifier(identifier newIdentifier, NotificationChain msgs)
+  {
+    identifier oldIdentifier = identifier;
+    identifier = newIdentifier;
+    if (eNotificationRequired())
     {
-      indentifier = new EObjectContainmentEList<identifier>(identifier.class, this, PascalPackage.TYPE_DEFINITION__INDENTIFIER);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_DEFINITION__IDENTIFIER, oldIdentifier, newIdentifier);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
     }
-    return indentifier;
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setIdentifier(identifier newIdentifier)
+  {
+    if (newIdentifier != identifier)
+    {
+      NotificationChain msgs = null;
+      if (identifier != null)
+        msgs = ((InternalEObject)identifier).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.TYPE_DEFINITION__IDENTIFIER, null, msgs);
+      if (newIdentifier != null)
+        msgs = ((InternalEObject)newIdentifier).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.TYPE_DEFINITION__IDENTIFIER, null, msgs);
+      msgs = basicSetIdentifier(newIdentifier, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.TYPE_DEFINITION__IDENTIFIER, newIdentifier, newIdentifier));
   }
 
   /**
@@ -273,8 +300,8 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
   {
     switch (featureID)
     {
-      case PascalPackage.TYPE_DEFINITION__INDENTIFIER:
-        return ((InternalEList<?>)getIndentifier()).basicRemove(otherEnd, msgs);
+      case PascalPackage.TYPE_DEFINITION__IDENTIFIER:
+        return basicSetIdentifier(null, msgs);
       case PascalPackage.TYPE_DEFINITION__TYPE:
         return basicSetType(null, msgs);
       case PascalPackage.TYPE_DEFINITION__FUNCTION_TYPE:
@@ -295,8 +322,8 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
   {
     switch (featureID)
     {
-      case PascalPackage.TYPE_DEFINITION__INDENTIFIER:
-        return getIndentifier();
+      case PascalPackage.TYPE_DEFINITION__IDENTIFIER:
+        return getIdentifier();
       case PascalPackage.TYPE_DEFINITION__TYPE:
         return getType();
       case PascalPackage.TYPE_DEFINITION__FUNCTION_TYPE:
@@ -312,15 +339,13 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
     switch (featureID)
     {
-      case PascalPackage.TYPE_DEFINITION__INDENTIFIER:
-        getIndentifier().clear();
-        getIndentifier().addAll((Collection<? extends identifier>)newValue);
+      case PascalPackage.TYPE_DEFINITION__IDENTIFIER:
+        setIdentifier((identifier)newValue);
         return;
       case PascalPackage.TYPE_DEFINITION__TYPE:
         setType((type)newValue);
@@ -345,8 +370,8 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
   {
     switch (featureID)
     {
-      case PascalPackage.TYPE_DEFINITION__INDENTIFIER:
-        getIndentifier().clear();
+      case PascalPackage.TYPE_DEFINITION__IDENTIFIER:
+        setIdentifier((identifier)null);
         return;
       case PascalPackage.TYPE_DEFINITION__TYPE:
         setType((type)null);
@@ -371,8 +396,8 @@ public class typeDefinitionImpl extends MinimalEObjectImpl.Container implements 
   {
     switch (featureID)
     {
-      case PascalPackage.TYPE_DEFINITION__INDENTIFIER:
-        return indentifier != null && !indentifier.isEmpty();
+      case PascalPackage.TYPE_DEFINITION__IDENTIFIER:
+        return identifier != null;
       case PascalPackage.TYPE_DEFINITION__TYPE:
         return type != null;
       case PascalPackage.TYPE_DEFINITION__FUNCTION_TYPE:
