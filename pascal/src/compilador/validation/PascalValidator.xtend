@@ -204,6 +204,53 @@ class PascalValidator extends AbstractPascalValidator {
 
 	}
 
+	@Check 
+	def checkTypeCase(caseStatement caseStatement) {
+	
+		var factor fac = caseStatement.expression.simpleExpression.term.signedFactor.factor;
+		var unsignedConstant unsConst;
+		var unsignedNumber unsNumb;
+		var variable vari;
+		
+		if(fac.unsignedConstant !== null) {
+			unsConst = caseStatement.expression.simpleExpression.term.signedFactor.factor.unsignedConstant;
+			if(unsConst.unsignedNumber !== null) {
+				unsNumb = unsConst.unsignedNumber;
+				
+				if(unsNumb.unsignedInteger !== null) {
+					return unsNumb.unsignedInteger.number;
+				} 
+				
+				if(unsNumb.unsignedReal !== null) {
+					return unsNumb.unsignedReal;
+				}
+			}
+			
+			if(unsConst.string_literal !== null) {
+				return unsConst.string_literal;
+			}
+			
+			if(unsConst.constantChr !== null) {
+				return unsConst.constantChr.unsignedInteger.number;
+			}
+		}
+		
+		if(fac.bool !== null) {
+			return fac.bool		
+		}
+		
+		if(fac.functionDesignator !== null) {
+			
+		}
+		
+		if(fac.variable !== null) {
+			vari = caseStatement.expression.simpleExpression.term.signedFactor.factor.variable;
+			if (vari.identifier !== null) {
+				return vari.identifier.identifier;
+			}
+		}
+	} 
+	
 	@Check
 	def runChecks(block b) {
 //		var declaracoes = b.variableDeclarationParts;

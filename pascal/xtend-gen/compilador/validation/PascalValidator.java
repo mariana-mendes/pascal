@@ -4,6 +4,10 @@
 package compilador.validation;
 
 import compilador.pascal.block;
+import compilador.pascal.caseStatement;
+import compilador.pascal.constantChr;
+import compilador.pascal.factor;
+import compilador.pascal.functionDesignator;
 import compilador.pascal.identifier;
 import compilador.pascal.pointerType;
 import compilador.pascal.program;
@@ -17,6 +21,10 @@ import compilador.pascal.typeDefinition;
 import compilador.pascal.typeDefinitionPart;
 import compilador.pascal.typeIdentifier;
 import compilador.pascal.unpackedStructuredType;
+import compilador.pascal.unsignedConstant;
+import compilador.pascal.unsignedInteger;
+import compilador.pascal.unsignedNumber;
+import compilador.pascal.variable;
 import compilador.pascal.variableDeclaration;
 import compilador.pascal.variableDeclarationPart;
 import compilador.validation.AbstractPascalValidator;
@@ -273,6 +281,64 @@ public class PascalValidator extends AbstractPascalValidator {
         this.checkDeclaracaoVariavel(declaracao);
       }
     }
+  }
+  
+  @Check
+  public String checkTypeCase(final caseStatement caseStatement) {
+    factor fac = caseStatement.getExpression().getSimpleExpression().getTerm().getSignedFactor().getFactor();
+    unsignedConstant unsConst = null;
+    unsignedNumber unsNumb = null;
+    variable vari = null;
+    unsignedConstant _unsignedConstant = fac.getUnsignedConstant();
+    boolean _tripleNotEquals = (_unsignedConstant != null);
+    if (_tripleNotEquals) {
+      unsConst = caseStatement.getExpression().getSimpleExpression().getTerm().getSignedFactor().getFactor().getUnsignedConstant();
+      unsignedNumber _unsignedNumber = unsConst.getUnsignedNumber();
+      boolean _tripleNotEquals_1 = (_unsignedNumber != null);
+      if (_tripleNotEquals_1) {
+        unsNumb = unsConst.getUnsignedNumber();
+        unsignedInteger _unsignedInteger = unsNumb.getUnsignedInteger();
+        boolean _tripleNotEquals_2 = (_unsignedInteger != null);
+        if (_tripleNotEquals_2) {
+          return unsNumb.getUnsignedInteger().getNumber();
+        }
+        String _unsignedReal = unsNumb.getUnsignedReal();
+        boolean _tripleNotEquals_3 = (_unsignedReal != null);
+        if (_tripleNotEquals_3) {
+          return unsNumb.getUnsignedReal();
+        }
+      }
+      String _string_literal = unsConst.getString_literal();
+      boolean _tripleNotEquals_4 = (_string_literal != null);
+      if (_tripleNotEquals_4) {
+        return unsConst.getString_literal();
+      }
+      constantChr _constantChr = unsConst.getConstantChr();
+      boolean _tripleNotEquals_5 = (_constantChr != null);
+      if (_tripleNotEquals_5) {
+        return unsConst.getConstantChr().getUnsignedInteger().getNumber();
+      }
+    }
+    String _bool = fac.getBool();
+    boolean _tripleNotEquals_6 = (_bool != null);
+    if (_tripleNotEquals_6) {
+      return fac.getBool();
+    }
+    functionDesignator _functionDesignator = fac.getFunctionDesignator();
+    boolean _tripleNotEquals_7 = (_functionDesignator != null);
+    if (_tripleNotEquals_7) {
+    }
+    variable _variable = fac.getVariable();
+    boolean _tripleNotEquals_8 = (_variable != null);
+    if (_tripleNotEquals_8) {
+      vari = caseStatement.getExpression().getSimpleExpression().getTerm().getSignedFactor().getFactor().getVariable();
+      identifier _identifier = vari.getIdentifier();
+      boolean _tripleNotEquals_9 = (_identifier != null);
+      if (_tripleNotEquals_9) {
+        return vari.getIdentifier().getIdentifier();
+      }
+    }
+    return null;
   }
   
   @Check
