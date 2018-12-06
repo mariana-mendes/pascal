@@ -313,7 +313,6 @@ public class PascalValidator extends AbstractPascalValidator {
   
   public boolean checkCaseList(final EList<caseListElement> list, final String expType) {
     boolean isValido = true;
-    InputOutput.<String>println(expType);
     for (final caseListElement e : list) {
       {
         InputOutput.<String>println(this.getCaseListUnico(e));
@@ -434,6 +433,14 @@ public class PascalValidator extends AbstractPascalValidator {
     if (_tripleNotEquals_8) {
       tipoExp = "integer";
     }
+    compilador.pascal.expression _expression_1 = simple.getExpression();
+    boolean _tripleNotEquals_9 = (_expression_1 != null);
+    if (_tripleNotEquals_9) {
+      String nextExpr = this.checkExpressionType(simple.getExpression());
+      if ((tipoExp != nextExpr)) {
+        this.error("Tipos não conferem", null);
+      }
+    }
     return tipoExp;
   }
   
@@ -473,6 +480,25 @@ public class PascalValidator extends AbstractPascalValidator {
     } else {
       return "";
     }
+  }
+  
+  @Check
+  public boolean checkRelationalExpression(final expression exp) {
+    String expType = this.checkExpressionType(exp);
+    expression _expression = exp.getExpression();
+    boolean _tripleNotEquals = (_expression != null);
+    if (_tripleNotEquals) {
+      InputOutput.<String>println(this.checkExpressionType(exp.getExpression()));
+      InputOutput.<String>println(expType);
+      String _checkExpressionType = this.checkExpressionType(exp.getExpression());
+      boolean _tripleNotEquals_1 = (expType != _checkExpressionType);
+      if (_tripleNotEquals_1) {
+        this.error("Tipos não conferem", null);
+        return false;
+      }
+      return this.checkRelationalExpression(exp.getExpression());
+    }
+    return true;
   }
   
   @Check

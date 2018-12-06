@@ -235,8 +235,6 @@ class PascalValidator extends AbstractPascalValidator {
 
 	def boolean checkCaseList(EList<caseListElement> list, String expType) {
 		var boolean isValido = true;
-		println(expType);
-		
 		for (caseListElement e : list) {
 			println(getCaseListUnico(e));
 			if (getCaseListUnico(e).isEmpty() || getCaseListUnico(e) !== expType) {
@@ -265,6 +263,7 @@ class PascalValidator extends AbstractPascalValidator {
 					return "";
 				}
 			}
+
 		}
 
 		return tipoPrincipal;
@@ -343,6 +342,13 @@ class PascalValidator extends AbstractPascalValidator {
 			tipoExp = "integer";
 		}
 
+		if (simple.expression !== null) {
+			var nextExpr = checkExpressionType(simple.expression);
+			if (tipoExp !== nextExpr) {
+				error("Tipos não conferem", null);
+			}
+		}
+
 		return tipoExp;
 
 	}
@@ -375,6 +381,26 @@ class PascalValidator extends AbstractPascalValidator {
 		} else {
 			return "";
 		}
+	}
+
+	@Check
+	def boolean checkRelationalExpression(expression exp) {
+
+		var expType = checkExpressionType(exp);
+
+		if (exp.expression !== null) {
+			println(checkExpressionType(exp.expression));
+			println(expType);
+			if (expType !== checkExpressionType(exp.expression)) {
+				error("Tipos não conferem", null);
+				return false;
+			}
+			return checkRelationalExpression(exp.expression);
+			
+
+		} return true;
+		
+
 	}
 
 	@Check
