@@ -4,6 +4,15 @@
 package compilador.validation;
 
 import compilador.pascal.block;
+import compilador.pascal.caseListElement;
+import compilador.pascal.caseStatement;
+import compilador.pascal.conditionalStatement;
+import compilador.pascal.constant;
+import compilador.pascal.constantChr;
+import compilador.pascal.expression;
+import compilador.pascal.factor;
+import compilador.pascal.functionDeclaration;
+import compilador.pascal.functionDesignator;
 import compilador.pascal.identifier;
 import compilador.pascal.pointerType;
 import compilador.pascal.program;
@@ -17,6 +26,10 @@ import compilador.pascal.typeDefinition;
 import compilador.pascal.typeDefinitionPart;
 import compilador.pascal.typeIdentifier;
 import compilador.pascal.unpackedStructuredType;
+import compilador.pascal.unsignedConstant;
+import compilador.pascal.unsignedInteger;
+import compilador.pascal.unsignedNumber;
+import compilador.pascal.variable;
 import compilador.pascal.variableDeclaration;
 import compilador.pascal.variableDeclarationPart;
 import compilador.validation.AbstractPascalValidator;
@@ -40,11 +53,14 @@ public class PascalValidator extends AbstractPascalValidator {
   
   private HashSet<String> tiposCriados = new HashSet<String>();
   
+  private HashMap<String, String> funcoesCriadas = new HashMap<String, String>();
+  
   @Check
   public void restart(final program init) {
     this.variaveisDeclaradas.clear();
     this.variaveisTipo.clear();
     this.tiposCriados.clear();
+    this.funcoesCriadas.clear();
   }
   
   /**
@@ -167,55 +183,60 @@ public class PascalValidator extends AbstractPascalValidator {
       typeIdentifier _typeIdentifier = st.getSimpleType().getTypeIdentifier();
       boolean _tripleNotEquals_1 = (_typeIdentifier != null);
       if (_tripleNotEquals_1) {
-        String _char = st.getSimpleType().getTypeIdentifier().getChar();
-        boolean _tripleNotEquals_2 = (_char != null);
-        if (_tripleNotEquals_2) {
-          return st.getSimpleType().getTypeIdentifier().getChar();
-        }
-        String _boolean = st.getSimpleType().getTypeIdentifier().getBoolean();
-        boolean _tripleNotEquals_3 = (_boolean != null);
-        if (_tripleNotEquals_3) {
-          return st.getSimpleType().getTypeIdentifier().getBoolean();
-        }
-        String _integer = st.getSimpleType().getTypeIdentifier().getInteger();
-        boolean _tripleNotEquals_4 = (_integer != null);
-        if (_tripleNotEquals_4) {
-          return st.getSimpleType().getTypeIdentifier().getInteger();
-        }
-        String _real = st.getSimpleType().getTypeIdentifier().getReal();
-        boolean _tripleNotEquals_5 = (_real != null);
-        if (_tripleNotEquals_5) {
-          return st.getSimpleType().getTypeIdentifier().getReal();
-        }
-        String _string = st.getSimpleType().getTypeIdentifier().getString();
-        boolean _tripleNotEquals_6 = (_string != null);
-        if (_tripleNotEquals_6) {
-          return st.getSimpleType().getTypeIdentifier().getString();
-        }
-        identifier _identifier = st.getSimpleType().getTypeIdentifier().getIdentifier();
-        boolean _tripleNotEquals_7 = (_identifier != null);
-        if (_tripleNotEquals_7) {
-          boolean _contains = this.tiposCriados.contains(st.getSimpleType().getTypeIdentifier().getIdentifier().getIdentifier());
-          boolean _not = (!_contains);
-          if (_not) {
-            String _identifier_1 = st.getSimpleType().getTypeIdentifier().getIdentifier().getIdentifier();
-            String _plus = ("tipo " + _identifier_1);
-            String _plus_1 = (_plus + " nao existe!");
-            this.error(_plus_1, null);
-          } else {
-            return st.getSimpleType().getTypeIdentifier().getIdentifier().getIdentifier();
-          }
-        }
+        return this.getTypeTypeIdentifier(st.getSimpleType().getTypeIdentifier());
       }
       Object _xifexpression = null;
       stringtype _stringtype = st.getSimpleType().getStringtype();
-      boolean _tripleNotEquals_8 = (_stringtype != null);
-      if (_tripleNotEquals_8) {
+      boolean _tripleNotEquals_2 = (_stringtype != null);
+      if (_tripleNotEquals_2) {
         _xifexpression = null;
       }
       _xblockexpression = _xifexpression;
     }
     return ((String)_xblockexpression);
+  }
+  
+  public String getTypeTypeIdentifier(final typeIdentifier ti) {
+    String _char = ti.getChar();
+    boolean _tripleNotEquals = (_char != null);
+    if (_tripleNotEquals) {
+      return ti.getChar();
+    }
+    String _boolean = ti.getBoolean();
+    boolean _tripleNotEquals_1 = (_boolean != null);
+    if (_tripleNotEquals_1) {
+      return ti.getBoolean();
+    }
+    String _integer = ti.getInteger();
+    boolean _tripleNotEquals_2 = (_integer != null);
+    if (_tripleNotEquals_2) {
+      return ti.getInteger();
+    }
+    String _real = ti.getReal();
+    boolean _tripleNotEquals_3 = (_real != null);
+    if (_tripleNotEquals_3) {
+      return ti.getReal();
+    }
+    String _string = ti.getString();
+    boolean _tripleNotEquals_4 = (_string != null);
+    if (_tripleNotEquals_4) {
+      return ti.getString();
+    }
+    identifier _identifier = ti.getIdentifier();
+    boolean _tripleNotEquals_5 = (_identifier != null);
+    if (_tripleNotEquals_5) {
+      boolean _contains = this.tiposCriados.contains(ti.getIdentifier().getIdentifier());
+      boolean _not = (!_contains);
+      if (_not) {
+        String _identifier_1 = ti.getIdentifier().getIdentifier();
+        String _plus = ("tipo " + _identifier_1);
+        String _plus_1 = (_plus + " nao existe!");
+        this.error(_plus_1, null);
+      } else {
+        return ti.getIdentifier().getIdentifier();
+      }
+    }
+    return null;
   }
   
   /**
@@ -273,6 +294,193 @@ public class PascalValidator extends AbstractPascalValidator {
         this.checkDeclaracaoVariavel(declaracao);
       }
     }
+  }
+  
+  @Check
+  public void checkConditionalStatement(final conditionalStatement cst) {
+    caseStatement caseStatement = cst.getCaseStatement();
+    String expType = this.checkExpressionType(caseStatement.getExpression());
+    InputOutput.<String>println(expType);
+    boolean _isEmpty = expType.isEmpty();
+    if (_isEmpty) {
+      this.error("variavel nao declarada. tipo do case invalido", null);
+    }
+    String tipoCaseUnico = this.getCaseListUnico(caseStatement.getCaseListElement());
+    boolean tipoCaseLista = this.checkCaseList(caseStatement.getCaseListElement1(), tipoCaseUnico);
+    if ((tipoCaseUnico.isEmpty() || (!tipoCaseLista))) {
+      this.error("Tipos incompativeis", null);
+    }
+  }
+  
+  public boolean checkCaseList(final EList<caseListElement> list, final String expType) {
+    boolean isValido = true;
+    for (final caseListElement e : list) {
+      if ((this.getCaseListUnico(e).isEmpty() || (this.getCaseListUnico(e) != expType))) {
+        isValido = false;
+      }
+    }
+    return isValido;
+  }
+  
+  public String getCaseListUnico(final caseListElement element) {
+    constant constUnica = element.getConstList().getConstant();
+    EList<constant> constLista = element.getConstList().getConstant1();
+    String tipoPrincipal = this.getTypeConst(constUnica);
+    if ((constUnica != null)) {
+      return tipoPrincipal;
+    }
+    for (final constant e : constLista) {
+      {
+        String tipoElement = this.getTypeConst(e);
+        if ((tipoPrincipal != tipoElement)) {
+          return "";
+        }
+      }
+    }
+    return tipoPrincipal;
+  }
+  
+  public String getTypeConst(final constant c) {
+    unsignedInteger _unsignedInteger = c.getNumber().getUnsignedInteger();
+    boolean _tripleNotEquals = (_unsignedInteger != null);
+    if (_tripleNotEquals) {
+      return "integer";
+    }
+    String _unsignedReal = c.getNumber().getUnsignedReal();
+    boolean _tripleNotEquals_1 = (_unsignedReal != null);
+    if (_tripleNotEquals_1) {
+      return "real";
+    }
+    identifier _identifier = c.getIdentifier();
+    boolean _tripleNotEquals_2 = (_identifier != null);
+    if (_tripleNotEquals_2) {
+    }
+    String _sTRING_LITERAL = c.getSTRING_LITERAL();
+    boolean _tripleNotEquals_3 = (_sTRING_LITERAL != null);
+    if (_tripleNotEquals_3) {
+      return "string";
+    }
+    constantChr _constantChr = c.getConstantChr();
+    boolean _tripleNotEquals_4 = (_constantChr != null);
+    if (_tripleNotEquals_4) {
+      return "char";
+    }
+    String _bool = c.getBool();
+    boolean _tripleNotEquals_5 = (_bool != null);
+    if (_tripleNotEquals_5) {
+      return "bool";
+    }
+    return null;
+  }
+  
+  public String checkExpressionType(final expression expression) {
+    String tipoExp = "";
+    factor simple = expression.getSimpleExpression().getTerm().getSignedFactor().getFactor();
+    unsignedConstant _unsignedConstant = simple.getUnsignedConstant();
+    boolean _tripleNotEquals = (_unsignedConstant != null);
+    if (_tripleNotEquals) {
+      tipoExp = this.getTypeUnsignedConst(simple.getUnsignedConstant());
+    }
+    factor _factor = simple.getFactor();
+    boolean _tripleNotEquals_1 = (_factor != null);
+    if (_tripleNotEquals_1) {
+      tipoExp = "boolean";
+    }
+    String _bool = simple.getBool();
+    boolean _tripleNotEquals_2 = (_bool != null);
+    if (_tripleNotEquals_2) {
+      tipoExp = "boolean";
+    }
+    functionDesignator _functionDesignator = simple.getFunctionDesignator();
+    boolean _tripleNotEquals_3 = (_functionDesignator != null);
+    if (_tripleNotEquals_3) {
+      String funcao = this.funcoesCriadas.get(simple.getFunctionDesignator().getIdentifier().getIdentifier());
+      if (((funcao != null) && (!funcao.isEmpty()))) {
+        tipoExp = funcao;
+      } else {
+        this.error("funcao nao declarada", null);
+        return "";
+      }
+    }
+    variable _variable = simple.getVariable();
+    boolean _tripleNotEquals_4 = (_variable != null);
+    if (_tripleNotEquals_4) {
+      tipoExp = this.getTypeVariable(simple.getVariable());
+    }
+    compilador.pascal.expression _expression = simple.getExpression();
+    boolean _tripleNotEquals_5 = (_expression != null);
+    if (_tripleNotEquals_5) {
+      tipoExp = this.checkExpressionType(simple.getExpression());
+    }
+    String _relationaloperator = expression.getRelationaloperator();
+    boolean _tripleNotEquals_6 = (_relationaloperator != null);
+    if (_tripleNotEquals_6) {
+      tipoExp = "boolean";
+    }
+    String _additiveoperator = expression.getSimpleExpression().getAdditiveoperator();
+    boolean _tripleNotEquals_7 = (_additiveoperator != null);
+    if (_tripleNotEquals_7) {
+      tipoExp = "integer";
+    }
+    String _multiplicativeoperator = expression.getSimpleExpression().getTerm().getMultiplicativeoperator();
+    boolean _tripleNotEquals_8 = (_multiplicativeoperator != null);
+    if (_tripleNotEquals_8) {
+      tipoExp = "integer";
+    }
+    return tipoExp;
+  }
+  
+  public String getTypeUnsignedConst(final unsignedConstant constant) {
+    unsignedNumber _unsignedNumber = constant.getUnsignedNumber();
+    boolean _tripleNotEquals = (_unsignedNumber != null);
+    if (_tripleNotEquals) {
+      unsignedInteger _unsignedInteger = constant.getUnsignedNumber().getUnsignedInteger();
+      boolean _tripleNotEquals_1 = (_unsignedInteger != null);
+      if (_tripleNotEquals_1) {
+        return "integer";
+      }
+      String _unsignedReal = constant.getUnsignedNumber().getUnsignedReal();
+      boolean _tripleNotEquals_2 = (_unsignedReal != null);
+      if (_tripleNotEquals_2) {
+        return "real";
+      }
+    }
+    String _string_literal = constant.getString_literal();
+    boolean _tripleNotEquals_3 = (_string_literal != null);
+    if (_tripleNotEquals_3) {
+      return "string";
+    }
+    constantChr _constantChr = constant.getConstantChr();
+    boolean _tripleNotEquals_4 = (_constantChr != null);
+    if (_tripleNotEquals_4) {
+      return "integer";
+    }
+    return null;
+  }
+  
+  public String getTypeVariable(final variable variable) {
+    String possivelTipoDeclarado = variable.getIdentifier().getIdentifier();
+    boolean _containsKey = this.variaveisDeclaradas.containsKey(possivelTipoDeclarado);
+    if (_containsKey) {
+      return this.variaveisDeclaradas.get(possivelTipoDeclarado).getIdentifier();
+    } else {
+      return "";
+    }
+  }
+  
+  @Check
+  public String registerFunction(final functionDeclaration funcDecl) {
+    String _xifexpression = null;
+    boolean _containsKey = this.funcoesCriadas.containsKey(funcDecl.getIdentifier().getIdentifier());
+    if (_containsKey) {
+      String _identifier = funcDecl.getIdentifier().getIdentifier();
+      String _plus = ("funcao de nome " + _identifier);
+      String _plus_1 = (_plus + " já existe");
+      this.error(_plus_1, null);
+    } else {
+      _xifexpression = this.funcoesCriadas.put(funcDecl.getIdentifier().getIdentifier(), this.getTypeTypeIdentifier(funcDecl.getTypeIdentifier()));
+    }
+    return _xifexpression;
   }
   
   @Check

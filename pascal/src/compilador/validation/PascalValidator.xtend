@@ -15,6 +15,11 @@ import compilador.pascal.identifier
 import compilador.pascal.recordType
 import java.util.HashSet
 import compilador.pascal.typeDefinition
+import compilador.pascal.expression
+import compilador.pascal.variable
+import compilador.pascal.unsignedConstant
+import compilador.pascal.caseListElement
+import org.eclipse.emf.common.util.EList
 
 /**
  * This class contains custom validation rules. 
@@ -26,12 +31,14 @@ class PascalValidator extends AbstractPascalValidator {
 	var variaveisDeclaradas = new HashMap<String, identifier>();
 	var variaveisTipo = new HashMap<String, String>();
 	var tiposCriados = new HashSet<String>();
+	var funcoesCriadas = new HashMap<String, String>();
 
 	@Check
 	def restart(program init) {
 		variaveisDeclaradas.clear();
 		variaveisTipo.clear();
 		tiposCriados.clear();
+		funcoesCriadas.clear();
 	}
 
 	/* -------------------- block ----------------------  */
@@ -122,32 +129,7 @@ class PascalValidator extends AbstractPascalValidator {
 
 		// typeIdentifier
 		if (st.simpleType.typeIdentifier !== null) {
-			if (st.simpleType.typeIdentifier.char !== null) {
-				return (st.simpleType.typeIdentifier.char);
-			}
-
-			if (st.simpleType.typeIdentifier.boolean !== null) {
-				return (st.simpleType.typeIdentifier.boolean);
-			}
-			if (st.simpleType.typeIdentifier.integer !== null) {
-				return (st.simpleType.typeIdentifier.integer);
-			}
-			if (st.simpleType.typeIdentifier.real !== null) {
-				return (st.simpleType.typeIdentifier.real);
-			}
-			if (st.simpleType.typeIdentifier.string !== null) {
-				return (st.simpleType.typeIdentifier.string);
-			}
-
-			if (st.simpleType.typeIdentifier.identifier !== null) {
-				if (!tiposCriados.contains(st.simpleType.typeIdentifier.identifier.identifier)) {
-					error("tipo " + st.simpleType.typeIdentifier.identifier.identifier + " nao existe!", null);
-				} else {
-					return st.simpleType.typeIdentifier.identifier.identifier;
-				}
-			// Verificacao pra quando sao criados tipos durante o programa,
-			// precisa criar um Map de "tipos criados pra fazer essa verificação					
-			}
+			return getTypeTypeIdentifier(st.simpleType.typeIdentifier);
 		}
 
 		if (st.simpleType.stringtype !== null) {
@@ -155,6 +137,35 @@ class PascalValidator extends AbstractPascalValidator {
 		}
 	// stringType
 	//
+	}
+
+	def getTypeTypeIdentifier(typeIdentifier ti) {
+		if (ti.char !== null) {
+			return (ti.char);
+		}
+
+		if (ti.boolean !== null) {
+			return (ti.boolean);
+		}
+		if (ti.integer !== null) {
+			return (ti.integer);
+		}
+		if (ti.real !== null) {
+			return (ti.real);
+		}
+		if (ti.string !== null) {
+			return (ti.string);
+		}
+
+		if (ti.identifier !== null) {
+			if (!tiposCriados.contains(ti.identifier.identifier)) {
+				error("tipo " + ti.identifier.identifier + " nao existe!", null);
+			} else {
+				return ti.identifier.identifier;
+			}
+		// Verificacao pra quando sao criados tipos durante o programa,
+		// precisa criar um Map de "tipos criados pra fazer essa verificação					
+		}
 	}
 
 	/**
@@ -202,6 +213,171 @@ class PascalValidator extends AbstractPascalValidator {
 			}
 		}
 
+	}
+
+	@Check
+	def checkConditionalStatement(conditionalStatement cst) {
+		var caseStatement = cst.caseStatement;
+		var expType = checkExpressionType(caseStatement.expression);
+		println(expType);
+		if (expType.isEmpty()) {
+			error("variavel nao declarada. tipo do case invalido", null);
+		}
+
+		var tipoCaseUnico = getCaseListUnico(caseStatement.caseListElement);
+		var tipoCaseLista = checkCaseList(caseStatement.caseListElement1, tipoCaseUnico);
+		
+		if (tipoCaseUnico.isEmpty() || !tipoCaseLista) {
+			error("Tipos incompativeis", null);
+		}
+
+	}
+
+	def boolean checkCaseList(EList<caseListElement> list, String expType) {
+		var isValido = true;
+		for (caseListElement e : list) {
+			if (getCaseListUnico(e).isEmpty() ||  getCaseListUnico(e) !== expType) {
+				isValido = false;
+			}
+		}
+		
+		return isValido;
+		
+		
+	}
+
+	def String getCaseListUnico(caseListElement element) {
+		var constUnica = element.constList.constant;
+		var constLista = element.constList.constant1;
+		var tipoPrincipal = getTypeConst(constUnica);
+
+		if (constUnica !== null) {
+			return tipoPrincipal
+		}
+
+		for (constant e : constLista) {
+			var tipoElement = getTypeConst(e);
+			if (tipoPrincipal !== tipoElement) {
+				return "";
+			}
+		}
+		return tipoPrincipal;
+	}
+
+	def String getTypeConst(constant c) {
+		if (c.number.unsignedInteger !== null) {
+			return "integer";
+		}
+
+		if (c.number.unsignedReal !== null) {
+			return "real";
+		}
+
+		if (c.identifier !== null) {
+			// veriicar se tipo existe
+		}
+
+		if (c.STRING_LITERAL !== null) {
+			return "string";
+		}
+
+		if (c.constantChr !== null) {
+			return "char";
+
+		}
+
+		if (c.bool !== null) {
+			return "bool";
+		}
+	}
+
+	def String checkExpressionType(expression expression) {
+		var tipoExp = "";
+		var simple = expression.simpleExpression.term.signedFactor.factor;
+
+		if (simple.unsignedConstant !== null) {
+			tipoExp = getTypeUnsignedConst(simple.unsignedConstant);
+		}
+
+		if (simple.factor !== null) {
+			tipoExp = "boolean";
+		}
+
+		if (simple.bool !== null) {
+			tipoExp = "boolean";
+		}
+
+		if (simple.functionDesignator !== null) {
+			var funcao = funcoesCriadas.get(simple.functionDesignator.identifier.identifier);
+			if (funcao !== null && !funcao.isEmpty()) {
+				tipoExp = funcao;
+			} else {
+				error("funcao nao declarada", null);
+				return "";
+			}
+		}
+
+		if (simple.variable !== null) {
+			tipoExp = getTypeVariable(simple.variable);
+		}
+
+		if (simple.expression !== null) {
+			tipoExp = checkExpressionType(simple.expression);
+		}
+
+		if (expression.relationaloperator !== null) {
+			tipoExp = "boolean";
+		}
+
+		if (expression.simpleExpression.additiveoperator !== null) {
+			tipoExp = "integer";
+		}
+
+		if (expression.simpleExpression.term.multiplicativeoperator !== null) {
+			tipoExp = "integer";
+		}
+
+		return tipoExp;
+
+	}
+
+	def String getTypeUnsignedConst(unsignedConstant constant) {
+		if (constant.unsignedNumber !== null) {
+			if (constant.unsignedNumber.unsignedInteger !== null) {
+				return "integer";
+			}
+
+			if (constant.unsignedNumber.unsignedReal !== null) {
+				return "real";
+			}
+		}
+
+		if (constant.string_literal !== null) {
+			return "string";
+		}
+
+		if (constant.constantChr !== null) {
+			return "integer";
+		}
+
+	}
+
+	def String getTypeVariable(variable variable) {
+		var possivelTipoDeclarado = variable.identifier.identifier;
+		if (variaveisDeclaradas.containsKey(possivelTipoDeclarado)) {
+			return variaveisDeclaradas.get(possivelTipoDeclarado).identifier;
+		} else {
+			return "";
+		}
+	}
+
+	@Check
+	def registerFunction(functionDeclaration funcDecl) {
+		if (funcoesCriadas.containsKey(funcDecl.identifier.identifier)) {
+			error("funcao de nome " + funcDecl.identifier.identifier + " já existe", null);
+		} else {
+			funcoesCriadas.put(funcDecl.identifier.identifier, getTypeTypeIdentifier(funcDecl.typeIdentifier))
+		}
 	}
 
 	@Check

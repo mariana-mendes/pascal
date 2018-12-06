@@ -16,8 +16,8 @@ identifier: identifier=IDENT;
 
 //
 // )*	compoundStatement;
-block: {block} (label+=label_declaration_part | constantDefinitionPart+=constantDefinitionPart |typeDefinitionPart+=typeDefinitionPart	| variableDeclarationPart+=variableDeclarationPart |
-		procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart | usesUnitsPart+=usesUnitsPart | "implemetation"	)* compoundStatement=compoundStatement; 
+block: {block} (label+=label_declaration_part | constantDefinitionParts+=constantDefinitionPart |typeDefinitionParts+=typeDefinitionPart	| variableDeclarationParts+=variableDeclarationPart |
+		procedureAndFunctionDeclarationParts+=procedureAndFunctionDeclarationPart | usesUnitsParts+=usesUnitsPart | "implemetation"	)* compoundStatement=compoundStatement; 
 
 label_declaration_part: "label" label ("," label+=label)* ";";
 
@@ -30,7 +30,7 @@ constantDefinitionPart:	"const" (constantDefinition+=constantDefinition ";")+;
 constantDefinition:	identifier=identifier "=" constant=constant;
 //
 ////STRING_LITERAL
-constant:	number=unsignedNumber	| sign=sign number1= unsignedNumber	| identifier=identifier | STRING_LITERAL= STRING_LITERAL | sign2+=sign identifier1+=identifier | constantChr= constantChr;
+constant:	number=unsignedNumber	| sign=sign number1= unsignedNumber	| identifier=identifier | STRING_LITERAL= STRING_LITERAL | sign2+=sign identifier1+=identifier | constantChr= constantChr | bool = BOOL ;
 
 constantChr: "chr" "(" unsignedInteger=unsignedInteger ")";
 
@@ -49,10 +49,7 @@ typeDefinition:
 	identifier = identifier "=" (type = type | functionType = functionType | procedureType = procedureType);
 
 functionType:
-	"function" (formalParameterList = formalParameterList)? ":" resultType = resultType;
-
-resultType:
-	typeIdentifier;
+	"function" (formalParameterList = formalParameterList)? ":" typeIdentifier = typeIdentifier;
 
 formalParameterList:
 	"(" formalParameterSection = formalParameterSection (";" formalParameterSection2 += formalParameterSection)* ")";
@@ -113,9 +110,9 @@ tag:
 	|typeIdentifier1 += typeIdentifier;
 
 variant:
-	constant (":" constant+=constant)*  ":" "(" fieldList =fieldList")";
+	constant (";" constant+=constant)*  ":" "(" fieldList =fieldList")";
 constList:
-	constant=constant (":" constant1+=constant)*;
+	constant=constant ("," constant1+=constant)*;
 
 variableDeclarationPart:
 	"var" variableDeclaration=variableDeclaration (";" variableDeclaration1 += variableDeclaration)* ";";
@@ -133,7 +130,7 @@ procedureDeclaration:
 	"procedure" identifier = identifier (formalParameterList = formalParameterList)? ";" block = block;
 
 functionDeclaration:
-	"function" identifier = identifier (formalParameterList = formalParameterList)? ":" resultType = resultType ";" block = block;
+	"function" identifier = identifier (formalParameterList = formalParameterList)? ":" typeIdentifier = typeIdentifier ";" block = block;
 
 statement: label ":" unlabelledStatement=unlabelledStatement | unlabelledStatement=unlabelledStatement;
 
@@ -146,9 +143,8 @@ simpleStatement : {simpleStatement} ( gotoStatement = gotoStatement | assignment
 
 assignmentStatement: variable = variable ":=" expression = expression   ;
 
-variable: ("@" identifier=identifier | identifier=identifier) ("[" expression+=expression ("," expression1 += expression)* "]" | "(." expression2 += expression ("," expression3+=expression)* ".)" | "." identifier2 += identifier | "^")*
-   ;
-//
+variable: ("@" identifier=identifier | identifier=identifier);
+
 expression: simpleExpression = simpleExpression (relationaloperator = relationaloperator expression = expression)?;
 
 relationaloperator : "="   | "<>"   | "<"   | "<="   | ">="   | ">"   | "in"   ;
@@ -177,7 +173,7 @@ gotoStatement: "goto" label = label ;
 
 structuredStatement: compoundStatement = compoundStatement | conditionalStatement = conditionalStatement;
 
-compoundStatement: "begin" statements "end" ;
+compoundStatement: "begin" statements=statements "end" ;
 
 statements: statement+=statement  (";" statement += statement)* ;
 

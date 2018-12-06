@@ -29,15 +29,15 @@
   <eClassifiers xsi:type="ecore:EClass" name="block">
     <eStructuralFeatures xsi:type="ecore:EReference" name="label" upperBound="-1"
         eType="#//label_declaration_part" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="constantDefinitionPart"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constantDefinitionParts"
         upperBound="-1" eType="#//constantDefinitionPart" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="typeDefinitionPart" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeDefinitionParts" upperBound="-1"
         eType="#//typeDefinitionPart" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="variableDeclarationPart"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variableDeclarationParts"
         upperBound="-1" eType="#//variableDeclarationPart" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="procedureAndFunctionDeclarationPart"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="procedureAndFunctionDeclarationParts"
         upperBound="-1" eType="#//procedureAndFunctionDeclarationPart" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="usesUnitsPart" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usesUnitsParts" upperBound="-1"
         eType="#//usesUnitsPart" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="compoundStatement" eType="#//compoundStatement"
         containment="true"/>
@@ -79,6 +79,7 @@
         eType="#//identifier" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="constantChr" eType="#//constantChr"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bool" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="constant" upperBound="-1"
         eType="#//constant" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fieldList" eType="#//fieldList"
@@ -115,10 +116,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="functionType">
     <eStructuralFeatures xsi:type="ecore:EReference" name="formalParameterList" eType="#//formalParameterList"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="resultType" eType="#//resultType"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeIdentifier" eType="#//typeIdentifier"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="resultType"/>
   <eClassifiers xsi:type="ecore:EClass" name="formalParameterList">
     <eStructuralFeatures xsi:type="ecore:EReference" name="formalParameterSection"
         eType="#//formalParameterSection" containment="true"/>
@@ -141,7 +141,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="typeIdentifier" eType="#//typeIdentifier"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="typeIdentifier" eSuperTypes="#//resultType">
+  <eClassifiers xsi:type="ecore:EClass" name="typeIdentifier">
     <eStructuralFeatures xsi:type="ecore:EReference" name="identifier" eType="#//identifier"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="char" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -283,7 +283,7 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="formalParameterList" eType="#//formalParameterList"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="resultType" eType="#//resultType"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeIdentifier" eType="#//typeIdentifier"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="block" eType="#//block"
         containment="true"/>
@@ -317,16 +317,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="variable">
     <eStructuralFeatures xsi:type="ecore:EReference" name="identifier" eType="#//identifier"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="expression" upperBound="-1"
-        eType="#//expression" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="expression1" upperBound="-1"
-        eType="#//expression" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="expression2" upperBound="-1"
-        eType="#//expression" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="expression3" upperBound="-1"
-        eType="#//expression" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="identifier2" upperBound="-1"
-        eType="#//identifier" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="expression">
     <eStructuralFeatures xsi:type="ecore:EReference" name="simpleExpression" eType="#//simpleExpression"
@@ -395,8 +385,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="conditionalStatement" eType="#//conditionalStatement"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="compoundStatement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="statements" eSuperTypes="#//compoundStatement">
+  <eClassifiers xsi:type="ecore:EClass" name="compoundStatement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="statements" eType="#//statements"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="statements">
     <eStructuralFeatures xsi:type="ecore:EReference" name="statement" upperBound="-1"
         eType="#//statement" containment="true"/>
   </eClassifiers>
