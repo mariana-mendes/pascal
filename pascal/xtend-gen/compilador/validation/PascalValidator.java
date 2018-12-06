@@ -135,7 +135,6 @@ public class PascalValidator extends AbstractPascalValidator {
         String _xblockexpression_1 = null;
         {
           this.variaveisDeclaradas.put(declaracaoUnica.getIdentifier(), declaracaoUnica);
-          InputOutput.<String>println(declaracaoUnica.getIdentifier());
           _xblockexpression_1 = this.variaveisTipo.put(declaracaoUnica.getIdentifier(), this.getTypeVar(vd.getType()));
         }
         _xifexpression = _xblockexpression_1;
@@ -300,23 +299,27 @@ public class PascalValidator extends AbstractPascalValidator {
   public void checkConditionalStatement(final conditionalStatement cst) {
     caseStatement caseStatement = cst.getCaseStatement();
     String expType = this.checkExpressionType(caseStatement.getExpression());
-    InputOutput.<String>println(expType);
     boolean _isEmpty = expType.isEmpty();
     if (_isEmpty) {
       this.error("variavel nao declarada. tipo do case invalido", null);
     }
     String tipoCaseUnico = this.getCaseListUnico(caseStatement.getCaseListElement());
-    boolean tipoCaseLista = this.checkCaseList(caseStatement.getCaseListElement1(), tipoCaseUnico);
-    if ((tipoCaseUnico.isEmpty() || (!tipoCaseLista))) {
+    boolean listaTodaValida = this.checkCaseList(caseStatement.getCaseListElement1(), tipoCaseUnico);
+    InputOutput.<String>println(("caseUnico " + Boolean.valueOf(listaTodaValida)));
+    if (((tipoCaseUnico.isEmpty() || (!listaTodaValida)) || (tipoCaseUnico != expType))) {
       this.error("Tipos incompativeis", null);
     }
   }
   
   public boolean checkCaseList(final EList<caseListElement> list, final String expType) {
     boolean isValido = true;
+    InputOutput.<String>println(expType);
     for (final caseListElement e : list) {
-      if ((this.getCaseListUnico(e).isEmpty() || (this.getCaseListUnico(e) != expType))) {
-        isValido = false;
+      {
+        InputOutput.<String>println(this.getCaseListUnico(e));
+        if ((this.getCaseListUnico(e).isEmpty() || (this.getCaseListUnico(e) != expType))) {
+          isValido = false;
+        }
       }
     }
     return isValido;
@@ -325,14 +328,18 @@ public class PascalValidator extends AbstractPascalValidator {
   public String getCaseListUnico(final caseListElement element) {
     constant constUnica = element.getConstList().getConstant();
     EList<constant> constLista = element.getConstList().getConstant1();
-    String tipoPrincipal = this.getTypeConst(constUnica);
+    String tipoPrincipal = null;
     if ((constUnica != null)) {
-      return tipoPrincipal;
+      tipoPrincipal = this.getTypeConst(constUnica);
     }
-    for (final constant e : constLista) {
-      {
-        String tipoElement = this.getTypeConst(e);
-        if ((tipoPrincipal != tipoElement)) {
+    boolean _isNullOrEmpty = IterableExtensions.isNullOrEmpty(constLista);
+    boolean _not = (!_isNullOrEmpty);
+    if (_not) {
+      for (final constant e : constLista) {
+        boolean _equalsIgnoreCase = tipoPrincipal.equalsIgnoreCase(this.getTypeConst(e));
+        boolean _not_1 = (!_equalsIgnoreCase);
+        if (_not_1) {
+          tipoPrincipal = "";
           return "";
         }
       }
@@ -341,34 +348,34 @@ public class PascalValidator extends AbstractPascalValidator {
   }
   
   public String getTypeConst(final constant c) {
-    unsignedInteger _unsignedInteger = c.getNumber().getUnsignedInteger();
-    boolean _tripleNotEquals = (_unsignedInteger != null);
+    String _string = c.getString();
+    boolean _tripleNotEquals = (_string != null);
     if (_tripleNotEquals) {
-      return "integer";
-    }
-    String _unsignedReal = c.getNumber().getUnsignedReal();
-    boolean _tripleNotEquals_1 = (_unsignedReal != null);
-    if (_tripleNotEquals_1) {
-      return "real";
-    }
-    identifier _identifier = c.getIdentifier();
-    boolean _tripleNotEquals_2 = (_identifier != null);
-    if (_tripleNotEquals_2) {
-    }
-    String _sTRING_LITERAL = c.getSTRING_LITERAL();
-    boolean _tripleNotEquals_3 = (_sTRING_LITERAL != null);
-    if (_tripleNotEquals_3) {
       return "string";
     }
     constantChr _constantChr = c.getConstantChr();
-    boolean _tripleNotEquals_4 = (_constantChr != null);
-    if (_tripleNotEquals_4) {
+    boolean _tripleNotEquals_1 = (_constantChr != null);
+    if (_tripleNotEquals_1) {
       return "char";
     }
     String _bool = c.getBool();
-    boolean _tripleNotEquals_5 = (_bool != null);
-    if (_tripleNotEquals_5) {
+    boolean _tripleNotEquals_2 = (_bool != null);
+    if (_tripleNotEquals_2) {
       return "bool";
+    }
+    identifier _identifier = c.getIdentifier();
+    boolean _tripleNotEquals_3 = (_identifier != null);
+    if (_tripleNotEquals_3) {
+    }
+    String _unsignedReal = c.getUnsignedNumber().getUnsignedReal();
+    boolean _tripleNotEquals_4 = (_unsignedReal != null);
+    if (_tripleNotEquals_4) {
+      return "real";
+    }
+    unsignedNumber _unsignedNumber = c.getUnsignedNumber();
+    boolean _tripleNotEquals_5 = (_unsignedNumber != null);
+    if (_tripleNotEquals_5) {
+      return "integer";
     }
     return null;
   }

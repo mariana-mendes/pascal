@@ -411,22 +411,22 @@ public class PascalGrammarAccess extends AbstractGrammarElementFinder {
 	public class ConstantElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "compilador.Pascal.constant");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final Assignment cNumberAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
-		private final RuleCall cNumberUnsignedNumberParserRuleCall_0_0 = (RuleCall)cNumberAssignment_0.eContents().get(0);
-		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
-		private final Assignment cSignAssignment_1_0 = (Assignment)cGroup_1.eContents().get(0);
-		private final RuleCall cSignSignParserRuleCall_1_0_0 = (RuleCall)cSignAssignment_1_0.eContents().get(0);
-		private final Assignment cNumber1Assignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
-		private final RuleCall cNumber1UnsignedNumberParserRuleCall_1_1_0 = (RuleCall)cNumber1Assignment_1_1.eContents().get(0);
+		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
+		private final Assignment cSignAssignment_0_0 = (Assignment)cGroup_0.eContents().get(0);
+		private final RuleCall cSignSignParserRuleCall_0_0_0 = (RuleCall)cSignAssignment_0_0.eContents().get(0);
+		private final Assignment cUnsignedNumberAssignment_0_1 = (Assignment)cGroup_0.eContents().get(1);
+		private final RuleCall cUnsignedNumberUnsignedNumberParserRuleCall_0_1_0 = (RuleCall)cUnsignedNumberAssignment_0_1.eContents().get(0);
+		private final Assignment cUnsignedNumberAssignment_1 = (Assignment)cAlternatives.eContents().get(1);
+		private final RuleCall cUnsignedNumberUnsignedNumberParserRuleCall_1_0 = (RuleCall)cUnsignedNumberAssignment_1.eContents().get(0);
 		private final Assignment cIdentifierAssignment_2 = (Assignment)cAlternatives.eContents().get(2);
 		private final RuleCall cIdentifierIdentifierParserRuleCall_2_0 = (RuleCall)cIdentifierAssignment_2.eContents().get(0);
-		private final Assignment cSTRING_LITERALAssignment_3 = (Assignment)cAlternatives.eContents().get(3);
-		private final RuleCall cSTRING_LITERALSTRING_LITERALTerminalRuleCall_3_0 = (RuleCall)cSTRING_LITERALAssignment_3.eContents().get(0);
+		private final Assignment cStringAssignment_3 = (Assignment)cAlternatives.eContents().get(3);
+		private final RuleCall cStringSTRING_LITERALTerminalRuleCall_3_0 = (RuleCall)cStringAssignment_3.eContents().get(0);
 		private final Group cGroup_4 = (Group)cAlternatives.eContents().get(4);
-		private final Assignment cSign2Assignment_4_0 = (Assignment)cGroup_4.eContents().get(0);
-		private final RuleCall cSign2SignParserRuleCall_4_0_0 = (RuleCall)cSign2Assignment_4_0.eContents().get(0);
-		private final Assignment cIdentifier1Assignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cIdentifier1IdentifierParserRuleCall_4_1_0 = (RuleCall)cIdentifier1Assignment_4_1.eContents().get(0);
+		private final Assignment cSignAssignment_4_0 = (Assignment)cGroup_4.eContents().get(0);
+		private final RuleCall cSignSignParserRuleCall_4_0_0 = (RuleCall)cSignAssignment_4_0.eContents().get(0);
+		private final Assignment cIdentifierAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final RuleCall cIdentifierIdentifierParserRuleCall_4_1_0 = (RuleCall)cIdentifierAssignment_4_1.eContents().get(0);
 		private final Assignment cConstantChrAssignment_5 = (Assignment)cAlternatives.eContents().get(5);
 		private final RuleCall cConstantChrConstantChrParserRuleCall_5_0 = (RuleCall)cConstantChrAssignment_5.eContents().get(0);
 		private final Assignment cBoolAssignment_6 = (Assignment)cAlternatives.eContents().get(6);
@@ -435,34 +435,34 @@ public class PascalGrammarAccess extends AbstractGrammarElementFinder {
 		////
 		// ////STRING_LITERAL
 		// constant:
-		//	number=unsignedNumber | sign=sign number1=unsignedNumber | identifier=identifier | STRING_LITERAL=STRING_LITERAL |
-		//	sign2+=sign identifier1+=identifier | constantChr=constantChr | bool=BOOL;
+		//	sign=sign unsignedNumber=unsignedNumber | unsignedNumber=unsignedNumber | identifier=identifier |
+		//	string=STRING_LITERAL | sign=sign identifier=identifier | constantChr=constantChr | bool=BOOL;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//number=unsignedNumber | sign=sign number1=unsignedNumber | identifier=identifier | STRING_LITERAL=STRING_LITERAL |
-		//sign2+=sign identifier1+=identifier | constantChr=constantChr | bool=BOOL
+		//sign=sign unsignedNumber=unsignedNumber | unsignedNumber=unsignedNumber | identifier=identifier | string=STRING_LITERAL
+		//| sign=sign identifier=identifier | constantChr=constantChr | bool=BOOL
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
-		//number=unsignedNumber
-		public Assignment getNumberAssignment_0() { return cNumberAssignment_0; }
-		
-		//unsignedNumber
-		public RuleCall getNumberUnsignedNumberParserRuleCall_0_0() { return cNumberUnsignedNumberParserRuleCall_0_0; }
-		
-		//sign=sign number1=unsignedNumber
-		public Group getGroup_1() { return cGroup_1; }
+		//sign=sign unsignedNumber=unsignedNumber
+		public Group getGroup_0() { return cGroup_0; }
 		
 		//sign=sign
-		public Assignment getSignAssignment_1_0() { return cSignAssignment_1_0; }
+		public Assignment getSignAssignment_0_0() { return cSignAssignment_0_0; }
 		
 		//sign
-		public RuleCall getSignSignParserRuleCall_1_0_0() { return cSignSignParserRuleCall_1_0_0; }
+		public RuleCall getSignSignParserRuleCall_0_0_0() { return cSignSignParserRuleCall_0_0_0; }
 		
-		//number1=unsignedNumber
-		public Assignment getNumber1Assignment_1_1() { return cNumber1Assignment_1_1; }
+		//unsignedNumber=unsignedNumber
+		public Assignment getUnsignedNumberAssignment_0_1() { return cUnsignedNumberAssignment_0_1; }
 		
 		//unsignedNumber
-		public RuleCall getNumber1UnsignedNumberParserRuleCall_1_1_0() { return cNumber1UnsignedNumberParserRuleCall_1_1_0; }
+		public RuleCall getUnsignedNumberUnsignedNumberParserRuleCall_0_1_0() { return cUnsignedNumberUnsignedNumberParserRuleCall_0_1_0; }
+		
+		//unsignedNumber=unsignedNumber
+		public Assignment getUnsignedNumberAssignment_1() { return cUnsignedNumberAssignment_1; }
+		
+		//unsignedNumber
+		public RuleCall getUnsignedNumberUnsignedNumberParserRuleCall_1_0() { return cUnsignedNumberUnsignedNumberParserRuleCall_1_0; }
 		
 		//identifier=identifier
 		public Assignment getIdentifierAssignment_2() { return cIdentifierAssignment_2; }
@@ -470,26 +470,26 @@ public class PascalGrammarAccess extends AbstractGrammarElementFinder {
 		//identifier
 		public RuleCall getIdentifierIdentifierParserRuleCall_2_0() { return cIdentifierIdentifierParserRuleCall_2_0; }
 		
-		//STRING_LITERAL=STRING_LITERAL
-		public Assignment getSTRING_LITERALAssignment_3() { return cSTRING_LITERALAssignment_3; }
+		//string=STRING_LITERAL
+		public Assignment getStringAssignment_3() { return cStringAssignment_3; }
 		
 		//STRING_LITERAL
-		public RuleCall getSTRING_LITERALSTRING_LITERALTerminalRuleCall_3_0() { return cSTRING_LITERALSTRING_LITERALTerminalRuleCall_3_0; }
+		public RuleCall getStringSTRING_LITERALTerminalRuleCall_3_0() { return cStringSTRING_LITERALTerminalRuleCall_3_0; }
 		
-		//sign2+=sign identifier1+=identifier
+		//sign=sign identifier=identifier
 		public Group getGroup_4() { return cGroup_4; }
 		
-		//sign2+=sign
-		public Assignment getSign2Assignment_4_0() { return cSign2Assignment_4_0; }
+		//sign=sign
+		public Assignment getSignAssignment_4_0() { return cSignAssignment_4_0; }
 		
 		//sign
-		public RuleCall getSign2SignParserRuleCall_4_0_0() { return cSign2SignParserRuleCall_4_0_0; }
+		public RuleCall getSignSignParserRuleCall_4_0_0() { return cSignSignParserRuleCall_4_0_0; }
 		
-		//identifier1+=identifier
-		public Assignment getIdentifier1Assignment_4_1() { return cIdentifier1Assignment_4_1; }
+		//identifier=identifier
+		public Assignment getIdentifierAssignment_4_1() { return cIdentifierAssignment_4_1; }
 		
 		//identifier
-		public RuleCall getIdentifier1IdentifierParserRuleCall_4_1_0() { return cIdentifier1IdentifierParserRuleCall_4_1_0; }
+		public RuleCall getIdentifierIdentifierParserRuleCall_4_1_0() { return cIdentifierIdentifierParserRuleCall_4_1_0; }
 		
 		//constantChr=constantChr
 		public Assignment getConstantChrAssignment_5() { return cConstantChrAssignment_5; }
@@ -2986,8 +2986,8 @@ public class PascalGrammarAccess extends AbstractGrammarElementFinder {
 	////
 	// ////STRING_LITERAL
 	// constant:
-	//	number=unsignedNumber | sign=sign number1=unsignedNumber | identifier=identifier | STRING_LITERAL=STRING_LITERAL |
-	//	sign2+=sign identifier1+=identifier | constantChr=constantChr | bool=BOOL;
+	//	sign=sign unsignedNumber=unsignedNumber | unsignedNumber=unsignedNumber | identifier=identifier |
+	//	string=STRING_LITERAL | sign=sign identifier=identifier | constantChr=constantChr | bool=BOOL;
 	public ConstantElements getConstantAccess() {
 		return pConstant;
 	}

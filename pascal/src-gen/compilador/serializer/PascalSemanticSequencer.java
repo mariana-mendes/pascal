@@ -524,11 +524,11 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *
 	 * Constraint:
 	 *     (
-	 *         number=unsignedNumber | 
-	 *         (sign=sign number1=unsignedNumber) | 
+	 *         (sign=sign unsignedNumber=unsignedNumber) | 
+	 *         unsignedNumber=unsignedNumber | 
 	 *         identifier=identifier | 
-	 *         STRING_LITERAL=STRING_LITERAL | 
-	 *         (sign2+=sign identifier1+=identifier) | 
+	 *         string=STRING_LITERAL | 
+	 *         (sign=sign identifier=identifier) | 
 	 *         constantChr=constantChr | 
 	 *         bool=BOOL
 	 *     )
@@ -545,11 +545,11 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             number=unsignedNumber | 
-	 *             (sign=sign number1=unsignedNumber) | 
+	 *             (sign=sign unsignedNumber=unsignedNumber) | 
+	 *             unsignedNumber=unsignedNumber | 
 	 *             identifier=identifier | 
-	 *             STRING_LITERAL=STRING_LITERAL | 
-	 *             (sign2+=sign identifier1+=identifier) | 
+	 *             string=STRING_LITERAL | 
+	 *             (sign=sign identifier=identifier) | 
 	 *             constantChr=constantChr | 
 	 *             bool=BOOL
 	 *         ) 

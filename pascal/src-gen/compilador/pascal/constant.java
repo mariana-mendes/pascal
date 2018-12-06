@@ -14,13 +14,10 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link compilador.pascal.constant#getNumber <em>Number</em>}</li>
  *   <li>{@link compilador.pascal.constant#getSign <em>Sign</em>}</li>
- *   <li>{@link compilador.pascal.constant#getNumber1 <em>Number1</em>}</li>
+ *   <li>{@link compilador.pascal.constant#getUnsignedNumber <em>Unsigned Number</em>}</li>
  *   <li>{@link compilador.pascal.constant#getIdentifier <em>Identifier</em>}</li>
- *   <li>{@link compilador.pascal.constant#getSTRING_LITERAL <em>STRING LITERAL</em>}</li>
- *   <li>{@link compilador.pascal.constant#getSign2 <em>Sign2</em>}</li>
- *   <li>{@link compilador.pascal.constant#getIdentifier1 <em>Identifier1</em>}</li>
+ *   <li>{@link compilador.pascal.constant#getString <em>String</em>}</li>
  *   <li>{@link compilador.pascal.constant#getConstantChr <em>Constant Chr</em>}</li>
  *   <li>{@link compilador.pascal.constant#getBool <em>Bool</em>}</li>
  *   <li>{@link compilador.pascal.constant#getConstant <em>Constant</em>}</li>
@@ -33,32 +30,6 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface constant extends variant
 {
-  /**
-   * Returns the value of the '<em><b>Number</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Number</em>' containment reference isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Number</em>' containment reference.
-   * @see #setNumber(unsignedNumber)
-   * @see compilador.pascal.PascalPackage#getconstant_Number()
-   * @model containment="true"
-   * @generated
-   */
-  unsignedNumber getNumber();
-
-  /**
-   * Sets the value of the '{@link compilador.pascal.constant#getNumber <em>Number</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Number</em>' containment reference.
-   * @see #getNumber()
-   * @generated
-   */
-  void setNumber(unsignedNumber value);
-
   /**
    * Returns the value of the '<em><b>Sign</b></em>' attribute.
    * <!-- begin-user-doc -->
@@ -86,30 +57,30 @@ public interface constant extends variant
   void setSign(String value);
 
   /**
-   * Returns the value of the '<em><b>Number1</b></em>' containment reference.
+   * Returns the value of the '<em><b>Unsigned Number</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Number1</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Unsigned Number</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Number1</em>' containment reference.
-   * @see #setNumber1(unsignedNumber)
-   * @see compilador.pascal.PascalPackage#getconstant_Number1()
+   * @return the value of the '<em>Unsigned Number</em>' containment reference.
+   * @see #setUnsignedNumber(unsignedNumber)
+   * @see compilador.pascal.PascalPackage#getconstant_UnsignedNumber()
    * @model containment="true"
    * @generated
    */
-  unsignedNumber getNumber1();
+  unsignedNumber getUnsignedNumber();
 
   /**
-   * Sets the value of the '{@link compilador.pascal.constant#getNumber1 <em>Number1</em>}' containment reference.
+   * Sets the value of the '{@link compilador.pascal.constant#getUnsignedNumber <em>Unsigned Number</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Number1</em>' containment reference.
-   * @see #getNumber1()
+   * @param value the new value of the '<em>Unsigned Number</em>' containment reference.
+   * @see #getUnsignedNumber()
    * @generated
    */
-  void setNumber1(unsignedNumber value);
+  void setUnsignedNumber(unsignedNumber value);
 
   /**
    * Returns the value of the '<em><b>Identifier</b></em>' containment reference.
@@ -138,62 +109,30 @@ public interface constant extends variant
   void setIdentifier(identifier value);
 
   /**
-   * Returns the value of the '<em><b>STRING LITERAL</b></em>' attribute.
+   * Returns the value of the '<em><b>String</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>STRING LITERAL</em>' attribute isn't clear,
+   * If the meaning of the '<em>String</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>STRING LITERAL</em>' attribute.
-   * @see #setSTRING_LITERAL(String)
-   * @see compilador.pascal.PascalPackage#getconstant_STRING_LITERAL()
+   * @return the value of the '<em>String</em>' attribute.
+   * @see #setString(String)
+   * @see compilador.pascal.PascalPackage#getconstant_String()
    * @model
    * @generated
    */
-  String getSTRING_LITERAL();
+  String getString();
 
   /**
-   * Sets the value of the '{@link compilador.pascal.constant#getSTRING_LITERAL <em>STRING LITERAL</em>}' attribute.
+   * Sets the value of the '{@link compilador.pascal.constant#getString <em>String</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>STRING LITERAL</em>' attribute.
-   * @see #getSTRING_LITERAL()
+   * @param value the new value of the '<em>String</em>' attribute.
+   * @see #getString()
    * @generated
    */
-  void setSTRING_LITERAL(String value);
-
-  /**
-   * Returns the value of the '<em><b>Sign2</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Sign2</em>' attribute list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Sign2</em>' attribute list.
-   * @see compilador.pascal.PascalPackage#getconstant_Sign2()
-   * @model unique="false"
-   * @generated
-   */
-  EList<String> getSign2();
-
-  /**
-   * Returns the value of the '<em><b>Identifier1</b></em>' containment reference list.
-   * The list contents are of type {@link compilador.pascal.identifier}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Identifier1</em>' containment reference list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Identifier1</em>' containment reference list.
-   * @see compilador.pascal.PascalPackage#getconstant_Identifier1()
-   * @model containment="true"
-   * @generated
-   */
-  EList<identifier> getIdentifier1();
+  void setString(String value);
 
   /**
    * Returns the value of the '<em><b>Constant Chr</b></em>' containment reference.

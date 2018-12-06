@@ -957,19 +957,9 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getconstant_Number()
-  {
-    return (EReference)constantEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EAttribute getconstant_Sign()
   {
-    return (EAttribute)constantEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)constantEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -977,9 +967,9 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getconstant_Number1()
+  public EReference getconstant_UnsignedNumber()
   {
-    return (EReference)constantEClass.getEStructuralFeatures().get(2);
+    return (EReference)constantEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -989,7 +979,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    */
   public EReference getconstant_Identifier()
   {
-    return (EReference)constantEClass.getEStructuralFeatures().get(3);
+    return (EReference)constantEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -997,29 +987,9 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getconstant_STRING_LITERAL()
+  public EAttribute getconstant_String()
   {
-    return (EAttribute)constantEClass.getEStructuralFeatures().get(4);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getconstant_Sign2()
-  {
-    return (EAttribute)constantEClass.getEStructuralFeatures().get(5);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getconstant_Identifier1()
-  {
-    return (EReference)constantEClass.getEStructuralFeatures().get(6);
+    return (EAttribute)constantEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -1029,7 +999,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    */
   public EReference getconstant_ConstantChr()
   {
-    return (EReference)constantEClass.getEStructuralFeatures().get(7);
+    return (EReference)constantEClass.getEStructuralFeatures().get(4);
   }
 
   /**
@@ -1039,7 +1009,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    */
   public EAttribute getconstant_Bool()
   {
-    return (EAttribute)constantEClass.getEStructuralFeatures().get(8);
+    return (EAttribute)constantEClass.getEStructuralFeatures().get(5);
   }
 
   /**
@@ -1049,7 +1019,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    */
   public EReference getconstant_Constant()
   {
-    return (EReference)constantEClass.getEStructuralFeatures().get(9);
+    return (EReference)constantEClass.getEStructuralFeatures().get(6);
   }
 
   /**
@@ -1059,7 +1029,7 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
    */
   public EReference getconstant_FieldList()
   {
-    return (EReference)constantEClass.getEStructuralFeatures().get(10);
+    return (EReference)constantEClass.getEStructuralFeatures().get(7);
   }
 
   /**
@@ -2867,13 +2837,10 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
     createEReference(constantDefinitionEClass, CONSTANT_DEFINITION__CONSTANT);
 
     constantEClass = createEClass(CONSTANT);
-    createEReference(constantEClass, CONSTANT__NUMBER);
     createEAttribute(constantEClass, CONSTANT__SIGN);
-    createEReference(constantEClass, CONSTANT__NUMBER1);
+    createEReference(constantEClass, CONSTANT__UNSIGNED_NUMBER);
     createEReference(constantEClass, CONSTANT__IDENTIFIER);
-    createEAttribute(constantEClass, CONSTANT__STRING_LITERAL);
-    createEAttribute(constantEClass, CONSTANT__SIGN2);
-    createEReference(constantEClass, CONSTANT__IDENTIFIER1);
+    createEAttribute(constantEClass, CONSTANT__STRING);
     createEReference(constantEClass, CONSTANT__CONSTANT_CHR);
     createEAttribute(constantEClass, CONSTANT__BOOL);
     createEReference(constantEClass, CONSTANT__CONSTANT);
@@ -3187,13 +3154,10 @@ public class PascalPackageImpl extends EPackageImpl implements PascalPackage
     initEReference(getconstantDefinition_Constant(), this.getconstant(), null, "constant", null, 0, 1, constantDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(constantEClass, constant.class, "constant", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getconstant_Number(), this.getunsignedNumber(), null, "number", null, 0, 1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getconstant_Sign(), ecorePackage.getEString(), "sign", null, 0, 1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getconstant_Number1(), this.getunsignedNumber(), null, "number1", null, 0, 1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getconstant_UnsignedNumber(), this.getunsignedNumber(), null, "unsignedNumber", null, 0, 1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getconstant_Identifier(), this.getidentifier(), null, "identifier", null, 0, 1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getconstant_STRING_LITERAL(), ecorePackage.getEString(), "STRING_LITERAL", null, 0, 1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getconstant_Sign2(), ecorePackage.getEString(), "sign2", null, 0, -1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getconstant_Identifier1(), this.getidentifier(), null, "identifier1", null, 0, -1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getconstant_String(), ecorePackage.getEString(), "string", null, 0, 1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getconstant_ConstantChr(), this.getconstantChr(), null, "constantChr", null, 0, 1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getconstant_Bool(), ecorePackage.getEString(), "bool", null, 0, 1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getconstant_Constant(), this.getconstant(), null, "constant", null, 0, -1, constant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

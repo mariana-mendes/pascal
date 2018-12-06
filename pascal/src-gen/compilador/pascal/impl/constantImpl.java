@@ -22,7 +22,6 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -34,13 +33,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link compilador.pascal.impl.constantImpl#getNumber <em>Number</em>}</li>
  *   <li>{@link compilador.pascal.impl.constantImpl#getSign <em>Sign</em>}</li>
- *   <li>{@link compilador.pascal.impl.constantImpl#getNumber1 <em>Number1</em>}</li>
+ *   <li>{@link compilador.pascal.impl.constantImpl#getUnsignedNumber <em>Unsigned Number</em>}</li>
  *   <li>{@link compilador.pascal.impl.constantImpl#getIdentifier <em>Identifier</em>}</li>
- *   <li>{@link compilador.pascal.impl.constantImpl#getSTRING_LITERAL <em>STRING LITERAL</em>}</li>
- *   <li>{@link compilador.pascal.impl.constantImpl#getSign2 <em>Sign2</em>}</li>
- *   <li>{@link compilador.pascal.impl.constantImpl#getIdentifier1 <em>Identifier1</em>}</li>
+ *   <li>{@link compilador.pascal.impl.constantImpl#getString <em>String</em>}</li>
  *   <li>{@link compilador.pascal.impl.constantImpl#getConstantChr <em>Constant Chr</em>}</li>
  *   <li>{@link compilador.pascal.impl.constantImpl#getBool <em>Bool</em>}</li>
  *   <li>{@link compilador.pascal.impl.constantImpl#getConstant <em>Constant</em>}</li>
@@ -51,16 +47,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class constantImpl extends variantImpl implements constant
 {
-  /**
-   * The cached value of the '{@link #getNumber() <em>Number</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getNumber()
-   * @generated
-   * @ordered
-   */
-  protected unsignedNumber number;
-
   /**
    * The default value of the '{@link #getSign() <em>Sign</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -82,14 +68,14 @@ public class constantImpl extends variantImpl implements constant
   protected String sign = SIGN_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getNumber1() <em>Number1</em>}' containment reference.
+   * The cached value of the '{@link #getUnsignedNumber() <em>Unsigned Number</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getNumber1()
+   * @see #getUnsignedNumber()
    * @generated
    * @ordered
    */
-  protected unsignedNumber number1;
+  protected unsignedNumber unsignedNumber;
 
   /**
    * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' containment reference.
@@ -102,44 +88,24 @@ public class constantImpl extends variantImpl implements constant
   protected identifier identifier;
 
   /**
-   * The default value of the '{@link #getSTRING_LITERAL() <em>STRING LITERAL</em>}' attribute.
+   * The default value of the '{@link #getString() <em>String</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getSTRING_LITERAL()
+   * @see #getString()
    * @generated
    * @ordered
    */
-  protected static final String STRING_LITERAL_EDEFAULT = null;
+  protected static final String STRING_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getSTRING_LITERAL() <em>STRING LITERAL</em>}' attribute.
+   * The cached value of the '{@link #getString() <em>String</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getSTRING_LITERAL()
+   * @see #getString()
    * @generated
    * @ordered
    */
-  protected String strinG_LITERAL = STRING_LITERAL_EDEFAULT;
-
-  /**
-   * The cached value of the '{@link #getSign2() <em>Sign2</em>}' attribute list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getSign2()
-   * @generated
-   * @ordered
-   */
-  protected EList<String> sign2;
-
-  /**
-   * The cached value of the '{@link #getIdentifier1() <em>Identifier1</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getIdentifier1()
-   * @generated
-   * @ordered
-   */
-  protected EList<identifier> identifier1;
+  protected String string = STRING_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getConstantChr() <em>Constant Chr</em>}' containment reference.
@@ -217,54 +183,6 @@ public class constantImpl extends variantImpl implements constant
    * <!-- end-user-doc -->
    * @generated
    */
-  public unsignedNumber getNumber()
-  {
-    return number;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NotificationChain basicSetNumber(unsignedNumber newNumber, NotificationChain msgs)
-  {
-    unsignedNumber oldNumber = number;
-    number = newNumber;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT__NUMBER, oldNumber, newNumber);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setNumber(unsignedNumber newNumber)
-  {
-    if (newNumber != number)
-    {
-      NotificationChain msgs = null;
-      if (number != null)
-        msgs = ((InternalEObject)number).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.CONSTANT__NUMBER, null, msgs);
-      if (newNumber != null)
-        msgs = ((InternalEObject)newNumber).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.CONSTANT__NUMBER, null, msgs);
-      msgs = basicSetNumber(newNumber, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT__NUMBER, newNumber, newNumber));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public String getSign()
   {
     return sign;
@@ -288,9 +206,9 @@ public class constantImpl extends variantImpl implements constant
    * <!-- end-user-doc -->
    * @generated
    */
-  public unsignedNumber getNumber1()
+  public unsignedNumber getUnsignedNumber()
   {
-    return number1;
+    return unsignedNumber;
   }
 
   /**
@@ -298,13 +216,13 @@ public class constantImpl extends variantImpl implements constant
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetNumber1(unsignedNumber newNumber1, NotificationChain msgs)
+  public NotificationChain basicSetUnsignedNumber(unsignedNumber newUnsignedNumber, NotificationChain msgs)
   {
-    unsignedNumber oldNumber1 = number1;
-    number1 = newNumber1;
+    unsignedNumber oldUnsignedNumber = unsignedNumber;
+    unsignedNumber = newUnsignedNumber;
     if (eNotificationRequired())
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT__NUMBER1, oldNumber1, newNumber1);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT__UNSIGNED_NUMBER, oldUnsignedNumber, newUnsignedNumber);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -315,20 +233,20 @@ public class constantImpl extends variantImpl implements constant
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setNumber1(unsignedNumber newNumber1)
+  public void setUnsignedNumber(unsignedNumber newUnsignedNumber)
   {
-    if (newNumber1 != number1)
+    if (newUnsignedNumber != unsignedNumber)
     {
       NotificationChain msgs = null;
-      if (number1 != null)
-        msgs = ((InternalEObject)number1).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.CONSTANT__NUMBER1, null, msgs);
-      if (newNumber1 != null)
-        msgs = ((InternalEObject)newNumber1).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.CONSTANT__NUMBER1, null, msgs);
-      msgs = basicSetNumber1(newNumber1, msgs);
+      if (unsignedNumber != null)
+        msgs = ((InternalEObject)unsignedNumber).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PascalPackage.CONSTANT__UNSIGNED_NUMBER, null, msgs);
+      if (newUnsignedNumber != null)
+        msgs = ((InternalEObject)newUnsignedNumber).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PascalPackage.CONSTANT__UNSIGNED_NUMBER, null, msgs);
+      msgs = basicSetUnsignedNumber(newUnsignedNumber, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT__NUMBER1, newNumber1, newNumber1));
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT__UNSIGNED_NUMBER, newUnsignedNumber, newUnsignedNumber));
   }
 
   /**
@@ -384,9 +302,9 @@ public class constantImpl extends variantImpl implements constant
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getSTRING_LITERAL()
+  public String getString()
   {
-    return strinG_LITERAL;
+    return string;
   }
 
   /**
@@ -394,40 +312,12 @@ public class constantImpl extends variantImpl implements constant
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setSTRING_LITERAL(String newSTRING_LITERAL)
+  public void setString(String newString)
   {
-    String oldSTRING_LITERAL = strinG_LITERAL;
-    strinG_LITERAL = newSTRING_LITERAL;
+    String oldString = string;
+    string = newString;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT__STRING_LITERAL, oldSTRING_LITERAL, strinG_LITERAL));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<String> getSign2()
-  {
-    if (sign2 == null)
-    {
-      sign2 = new EDataTypeEList<String>(String.class, this, PascalPackage.CONSTANT__SIGN2);
-    }
-    return sign2;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<identifier> getIdentifier1()
-  {
-    if (identifier1 == null)
-    {
-      identifier1 = new EObjectContainmentEList<identifier>(identifier.class, this, PascalPackage.CONSTANT__IDENTIFIER1);
-    }
-    return identifier1;
+      eNotify(new ENotificationImpl(this, Notification.SET, PascalPackage.CONSTANT__STRING, oldString, string));
   }
 
   /**
@@ -573,14 +463,10 @@ public class constantImpl extends variantImpl implements constant
   {
     switch (featureID)
     {
-      case PascalPackage.CONSTANT__NUMBER:
-        return basicSetNumber(null, msgs);
-      case PascalPackage.CONSTANT__NUMBER1:
-        return basicSetNumber1(null, msgs);
+      case PascalPackage.CONSTANT__UNSIGNED_NUMBER:
+        return basicSetUnsignedNumber(null, msgs);
       case PascalPackage.CONSTANT__IDENTIFIER:
         return basicSetIdentifier(null, msgs);
-      case PascalPackage.CONSTANT__IDENTIFIER1:
-        return ((InternalEList<?>)getIdentifier1()).basicRemove(otherEnd, msgs);
       case PascalPackage.CONSTANT__CONSTANT_CHR:
         return basicSetConstantChr(null, msgs);
       case PascalPackage.CONSTANT__CONSTANT:
@@ -601,20 +487,14 @@ public class constantImpl extends variantImpl implements constant
   {
     switch (featureID)
     {
-      case PascalPackage.CONSTANT__NUMBER:
-        return getNumber();
       case PascalPackage.CONSTANT__SIGN:
         return getSign();
-      case PascalPackage.CONSTANT__NUMBER1:
-        return getNumber1();
+      case PascalPackage.CONSTANT__UNSIGNED_NUMBER:
+        return getUnsignedNumber();
       case PascalPackage.CONSTANT__IDENTIFIER:
         return getIdentifier();
-      case PascalPackage.CONSTANT__STRING_LITERAL:
-        return getSTRING_LITERAL();
-      case PascalPackage.CONSTANT__SIGN2:
-        return getSign2();
-      case PascalPackage.CONSTANT__IDENTIFIER1:
-        return getIdentifier1();
+      case PascalPackage.CONSTANT__STRING:
+        return getString();
       case PascalPackage.CONSTANT__CONSTANT_CHR:
         return getConstantChr();
       case PascalPackage.CONSTANT__BOOL:
@@ -638,28 +518,17 @@ public class constantImpl extends variantImpl implements constant
   {
     switch (featureID)
     {
-      case PascalPackage.CONSTANT__NUMBER:
-        setNumber((unsignedNumber)newValue);
-        return;
       case PascalPackage.CONSTANT__SIGN:
         setSign((String)newValue);
         return;
-      case PascalPackage.CONSTANT__NUMBER1:
-        setNumber1((unsignedNumber)newValue);
+      case PascalPackage.CONSTANT__UNSIGNED_NUMBER:
+        setUnsignedNumber((unsignedNumber)newValue);
         return;
       case PascalPackage.CONSTANT__IDENTIFIER:
         setIdentifier((identifier)newValue);
         return;
-      case PascalPackage.CONSTANT__STRING_LITERAL:
-        setSTRING_LITERAL((String)newValue);
-        return;
-      case PascalPackage.CONSTANT__SIGN2:
-        getSign2().clear();
-        getSign2().addAll((Collection<? extends String>)newValue);
-        return;
-      case PascalPackage.CONSTANT__IDENTIFIER1:
-        getIdentifier1().clear();
-        getIdentifier1().addAll((Collection<? extends identifier>)newValue);
+      case PascalPackage.CONSTANT__STRING:
+        setString((String)newValue);
         return;
       case PascalPackage.CONSTANT__CONSTANT_CHR:
         setConstantChr((constantChr)newValue);
@@ -688,26 +557,17 @@ public class constantImpl extends variantImpl implements constant
   {
     switch (featureID)
     {
-      case PascalPackage.CONSTANT__NUMBER:
-        setNumber((unsignedNumber)null);
-        return;
       case PascalPackage.CONSTANT__SIGN:
         setSign(SIGN_EDEFAULT);
         return;
-      case PascalPackage.CONSTANT__NUMBER1:
-        setNumber1((unsignedNumber)null);
+      case PascalPackage.CONSTANT__UNSIGNED_NUMBER:
+        setUnsignedNumber((unsignedNumber)null);
         return;
       case PascalPackage.CONSTANT__IDENTIFIER:
         setIdentifier((identifier)null);
         return;
-      case PascalPackage.CONSTANT__STRING_LITERAL:
-        setSTRING_LITERAL(STRING_LITERAL_EDEFAULT);
-        return;
-      case PascalPackage.CONSTANT__SIGN2:
-        getSign2().clear();
-        return;
-      case PascalPackage.CONSTANT__IDENTIFIER1:
-        getIdentifier1().clear();
+      case PascalPackage.CONSTANT__STRING:
+        setString(STRING_EDEFAULT);
         return;
       case PascalPackage.CONSTANT__CONSTANT_CHR:
         setConstantChr((constantChr)null);
@@ -735,20 +595,14 @@ public class constantImpl extends variantImpl implements constant
   {
     switch (featureID)
     {
-      case PascalPackage.CONSTANT__NUMBER:
-        return number != null;
       case PascalPackage.CONSTANT__SIGN:
         return SIGN_EDEFAULT == null ? sign != null : !SIGN_EDEFAULT.equals(sign);
-      case PascalPackage.CONSTANT__NUMBER1:
-        return number1 != null;
+      case PascalPackage.CONSTANT__UNSIGNED_NUMBER:
+        return unsignedNumber != null;
       case PascalPackage.CONSTANT__IDENTIFIER:
         return identifier != null;
-      case PascalPackage.CONSTANT__STRING_LITERAL:
-        return STRING_LITERAL_EDEFAULT == null ? strinG_LITERAL != null : !STRING_LITERAL_EDEFAULT.equals(strinG_LITERAL);
-      case PascalPackage.CONSTANT__SIGN2:
-        return sign2 != null && !sign2.isEmpty();
-      case PascalPackage.CONSTANT__IDENTIFIER1:
-        return identifier1 != null && !identifier1.isEmpty();
+      case PascalPackage.CONSTANT__STRING:
+        return STRING_EDEFAULT == null ? string != null : !STRING_EDEFAULT.equals(string);
       case PascalPackage.CONSTANT__CONSTANT_CHR:
         return constantChr != null;
       case PascalPackage.CONSTANT__BOOL:
@@ -774,10 +628,8 @@ public class constantImpl extends variantImpl implements constant
     StringBuilder result = new StringBuilder(super.toString());
     result.append(" (sign: ");
     result.append(sign);
-    result.append(", STRING_LITERAL: ");
-    result.append(strinG_LITERAL);
-    result.append(", sign2: ");
-    result.append(sign2);
+    result.append(", string: ");
+    result.append(string);
     result.append(", bool: ");
     result.append(bool);
     result.append(')');

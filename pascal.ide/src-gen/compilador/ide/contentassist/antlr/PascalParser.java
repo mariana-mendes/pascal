@@ -68,7 +68,7 @@ public class PascalParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getConstantDefinitionPartAccess().getGroup(), "rule__ConstantDefinitionPart__Group__0");
 			builder.put(grammarAccess.getConstantDefinitionPartAccess().getGroup_1(), "rule__ConstantDefinitionPart__Group_1__0");
 			builder.put(grammarAccess.getConstantDefinitionAccess().getGroup(), "rule__ConstantDefinition__Group__0");
-			builder.put(grammarAccess.getConstantAccess().getGroup_1(), "rule__Constant__Group_1__0");
+			builder.put(grammarAccess.getConstantAccess().getGroup_0(), "rule__Constant__Group_0__0");
 			builder.put(grammarAccess.getConstantAccess().getGroup_4(), "rule__Constant__Group_4__0");
 			builder.put(grammarAccess.getConstantChrAccess().getGroup(), "rule__ConstantChr__Group__0");
 			builder.put(grammarAccess.getUsesUnitsPartAccess().getGroup(), "rule__UsesUnitsPart__Group__0");
@@ -156,13 +156,13 @@ public class PascalParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getConstantDefinitionPartAccess().getConstantDefinitionAssignment_1_0(), "rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0");
 			builder.put(grammarAccess.getConstantDefinitionAccess().getIdentifierAssignment_0(), "rule__ConstantDefinition__IdentifierAssignment_0");
 			builder.put(grammarAccess.getConstantDefinitionAccess().getConstantAssignment_2(), "rule__ConstantDefinition__ConstantAssignment_2");
-			builder.put(grammarAccess.getConstantAccess().getNumberAssignment_0(), "rule__Constant__NumberAssignment_0");
-			builder.put(grammarAccess.getConstantAccess().getSignAssignment_1_0(), "rule__Constant__SignAssignment_1_0");
-			builder.put(grammarAccess.getConstantAccess().getNumber1Assignment_1_1(), "rule__Constant__Number1Assignment_1_1");
+			builder.put(grammarAccess.getConstantAccess().getSignAssignment_0_0(), "rule__Constant__SignAssignment_0_0");
+			builder.put(grammarAccess.getConstantAccess().getUnsignedNumberAssignment_0_1(), "rule__Constant__UnsignedNumberAssignment_0_1");
+			builder.put(grammarAccess.getConstantAccess().getUnsignedNumberAssignment_1(), "rule__Constant__UnsignedNumberAssignment_1");
 			builder.put(grammarAccess.getConstantAccess().getIdentifierAssignment_2(), "rule__Constant__IdentifierAssignment_2");
-			builder.put(grammarAccess.getConstantAccess().getSTRING_LITERALAssignment_3(), "rule__Constant__STRING_LITERALAssignment_3");
-			builder.put(grammarAccess.getConstantAccess().getSign2Assignment_4_0(), "rule__Constant__Sign2Assignment_4_0");
-			builder.put(grammarAccess.getConstantAccess().getIdentifier1Assignment_4_1(), "rule__Constant__Identifier1Assignment_4_1");
+			builder.put(grammarAccess.getConstantAccess().getStringAssignment_3(), "rule__Constant__StringAssignment_3");
+			builder.put(grammarAccess.getConstantAccess().getSignAssignment_4_0(), "rule__Constant__SignAssignment_4_0");
+			builder.put(grammarAccess.getConstantAccess().getIdentifierAssignment_4_1(), "rule__Constant__IdentifierAssignment_4_1");
 			builder.put(grammarAccess.getConstantAccess().getConstantChrAssignment_5(), "rule__Constant__ConstantChrAssignment_5");
 			builder.put(grammarAccess.getConstantAccess().getBoolAssignment_6(), "rule__Constant__BoolAssignment_6");
 			builder.put(grammarAccess.getConstantChrAccess().getUnsignedIntegerAssignment_2(), "rule__ConstantChr__UnsignedIntegerAssignment_2");

@@ -50,13 +50,10 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pascal.ecore#//constantDefinition/constant"/>
     </genClasses>
     <genClasses ecoreClass="Pascal.ecore#//constant">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pascal.ecore#//constant/number"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pascal.ecore#//constant/sign"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pascal.ecore#//constant/number1"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pascal.ecore#//constant/unsignedNumber"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pascal.ecore#//constant/identifier"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pascal.ecore#//constant/STRING_LITERAL"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pascal.ecore#//constant/sign2"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pascal.ecore#//constant/identifier1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pascal.ecore#//constant/string"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pascal.ecore#//constant/constantChr"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pascal.ecore#//constant/bool"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pascal.ecore#//constant/constant"/>

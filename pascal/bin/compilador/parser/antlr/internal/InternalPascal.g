@@ -794,31 +794,11 @@ ruleconstant returns [EObject current=null]
 	(
 		(
 			(
-				{
-					newCompositeNode(grammarAccess.getConstantAccess().getNumberUnsignedNumberParserRuleCall_0_0());
-				}
-				lv_number_0_0=ruleunsignedNumber
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getConstantRule());
-					}
-					set(
-						$current,
-						"number",
-						lv_number_0_0,
-						"compilador.Pascal.unsignedNumber");
-					afterParserOrEnumRuleCall();
-				}
-			)
-		)
-		    |
-		(
-			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConstantAccess().getSignSignParserRuleCall_1_0_0());
+						newCompositeNode(grammarAccess.getConstantAccess().getSignSignParserRuleCall_0_0_0());
 					}
-					lv_sign_1_0=rulesign
+					lv_sign_0_0=rulesign
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConstantRule());
@@ -826,7 +806,7 @@ ruleconstant returns [EObject current=null]
 						set(
 							$current,
 							"sign",
-							lv_sign_1_0,
+							lv_sign_0_0,
 							"compilador.Pascal.sign");
 						afterParserOrEnumRuleCall();
 					}
@@ -835,21 +815,41 @@ ruleconstant returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConstantAccess().getNumber1UnsignedNumberParserRuleCall_1_1_0());
+						newCompositeNode(grammarAccess.getConstantAccess().getUnsignedNumberUnsignedNumberParserRuleCall_0_1_0());
 					}
-					lv_number1_2_0=ruleunsignedNumber
+					lv_unsignedNumber_1_0=ruleunsignedNumber
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConstantRule());
 						}
 						set(
 							$current,
-							"number1",
-							lv_number1_2_0,
+							"unsignedNumber",
+							lv_unsignedNumber_1_0,
 							"compilador.Pascal.unsignedNumber");
 						afterParserOrEnumRuleCall();
 					}
 				)
+			)
+		)
+		    |
+		(
+			(
+				{
+					newCompositeNode(grammarAccess.getConstantAccess().getUnsignedNumberUnsignedNumberParserRuleCall_1_0());
+				}
+				lv_unsignedNumber_2_0=ruleunsignedNumber
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getConstantRule());
+					}
+					set(
+						$current,
+						"unsignedNumber",
+						lv_unsignedNumber_2_0,
+						"compilador.Pascal.unsignedNumber");
+					afterParserOrEnumRuleCall();
+				}
 			)
 		)
 		    |
@@ -875,9 +875,9 @@ ruleconstant returns [EObject current=null]
 		    |
 		(
 			(
-				lv_STRING_LITERAL_4_0=RULE_STRING_LITERAL
+				lv_string_4_0=RULE_STRING_LITERAL
 				{
-					newLeafNode(lv_STRING_LITERAL_4_0, grammarAccess.getConstantAccess().getSTRING_LITERALSTRING_LITERALTerminalRuleCall_3_0());
+					newLeafNode(lv_string_4_0, grammarAccess.getConstantAccess().getStringSTRING_LITERALTerminalRuleCall_3_0());
 				}
 				{
 					if ($current==null) {
@@ -885,8 +885,8 @@ ruleconstant returns [EObject current=null]
 					}
 					setWithLastConsumed(
 						$current,
-						"STRING_LITERAL",
-						lv_STRING_LITERAL_4_0,
+						"string",
+						lv_string_4_0,
 						"compilador.Pascal.STRING_LITERAL");
 				}
 			)
@@ -896,17 +896,17 @@ ruleconstant returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConstantAccess().getSign2SignParserRuleCall_4_0_0());
+						newCompositeNode(grammarAccess.getConstantAccess().getSignSignParserRuleCall_4_0_0());
 					}
-					lv_sign2_5_0=rulesign
+					lv_sign_5_0=rulesign
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConstantRule());
 						}
-						add(
+						set(
 							$current,
-							"sign2",
-							lv_sign2_5_0,
+							"sign",
+							lv_sign_5_0,
 							"compilador.Pascal.sign");
 						afterParserOrEnumRuleCall();
 					}
@@ -915,17 +915,17 @@ ruleconstant returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getConstantAccess().getIdentifier1IdentifierParserRuleCall_4_1_0());
+						newCompositeNode(grammarAccess.getConstantAccess().getIdentifierIdentifierParserRuleCall_4_1_0());
 					}
-					lv_identifier1_6_0=ruleidentifier
+					lv_identifier_6_0=ruleidentifier
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getConstantRule());
 						}
-						add(
+						set(
 							$current,
-							"identifier1",
-							lv_identifier1_6_0,
+							"identifier",
+							lv_identifier_6_0,
 							"compilador.Pascal.identifier");
 						afterParserOrEnumRuleCall();
 					}

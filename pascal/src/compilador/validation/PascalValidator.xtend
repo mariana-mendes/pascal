@@ -92,7 +92,6 @@ class PascalValidator extends AbstractPascalValidator {
 			error("id variavel duplicado: " + declaracaoUnica.identifier, null, declaracaoUnica.identifier);
 		} else {
 			variaveisDeclaradas.put(declaracaoUnica.identifier, declaracaoUnica);
-			println(declaracaoUnica.identifier);
 			variaveisTipo.put(declaracaoUnica.identifier, getTypeVar(vd.type));
 		}
 
@@ -219,65 +218,60 @@ class PascalValidator extends AbstractPascalValidator {
 	def checkConditionalStatement(conditionalStatement cst) {
 		var caseStatement = cst.caseStatement;
 		var expType = checkExpressionType(caseStatement.expression);
-		println(expType);
 		if (expType.isEmpty()) {
 			error("variavel nao declarada. tipo do case invalido", null);
 		}
 
-		var tipoCaseUnico = getCaseListUnico(caseStatement.caseListElement);
-		var tipoCaseLista = checkCaseList(caseStatement.caseListElement1, tipoCaseUnico);
-		
-		if (tipoCaseUnico.isEmpty() || !tipoCaseLista) {
+		var String tipoCaseUnico = getCaseListUnico(caseStatement.caseListElement);
+
+		var boolean listaTodaValida = checkCaseList(caseStatement.caseListElement1, tipoCaseUnico);
+		println("caseUnico " + listaTodaValida);
+
+		if (tipoCaseUnico.isEmpty() || !listaTodaValida || tipoCaseUnico !== expType) {
 			error("Tipos incompativeis", null);
 		}
 
 	}
 
 	def boolean checkCaseList(EList<caseListElement> list, String expType) {
-		var isValido = true;
+		var boolean isValido = true;
+		println(expType);
+		
 		for (caseListElement e : list) {
-			if (getCaseListUnico(e).isEmpty() ||  getCaseListUnico(e) !== expType) {
+			println(getCaseListUnico(e));
+			if (getCaseListUnico(e).isEmpty() || getCaseListUnico(e) !== expType) {
 				isValido = false;
 			}
 		}
-		
+
 		return isValido;
-		
-		
+
 	}
 
 	def String getCaseListUnico(caseListElement element) {
-		var constUnica = element.constList.constant;
-		var constLista = element.constList.constant1;
-		var tipoPrincipal = getTypeConst(constUnica);
+		var constant constUnica = element.constList.constant;
+		var EList<constant> constLista = element.constList.constant1;
+		var String tipoPrincipal;
 
 		if (constUnica !== null) {
-			return tipoPrincipal
+			tipoPrincipal = getTypeConst(constUnica);
 		}
 
-		for (constant e : constLista) {
-			var tipoElement = getTypeConst(e);
-			if (tipoPrincipal !== tipoElement) {
-				return "";
+		if (!constLista.isNullOrEmpty()) {
+			for (constant e : constLista) {
+				if (!tipoPrincipal.equalsIgnoreCase(getTypeConst(e))) {
+					tipoPrincipal = "";
+
+					return "";
+				}
 			}
 		}
+
 		return tipoPrincipal;
 	}
 
 	def String getTypeConst(constant c) {
-		if (c.number.unsignedInteger !== null) {
-			return "integer";
-		}
-
-		if (c.number.unsignedReal !== null) {
-			return "real";
-		}
-
-		if (c.identifier !== null) {
-			// veriicar se tipo existe
-		}
-
-		if (c.STRING_LITERAL !== null) {
+		if (c.string !== null) {
 			return "string";
 		}
 
@@ -289,10 +283,22 @@ class PascalValidator extends AbstractPascalValidator {
 		if (c.bool !== null) {
 			return "bool";
 		}
+
+		if (c.identifier !== null) {
+			// veriicar se tipo existe
+		}
+		if (c.unsignedNumber.unsignedReal !== null) {
+			return "real";
+		}
+
+		if (c.unsignedNumber !== null) {
+			return "integer";
+		}
+
 	}
 
 	def String checkExpressionType(expression expression) {
-		var tipoExp = "";
+		var String tipoExp = "";
 		var simple = expression.simpleExpression.term.signedFactor.factor;
 
 		if (simple.unsignedConstant !== null) {

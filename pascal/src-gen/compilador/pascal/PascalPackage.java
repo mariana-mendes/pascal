@@ -503,31 +503,22 @@ public interface PascalPackage extends EPackage
   int CONSTANT = 11;
 
   /**
-   * The feature id for the '<em><b>Number</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CONSTANT__NUMBER = VARIANT_FEATURE_COUNT + 0;
-
-  /**
    * The feature id for the '<em><b>Sign</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONSTANT__SIGN = VARIANT_FEATURE_COUNT + 1;
+  int CONSTANT__SIGN = VARIANT_FEATURE_COUNT + 0;
 
   /**
-   * The feature id for the '<em><b>Number1</b></em>' containment reference.
+   * The feature id for the '<em><b>Unsigned Number</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONSTANT__NUMBER1 = VARIANT_FEATURE_COUNT + 2;
+  int CONSTANT__UNSIGNED_NUMBER = VARIANT_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Identifier</b></em>' containment reference.
@@ -536,34 +527,16 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONSTANT__IDENTIFIER = VARIANT_FEATURE_COUNT + 3;
+  int CONSTANT__IDENTIFIER = VARIANT_FEATURE_COUNT + 2;
 
   /**
-   * The feature id for the '<em><b>STRING LITERAL</b></em>' attribute.
+   * The feature id for the '<em><b>String</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONSTANT__STRING_LITERAL = VARIANT_FEATURE_COUNT + 4;
-
-  /**
-   * The feature id for the '<em><b>Sign2</b></em>' attribute list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CONSTANT__SIGN2 = VARIANT_FEATURE_COUNT + 5;
-
-  /**
-   * The feature id for the '<em><b>Identifier1</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CONSTANT__IDENTIFIER1 = VARIANT_FEATURE_COUNT + 6;
+  int CONSTANT__STRING = VARIANT_FEATURE_COUNT + 3;
 
   /**
    * The feature id for the '<em><b>Constant Chr</b></em>' containment reference.
@@ -572,7 +545,7 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONSTANT__CONSTANT_CHR = VARIANT_FEATURE_COUNT + 7;
+  int CONSTANT__CONSTANT_CHR = VARIANT_FEATURE_COUNT + 4;
 
   /**
    * The feature id for the '<em><b>Bool</b></em>' attribute.
@@ -581,7 +554,7 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONSTANT__BOOL = VARIANT_FEATURE_COUNT + 8;
+  int CONSTANT__BOOL = VARIANT_FEATURE_COUNT + 5;
 
   /**
    * The feature id for the '<em><b>Constant</b></em>' containment reference list.
@@ -590,7 +563,7 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONSTANT__CONSTANT = VARIANT_FEATURE_COUNT + 9;
+  int CONSTANT__CONSTANT = VARIANT_FEATURE_COUNT + 6;
 
   /**
    * The feature id for the '<em><b>Field List</b></em>' containment reference.
@@ -599,7 +572,7 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONSTANT__FIELD_LIST = VARIANT_FEATURE_COUNT + 10;
+  int CONSTANT__FIELD_LIST = VARIANT_FEATURE_COUNT + 7;
 
   /**
    * The number of structural features of the '<em>constant</em>' class.
@@ -608,7 +581,7 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONSTANT_FEATURE_COUNT = VARIANT_FEATURE_COUNT + 11;
+  int CONSTANT_FEATURE_COUNT = VARIANT_FEATURE_COUNT + 8;
 
   /**
    * The meta object id for the '{@link compilador.pascal.impl.constantChrImpl <em>constant Chr</em>}' class.
@@ -3052,17 +3025,6 @@ public interface PascalPackage extends EPackage
   EClass getconstant();
 
   /**
-   * Returns the meta object for the containment reference '{@link compilador.pascal.constant#getNumber <em>Number</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Number</em>'.
-   * @see compilador.pascal.constant#getNumber()
-   * @see #getconstant()
-   * @generated
-   */
-  EReference getconstant_Number();
-
-  /**
    * Returns the meta object for the attribute '{@link compilador.pascal.constant#getSign <em>Sign</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -3074,15 +3036,15 @@ public interface PascalPackage extends EPackage
   EAttribute getconstant_Sign();
 
   /**
-   * Returns the meta object for the containment reference '{@link compilador.pascal.constant#getNumber1 <em>Number1</em>}'.
+   * Returns the meta object for the containment reference '{@link compilador.pascal.constant#getUnsignedNumber <em>Unsigned Number</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Number1</em>'.
-   * @see compilador.pascal.constant#getNumber1()
+   * @return the meta object for the containment reference '<em>Unsigned Number</em>'.
+   * @see compilador.pascal.constant#getUnsignedNumber()
    * @see #getconstant()
    * @generated
    */
-  EReference getconstant_Number1();
+  EReference getconstant_UnsignedNumber();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.constant#getIdentifier <em>Identifier</em>}'.
@@ -3096,37 +3058,15 @@ public interface PascalPackage extends EPackage
   EReference getconstant_Identifier();
 
   /**
-   * Returns the meta object for the attribute '{@link compilador.pascal.constant#getSTRING_LITERAL <em>STRING LITERAL</em>}'.
+   * Returns the meta object for the attribute '{@link compilador.pascal.constant#getString <em>String</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>STRING LITERAL</em>'.
-   * @see compilador.pascal.constant#getSTRING_LITERAL()
+   * @return the meta object for the attribute '<em>String</em>'.
+   * @see compilador.pascal.constant#getString()
    * @see #getconstant()
    * @generated
    */
-  EAttribute getconstant_STRING_LITERAL();
-
-  /**
-   * Returns the meta object for the attribute list '{@link compilador.pascal.constant#getSign2 <em>Sign2</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Sign2</em>'.
-   * @see compilador.pascal.constant#getSign2()
-   * @see #getconstant()
-   * @generated
-   */
-  EAttribute getconstant_Sign2();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.constant#getIdentifier1 <em>Identifier1</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Identifier1</em>'.
-   * @see compilador.pascal.constant#getIdentifier1()
-   * @see #getconstant()
-   * @generated
-   */
-  EReference getconstant_Identifier1();
+  EAttribute getconstant_String();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.constant#getConstantChr <em>Constant Chr</em>}'.
@@ -5341,14 +5281,6 @@ public interface PascalPackage extends EPackage
     EClass CONSTANT = eINSTANCE.getconstant();
 
     /**
-     * The meta object literal for the '<em><b>Number</b></em>' containment reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference CONSTANT__NUMBER = eINSTANCE.getconstant_Number();
-
-    /**
      * The meta object literal for the '<em><b>Sign</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -5357,12 +5289,12 @@ public interface PascalPackage extends EPackage
     EAttribute CONSTANT__SIGN = eINSTANCE.getconstant_Sign();
 
     /**
-     * The meta object literal for the '<em><b>Number1</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Unsigned Number</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference CONSTANT__NUMBER1 = eINSTANCE.getconstant_Number1();
+    EReference CONSTANT__UNSIGNED_NUMBER = eINSTANCE.getconstant_UnsignedNumber();
 
     /**
      * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
@@ -5373,28 +5305,12 @@ public interface PascalPackage extends EPackage
     EReference CONSTANT__IDENTIFIER = eINSTANCE.getconstant_Identifier();
 
     /**
-     * The meta object literal for the '<em><b>STRING LITERAL</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>String</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute CONSTANT__STRING_LITERAL = eINSTANCE.getconstant_STRING_LITERAL();
-
-    /**
-     * The meta object literal for the '<em><b>Sign2</b></em>' attribute list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CONSTANT__SIGN2 = eINSTANCE.getconstant_Sign2();
-
-    /**
-     * The meta object literal for the '<em><b>Identifier1</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference CONSTANT__IDENTIFIER1 = eINSTANCE.getconstant_Identifier1();
+    EAttribute CONSTANT__STRING = eINSTANCE.getconstant_String();
 
     /**
      * The meta object literal for the '<em><b>Constant Chr</b></em>' containment reference feature.
