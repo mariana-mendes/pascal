@@ -52,7 +52,6 @@ class PascalValidator extends AbstractPascalValidator {
 
 	def checkDefTipo(typeDefinition definition) {
 		var tipoCriado = definition.identifier.identifier;
-		println(tipoCriado);
 		if (tiposCriados.contains(tipoCriado)) {
 			error("um tipo ja foi criado com id " + tipoCriado, null);
 		} else {
@@ -85,7 +84,6 @@ class PascalValidator extends AbstractPascalValidator {
 			error("id variavel duplicado: " + declaracaoUnica.identifier, null, declaracaoUnica.identifier);
 		} else {
 			variaveisDeclaradas.put(declaracaoUnica.identifier, declaracaoUnica);
-			println(declaracaoUnica.identifier);
 			variaveisTipo.put(declaracaoUnica.identifier, getTypeVar(vd.type));
 		}
 
@@ -204,53 +202,83 @@ class PascalValidator extends AbstractPascalValidator {
 
 	}
 
-	@Check 
+	@Check
 	def checkTypeCase(caseStatement caseStatement) {
-	
+		var String tipoExpressionCase;
 		var factor fac = caseStatement.expression.simpleExpression.term.signedFactor.factor;
 		var unsignedConstant unsConst;
 		var unsignedNumber unsNumb;
 		var variable vari;
-		
-		if(fac.unsignedConstant !== null) {
-			unsConst = caseStatement.expression.simpleExpression.term.signedFactor.factor.unsignedConstant;
-			if(unsConst.unsignedNumber !== null) {
+
+		// Caso em que a exp do case eh uma variavel
+		var expVariavel = caseStatement.expression.simpleExpression.term.signedFactor.factor.variable.identifier.
+			identifier;
+
+		if (expVariavel !== null) {
+			if(variaveisDeclaradas.containsKey(expVariavel)){
+				tipoExpressionCase = variaveisTipo.get(expVariavel);	
+			}else{
+				error("variavel " + expVariavel + " nao declarada", null);
+			}
+			
+		}
+
+
+
+		if (fac.unsignedConstant !== null) {
+			if (fac.unsignedConstant.unsignedNumber !== null) {
 				unsNumb = unsConst.unsignedNumber;
-				
-				if(unsNumb.unsignedInteger !== null) {
-					return unsNumb.unsignedInteger.number;
-				} 
-				
-				if(unsNumb.unsignedReal !== null) {
-					return unsNumb.unsignedReal;
+
+				if (unsNumb.unsignedInteger !== null) {
+//					tipoCase = "integer";
+				}
+
+				if (unsNumb.unsignedReal !== null) {
+//					tipoCase = "real";
 				}
 			}
-			
-			if(unsConst.string_literal !== null) {
+
+			if (unsConst.string_literal !== null) {
 				return unsConst.string_literal;
 			}
-			
-			if(unsConst.constantChr !== null) {
+
+			if (unsConst.constantChr !== null) {
 				return unsConst.constantChr.unsignedInteger.number;
 			}
 		}
-		
-		if(fac.bool !== null) {
-			return fac.bool		
+
+		if (fac.bool !== null) {
+			return fac.bool
 		}
-		
-		if(fac.functionDesignator !== null) {
-			
+
+		if (fac.functionDesignator !== null) {
 		}
-		
-		if(fac.variable !== null) {
+
+		if (fac.variable !== null) {
 			vari = caseStatement.expression.simpleExpression.term.signedFactor.factor.variable;
 			if (vari.identifier !== null) {
 				return vari.identifier.identifier;
 			}
 		}
-	} 
-	
+	}
+
+	def checkCompoundStatement(compoundStatement cs) {
+		var blocos = cs.statements.statement;
+		for (statement st : blocos) {
+			var nome = st.unlabelledStatement
+			// simpleStatement -- Fazer
+			// structuredStatement
+			if (nome.structuredStatement !== null) {
+				var possivelCase = nome.structuredStatement.conditionalStatement
+				if (possivelCase !== null && possivelCase.caseStatement !== null) {
+					checkTypeCase(possivelCase.caseStatement);
+				}
+			}
+		// identifier (Eu acho que era procedureStatement)
+		}
+
+	}
+
 	@Check
 	def runChecks(block b) {
 //		var declaracoes = b.variableDeclarationParts;

@@ -16,6 +16,8 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -32,7 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class statementsImpl extends compoundStatementImpl implements statements
+public class statementsImpl extends MinimalEObjectImpl.Container implements statements
 {
   /**
    * The cached value of the '{@link #getStatement() <em>Statement</em>}' containment reference list.

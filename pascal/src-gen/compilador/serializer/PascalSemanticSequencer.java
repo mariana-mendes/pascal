@@ -10,6 +10,7 @@ import compilador.pascal.assignmentStatement;
 import compilador.pascal.block;
 import compilador.pascal.caseListElement;
 import compilador.pascal.caseStatement;
+import compilador.pascal.compoundStatement;
 import compilador.pascal.conditionalStatement;
 import compilador.pascal.constList;
 import compilador.pascal.constant;
@@ -114,6 +115,9 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 				return; 
 			case PascalPackage.CASE_STATEMENT:
 				sequence_caseStatement(context, (caseStatement) semanticObject); 
+				return; 
+			case PascalPackage.COMPOUND_STATEMENT:
+				sequence_compoundStatement(context, (compoundStatement) semanticObject); 
 				return; 
 			case PascalPackage.CONDITIONAL_STATEMENT:
 				sequence_conditionalStatement(context, (conditionalStatement) semanticObject); 
@@ -368,11 +372,11 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     (
 	 *         (
 	 *             label+=label_declaration_part | 
-	 *             constantDefinitionPart+=constantDefinitionPart | 
-	 *             typeDefinitionPart+=typeDefinitionPart | 
-	 *             variableDeclarationPart+=variableDeclarationPart | 
-	 *             procedureAndFunctionDeclarationPart+=procedureAndFunctionDeclarationPart | 
-	 *             usesUnitsPart+=usesUnitsPart
+	 *             constantDefinitionParts+=constantDefinitionPart | 
+	 *             typeDefinitionParts+=typeDefinitionPart | 
+	 *             variableDeclarationParts+=variableDeclarationPart | 
+	 *             procedureAndFunctionDeclarationParts+=procedureAndFunctionDeclarationPart | 
+	 *             usesUnitsParts+=usesUnitsPart
 	 *         )* 
 	 *         compoundStatement=compoundStatement
 	 *     )
@@ -412,6 +416,24 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 */
 	protected void sequence_caseStatement(ISerializationContext context, caseStatement semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     compoundStatement returns compoundStatement
+	 *
+	 * Constraint:
+	 *     statements=statements
+	 */
+	protected void sequence_compoundStatement(ISerializationContext context, compoundStatement semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, PascalPackage.Literals.COMPOUND_STATEMENT__STATEMENTS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PascalPackage.Literals.COMPOUND_STATEMENT__STATEMENTS));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getCompoundStatementAccess().getStatementsStatementsParserRuleCall_1_0(), semanticObject.getStatements());
+		feeder.finish();
 	}
 	
 	
@@ -507,7 +529,8 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *         identifier=identifier | 
 	 *         STRING_LITERAL=STRING_LITERAL | 
 	 *         (sign2+=sign identifier1+=identifier) | 
-	 *         constantChr=constantChr
+	 *         constantChr=constantChr | 
+	 *         bool=BOOL
 	 *     )
 	 */
 	protected void sequence_constant(ISerializationContext context, constant semanticObject) {
@@ -527,7 +550,8 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *             identifier=identifier | 
 	 *             STRING_LITERAL=STRING_LITERAL | 
 	 *             (sign2+=sign identifier1+=identifier) | 
-	 *             constantChr=constantChr
+	 *             constantChr=constantChr | 
+	 *             bool=BOOL
 	 *         ) 
 	 *         constant+=constant* 
 	 *         fieldList=fieldList
@@ -1009,7 +1033,6 @@ public class PascalSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Contexts:
-	 *     compoundStatement returns statements
 	 *     statements returns statements
 	 *
 	 * Constraint:

@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link compilador.pascal.constant#getSign2 <em>Sign2</em>}</li>
  *   <li>{@link compilador.pascal.constant#getIdentifier1 <em>Identifier1</em>}</li>
  *   <li>{@link compilador.pascal.constant#getConstantChr <em>Constant Chr</em>}</li>
+ *   <li>{@link compilador.pascal.constant#getBool <em>Bool</em>}</li>
  *   <li>{@link compilador.pascal.constant#getConstant <em>Constant</em>}</li>
  *   <li>{@link compilador.pascal.constant#getFieldList <em>Field List</em>}</li>
  * </ul>
@@ -219,6 +220,32 @@ public interface constant extends variant
    * @generated
    */
   void setConstantChr(constantChr value);
+
+  /**
+   * Returns the value of the '<em><b>Bool</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Bool</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Bool</em>' attribute.
+   * @see #setBool(String)
+   * @see compilador.pascal.PascalPackage#getconstant_Bool()
+   * @model
+   * @generated
+   */
+  String getBool();
+
+  /**
+   * Sets the value of the '{@link compilador.pascal.constant#getBool <em>Bool</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Bool</em>' attribute.
+   * @see #getBool()
+   * @generated
+   */
+  void setBool(String value);
 
   /**
    * Returns the value of the '<em><b>Constant</b></em>' containment reference list.

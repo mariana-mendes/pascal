@@ -390,17 +390,17 @@ ruleblock returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getBlockAccess().getConstantDefinitionPartConstantDefinitionPartParserRuleCall_1_1_0());
+						newCompositeNode(grammarAccess.getBlockAccess().getConstantDefinitionPartsConstantDefinitionPartParserRuleCall_1_1_0());
 					}
-					lv_constantDefinitionPart_2_0=ruleconstantDefinitionPart
+					lv_constantDefinitionParts_2_0=ruleconstantDefinitionPart
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getBlockRule());
 						}
 						add(
 							$current,
-							"constantDefinitionPart",
-							lv_constantDefinitionPart_2_0,
+							"constantDefinitionParts",
+							lv_constantDefinitionParts_2_0,
 							"compilador.Pascal.constantDefinitionPart");
 						afterParserOrEnumRuleCall();
 					}
@@ -410,17 +410,17 @@ ruleblock returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getBlockAccess().getTypeDefinitionPartTypeDefinitionPartParserRuleCall_1_2_0());
+						newCompositeNode(grammarAccess.getBlockAccess().getTypeDefinitionPartsTypeDefinitionPartParserRuleCall_1_2_0());
 					}
-					lv_typeDefinitionPart_3_0=ruletypeDefinitionPart
+					lv_typeDefinitionParts_3_0=ruletypeDefinitionPart
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getBlockRule());
 						}
 						add(
 							$current,
-							"typeDefinitionPart",
-							lv_typeDefinitionPart_3_0,
+							"typeDefinitionParts",
+							lv_typeDefinitionParts_3_0,
 							"compilador.Pascal.typeDefinitionPart");
 						afterParserOrEnumRuleCall();
 					}
@@ -430,17 +430,17 @@ ruleblock returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getBlockAccess().getVariableDeclarationPartVariableDeclarationPartParserRuleCall_1_3_0());
+						newCompositeNode(grammarAccess.getBlockAccess().getVariableDeclarationPartsVariableDeclarationPartParserRuleCall_1_3_0());
 					}
-					lv_variableDeclarationPart_4_0=rulevariableDeclarationPart
+					lv_variableDeclarationParts_4_0=rulevariableDeclarationPart
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getBlockRule());
 						}
 						add(
 							$current,
-							"variableDeclarationPart",
-							lv_variableDeclarationPart_4_0,
+							"variableDeclarationParts",
+							lv_variableDeclarationParts_4_0,
 							"compilador.Pascal.variableDeclarationPart");
 						afterParserOrEnumRuleCall();
 					}
@@ -450,17 +450,17 @@ ruleblock returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartProcedureAndFunctionDeclarationPartParserRuleCall_1_4_0());
+						newCompositeNode(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartsProcedureAndFunctionDeclarationPartParserRuleCall_1_4_0());
 					}
-					lv_procedureAndFunctionDeclarationPart_5_0=ruleprocedureAndFunctionDeclarationPart
+					lv_procedureAndFunctionDeclarationParts_5_0=ruleprocedureAndFunctionDeclarationPart
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getBlockRule());
 						}
 						add(
 							$current,
-							"procedureAndFunctionDeclarationPart",
-							lv_procedureAndFunctionDeclarationPart_5_0,
+							"procedureAndFunctionDeclarationParts",
+							lv_procedureAndFunctionDeclarationParts_5_0,
 							"compilador.Pascal.procedureAndFunctionDeclarationPart");
 						afterParserOrEnumRuleCall();
 					}
@@ -470,17 +470,17 @@ ruleblock returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getBlockAccess().getUsesUnitsPartUsesUnitsPartParserRuleCall_1_5_0());
+						newCompositeNode(grammarAccess.getBlockAccess().getUsesUnitsPartsUsesUnitsPartParserRuleCall_1_5_0());
 					}
-					lv_usesUnitsPart_6_0=ruleusesUnitsPart
+					lv_usesUnitsParts_6_0=ruleusesUnitsPart
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getBlockRule());
 						}
 						add(
 							$current,
-							"usesUnitsPart",
-							lv_usesUnitsPart_6_0,
+							"usesUnitsParts",
+							lv_usesUnitsParts_6_0,
 							"compilador.Pascal.usesUnitsPart");
 						afterParserOrEnumRuleCall();
 					}
@@ -949,6 +949,25 @@ ruleconstant returns [EObject current=null]
 						lv_constantChr_7_0,
 						"compilador.Pascal.constantChr");
 					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		    |
+		(
+			(
+				lv_bool_8_0=RULE_BOOL
+				{
+					newLeafNode(lv_bool_8_0, grammarAccess.getConstantAccess().getBoolBOOLTerminalRuleCall_6_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getConstantRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"bool",
+						lv_bool_8_0,
+						"compilador.Pascal.BOOL");
 				}
 			)
 		)
@@ -2788,9 +2807,9 @@ rulevariant returns [EObject current=null]
 			afterParserOrEnumRuleCall();
 		}
 		(
-			otherlv_1=':'
+			otherlv_1=';'
 			{
-				newLeafNode(otherlv_1, grammarAccess.getVariantAccess().getColonKeyword_1_0());
+				newLeafNode(otherlv_1, grammarAccess.getVariantAccess().getSemicolonKeyword_1_0());
 			}
 			(
 				(
@@ -4818,14 +4837,25 @@ rulecompoundStatement returns [EObject current=null]
 		{
 			newLeafNode(otherlv_0, grammarAccess.getCompoundStatementAccess().getBeginKeyword_0());
 		}
-		{
-			newCompositeNode(grammarAccess.getCompoundStatementAccess().getStatementsParserRuleCall_1());
-		}
-		this_statements_1=rulestatements
-		{
-			$current = $this_statements_1.current;
-			afterParserOrEnumRuleCall();
-		}
+		(
+			(
+				{
+					newCompositeNode(grammarAccess.getCompoundStatementAccess().getStatementsStatementsParserRuleCall_1_0());
+				}
+				lv_statements_1_0=rulestatements
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getCompoundStatementRule());
+					}
+					set(
+						$current,
+						"statements",
+						lv_statements_1_0,
+						"compilador.Pascal.statements");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
 		otherlv_2='end'
 		{
 			newLeafNode(otherlv_2, grammarAccess.getCompoundStatementAccess().getEndKeyword_2());

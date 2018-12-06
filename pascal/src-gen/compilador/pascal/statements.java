@@ -5,6 +5,8 @@ package compilador.pascal;
 
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>statements</b></em>'.
@@ -21,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface statements extends compoundStatement
+public interface statements extends EObject
 {
   /**
    * Returns the value of the '<em><b>Statement</b></em>' containment reference list.

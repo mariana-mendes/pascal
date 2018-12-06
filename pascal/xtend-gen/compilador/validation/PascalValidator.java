@@ -5,6 +5,8 @@ package compilador.validation;
 
 import compilador.pascal.block;
 import compilador.pascal.caseStatement;
+import compilador.pascal.compoundStatement;
+import compilador.pascal.conditionalStatement;
 import compilador.pascal.constantChr;
 import compilador.pascal.factor;
 import compilador.pascal.functionDesignator;
@@ -13,13 +15,16 @@ import compilador.pascal.pointerType;
 import compilador.pascal.program;
 import compilador.pascal.recordType;
 import compilador.pascal.simpleType;
+import compilador.pascal.statement;
 import compilador.pascal.stringtype;
+import compilador.pascal.structuredStatement;
 import compilador.pascal.structuredType;
 import compilador.pascal.subrangeType;
 import compilador.pascal.type;
 import compilador.pascal.typeDefinition;
 import compilador.pascal.typeDefinitionPart;
 import compilador.pascal.typeIdentifier;
+import compilador.pascal.unlabelledStatement;
 import compilador.pascal.unpackedStructuredType;
 import compilador.pascal.unsignedConstant;
 import compilador.pascal.unsignedInteger;
@@ -32,7 +37,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.validation.Check;
-import org.eclipse.xtext.xbase.lib.InputOutput;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
 /**
@@ -79,7 +83,6 @@ public class PascalValidator extends AbstractPascalValidator {
     boolean _xblockexpression = false;
     {
       String tipoCriado = definition.getIdentifier().getIdentifier();
-      InputOutput.<String>println(tipoCriado);
       boolean _xifexpression = false;
       boolean _contains = this.tiposCriados.contains(tipoCriado);
       if (_contains) {
@@ -127,7 +130,6 @@ public class PascalValidator extends AbstractPascalValidator {
         String _xblockexpression_1 = null;
         {
           this.variaveisDeclaradas.put(declaracaoUnica.getIdentifier(), declaracaoUnica);
-          InputOutput.<String>println(declaracaoUnica.getIdentifier());
           _xblockexpression_1 = this.variaveisTipo.put(declaracaoUnica.getIdentifier(), this.getTypeVar(vd.getType()));
         }
         _xifexpression = _xblockexpression_1;
@@ -285,27 +287,34 @@ public class PascalValidator extends AbstractPascalValidator {
   
   @Check
   public String checkTypeCase(final caseStatement caseStatement) {
+    String tipoExpressionCase = null;
     factor fac = caseStatement.getExpression().getSimpleExpression().getTerm().getSignedFactor().getFactor();
     unsignedConstant unsConst = null;
     unsignedNumber unsNumb = null;
     variable vari = null;
+    String expVariavel = caseStatement.getExpression().getSimpleExpression().getTerm().getSignedFactor().getFactor().getVariable().getIdentifier().getIdentifier();
+    if ((expVariavel != null)) {
+      boolean _containsKey = this.variaveisDeclaradas.containsKey(expVariavel);
+      if (_containsKey) {
+        tipoExpressionCase = this.variaveisTipo.get(expVariavel);
+      } else {
+        this.error((("variavel " + expVariavel) + " nao declarada"), null);
+      }
+    }
     unsignedConstant _unsignedConstant = fac.getUnsignedConstant();
     boolean _tripleNotEquals = (_unsignedConstant != null);
     if (_tripleNotEquals) {
-      unsConst = caseStatement.getExpression().getSimpleExpression().getTerm().getSignedFactor().getFactor().getUnsignedConstant();
-      unsignedNumber _unsignedNumber = unsConst.getUnsignedNumber();
+      unsignedNumber _unsignedNumber = fac.getUnsignedConstant().getUnsignedNumber();
       boolean _tripleNotEquals_1 = (_unsignedNumber != null);
       if (_tripleNotEquals_1) {
         unsNumb = unsConst.getUnsignedNumber();
         unsignedInteger _unsignedInteger = unsNumb.getUnsignedInteger();
         boolean _tripleNotEquals_2 = (_unsignedInteger != null);
         if (_tripleNotEquals_2) {
-          return unsNumb.getUnsignedInteger().getNumber();
         }
         String _unsignedReal = unsNumb.getUnsignedReal();
         boolean _tripleNotEquals_3 = (_unsignedReal != null);
         if (_tripleNotEquals_3) {
-          return unsNumb.getUnsignedReal();
         }
       }
       String _string_literal = unsConst.getString_literal();
@@ -339,6 +348,23 @@ public class PascalValidator extends AbstractPascalValidator {
       }
     }
     return null;
+  }
+  
+  public void checkCompoundStatement(final compoundStatement cs) {
+    EList<statement> blocos = cs.getStatements().getStatement();
+    for (final statement st : blocos) {
+      {
+        unlabelledStatement nome = st.getUnlabelledStatement();
+        structuredStatement _structuredStatement = nome.getStructuredStatement();
+        boolean _tripleNotEquals = (_structuredStatement != null);
+        if (_tripleNotEquals) {
+          conditionalStatement possivelCase = nome.getStructuredStatement().getConditionalStatement();
+          if (((possivelCase != null) && (possivelCase.getCaseStatement() != null))) {
+            this.checkTypeCase(possivelCase.getCaseStatement());
+          }
+        }
+      }
+    }
   }
   
   @Check

@@ -244,49 +244,49 @@ public interface PascalPackage extends EPackage
   int BLOCK__LABEL = 0;
 
   /**
-   * The feature id for the '<em><b>Constant Definition Part</b></em>' containment reference list.
+   * The feature id for the '<em><b>Constant Definition Parts</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int BLOCK__CONSTANT_DEFINITION_PART = 1;
+  int BLOCK__CONSTANT_DEFINITION_PARTS = 1;
 
   /**
-   * The feature id for the '<em><b>Type Definition Part</b></em>' containment reference list.
+   * The feature id for the '<em><b>Type Definition Parts</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int BLOCK__TYPE_DEFINITION_PART = 2;
+  int BLOCK__TYPE_DEFINITION_PARTS = 2;
 
   /**
-   * The feature id for the '<em><b>Variable Declaration Part</b></em>' containment reference list.
+   * The feature id for the '<em><b>Variable Declaration Parts</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int BLOCK__VARIABLE_DECLARATION_PART = 3;
+  int BLOCK__VARIABLE_DECLARATION_PARTS = 3;
 
   /**
-   * The feature id for the '<em><b>Procedure And Function Declaration Part</b></em>' containment reference list.
+   * The feature id for the '<em><b>Procedure And Function Declaration Parts</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PART = 4;
+  int BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PARTS = 4;
 
   /**
-   * The feature id for the '<em><b>Uses Units Part</b></em>' containment reference list.
+   * The feature id for the '<em><b>Uses Units Parts</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int BLOCK__USES_UNITS_PART = 5;
+  int BLOCK__USES_UNITS_PARTS = 5;
 
   /**
    * The feature id for the '<em><b>Compound Statement</b></em>' containment reference.
@@ -575,13 +575,22 @@ public interface PascalPackage extends EPackage
   int CONSTANT__CONSTANT_CHR = VARIANT_FEATURE_COUNT + 7;
 
   /**
+   * The feature id for the '<em><b>Bool</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CONSTANT__BOOL = VARIANT_FEATURE_COUNT + 8;
+
+  /**
    * The feature id for the '<em><b>Constant</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONSTANT__CONSTANT = VARIANT_FEATURE_COUNT + 8;
+  int CONSTANT__CONSTANT = VARIANT_FEATURE_COUNT + 9;
 
   /**
    * The feature id for the '<em><b>Field List</b></em>' containment reference.
@@ -590,7 +599,7 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONSTANT__FIELD_LIST = VARIANT_FEATURE_COUNT + 9;
+  int CONSTANT__FIELD_LIST = VARIANT_FEATURE_COUNT + 10;
 
   /**
    * The number of structural features of the '<em>constant</em>' class.
@@ -599,7 +608,7 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONSTANT_FEATURE_COUNT = VARIANT_FEATURE_COUNT + 10;
+  int CONSTANT_FEATURE_COUNT = VARIANT_FEATURE_COUNT + 11;
 
   /**
    * The meta object id for the '{@link compilador.pascal.impl.constantChrImpl <em>constant Chr</em>}' class.
@@ -2578,13 +2587,22 @@ public interface PascalPackage extends EPackage
   int COMPOUND_STATEMENT = 62;
 
   /**
+   * The feature id for the '<em><b>Statements</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int COMPOUND_STATEMENT__STATEMENTS = 0;
+
+  /**
    * The number of structural features of the '<em>compound Statement</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int COMPOUND_STATEMENT_FEATURE_COUNT = 0;
+  int COMPOUND_STATEMENT_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link compilador.pascal.impl.statementsImpl <em>statements</em>}' class.
@@ -2603,7 +2621,7 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int STATEMENTS__STATEMENT = COMPOUND_STATEMENT_FEATURE_COUNT + 0;
+  int STATEMENTS__STATEMENT = 0;
 
   /**
    * The number of structural features of the '<em>statements</em>' class.
@@ -2612,7 +2630,7 @@ public interface PascalPackage extends EPackage
    * @generated
    * @ordered
    */
-  int STATEMENTS_FEATURE_COUNT = COMPOUND_STATEMENT_FEATURE_COUNT + 1;
+  int STATEMENTS_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link compilador.pascal.impl.conditionalStatementImpl <em>conditional Statement</em>}' class.
@@ -2895,59 +2913,59 @@ public interface PascalPackage extends EPackage
   EReference getblock_Label();
 
   /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getConstantDefinitionPart <em>Constant Definition Part</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getConstantDefinitionParts <em>Constant Definition Parts</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Constant Definition Part</em>'.
-   * @see compilador.pascal.block#getConstantDefinitionPart()
+   * @return the meta object for the containment reference list '<em>Constant Definition Parts</em>'.
+   * @see compilador.pascal.block#getConstantDefinitionParts()
    * @see #getblock()
    * @generated
    */
-  EReference getblock_ConstantDefinitionPart();
+  EReference getblock_ConstantDefinitionParts();
 
   /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getTypeDefinitionPart <em>Type Definition Part</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getTypeDefinitionParts <em>Type Definition Parts</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Type Definition Part</em>'.
-   * @see compilador.pascal.block#getTypeDefinitionPart()
+   * @return the meta object for the containment reference list '<em>Type Definition Parts</em>'.
+   * @see compilador.pascal.block#getTypeDefinitionParts()
    * @see #getblock()
    * @generated
    */
-  EReference getblock_TypeDefinitionPart();
+  EReference getblock_TypeDefinitionParts();
 
   /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getVariableDeclarationPart <em>Variable Declaration Part</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getVariableDeclarationParts <em>Variable Declaration Parts</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Variable Declaration Part</em>'.
-   * @see compilador.pascal.block#getVariableDeclarationPart()
+   * @return the meta object for the containment reference list '<em>Variable Declaration Parts</em>'.
+   * @see compilador.pascal.block#getVariableDeclarationParts()
    * @see #getblock()
    * @generated
    */
-  EReference getblock_VariableDeclarationPart();
+  EReference getblock_VariableDeclarationParts();
 
   /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getProcedureAndFunctionDeclarationPart <em>Procedure And Function Declaration Part</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getProcedureAndFunctionDeclarationParts <em>Procedure And Function Declaration Parts</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Procedure And Function Declaration Part</em>'.
-   * @see compilador.pascal.block#getProcedureAndFunctionDeclarationPart()
+   * @return the meta object for the containment reference list '<em>Procedure And Function Declaration Parts</em>'.
+   * @see compilador.pascal.block#getProcedureAndFunctionDeclarationParts()
    * @see #getblock()
    * @generated
    */
-  EReference getblock_ProcedureAndFunctionDeclarationPart();
+  EReference getblock_ProcedureAndFunctionDeclarationParts();
 
   /**
-   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getUsesUnitsPart <em>Uses Units Part</em>}'.
+   * Returns the meta object for the containment reference list '{@link compilador.pascal.block#getUsesUnitsParts <em>Uses Units Parts</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Uses Units Part</em>'.
-   * @see compilador.pascal.block#getUsesUnitsPart()
+   * @return the meta object for the containment reference list '<em>Uses Units Parts</em>'.
+   * @see compilador.pascal.block#getUsesUnitsParts()
    * @see #getblock()
    * @generated
    */
-  EReference getblock_UsesUnitsPart();
+  EReference getblock_UsesUnitsParts();
 
   /**
    * Returns the meta object for the containment reference '{@link compilador.pascal.block#getCompoundStatement <em>Compound Statement</em>}'.
@@ -3184,6 +3202,17 @@ public interface PascalPackage extends EPackage
    * @generated
    */
   EReference getconstant_ConstantChr();
+
+  /**
+   * Returns the meta object for the attribute '{@link compilador.pascal.constant#getBool <em>Bool</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Bool</em>'.
+   * @see compilador.pascal.constant#getBool()
+   * @see #getconstant()
+   * @generated
+   */
+  EAttribute getconstant_Bool();
 
   /**
    * Returns the meta object for the containment reference list '{@link compilador.pascal.constant#getConstant <em>Constant</em>}'.
@@ -4983,6 +5012,17 @@ public interface PascalPackage extends EPackage
   EClass getcompoundStatement();
 
   /**
+   * Returns the meta object for the containment reference '{@link compilador.pascal.compoundStatement#getStatements <em>Statements</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Statements</em>'.
+   * @see compilador.pascal.compoundStatement#getStatements()
+   * @see #getcompoundStatement()
+   * @generated
+   */
+  EReference getcompoundStatement_Statements();
+
+  /**
    * Returns the meta object for class '{@link compilador.pascal.statements <em>statements</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -5266,44 +5306,44 @@ public interface PascalPackage extends EPackage
     EReference BLOCK__LABEL = eINSTANCE.getblock_Label();
 
     /**
-     * The meta object literal for the '<em><b>Constant Definition Part</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Constant Definition Parts</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference BLOCK__CONSTANT_DEFINITION_PART = eINSTANCE.getblock_ConstantDefinitionPart();
+    EReference BLOCK__CONSTANT_DEFINITION_PARTS = eINSTANCE.getblock_ConstantDefinitionParts();
 
     /**
-     * The meta object literal for the '<em><b>Type Definition Part</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Type Definition Parts</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference BLOCK__TYPE_DEFINITION_PART = eINSTANCE.getblock_TypeDefinitionPart();
+    EReference BLOCK__TYPE_DEFINITION_PARTS = eINSTANCE.getblock_TypeDefinitionParts();
 
     /**
-     * The meta object literal for the '<em><b>Variable Declaration Part</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Variable Declaration Parts</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference BLOCK__VARIABLE_DECLARATION_PART = eINSTANCE.getblock_VariableDeclarationPart();
+    EReference BLOCK__VARIABLE_DECLARATION_PARTS = eINSTANCE.getblock_VariableDeclarationParts();
 
     /**
-     * The meta object literal for the '<em><b>Procedure And Function Declaration Part</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Procedure And Function Declaration Parts</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PART = eINSTANCE.getblock_ProcedureAndFunctionDeclarationPart();
+    EReference BLOCK__PROCEDURE_AND_FUNCTION_DECLARATION_PARTS = eINSTANCE.getblock_ProcedureAndFunctionDeclarationParts();
 
     /**
-     * The meta object literal for the '<em><b>Uses Units Part</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Uses Units Parts</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference BLOCK__USES_UNITS_PART = eINSTANCE.getblock_UsesUnitsPart();
+    EReference BLOCK__USES_UNITS_PARTS = eINSTANCE.getblock_UsesUnitsParts();
 
     /**
      * The meta object literal for the '<em><b>Compound Statement</b></em>' containment reference feature.
@@ -5492,6 +5532,14 @@ public interface PascalPackage extends EPackage
      * @generated
      */
     EReference CONSTANT__CONSTANT_CHR = eINSTANCE.getconstant_ConstantChr();
+
+    /**
+     * The meta object literal for the '<em><b>Bool</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute CONSTANT__BOOL = eINSTANCE.getconstant_Bool();
 
     /**
      * The meta object literal for the '<em><b>Constant</b></em>' containment reference list feature.
@@ -6938,6 +6986,14 @@ public interface PascalPackage extends EPackage
      * @generated
      */
     EClass COMPOUND_STATEMENT = eINSTANCE.getcompoundStatement();
+
+    /**
+     * The meta object literal for the '<em><b>Statements</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference COMPOUND_STATEMENT__STATEMENTS = eINSTANCE.getcompoundStatement_Statements();
 
     /**
      * The meta object literal for the '{@link compilador.pascal.impl.statementsImpl <em>statements</em>}' class.

@@ -30,7 +30,7 @@ constantDefinitionPart:	"const" (constantDefinition+=constantDefinition ";")+;
 constantDefinition:	identifier=identifier "=" constant=constant;
 //
 ////STRING_LITERAL
-constant:	number=unsignedNumber	| sign=sign number1= unsignedNumber	| identifier=identifier | STRING_LITERAL= STRING_LITERAL | sign2+=sign identifier1+=identifier | constantChr= constantChr;
+constant:	number=unsignedNumber	| sign=sign number1= unsignedNumber	| identifier=identifier | STRING_LITERAL= STRING_LITERAL | sign2+=sign identifier1+=identifier | constantChr= constantChr | bool = BOOL ;
 
 constantChr: "chr" "(" unsignedInteger=unsignedInteger ")";
 
@@ -114,6 +114,7 @@ tag:
 
 variant:
 	constant (";" constant+=constant)*  ":" "(" fieldList =fieldList")";
+	
 constList:
 	constant=constant (":" constant1+=constant)*;
 

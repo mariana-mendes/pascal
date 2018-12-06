@@ -150,11 +150,11 @@ public class PascalParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getIdentifierListAccess().getIdentifierList1Assignment_2_1(), "rule__IdentifierList__IdentifierList1Assignment_2_1");
 			builder.put(grammarAccess.getIdentifierAccess().getIdentifierAssignment(), "rule__Identifier__IdentifierAssignment");
 			builder.put(grammarAccess.getBlockAccess().getLabelAssignment_1_0(), "rule__Block__LabelAssignment_1_0");
-			builder.put(grammarAccess.getBlockAccess().getConstantDefinitionPartAssignment_1_1(), "rule__Block__ConstantDefinitionPartAssignment_1_1");
-			builder.put(grammarAccess.getBlockAccess().getTypeDefinitionPartAssignment_1_2(), "rule__Block__TypeDefinitionPartAssignment_1_2");
-			builder.put(grammarAccess.getBlockAccess().getVariableDeclarationPartAssignment_1_3(), "rule__Block__VariableDeclarationPartAssignment_1_3");
-			builder.put(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartAssignment_1_4(), "rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4");
-			builder.put(grammarAccess.getBlockAccess().getUsesUnitsPartAssignment_1_5(), "rule__Block__UsesUnitsPartAssignment_1_5");
+			builder.put(grammarAccess.getBlockAccess().getConstantDefinitionPartsAssignment_1_1(), "rule__Block__ConstantDefinitionPartsAssignment_1_1");
+			builder.put(grammarAccess.getBlockAccess().getTypeDefinitionPartsAssignment_1_2(), "rule__Block__TypeDefinitionPartsAssignment_1_2");
+			builder.put(grammarAccess.getBlockAccess().getVariableDeclarationPartsAssignment_1_3(), "rule__Block__VariableDeclarationPartsAssignment_1_3");
+			builder.put(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartsAssignment_1_4(), "rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4");
+			builder.put(grammarAccess.getBlockAccess().getUsesUnitsPartsAssignment_1_5(), "rule__Block__UsesUnitsPartsAssignment_1_5");
 			builder.put(grammarAccess.getBlockAccess().getCompoundStatementAssignment_2(), "rule__Block__CompoundStatementAssignment_2");
 			builder.put(grammarAccess.getLabel_declaration_partAccess().getLabelAssignment_2_1(), "rule__Label_declaration_part__LabelAssignment_2_1");
 			builder.put(grammarAccess.getLabelAccess().getUnsignedIntegerAssignment_0(), "rule__Label__UnsignedIntegerAssignment_0");
@@ -171,6 +171,7 @@ public class PascalParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getConstantAccess().getSign2Assignment_4_0(), "rule__Constant__Sign2Assignment_4_0");
 			builder.put(grammarAccess.getConstantAccess().getIdentifier1Assignment_4_1(), "rule__Constant__Identifier1Assignment_4_1");
 			builder.put(grammarAccess.getConstantAccess().getConstantChrAssignment_5(), "rule__Constant__ConstantChrAssignment_5");
+			builder.put(grammarAccess.getConstantAccess().getBoolAssignment_6(), "rule__Constant__BoolAssignment_6");
 			builder.put(grammarAccess.getConstantChrAccess().getUnsignedIntegerAssignment_2(), "rule__ConstantChr__UnsignedIntegerAssignment_2");
 			builder.put(grammarAccess.getUnsignedNumberAccess().getUnsignedIntegerAssignment_0(), "rule__UnsignedNumber__UnsignedIntegerAssignment_0");
 			builder.put(grammarAccess.getUnsignedNumberAccess().getUnsignedRealAssignment_1(), "rule__UnsignedNumber__UnsignedRealAssignment_1");
@@ -290,6 +291,7 @@ public class PascalParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getGotoStatementAccess().getLabelAssignment_1(), "rule__GotoStatement__LabelAssignment_1");
 			builder.put(grammarAccess.getStructuredStatementAccess().getCompoundStatementAssignment_0(), "rule__StructuredStatement__CompoundStatementAssignment_0");
 			builder.put(grammarAccess.getStructuredStatementAccess().getConditionalStatementAssignment_1(), "rule__StructuredStatement__ConditionalStatementAssignment_1");
+			builder.put(grammarAccess.getCompoundStatementAccess().getStatementsAssignment_1(), "rule__CompoundStatement__StatementsAssignment_1");
 			builder.put(grammarAccess.getStatementsAccess().getStatementAssignment_0(), "rule__Statements__StatementAssignment_0");
 			builder.put(grammarAccess.getStatementsAccess().getStatementAssignment_1_1(), "rule__Statements__StatementAssignment_1_1");
 			builder.put(grammarAccess.getConditionalStatementAccess().getCaseStatementAssignment(), "rule__ConditionalStatement__CaseStatementAssignment");

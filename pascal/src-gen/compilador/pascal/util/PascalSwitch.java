@@ -523,7 +523,6 @@ public class PascalSwitch<T> extends Switch<T>
       {
         statements statements = (statements)theEObject;
         T result = casestatements(statements);
-        if (result == null) result = casecompoundStatement(statements);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }

@@ -5658,13 +5658,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Block__Alternatives_1"
-    // InternalPascal.g:1852:1: rule__Block__Alternatives_1 : ( ( ( rule__Block__LabelAssignment_1_0 ) ) | ( ( rule__Block__ConstantDefinitionPartAssignment_1_1 ) ) | ( ( rule__Block__TypeDefinitionPartAssignment_1_2 ) ) | ( ( rule__Block__VariableDeclarationPartAssignment_1_3 ) ) | ( ( rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4 ) ) | ( ( rule__Block__UsesUnitsPartAssignment_1_5 ) ) | ( 'implemetation' ) );
+    // InternalPascal.g:1852:1: rule__Block__Alternatives_1 : ( ( ( rule__Block__LabelAssignment_1_0 ) ) | ( ( rule__Block__ConstantDefinitionPartsAssignment_1_1 ) ) | ( ( rule__Block__TypeDefinitionPartsAssignment_1_2 ) ) | ( ( rule__Block__VariableDeclarationPartsAssignment_1_3 ) ) | ( ( rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4 ) ) | ( ( rule__Block__UsesUnitsPartsAssignment_1_5 ) ) | ( 'implemetation' ) );
     public final void rule__Block__Alternatives_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:1856:1: ( ( ( rule__Block__LabelAssignment_1_0 ) ) | ( ( rule__Block__ConstantDefinitionPartAssignment_1_1 ) ) | ( ( rule__Block__TypeDefinitionPartAssignment_1_2 ) ) | ( ( rule__Block__VariableDeclarationPartAssignment_1_3 ) ) | ( ( rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4 ) ) | ( ( rule__Block__UsesUnitsPartAssignment_1_5 ) ) | ( 'implemetation' ) )
+            // InternalPascal.g:1856:1: ( ( ( rule__Block__LabelAssignment_1_0 ) ) | ( ( rule__Block__ConstantDefinitionPartsAssignment_1_1 ) ) | ( ( rule__Block__TypeDefinitionPartsAssignment_1_2 ) ) | ( ( rule__Block__VariableDeclarationPartsAssignment_1_3 ) ) | ( ( rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4 ) ) | ( ( rule__Block__UsesUnitsPartsAssignment_1_5 ) ) | ( 'implemetation' ) )
             int alt1=7;
             switch ( input.LA(1) ) {
             case 41:
@@ -5737,24 +5737,24 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:1863:2: ( ( rule__Block__ConstantDefinitionPartAssignment_1_1 ) )
+                    // InternalPascal.g:1863:2: ( ( rule__Block__ConstantDefinitionPartsAssignment_1_1 ) )
                     {
-                    // InternalPascal.g:1863:2: ( ( rule__Block__ConstantDefinitionPartAssignment_1_1 ) )
-                    // InternalPascal.g:1864:3: ( rule__Block__ConstantDefinitionPartAssignment_1_1 )
+                    // InternalPascal.g:1863:2: ( ( rule__Block__ConstantDefinitionPartsAssignment_1_1 ) )
+                    // InternalPascal.g:1864:3: ( rule__Block__ConstantDefinitionPartsAssignment_1_1 )
                     {
-                     before(grammarAccess.getBlockAccess().getConstantDefinitionPartAssignment_1_1()); 
-                    // InternalPascal.g:1865:3: ( rule__Block__ConstantDefinitionPartAssignment_1_1 )
-                    // InternalPascal.g:1865:4: rule__Block__ConstantDefinitionPartAssignment_1_1
+                     before(grammarAccess.getBlockAccess().getConstantDefinitionPartsAssignment_1_1()); 
+                    // InternalPascal.g:1865:3: ( rule__Block__ConstantDefinitionPartsAssignment_1_1 )
+                    // InternalPascal.g:1865:4: rule__Block__ConstantDefinitionPartsAssignment_1_1
                     {
                     pushFollow(FOLLOW_2);
-                    rule__Block__ConstantDefinitionPartAssignment_1_1();
+                    rule__Block__ConstantDefinitionPartsAssignment_1_1();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getBlockAccess().getConstantDefinitionPartAssignment_1_1()); 
+                     after(grammarAccess.getBlockAccess().getConstantDefinitionPartsAssignment_1_1()); 
 
                     }
 
@@ -5762,24 +5762,24 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:1869:2: ( ( rule__Block__TypeDefinitionPartAssignment_1_2 ) )
+                    // InternalPascal.g:1869:2: ( ( rule__Block__TypeDefinitionPartsAssignment_1_2 ) )
                     {
-                    // InternalPascal.g:1869:2: ( ( rule__Block__TypeDefinitionPartAssignment_1_2 ) )
-                    // InternalPascal.g:1870:3: ( rule__Block__TypeDefinitionPartAssignment_1_2 )
+                    // InternalPascal.g:1869:2: ( ( rule__Block__TypeDefinitionPartsAssignment_1_2 ) )
+                    // InternalPascal.g:1870:3: ( rule__Block__TypeDefinitionPartsAssignment_1_2 )
                     {
-                     before(grammarAccess.getBlockAccess().getTypeDefinitionPartAssignment_1_2()); 
-                    // InternalPascal.g:1871:3: ( rule__Block__TypeDefinitionPartAssignment_1_2 )
-                    // InternalPascal.g:1871:4: rule__Block__TypeDefinitionPartAssignment_1_2
+                     before(grammarAccess.getBlockAccess().getTypeDefinitionPartsAssignment_1_2()); 
+                    // InternalPascal.g:1871:3: ( rule__Block__TypeDefinitionPartsAssignment_1_2 )
+                    // InternalPascal.g:1871:4: rule__Block__TypeDefinitionPartsAssignment_1_2
                     {
                     pushFollow(FOLLOW_2);
-                    rule__Block__TypeDefinitionPartAssignment_1_2();
+                    rule__Block__TypeDefinitionPartsAssignment_1_2();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getBlockAccess().getTypeDefinitionPartAssignment_1_2()); 
+                     after(grammarAccess.getBlockAccess().getTypeDefinitionPartsAssignment_1_2()); 
 
                     }
 
@@ -5787,24 +5787,24 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalPascal.g:1875:2: ( ( rule__Block__VariableDeclarationPartAssignment_1_3 ) )
+                    // InternalPascal.g:1875:2: ( ( rule__Block__VariableDeclarationPartsAssignment_1_3 ) )
                     {
-                    // InternalPascal.g:1875:2: ( ( rule__Block__VariableDeclarationPartAssignment_1_3 ) )
-                    // InternalPascal.g:1876:3: ( rule__Block__VariableDeclarationPartAssignment_1_3 )
+                    // InternalPascal.g:1875:2: ( ( rule__Block__VariableDeclarationPartsAssignment_1_3 ) )
+                    // InternalPascal.g:1876:3: ( rule__Block__VariableDeclarationPartsAssignment_1_3 )
                     {
-                     before(grammarAccess.getBlockAccess().getVariableDeclarationPartAssignment_1_3()); 
-                    // InternalPascal.g:1877:3: ( rule__Block__VariableDeclarationPartAssignment_1_3 )
-                    // InternalPascal.g:1877:4: rule__Block__VariableDeclarationPartAssignment_1_3
+                     before(grammarAccess.getBlockAccess().getVariableDeclarationPartsAssignment_1_3()); 
+                    // InternalPascal.g:1877:3: ( rule__Block__VariableDeclarationPartsAssignment_1_3 )
+                    // InternalPascal.g:1877:4: rule__Block__VariableDeclarationPartsAssignment_1_3
                     {
                     pushFollow(FOLLOW_2);
-                    rule__Block__VariableDeclarationPartAssignment_1_3();
+                    rule__Block__VariableDeclarationPartsAssignment_1_3();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getBlockAccess().getVariableDeclarationPartAssignment_1_3()); 
+                     after(grammarAccess.getBlockAccess().getVariableDeclarationPartsAssignment_1_3()); 
 
                     }
 
@@ -5812,24 +5812,24 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // InternalPascal.g:1881:2: ( ( rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4 ) )
+                    // InternalPascal.g:1881:2: ( ( rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4 ) )
                     {
-                    // InternalPascal.g:1881:2: ( ( rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4 ) )
-                    // InternalPascal.g:1882:3: ( rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4 )
+                    // InternalPascal.g:1881:2: ( ( rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4 ) )
+                    // InternalPascal.g:1882:3: ( rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4 )
                     {
-                     before(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartAssignment_1_4()); 
-                    // InternalPascal.g:1883:3: ( rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4 )
-                    // InternalPascal.g:1883:4: rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4
+                     before(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartsAssignment_1_4()); 
+                    // InternalPascal.g:1883:3: ( rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4 )
+                    // InternalPascal.g:1883:4: rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4
                     {
                     pushFollow(FOLLOW_2);
-                    rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4();
+                    rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartAssignment_1_4()); 
+                     after(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartsAssignment_1_4()); 
 
                     }
 
@@ -5837,24 +5837,24 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // InternalPascal.g:1887:2: ( ( rule__Block__UsesUnitsPartAssignment_1_5 ) )
+                    // InternalPascal.g:1887:2: ( ( rule__Block__UsesUnitsPartsAssignment_1_5 ) )
                     {
-                    // InternalPascal.g:1887:2: ( ( rule__Block__UsesUnitsPartAssignment_1_5 ) )
-                    // InternalPascal.g:1888:3: ( rule__Block__UsesUnitsPartAssignment_1_5 )
+                    // InternalPascal.g:1887:2: ( ( rule__Block__UsesUnitsPartsAssignment_1_5 ) )
+                    // InternalPascal.g:1888:3: ( rule__Block__UsesUnitsPartsAssignment_1_5 )
                     {
-                     before(grammarAccess.getBlockAccess().getUsesUnitsPartAssignment_1_5()); 
-                    // InternalPascal.g:1889:3: ( rule__Block__UsesUnitsPartAssignment_1_5 )
-                    // InternalPascal.g:1889:4: rule__Block__UsesUnitsPartAssignment_1_5
+                     before(grammarAccess.getBlockAccess().getUsesUnitsPartsAssignment_1_5()); 
+                    // InternalPascal.g:1889:3: ( rule__Block__UsesUnitsPartsAssignment_1_5 )
+                    // InternalPascal.g:1889:4: rule__Block__UsesUnitsPartsAssignment_1_5
                     {
                     pushFollow(FOLLOW_2);
-                    rule__Block__UsesUnitsPartAssignment_1_5();
+                    rule__Block__UsesUnitsPartsAssignment_1_5();
 
                     state._fsp--;
 
 
                     }
 
-                     after(grammarAccess.getBlockAccess().getUsesUnitsPartAssignment_1_5()); 
+                     after(grammarAccess.getBlockAccess().getUsesUnitsPartsAssignment_1_5()); 
 
                     }
 
@@ -5985,79 +5985,15 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Alternatives"
-    // InternalPascal.g:1924:1: rule__Constant__Alternatives : ( ( ( rule__Constant__NumberAssignment_0 ) ) | ( ( rule__Constant__Group_1__0 ) ) | ( ( rule__Constant__IdentifierAssignment_2 ) ) | ( ( rule__Constant__STRING_LITERALAssignment_3 ) ) | ( ( rule__Constant__Group_4__0 ) ) | ( ( rule__Constant__ConstantChrAssignment_5 ) ) );
+    // InternalPascal.g:1924:1: rule__Constant__Alternatives : ( ( ( rule__Constant__NumberAssignment_0 ) ) | ( ( rule__Constant__Group_1__0 ) ) | ( ( rule__Constant__IdentifierAssignment_2 ) ) | ( ( rule__Constant__STRING_LITERALAssignment_3 ) ) | ( ( rule__Constant__Group_4__0 ) ) | ( ( rule__Constant__ConstantChrAssignment_5 ) ) | ( ( rule__Constant__BoolAssignment_6 ) ) );
     public final void rule__Constant__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:1928:1: ( ( ( rule__Constant__NumberAssignment_0 ) ) | ( ( rule__Constant__Group_1__0 ) ) | ( ( rule__Constant__IdentifierAssignment_2 ) ) | ( ( rule__Constant__STRING_LITERALAssignment_3 ) ) | ( ( rule__Constant__Group_4__0 ) ) | ( ( rule__Constant__ConstantChrAssignment_5 ) ) )
-            int alt3=6;
-            switch ( input.LA(1) ) {
-            case RULE_NUM_REAL:
-            case RULE_NUM:
-                {
-                alt3=1;
-                }
-                break;
-            case 18:
-                {
-                int LA3_2 = input.LA(2);
-
-                if ( (LA3_2==RULE_NUM_REAL||LA3_2==RULE_NUM) ) {
-                    alt3=2;
-                }
-                else if ( (LA3_2==RULE_IDENT) ) {
-                    alt3=5;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("", 3, 2, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case 19:
-                {
-                int LA3_3 = input.LA(2);
-
-                if ( (LA3_3==RULE_NUM_REAL||LA3_3==RULE_NUM) ) {
-                    alt3=2;
-                }
-                else if ( (LA3_3==RULE_IDENT) ) {
-                    alt3=5;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("", 3, 3, input);
-
-                    throw nvae;
-                }
-                }
-                break;
-            case RULE_IDENT:
-                {
-                alt3=3;
-                }
-                break;
-            case RULE_STRING_LITERAL:
-                {
-                alt3=4;
-                }
-                break;
-            case 43:
-                {
-                alt3=6;
-                }
-                break;
-            default:
-                NoViableAltException nvae =
-                    new NoViableAltException("", 3, 0, input);
-
-                throw nvae;
-            }
-
+            // InternalPascal.g:1928:1: ( ( ( rule__Constant__NumberAssignment_0 ) ) | ( ( rule__Constant__Group_1__0 ) ) | ( ( rule__Constant__IdentifierAssignment_2 ) ) | ( ( rule__Constant__STRING_LITERALAssignment_3 ) ) | ( ( rule__Constant__Group_4__0 ) ) | ( ( rule__Constant__ConstantChrAssignment_5 ) ) | ( ( rule__Constant__BoolAssignment_6 ) ) )
+            int alt3=7;
+            alt3 = dfa3.predict(input);
             switch (alt3) {
                 case 1 :
                     // InternalPascal.g:1929:2: ( ( rule__Constant__NumberAssignment_0 ) )
@@ -6209,6 +6145,31 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                     }
                     break;
+                case 7 :
+                    // InternalPascal.g:1965:2: ( ( rule__Constant__BoolAssignment_6 ) )
+                    {
+                    // InternalPascal.g:1965:2: ( ( rule__Constant__BoolAssignment_6 ) )
+                    // InternalPascal.g:1966:3: ( rule__Constant__BoolAssignment_6 )
+                    {
+                     before(grammarAccess.getConstantAccess().getBoolAssignment_6()); 
+                    // InternalPascal.g:1967:3: ( rule__Constant__BoolAssignment_6 )
+                    // InternalPascal.g:1967:4: rule__Constant__BoolAssignment_6
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__Constant__BoolAssignment_6();
+
+                    state._fsp--;
+
+
+                    }
+
+                     after(grammarAccess.getConstantAccess().getBoolAssignment_6()); 
+
+                    }
+
+
+                    }
+                    break;
 
             }
         }
@@ -6227,13 +6188,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedNumber__Alternatives"
-    // InternalPascal.g:1969:1: rule__UnsignedNumber__Alternatives : ( ( ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 ) ) | ( ( rule__UnsignedNumber__UnsignedRealAssignment_1 ) ) );
+    // InternalPascal.g:1975:1: rule__UnsignedNumber__Alternatives : ( ( ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 ) ) | ( ( rule__UnsignedNumber__UnsignedRealAssignment_1 ) ) );
     public final void rule__UnsignedNumber__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:1973:1: ( ( ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 ) ) | ( ( rule__UnsignedNumber__UnsignedRealAssignment_1 ) ) )
+            // InternalPascal.g:1979:1: ( ( ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 ) ) | ( ( rule__UnsignedNumber__UnsignedRealAssignment_1 ) ) )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -6251,14 +6212,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt4) {
                 case 1 :
-                    // InternalPascal.g:1974:2: ( ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 ) )
+                    // InternalPascal.g:1980:2: ( ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 ) )
                     {
-                    // InternalPascal.g:1974:2: ( ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 ) )
-                    // InternalPascal.g:1975:3: ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 )
+                    // InternalPascal.g:1980:2: ( ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 ) )
+                    // InternalPascal.g:1981:3: ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 )
                     {
                      before(grammarAccess.getUnsignedNumberAccess().getUnsignedIntegerAssignment_0()); 
-                    // InternalPascal.g:1976:3: ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 )
-                    // InternalPascal.g:1976:4: rule__UnsignedNumber__UnsignedIntegerAssignment_0
+                    // InternalPascal.g:1982:3: ( rule__UnsignedNumber__UnsignedIntegerAssignment_0 )
+                    // InternalPascal.g:1982:4: rule__UnsignedNumber__UnsignedIntegerAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnsignedNumber__UnsignedIntegerAssignment_0();
@@ -6276,14 +6237,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:1980:2: ( ( rule__UnsignedNumber__UnsignedRealAssignment_1 ) )
+                    // InternalPascal.g:1986:2: ( ( rule__UnsignedNumber__UnsignedRealAssignment_1 ) )
                     {
-                    // InternalPascal.g:1980:2: ( ( rule__UnsignedNumber__UnsignedRealAssignment_1 ) )
-                    // InternalPascal.g:1981:3: ( rule__UnsignedNumber__UnsignedRealAssignment_1 )
+                    // InternalPascal.g:1986:2: ( ( rule__UnsignedNumber__UnsignedRealAssignment_1 ) )
+                    // InternalPascal.g:1987:3: ( rule__UnsignedNumber__UnsignedRealAssignment_1 )
                     {
                      before(grammarAccess.getUnsignedNumberAccess().getUnsignedRealAssignment_1()); 
-                    // InternalPascal.g:1982:3: ( rule__UnsignedNumber__UnsignedRealAssignment_1 )
-                    // InternalPascal.g:1982:4: rule__UnsignedNumber__UnsignedRealAssignment_1
+                    // InternalPascal.g:1988:3: ( rule__UnsignedNumber__UnsignedRealAssignment_1 )
+                    // InternalPascal.g:1988:4: rule__UnsignedNumber__UnsignedRealAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnsignedNumber__UnsignedRealAssignment_1();
@@ -6318,13 +6279,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Sign__Alternatives"
-    // InternalPascal.g:1990:1: rule__Sign__Alternatives : ( ( '+' ) | ( '-' ) );
+    // InternalPascal.g:1996:1: rule__Sign__Alternatives : ( ( '+' ) | ( '-' ) );
     public final void rule__Sign__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:1994:1: ( ( '+' ) | ( '-' ) )
+            // InternalPascal.g:2000:1: ( ( '+' ) | ( '-' ) )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -6342,10 +6303,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt5) {
                 case 1 :
-                    // InternalPascal.g:1995:2: ( '+' )
+                    // InternalPascal.g:2001:2: ( '+' )
                     {
-                    // InternalPascal.g:1995:2: ( '+' )
-                    // InternalPascal.g:1996:3: '+'
+                    // InternalPascal.g:2001:2: ( '+' )
+                    // InternalPascal.g:2002:3: '+'
                     {
                      before(grammarAccess.getSignAccess().getPlusSignKeyword_0()); 
                     match(input,18,FOLLOW_2); 
@@ -6357,10 +6318,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2001:2: ( '-' )
+                    // InternalPascal.g:2007:2: ( '-' )
                     {
-                    // InternalPascal.g:2001:2: ( '-' )
-                    // InternalPascal.g:2002:3: '-'
+                    // InternalPascal.g:2007:2: ( '-' )
+                    // InternalPascal.g:2008:3: '-'
                     {
                      before(grammarAccess.getSignAccess().getHyphenMinusKeyword_1()); 
                     match(input,19,FOLLOW_2); 
@@ -6389,19 +6350,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__Alternatives_2"
-    // InternalPascal.g:2011:1: rule__TypeDefinition__Alternatives_2 : ( ( ( rule__TypeDefinition__TypeAssignment_2_0 ) ) | ( ( rule__TypeDefinition__FunctionTypeAssignment_2_1 ) ) | ( ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 ) ) );
+    // InternalPascal.g:2017:1: rule__TypeDefinition__Alternatives_2 : ( ( ( rule__TypeDefinition__TypeAssignment_2_0 ) ) | ( ( rule__TypeDefinition__FunctionTypeAssignment_2_1 ) ) | ( ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 ) ) );
     public final void rule__TypeDefinition__Alternatives_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2015:1: ( ( ( rule__TypeDefinition__TypeAssignment_2_0 ) ) | ( ( rule__TypeDefinition__FunctionTypeAssignment_2_1 ) ) | ( ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 ) ) )
+            // InternalPascal.g:2021:1: ( ( ( rule__TypeDefinition__TypeAssignment_2_0 ) ) | ( ( rule__TypeDefinition__FunctionTypeAssignment_2_1 ) ) | ( ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 ) ) )
             int alt6=3;
             switch ( input.LA(1) ) {
             case RULE_NUM_REAL:
             case RULE_IDENT:
             case RULE_NUM:
             case RULE_STRING_LITERAL:
+            case RULE_BOOL:
             case 18:
             case 19:
             case 20:
@@ -6437,14 +6399,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt6) {
                 case 1 :
-                    // InternalPascal.g:2016:2: ( ( rule__TypeDefinition__TypeAssignment_2_0 ) )
+                    // InternalPascal.g:2022:2: ( ( rule__TypeDefinition__TypeAssignment_2_0 ) )
                     {
-                    // InternalPascal.g:2016:2: ( ( rule__TypeDefinition__TypeAssignment_2_0 ) )
-                    // InternalPascal.g:2017:3: ( rule__TypeDefinition__TypeAssignment_2_0 )
+                    // InternalPascal.g:2022:2: ( ( rule__TypeDefinition__TypeAssignment_2_0 ) )
+                    // InternalPascal.g:2023:3: ( rule__TypeDefinition__TypeAssignment_2_0 )
                     {
                      before(grammarAccess.getTypeDefinitionAccess().getTypeAssignment_2_0()); 
-                    // InternalPascal.g:2018:3: ( rule__TypeDefinition__TypeAssignment_2_0 )
-                    // InternalPascal.g:2018:4: rule__TypeDefinition__TypeAssignment_2_0
+                    // InternalPascal.g:2024:3: ( rule__TypeDefinition__TypeAssignment_2_0 )
+                    // InternalPascal.g:2024:4: rule__TypeDefinition__TypeAssignment_2_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__TypeDefinition__TypeAssignment_2_0();
@@ -6462,14 +6424,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2022:2: ( ( rule__TypeDefinition__FunctionTypeAssignment_2_1 ) )
+                    // InternalPascal.g:2028:2: ( ( rule__TypeDefinition__FunctionTypeAssignment_2_1 ) )
                     {
-                    // InternalPascal.g:2022:2: ( ( rule__TypeDefinition__FunctionTypeAssignment_2_1 ) )
-                    // InternalPascal.g:2023:3: ( rule__TypeDefinition__FunctionTypeAssignment_2_1 )
+                    // InternalPascal.g:2028:2: ( ( rule__TypeDefinition__FunctionTypeAssignment_2_1 ) )
+                    // InternalPascal.g:2029:3: ( rule__TypeDefinition__FunctionTypeAssignment_2_1 )
                     {
                      before(grammarAccess.getTypeDefinitionAccess().getFunctionTypeAssignment_2_1()); 
-                    // InternalPascal.g:2024:3: ( rule__TypeDefinition__FunctionTypeAssignment_2_1 )
-                    // InternalPascal.g:2024:4: rule__TypeDefinition__FunctionTypeAssignment_2_1
+                    // InternalPascal.g:2030:3: ( rule__TypeDefinition__FunctionTypeAssignment_2_1 )
+                    // InternalPascal.g:2030:4: rule__TypeDefinition__FunctionTypeAssignment_2_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__TypeDefinition__FunctionTypeAssignment_2_1();
@@ -6487,14 +6449,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2028:2: ( ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 ) )
+                    // InternalPascal.g:2034:2: ( ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 ) )
                     {
-                    // InternalPascal.g:2028:2: ( ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 ) )
-                    // InternalPascal.g:2029:3: ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 )
+                    // InternalPascal.g:2034:2: ( ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 ) )
+                    // InternalPascal.g:2035:3: ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 )
                     {
                      before(grammarAccess.getTypeDefinitionAccess().getProcedureTypeAssignment_2_2()); 
-                    // InternalPascal.g:2030:3: ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 )
-                    // InternalPascal.g:2030:4: rule__TypeDefinition__ProcedureTypeAssignment_2_2
+                    // InternalPascal.g:2036:3: ( rule__TypeDefinition__ProcedureTypeAssignment_2_2 )
+                    // InternalPascal.g:2036:4: rule__TypeDefinition__ProcedureTypeAssignment_2_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__TypeDefinition__ProcedureTypeAssignment_2_2();
@@ -6529,13 +6491,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Alternatives"
-    // InternalPascal.g:2038:1: rule__FormalParameterSection__Alternatives : ( ( ( rule__FormalParameterSection__ParameterGroupAssignment_0 ) ) | ( ( rule__FormalParameterSection__Group_1__0 ) ) | ( ( rule__FormalParameterSection__Group_2__0 ) ) | ( ( rule__FormalParameterSection__Group_3__0 ) ) );
+    // InternalPascal.g:2044:1: rule__FormalParameterSection__Alternatives : ( ( ( rule__FormalParameterSection__ParameterGroupAssignment_0 ) ) | ( ( rule__FormalParameterSection__Group_1__0 ) ) | ( ( rule__FormalParameterSection__Group_2__0 ) ) | ( ( rule__FormalParameterSection__Group_3__0 ) ) );
     public final void rule__FormalParameterSection__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2042:1: ( ( ( rule__FormalParameterSection__ParameterGroupAssignment_0 ) ) | ( ( rule__FormalParameterSection__Group_1__0 ) ) | ( ( rule__FormalParameterSection__Group_2__0 ) ) | ( ( rule__FormalParameterSection__Group_3__0 ) ) )
+            // InternalPascal.g:2048:1: ( ( ( rule__FormalParameterSection__ParameterGroupAssignment_0 ) ) | ( ( rule__FormalParameterSection__Group_1__0 ) ) | ( ( rule__FormalParameterSection__Group_2__0 ) ) | ( ( rule__FormalParameterSection__Group_3__0 ) ) )
             int alt7=4;
             switch ( input.LA(1) ) {
             case RULE_IDENT:
@@ -6567,14 +6529,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt7) {
                 case 1 :
-                    // InternalPascal.g:2043:2: ( ( rule__FormalParameterSection__ParameterGroupAssignment_0 ) )
+                    // InternalPascal.g:2049:2: ( ( rule__FormalParameterSection__ParameterGroupAssignment_0 ) )
                     {
-                    // InternalPascal.g:2043:2: ( ( rule__FormalParameterSection__ParameterGroupAssignment_0 ) )
-                    // InternalPascal.g:2044:3: ( rule__FormalParameterSection__ParameterGroupAssignment_0 )
+                    // InternalPascal.g:2049:2: ( ( rule__FormalParameterSection__ParameterGroupAssignment_0 ) )
+                    // InternalPascal.g:2050:3: ( rule__FormalParameterSection__ParameterGroupAssignment_0 )
                     {
                      before(grammarAccess.getFormalParameterSectionAccess().getParameterGroupAssignment_0()); 
-                    // InternalPascal.g:2045:3: ( rule__FormalParameterSection__ParameterGroupAssignment_0 )
-                    // InternalPascal.g:2045:4: rule__FormalParameterSection__ParameterGroupAssignment_0
+                    // InternalPascal.g:2051:3: ( rule__FormalParameterSection__ParameterGroupAssignment_0 )
+                    // InternalPascal.g:2051:4: rule__FormalParameterSection__ParameterGroupAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__FormalParameterSection__ParameterGroupAssignment_0();
@@ -6592,14 +6554,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2049:2: ( ( rule__FormalParameterSection__Group_1__0 ) )
+                    // InternalPascal.g:2055:2: ( ( rule__FormalParameterSection__Group_1__0 ) )
                     {
-                    // InternalPascal.g:2049:2: ( ( rule__FormalParameterSection__Group_1__0 ) )
-                    // InternalPascal.g:2050:3: ( rule__FormalParameterSection__Group_1__0 )
+                    // InternalPascal.g:2055:2: ( ( rule__FormalParameterSection__Group_1__0 ) )
+                    // InternalPascal.g:2056:3: ( rule__FormalParameterSection__Group_1__0 )
                     {
                      before(grammarAccess.getFormalParameterSectionAccess().getGroup_1()); 
-                    // InternalPascal.g:2051:3: ( rule__FormalParameterSection__Group_1__0 )
-                    // InternalPascal.g:2051:4: rule__FormalParameterSection__Group_1__0
+                    // InternalPascal.g:2057:3: ( rule__FormalParameterSection__Group_1__0 )
+                    // InternalPascal.g:2057:4: rule__FormalParameterSection__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__FormalParameterSection__Group_1__0();
@@ -6617,14 +6579,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2055:2: ( ( rule__FormalParameterSection__Group_2__0 ) )
+                    // InternalPascal.g:2061:2: ( ( rule__FormalParameterSection__Group_2__0 ) )
                     {
-                    // InternalPascal.g:2055:2: ( ( rule__FormalParameterSection__Group_2__0 ) )
-                    // InternalPascal.g:2056:3: ( rule__FormalParameterSection__Group_2__0 )
+                    // InternalPascal.g:2061:2: ( ( rule__FormalParameterSection__Group_2__0 ) )
+                    // InternalPascal.g:2062:3: ( rule__FormalParameterSection__Group_2__0 )
                     {
                      before(grammarAccess.getFormalParameterSectionAccess().getGroup_2()); 
-                    // InternalPascal.g:2057:3: ( rule__FormalParameterSection__Group_2__0 )
-                    // InternalPascal.g:2057:4: rule__FormalParameterSection__Group_2__0
+                    // InternalPascal.g:2063:3: ( rule__FormalParameterSection__Group_2__0 )
+                    // InternalPascal.g:2063:4: rule__FormalParameterSection__Group_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__FormalParameterSection__Group_2__0();
@@ -6642,14 +6604,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalPascal.g:2061:2: ( ( rule__FormalParameterSection__Group_3__0 ) )
+                    // InternalPascal.g:2067:2: ( ( rule__FormalParameterSection__Group_3__0 ) )
                     {
-                    // InternalPascal.g:2061:2: ( ( rule__FormalParameterSection__Group_3__0 ) )
-                    // InternalPascal.g:2062:3: ( rule__FormalParameterSection__Group_3__0 )
+                    // InternalPascal.g:2067:2: ( ( rule__FormalParameterSection__Group_3__0 ) )
+                    // InternalPascal.g:2068:3: ( rule__FormalParameterSection__Group_3__0 )
                     {
                      before(grammarAccess.getFormalParameterSectionAccess().getGroup_3()); 
-                    // InternalPascal.g:2063:3: ( rule__FormalParameterSection__Group_3__0 )
-                    // InternalPascal.g:2063:4: rule__FormalParameterSection__Group_3__0
+                    // InternalPascal.g:2069:3: ( rule__FormalParameterSection__Group_3__0 )
+                    // InternalPascal.g:2069:4: rule__FormalParameterSection__Group_3__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__FormalParameterSection__Group_3__0();
@@ -6684,13 +6646,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeIdentifier__Alternatives"
-    // InternalPascal.g:2071:1: rule__TypeIdentifier__Alternatives : ( ( ( rule__TypeIdentifier__IdentifierAssignment_0 ) ) | ( ( rule__TypeIdentifier__CharAssignment_1 ) ) | ( ( rule__TypeIdentifier__BooleanAssignment_2 ) ) | ( ( rule__TypeIdentifier__IntegerAssignment_3 ) ) | ( ( rule__TypeIdentifier__RealAssignment_4 ) ) | ( ( rule__TypeIdentifier__StringAssignment_5 ) ) );
+    // InternalPascal.g:2077:1: rule__TypeIdentifier__Alternatives : ( ( ( rule__TypeIdentifier__IdentifierAssignment_0 ) ) | ( ( rule__TypeIdentifier__CharAssignment_1 ) ) | ( ( rule__TypeIdentifier__BooleanAssignment_2 ) ) | ( ( rule__TypeIdentifier__IntegerAssignment_3 ) ) | ( ( rule__TypeIdentifier__RealAssignment_4 ) ) | ( ( rule__TypeIdentifier__StringAssignment_5 ) ) );
     public final void rule__TypeIdentifier__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2075:1: ( ( ( rule__TypeIdentifier__IdentifierAssignment_0 ) ) | ( ( rule__TypeIdentifier__CharAssignment_1 ) ) | ( ( rule__TypeIdentifier__BooleanAssignment_2 ) ) | ( ( rule__TypeIdentifier__IntegerAssignment_3 ) ) | ( ( rule__TypeIdentifier__RealAssignment_4 ) ) | ( ( rule__TypeIdentifier__StringAssignment_5 ) ) )
+            // InternalPascal.g:2081:1: ( ( ( rule__TypeIdentifier__IdentifierAssignment_0 ) ) | ( ( rule__TypeIdentifier__CharAssignment_1 ) ) | ( ( rule__TypeIdentifier__BooleanAssignment_2 ) ) | ( ( rule__TypeIdentifier__IntegerAssignment_3 ) ) | ( ( rule__TypeIdentifier__RealAssignment_4 ) ) | ( ( rule__TypeIdentifier__StringAssignment_5 ) ) )
             int alt8=6;
             switch ( input.LA(1) ) {
             case RULE_IDENT:
@@ -6732,14 +6694,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt8) {
                 case 1 :
-                    // InternalPascal.g:2076:2: ( ( rule__TypeIdentifier__IdentifierAssignment_0 ) )
+                    // InternalPascal.g:2082:2: ( ( rule__TypeIdentifier__IdentifierAssignment_0 ) )
                     {
-                    // InternalPascal.g:2076:2: ( ( rule__TypeIdentifier__IdentifierAssignment_0 ) )
-                    // InternalPascal.g:2077:3: ( rule__TypeIdentifier__IdentifierAssignment_0 )
+                    // InternalPascal.g:2082:2: ( ( rule__TypeIdentifier__IdentifierAssignment_0 ) )
+                    // InternalPascal.g:2083:3: ( rule__TypeIdentifier__IdentifierAssignment_0 )
                     {
                      before(grammarAccess.getTypeIdentifierAccess().getIdentifierAssignment_0()); 
-                    // InternalPascal.g:2078:3: ( rule__TypeIdentifier__IdentifierAssignment_0 )
-                    // InternalPascal.g:2078:4: rule__TypeIdentifier__IdentifierAssignment_0
+                    // InternalPascal.g:2084:3: ( rule__TypeIdentifier__IdentifierAssignment_0 )
+                    // InternalPascal.g:2084:4: rule__TypeIdentifier__IdentifierAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__TypeIdentifier__IdentifierAssignment_0();
@@ -6757,14 +6719,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2082:2: ( ( rule__TypeIdentifier__CharAssignment_1 ) )
+                    // InternalPascal.g:2088:2: ( ( rule__TypeIdentifier__CharAssignment_1 ) )
                     {
-                    // InternalPascal.g:2082:2: ( ( rule__TypeIdentifier__CharAssignment_1 ) )
-                    // InternalPascal.g:2083:3: ( rule__TypeIdentifier__CharAssignment_1 )
+                    // InternalPascal.g:2088:2: ( ( rule__TypeIdentifier__CharAssignment_1 ) )
+                    // InternalPascal.g:2089:3: ( rule__TypeIdentifier__CharAssignment_1 )
                     {
                      before(grammarAccess.getTypeIdentifierAccess().getCharAssignment_1()); 
-                    // InternalPascal.g:2084:3: ( rule__TypeIdentifier__CharAssignment_1 )
-                    // InternalPascal.g:2084:4: rule__TypeIdentifier__CharAssignment_1
+                    // InternalPascal.g:2090:3: ( rule__TypeIdentifier__CharAssignment_1 )
+                    // InternalPascal.g:2090:4: rule__TypeIdentifier__CharAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__TypeIdentifier__CharAssignment_1();
@@ -6782,14 +6744,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2088:2: ( ( rule__TypeIdentifier__BooleanAssignment_2 ) )
+                    // InternalPascal.g:2094:2: ( ( rule__TypeIdentifier__BooleanAssignment_2 ) )
                     {
-                    // InternalPascal.g:2088:2: ( ( rule__TypeIdentifier__BooleanAssignment_2 ) )
-                    // InternalPascal.g:2089:3: ( rule__TypeIdentifier__BooleanAssignment_2 )
+                    // InternalPascal.g:2094:2: ( ( rule__TypeIdentifier__BooleanAssignment_2 ) )
+                    // InternalPascal.g:2095:3: ( rule__TypeIdentifier__BooleanAssignment_2 )
                     {
                      before(grammarAccess.getTypeIdentifierAccess().getBooleanAssignment_2()); 
-                    // InternalPascal.g:2090:3: ( rule__TypeIdentifier__BooleanAssignment_2 )
-                    // InternalPascal.g:2090:4: rule__TypeIdentifier__BooleanAssignment_2
+                    // InternalPascal.g:2096:3: ( rule__TypeIdentifier__BooleanAssignment_2 )
+                    // InternalPascal.g:2096:4: rule__TypeIdentifier__BooleanAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__TypeIdentifier__BooleanAssignment_2();
@@ -6807,14 +6769,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalPascal.g:2094:2: ( ( rule__TypeIdentifier__IntegerAssignment_3 ) )
+                    // InternalPascal.g:2100:2: ( ( rule__TypeIdentifier__IntegerAssignment_3 ) )
                     {
-                    // InternalPascal.g:2094:2: ( ( rule__TypeIdentifier__IntegerAssignment_3 ) )
-                    // InternalPascal.g:2095:3: ( rule__TypeIdentifier__IntegerAssignment_3 )
+                    // InternalPascal.g:2100:2: ( ( rule__TypeIdentifier__IntegerAssignment_3 ) )
+                    // InternalPascal.g:2101:3: ( rule__TypeIdentifier__IntegerAssignment_3 )
                     {
                      before(grammarAccess.getTypeIdentifierAccess().getIntegerAssignment_3()); 
-                    // InternalPascal.g:2096:3: ( rule__TypeIdentifier__IntegerAssignment_3 )
-                    // InternalPascal.g:2096:4: rule__TypeIdentifier__IntegerAssignment_3
+                    // InternalPascal.g:2102:3: ( rule__TypeIdentifier__IntegerAssignment_3 )
+                    // InternalPascal.g:2102:4: rule__TypeIdentifier__IntegerAssignment_3
                     {
                     pushFollow(FOLLOW_2);
                     rule__TypeIdentifier__IntegerAssignment_3();
@@ -6832,14 +6794,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // InternalPascal.g:2100:2: ( ( rule__TypeIdentifier__RealAssignment_4 ) )
+                    // InternalPascal.g:2106:2: ( ( rule__TypeIdentifier__RealAssignment_4 ) )
                     {
-                    // InternalPascal.g:2100:2: ( ( rule__TypeIdentifier__RealAssignment_4 ) )
-                    // InternalPascal.g:2101:3: ( rule__TypeIdentifier__RealAssignment_4 )
+                    // InternalPascal.g:2106:2: ( ( rule__TypeIdentifier__RealAssignment_4 ) )
+                    // InternalPascal.g:2107:3: ( rule__TypeIdentifier__RealAssignment_4 )
                     {
                      before(grammarAccess.getTypeIdentifierAccess().getRealAssignment_4()); 
-                    // InternalPascal.g:2102:3: ( rule__TypeIdentifier__RealAssignment_4 )
-                    // InternalPascal.g:2102:4: rule__TypeIdentifier__RealAssignment_4
+                    // InternalPascal.g:2108:3: ( rule__TypeIdentifier__RealAssignment_4 )
+                    // InternalPascal.g:2108:4: rule__TypeIdentifier__RealAssignment_4
                     {
                     pushFollow(FOLLOW_2);
                     rule__TypeIdentifier__RealAssignment_4();
@@ -6857,14 +6819,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // InternalPascal.g:2106:2: ( ( rule__TypeIdentifier__StringAssignment_5 ) )
+                    // InternalPascal.g:2112:2: ( ( rule__TypeIdentifier__StringAssignment_5 ) )
                     {
-                    // InternalPascal.g:2106:2: ( ( rule__TypeIdentifier__StringAssignment_5 ) )
-                    // InternalPascal.g:2107:3: ( rule__TypeIdentifier__StringAssignment_5 )
+                    // InternalPascal.g:2112:2: ( ( rule__TypeIdentifier__StringAssignment_5 ) )
+                    // InternalPascal.g:2113:3: ( rule__TypeIdentifier__StringAssignment_5 )
                     {
                      before(grammarAccess.getTypeIdentifierAccess().getStringAssignment_5()); 
-                    // InternalPascal.g:2108:3: ( rule__TypeIdentifier__StringAssignment_5 )
-                    // InternalPascal.g:2108:4: rule__TypeIdentifier__StringAssignment_5
+                    // InternalPascal.g:2114:3: ( rule__TypeIdentifier__StringAssignment_5 )
+                    // InternalPascal.g:2114:4: rule__TypeIdentifier__StringAssignment_5
                     {
                     pushFollow(FOLLOW_2);
                     rule__TypeIdentifier__StringAssignment_5();
@@ -6899,19 +6861,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Type__Alternatives"
-    // InternalPascal.g:2116:1: rule__Type__Alternatives : ( ( ( rule__Type__SimpleTypeAssignment_0 ) ) | ( ( rule__Type__StructuredTypeAssignment_1 ) ) | ( ( rule__Type__PointerTypeAssignment_2 ) ) );
+    // InternalPascal.g:2122:1: rule__Type__Alternatives : ( ( ( rule__Type__SimpleTypeAssignment_0 ) ) | ( ( rule__Type__StructuredTypeAssignment_1 ) ) | ( ( rule__Type__PointerTypeAssignment_2 ) ) );
     public final void rule__Type__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2120:1: ( ( ( rule__Type__SimpleTypeAssignment_0 ) ) | ( ( rule__Type__StructuredTypeAssignment_1 ) ) | ( ( rule__Type__PointerTypeAssignment_2 ) ) )
+            // InternalPascal.g:2126:1: ( ( ( rule__Type__SimpleTypeAssignment_0 ) ) | ( ( rule__Type__StructuredTypeAssignment_1 ) ) | ( ( rule__Type__PointerTypeAssignment_2 ) ) )
             int alt9=3;
             switch ( input.LA(1) ) {
             case RULE_NUM_REAL:
             case RULE_IDENT:
             case RULE_NUM:
             case RULE_STRING_LITERAL:
+            case RULE_BOOL:
             case 18:
             case 19:
             case 38:
@@ -6945,14 +6908,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt9) {
                 case 1 :
-                    // InternalPascal.g:2121:2: ( ( rule__Type__SimpleTypeAssignment_0 ) )
+                    // InternalPascal.g:2127:2: ( ( rule__Type__SimpleTypeAssignment_0 ) )
                     {
-                    // InternalPascal.g:2121:2: ( ( rule__Type__SimpleTypeAssignment_0 ) )
-                    // InternalPascal.g:2122:3: ( rule__Type__SimpleTypeAssignment_0 )
+                    // InternalPascal.g:2127:2: ( ( rule__Type__SimpleTypeAssignment_0 ) )
+                    // InternalPascal.g:2128:3: ( rule__Type__SimpleTypeAssignment_0 )
                     {
                      before(grammarAccess.getTypeAccess().getSimpleTypeAssignment_0()); 
-                    // InternalPascal.g:2123:3: ( rule__Type__SimpleTypeAssignment_0 )
-                    // InternalPascal.g:2123:4: rule__Type__SimpleTypeAssignment_0
+                    // InternalPascal.g:2129:3: ( rule__Type__SimpleTypeAssignment_0 )
+                    // InternalPascal.g:2129:4: rule__Type__SimpleTypeAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Type__SimpleTypeAssignment_0();
@@ -6970,14 +6933,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2127:2: ( ( rule__Type__StructuredTypeAssignment_1 ) )
+                    // InternalPascal.g:2133:2: ( ( rule__Type__StructuredTypeAssignment_1 ) )
                     {
-                    // InternalPascal.g:2127:2: ( ( rule__Type__StructuredTypeAssignment_1 ) )
-                    // InternalPascal.g:2128:3: ( rule__Type__StructuredTypeAssignment_1 )
+                    // InternalPascal.g:2133:2: ( ( rule__Type__StructuredTypeAssignment_1 ) )
+                    // InternalPascal.g:2134:3: ( rule__Type__StructuredTypeAssignment_1 )
                     {
                      before(grammarAccess.getTypeAccess().getStructuredTypeAssignment_1()); 
-                    // InternalPascal.g:2129:3: ( rule__Type__StructuredTypeAssignment_1 )
-                    // InternalPascal.g:2129:4: rule__Type__StructuredTypeAssignment_1
+                    // InternalPascal.g:2135:3: ( rule__Type__StructuredTypeAssignment_1 )
+                    // InternalPascal.g:2135:4: rule__Type__StructuredTypeAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__Type__StructuredTypeAssignment_1();
@@ -6995,14 +6958,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2133:2: ( ( rule__Type__PointerTypeAssignment_2 ) )
+                    // InternalPascal.g:2139:2: ( ( rule__Type__PointerTypeAssignment_2 ) )
                     {
-                    // InternalPascal.g:2133:2: ( ( rule__Type__PointerTypeAssignment_2 ) )
-                    // InternalPascal.g:2134:3: ( rule__Type__PointerTypeAssignment_2 )
+                    // InternalPascal.g:2139:2: ( ( rule__Type__PointerTypeAssignment_2 ) )
+                    // InternalPascal.g:2140:3: ( rule__Type__PointerTypeAssignment_2 )
                     {
                      before(grammarAccess.getTypeAccess().getPointerTypeAssignment_2()); 
-                    // InternalPascal.g:2135:3: ( rule__Type__PointerTypeAssignment_2 )
-                    // InternalPascal.g:2135:4: rule__Type__PointerTypeAssignment_2
+                    // InternalPascal.g:2141:3: ( rule__Type__PointerTypeAssignment_2 )
+                    // InternalPascal.g:2141:4: rule__Type__PointerTypeAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__Type__PointerTypeAssignment_2();
@@ -7037,13 +7000,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleType__Alternatives"
-    // InternalPascal.g:2143:1: rule__SimpleType__Alternatives : ( ( ( rule__SimpleType__ScalarTypeAssignment_0 ) ) | ( ( rule__SimpleType__SubrangeTypeAssignment_1 ) ) | ( ( rule__SimpleType__TypeIdentifierAssignment_2 ) ) | ( ( rule__SimpleType__StringtypeAssignment_3 ) ) );
+    // InternalPascal.g:2149:1: rule__SimpleType__Alternatives : ( ( ( rule__SimpleType__ScalarTypeAssignment_0 ) ) | ( ( rule__SimpleType__SubrangeTypeAssignment_1 ) ) | ( ( rule__SimpleType__TypeIdentifierAssignment_2 ) ) | ( ( rule__SimpleType__StringtypeAssignment_3 ) ) );
     public final void rule__SimpleType__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2147:1: ( ( ( rule__SimpleType__ScalarTypeAssignment_0 ) ) | ( ( rule__SimpleType__SubrangeTypeAssignment_1 ) ) | ( ( rule__SimpleType__TypeIdentifierAssignment_2 ) ) | ( ( rule__SimpleType__StringtypeAssignment_3 ) ) )
+            // InternalPascal.g:2153:1: ( ( ( rule__SimpleType__ScalarTypeAssignment_0 ) ) | ( ( rule__SimpleType__SubrangeTypeAssignment_1 ) ) | ( ( rule__SimpleType__TypeIdentifierAssignment_2 ) ) | ( ( rule__SimpleType__StringtypeAssignment_3 ) ) )
             int alt10=4;
             switch ( input.LA(1) ) {
             case 38:
@@ -7054,6 +7017,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             case RULE_NUM_REAL:
             case RULE_NUM:
             case RULE_STRING_LITERAL:
+            case RULE_BOOL:
             case 18:
             case 19:
             case 43:
@@ -7065,11 +7029,11 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                 {
                 int LA10_3 = input.LA(2);
 
-                if ( (LA10_3==EOF||LA10_3==RULE_IDENT||LA10_3==21||LA10_3==37||LA10_3==39||LA10_3==56) ) {
-                    alt10=3;
-                }
-                else if ( (LA10_3==50) ) {
+                if ( (LA10_3==50) ) {
                     alt10=2;
+                }
+                else if ( (LA10_3==EOF||LA10_3==RULE_IDENT||LA10_3==21||LA10_3==37||LA10_3==39||LA10_3==56) ) {
+                    alt10=3;
                 }
                 else {
                     NoViableAltException nvae =
@@ -7091,11 +7055,11 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                 {
                 int LA10_5 = input.LA(2);
 
-                if ( (LA10_5==53) ) {
-                    alt10=4;
-                }
-                else if ( (LA10_5==EOF||LA10_5==RULE_IDENT||LA10_5==21||LA10_5==37||LA10_5==39||LA10_5==56) ) {
+                if ( (LA10_5==EOF||LA10_5==RULE_IDENT||LA10_5==21||LA10_5==37||LA10_5==39||LA10_5==56) ) {
                     alt10=3;
+                }
+                else if ( (LA10_5==53) ) {
+                    alt10=4;
                 }
                 else {
                     NoViableAltException nvae =
@@ -7114,14 +7078,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt10) {
                 case 1 :
-                    // InternalPascal.g:2148:2: ( ( rule__SimpleType__ScalarTypeAssignment_0 ) )
+                    // InternalPascal.g:2154:2: ( ( rule__SimpleType__ScalarTypeAssignment_0 ) )
                     {
-                    // InternalPascal.g:2148:2: ( ( rule__SimpleType__ScalarTypeAssignment_0 ) )
-                    // InternalPascal.g:2149:3: ( rule__SimpleType__ScalarTypeAssignment_0 )
+                    // InternalPascal.g:2154:2: ( ( rule__SimpleType__ScalarTypeAssignment_0 ) )
+                    // InternalPascal.g:2155:3: ( rule__SimpleType__ScalarTypeAssignment_0 )
                     {
                      before(grammarAccess.getSimpleTypeAccess().getScalarTypeAssignment_0()); 
-                    // InternalPascal.g:2150:3: ( rule__SimpleType__ScalarTypeAssignment_0 )
-                    // InternalPascal.g:2150:4: rule__SimpleType__ScalarTypeAssignment_0
+                    // InternalPascal.g:2156:3: ( rule__SimpleType__ScalarTypeAssignment_0 )
+                    // InternalPascal.g:2156:4: rule__SimpleType__ScalarTypeAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__SimpleType__ScalarTypeAssignment_0();
@@ -7139,14 +7103,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2154:2: ( ( rule__SimpleType__SubrangeTypeAssignment_1 ) )
+                    // InternalPascal.g:2160:2: ( ( rule__SimpleType__SubrangeTypeAssignment_1 ) )
                     {
-                    // InternalPascal.g:2154:2: ( ( rule__SimpleType__SubrangeTypeAssignment_1 ) )
-                    // InternalPascal.g:2155:3: ( rule__SimpleType__SubrangeTypeAssignment_1 )
+                    // InternalPascal.g:2160:2: ( ( rule__SimpleType__SubrangeTypeAssignment_1 ) )
+                    // InternalPascal.g:2161:3: ( rule__SimpleType__SubrangeTypeAssignment_1 )
                     {
                      before(grammarAccess.getSimpleTypeAccess().getSubrangeTypeAssignment_1()); 
-                    // InternalPascal.g:2156:3: ( rule__SimpleType__SubrangeTypeAssignment_1 )
-                    // InternalPascal.g:2156:4: rule__SimpleType__SubrangeTypeAssignment_1
+                    // InternalPascal.g:2162:3: ( rule__SimpleType__SubrangeTypeAssignment_1 )
+                    // InternalPascal.g:2162:4: rule__SimpleType__SubrangeTypeAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__SimpleType__SubrangeTypeAssignment_1();
@@ -7164,14 +7128,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2160:2: ( ( rule__SimpleType__TypeIdentifierAssignment_2 ) )
+                    // InternalPascal.g:2166:2: ( ( rule__SimpleType__TypeIdentifierAssignment_2 ) )
                     {
-                    // InternalPascal.g:2160:2: ( ( rule__SimpleType__TypeIdentifierAssignment_2 ) )
-                    // InternalPascal.g:2161:3: ( rule__SimpleType__TypeIdentifierAssignment_2 )
+                    // InternalPascal.g:2166:2: ( ( rule__SimpleType__TypeIdentifierAssignment_2 ) )
+                    // InternalPascal.g:2167:3: ( rule__SimpleType__TypeIdentifierAssignment_2 )
                     {
                      before(grammarAccess.getSimpleTypeAccess().getTypeIdentifierAssignment_2()); 
-                    // InternalPascal.g:2162:3: ( rule__SimpleType__TypeIdentifierAssignment_2 )
-                    // InternalPascal.g:2162:4: rule__SimpleType__TypeIdentifierAssignment_2
+                    // InternalPascal.g:2168:3: ( rule__SimpleType__TypeIdentifierAssignment_2 )
+                    // InternalPascal.g:2168:4: rule__SimpleType__TypeIdentifierAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__SimpleType__TypeIdentifierAssignment_2();
@@ -7189,14 +7153,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalPascal.g:2166:2: ( ( rule__SimpleType__StringtypeAssignment_3 ) )
+                    // InternalPascal.g:2172:2: ( ( rule__SimpleType__StringtypeAssignment_3 ) )
                     {
-                    // InternalPascal.g:2166:2: ( ( rule__SimpleType__StringtypeAssignment_3 ) )
-                    // InternalPascal.g:2167:3: ( rule__SimpleType__StringtypeAssignment_3 )
+                    // InternalPascal.g:2172:2: ( ( rule__SimpleType__StringtypeAssignment_3 ) )
+                    // InternalPascal.g:2173:3: ( rule__SimpleType__StringtypeAssignment_3 )
                     {
                      before(grammarAccess.getSimpleTypeAccess().getStringtypeAssignment_3()); 
-                    // InternalPascal.g:2168:3: ( rule__SimpleType__StringtypeAssignment_3 )
-                    // InternalPascal.g:2168:4: rule__SimpleType__StringtypeAssignment_3
+                    // InternalPascal.g:2174:3: ( rule__SimpleType__StringtypeAssignment_3 )
+                    // InternalPascal.g:2174:4: rule__SimpleType__StringtypeAssignment_3
                     {
                     pushFollow(FOLLOW_2);
                     rule__SimpleType__StringtypeAssignment_3();
@@ -7231,13 +7195,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredType__Alternatives"
-    // InternalPascal.g:2176:1: rule__StructuredType__Alternatives : ( ( ( rule__StructuredType__Group_0__0 ) ) | ( ( rule__StructuredType__UnpackedStructuredType1Assignment_1 ) ) );
+    // InternalPascal.g:2182:1: rule__StructuredType__Alternatives : ( ( ( rule__StructuredType__Group_0__0 ) ) | ( ( rule__StructuredType__UnpackedStructuredType1Assignment_1 ) ) );
     public final void rule__StructuredType__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2180:1: ( ( ( rule__StructuredType__Group_0__0 ) ) | ( ( rule__StructuredType__UnpackedStructuredType1Assignment_1 ) ) )
+            // InternalPascal.g:2186:1: ( ( ( rule__StructuredType__Group_0__0 ) ) | ( ( rule__StructuredType__UnpackedStructuredType1Assignment_1 ) ) )
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -7255,14 +7219,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt11) {
                 case 1 :
-                    // InternalPascal.g:2181:2: ( ( rule__StructuredType__Group_0__0 ) )
+                    // InternalPascal.g:2187:2: ( ( rule__StructuredType__Group_0__0 ) )
                     {
-                    // InternalPascal.g:2181:2: ( ( rule__StructuredType__Group_0__0 ) )
-                    // InternalPascal.g:2182:3: ( rule__StructuredType__Group_0__0 )
+                    // InternalPascal.g:2187:2: ( ( rule__StructuredType__Group_0__0 ) )
+                    // InternalPascal.g:2188:3: ( rule__StructuredType__Group_0__0 )
                     {
                      before(grammarAccess.getStructuredTypeAccess().getGroup_0()); 
-                    // InternalPascal.g:2183:3: ( rule__StructuredType__Group_0__0 )
-                    // InternalPascal.g:2183:4: rule__StructuredType__Group_0__0
+                    // InternalPascal.g:2189:3: ( rule__StructuredType__Group_0__0 )
+                    // InternalPascal.g:2189:4: rule__StructuredType__Group_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__StructuredType__Group_0__0();
@@ -7280,14 +7244,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2187:2: ( ( rule__StructuredType__UnpackedStructuredType1Assignment_1 ) )
+                    // InternalPascal.g:2193:2: ( ( rule__StructuredType__UnpackedStructuredType1Assignment_1 ) )
                     {
-                    // InternalPascal.g:2187:2: ( ( rule__StructuredType__UnpackedStructuredType1Assignment_1 ) )
-                    // InternalPascal.g:2188:3: ( rule__StructuredType__UnpackedStructuredType1Assignment_1 )
+                    // InternalPascal.g:2193:2: ( ( rule__StructuredType__UnpackedStructuredType1Assignment_1 ) )
+                    // InternalPascal.g:2194:3: ( rule__StructuredType__UnpackedStructuredType1Assignment_1 )
                     {
                      before(grammarAccess.getStructuredTypeAccess().getUnpackedStructuredType1Assignment_1()); 
-                    // InternalPascal.g:2189:3: ( rule__StructuredType__UnpackedStructuredType1Assignment_1 )
-                    // InternalPascal.g:2189:4: rule__StructuredType__UnpackedStructuredType1Assignment_1
+                    // InternalPascal.g:2195:3: ( rule__StructuredType__UnpackedStructuredType1Assignment_1 )
+                    // InternalPascal.g:2195:4: rule__StructuredType__UnpackedStructuredType1Assignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__StructuredType__UnpackedStructuredType1Assignment_1();
@@ -7322,13 +7286,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__Alternatives_2"
-    // InternalPascal.g:2197:1: rule__Stringtype__Alternatives_2 : ( ( ( rule__Stringtype__IdentifierAssignment_2_0 ) ) | ( ( rule__Stringtype__UnsignedNumberAssignment_2_1 ) ) );
+    // InternalPascal.g:2203:1: rule__Stringtype__Alternatives_2 : ( ( ( rule__Stringtype__IdentifierAssignment_2_0 ) ) | ( ( rule__Stringtype__UnsignedNumberAssignment_2_1 ) ) );
     public final void rule__Stringtype__Alternatives_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2201:1: ( ( ( rule__Stringtype__IdentifierAssignment_2_0 ) ) | ( ( rule__Stringtype__UnsignedNumberAssignment_2_1 ) ) )
+            // InternalPascal.g:2207:1: ( ( ( rule__Stringtype__IdentifierAssignment_2_0 ) ) | ( ( rule__Stringtype__UnsignedNumberAssignment_2_1 ) ) )
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -7346,14 +7310,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt12) {
                 case 1 :
-                    // InternalPascal.g:2202:2: ( ( rule__Stringtype__IdentifierAssignment_2_0 ) )
+                    // InternalPascal.g:2208:2: ( ( rule__Stringtype__IdentifierAssignment_2_0 ) )
                     {
-                    // InternalPascal.g:2202:2: ( ( rule__Stringtype__IdentifierAssignment_2_0 ) )
-                    // InternalPascal.g:2203:3: ( rule__Stringtype__IdentifierAssignment_2_0 )
+                    // InternalPascal.g:2208:2: ( ( rule__Stringtype__IdentifierAssignment_2_0 ) )
+                    // InternalPascal.g:2209:3: ( rule__Stringtype__IdentifierAssignment_2_0 )
                     {
                      before(grammarAccess.getStringtypeAccess().getIdentifierAssignment_2_0()); 
-                    // InternalPascal.g:2204:3: ( rule__Stringtype__IdentifierAssignment_2_0 )
-                    // InternalPascal.g:2204:4: rule__Stringtype__IdentifierAssignment_2_0
+                    // InternalPascal.g:2210:3: ( rule__Stringtype__IdentifierAssignment_2_0 )
+                    // InternalPascal.g:2210:4: rule__Stringtype__IdentifierAssignment_2_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Stringtype__IdentifierAssignment_2_0();
@@ -7371,14 +7335,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2208:2: ( ( rule__Stringtype__UnsignedNumberAssignment_2_1 ) )
+                    // InternalPascal.g:2214:2: ( ( rule__Stringtype__UnsignedNumberAssignment_2_1 ) )
                     {
-                    // InternalPascal.g:2208:2: ( ( rule__Stringtype__UnsignedNumberAssignment_2_1 ) )
-                    // InternalPascal.g:2209:3: ( rule__Stringtype__UnsignedNumberAssignment_2_1 )
+                    // InternalPascal.g:2214:2: ( ( rule__Stringtype__UnsignedNumberAssignment_2_1 ) )
+                    // InternalPascal.g:2215:3: ( rule__Stringtype__UnsignedNumberAssignment_2_1 )
                     {
                      before(grammarAccess.getStringtypeAccess().getUnsignedNumberAssignment_2_1()); 
-                    // InternalPascal.g:2210:3: ( rule__Stringtype__UnsignedNumberAssignment_2_1 )
-                    // InternalPascal.g:2210:4: rule__Stringtype__UnsignedNumberAssignment_2_1
+                    // InternalPascal.g:2216:3: ( rule__Stringtype__UnsignedNumberAssignment_2_1 )
+                    // InternalPascal.g:2216:4: rule__Stringtype__UnsignedNumberAssignment_2_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__Stringtype__UnsignedNumberAssignment_2_1();
@@ -7413,13 +7377,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__Alternatives"
-    // InternalPascal.g:2218:1: rule__FieldList__Alternatives : ( ( ( rule__FieldList__Group_0__0 ) ) | ( ( rule__FieldList__VariantPart1Assignment_1 ) ) );
+    // InternalPascal.g:2224:1: rule__FieldList__Alternatives : ( ( ( rule__FieldList__Group_0__0 ) ) | ( ( rule__FieldList__VariantPart1Assignment_1 ) ) );
     public final void rule__FieldList__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2222:1: ( ( ( rule__FieldList__Group_0__0 ) ) | ( ( rule__FieldList__VariantPart1Assignment_1 ) ) )
+            // InternalPascal.g:2228:1: ( ( ( rule__FieldList__Group_0__0 ) ) | ( ( rule__FieldList__VariantPart1Assignment_1 ) ) )
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -7437,14 +7401,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt13) {
                 case 1 :
-                    // InternalPascal.g:2223:2: ( ( rule__FieldList__Group_0__0 ) )
+                    // InternalPascal.g:2229:2: ( ( rule__FieldList__Group_0__0 ) )
                     {
-                    // InternalPascal.g:2223:2: ( ( rule__FieldList__Group_0__0 ) )
-                    // InternalPascal.g:2224:3: ( rule__FieldList__Group_0__0 )
+                    // InternalPascal.g:2229:2: ( ( rule__FieldList__Group_0__0 ) )
+                    // InternalPascal.g:2230:3: ( rule__FieldList__Group_0__0 )
                     {
                      before(grammarAccess.getFieldListAccess().getGroup_0()); 
-                    // InternalPascal.g:2225:3: ( rule__FieldList__Group_0__0 )
-                    // InternalPascal.g:2225:4: rule__FieldList__Group_0__0
+                    // InternalPascal.g:2231:3: ( rule__FieldList__Group_0__0 )
+                    // InternalPascal.g:2231:4: rule__FieldList__Group_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__FieldList__Group_0__0();
@@ -7462,14 +7426,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2229:2: ( ( rule__FieldList__VariantPart1Assignment_1 ) )
+                    // InternalPascal.g:2235:2: ( ( rule__FieldList__VariantPart1Assignment_1 ) )
                     {
-                    // InternalPascal.g:2229:2: ( ( rule__FieldList__VariantPart1Assignment_1 ) )
-                    // InternalPascal.g:2230:3: ( rule__FieldList__VariantPart1Assignment_1 )
+                    // InternalPascal.g:2235:2: ( ( rule__FieldList__VariantPart1Assignment_1 ) )
+                    // InternalPascal.g:2236:3: ( rule__FieldList__VariantPart1Assignment_1 )
                     {
                      before(grammarAccess.getFieldListAccess().getVariantPart1Assignment_1()); 
-                    // InternalPascal.g:2231:3: ( rule__FieldList__VariantPart1Assignment_1 )
-                    // InternalPascal.g:2231:4: rule__FieldList__VariantPart1Assignment_1
+                    // InternalPascal.g:2237:3: ( rule__FieldList__VariantPart1Assignment_1 )
+                    // InternalPascal.g:2237:4: rule__FieldList__VariantPart1Assignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__FieldList__VariantPart1Assignment_1();
@@ -7504,24 +7468,24 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__Alternatives"
-    // InternalPascal.g:2239:1: rule__Tag__Alternatives : ( ( ( rule__Tag__Group_0__0 ) ) | ( ( rule__Tag__TypeIdentifier1Assignment_1 ) ) );
+    // InternalPascal.g:2245:1: rule__Tag__Alternatives : ( ( ( rule__Tag__Group_0__0 ) ) | ( ( rule__Tag__TypeIdentifier1Assignment_1 ) ) );
     public final void rule__Tag__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2243:1: ( ( ( rule__Tag__Group_0__0 ) ) | ( ( rule__Tag__TypeIdentifier1Assignment_1 ) ) )
+            // InternalPascal.g:2249:1: ( ( ( rule__Tag__Group_0__0 ) ) | ( ( rule__Tag__TypeIdentifier1Assignment_1 ) ) )
             int alt14=2;
             int LA14_0 = input.LA(1);
 
             if ( (LA14_0==RULE_IDENT) ) {
                 int LA14_1 = input.LA(2);
 
-                if ( (LA14_1==EOF||LA14_1==58) ) {
-                    alt14=2;
-                }
-                else if ( (LA14_1==47) ) {
+                if ( (LA14_1==47) ) {
                     alt14=1;
+                }
+                else if ( (LA14_1==EOF||LA14_1==58) ) {
+                    alt14=2;
                 }
                 else {
                     NoViableAltException nvae =
@@ -7541,14 +7505,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt14) {
                 case 1 :
-                    // InternalPascal.g:2244:2: ( ( rule__Tag__Group_0__0 ) )
+                    // InternalPascal.g:2250:2: ( ( rule__Tag__Group_0__0 ) )
                     {
-                    // InternalPascal.g:2244:2: ( ( rule__Tag__Group_0__0 ) )
-                    // InternalPascal.g:2245:3: ( rule__Tag__Group_0__0 )
+                    // InternalPascal.g:2250:2: ( ( rule__Tag__Group_0__0 ) )
+                    // InternalPascal.g:2251:3: ( rule__Tag__Group_0__0 )
                     {
                      before(grammarAccess.getTagAccess().getGroup_0()); 
-                    // InternalPascal.g:2246:3: ( rule__Tag__Group_0__0 )
-                    // InternalPascal.g:2246:4: rule__Tag__Group_0__0
+                    // InternalPascal.g:2252:3: ( rule__Tag__Group_0__0 )
+                    // InternalPascal.g:2252:4: rule__Tag__Group_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Tag__Group_0__0();
@@ -7566,14 +7530,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2250:2: ( ( rule__Tag__TypeIdentifier1Assignment_1 ) )
+                    // InternalPascal.g:2256:2: ( ( rule__Tag__TypeIdentifier1Assignment_1 ) )
                     {
-                    // InternalPascal.g:2250:2: ( ( rule__Tag__TypeIdentifier1Assignment_1 ) )
-                    // InternalPascal.g:2251:3: ( rule__Tag__TypeIdentifier1Assignment_1 )
+                    // InternalPascal.g:2256:2: ( ( rule__Tag__TypeIdentifier1Assignment_1 ) )
+                    // InternalPascal.g:2257:3: ( rule__Tag__TypeIdentifier1Assignment_1 )
                     {
                      before(grammarAccess.getTagAccess().getTypeIdentifier1Assignment_1()); 
-                    // InternalPascal.g:2252:3: ( rule__Tag__TypeIdentifier1Assignment_1 )
-                    // InternalPascal.g:2252:4: rule__Tag__TypeIdentifier1Assignment_1
+                    // InternalPascal.g:2258:3: ( rule__Tag__TypeIdentifier1Assignment_1 )
+                    // InternalPascal.g:2258:4: rule__Tag__TypeIdentifier1Assignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__Tag__TypeIdentifier1Assignment_1();
@@ -7608,13 +7572,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureOrFunctionDeclaration__Alternatives"
-    // InternalPascal.g:2260:1: rule__ProcedureOrFunctionDeclaration__Alternatives : ( ( ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 ) ) | ( ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 ) ) );
+    // InternalPascal.g:2266:1: rule__ProcedureOrFunctionDeclaration__Alternatives : ( ( ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 ) ) | ( ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 ) ) );
     public final void rule__ProcedureOrFunctionDeclaration__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2264:1: ( ( ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 ) ) | ( ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 ) ) )
+            // InternalPascal.g:2270:1: ( ( ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 ) ) | ( ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 ) ) )
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -7632,14 +7596,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt15) {
                 case 1 :
-                    // InternalPascal.g:2265:2: ( ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 ) )
+                    // InternalPascal.g:2271:2: ( ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 ) )
                     {
-                    // InternalPascal.g:2265:2: ( ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 ) )
-                    // InternalPascal.g:2266:3: ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 )
+                    // InternalPascal.g:2271:2: ( ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 ) )
+                    // InternalPascal.g:2272:3: ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 )
                     {
                      before(grammarAccess.getProcedureOrFunctionDeclarationAccess().getProcedureDeclarationAssignment_0()); 
-                    // InternalPascal.g:2267:3: ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 )
-                    // InternalPascal.g:2267:4: rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0
+                    // InternalPascal.g:2273:3: ( rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 )
+                    // InternalPascal.g:2273:4: rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0();
@@ -7657,14 +7621,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2271:2: ( ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 ) )
+                    // InternalPascal.g:2277:2: ( ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 ) )
                     {
-                    // InternalPascal.g:2271:2: ( ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 ) )
-                    // InternalPascal.g:2272:3: ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 )
+                    // InternalPascal.g:2277:2: ( ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 ) )
+                    // InternalPascal.g:2278:3: ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 )
                     {
                      before(grammarAccess.getProcedureOrFunctionDeclarationAccess().getFunctionDeclarationAssignment_1()); 
-                    // InternalPascal.g:2273:3: ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 )
-                    // InternalPascal.g:2273:4: rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1
+                    // InternalPascal.g:2279:3: ( rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 )
+                    // InternalPascal.g:2279:4: rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1();
@@ -7699,13 +7663,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statement__Alternatives"
-    // InternalPascal.g:2281:1: rule__Statement__Alternatives : ( ( ( rule__Statement__Group_0__0 ) ) | ( ( rule__Statement__UnlabelledStatementAssignment_1 ) ) );
+    // InternalPascal.g:2287:1: rule__Statement__Alternatives : ( ( ( rule__Statement__Group_0__0 ) ) | ( ( rule__Statement__UnlabelledStatementAssignment_1 ) ) );
     public final void rule__Statement__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2285:1: ( ( ( rule__Statement__Group_0__0 ) ) | ( ( rule__Statement__UnlabelledStatementAssignment_1 ) ) )
+            // InternalPascal.g:2291:1: ( ( ( rule__Statement__Group_0__0 ) ) | ( ( rule__Statement__UnlabelledStatementAssignment_1 ) ) )
             int alt16=2;
             switch ( input.LA(1) ) {
             case RULE_NUM:
@@ -7717,11 +7681,11 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                 {
                 int LA16_2 = input.LA(2);
 
-                if ( (LA16_2==EOF||LA16_2==20||LA16_2==35||(LA16_2>=37 && LA16_2<=38)||LA16_2==53||LA16_2==56||LA16_2==59||LA16_2==61) ) {
-                    alt16=2;
-                }
-                else if ( (LA16_2==47) ) {
+                if ( (LA16_2==47) ) {
                     alt16=1;
+                }
+                else if ( (LA16_2==EOF||LA16_2==20||LA16_2==35||(LA16_2>=37 && LA16_2<=38)||LA16_2==53||LA16_2==56||LA16_2==59||LA16_2==61) ) {
+                    alt16=2;
                 }
                 else {
                     NoViableAltException nvae =
@@ -7751,14 +7715,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt16) {
                 case 1 :
-                    // InternalPascal.g:2286:2: ( ( rule__Statement__Group_0__0 ) )
+                    // InternalPascal.g:2292:2: ( ( rule__Statement__Group_0__0 ) )
                     {
-                    // InternalPascal.g:2286:2: ( ( rule__Statement__Group_0__0 ) )
-                    // InternalPascal.g:2287:3: ( rule__Statement__Group_0__0 )
+                    // InternalPascal.g:2292:2: ( ( rule__Statement__Group_0__0 ) )
+                    // InternalPascal.g:2293:3: ( rule__Statement__Group_0__0 )
                     {
                      before(grammarAccess.getStatementAccess().getGroup_0()); 
-                    // InternalPascal.g:2288:3: ( rule__Statement__Group_0__0 )
-                    // InternalPascal.g:2288:4: rule__Statement__Group_0__0
+                    // InternalPascal.g:2294:3: ( rule__Statement__Group_0__0 )
+                    // InternalPascal.g:2294:4: rule__Statement__Group_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Statement__Group_0__0();
@@ -7776,14 +7740,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2292:2: ( ( rule__Statement__UnlabelledStatementAssignment_1 ) )
+                    // InternalPascal.g:2298:2: ( ( rule__Statement__UnlabelledStatementAssignment_1 ) )
                     {
-                    // InternalPascal.g:2292:2: ( ( rule__Statement__UnlabelledStatementAssignment_1 ) )
-                    // InternalPascal.g:2293:3: ( rule__Statement__UnlabelledStatementAssignment_1 )
+                    // InternalPascal.g:2298:2: ( ( rule__Statement__UnlabelledStatementAssignment_1 ) )
+                    // InternalPascal.g:2299:3: ( rule__Statement__UnlabelledStatementAssignment_1 )
                     {
                      before(grammarAccess.getStatementAccess().getUnlabelledStatementAssignment_1()); 
-                    // InternalPascal.g:2294:3: ( rule__Statement__UnlabelledStatementAssignment_1 )
-                    // InternalPascal.g:2294:4: rule__Statement__UnlabelledStatementAssignment_1
+                    // InternalPascal.g:2300:3: ( rule__Statement__UnlabelledStatementAssignment_1 )
+                    // InternalPascal.g:2300:4: rule__Statement__UnlabelledStatementAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__Statement__UnlabelledStatementAssignment_1();
@@ -7818,13 +7782,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Alternatives"
-    // InternalPascal.g:2302:1: rule__UnlabelledStatement__Alternatives : ( ( ( rule__UnlabelledStatement__SimpleStatementAssignment_0 ) ) | ( ( rule__UnlabelledStatement__StructuredStatementAssignment_1 ) ) | ( ( rule__UnlabelledStatement__Group_2__0 ) ) );
+    // InternalPascal.g:2308:1: rule__UnlabelledStatement__Alternatives : ( ( ( rule__UnlabelledStatement__SimpleStatementAssignment_0 ) ) | ( ( rule__UnlabelledStatement__StructuredStatementAssignment_1 ) ) | ( ( rule__UnlabelledStatement__Group_2__0 ) ) );
     public final void rule__UnlabelledStatement__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2306:1: ( ( ( rule__UnlabelledStatement__SimpleStatementAssignment_0 ) ) | ( ( rule__UnlabelledStatement__StructuredStatementAssignment_1 ) ) | ( ( rule__UnlabelledStatement__Group_2__0 ) ) )
+            // InternalPascal.g:2312:1: ( ( ( rule__UnlabelledStatement__SimpleStatementAssignment_0 ) ) | ( ( rule__UnlabelledStatement__StructuredStatementAssignment_1 ) ) | ( ( rule__UnlabelledStatement__Group_2__0 ) ) )
             int alt17=3;
             switch ( input.LA(1) ) {
             case EOF:
@@ -7840,11 +7804,11 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                 {
                 int LA17_2 = input.LA(2);
 
-                if ( (LA17_2==20||LA17_2==35||LA17_2==53||LA17_2==59||LA17_2==61) ) {
-                    alt17=1;
-                }
-                else if ( (LA17_2==EOF||(LA17_2>=37 && LA17_2<=38)||LA17_2==56) ) {
+                if ( (LA17_2==EOF||(LA17_2>=37 && LA17_2<=38)||LA17_2==56) ) {
                     alt17=3;
+                }
+                else if ( (LA17_2==20||LA17_2==35||LA17_2==53||LA17_2==59||LA17_2==61) ) {
+                    alt17=1;
                 }
                 else {
                     NoViableAltException nvae =
@@ -7869,14 +7833,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt17) {
                 case 1 :
-                    // InternalPascal.g:2307:2: ( ( rule__UnlabelledStatement__SimpleStatementAssignment_0 ) )
+                    // InternalPascal.g:2313:2: ( ( rule__UnlabelledStatement__SimpleStatementAssignment_0 ) )
                     {
-                    // InternalPascal.g:2307:2: ( ( rule__UnlabelledStatement__SimpleStatementAssignment_0 ) )
-                    // InternalPascal.g:2308:3: ( rule__UnlabelledStatement__SimpleStatementAssignment_0 )
+                    // InternalPascal.g:2313:2: ( ( rule__UnlabelledStatement__SimpleStatementAssignment_0 ) )
+                    // InternalPascal.g:2314:3: ( rule__UnlabelledStatement__SimpleStatementAssignment_0 )
                     {
                      before(grammarAccess.getUnlabelledStatementAccess().getSimpleStatementAssignment_0()); 
-                    // InternalPascal.g:2309:3: ( rule__UnlabelledStatement__SimpleStatementAssignment_0 )
-                    // InternalPascal.g:2309:4: rule__UnlabelledStatement__SimpleStatementAssignment_0
+                    // InternalPascal.g:2315:3: ( rule__UnlabelledStatement__SimpleStatementAssignment_0 )
+                    // InternalPascal.g:2315:4: rule__UnlabelledStatement__SimpleStatementAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnlabelledStatement__SimpleStatementAssignment_0();
@@ -7894,14 +7858,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2313:2: ( ( rule__UnlabelledStatement__StructuredStatementAssignment_1 ) )
+                    // InternalPascal.g:2319:2: ( ( rule__UnlabelledStatement__StructuredStatementAssignment_1 ) )
                     {
-                    // InternalPascal.g:2313:2: ( ( rule__UnlabelledStatement__StructuredStatementAssignment_1 ) )
-                    // InternalPascal.g:2314:3: ( rule__UnlabelledStatement__StructuredStatementAssignment_1 )
+                    // InternalPascal.g:2319:2: ( ( rule__UnlabelledStatement__StructuredStatementAssignment_1 ) )
+                    // InternalPascal.g:2320:3: ( rule__UnlabelledStatement__StructuredStatementAssignment_1 )
                     {
                      before(grammarAccess.getUnlabelledStatementAccess().getStructuredStatementAssignment_1()); 
-                    // InternalPascal.g:2315:3: ( rule__UnlabelledStatement__StructuredStatementAssignment_1 )
-                    // InternalPascal.g:2315:4: rule__UnlabelledStatement__StructuredStatementAssignment_1
+                    // InternalPascal.g:2321:3: ( rule__UnlabelledStatement__StructuredStatementAssignment_1 )
+                    // InternalPascal.g:2321:4: rule__UnlabelledStatement__StructuredStatementAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnlabelledStatement__StructuredStatementAssignment_1();
@@ -7919,14 +7883,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2319:2: ( ( rule__UnlabelledStatement__Group_2__0 ) )
+                    // InternalPascal.g:2325:2: ( ( rule__UnlabelledStatement__Group_2__0 ) )
                     {
-                    // InternalPascal.g:2319:2: ( ( rule__UnlabelledStatement__Group_2__0 ) )
-                    // InternalPascal.g:2320:3: ( rule__UnlabelledStatement__Group_2__0 )
+                    // InternalPascal.g:2325:2: ( ( rule__UnlabelledStatement__Group_2__0 ) )
+                    // InternalPascal.g:2326:3: ( rule__UnlabelledStatement__Group_2__0 )
                     {
                      before(grammarAccess.getUnlabelledStatementAccess().getGroup_2()); 
-                    // InternalPascal.g:2321:3: ( rule__UnlabelledStatement__Group_2__0 )
-                    // InternalPascal.g:2321:4: rule__UnlabelledStatement__Group_2__0
+                    // InternalPascal.g:2327:3: ( rule__UnlabelledStatement__Group_2__0 )
+                    // InternalPascal.g:2327:4: rule__UnlabelledStatement__Group_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnlabelledStatement__Group_2__0();
@@ -7961,13 +7925,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleStatement__Alternatives_1"
-    // InternalPascal.g:2329:1: rule__SimpleStatement__Alternatives_1 : ( ( ( rule__SimpleStatement__GotoStatementAssignment_1_0 ) ) | ( ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 ) ) );
+    // InternalPascal.g:2335:1: rule__SimpleStatement__Alternatives_1 : ( ( ( rule__SimpleStatement__GotoStatementAssignment_1_0 ) ) | ( ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 ) ) );
     public final void rule__SimpleStatement__Alternatives_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2333:1: ( ( ( rule__SimpleStatement__GotoStatementAssignment_1_0 ) ) | ( ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 ) ) )
+            // InternalPascal.g:2339:1: ( ( ( rule__SimpleStatement__GotoStatementAssignment_1_0 ) ) | ( ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 ) ) )
             int alt18=2;
             int LA18_0 = input.LA(1);
 
@@ -7985,14 +7949,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt18) {
                 case 1 :
-                    // InternalPascal.g:2334:2: ( ( rule__SimpleStatement__GotoStatementAssignment_1_0 ) )
+                    // InternalPascal.g:2340:2: ( ( rule__SimpleStatement__GotoStatementAssignment_1_0 ) )
                     {
-                    // InternalPascal.g:2334:2: ( ( rule__SimpleStatement__GotoStatementAssignment_1_0 ) )
-                    // InternalPascal.g:2335:3: ( rule__SimpleStatement__GotoStatementAssignment_1_0 )
+                    // InternalPascal.g:2340:2: ( ( rule__SimpleStatement__GotoStatementAssignment_1_0 ) )
+                    // InternalPascal.g:2341:3: ( rule__SimpleStatement__GotoStatementAssignment_1_0 )
                     {
                      before(grammarAccess.getSimpleStatementAccess().getGotoStatementAssignment_1_0()); 
-                    // InternalPascal.g:2336:3: ( rule__SimpleStatement__GotoStatementAssignment_1_0 )
-                    // InternalPascal.g:2336:4: rule__SimpleStatement__GotoStatementAssignment_1_0
+                    // InternalPascal.g:2342:3: ( rule__SimpleStatement__GotoStatementAssignment_1_0 )
+                    // InternalPascal.g:2342:4: rule__SimpleStatement__GotoStatementAssignment_1_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__SimpleStatement__GotoStatementAssignment_1_0();
@@ -8010,14 +7974,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2340:2: ( ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 ) )
+                    // InternalPascal.g:2346:2: ( ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 ) )
                     {
-                    // InternalPascal.g:2340:2: ( ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 ) )
-                    // InternalPascal.g:2341:3: ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 )
+                    // InternalPascal.g:2346:2: ( ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 ) )
+                    // InternalPascal.g:2347:3: ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 )
                     {
                      before(grammarAccess.getSimpleStatementAccess().getAssignmentStatementAssignment_1_1()); 
-                    // InternalPascal.g:2342:3: ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 )
-                    // InternalPascal.g:2342:4: rule__SimpleStatement__AssignmentStatementAssignment_1_1
+                    // InternalPascal.g:2348:3: ( rule__SimpleStatement__AssignmentStatementAssignment_1_1 )
+                    // InternalPascal.g:2348:4: rule__SimpleStatement__AssignmentStatementAssignment_1_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__SimpleStatement__AssignmentStatementAssignment_1_1();
@@ -8052,13 +8016,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Alternatives_0"
-    // InternalPascal.g:2350:1: rule__Variable__Alternatives_0 : ( ( ( rule__Variable__Group_0_0__0 ) ) | ( ( rule__Variable__IdentifierAssignment_0_1 ) ) );
+    // InternalPascal.g:2356:1: rule__Variable__Alternatives_0 : ( ( ( rule__Variable__Group_0_0__0 ) ) | ( ( rule__Variable__IdentifierAssignment_0_1 ) ) );
     public final void rule__Variable__Alternatives_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2354:1: ( ( ( rule__Variable__Group_0_0__0 ) ) | ( ( rule__Variable__IdentifierAssignment_0_1 ) ) )
+            // InternalPascal.g:2360:1: ( ( ( rule__Variable__Group_0_0__0 ) ) | ( ( rule__Variable__IdentifierAssignment_0_1 ) ) )
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -8076,14 +8040,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt19) {
                 case 1 :
-                    // InternalPascal.g:2355:2: ( ( rule__Variable__Group_0_0__0 ) )
+                    // InternalPascal.g:2361:2: ( ( rule__Variable__Group_0_0__0 ) )
                     {
-                    // InternalPascal.g:2355:2: ( ( rule__Variable__Group_0_0__0 ) )
-                    // InternalPascal.g:2356:3: ( rule__Variable__Group_0_0__0 )
+                    // InternalPascal.g:2361:2: ( ( rule__Variable__Group_0_0__0 ) )
+                    // InternalPascal.g:2362:3: ( rule__Variable__Group_0_0__0 )
                     {
                      before(grammarAccess.getVariableAccess().getGroup_0_0()); 
-                    // InternalPascal.g:2357:3: ( rule__Variable__Group_0_0__0 )
-                    // InternalPascal.g:2357:4: rule__Variable__Group_0_0__0
+                    // InternalPascal.g:2363:3: ( rule__Variable__Group_0_0__0 )
+                    // InternalPascal.g:2363:4: rule__Variable__Group_0_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Variable__Group_0_0__0();
@@ -8101,14 +8065,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2361:2: ( ( rule__Variable__IdentifierAssignment_0_1 ) )
+                    // InternalPascal.g:2367:2: ( ( rule__Variable__IdentifierAssignment_0_1 ) )
                     {
-                    // InternalPascal.g:2361:2: ( ( rule__Variable__IdentifierAssignment_0_1 ) )
-                    // InternalPascal.g:2362:3: ( rule__Variable__IdentifierAssignment_0_1 )
+                    // InternalPascal.g:2367:2: ( ( rule__Variable__IdentifierAssignment_0_1 ) )
+                    // InternalPascal.g:2368:3: ( rule__Variable__IdentifierAssignment_0_1 )
                     {
                      before(grammarAccess.getVariableAccess().getIdentifierAssignment_0_1()); 
-                    // InternalPascal.g:2363:3: ( rule__Variable__IdentifierAssignment_0_1 )
-                    // InternalPascal.g:2363:4: rule__Variable__IdentifierAssignment_0_1
+                    // InternalPascal.g:2369:3: ( rule__Variable__IdentifierAssignment_0_1 )
+                    // InternalPascal.g:2369:4: rule__Variable__IdentifierAssignment_0_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__Variable__IdentifierAssignment_0_1();
@@ -8143,13 +8107,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Alternatives_1"
-    // InternalPascal.g:2371:1: rule__Variable__Alternatives_1 : ( ( ( rule__Variable__Group_1_0__0 ) ) | ( ( rule__Variable__Group_1_1__0 ) ) | ( ( rule__Variable__Group_1_2__0 ) ) | ( '^' ) );
+    // InternalPascal.g:2377:1: rule__Variable__Alternatives_1 : ( ( ( rule__Variable__Group_1_0__0 ) ) | ( ( rule__Variable__Group_1_1__0 ) ) | ( ( rule__Variable__Group_1_2__0 ) ) | ( '^' ) );
     public final void rule__Variable__Alternatives_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2375:1: ( ( ( rule__Variable__Group_1_0__0 ) ) | ( ( rule__Variable__Group_1_1__0 ) ) | ( ( rule__Variable__Group_1_2__0 ) ) | ( '^' ) )
+            // InternalPascal.g:2381:1: ( ( ( rule__Variable__Group_1_0__0 ) ) | ( ( rule__Variable__Group_1_1__0 ) ) | ( ( rule__Variable__Group_1_2__0 ) ) | ( '^' ) )
             int alt20=4;
             switch ( input.LA(1) ) {
             case 53:
@@ -8181,14 +8145,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt20) {
                 case 1 :
-                    // InternalPascal.g:2376:2: ( ( rule__Variable__Group_1_0__0 ) )
+                    // InternalPascal.g:2382:2: ( ( rule__Variable__Group_1_0__0 ) )
                     {
-                    // InternalPascal.g:2376:2: ( ( rule__Variable__Group_1_0__0 ) )
-                    // InternalPascal.g:2377:3: ( rule__Variable__Group_1_0__0 )
+                    // InternalPascal.g:2382:2: ( ( rule__Variable__Group_1_0__0 ) )
+                    // InternalPascal.g:2383:3: ( rule__Variable__Group_1_0__0 )
                     {
                      before(grammarAccess.getVariableAccess().getGroup_1_0()); 
-                    // InternalPascal.g:2378:3: ( rule__Variable__Group_1_0__0 )
-                    // InternalPascal.g:2378:4: rule__Variable__Group_1_0__0
+                    // InternalPascal.g:2384:3: ( rule__Variable__Group_1_0__0 )
+                    // InternalPascal.g:2384:4: rule__Variable__Group_1_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Variable__Group_1_0__0();
@@ -8206,14 +8170,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2382:2: ( ( rule__Variable__Group_1_1__0 ) )
+                    // InternalPascal.g:2388:2: ( ( rule__Variable__Group_1_1__0 ) )
                     {
-                    // InternalPascal.g:2382:2: ( ( rule__Variable__Group_1_1__0 ) )
-                    // InternalPascal.g:2383:3: ( rule__Variable__Group_1_1__0 )
+                    // InternalPascal.g:2388:2: ( ( rule__Variable__Group_1_1__0 ) )
+                    // InternalPascal.g:2389:3: ( rule__Variable__Group_1_1__0 )
                     {
                      before(grammarAccess.getVariableAccess().getGroup_1_1()); 
-                    // InternalPascal.g:2384:3: ( rule__Variable__Group_1_1__0 )
-                    // InternalPascal.g:2384:4: rule__Variable__Group_1_1__0
+                    // InternalPascal.g:2390:3: ( rule__Variable__Group_1_1__0 )
+                    // InternalPascal.g:2390:4: rule__Variable__Group_1_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Variable__Group_1_1__0();
@@ -8231,14 +8195,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2388:2: ( ( rule__Variable__Group_1_2__0 ) )
+                    // InternalPascal.g:2394:2: ( ( rule__Variable__Group_1_2__0 ) )
                     {
-                    // InternalPascal.g:2388:2: ( ( rule__Variable__Group_1_2__0 ) )
-                    // InternalPascal.g:2389:3: ( rule__Variable__Group_1_2__0 )
+                    // InternalPascal.g:2394:2: ( ( rule__Variable__Group_1_2__0 ) )
+                    // InternalPascal.g:2395:3: ( rule__Variable__Group_1_2__0 )
                     {
                      before(grammarAccess.getVariableAccess().getGroup_1_2()); 
-                    // InternalPascal.g:2390:3: ( rule__Variable__Group_1_2__0 )
-                    // InternalPascal.g:2390:4: rule__Variable__Group_1_2__0
+                    // InternalPascal.g:2396:3: ( rule__Variable__Group_1_2__0 )
+                    // InternalPascal.g:2396:4: rule__Variable__Group_1_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Variable__Group_1_2__0();
@@ -8256,10 +8220,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalPascal.g:2394:2: ( '^' )
+                    // InternalPascal.g:2400:2: ( '^' )
                     {
-                    // InternalPascal.g:2394:2: ( '^' )
-                    // InternalPascal.g:2395:3: '^'
+                    // InternalPascal.g:2400:2: ( '^' )
+                    // InternalPascal.g:2401:3: '^'
                     {
                      before(grammarAccess.getVariableAccess().getCircumflexAccentKeyword_1_3()); 
                     match(input,20,FOLLOW_2); 
@@ -8288,13 +8252,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Relationaloperator__Alternatives"
-    // InternalPascal.g:2404:1: rule__Relationaloperator__Alternatives : ( ( '=' ) | ( '<>' ) | ( '<' ) | ( '<=' ) | ( '>=' ) | ( '>' ) | ( 'in' ) );
+    // InternalPascal.g:2410:1: rule__Relationaloperator__Alternatives : ( ( '=' ) | ( '<>' ) | ( '<' ) | ( '<=' ) | ( '>=' ) | ( '>' ) | ( 'in' ) );
     public final void rule__Relationaloperator__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2408:1: ( ( '=' ) | ( '<>' ) | ( '<' ) | ( '<=' ) | ( '>=' ) | ( '>' ) | ( 'in' ) )
+            // InternalPascal.g:2414:1: ( ( '=' ) | ( '<>' ) | ( '<' ) | ( '<=' ) | ( '>=' ) | ( '>' ) | ( 'in' ) )
             int alt21=7;
             switch ( input.LA(1) ) {
             case 21:
@@ -8341,10 +8305,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt21) {
                 case 1 :
-                    // InternalPascal.g:2409:2: ( '=' )
+                    // InternalPascal.g:2415:2: ( '=' )
                     {
-                    // InternalPascal.g:2409:2: ( '=' )
-                    // InternalPascal.g:2410:3: '='
+                    // InternalPascal.g:2415:2: ( '=' )
+                    // InternalPascal.g:2416:3: '='
                     {
                      before(grammarAccess.getRelationaloperatorAccess().getEqualsSignKeyword_0()); 
                     match(input,21,FOLLOW_2); 
@@ -8356,10 +8320,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2415:2: ( '<>' )
+                    // InternalPascal.g:2421:2: ( '<>' )
                     {
-                    // InternalPascal.g:2415:2: ( '<>' )
-                    // InternalPascal.g:2416:3: '<>'
+                    // InternalPascal.g:2421:2: ( '<>' )
+                    // InternalPascal.g:2422:3: '<>'
                     {
                      before(grammarAccess.getRelationaloperatorAccess().getLessThanSignGreaterThanSignKeyword_1()); 
                     match(input,22,FOLLOW_2); 
@@ -8371,10 +8335,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2421:2: ( '<' )
+                    // InternalPascal.g:2427:2: ( '<' )
                     {
-                    // InternalPascal.g:2421:2: ( '<' )
-                    // InternalPascal.g:2422:3: '<'
+                    // InternalPascal.g:2427:2: ( '<' )
+                    // InternalPascal.g:2428:3: '<'
                     {
                      before(grammarAccess.getRelationaloperatorAccess().getLessThanSignKeyword_2()); 
                     match(input,23,FOLLOW_2); 
@@ -8386,10 +8350,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalPascal.g:2427:2: ( '<=' )
+                    // InternalPascal.g:2433:2: ( '<=' )
                     {
-                    // InternalPascal.g:2427:2: ( '<=' )
-                    // InternalPascal.g:2428:3: '<='
+                    // InternalPascal.g:2433:2: ( '<=' )
+                    // InternalPascal.g:2434:3: '<='
                     {
                      before(grammarAccess.getRelationaloperatorAccess().getLessThanSignEqualsSignKeyword_3()); 
                     match(input,24,FOLLOW_2); 
@@ -8401,10 +8365,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // InternalPascal.g:2433:2: ( '>=' )
+                    // InternalPascal.g:2439:2: ( '>=' )
                     {
-                    // InternalPascal.g:2433:2: ( '>=' )
-                    // InternalPascal.g:2434:3: '>='
+                    // InternalPascal.g:2439:2: ( '>=' )
+                    // InternalPascal.g:2440:3: '>='
                     {
                      before(grammarAccess.getRelationaloperatorAccess().getGreaterThanSignEqualsSignKeyword_4()); 
                     match(input,25,FOLLOW_2); 
@@ -8416,10 +8380,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // InternalPascal.g:2439:2: ( '>' )
+                    // InternalPascal.g:2445:2: ( '>' )
                     {
-                    // InternalPascal.g:2439:2: ( '>' )
-                    // InternalPascal.g:2440:3: '>'
+                    // InternalPascal.g:2445:2: ( '>' )
+                    // InternalPascal.g:2446:3: '>'
                     {
                      before(grammarAccess.getRelationaloperatorAccess().getGreaterThanSignKeyword_5()); 
                     match(input,26,FOLLOW_2); 
@@ -8431,10 +8395,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 7 :
-                    // InternalPascal.g:2445:2: ( 'in' )
+                    // InternalPascal.g:2451:2: ( 'in' )
                     {
-                    // InternalPascal.g:2445:2: ( 'in' )
-                    // InternalPascal.g:2446:3: 'in'
+                    // InternalPascal.g:2451:2: ( 'in' )
+                    // InternalPascal.g:2452:3: 'in'
                     {
                      before(grammarAccess.getRelationaloperatorAccess().getInKeyword_6()); 
                     match(input,27,FOLLOW_2); 
@@ -8463,13 +8427,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Additiveoperator__Alternatives"
-    // InternalPascal.g:2455:1: rule__Additiveoperator__Alternatives : ( ( '+' ) | ( '-' ) | ( 'or' ) );
+    // InternalPascal.g:2461:1: rule__Additiveoperator__Alternatives : ( ( '+' ) | ( '-' ) | ( 'or' ) );
     public final void rule__Additiveoperator__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2459:1: ( ( '+' ) | ( '-' ) | ( 'or' ) )
+            // InternalPascal.g:2465:1: ( ( '+' ) | ( '-' ) | ( 'or' ) )
             int alt22=3;
             switch ( input.LA(1) ) {
             case 18:
@@ -8496,10 +8460,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt22) {
                 case 1 :
-                    // InternalPascal.g:2460:2: ( '+' )
+                    // InternalPascal.g:2466:2: ( '+' )
                     {
-                    // InternalPascal.g:2460:2: ( '+' )
-                    // InternalPascal.g:2461:3: '+'
+                    // InternalPascal.g:2466:2: ( '+' )
+                    // InternalPascal.g:2467:3: '+'
                     {
                      before(grammarAccess.getAdditiveoperatorAccess().getPlusSignKeyword_0()); 
                     match(input,18,FOLLOW_2); 
@@ -8511,10 +8475,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2466:2: ( '-' )
+                    // InternalPascal.g:2472:2: ( '-' )
                     {
-                    // InternalPascal.g:2466:2: ( '-' )
-                    // InternalPascal.g:2467:3: '-'
+                    // InternalPascal.g:2472:2: ( '-' )
+                    // InternalPascal.g:2473:3: '-'
                     {
                      before(grammarAccess.getAdditiveoperatorAccess().getHyphenMinusKeyword_1()); 
                     match(input,19,FOLLOW_2); 
@@ -8526,10 +8490,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2472:2: ( 'or' )
+                    // InternalPascal.g:2478:2: ( 'or' )
                     {
-                    // InternalPascal.g:2472:2: ( 'or' )
-                    // InternalPascal.g:2473:3: 'or'
+                    // InternalPascal.g:2478:2: ( 'or' )
+                    // InternalPascal.g:2479:3: 'or'
                     {
                      before(grammarAccess.getAdditiveoperatorAccess().getOrKeyword_2()); 
                     match(input,28,FOLLOW_2); 
@@ -8558,13 +8522,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Multiplicativeoperator__Alternatives"
-    // InternalPascal.g:2482:1: rule__Multiplicativeoperator__Alternatives : ( ( '*' ) | ( '/' ) | ( 'div' ) | ( 'mod' ) | ( 'and' ) );
+    // InternalPascal.g:2488:1: rule__Multiplicativeoperator__Alternatives : ( ( '*' ) | ( '/' ) | ( 'div' ) | ( 'mod' ) | ( 'and' ) );
     public final void rule__Multiplicativeoperator__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2486:1: ( ( '*' ) | ( '/' ) | ( 'div' ) | ( 'mod' ) | ( 'and' ) )
+            // InternalPascal.g:2492:1: ( ( '*' ) | ( '/' ) | ( 'div' ) | ( 'mod' ) | ( 'and' ) )
             int alt23=5;
             switch ( input.LA(1) ) {
             case 29:
@@ -8601,10 +8565,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt23) {
                 case 1 :
-                    // InternalPascal.g:2487:2: ( '*' )
+                    // InternalPascal.g:2493:2: ( '*' )
                     {
-                    // InternalPascal.g:2487:2: ( '*' )
-                    // InternalPascal.g:2488:3: '*'
+                    // InternalPascal.g:2493:2: ( '*' )
+                    // InternalPascal.g:2494:3: '*'
                     {
                      before(grammarAccess.getMultiplicativeoperatorAccess().getAsteriskKeyword_0()); 
                     match(input,29,FOLLOW_2); 
@@ -8616,10 +8580,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2493:2: ( '/' )
+                    // InternalPascal.g:2499:2: ( '/' )
                     {
-                    // InternalPascal.g:2493:2: ( '/' )
-                    // InternalPascal.g:2494:3: '/'
+                    // InternalPascal.g:2499:2: ( '/' )
+                    // InternalPascal.g:2500:3: '/'
                     {
                      before(grammarAccess.getMultiplicativeoperatorAccess().getSolidusKeyword_1()); 
                     match(input,30,FOLLOW_2); 
@@ -8631,10 +8595,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2499:2: ( 'div' )
+                    // InternalPascal.g:2505:2: ( 'div' )
                     {
-                    // InternalPascal.g:2499:2: ( 'div' )
-                    // InternalPascal.g:2500:3: 'div'
+                    // InternalPascal.g:2505:2: ( 'div' )
+                    // InternalPascal.g:2506:3: 'div'
                     {
                      before(grammarAccess.getMultiplicativeoperatorAccess().getDivKeyword_2()); 
                     match(input,31,FOLLOW_2); 
@@ -8646,10 +8610,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalPascal.g:2505:2: ( 'mod' )
+                    // InternalPascal.g:2511:2: ( 'mod' )
                     {
-                    // InternalPascal.g:2505:2: ( 'mod' )
-                    // InternalPascal.g:2506:3: 'mod'
+                    // InternalPascal.g:2511:2: ( 'mod' )
+                    // InternalPascal.g:2512:3: 'mod'
                     {
                      before(grammarAccess.getMultiplicativeoperatorAccess().getModKeyword_3()); 
                     match(input,32,FOLLOW_2); 
@@ -8661,10 +8625,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // InternalPascal.g:2511:2: ( 'and' )
+                    // InternalPascal.g:2517:2: ( 'and' )
                     {
-                    // InternalPascal.g:2511:2: ( 'and' )
-                    // InternalPascal.g:2512:3: 'and'
+                    // InternalPascal.g:2517:2: ( 'and' )
+                    // InternalPascal.g:2518:3: 'and'
                     {
                      before(grammarAccess.getMultiplicativeoperatorAccess().getAndKeyword_4()); 
                     match(input,33,FOLLOW_2); 
@@ -8693,13 +8657,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SignedFactor__Alternatives_0"
-    // InternalPascal.g:2521:1: rule__SignedFactor__Alternatives_0 : ( ( '+' ) | ( '-' ) );
+    // InternalPascal.g:2527:1: rule__SignedFactor__Alternatives_0 : ( ( '+' ) | ( '-' ) );
     public final void rule__SignedFactor__Alternatives_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2525:1: ( ( '+' ) | ( '-' ) )
+            // InternalPascal.g:2531:1: ( ( '+' ) | ( '-' ) )
             int alt24=2;
             int LA24_0 = input.LA(1);
 
@@ -8717,10 +8681,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt24) {
                 case 1 :
-                    // InternalPascal.g:2526:2: ( '+' )
+                    // InternalPascal.g:2532:2: ( '+' )
                     {
-                    // InternalPascal.g:2526:2: ( '+' )
-                    // InternalPascal.g:2527:3: '+'
+                    // InternalPascal.g:2532:2: ( '+' )
+                    // InternalPascal.g:2533:3: '+'
                     {
                      before(grammarAccess.getSignedFactorAccess().getPlusSignKeyword_0_0()); 
                     match(input,18,FOLLOW_2); 
@@ -8732,10 +8696,10 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2532:2: ( '-' )
+                    // InternalPascal.g:2538:2: ( '-' )
                     {
-                    // InternalPascal.g:2532:2: ( '-' )
-                    // InternalPascal.g:2533:3: '-'
+                    // InternalPascal.g:2538:2: ( '-' )
+                    // InternalPascal.g:2539:3: '-'
                     {
                      before(grammarAccess.getSignedFactorAccess().getHyphenMinusKeyword_0_1()); 
                     match(input,19,FOLLOW_2); 
@@ -8764,13 +8728,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Alternatives"
-    // InternalPascal.g:2542:1: rule__Factor__Alternatives : ( ( ( rule__Factor__Group_0__0 ) ) | ( ( rule__Factor__UnsignedConstantAssignment_1 ) ) | ( ( rule__Factor__Group_2__0 ) ) | ( ( rule__Factor__BoolAssignment_3 ) ) | ( ( rule__Factor__FunctionDesignatorAssignment_4 ) ) | ( ( rule__Factor__VariableAssignment_5 ) ) );
+    // InternalPascal.g:2548:1: rule__Factor__Alternatives : ( ( ( rule__Factor__Group_0__0 ) ) | ( ( rule__Factor__UnsignedConstantAssignment_1 ) ) | ( ( rule__Factor__Group_2__0 ) ) | ( ( rule__Factor__BoolAssignment_3 ) ) | ( ( rule__Factor__FunctionDesignatorAssignment_4 ) ) | ( ( rule__Factor__VariableAssignment_5 ) ) );
     public final void rule__Factor__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2546:1: ( ( ( rule__Factor__Group_0__0 ) ) | ( ( rule__Factor__UnsignedConstantAssignment_1 ) ) | ( ( rule__Factor__Group_2__0 ) ) | ( ( rule__Factor__BoolAssignment_3 ) ) | ( ( rule__Factor__FunctionDesignatorAssignment_4 ) ) | ( ( rule__Factor__VariableAssignment_5 ) ) )
+            // InternalPascal.g:2552:1: ( ( ( rule__Factor__Group_0__0 ) ) | ( ( rule__Factor__UnsignedConstantAssignment_1 ) ) | ( ( rule__Factor__Group_2__0 ) ) | ( ( rule__Factor__BoolAssignment_3 ) ) | ( ( rule__Factor__FunctionDesignatorAssignment_4 ) ) | ( ( rule__Factor__VariableAssignment_5 ) ) )
             int alt25=6;
             switch ( input.LA(1) ) {
             case 38:
@@ -8829,14 +8793,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt25) {
                 case 1 :
-                    // InternalPascal.g:2547:2: ( ( rule__Factor__Group_0__0 ) )
+                    // InternalPascal.g:2553:2: ( ( rule__Factor__Group_0__0 ) )
                     {
-                    // InternalPascal.g:2547:2: ( ( rule__Factor__Group_0__0 ) )
-                    // InternalPascal.g:2548:3: ( rule__Factor__Group_0__0 )
+                    // InternalPascal.g:2553:2: ( ( rule__Factor__Group_0__0 ) )
+                    // InternalPascal.g:2554:3: ( rule__Factor__Group_0__0 )
                     {
                      before(grammarAccess.getFactorAccess().getGroup_0()); 
-                    // InternalPascal.g:2549:3: ( rule__Factor__Group_0__0 )
-                    // InternalPascal.g:2549:4: rule__Factor__Group_0__0
+                    // InternalPascal.g:2555:3: ( rule__Factor__Group_0__0 )
+                    // InternalPascal.g:2555:4: rule__Factor__Group_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Factor__Group_0__0();
@@ -8854,14 +8818,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2553:2: ( ( rule__Factor__UnsignedConstantAssignment_1 ) )
+                    // InternalPascal.g:2559:2: ( ( rule__Factor__UnsignedConstantAssignment_1 ) )
                     {
-                    // InternalPascal.g:2553:2: ( ( rule__Factor__UnsignedConstantAssignment_1 ) )
-                    // InternalPascal.g:2554:3: ( rule__Factor__UnsignedConstantAssignment_1 )
+                    // InternalPascal.g:2559:2: ( ( rule__Factor__UnsignedConstantAssignment_1 ) )
+                    // InternalPascal.g:2560:3: ( rule__Factor__UnsignedConstantAssignment_1 )
                     {
                      before(grammarAccess.getFactorAccess().getUnsignedConstantAssignment_1()); 
-                    // InternalPascal.g:2555:3: ( rule__Factor__UnsignedConstantAssignment_1 )
-                    // InternalPascal.g:2555:4: rule__Factor__UnsignedConstantAssignment_1
+                    // InternalPascal.g:2561:3: ( rule__Factor__UnsignedConstantAssignment_1 )
+                    // InternalPascal.g:2561:4: rule__Factor__UnsignedConstantAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__Factor__UnsignedConstantAssignment_1();
@@ -8879,14 +8843,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2559:2: ( ( rule__Factor__Group_2__0 ) )
+                    // InternalPascal.g:2565:2: ( ( rule__Factor__Group_2__0 ) )
                     {
-                    // InternalPascal.g:2559:2: ( ( rule__Factor__Group_2__0 ) )
-                    // InternalPascal.g:2560:3: ( rule__Factor__Group_2__0 )
+                    // InternalPascal.g:2565:2: ( ( rule__Factor__Group_2__0 ) )
+                    // InternalPascal.g:2566:3: ( rule__Factor__Group_2__0 )
                     {
                      before(grammarAccess.getFactorAccess().getGroup_2()); 
-                    // InternalPascal.g:2561:3: ( rule__Factor__Group_2__0 )
-                    // InternalPascal.g:2561:4: rule__Factor__Group_2__0
+                    // InternalPascal.g:2567:3: ( rule__Factor__Group_2__0 )
+                    // InternalPascal.g:2567:4: rule__Factor__Group_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Factor__Group_2__0();
@@ -8904,14 +8868,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalPascal.g:2565:2: ( ( rule__Factor__BoolAssignment_3 ) )
+                    // InternalPascal.g:2571:2: ( ( rule__Factor__BoolAssignment_3 ) )
                     {
-                    // InternalPascal.g:2565:2: ( ( rule__Factor__BoolAssignment_3 ) )
-                    // InternalPascal.g:2566:3: ( rule__Factor__BoolAssignment_3 )
+                    // InternalPascal.g:2571:2: ( ( rule__Factor__BoolAssignment_3 ) )
+                    // InternalPascal.g:2572:3: ( rule__Factor__BoolAssignment_3 )
                     {
                      before(grammarAccess.getFactorAccess().getBoolAssignment_3()); 
-                    // InternalPascal.g:2567:3: ( rule__Factor__BoolAssignment_3 )
-                    // InternalPascal.g:2567:4: rule__Factor__BoolAssignment_3
+                    // InternalPascal.g:2573:3: ( rule__Factor__BoolAssignment_3 )
+                    // InternalPascal.g:2573:4: rule__Factor__BoolAssignment_3
                     {
                     pushFollow(FOLLOW_2);
                     rule__Factor__BoolAssignment_3();
@@ -8929,14 +8893,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // InternalPascal.g:2571:2: ( ( rule__Factor__FunctionDesignatorAssignment_4 ) )
+                    // InternalPascal.g:2577:2: ( ( rule__Factor__FunctionDesignatorAssignment_4 ) )
                     {
-                    // InternalPascal.g:2571:2: ( ( rule__Factor__FunctionDesignatorAssignment_4 ) )
-                    // InternalPascal.g:2572:3: ( rule__Factor__FunctionDesignatorAssignment_4 )
+                    // InternalPascal.g:2577:2: ( ( rule__Factor__FunctionDesignatorAssignment_4 ) )
+                    // InternalPascal.g:2578:3: ( rule__Factor__FunctionDesignatorAssignment_4 )
                     {
                      before(grammarAccess.getFactorAccess().getFunctionDesignatorAssignment_4()); 
-                    // InternalPascal.g:2573:3: ( rule__Factor__FunctionDesignatorAssignment_4 )
-                    // InternalPascal.g:2573:4: rule__Factor__FunctionDesignatorAssignment_4
+                    // InternalPascal.g:2579:3: ( rule__Factor__FunctionDesignatorAssignment_4 )
+                    // InternalPascal.g:2579:4: rule__Factor__FunctionDesignatorAssignment_4
                     {
                     pushFollow(FOLLOW_2);
                     rule__Factor__FunctionDesignatorAssignment_4();
@@ -8954,14 +8918,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // InternalPascal.g:2577:2: ( ( rule__Factor__VariableAssignment_5 ) )
+                    // InternalPascal.g:2583:2: ( ( rule__Factor__VariableAssignment_5 ) )
                     {
-                    // InternalPascal.g:2577:2: ( ( rule__Factor__VariableAssignment_5 ) )
-                    // InternalPascal.g:2578:3: ( rule__Factor__VariableAssignment_5 )
+                    // InternalPascal.g:2583:2: ( ( rule__Factor__VariableAssignment_5 ) )
+                    // InternalPascal.g:2584:3: ( rule__Factor__VariableAssignment_5 )
                     {
                      before(grammarAccess.getFactorAccess().getVariableAssignment_5()); 
-                    // InternalPascal.g:2579:3: ( rule__Factor__VariableAssignment_5 )
-                    // InternalPascal.g:2579:4: rule__Factor__VariableAssignment_5
+                    // InternalPascal.g:2585:3: ( rule__Factor__VariableAssignment_5 )
+                    // InternalPascal.g:2585:4: rule__Factor__VariableAssignment_5
                     {
                     pushFollow(FOLLOW_2);
                     rule__Factor__VariableAssignment_5();
@@ -8996,13 +8960,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedConstant__Alternatives"
-    // InternalPascal.g:2587:1: rule__UnsignedConstant__Alternatives : ( ( ( rule__UnsignedConstant__UnsignedNumberAssignment_0 ) ) | ( ( rule__UnsignedConstant__String_literalAssignment_1 ) ) | ( ( rule__UnsignedConstant__ConstantChrAssignment_2 ) ) | ( ( rule__UnsignedConstant__Group_3__0 ) ) );
+    // InternalPascal.g:2593:1: rule__UnsignedConstant__Alternatives : ( ( ( rule__UnsignedConstant__UnsignedNumberAssignment_0 ) ) | ( ( rule__UnsignedConstant__String_literalAssignment_1 ) ) | ( ( rule__UnsignedConstant__ConstantChrAssignment_2 ) ) | ( ( rule__UnsignedConstant__Group_3__0 ) ) );
     public final void rule__UnsignedConstant__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2591:1: ( ( ( rule__UnsignedConstant__UnsignedNumberAssignment_0 ) ) | ( ( rule__UnsignedConstant__String_literalAssignment_1 ) ) | ( ( rule__UnsignedConstant__ConstantChrAssignment_2 ) ) | ( ( rule__UnsignedConstant__Group_3__0 ) ) )
+            // InternalPascal.g:2597:1: ( ( ( rule__UnsignedConstant__UnsignedNumberAssignment_0 ) ) | ( ( rule__UnsignedConstant__String_literalAssignment_1 ) ) | ( ( rule__UnsignedConstant__ConstantChrAssignment_2 ) ) | ( ( rule__UnsignedConstant__Group_3__0 ) ) )
             int alt26=4;
             switch ( input.LA(1) ) {
             case RULE_NUM_REAL:
@@ -9035,14 +8999,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             switch (alt26) {
                 case 1 :
-                    // InternalPascal.g:2592:2: ( ( rule__UnsignedConstant__UnsignedNumberAssignment_0 ) )
+                    // InternalPascal.g:2598:2: ( ( rule__UnsignedConstant__UnsignedNumberAssignment_0 ) )
                     {
-                    // InternalPascal.g:2592:2: ( ( rule__UnsignedConstant__UnsignedNumberAssignment_0 ) )
-                    // InternalPascal.g:2593:3: ( rule__UnsignedConstant__UnsignedNumberAssignment_0 )
+                    // InternalPascal.g:2598:2: ( ( rule__UnsignedConstant__UnsignedNumberAssignment_0 ) )
+                    // InternalPascal.g:2599:3: ( rule__UnsignedConstant__UnsignedNumberAssignment_0 )
                     {
                      before(grammarAccess.getUnsignedConstantAccess().getUnsignedNumberAssignment_0()); 
-                    // InternalPascal.g:2594:3: ( rule__UnsignedConstant__UnsignedNumberAssignment_0 )
-                    // InternalPascal.g:2594:4: rule__UnsignedConstant__UnsignedNumberAssignment_0
+                    // InternalPascal.g:2600:3: ( rule__UnsignedConstant__UnsignedNumberAssignment_0 )
+                    // InternalPascal.g:2600:4: rule__UnsignedConstant__UnsignedNumberAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnsignedConstant__UnsignedNumberAssignment_0();
@@ -9060,14 +9024,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2598:2: ( ( rule__UnsignedConstant__String_literalAssignment_1 ) )
+                    // InternalPascal.g:2604:2: ( ( rule__UnsignedConstant__String_literalAssignment_1 ) )
                     {
-                    // InternalPascal.g:2598:2: ( ( rule__UnsignedConstant__String_literalAssignment_1 ) )
-                    // InternalPascal.g:2599:3: ( rule__UnsignedConstant__String_literalAssignment_1 )
+                    // InternalPascal.g:2604:2: ( ( rule__UnsignedConstant__String_literalAssignment_1 ) )
+                    // InternalPascal.g:2605:3: ( rule__UnsignedConstant__String_literalAssignment_1 )
                     {
                      before(grammarAccess.getUnsignedConstantAccess().getString_literalAssignment_1()); 
-                    // InternalPascal.g:2600:3: ( rule__UnsignedConstant__String_literalAssignment_1 )
-                    // InternalPascal.g:2600:4: rule__UnsignedConstant__String_literalAssignment_1
+                    // InternalPascal.g:2606:3: ( rule__UnsignedConstant__String_literalAssignment_1 )
+                    // InternalPascal.g:2606:4: rule__UnsignedConstant__String_literalAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnsignedConstant__String_literalAssignment_1();
@@ -9085,14 +9049,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalPascal.g:2604:2: ( ( rule__UnsignedConstant__ConstantChrAssignment_2 ) )
+                    // InternalPascal.g:2610:2: ( ( rule__UnsignedConstant__ConstantChrAssignment_2 ) )
                     {
-                    // InternalPascal.g:2604:2: ( ( rule__UnsignedConstant__ConstantChrAssignment_2 ) )
-                    // InternalPascal.g:2605:3: ( rule__UnsignedConstant__ConstantChrAssignment_2 )
+                    // InternalPascal.g:2610:2: ( ( rule__UnsignedConstant__ConstantChrAssignment_2 ) )
+                    // InternalPascal.g:2611:3: ( rule__UnsignedConstant__ConstantChrAssignment_2 )
                     {
                      before(grammarAccess.getUnsignedConstantAccess().getConstantChrAssignment_2()); 
-                    // InternalPascal.g:2606:3: ( rule__UnsignedConstant__ConstantChrAssignment_2 )
-                    // InternalPascal.g:2606:4: rule__UnsignedConstant__ConstantChrAssignment_2
+                    // InternalPascal.g:2612:3: ( rule__UnsignedConstant__ConstantChrAssignment_2 )
+                    // InternalPascal.g:2612:4: rule__UnsignedConstant__ConstantChrAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnsignedConstant__ConstantChrAssignment_2();
@@ -9110,14 +9074,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalPascal.g:2610:2: ( ( rule__UnsignedConstant__Group_3__0 ) )
+                    // InternalPascal.g:2616:2: ( ( rule__UnsignedConstant__Group_3__0 ) )
                     {
-                    // InternalPascal.g:2610:2: ( ( rule__UnsignedConstant__Group_3__0 ) )
-                    // InternalPascal.g:2611:3: ( rule__UnsignedConstant__Group_3__0 )
+                    // InternalPascal.g:2616:2: ( ( rule__UnsignedConstant__Group_3__0 ) )
+                    // InternalPascal.g:2617:3: ( rule__UnsignedConstant__Group_3__0 )
                     {
                      before(grammarAccess.getUnsignedConstantAccess().getGroup_3()); 
-                    // InternalPascal.g:2612:3: ( rule__UnsignedConstant__Group_3__0 )
-                    // InternalPascal.g:2612:4: rule__UnsignedConstant__Group_3__0
+                    // InternalPascal.g:2618:3: ( rule__UnsignedConstant__Group_3__0 )
+                    // InternalPascal.g:2618:4: rule__UnsignedConstant__Group_3__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnsignedConstant__Group_3__0();
@@ -9152,13 +9116,13 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredStatement__Alternatives"
-    // InternalPascal.g:2620:1: rule__StructuredStatement__Alternatives : ( ( ( rule__StructuredStatement__CompoundStatementAssignment_0 ) ) | ( ( rule__StructuredStatement__ConditionalStatementAssignment_1 ) ) );
+    // InternalPascal.g:2626:1: rule__StructuredStatement__Alternatives : ( ( ( rule__StructuredStatement__CompoundStatementAssignment_0 ) ) | ( ( rule__StructuredStatement__ConditionalStatementAssignment_1 ) ) );
     public final void rule__StructuredStatement__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2624:1: ( ( ( rule__StructuredStatement__CompoundStatementAssignment_0 ) ) | ( ( rule__StructuredStatement__ConditionalStatementAssignment_1 ) ) )
+            // InternalPascal.g:2630:1: ( ( ( rule__StructuredStatement__CompoundStatementAssignment_0 ) ) | ( ( rule__StructuredStatement__ConditionalStatementAssignment_1 ) ) )
             int alt27=2;
             int LA27_0 = input.LA(1);
 
@@ -9176,14 +9140,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt27) {
                 case 1 :
-                    // InternalPascal.g:2625:2: ( ( rule__StructuredStatement__CompoundStatementAssignment_0 ) )
+                    // InternalPascal.g:2631:2: ( ( rule__StructuredStatement__CompoundStatementAssignment_0 ) )
                     {
-                    // InternalPascal.g:2625:2: ( ( rule__StructuredStatement__CompoundStatementAssignment_0 ) )
-                    // InternalPascal.g:2626:3: ( rule__StructuredStatement__CompoundStatementAssignment_0 )
+                    // InternalPascal.g:2631:2: ( ( rule__StructuredStatement__CompoundStatementAssignment_0 ) )
+                    // InternalPascal.g:2632:3: ( rule__StructuredStatement__CompoundStatementAssignment_0 )
                     {
                      before(grammarAccess.getStructuredStatementAccess().getCompoundStatementAssignment_0()); 
-                    // InternalPascal.g:2627:3: ( rule__StructuredStatement__CompoundStatementAssignment_0 )
-                    // InternalPascal.g:2627:4: rule__StructuredStatement__CompoundStatementAssignment_0
+                    // InternalPascal.g:2633:3: ( rule__StructuredStatement__CompoundStatementAssignment_0 )
+                    // InternalPascal.g:2633:4: rule__StructuredStatement__CompoundStatementAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__StructuredStatement__CompoundStatementAssignment_0();
@@ -9201,14 +9165,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalPascal.g:2631:2: ( ( rule__StructuredStatement__ConditionalStatementAssignment_1 ) )
+                    // InternalPascal.g:2637:2: ( ( rule__StructuredStatement__ConditionalStatementAssignment_1 ) )
                     {
-                    // InternalPascal.g:2631:2: ( ( rule__StructuredStatement__ConditionalStatementAssignment_1 ) )
-                    // InternalPascal.g:2632:3: ( rule__StructuredStatement__ConditionalStatementAssignment_1 )
+                    // InternalPascal.g:2637:2: ( ( rule__StructuredStatement__ConditionalStatementAssignment_1 ) )
+                    // InternalPascal.g:2638:3: ( rule__StructuredStatement__ConditionalStatementAssignment_1 )
                     {
                      before(grammarAccess.getStructuredStatementAccess().getConditionalStatementAssignment_1()); 
-                    // InternalPascal.g:2633:3: ( rule__StructuredStatement__ConditionalStatementAssignment_1 )
-                    // InternalPascal.g:2633:4: rule__StructuredStatement__ConditionalStatementAssignment_1
+                    // InternalPascal.g:2639:3: ( rule__StructuredStatement__ConditionalStatementAssignment_1 )
+                    // InternalPascal.g:2639:4: rule__StructuredStatement__ConditionalStatementAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__StructuredStatement__ConditionalStatementAssignment_1();
@@ -9243,14 +9207,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__0"
-    // InternalPascal.g:2641:1: rule__Program__Group__0 : rule__Program__Group__0__Impl rule__Program__Group__1 ;
+    // InternalPascal.g:2647:1: rule__Program__Group__0 : rule__Program__Group__0__Impl rule__Program__Group__1 ;
     public final void rule__Program__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2645:1: ( rule__Program__Group__0__Impl rule__Program__Group__1 )
-            // InternalPascal.g:2646:2: rule__Program__Group__0__Impl rule__Program__Group__1
+            // InternalPascal.g:2651:1: ( rule__Program__Group__0__Impl rule__Program__Group__1 )
+            // InternalPascal.g:2652:2: rule__Program__Group__0__Impl rule__Program__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Program__Group__0__Impl();
@@ -9281,21 +9245,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__0__Impl"
-    // InternalPascal.g:2653:1: rule__Program__Group__0__Impl : ( ( rule__Program__HeadAssignment_0 ) ) ;
+    // InternalPascal.g:2659:1: rule__Program__Group__0__Impl : ( ( rule__Program__HeadAssignment_0 ) ) ;
     public final void rule__Program__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2657:1: ( ( ( rule__Program__HeadAssignment_0 ) ) )
-            // InternalPascal.g:2658:1: ( ( rule__Program__HeadAssignment_0 ) )
+            // InternalPascal.g:2663:1: ( ( ( rule__Program__HeadAssignment_0 ) ) )
+            // InternalPascal.g:2664:1: ( ( rule__Program__HeadAssignment_0 ) )
             {
-            // InternalPascal.g:2658:1: ( ( rule__Program__HeadAssignment_0 ) )
-            // InternalPascal.g:2659:2: ( rule__Program__HeadAssignment_0 )
+            // InternalPascal.g:2664:1: ( ( rule__Program__HeadAssignment_0 ) )
+            // InternalPascal.g:2665:2: ( rule__Program__HeadAssignment_0 )
             {
              before(grammarAccess.getProgramAccess().getHeadAssignment_0()); 
-            // InternalPascal.g:2660:2: ( rule__Program__HeadAssignment_0 )
-            // InternalPascal.g:2660:3: rule__Program__HeadAssignment_0
+            // InternalPascal.g:2666:2: ( rule__Program__HeadAssignment_0 )
+            // InternalPascal.g:2666:3: rule__Program__HeadAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Program__HeadAssignment_0();
@@ -9328,14 +9292,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__1"
-    // InternalPascal.g:2668:1: rule__Program__Group__1 : rule__Program__Group__1__Impl rule__Program__Group__2 ;
+    // InternalPascal.g:2674:1: rule__Program__Group__1 : rule__Program__Group__1__Impl rule__Program__Group__2 ;
     public final void rule__Program__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2672:1: ( rule__Program__Group__1__Impl rule__Program__Group__2 )
-            // InternalPascal.g:2673:2: rule__Program__Group__1__Impl rule__Program__Group__2
+            // InternalPascal.g:2678:1: ( rule__Program__Group__1__Impl rule__Program__Group__2 )
+            // InternalPascal.g:2679:2: rule__Program__Group__1__Impl rule__Program__Group__2
             {
             pushFollow(FOLLOW_3);
             rule__Program__Group__1__Impl();
@@ -9366,20 +9330,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__1__Impl"
-    // InternalPascal.g:2680:1: rule__Program__Group__1__Impl : ( ( 'interface' )? ) ;
+    // InternalPascal.g:2686:1: rule__Program__Group__1__Impl : ( ( 'interface' )? ) ;
     public final void rule__Program__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2684:1: ( ( ( 'interface' )? ) )
-            // InternalPascal.g:2685:1: ( ( 'interface' )? )
+            // InternalPascal.g:2690:1: ( ( ( 'interface' )? ) )
+            // InternalPascal.g:2691:1: ( ( 'interface' )? )
             {
-            // InternalPascal.g:2685:1: ( ( 'interface' )? )
-            // InternalPascal.g:2686:2: ( 'interface' )?
+            // InternalPascal.g:2691:1: ( ( 'interface' )? )
+            // InternalPascal.g:2692:2: ( 'interface' )?
             {
              before(grammarAccess.getProgramAccess().getInterfaceKeyword_1()); 
-            // InternalPascal.g:2687:2: ( 'interface' )?
+            // InternalPascal.g:2693:2: ( 'interface' )?
             int alt28=2;
             int LA28_0 = input.LA(1);
 
@@ -9388,7 +9352,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt28) {
                 case 1 :
-                    // InternalPascal.g:2687:3: 'interface'
+                    // InternalPascal.g:2693:3: 'interface'
                     {
                     match(input,34,FOLLOW_2); 
 
@@ -9420,14 +9384,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__2"
-    // InternalPascal.g:2695:1: rule__Program__Group__2 : rule__Program__Group__2__Impl rule__Program__Group__3 ;
+    // InternalPascal.g:2701:1: rule__Program__Group__2 : rule__Program__Group__2__Impl rule__Program__Group__3 ;
     public final void rule__Program__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2699:1: ( rule__Program__Group__2__Impl rule__Program__Group__3 )
-            // InternalPascal.g:2700:2: rule__Program__Group__2__Impl rule__Program__Group__3
+            // InternalPascal.g:2705:1: ( rule__Program__Group__2__Impl rule__Program__Group__3 )
+            // InternalPascal.g:2706:2: rule__Program__Group__2__Impl rule__Program__Group__3
             {
             pushFollow(FOLLOW_4);
             rule__Program__Group__2__Impl();
@@ -9458,21 +9422,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__2__Impl"
-    // InternalPascal.g:2707:1: rule__Program__Group__2__Impl : ( ( rule__Program__BlockAssignment_2 ) ) ;
+    // InternalPascal.g:2713:1: rule__Program__Group__2__Impl : ( ( rule__Program__BlockAssignment_2 ) ) ;
     public final void rule__Program__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2711:1: ( ( ( rule__Program__BlockAssignment_2 ) ) )
-            // InternalPascal.g:2712:1: ( ( rule__Program__BlockAssignment_2 ) )
+            // InternalPascal.g:2717:1: ( ( ( rule__Program__BlockAssignment_2 ) ) )
+            // InternalPascal.g:2718:1: ( ( rule__Program__BlockAssignment_2 ) )
             {
-            // InternalPascal.g:2712:1: ( ( rule__Program__BlockAssignment_2 ) )
-            // InternalPascal.g:2713:2: ( rule__Program__BlockAssignment_2 )
+            // InternalPascal.g:2718:1: ( ( rule__Program__BlockAssignment_2 ) )
+            // InternalPascal.g:2719:2: ( rule__Program__BlockAssignment_2 )
             {
              before(grammarAccess.getProgramAccess().getBlockAssignment_2()); 
-            // InternalPascal.g:2714:2: ( rule__Program__BlockAssignment_2 )
-            // InternalPascal.g:2714:3: rule__Program__BlockAssignment_2
+            // InternalPascal.g:2720:2: ( rule__Program__BlockAssignment_2 )
+            // InternalPascal.g:2720:3: rule__Program__BlockAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Program__BlockAssignment_2();
@@ -9505,14 +9469,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__3"
-    // InternalPascal.g:2722:1: rule__Program__Group__3 : rule__Program__Group__3__Impl ;
+    // InternalPascal.g:2728:1: rule__Program__Group__3 : rule__Program__Group__3__Impl ;
     public final void rule__Program__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2726:1: ( rule__Program__Group__3__Impl )
-            // InternalPascal.g:2727:2: rule__Program__Group__3__Impl
+            // InternalPascal.g:2732:1: ( rule__Program__Group__3__Impl )
+            // InternalPascal.g:2733:2: rule__Program__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Program__Group__3__Impl();
@@ -9538,17 +9502,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__Group__3__Impl"
-    // InternalPascal.g:2733:1: rule__Program__Group__3__Impl : ( '.' ) ;
+    // InternalPascal.g:2739:1: rule__Program__Group__3__Impl : ( '.' ) ;
     public final void rule__Program__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2737:1: ( ( '.' ) )
-            // InternalPascal.g:2738:1: ( '.' )
+            // InternalPascal.g:2743:1: ( ( '.' ) )
+            // InternalPascal.g:2744:1: ( '.' )
             {
-            // InternalPascal.g:2738:1: ( '.' )
-            // InternalPascal.g:2739:2: '.'
+            // InternalPascal.g:2744:1: ( '.' )
+            // InternalPascal.g:2745:2: '.'
             {
              before(grammarAccess.getProgramAccess().getFullStopKeyword_3()); 
             match(input,35,FOLLOW_2); 
@@ -9575,14 +9539,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group__0"
-    // InternalPascal.g:2749:1: rule__ProgramHeading__Group__0 : rule__ProgramHeading__Group__0__Impl rule__ProgramHeading__Group__1 ;
+    // InternalPascal.g:2755:1: rule__ProgramHeading__Group__0 : rule__ProgramHeading__Group__0__Impl rule__ProgramHeading__Group__1 ;
     public final void rule__ProgramHeading__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2753:1: ( rule__ProgramHeading__Group__0__Impl rule__ProgramHeading__Group__1 )
-            // InternalPascal.g:2754:2: rule__ProgramHeading__Group__0__Impl rule__ProgramHeading__Group__1
+            // InternalPascal.g:2759:1: ( rule__ProgramHeading__Group__0__Impl rule__ProgramHeading__Group__1 )
+            // InternalPascal.g:2760:2: rule__ProgramHeading__Group__0__Impl rule__ProgramHeading__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__ProgramHeading__Group__0__Impl();
@@ -9613,17 +9577,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group__0__Impl"
-    // InternalPascal.g:2761:1: rule__ProgramHeading__Group__0__Impl : ( 'program' ) ;
+    // InternalPascal.g:2767:1: rule__ProgramHeading__Group__0__Impl : ( 'program' ) ;
     public final void rule__ProgramHeading__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2765:1: ( ( 'program' ) )
-            // InternalPascal.g:2766:1: ( 'program' )
+            // InternalPascal.g:2771:1: ( ( 'program' ) )
+            // InternalPascal.g:2772:1: ( 'program' )
             {
-            // InternalPascal.g:2766:1: ( 'program' )
-            // InternalPascal.g:2767:2: 'program'
+            // InternalPascal.g:2772:1: ( 'program' )
+            // InternalPascal.g:2773:2: 'program'
             {
              before(grammarAccess.getProgramHeadingAccess().getProgramKeyword_0()); 
             match(input,36,FOLLOW_2); 
@@ -9650,14 +9614,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group__1"
-    // InternalPascal.g:2776:1: rule__ProgramHeading__Group__1 : rule__ProgramHeading__Group__1__Impl rule__ProgramHeading__Group__2 ;
+    // InternalPascal.g:2782:1: rule__ProgramHeading__Group__1 : rule__ProgramHeading__Group__1__Impl rule__ProgramHeading__Group__2 ;
     public final void rule__ProgramHeading__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2780:1: ( rule__ProgramHeading__Group__1__Impl rule__ProgramHeading__Group__2 )
-            // InternalPascal.g:2781:2: rule__ProgramHeading__Group__1__Impl rule__ProgramHeading__Group__2
+            // InternalPascal.g:2786:1: ( rule__ProgramHeading__Group__1__Impl rule__ProgramHeading__Group__2 )
+            // InternalPascal.g:2787:2: rule__ProgramHeading__Group__1__Impl rule__ProgramHeading__Group__2
             {
             pushFollow(FOLLOW_6);
             rule__ProgramHeading__Group__1__Impl();
@@ -9688,21 +9652,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group__1__Impl"
-    // InternalPascal.g:2788:1: rule__ProgramHeading__Group__1__Impl : ( ( rule__ProgramHeading__IdentiferAssignment_1 ) ) ;
+    // InternalPascal.g:2794:1: rule__ProgramHeading__Group__1__Impl : ( ( rule__ProgramHeading__IdentiferAssignment_1 ) ) ;
     public final void rule__ProgramHeading__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2792:1: ( ( ( rule__ProgramHeading__IdentiferAssignment_1 ) ) )
-            // InternalPascal.g:2793:1: ( ( rule__ProgramHeading__IdentiferAssignment_1 ) )
+            // InternalPascal.g:2798:1: ( ( ( rule__ProgramHeading__IdentiferAssignment_1 ) ) )
+            // InternalPascal.g:2799:1: ( ( rule__ProgramHeading__IdentiferAssignment_1 ) )
             {
-            // InternalPascal.g:2793:1: ( ( rule__ProgramHeading__IdentiferAssignment_1 ) )
-            // InternalPascal.g:2794:2: ( rule__ProgramHeading__IdentiferAssignment_1 )
+            // InternalPascal.g:2799:1: ( ( rule__ProgramHeading__IdentiferAssignment_1 ) )
+            // InternalPascal.g:2800:2: ( rule__ProgramHeading__IdentiferAssignment_1 )
             {
              before(grammarAccess.getProgramHeadingAccess().getIdentiferAssignment_1()); 
-            // InternalPascal.g:2795:2: ( rule__ProgramHeading__IdentiferAssignment_1 )
-            // InternalPascal.g:2795:3: rule__ProgramHeading__IdentiferAssignment_1
+            // InternalPascal.g:2801:2: ( rule__ProgramHeading__IdentiferAssignment_1 )
+            // InternalPascal.g:2801:3: rule__ProgramHeading__IdentiferAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__ProgramHeading__IdentiferAssignment_1();
@@ -9735,14 +9699,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group__2"
-    // InternalPascal.g:2803:1: rule__ProgramHeading__Group__2 : rule__ProgramHeading__Group__2__Impl rule__ProgramHeading__Group__3 ;
+    // InternalPascal.g:2809:1: rule__ProgramHeading__Group__2 : rule__ProgramHeading__Group__2__Impl rule__ProgramHeading__Group__3 ;
     public final void rule__ProgramHeading__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2807:1: ( rule__ProgramHeading__Group__2__Impl rule__ProgramHeading__Group__3 )
-            // InternalPascal.g:2808:2: rule__ProgramHeading__Group__2__Impl rule__ProgramHeading__Group__3
+            // InternalPascal.g:2813:1: ( rule__ProgramHeading__Group__2__Impl rule__ProgramHeading__Group__3 )
+            // InternalPascal.g:2814:2: rule__ProgramHeading__Group__2__Impl rule__ProgramHeading__Group__3
             {
             pushFollow(FOLLOW_6);
             rule__ProgramHeading__Group__2__Impl();
@@ -9773,20 +9737,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group__2__Impl"
-    // InternalPascal.g:2815:1: rule__ProgramHeading__Group__2__Impl : ( ( rule__ProgramHeading__Group_2__0 )? ) ;
+    // InternalPascal.g:2821:1: rule__ProgramHeading__Group__2__Impl : ( ( rule__ProgramHeading__Group_2__0 )? ) ;
     public final void rule__ProgramHeading__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2819:1: ( ( ( rule__ProgramHeading__Group_2__0 )? ) )
-            // InternalPascal.g:2820:1: ( ( rule__ProgramHeading__Group_2__0 )? )
+            // InternalPascal.g:2825:1: ( ( ( rule__ProgramHeading__Group_2__0 )? ) )
+            // InternalPascal.g:2826:1: ( ( rule__ProgramHeading__Group_2__0 )? )
             {
-            // InternalPascal.g:2820:1: ( ( rule__ProgramHeading__Group_2__0 )? )
-            // InternalPascal.g:2821:2: ( rule__ProgramHeading__Group_2__0 )?
+            // InternalPascal.g:2826:1: ( ( rule__ProgramHeading__Group_2__0 )? )
+            // InternalPascal.g:2827:2: ( rule__ProgramHeading__Group_2__0 )?
             {
              before(grammarAccess.getProgramHeadingAccess().getGroup_2()); 
-            // InternalPascal.g:2822:2: ( rule__ProgramHeading__Group_2__0 )?
+            // InternalPascal.g:2828:2: ( rule__ProgramHeading__Group_2__0 )?
             int alt29=2;
             int LA29_0 = input.LA(1);
 
@@ -9795,7 +9759,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt29) {
                 case 1 :
-                    // InternalPascal.g:2822:3: rule__ProgramHeading__Group_2__0
+                    // InternalPascal.g:2828:3: rule__ProgramHeading__Group_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__ProgramHeading__Group_2__0();
@@ -9831,14 +9795,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group__3"
-    // InternalPascal.g:2830:1: rule__ProgramHeading__Group__3 : rule__ProgramHeading__Group__3__Impl ;
+    // InternalPascal.g:2836:1: rule__ProgramHeading__Group__3 : rule__ProgramHeading__Group__3__Impl ;
     public final void rule__ProgramHeading__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2834:1: ( rule__ProgramHeading__Group__3__Impl )
-            // InternalPascal.g:2835:2: rule__ProgramHeading__Group__3__Impl
+            // InternalPascal.g:2840:1: ( rule__ProgramHeading__Group__3__Impl )
+            // InternalPascal.g:2841:2: rule__ProgramHeading__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ProgramHeading__Group__3__Impl();
@@ -9864,17 +9828,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group__3__Impl"
-    // InternalPascal.g:2841:1: rule__ProgramHeading__Group__3__Impl : ( ';' ) ;
+    // InternalPascal.g:2847:1: rule__ProgramHeading__Group__3__Impl : ( ';' ) ;
     public final void rule__ProgramHeading__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2845:1: ( ( ';' ) )
-            // InternalPascal.g:2846:1: ( ';' )
+            // InternalPascal.g:2851:1: ( ( ';' ) )
+            // InternalPascal.g:2852:1: ( ';' )
             {
-            // InternalPascal.g:2846:1: ( ';' )
-            // InternalPascal.g:2847:2: ';'
+            // InternalPascal.g:2852:1: ( ';' )
+            // InternalPascal.g:2853:2: ';'
             {
              before(grammarAccess.getProgramHeadingAccess().getSemicolonKeyword_3()); 
             match(input,37,FOLLOW_2); 
@@ -9901,14 +9865,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group_2__0"
-    // InternalPascal.g:2857:1: rule__ProgramHeading__Group_2__0 : rule__ProgramHeading__Group_2__0__Impl rule__ProgramHeading__Group_2__1 ;
+    // InternalPascal.g:2863:1: rule__ProgramHeading__Group_2__0 : rule__ProgramHeading__Group_2__0__Impl rule__ProgramHeading__Group_2__1 ;
     public final void rule__ProgramHeading__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2861:1: ( rule__ProgramHeading__Group_2__0__Impl rule__ProgramHeading__Group_2__1 )
-            // InternalPascal.g:2862:2: rule__ProgramHeading__Group_2__0__Impl rule__ProgramHeading__Group_2__1
+            // InternalPascal.g:2867:1: ( rule__ProgramHeading__Group_2__0__Impl rule__ProgramHeading__Group_2__1 )
+            // InternalPascal.g:2868:2: rule__ProgramHeading__Group_2__0__Impl rule__ProgramHeading__Group_2__1
             {
             pushFollow(FOLLOW_5);
             rule__ProgramHeading__Group_2__0__Impl();
@@ -9939,17 +9903,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group_2__0__Impl"
-    // InternalPascal.g:2869:1: rule__ProgramHeading__Group_2__0__Impl : ( '(' ) ;
+    // InternalPascal.g:2875:1: rule__ProgramHeading__Group_2__0__Impl : ( '(' ) ;
     public final void rule__ProgramHeading__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2873:1: ( ( '(' ) )
-            // InternalPascal.g:2874:1: ( '(' )
+            // InternalPascal.g:2879:1: ( ( '(' ) )
+            // InternalPascal.g:2880:1: ( '(' )
             {
-            // InternalPascal.g:2874:1: ( '(' )
-            // InternalPascal.g:2875:2: '('
+            // InternalPascal.g:2880:1: ( '(' )
+            // InternalPascal.g:2881:2: '('
             {
              before(grammarAccess.getProgramHeadingAccess().getLeftParenthesisKeyword_2_0()); 
             match(input,38,FOLLOW_2); 
@@ -9976,14 +9940,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group_2__1"
-    // InternalPascal.g:2884:1: rule__ProgramHeading__Group_2__1 : rule__ProgramHeading__Group_2__1__Impl rule__ProgramHeading__Group_2__2 ;
+    // InternalPascal.g:2890:1: rule__ProgramHeading__Group_2__1 : rule__ProgramHeading__Group_2__1__Impl rule__ProgramHeading__Group_2__2 ;
     public final void rule__ProgramHeading__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2888:1: ( rule__ProgramHeading__Group_2__1__Impl rule__ProgramHeading__Group_2__2 )
-            // InternalPascal.g:2889:2: rule__ProgramHeading__Group_2__1__Impl rule__ProgramHeading__Group_2__2
+            // InternalPascal.g:2894:1: ( rule__ProgramHeading__Group_2__1__Impl rule__ProgramHeading__Group_2__2 )
+            // InternalPascal.g:2895:2: rule__ProgramHeading__Group_2__1__Impl rule__ProgramHeading__Group_2__2
             {
             pushFollow(FOLLOW_7);
             rule__ProgramHeading__Group_2__1__Impl();
@@ -10014,21 +9978,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group_2__1__Impl"
-    // InternalPascal.g:2896:1: rule__ProgramHeading__Group_2__1__Impl : ( ( rule__ProgramHeading__IdentifierListAssignment_2_1 ) ) ;
+    // InternalPascal.g:2902:1: rule__ProgramHeading__Group_2__1__Impl : ( ( rule__ProgramHeading__IdentifierListAssignment_2_1 ) ) ;
     public final void rule__ProgramHeading__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2900:1: ( ( ( rule__ProgramHeading__IdentifierListAssignment_2_1 ) ) )
-            // InternalPascal.g:2901:1: ( ( rule__ProgramHeading__IdentifierListAssignment_2_1 ) )
+            // InternalPascal.g:2906:1: ( ( ( rule__ProgramHeading__IdentifierListAssignment_2_1 ) ) )
+            // InternalPascal.g:2907:1: ( ( rule__ProgramHeading__IdentifierListAssignment_2_1 ) )
             {
-            // InternalPascal.g:2901:1: ( ( rule__ProgramHeading__IdentifierListAssignment_2_1 ) )
-            // InternalPascal.g:2902:2: ( rule__ProgramHeading__IdentifierListAssignment_2_1 )
+            // InternalPascal.g:2907:1: ( ( rule__ProgramHeading__IdentifierListAssignment_2_1 ) )
+            // InternalPascal.g:2908:2: ( rule__ProgramHeading__IdentifierListAssignment_2_1 )
             {
              before(grammarAccess.getProgramHeadingAccess().getIdentifierListAssignment_2_1()); 
-            // InternalPascal.g:2903:2: ( rule__ProgramHeading__IdentifierListAssignment_2_1 )
-            // InternalPascal.g:2903:3: rule__ProgramHeading__IdentifierListAssignment_2_1
+            // InternalPascal.g:2909:2: ( rule__ProgramHeading__IdentifierListAssignment_2_1 )
+            // InternalPascal.g:2909:3: rule__ProgramHeading__IdentifierListAssignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__ProgramHeading__IdentifierListAssignment_2_1();
@@ -10061,14 +10025,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group_2__2"
-    // InternalPascal.g:2911:1: rule__ProgramHeading__Group_2__2 : rule__ProgramHeading__Group_2__2__Impl ;
+    // InternalPascal.g:2917:1: rule__ProgramHeading__Group_2__2 : rule__ProgramHeading__Group_2__2__Impl ;
     public final void rule__ProgramHeading__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2915:1: ( rule__ProgramHeading__Group_2__2__Impl )
-            // InternalPascal.g:2916:2: rule__ProgramHeading__Group_2__2__Impl
+            // InternalPascal.g:2921:1: ( rule__ProgramHeading__Group_2__2__Impl )
+            // InternalPascal.g:2922:2: rule__ProgramHeading__Group_2__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ProgramHeading__Group_2__2__Impl();
@@ -10094,17 +10058,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__Group_2__2__Impl"
-    // InternalPascal.g:2922:1: rule__ProgramHeading__Group_2__2__Impl : ( ')' ) ;
+    // InternalPascal.g:2928:1: rule__ProgramHeading__Group_2__2__Impl : ( ')' ) ;
     public final void rule__ProgramHeading__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2926:1: ( ( ')' ) )
-            // InternalPascal.g:2927:1: ( ')' )
+            // InternalPascal.g:2932:1: ( ( ')' ) )
+            // InternalPascal.g:2933:1: ( ')' )
             {
-            // InternalPascal.g:2927:1: ( ')' )
-            // InternalPascal.g:2928:2: ')'
+            // InternalPascal.g:2933:1: ( ')' )
+            // InternalPascal.g:2934:2: ')'
             {
              before(grammarAccess.getProgramHeadingAccess().getRightParenthesisKeyword_2_2()); 
             match(input,39,FOLLOW_2); 
@@ -10131,14 +10095,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group__0"
-    // InternalPascal.g:2938:1: rule__IdentifierList__Group__0 : rule__IdentifierList__Group__0__Impl rule__IdentifierList__Group__1 ;
+    // InternalPascal.g:2944:1: rule__IdentifierList__Group__0 : rule__IdentifierList__Group__0__Impl rule__IdentifierList__Group__1 ;
     public final void rule__IdentifierList__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2942:1: ( rule__IdentifierList__Group__0__Impl rule__IdentifierList__Group__1 )
-            // InternalPascal.g:2943:2: rule__IdentifierList__Group__0__Impl rule__IdentifierList__Group__1
+            // InternalPascal.g:2948:1: ( rule__IdentifierList__Group__0__Impl rule__IdentifierList__Group__1 )
+            // InternalPascal.g:2949:2: rule__IdentifierList__Group__0__Impl rule__IdentifierList__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__IdentifierList__Group__0__Impl();
@@ -10169,21 +10133,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group__0__Impl"
-    // InternalPascal.g:2950:1: rule__IdentifierList__Group__0__Impl : ( () ) ;
+    // InternalPascal.g:2956:1: rule__IdentifierList__Group__0__Impl : ( () ) ;
     public final void rule__IdentifierList__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2954:1: ( ( () ) )
-            // InternalPascal.g:2955:1: ( () )
+            // InternalPascal.g:2960:1: ( ( () ) )
+            // InternalPascal.g:2961:1: ( () )
             {
-            // InternalPascal.g:2955:1: ( () )
-            // InternalPascal.g:2956:2: ()
+            // InternalPascal.g:2961:1: ( () )
+            // InternalPascal.g:2962:2: ()
             {
              before(grammarAccess.getIdentifierListAccess().getIdentifierListAction_0()); 
-            // InternalPascal.g:2957:2: ()
-            // InternalPascal.g:2957:3: 
+            // InternalPascal.g:2963:2: ()
+            // InternalPascal.g:2963:3: 
             {
             }
 
@@ -10206,14 +10170,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group__1"
-    // InternalPascal.g:2965:1: rule__IdentifierList__Group__1 : rule__IdentifierList__Group__1__Impl rule__IdentifierList__Group__2 ;
+    // InternalPascal.g:2971:1: rule__IdentifierList__Group__1 : rule__IdentifierList__Group__1__Impl rule__IdentifierList__Group__2 ;
     public final void rule__IdentifierList__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2969:1: ( rule__IdentifierList__Group__1__Impl rule__IdentifierList__Group__2 )
-            // InternalPascal.g:2970:2: rule__IdentifierList__Group__1__Impl rule__IdentifierList__Group__2
+            // InternalPascal.g:2975:1: ( rule__IdentifierList__Group__1__Impl rule__IdentifierList__Group__2 )
+            // InternalPascal.g:2976:2: rule__IdentifierList__Group__1__Impl rule__IdentifierList__Group__2
             {
             pushFollow(FOLLOW_8);
             rule__IdentifierList__Group__1__Impl();
@@ -10244,21 +10208,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group__1__Impl"
-    // InternalPascal.g:2977:1: rule__IdentifierList__Group__1__Impl : ( ( rule__IdentifierList__IdentifierAssignment_1 ) ) ;
+    // InternalPascal.g:2983:1: rule__IdentifierList__Group__1__Impl : ( ( rule__IdentifierList__IdentifierAssignment_1 ) ) ;
     public final void rule__IdentifierList__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2981:1: ( ( ( rule__IdentifierList__IdentifierAssignment_1 ) ) )
-            // InternalPascal.g:2982:1: ( ( rule__IdentifierList__IdentifierAssignment_1 ) )
+            // InternalPascal.g:2987:1: ( ( ( rule__IdentifierList__IdentifierAssignment_1 ) ) )
+            // InternalPascal.g:2988:1: ( ( rule__IdentifierList__IdentifierAssignment_1 ) )
             {
-            // InternalPascal.g:2982:1: ( ( rule__IdentifierList__IdentifierAssignment_1 ) )
-            // InternalPascal.g:2983:2: ( rule__IdentifierList__IdentifierAssignment_1 )
+            // InternalPascal.g:2988:1: ( ( rule__IdentifierList__IdentifierAssignment_1 ) )
+            // InternalPascal.g:2989:2: ( rule__IdentifierList__IdentifierAssignment_1 )
             {
              before(grammarAccess.getIdentifierListAccess().getIdentifierAssignment_1()); 
-            // InternalPascal.g:2984:2: ( rule__IdentifierList__IdentifierAssignment_1 )
-            // InternalPascal.g:2984:3: rule__IdentifierList__IdentifierAssignment_1
+            // InternalPascal.g:2990:2: ( rule__IdentifierList__IdentifierAssignment_1 )
+            // InternalPascal.g:2990:3: rule__IdentifierList__IdentifierAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__IdentifierList__IdentifierAssignment_1();
@@ -10291,14 +10255,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group__2"
-    // InternalPascal.g:2992:1: rule__IdentifierList__Group__2 : rule__IdentifierList__Group__2__Impl ;
+    // InternalPascal.g:2998:1: rule__IdentifierList__Group__2 : rule__IdentifierList__Group__2__Impl ;
     public final void rule__IdentifierList__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:2996:1: ( rule__IdentifierList__Group__2__Impl )
-            // InternalPascal.g:2997:2: rule__IdentifierList__Group__2__Impl
+            // InternalPascal.g:3002:1: ( rule__IdentifierList__Group__2__Impl )
+            // InternalPascal.g:3003:2: rule__IdentifierList__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__IdentifierList__Group__2__Impl();
@@ -10324,20 +10288,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group__2__Impl"
-    // InternalPascal.g:3003:1: rule__IdentifierList__Group__2__Impl : ( ( rule__IdentifierList__Group_2__0 )* ) ;
+    // InternalPascal.g:3009:1: rule__IdentifierList__Group__2__Impl : ( ( rule__IdentifierList__Group_2__0 )* ) ;
     public final void rule__IdentifierList__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3007:1: ( ( ( rule__IdentifierList__Group_2__0 )* ) )
-            // InternalPascal.g:3008:1: ( ( rule__IdentifierList__Group_2__0 )* )
+            // InternalPascal.g:3013:1: ( ( ( rule__IdentifierList__Group_2__0 )* ) )
+            // InternalPascal.g:3014:1: ( ( rule__IdentifierList__Group_2__0 )* )
             {
-            // InternalPascal.g:3008:1: ( ( rule__IdentifierList__Group_2__0 )* )
-            // InternalPascal.g:3009:2: ( rule__IdentifierList__Group_2__0 )*
+            // InternalPascal.g:3014:1: ( ( rule__IdentifierList__Group_2__0 )* )
+            // InternalPascal.g:3015:2: ( rule__IdentifierList__Group_2__0 )*
             {
              before(grammarAccess.getIdentifierListAccess().getGroup_2()); 
-            // InternalPascal.g:3010:2: ( rule__IdentifierList__Group_2__0 )*
+            // InternalPascal.g:3016:2: ( rule__IdentifierList__Group_2__0 )*
             loop30:
             do {
                 int alt30=2;
@@ -10350,7 +10314,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt30) {
             	case 1 :
-            	    // InternalPascal.g:3010:3: rule__IdentifierList__Group_2__0
+            	    // InternalPascal.g:3016:3: rule__IdentifierList__Group_2__0
             	    {
             	    pushFollow(FOLLOW_9);
             	    rule__IdentifierList__Group_2__0();
@@ -10389,14 +10353,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group_2__0"
-    // InternalPascal.g:3019:1: rule__IdentifierList__Group_2__0 : rule__IdentifierList__Group_2__0__Impl rule__IdentifierList__Group_2__1 ;
+    // InternalPascal.g:3025:1: rule__IdentifierList__Group_2__0 : rule__IdentifierList__Group_2__0__Impl rule__IdentifierList__Group_2__1 ;
     public final void rule__IdentifierList__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3023:1: ( rule__IdentifierList__Group_2__0__Impl rule__IdentifierList__Group_2__1 )
-            // InternalPascal.g:3024:2: rule__IdentifierList__Group_2__0__Impl rule__IdentifierList__Group_2__1
+            // InternalPascal.g:3029:1: ( rule__IdentifierList__Group_2__0__Impl rule__IdentifierList__Group_2__1 )
+            // InternalPascal.g:3030:2: rule__IdentifierList__Group_2__0__Impl rule__IdentifierList__Group_2__1
             {
             pushFollow(FOLLOW_5);
             rule__IdentifierList__Group_2__0__Impl();
@@ -10427,17 +10391,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group_2__0__Impl"
-    // InternalPascal.g:3031:1: rule__IdentifierList__Group_2__0__Impl : ( ',' ) ;
+    // InternalPascal.g:3037:1: rule__IdentifierList__Group_2__0__Impl : ( ',' ) ;
     public final void rule__IdentifierList__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3035:1: ( ( ',' ) )
-            // InternalPascal.g:3036:1: ( ',' )
+            // InternalPascal.g:3041:1: ( ( ',' ) )
+            // InternalPascal.g:3042:1: ( ',' )
             {
-            // InternalPascal.g:3036:1: ( ',' )
-            // InternalPascal.g:3037:2: ','
+            // InternalPascal.g:3042:1: ( ',' )
+            // InternalPascal.g:3043:2: ','
             {
              before(grammarAccess.getIdentifierListAccess().getCommaKeyword_2_0()); 
             match(input,40,FOLLOW_2); 
@@ -10464,14 +10428,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group_2__1"
-    // InternalPascal.g:3046:1: rule__IdentifierList__Group_2__1 : rule__IdentifierList__Group_2__1__Impl ;
+    // InternalPascal.g:3052:1: rule__IdentifierList__Group_2__1 : rule__IdentifierList__Group_2__1__Impl ;
     public final void rule__IdentifierList__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3050:1: ( rule__IdentifierList__Group_2__1__Impl )
-            // InternalPascal.g:3051:2: rule__IdentifierList__Group_2__1__Impl
+            // InternalPascal.g:3056:1: ( rule__IdentifierList__Group_2__1__Impl )
+            // InternalPascal.g:3057:2: rule__IdentifierList__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__IdentifierList__Group_2__1__Impl();
@@ -10497,21 +10461,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__Group_2__1__Impl"
-    // InternalPascal.g:3057:1: rule__IdentifierList__Group_2__1__Impl : ( ( rule__IdentifierList__IdentifierList1Assignment_2_1 ) ) ;
+    // InternalPascal.g:3063:1: rule__IdentifierList__Group_2__1__Impl : ( ( rule__IdentifierList__IdentifierList1Assignment_2_1 ) ) ;
     public final void rule__IdentifierList__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3061:1: ( ( ( rule__IdentifierList__IdentifierList1Assignment_2_1 ) ) )
-            // InternalPascal.g:3062:1: ( ( rule__IdentifierList__IdentifierList1Assignment_2_1 ) )
+            // InternalPascal.g:3067:1: ( ( ( rule__IdentifierList__IdentifierList1Assignment_2_1 ) ) )
+            // InternalPascal.g:3068:1: ( ( rule__IdentifierList__IdentifierList1Assignment_2_1 ) )
             {
-            // InternalPascal.g:3062:1: ( ( rule__IdentifierList__IdentifierList1Assignment_2_1 ) )
-            // InternalPascal.g:3063:2: ( rule__IdentifierList__IdentifierList1Assignment_2_1 )
+            // InternalPascal.g:3068:1: ( ( rule__IdentifierList__IdentifierList1Assignment_2_1 ) )
+            // InternalPascal.g:3069:2: ( rule__IdentifierList__IdentifierList1Assignment_2_1 )
             {
              before(grammarAccess.getIdentifierListAccess().getIdentifierList1Assignment_2_1()); 
-            // InternalPascal.g:3064:2: ( rule__IdentifierList__IdentifierList1Assignment_2_1 )
-            // InternalPascal.g:3064:3: rule__IdentifierList__IdentifierList1Assignment_2_1
+            // InternalPascal.g:3070:2: ( rule__IdentifierList__IdentifierList1Assignment_2_1 )
+            // InternalPascal.g:3070:3: rule__IdentifierList__IdentifierList1Assignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__IdentifierList__IdentifierList1Assignment_2_1();
@@ -10544,14 +10508,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Block__Group__0"
-    // InternalPascal.g:3073:1: rule__Block__Group__0 : rule__Block__Group__0__Impl rule__Block__Group__1 ;
+    // InternalPascal.g:3079:1: rule__Block__Group__0 : rule__Block__Group__0__Impl rule__Block__Group__1 ;
     public final void rule__Block__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3077:1: ( rule__Block__Group__0__Impl rule__Block__Group__1 )
-            // InternalPascal.g:3078:2: rule__Block__Group__0__Impl rule__Block__Group__1
+            // InternalPascal.g:3083:1: ( rule__Block__Group__0__Impl rule__Block__Group__1 )
+            // InternalPascal.g:3084:2: rule__Block__Group__0__Impl rule__Block__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Block__Group__0__Impl();
@@ -10582,21 +10546,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Block__Group__0__Impl"
-    // InternalPascal.g:3085:1: rule__Block__Group__0__Impl : ( () ) ;
+    // InternalPascal.g:3091:1: rule__Block__Group__0__Impl : ( () ) ;
     public final void rule__Block__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3089:1: ( ( () ) )
-            // InternalPascal.g:3090:1: ( () )
+            // InternalPascal.g:3095:1: ( ( () ) )
+            // InternalPascal.g:3096:1: ( () )
             {
-            // InternalPascal.g:3090:1: ( () )
-            // InternalPascal.g:3091:2: ()
+            // InternalPascal.g:3096:1: ( () )
+            // InternalPascal.g:3097:2: ()
             {
              before(grammarAccess.getBlockAccess().getBlockAction_0()); 
-            // InternalPascal.g:3092:2: ()
-            // InternalPascal.g:3092:3: 
+            // InternalPascal.g:3098:2: ()
+            // InternalPascal.g:3098:3: 
             {
             }
 
@@ -10619,14 +10583,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Block__Group__1"
-    // InternalPascal.g:3100:1: rule__Block__Group__1 : rule__Block__Group__1__Impl rule__Block__Group__2 ;
+    // InternalPascal.g:3106:1: rule__Block__Group__1 : rule__Block__Group__1__Impl rule__Block__Group__2 ;
     public final void rule__Block__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3104:1: ( rule__Block__Group__1__Impl rule__Block__Group__2 )
-            // InternalPascal.g:3105:2: rule__Block__Group__1__Impl rule__Block__Group__2
+            // InternalPascal.g:3110:1: ( rule__Block__Group__1__Impl rule__Block__Group__2 )
+            // InternalPascal.g:3111:2: rule__Block__Group__1__Impl rule__Block__Group__2
             {
             pushFollow(FOLLOW_3);
             rule__Block__Group__1__Impl();
@@ -10657,20 +10621,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Block__Group__1__Impl"
-    // InternalPascal.g:3112:1: rule__Block__Group__1__Impl : ( ( rule__Block__Alternatives_1 )* ) ;
+    // InternalPascal.g:3118:1: rule__Block__Group__1__Impl : ( ( rule__Block__Alternatives_1 )* ) ;
     public final void rule__Block__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3116:1: ( ( ( rule__Block__Alternatives_1 )* ) )
-            // InternalPascal.g:3117:1: ( ( rule__Block__Alternatives_1 )* )
+            // InternalPascal.g:3122:1: ( ( ( rule__Block__Alternatives_1 )* ) )
+            // InternalPascal.g:3123:1: ( ( rule__Block__Alternatives_1 )* )
             {
-            // InternalPascal.g:3117:1: ( ( rule__Block__Alternatives_1 )* )
-            // InternalPascal.g:3118:2: ( rule__Block__Alternatives_1 )*
+            // InternalPascal.g:3123:1: ( ( rule__Block__Alternatives_1 )* )
+            // InternalPascal.g:3124:2: ( rule__Block__Alternatives_1 )*
             {
              before(grammarAccess.getBlockAccess().getAlternatives_1()); 
-            // InternalPascal.g:3119:2: ( rule__Block__Alternatives_1 )*
+            // InternalPascal.g:3125:2: ( rule__Block__Alternatives_1 )*
             loop31:
             do {
                 int alt31=2;
@@ -10683,7 +10647,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt31) {
             	case 1 :
-            	    // InternalPascal.g:3119:3: rule__Block__Alternatives_1
+            	    // InternalPascal.g:3125:3: rule__Block__Alternatives_1
             	    {
             	    pushFollow(FOLLOW_10);
             	    rule__Block__Alternatives_1();
@@ -10722,14 +10686,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Block__Group__2"
-    // InternalPascal.g:3127:1: rule__Block__Group__2 : rule__Block__Group__2__Impl ;
+    // InternalPascal.g:3133:1: rule__Block__Group__2 : rule__Block__Group__2__Impl ;
     public final void rule__Block__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3131:1: ( rule__Block__Group__2__Impl )
-            // InternalPascal.g:3132:2: rule__Block__Group__2__Impl
+            // InternalPascal.g:3137:1: ( rule__Block__Group__2__Impl )
+            // InternalPascal.g:3138:2: rule__Block__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Block__Group__2__Impl();
@@ -10755,21 +10719,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Block__Group__2__Impl"
-    // InternalPascal.g:3138:1: rule__Block__Group__2__Impl : ( ( rule__Block__CompoundStatementAssignment_2 ) ) ;
+    // InternalPascal.g:3144:1: rule__Block__Group__2__Impl : ( ( rule__Block__CompoundStatementAssignment_2 ) ) ;
     public final void rule__Block__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3142:1: ( ( ( rule__Block__CompoundStatementAssignment_2 ) ) )
-            // InternalPascal.g:3143:1: ( ( rule__Block__CompoundStatementAssignment_2 ) )
+            // InternalPascal.g:3148:1: ( ( ( rule__Block__CompoundStatementAssignment_2 ) ) )
+            // InternalPascal.g:3149:1: ( ( rule__Block__CompoundStatementAssignment_2 ) )
             {
-            // InternalPascal.g:3143:1: ( ( rule__Block__CompoundStatementAssignment_2 ) )
-            // InternalPascal.g:3144:2: ( rule__Block__CompoundStatementAssignment_2 )
+            // InternalPascal.g:3149:1: ( ( rule__Block__CompoundStatementAssignment_2 ) )
+            // InternalPascal.g:3150:2: ( rule__Block__CompoundStatementAssignment_2 )
             {
              before(grammarAccess.getBlockAccess().getCompoundStatementAssignment_2()); 
-            // InternalPascal.g:3145:2: ( rule__Block__CompoundStatementAssignment_2 )
-            // InternalPascal.g:3145:3: rule__Block__CompoundStatementAssignment_2
+            // InternalPascal.g:3151:2: ( rule__Block__CompoundStatementAssignment_2 )
+            // InternalPascal.g:3151:3: rule__Block__CompoundStatementAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Block__CompoundStatementAssignment_2();
@@ -10802,14 +10766,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group__0"
-    // InternalPascal.g:3154:1: rule__Label_declaration_part__Group__0 : rule__Label_declaration_part__Group__0__Impl rule__Label_declaration_part__Group__1 ;
+    // InternalPascal.g:3160:1: rule__Label_declaration_part__Group__0 : rule__Label_declaration_part__Group__0__Impl rule__Label_declaration_part__Group__1 ;
     public final void rule__Label_declaration_part__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3158:1: ( rule__Label_declaration_part__Group__0__Impl rule__Label_declaration_part__Group__1 )
-            // InternalPascal.g:3159:2: rule__Label_declaration_part__Group__0__Impl rule__Label_declaration_part__Group__1
+            // InternalPascal.g:3164:1: ( rule__Label_declaration_part__Group__0__Impl rule__Label_declaration_part__Group__1 )
+            // InternalPascal.g:3165:2: rule__Label_declaration_part__Group__0__Impl rule__Label_declaration_part__Group__1
             {
             pushFollow(FOLLOW_11);
             rule__Label_declaration_part__Group__0__Impl();
@@ -10840,17 +10804,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group__0__Impl"
-    // InternalPascal.g:3166:1: rule__Label_declaration_part__Group__0__Impl : ( 'label' ) ;
+    // InternalPascal.g:3172:1: rule__Label_declaration_part__Group__0__Impl : ( 'label' ) ;
     public final void rule__Label_declaration_part__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3170:1: ( ( 'label' ) )
-            // InternalPascal.g:3171:1: ( 'label' )
+            // InternalPascal.g:3176:1: ( ( 'label' ) )
+            // InternalPascal.g:3177:1: ( 'label' )
             {
-            // InternalPascal.g:3171:1: ( 'label' )
-            // InternalPascal.g:3172:2: 'label'
+            // InternalPascal.g:3177:1: ( 'label' )
+            // InternalPascal.g:3178:2: 'label'
             {
              before(grammarAccess.getLabel_declaration_partAccess().getLabelKeyword_0()); 
             match(input,41,FOLLOW_2); 
@@ -10877,14 +10841,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group__1"
-    // InternalPascal.g:3181:1: rule__Label_declaration_part__Group__1 : rule__Label_declaration_part__Group__1__Impl rule__Label_declaration_part__Group__2 ;
+    // InternalPascal.g:3187:1: rule__Label_declaration_part__Group__1 : rule__Label_declaration_part__Group__1__Impl rule__Label_declaration_part__Group__2 ;
     public final void rule__Label_declaration_part__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3185:1: ( rule__Label_declaration_part__Group__1__Impl rule__Label_declaration_part__Group__2 )
-            // InternalPascal.g:3186:2: rule__Label_declaration_part__Group__1__Impl rule__Label_declaration_part__Group__2
+            // InternalPascal.g:3191:1: ( rule__Label_declaration_part__Group__1__Impl rule__Label_declaration_part__Group__2 )
+            // InternalPascal.g:3192:2: rule__Label_declaration_part__Group__1__Impl rule__Label_declaration_part__Group__2
             {
             pushFollow(FOLLOW_12);
             rule__Label_declaration_part__Group__1__Impl();
@@ -10915,17 +10879,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group__1__Impl"
-    // InternalPascal.g:3193:1: rule__Label_declaration_part__Group__1__Impl : ( rulelabel ) ;
+    // InternalPascal.g:3199:1: rule__Label_declaration_part__Group__1__Impl : ( rulelabel ) ;
     public final void rule__Label_declaration_part__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3197:1: ( ( rulelabel ) )
-            // InternalPascal.g:3198:1: ( rulelabel )
+            // InternalPascal.g:3203:1: ( ( rulelabel ) )
+            // InternalPascal.g:3204:1: ( rulelabel )
             {
-            // InternalPascal.g:3198:1: ( rulelabel )
-            // InternalPascal.g:3199:2: rulelabel
+            // InternalPascal.g:3204:1: ( rulelabel )
+            // InternalPascal.g:3205:2: rulelabel
             {
              before(grammarAccess.getLabel_declaration_partAccess().getLabelParserRuleCall_1()); 
             pushFollow(FOLLOW_2);
@@ -10956,14 +10920,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group__2"
-    // InternalPascal.g:3208:1: rule__Label_declaration_part__Group__2 : rule__Label_declaration_part__Group__2__Impl rule__Label_declaration_part__Group__3 ;
+    // InternalPascal.g:3214:1: rule__Label_declaration_part__Group__2 : rule__Label_declaration_part__Group__2__Impl rule__Label_declaration_part__Group__3 ;
     public final void rule__Label_declaration_part__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3212:1: ( rule__Label_declaration_part__Group__2__Impl rule__Label_declaration_part__Group__3 )
-            // InternalPascal.g:3213:2: rule__Label_declaration_part__Group__2__Impl rule__Label_declaration_part__Group__3
+            // InternalPascal.g:3218:1: ( rule__Label_declaration_part__Group__2__Impl rule__Label_declaration_part__Group__3 )
+            // InternalPascal.g:3219:2: rule__Label_declaration_part__Group__2__Impl rule__Label_declaration_part__Group__3
             {
             pushFollow(FOLLOW_12);
             rule__Label_declaration_part__Group__2__Impl();
@@ -10994,20 +10958,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group__2__Impl"
-    // InternalPascal.g:3220:1: rule__Label_declaration_part__Group__2__Impl : ( ( rule__Label_declaration_part__Group_2__0 )* ) ;
+    // InternalPascal.g:3226:1: rule__Label_declaration_part__Group__2__Impl : ( ( rule__Label_declaration_part__Group_2__0 )* ) ;
     public final void rule__Label_declaration_part__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3224:1: ( ( ( rule__Label_declaration_part__Group_2__0 )* ) )
-            // InternalPascal.g:3225:1: ( ( rule__Label_declaration_part__Group_2__0 )* )
+            // InternalPascal.g:3230:1: ( ( ( rule__Label_declaration_part__Group_2__0 )* ) )
+            // InternalPascal.g:3231:1: ( ( rule__Label_declaration_part__Group_2__0 )* )
             {
-            // InternalPascal.g:3225:1: ( ( rule__Label_declaration_part__Group_2__0 )* )
-            // InternalPascal.g:3226:2: ( rule__Label_declaration_part__Group_2__0 )*
+            // InternalPascal.g:3231:1: ( ( rule__Label_declaration_part__Group_2__0 )* )
+            // InternalPascal.g:3232:2: ( rule__Label_declaration_part__Group_2__0 )*
             {
              before(grammarAccess.getLabel_declaration_partAccess().getGroup_2()); 
-            // InternalPascal.g:3227:2: ( rule__Label_declaration_part__Group_2__0 )*
+            // InternalPascal.g:3233:2: ( rule__Label_declaration_part__Group_2__0 )*
             loop32:
             do {
                 int alt32=2;
@@ -11020,7 +10984,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt32) {
             	case 1 :
-            	    // InternalPascal.g:3227:3: rule__Label_declaration_part__Group_2__0
+            	    // InternalPascal.g:3233:3: rule__Label_declaration_part__Group_2__0
             	    {
             	    pushFollow(FOLLOW_9);
             	    rule__Label_declaration_part__Group_2__0();
@@ -11059,14 +11023,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group__3"
-    // InternalPascal.g:3235:1: rule__Label_declaration_part__Group__3 : rule__Label_declaration_part__Group__3__Impl ;
+    // InternalPascal.g:3241:1: rule__Label_declaration_part__Group__3 : rule__Label_declaration_part__Group__3__Impl ;
     public final void rule__Label_declaration_part__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3239:1: ( rule__Label_declaration_part__Group__3__Impl )
-            // InternalPascal.g:3240:2: rule__Label_declaration_part__Group__3__Impl
+            // InternalPascal.g:3245:1: ( rule__Label_declaration_part__Group__3__Impl )
+            // InternalPascal.g:3246:2: rule__Label_declaration_part__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Label_declaration_part__Group__3__Impl();
@@ -11092,17 +11056,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group__3__Impl"
-    // InternalPascal.g:3246:1: rule__Label_declaration_part__Group__3__Impl : ( ';' ) ;
+    // InternalPascal.g:3252:1: rule__Label_declaration_part__Group__3__Impl : ( ';' ) ;
     public final void rule__Label_declaration_part__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3250:1: ( ( ';' ) )
-            // InternalPascal.g:3251:1: ( ';' )
+            // InternalPascal.g:3256:1: ( ( ';' ) )
+            // InternalPascal.g:3257:1: ( ';' )
             {
-            // InternalPascal.g:3251:1: ( ';' )
-            // InternalPascal.g:3252:2: ';'
+            // InternalPascal.g:3257:1: ( ';' )
+            // InternalPascal.g:3258:2: ';'
             {
              before(grammarAccess.getLabel_declaration_partAccess().getSemicolonKeyword_3()); 
             match(input,37,FOLLOW_2); 
@@ -11129,14 +11093,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group_2__0"
-    // InternalPascal.g:3262:1: rule__Label_declaration_part__Group_2__0 : rule__Label_declaration_part__Group_2__0__Impl rule__Label_declaration_part__Group_2__1 ;
+    // InternalPascal.g:3268:1: rule__Label_declaration_part__Group_2__0 : rule__Label_declaration_part__Group_2__0__Impl rule__Label_declaration_part__Group_2__1 ;
     public final void rule__Label_declaration_part__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3266:1: ( rule__Label_declaration_part__Group_2__0__Impl rule__Label_declaration_part__Group_2__1 )
-            // InternalPascal.g:3267:2: rule__Label_declaration_part__Group_2__0__Impl rule__Label_declaration_part__Group_2__1
+            // InternalPascal.g:3272:1: ( rule__Label_declaration_part__Group_2__0__Impl rule__Label_declaration_part__Group_2__1 )
+            // InternalPascal.g:3273:2: rule__Label_declaration_part__Group_2__0__Impl rule__Label_declaration_part__Group_2__1
             {
             pushFollow(FOLLOW_11);
             rule__Label_declaration_part__Group_2__0__Impl();
@@ -11167,17 +11131,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group_2__0__Impl"
-    // InternalPascal.g:3274:1: rule__Label_declaration_part__Group_2__0__Impl : ( ',' ) ;
+    // InternalPascal.g:3280:1: rule__Label_declaration_part__Group_2__0__Impl : ( ',' ) ;
     public final void rule__Label_declaration_part__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3278:1: ( ( ',' ) )
-            // InternalPascal.g:3279:1: ( ',' )
+            // InternalPascal.g:3284:1: ( ( ',' ) )
+            // InternalPascal.g:3285:1: ( ',' )
             {
-            // InternalPascal.g:3279:1: ( ',' )
-            // InternalPascal.g:3280:2: ','
+            // InternalPascal.g:3285:1: ( ',' )
+            // InternalPascal.g:3286:2: ','
             {
              before(grammarAccess.getLabel_declaration_partAccess().getCommaKeyword_2_0()); 
             match(input,40,FOLLOW_2); 
@@ -11204,14 +11168,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group_2__1"
-    // InternalPascal.g:3289:1: rule__Label_declaration_part__Group_2__1 : rule__Label_declaration_part__Group_2__1__Impl ;
+    // InternalPascal.g:3295:1: rule__Label_declaration_part__Group_2__1 : rule__Label_declaration_part__Group_2__1__Impl ;
     public final void rule__Label_declaration_part__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3293:1: ( rule__Label_declaration_part__Group_2__1__Impl )
-            // InternalPascal.g:3294:2: rule__Label_declaration_part__Group_2__1__Impl
+            // InternalPascal.g:3299:1: ( rule__Label_declaration_part__Group_2__1__Impl )
+            // InternalPascal.g:3300:2: rule__Label_declaration_part__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Label_declaration_part__Group_2__1__Impl();
@@ -11237,21 +11201,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__Group_2__1__Impl"
-    // InternalPascal.g:3300:1: rule__Label_declaration_part__Group_2__1__Impl : ( ( rule__Label_declaration_part__LabelAssignment_2_1 ) ) ;
+    // InternalPascal.g:3306:1: rule__Label_declaration_part__Group_2__1__Impl : ( ( rule__Label_declaration_part__LabelAssignment_2_1 ) ) ;
     public final void rule__Label_declaration_part__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3304:1: ( ( ( rule__Label_declaration_part__LabelAssignment_2_1 ) ) )
-            // InternalPascal.g:3305:1: ( ( rule__Label_declaration_part__LabelAssignment_2_1 ) )
+            // InternalPascal.g:3310:1: ( ( ( rule__Label_declaration_part__LabelAssignment_2_1 ) ) )
+            // InternalPascal.g:3311:1: ( ( rule__Label_declaration_part__LabelAssignment_2_1 ) )
             {
-            // InternalPascal.g:3305:1: ( ( rule__Label_declaration_part__LabelAssignment_2_1 ) )
-            // InternalPascal.g:3306:2: ( rule__Label_declaration_part__LabelAssignment_2_1 )
+            // InternalPascal.g:3311:1: ( ( rule__Label_declaration_part__LabelAssignment_2_1 ) )
+            // InternalPascal.g:3312:2: ( rule__Label_declaration_part__LabelAssignment_2_1 )
             {
              before(grammarAccess.getLabel_declaration_partAccess().getLabelAssignment_2_1()); 
-            // InternalPascal.g:3307:2: ( rule__Label_declaration_part__LabelAssignment_2_1 )
-            // InternalPascal.g:3307:3: rule__Label_declaration_part__LabelAssignment_2_1
+            // InternalPascal.g:3313:2: ( rule__Label_declaration_part__LabelAssignment_2_1 )
+            // InternalPascal.g:3313:3: rule__Label_declaration_part__LabelAssignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__Label_declaration_part__LabelAssignment_2_1();
@@ -11284,14 +11248,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinitionPart__Group__0"
-    // InternalPascal.g:3316:1: rule__ConstantDefinitionPart__Group__0 : rule__ConstantDefinitionPart__Group__0__Impl rule__ConstantDefinitionPart__Group__1 ;
+    // InternalPascal.g:3322:1: rule__ConstantDefinitionPart__Group__0 : rule__ConstantDefinitionPart__Group__0__Impl rule__ConstantDefinitionPart__Group__1 ;
     public final void rule__ConstantDefinitionPart__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3320:1: ( rule__ConstantDefinitionPart__Group__0__Impl rule__ConstantDefinitionPart__Group__1 )
-            // InternalPascal.g:3321:2: rule__ConstantDefinitionPart__Group__0__Impl rule__ConstantDefinitionPart__Group__1
+            // InternalPascal.g:3326:1: ( rule__ConstantDefinitionPart__Group__0__Impl rule__ConstantDefinitionPart__Group__1 )
+            // InternalPascal.g:3327:2: rule__ConstantDefinitionPart__Group__0__Impl rule__ConstantDefinitionPart__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__ConstantDefinitionPart__Group__0__Impl();
@@ -11322,17 +11286,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinitionPart__Group__0__Impl"
-    // InternalPascal.g:3328:1: rule__ConstantDefinitionPart__Group__0__Impl : ( 'const' ) ;
+    // InternalPascal.g:3334:1: rule__ConstantDefinitionPart__Group__0__Impl : ( 'const' ) ;
     public final void rule__ConstantDefinitionPart__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3332:1: ( ( 'const' ) )
-            // InternalPascal.g:3333:1: ( 'const' )
+            // InternalPascal.g:3338:1: ( ( 'const' ) )
+            // InternalPascal.g:3339:1: ( 'const' )
             {
-            // InternalPascal.g:3333:1: ( 'const' )
-            // InternalPascal.g:3334:2: 'const'
+            // InternalPascal.g:3339:1: ( 'const' )
+            // InternalPascal.g:3340:2: 'const'
             {
              before(grammarAccess.getConstantDefinitionPartAccess().getConstKeyword_0()); 
             match(input,42,FOLLOW_2); 
@@ -11359,14 +11323,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinitionPart__Group__1"
-    // InternalPascal.g:3343:1: rule__ConstantDefinitionPart__Group__1 : rule__ConstantDefinitionPart__Group__1__Impl ;
+    // InternalPascal.g:3349:1: rule__ConstantDefinitionPart__Group__1 : rule__ConstantDefinitionPart__Group__1__Impl ;
     public final void rule__ConstantDefinitionPart__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3347:1: ( rule__ConstantDefinitionPart__Group__1__Impl )
-            // InternalPascal.g:3348:2: rule__ConstantDefinitionPart__Group__1__Impl
+            // InternalPascal.g:3353:1: ( rule__ConstantDefinitionPart__Group__1__Impl )
+            // InternalPascal.g:3354:2: rule__ConstantDefinitionPart__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ConstantDefinitionPart__Group__1__Impl();
@@ -11392,24 +11356,24 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinitionPart__Group__1__Impl"
-    // InternalPascal.g:3354:1: rule__ConstantDefinitionPart__Group__1__Impl : ( ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* ) ) ;
+    // InternalPascal.g:3360:1: rule__ConstantDefinitionPart__Group__1__Impl : ( ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* ) ) ;
     public final void rule__ConstantDefinitionPart__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3358:1: ( ( ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* ) ) )
-            // InternalPascal.g:3359:1: ( ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* ) )
+            // InternalPascal.g:3364:1: ( ( ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* ) ) )
+            // InternalPascal.g:3365:1: ( ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* ) )
             {
-            // InternalPascal.g:3359:1: ( ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* ) )
-            // InternalPascal.g:3360:2: ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* )
+            // InternalPascal.g:3365:1: ( ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* ) )
+            // InternalPascal.g:3366:2: ( ( rule__ConstantDefinitionPart__Group_1__0 ) ) ( ( rule__ConstantDefinitionPart__Group_1__0 )* )
             {
-            // InternalPascal.g:3360:2: ( ( rule__ConstantDefinitionPart__Group_1__0 ) )
-            // InternalPascal.g:3361:3: ( rule__ConstantDefinitionPart__Group_1__0 )
+            // InternalPascal.g:3366:2: ( ( rule__ConstantDefinitionPart__Group_1__0 ) )
+            // InternalPascal.g:3367:3: ( rule__ConstantDefinitionPart__Group_1__0 )
             {
              before(grammarAccess.getConstantDefinitionPartAccess().getGroup_1()); 
-            // InternalPascal.g:3362:3: ( rule__ConstantDefinitionPart__Group_1__0 )
-            // InternalPascal.g:3362:4: rule__ConstantDefinitionPart__Group_1__0
+            // InternalPascal.g:3368:3: ( rule__ConstantDefinitionPart__Group_1__0 )
+            // InternalPascal.g:3368:4: rule__ConstantDefinitionPart__Group_1__0
             {
             pushFollow(FOLLOW_13);
             rule__ConstantDefinitionPart__Group_1__0();
@@ -11423,11 +11387,11 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // InternalPascal.g:3365:2: ( ( rule__ConstantDefinitionPart__Group_1__0 )* )
-            // InternalPascal.g:3366:3: ( rule__ConstantDefinitionPart__Group_1__0 )*
+            // InternalPascal.g:3371:2: ( ( rule__ConstantDefinitionPart__Group_1__0 )* )
+            // InternalPascal.g:3372:3: ( rule__ConstantDefinitionPart__Group_1__0 )*
             {
              before(grammarAccess.getConstantDefinitionPartAccess().getGroup_1()); 
-            // InternalPascal.g:3367:3: ( rule__ConstantDefinitionPart__Group_1__0 )*
+            // InternalPascal.g:3373:3: ( rule__ConstantDefinitionPart__Group_1__0 )*
             loop33:
             do {
                 int alt33=2;
@@ -11440,7 +11404,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt33) {
             	case 1 :
-            	    // InternalPascal.g:3367:4: rule__ConstantDefinitionPart__Group_1__0
+            	    // InternalPascal.g:3373:4: rule__ConstantDefinitionPart__Group_1__0
             	    {
             	    pushFollow(FOLLOW_13);
             	    rule__ConstantDefinitionPart__Group_1__0();
@@ -11482,14 +11446,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinitionPart__Group_1__0"
-    // InternalPascal.g:3377:1: rule__ConstantDefinitionPart__Group_1__0 : rule__ConstantDefinitionPart__Group_1__0__Impl rule__ConstantDefinitionPart__Group_1__1 ;
+    // InternalPascal.g:3383:1: rule__ConstantDefinitionPart__Group_1__0 : rule__ConstantDefinitionPart__Group_1__0__Impl rule__ConstantDefinitionPart__Group_1__1 ;
     public final void rule__ConstantDefinitionPart__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3381:1: ( rule__ConstantDefinitionPart__Group_1__0__Impl rule__ConstantDefinitionPart__Group_1__1 )
-            // InternalPascal.g:3382:2: rule__ConstantDefinitionPart__Group_1__0__Impl rule__ConstantDefinitionPart__Group_1__1
+            // InternalPascal.g:3387:1: ( rule__ConstantDefinitionPart__Group_1__0__Impl rule__ConstantDefinitionPart__Group_1__1 )
+            // InternalPascal.g:3388:2: rule__ConstantDefinitionPart__Group_1__0__Impl rule__ConstantDefinitionPart__Group_1__1
             {
             pushFollow(FOLLOW_14);
             rule__ConstantDefinitionPart__Group_1__0__Impl();
@@ -11520,21 +11484,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinitionPart__Group_1__0__Impl"
-    // InternalPascal.g:3389:1: rule__ConstantDefinitionPart__Group_1__0__Impl : ( ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 ) ) ;
+    // InternalPascal.g:3395:1: rule__ConstantDefinitionPart__Group_1__0__Impl : ( ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 ) ) ;
     public final void rule__ConstantDefinitionPart__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3393:1: ( ( ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 ) ) )
-            // InternalPascal.g:3394:1: ( ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 ) )
+            // InternalPascal.g:3399:1: ( ( ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 ) ) )
+            // InternalPascal.g:3400:1: ( ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 ) )
             {
-            // InternalPascal.g:3394:1: ( ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 ) )
-            // InternalPascal.g:3395:2: ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 )
+            // InternalPascal.g:3400:1: ( ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 ) )
+            // InternalPascal.g:3401:2: ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 )
             {
              before(grammarAccess.getConstantDefinitionPartAccess().getConstantDefinitionAssignment_1_0()); 
-            // InternalPascal.g:3396:2: ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 )
-            // InternalPascal.g:3396:3: rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0
+            // InternalPascal.g:3402:2: ( rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 )
+            // InternalPascal.g:3402:3: rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0
             {
             pushFollow(FOLLOW_2);
             rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0();
@@ -11567,14 +11531,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinitionPart__Group_1__1"
-    // InternalPascal.g:3404:1: rule__ConstantDefinitionPart__Group_1__1 : rule__ConstantDefinitionPart__Group_1__1__Impl ;
+    // InternalPascal.g:3410:1: rule__ConstantDefinitionPart__Group_1__1 : rule__ConstantDefinitionPart__Group_1__1__Impl ;
     public final void rule__ConstantDefinitionPart__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3408:1: ( rule__ConstantDefinitionPart__Group_1__1__Impl )
-            // InternalPascal.g:3409:2: rule__ConstantDefinitionPart__Group_1__1__Impl
+            // InternalPascal.g:3414:1: ( rule__ConstantDefinitionPart__Group_1__1__Impl )
+            // InternalPascal.g:3415:2: rule__ConstantDefinitionPart__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ConstantDefinitionPart__Group_1__1__Impl();
@@ -11600,17 +11564,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinitionPart__Group_1__1__Impl"
-    // InternalPascal.g:3415:1: rule__ConstantDefinitionPart__Group_1__1__Impl : ( ';' ) ;
+    // InternalPascal.g:3421:1: rule__ConstantDefinitionPart__Group_1__1__Impl : ( ';' ) ;
     public final void rule__ConstantDefinitionPart__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3419:1: ( ( ';' ) )
-            // InternalPascal.g:3420:1: ( ';' )
+            // InternalPascal.g:3425:1: ( ( ';' ) )
+            // InternalPascal.g:3426:1: ( ';' )
             {
-            // InternalPascal.g:3420:1: ( ';' )
-            // InternalPascal.g:3421:2: ';'
+            // InternalPascal.g:3426:1: ( ';' )
+            // InternalPascal.g:3427:2: ';'
             {
              before(grammarAccess.getConstantDefinitionPartAccess().getSemicolonKeyword_1_1()); 
             match(input,37,FOLLOW_2); 
@@ -11637,14 +11601,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinition__Group__0"
-    // InternalPascal.g:3431:1: rule__ConstantDefinition__Group__0 : rule__ConstantDefinition__Group__0__Impl rule__ConstantDefinition__Group__1 ;
+    // InternalPascal.g:3437:1: rule__ConstantDefinition__Group__0 : rule__ConstantDefinition__Group__0__Impl rule__ConstantDefinition__Group__1 ;
     public final void rule__ConstantDefinition__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3435:1: ( rule__ConstantDefinition__Group__0__Impl rule__ConstantDefinition__Group__1 )
-            // InternalPascal.g:3436:2: rule__ConstantDefinition__Group__0__Impl rule__ConstantDefinition__Group__1
+            // InternalPascal.g:3441:1: ( rule__ConstantDefinition__Group__0__Impl rule__ConstantDefinition__Group__1 )
+            // InternalPascal.g:3442:2: rule__ConstantDefinition__Group__0__Impl rule__ConstantDefinition__Group__1
             {
             pushFollow(FOLLOW_15);
             rule__ConstantDefinition__Group__0__Impl();
@@ -11675,21 +11639,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinition__Group__0__Impl"
-    // InternalPascal.g:3443:1: rule__ConstantDefinition__Group__0__Impl : ( ( rule__ConstantDefinition__IdentifierAssignment_0 ) ) ;
+    // InternalPascal.g:3449:1: rule__ConstantDefinition__Group__0__Impl : ( ( rule__ConstantDefinition__IdentifierAssignment_0 ) ) ;
     public final void rule__ConstantDefinition__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3447:1: ( ( ( rule__ConstantDefinition__IdentifierAssignment_0 ) ) )
-            // InternalPascal.g:3448:1: ( ( rule__ConstantDefinition__IdentifierAssignment_0 ) )
+            // InternalPascal.g:3453:1: ( ( ( rule__ConstantDefinition__IdentifierAssignment_0 ) ) )
+            // InternalPascal.g:3454:1: ( ( rule__ConstantDefinition__IdentifierAssignment_0 ) )
             {
-            // InternalPascal.g:3448:1: ( ( rule__ConstantDefinition__IdentifierAssignment_0 ) )
-            // InternalPascal.g:3449:2: ( rule__ConstantDefinition__IdentifierAssignment_0 )
+            // InternalPascal.g:3454:1: ( ( rule__ConstantDefinition__IdentifierAssignment_0 ) )
+            // InternalPascal.g:3455:2: ( rule__ConstantDefinition__IdentifierAssignment_0 )
             {
              before(grammarAccess.getConstantDefinitionAccess().getIdentifierAssignment_0()); 
-            // InternalPascal.g:3450:2: ( rule__ConstantDefinition__IdentifierAssignment_0 )
-            // InternalPascal.g:3450:3: rule__ConstantDefinition__IdentifierAssignment_0
+            // InternalPascal.g:3456:2: ( rule__ConstantDefinition__IdentifierAssignment_0 )
+            // InternalPascal.g:3456:3: rule__ConstantDefinition__IdentifierAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__ConstantDefinition__IdentifierAssignment_0();
@@ -11722,14 +11686,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinition__Group__1"
-    // InternalPascal.g:3458:1: rule__ConstantDefinition__Group__1 : rule__ConstantDefinition__Group__1__Impl rule__ConstantDefinition__Group__2 ;
+    // InternalPascal.g:3464:1: rule__ConstantDefinition__Group__1 : rule__ConstantDefinition__Group__1__Impl rule__ConstantDefinition__Group__2 ;
     public final void rule__ConstantDefinition__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3462:1: ( rule__ConstantDefinition__Group__1__Impl rule__ConstantDefinition__Group__2 )
-            // InternalPascal.g:3463:2: rule__ConstantDefinition__Group__1__Impl rule__ConstantDefinition__Group__2
+            // InternalPascal.g:3468:1: ( rule__ConstantDefinition__Group__1__Impl rule__ConstantDefinition__Group__2 )
+            // InternalPascal.g:3469:2: rule__ConstantDefinition__Group__1__Impl rule__ConstantDefinition__Group__2
             {
             pushFollow(FOLLOW_16);
             rule__ConstantDefinition__Group__1__Impl();
@@ -11760,17 +11724,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinition__Group__1__Impl"
-    // InternalPascal.g:3470:1: rule__ConstantDefinition__Group__1__Impl : ( '=' ) ;
+    // InternalPascal.g:3476:1: rule__ConstantDefinition__Group__1__Impl : ( '=' ) ;
     public final void rule__ConstantDefinition__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3474:1: ( ( '=' ) )
-            // InternalPascal.g:3475:1: ( '=' )
+            // InternalPascal.g:3480:1: ( ( '=' ) )
+            // InternalPascal.g:3481:1: ( '=' )
             {
-            // InternalPascal.g:3475:1: ( '=' )
-            // InternalPascal.g:3476:2: '='
+            // InternalPascal.g:3481:1: ( '=' )
+            // InternalPascal.g:3482:2: '='
             {
              before(grammarAccess.getConstantDefinitionAccess().getEqualsSignKeyword_1()); 
             match(input,21,FOLLOW_2); 
@@ -11797,14 +11761,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinition__Group__2"
-    // InternalPascal.g:3485:1: rule__ConstantDefinition__Group__2 : rule__ConstantDefinition__Group__2__Impl ;
+    // InternalPascal.g:3491:1: rule__ConstantDefinition__Group__2 : rule__ConstantDefinition__Group__2__Impl ;
     public final void rule__ConstantDefinition__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3489:1: ( rule__ConstantDefinition__Group__2__Impl )
-            // InternalPascal.g:3490:2: rule__ConstantDefinition__Group__2__Impl
+            // InternalPascal.g:3495:1: ( rule__ConstantDefinition__Group__2__Impl )
+            // InternalPascal.g:3496:2: rule__ConstantDefinition__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ConstantDefinition__Group__2__Impl();
@@ -11830,21 +11794,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinition__Group__2__Impl"
-    // InternalPascal.g:3496:1: rule__ConstantDefinition__Group__2__Impl : ( ( rule__ConstantDefinition__ConstantAssignment_2 ) ) ;
+    // InternalPascal.g:3502:1: rule__ConstantDefinition__Group__2__Impl : ( ( rule__ConstantDefinition__ConstantAssignment_2 ) ) ;
     public final void rule__ConstantDefinition__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3500:1: ( ( ( rule__ConstantDefinition__ConstantAssignment_2 ) ) )
-            // InternalPascal.g:3501:1: ( ( rule__ConstantDefinition__ConstantAssignment_2 ) )
+            // InternalPascal.g:3506:1: ( ( ( rule__ConstantDefinition__ConstantAssignment_2 ) ) )
+            // InternalPascal.g:3507:1: ( ( rule__ConstantDefinition__ConstantAssignment_2 ) )
             {
-            // InternalPascal.g:3501:1: ( ( rule__ConstantDefinition__ConstantAssignment_2 ) )
-            // InternalPascal.g:3502:2: ( rule__ConstantDefinition__ConstantAssignment_2 )
+            // InternalPascal.g:3507:1: ( ( rule__ConstantDefinition__ConstantAssignment_2 ) )
+            // InternalPascal.g:3508:2: ( rule__ConstantDefinition__ConstantAssignment_2 )
             {
              before(grammarAccess.getConstantDefinitionAccess().getConstantAssignment_2()); 
-            // InternalPascal.g:3503:2: ( rule__ConstantDefinition__ConstantAssignment_2 )
-            // InternalPascal.g:3503:3: rule__ConstantDefinition__ConstantAssignment_2
+            // InternalPascal.g:3509:2: ( rule__ConstantDefinition__ConstantAssignment_2 )
+            // InternalPascal.g:3509:3: rule__ConstantDefinition__ConstantAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__ConstantDefinition__ConstantAssignment_2();
@@ -11877,14 +11841,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Group_1__0"
-    // InternalPascal.g:3512:1: rule__Constant__Group_1__0 : rule__Constant__Group_1__0__Impl rule__Constant__Group_1__1 ;
+    // InternalPascal.g:3518:1: rule__Constant__Group_1__0 : rule__Constant__Group_1__0__Impl rule__Constant__Group_1__1 ;
     public final void rule__Constant__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3516:1: ( rule__Constant__Group_1__0__Impl rule__Constant__Group_1__1 )
-            // InternalPascal.g:3517:2: rule__Constant__Group_1__0__Impl rule__Constant__Group_1__1
+            // InternalPascal.g:3522:1: ( rule__Constant__Group_1__0__Impl rule__Constant__Group_1__1 )
+            // InternalPascal.g:3523:2: rule__Constant__Group_1__0__Impl rule__Constant__Group_1__1
             {
             pushFollow(FOLLOW_17);
             rule__Constant__Group_1__0__Impl();
@@ -11915,21 +11879,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Group_1__0__Impl"
-    // InternalPascal.g:3524:1: rule__Constant__Group_1__0__Impl : ( ( rule__Constant__SignAssignment_1_0 ) ) ;
+    // InternalPascal.g:3530:1: rule__Constant__Group_1__0__Impl : ( ( rule__Constant__SignAssignment_1_0 ) ) ;
     public final void rule__Constant__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3528:1: ( ( ( rule__Constant__SignAssignment_1_0 ) ) )
-            // InternalPascal.g:3529:1: ( ( rule__Constant__SignAssignment_1_0 ) )
+            // InternalPascal.g:3534:1: ( ( ( rule__Constant__SignAssignment_1_0 ) ) )
+            // InternalPascal.g:3535:1: ( ( rule__Constant__SignAssignment_1_0 ) )
             {
-            // InternalPascal.g:3529:1: ( ( rule__Constant__SignAssignment_1_0 ) )
-            // InternalPascal.g:3530:2: ( rule__Constant__SignAssignment_1_0 )
+            // InternalPascal.g:3535:1: ( ( rule__Constant__SignAssignment_1_0 ) )
+            // InternalPascal.g:3536:2: ( rule__Constant__SignAssignment_1_0 )
             {
              before(grammarAccess.getConstantAccess().getSignAssignment_1_0()); 
-            // InternalPascal.g:3531:2: ( rule__Constant__SignAssignment_1_0 )
-            // InternalPascal.g:3531:3: rule__Constant__SignAssignment_1_0
+            // InternalPascal.g:3537:2: ( rule__Constant__SignAssignment_1_0 )
+            // InternalPascal.g:3537:3: rule__Constant__SignAssignment_1_0
             {
             pushFollow(FOLLOW_2);
             rule__Constant__SignAssignment_1_0();
@@ -11962,14 +11926,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Group_1__1"
-    // InternalPascal.g:3539:1: rule__Constant__Group_1__1 : rule__Constant__Group_1__1__Impl ;
+    // InternalPascal.g:3545:1: rule__Constant__Group_1__1 : rule__Constant__Group_1__1__Impl ;
     public final void rule__Constant__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3543:1: ( rule__Constant__Group_1__1__Impl )
-            // InternalPascal.g:3544:2: rule__Constant__Group_1__1__Impl
+            // InternalPascal.g:3549:1: ( rule__Constant__Group_1__1__Impl )
+            // InternalPascal.g:3550:2: rule__Constant__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Constant__Group_1__1__Impl();
@@ -11995,21 +11959,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Group_1__1__Impl"
-    // InternalPascal.g:3550:1: rule__Constant__Group_1__1__Impl : ( ( rule__Constant__Number1Assignment_1_1 ) ) ;
+    // InternalPascal.g:3556:1: rule__Constant__Group_1__1__Impl : ( ( rule__Constant__Number1Assignment_1_1 ) ) ;
     public final void rule__Constant__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3554:1: ( ( ( rule__Constant__Number1Assignment_1_1 ) ) )
-            // InternalPascal.g:3555:1: ( ( rule__Constant__Number1Assignment_1_1 ) )
+            // InternalPascal.g:3560:1: ( ( ( rule__Constant__Number1Assignment_1_1 ) ) )
+            // InternalPascal.g:3561:1: ( ( rule__Constant__Number1Assignment_1_1 ) )
             {
-            // InternalPascal.g:3555:1: ( ( rule__Constant__Number1Assignment_1_1 ) )
-            // InternalPascal.g:3556:2: ( rule__Constant__Number1Assignment_1_1 )
+            // InternalPascal.g:3561:1: ( ( rule__Constant__Number1Assignment_1_1 ) )
+            // InternalPascal.g:3562:2: ( rule__Constant__Number1Assignment_1_1 )
             {
              before(grammarAccess.getConstantAccess().getNumber1Assignment_1_1()); 
-            // InternalPascal.g:3557:2: ( rule__Constant__Number1Assignment_1_1 )
-            // InternalPascal.g:3557:3: rule__Constant__Number1Assignment_1_1
+            // InternalPascal.g:3563:2: ( rule__Constant__Number1Assignment_1_1 )
+            // InternalPascal.g:3563:3: rule__Constant__Number1Assignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Constant__Number1Assignment_1_1();
@@ -12042,14 +12006,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Group_4__0"
-    // InternalPascal.g:3566:1: rule__Constant__Group_4__0 : rule__Constant__Group_4__0__Impl rule__Constant__Group_4__1 ;
+    // InternalPascal.g:3572:1: rule__Constant__Group_4__0 : rule__Constant__Group_4__0__Impl rule__Constant__Group_4__1 ;
     public final void rule__Constant__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3570:1: ( rule__Constant__Group_4__0__Impl rule__Constant__Group_4__1 )
-            // InternalPascal.g:3571:2: rule__Constant__Group_4__0__Impl rule__Constant__Group_4__1
+            // InternalPascal.g:3576:1: ( rule__Constant__Group_4__0__Impl rule__Constant__Group_4__1 )
+            // InternalPascal.g:3577:2: rule__Constant__Group_4__0__Impl rule__Constant__Group_4__1
             {
             pushFollow(FOLLOW_5);
             rule__Constant__Group_4__0__Impl();
@@ -12080,21 +12044,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Group_4__0__Impl"
-    // InternalPascal.g:3578:1: rule__Constant__Group_4__0__Impl : ( ( rule__Constant__Sign2Assignment_4_0 ) ) ;
+    // InternalPascal.g:3584:1: rule__Constant__Group_4__0__Impl : ( ( rule__Constant__Sign2Assignment_4_0 ) ) ;
     public final void rule__Constant__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3582:1: ( ( ( rule__Constant__Sign2Assignment_4_0 ) ) )
-            // InternalPascal.g:3583:1: ( ( rule__Constant__Sign2Assignment_4_0 ) )
+            // InternalPascal.g:3588:1: ( ( ( rule__Constant__Sign2Assignment_4_0 ) ) )
+            // InternalPascal.g:3589:1: ( ( rule__Constant__Sign2Assignment_4_0 ) )
             {
-            // InternalPascal.g:3583:1: ( ( rule__Constant__Sign2Assignment_4_0 ) )
-            // InternalPascal.g:3584:2: ( rule__Constant__Sign2Assignment_4_0 )
+            // InternalPascal.g:3589:1: ( ( rule__Constant__Sign2Assignment_4_0 ) )
+            // InternalPascal.g:3590:2: ( rule__Constant__Sign2Assignment_4_0 )
             {
              before(grammarAccess.getConstantAccess().getSign2Assignment_4_0()); 
-            // InternalPascal.g:3585:2: ( rule__Constant__Sign2Assignment_4_0 )
-            // InternalPascal.g:3585:3: rule__Constant__Sign2Assignment_4_0
+            // InternalPascal.g:3591:2: ( rule__Constant__Sign2Assignment_4_0 )
+            // InternalPascal.g:3591:3: rule__Constant__Sign2Assignment_4_0
             {
             pushFollow(FOLLOW_2);
             rule__Constant__Sign2Assignment_4_0();
@@ -12127,14 +12091,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Group_4__1"
-    // InternalPascal.g:3593:1: rule__Constant__Group_4__1 : rule__Constant__Group_4__1__Impl ;
+    // InternalPascal.g:3599:1: rule__Constant__Group_4__1 : rule__Constant__Group_4__1__Impl ;
     public final void rule__Constant__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3597:1: ( rule__Constant__Group_4__1__Impl )
-            // InternalPascal.g:3598:2: rule__Constant__Group_4__1__Impl
+            // InternalPascal.g:3603:1: ( rule__Constant__Group_4__1__Impl )
+            // InternalPascal.g:3604:2: rule__Constant__Group_4__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Constant__Group_4__1__Impl();
@@ -12160,21 +12124,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Group_4__1__Impl"
-    // InternalPascal.g:3604:1: rule__Constant__Group_4__1__Impl : ( ( rule__Constant__Identifier1Assignment_4_1 ) ) ;
+    // InternalPascal.g:3610:1: rule__Constant__Group_4__1__Impl : ( ( rule__Constant__Identifier1Assignment_4_1 ) ) ;
     public final void rule__Constant__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3608:1: ( ( ( rule__Constant__Identifier1Assignment_4_1 ) ) )
-            // InternalPascal.g:3609:1: ( ( rule__Constant__Identifier1Assignment_4_1 ) )
+            // InternalPascal.g:3614:1: ( ( ( rule__Constant__Identifier1Assignment_4_1 ) ) )
+            // InternalPascal.g:3615:1: ( ( rule__Constant__Identifier1Assignment_4_1 ) )
             {
-            // InternalPascal.g:3609:1: ( ( rule__Constant__Identifier1Assignment_4_1 ) )
-            // InternalPascal.g:3610:2: ( rule__Constant__Identifier1Assignment_4_1 )
+            // InternalPascal.g:3615:1: ( ( rule__Constant__Identifier1Assignment_4_1 ) )
+            // InternalPascal.g:3616:2: ( rule__Constant__Identifier1Assignment_4_1 )
             {
              before(grammarAccess.getConstantAccess().getIdentifier1Assignment_4_1()); 
-            // InternalPascal.g:3611:2: ( rule__Constant__Identifier1Assignment_4_1 )
-            // InternalPascal.g:3611:3: rule__Constant__Identifier1Assignment_4_1
+            // InternalPascal.g:3617:2: ( rule__Constant__Identifier1Assignment_4_1 )
+            // InternalPascal.g:3617:3: rule__Constant__Identifier1Assignment_4_1
             {
             pushFollow(FOLLOW_2);
             rule__Constant__Identifier1Assignment_4_1();
@@ -12207,14 +12171,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantChr__Group__0"
-    // InternalPascal.g:3620:1: rule__ConstantChr__Group__0 : rule__ConstantChr__Group__0__Impl rule__ConstantChr__Group__1 ;
+    // InternalPascal.g:3626:1: rule__ConstantChr__Group__0 : rule__ConstantChr__Group__0__Impl rule__ConstantChr__Group__1 ;
     public final void rule__ConstantChr__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3624:1: ( rule__ConstantChr__Group__0__Impl rule__ConstantChr__Group__1 )
-            // InternalPascal.g:3625:2: rule__ConstantChr__Group__0__Impl rule__ConstantChr__Group__1
+            // InternalPascal.g:3630:1: ( rule__ConstantChr__Group__0__Impl rule__ConstantChr__Group__1 )
+            // InternalPascal.g:3631:2: rule__ConstantChr__Group__0__Impl rule__ConstantChr__Group__1
             {
             pushFollow(FOLLOW_18);
             rule__ConstantChr__Group__0__Impl();
@@ -12245,17 +12209,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantChr__Group__0__Impl"
-    // InternalPascal.g:3632:1: rule__ConstantChr__Group__0__Impl : ( 'chr' ) ;
+    // InternalPascal.g:3638:1: rule__ConstantChr__Group__0__Impl : ( 'chr' ) ;
     public final void rule__ConstantChr__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3636:1: ( ( 'chr' ) )
-            // InternalPascal.g:3637:1: ( 'chr' )
+            // InternalPascal.g:3642:1: ( ( 'chr' ) )
+            // InternalPascal.g:3643:1: ( 'chr' )
             {
-            // InternalPascal.g:3637:1: ( 'chr' )
-            // InternalPascal.g:3638:2: 'chr'
+            // InternalPascal.g:3643:1: ( 'chr' )
+            // InternalPascal.g:3644:2: 'chr'
             {
              before(grammarAccess.getConstantChrAccess().getChrKeyword_0()); 
             match(input,43,FOLLOW_2); 
@@ -12282,14 +12246,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantChr__Group__1"
-    // InternalPascal.g:3647:1: rule__ConstantChr__Group__1 : rule__ConstantChr__Group__1__Impl rule__ConstantChr__Group__2 ;
+    // InternalPascal.g:3653:1: rule__ConstantChr__Group__1 : rule__ConstantChr__Group__1__Impl rule__ConstantChr__Group__2 ;
     public final void rule__ConstantChr__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3651:1: ( rule__ConstantChr__Group__1__Impl rule__ConstantChr__Group__2 )
-            // InternalPascal.g:3652:2: rule__ConstantChr__Group__1__Impl rule__ConstantChr__Group__2
+            // InternalPascal.g:3657:1: ( rule__ConstantChr__Group__1__Impl rule__ConstantChr__Group__2 )
+            // InternalPascal.g:3658:2: rule__ConstantChr__Group__1__Impl rule__ConstantChr__Group__2
             {
             pushFollow(FOLLOW_19);
             rule__ConstantChr__Group__1__Impl();
@@ -12320,17 +12284,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantChr__Group__1__Impl"
-    // InternalPascal.g:3659:1: rule__ConstantChr__Group__1__Impl : ( '(' ) ;
+    // InternalPascal.g:3665:1: rule__ConstantChr__Group__1__Impl : ( '(' ) ;
     public final void rule__ConstantChr__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3663:1: ( ( '(' ) )
-            // InternalPascal.g:3664:1: ( '(' )
+            // InternalPascal.g:3669:1: ( ( '(' ) )
+            // InternalPascal.g:3670:1: ( '(' )
             {
-            // InternalPascal.g:3664:1: ( '(' )
-            // InternalPascal.g:3665:2: '('
+            // InternalPascal.g:3670:1: ( '(' )
+            // InternalPascal.g:3671:2: '('
             {
              before(grammarAccess.getConstantChrAccess().getLeftParenthesisKeyword_1()); 
             match(input,38,FOLLOW_2); 
@@ -12357,14 +12321,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantChr__Group__2"
-    // InternalPascal.g:3674:1: rule__ConstantChr__Group__2 : rule__ConstantChr__Group__2__Impl rule__ConstantChr__Group__3 ;
+    // InternalPascal.g:3680:1: rule__ConstantChr__Group__2 : rule__ConstantChr__Group__2__Impl rule__ConstantChr__Group__3 ;
     public final void rule__ConstantChr__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3678:1: ( rule__ConstantChr__Group__2__Impl rule__ConstantChr__Group__3 )
-            // InternalPascal.g:3679:2: rule__ConstantChr__Group__2__Impl rule__ConstantChr__Group__3
+            // InternalPascal.g:3684:1: ( rule__ConstantChr__Group__2__Impl rule__ConstantChr__Group__3 )
+            // InternalPascal.g:3685:2: rule__ConstantChr__Group__2__Impl rule__ConstantChr__Group__3
             {
             pushFollow(FOLLOW_7);
             rule__ConstantChr__Group__2__Impl();
@@ -12395,21 +12359,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantChr__Group__2__Impl"
-    // InternalPascal.g:3686:1: rule__ConstantChr__Group__2__Impl : ( ( rule__ConstantChr__UnsignedIntegerAssignment_2 ) ) ;
+    // InternalPascal.g:3692:1: rule__ConstantChr__Group__2__Impl : ( ( rule__ConstantChr__UnsignedIntegerAssignment_2 ) ) ;
     public final void rule__ConstantChr__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3690:1: ( ( ( rule__ConstantChr__UnsignedIntegerAssignment_2 ) ) )
-            // InternalPascal.g:3691:1: ( ( rule__ConstantChr__UnsignedIntegerAssignment_2 ) )
+            // InternalPascal.g:3696:1: ( ( ( rule__ConstantChr__UnsignedIntegerAssignment_2 ) ) )
+            // InternalPascal.g:3697:1: ( ( rule__ConstantChr__UnsignedIntegerAssignment_2 ) )
             {
-            // InternalPascal.g:3691:1: ( ( rule__ConstantChr__UnsignedIntegerAssignment_2 ) )
-            // InternalPascal.g:3692:2: ( rule__ConstantChr__UnsignedIntegerAssignment_2 )
+            // InternalPascal.g:3697:1: ( ( rule__ConstantChr__UnsignedIntegerAssignment_2 ) )
+            // InternalPascal.g:3698:2: ( rule__ConstantChr__UnsignedIntegerAssignment_2 )
             {
              before(grammarAccess.getConstantChrAccess().getUnsignedIntegerAssignment_2()); 
-            // InternalPascal.g:3693:2: ( rule__ConstantChr__UnsignedIntegerAssignment_2 )
-            // InternalPascal.g:3693:3: rule__ConstantChr__UnsignedIntegerAssignment_2
+            // InternalPascal.g:3699:2: ( rule__ConstantChr__UnsignedIntegerAssignment_2 )
+            // InternalPascal.g:3699:3: rule__ConstantChr__UnsignedIntegerAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__ConstantChr__UnsignedIntegerAssignment_2();
@@ -12442,14 +12406,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantChr__Group__3"
-    // InternalPascal.g:3701:1: rule__ConstantChr__Group__3 : rule__ConstantChr__Group__3__Impl ;
+    // InternalPascal.g:3707:1: rule__ConstantChr__Group__3 : rule__ConstantChr__Group__3__Impl ;
     public final void rule__ConstantChr__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3705:1: ( rule__ConstantChr__Group__3__Impl )
-            // InternalPascal.g:3706:2: rule__ConstantChr__Group__3__Impl
+            // InternalPascal.g:3711:1: ( rule__ConstantChr__Group__3__Impl )
+            // InternalPascal.g:3712:2: rule__ConstantChr__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ConstantChr__Group__3__Impl();
@@ -12475,17 +12439,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantChr__Group__3__Impl"
-    // InternalPascal.g:3712:1: rule__ConstantChr__Group__3__Impl : ( ')' ) ;
+    // InternalPascal.g:3718:1: rule__ConstantChr__Group__3__Impl : ( ')' ) ;
     public final void rule__ConstantChr__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3716:1: ( ( ')' ) )
-            // InternalPascal.g:3717:1: ( ')' )
+            // InternalPascal.g:3722:1: ( ( ')' ) )
+            // InternalPascal.g:3723:1: ( ')' )
             {
-            // InternalPascal.g:3717:1: ( ')' )
-            // InternalPascal.g:3718:2: ')'
+            // InternalPascal.g:3723:1: ( ')' )
+            // InternalPascal.g:3724:2: ')'
             {
              before(grammarAccess.getConstantChrAccess().getRightParenthesisKeyword_3()); 
             match(input,39,FOLLOW_2); 
@@ -12512,14 +12476,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UsesUnitsPart__Group__0"
-    // InternalPascal.g:3728:1: rule__UsesUnitsPart__Group__0 : rule__UsesUnitsPart__Group__0__Impl rule__UsesUnitsPart__Group__1 ;
+    // InternalPascal.g:3734:1: rule__UsesUnitsPart__Group__0 : rule__UsesUnitsPart__Group__0__Impl rule__UsesUnitsPart__Group__1 ;
     public final void rule__UsesUnitsPart__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3732:1: ( rule__UsesUnitsPart__Group__0__Impl rule__UsesUnitsPart__Group__1 )
-            // InternalPascal.g:3733:2: rule__UsesUnitsPart__Group__0__Impl rule__UsesUnitsPart__Group__1
+            // InternalPascal.g:3738:1: ( rule__UsesUnitsPart__Group__0__Impl rule__UsesUnitsPart__Group__1 )
+            // InternalPascal.g:3739:2: rule__UsesUnitsPart__Group__0__Impl rule__UsesUnitsPart__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__UsesUnitsPart__Group__0__Impl();
@@ -12550,17 +12514,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UsesUnitsPart__Group__0__Impl"
-    // InternalPascal.g:3740:1: rule__UsesUnitsPart__Group__0__Impl : ( 'uses' ) ;
+    // InternalPascal.g:3746:1: rule__UsesUnitsPart__Group__0__Impl : ( 'uses' ) ;
     public final void rule__UsesUnitsPart__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3744:1: ( ( 'uses' ) )
-            // InternalPascal.g:3745:1: ( 'uses' )
+            // InternalPascal.g:3750:1: ( ( 'uses' ) )
+            // InternalPascal.g:3751:1: ( 'uses' )
             {
-            // InternalPascal.g:3745:1: ( 'uses' )
-            // InternalPascal.g:3746:2: 'uses'
+            // InternalPascal.g:3751:1: ( 'uses' )
+            // InternalPascal.g:3752:2: 'uses'
             {
              before(grammarAccess.getUsesUnitsPartAccess().getUsesKeyword_0()); 
             match(input,44,FOLLOW_2); 
@@ -12587,14 +12551,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UsesUnitsPart__Group__1"
-    // InternalPascal.g:3755:1: rule__UsesUnitsPart__Group__1 : rule__UsesUnitsPart__Group__1__Impl rule__UsesUnitsPart__Group__2 ;
+    // InternalPascal.g:3761:1: rule__UsesUnitsPart__Group__1 : rule__UsesUnitsPart__Group__1__Impl rule__UsesUnitsPart__Group__2 ;
     public final void rule__UsesUnitsPart__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3759:1: ( rule__UsesUnitsPart__Group__1__Impl rule__UsesUnitsPart__Group__2 )
-            // InternalPascal.g:3760:2: rule__UsesUnitsPart__Group__1__Impl rule__UsesUnitsPart__Group__2
+            // InternalPascal.g:3765:1: ( rule__UsesUnitsPart__Group__1__Impl rule__UsesUnitsPart__Group__2 )
+            // InternalPascal.g:3766:2: rule__UsesUnitsPart__Group__1__Impl rule__UsesUnitsPart__Group__2
             {
             pushFollow(FOLLOW_14);
             rule__UsesUnitsPart__Group__1__Impl();
@@ -12625,21 +12589,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UsesUnitsPart__Group__1__Impl"
-    // InternalPascal.g:3767:1: rule__UsesUnitsPart__Group__1__Impl : ( ( rule__UsesUnitsPart__IdentifierListAssignment_1 ) ) ;
+    // InternalPascal.g:3773:1: rule__UsesUnitsPart__Group__1__Impl : ( ( rule__UsesUnitsPart__IdentifierListAssignment_1 ) ) ;
     public final void rule__UsesUnitsPart__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3771:1: ( ( ( rule__UsesUnitsPart__IdentifierListAssignment_1 ) ) )
-            // InternalPascal.g:3772:1: ( ( rule__UsesUnitsPart__IdentifierListAssignment_1 ) )
+            // InternalPascal.g:3777:1: ( ( ( rule__UsesUnitsPart__IdentifierListAssignment_1 ) ) )
+            // InternalPascal.g:3778:1: ( ( rule__UsesUnitsPart__IdentifierListAssignment_1 ) )
             {
-            // InternalPascal.g:3772:1: ( ( rule__UsesUnitsPart__IdentifierListAssignment_1 ) )
-            // InternalPascal.g:3773:2: ( rule__UsesUnitsPart__IdentifierListAssignment_1 )
+            // InternalPascal.g:3778:1: ( ( rule__UsesUnitsPart__IdentifierListAssignment_1 ) )
+            // InternalPascal.g:3779:2: ( rule__UsesUnitsPart__IdentifierListAssignment_1 )
             {
              before(grammarAccess.getUsesUnitsPartAccess().getIdentifierListAssignment_1()); 
-            // InternalPascal.g:3774:2: ( rule__UsesUnitsPart__IdentifierListAssignment_1 )
-            // InternalPascal.g:3774:3: rule__UsesUnitsPart__IdentifierListAssignment_1
+            // InternalPascal.g:3780:2: ( rule__UsesUnitsPart__IdentifierListAssignment_1 )
+            // InternalPascal.g:3780:3: rule__UsesUnitsPart__IdentifierListAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__UsesUnitsPart__IdentifierListAssignment_1();
@@ -12672,14 +12636,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UsesUnitsPart__Group__2"
-    // InternalPascal.g:3782:1: rule__UsesUnitsPart__Group__2 : rule__UsesUnitsPart__Group__2__Impl ;
+    // InternalPascal.g:3788:1: rule__UsesUnitsPart__Group__2 : rule__UsesUnitsPart__Group__2__Impl ;
     public final void rule__UsesUnitsPart__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3786:1: ( rule__UsesUnitsPart__Group__2__Impl )
-            // InternalPascal.g:3787:2: rule__UsesUnitsPart__Group__2__Impl
+            // InternalPascal.g:3792:1: ( rule__UsesUnitsPart__Group__2__Impl )
+            // InternalPascal.g:3793:2: rule__UsesUnitsPart__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__UsesUnitsPart__Group__2__Impl();
@@ -12705,17 +12669,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UsesUnitsPart__Group__2__Impl"
-    // InternalPascal.g:3793:1: rule__UsesUnitsPart__Group__2__Impl : ( ';' ) ;
+    // InternalPascal.g:3799:1: rule__UsesUnitsPart__Group__2__Impl : ( ';' ) ;
     public final void rule__UsesUnitsPart__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3797:1: ( ( ';' ) )
-            // InternalPascal.g:3798:1: ( ';' )
+            // InternalPascal.g:3803:1: ( ( ';' ) )
+            // InternalPascal.g:3804:1: ( ';' )
             {
-            // InternalPascal.g:3798:1: ( ';' )
-            // InternalPascal.g:3799:2: ';'
+            // InternalPascal.g:3804:1: ( ';' )
+            // InternalPascal.g:3805:2: ';'
             {
              before(grammarAccess.getUsesUnitsPartAccess().getSemicolonKeyword_2()); 
             match(input,37,FOLLOW_2); 
@@ -12742,14 +12706,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__Group__0"
-    // InternalPascal.g:3809:1: rule__TypeDefinitionPart__Group__0 : rule__TypeDefinitionPart__Group__0__Impl rule__TypeDefinitionPart__Group__1 ;
+    // InternalPascal.g:3815:1: rule__TypeDefinitionPart__Group__0 : rule__TypeDefinitionPart__Group__0__Impl rule__TypeDefinitionPart__Group__1 ;
     public final void rule__TypeDefinitionPart__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3813:1: ( rule__TypeDefinitionPart__Group__0__Impl rule__TypeDefinitionPart__Group__1 )
-            // InternalPascal.g:3814:2: rule__TypeDefinitionPart__Group__0__Impl rule__TypeDefinitionPart__Group__1
+            // InternalPascal.g:3819:1: ( rule__TypeDefinitionPart__Group__0__Impl rule__TypeDefinitionPart__Group__1 )
+            // InternalPascal.g:3820:2: rule__TypeDefinitionPart__Group__0__Impl rule__TypeDefinitionPart__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__TypeDefinitionPart__Group__0__Impl();
@@ -12780,17 +12744,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__Group__0__Impl"
-    // InternalPascal.g:3821:1: rule__TypeDefinitionPart__Group__0__Impl : ( 'type' ) ;
+    // InternalPascal.g:3827:1: rule__TypeDefinitionPart__Group__0__Impl : ( 'type' ) ;
     public final void rule__TypeDefinitionPart__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3825:1: ( ( 'type' ) )
-            // InternalPascal.g:3826:1: ( 'type' )
+            // InternalPascal.g:3831:1: ( ( 'type' ) )
+            // InternalPascal.g:3832:1: ( 'type' )
             {
-            // InternalPascal.g:3826:1: ( 'type' )
-            // InternalPascal.g:3827:2: 'type'
+            // InternalPascal.g:3832:1: ( 'type' )
+            // InternalPascal.g:3833:2: 'type'
             {
              before(grammarAccess.getTypeDefinitionPartAccess().getTypeKeyword_0()); 
             match(input,45,FOLLOW_2); 
@@ -12817,14 +12781,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__Group__1"
-    // InternalPascal.g:3836:1: rule__TypeDefinitionPart__Group__1 : rule__TypeDefinitionPart__Group__1__Impl rule__TypeDefinitionPart__Group__2 ;
+    // InternalPascal.g:3842:1: rule__TypeDefinitionPart__Group__1 : rule__TypeDefinitionPart__Group__1__Impl rule__TypeDefinitionPart__Group__2 ;
     public final void rule__TypeDefinitionPart__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3840:1: ( rule__TypeDefinitionPart__Group__1__Impl rule__TypeDefinitionPart__Group__2 )
-            // InternalPascal.g:3841:2: rule__TypeDefinitionPart__Group__1__Impl rule__TypeDefinitionPart__Group__2
+            // InternalPascal.g:3846:1: ( rule__TypeDefinitionPart__Group__1__Impl rule__TypeDefinitionPart__Group__2 )
+            // InternalPascal.g:3847:2: rule__TypeDefinitionPart__Group__1__Impl rule__TypeDefinitionPart__Group__2
             {
             pushFollow(FOLLOW_20);
             rule__TypeDefinitionPart__Group__1__Impl();
@@ -12855,21 +12819,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__Group__1__Impl"
-    // InternalPascal.g:3848:1: rule__TypeDefinitionPart__Group__1__Impl : ( ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 ) ) ;
+    // InternalPascal.g:3854:1: rule__TypeDefinitionPart__Group__1__Impl : ( ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 ) ) ;
     public final void rule__TypeDefinitionPart__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3852:1: ( ( ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 ) ) )
-            // InternalPascal.g:3853:1: ( ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 ) )
+            // InternalPascal.g:3858:1: ( ( ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 ) ) )
+            // InternalPascal.g:3859:1: ( ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 ) )
             {
-            // InternalPascal.g:3853:1: ( ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 ) )
-            // InternalPascal.g:3854:2: ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 )
+            // InternalPascal.g:3859:1: ( ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 ) )
+            // InternalPascal.g:3860:2: ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 )
             {
              before(grammarAccess.getTypeDefinitionPartAccess().getTypeDefinitionAssignment_1()); 
-            // InternalPascal.g:3855:2: ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 )
-            // InternalPascal.g:3855:3: rule__TypeDefinitionPart__TypeDefinitionAssignment_1
+            // InternalPascal.g:3861:2: ( rule__TypeDefinitionPart__TypeDefinitionAssignment_1 )
+            // InternalPascal.g:3861:3: rule__TypeDefinitionPart__TypeDefinitionAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__TypeDefinitionPart__TypeDefinitionAssignment_1();
@@ -12902,14 +12866,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__Group__2"
-    // InternalPascal.g:3863:1: rule__TypeDefinitionPart__Group__2 : rule__TypeDefinitionPart__Group__2__Impl rule__TypeDefinitionPart__Group__3 ;
+    // InternalPascal.g:3869:1: rule__TypeDefinitionPart__Group__2 : rule__TypeDefinitionPart__Group__2__Impl rule__TypeDefinitionPart__Group__3 ;
     public final void rule__TypeDefinitionPart__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3867:1: ( rule__TypeDefinitionPart__Group__2__Impl rule__TypeDefinitionPart__Group__3 )
-            // InternalPascal.g:3868:2: rule__TypeDefinitionPart__Group__2__Impl rule__TypeDefinitionPart__Group__3
+            // InternalPascal.g:3873:1: ( rule__TypeDefinitionPart__Group__2__Impl rule__TypeDefinitionPart__Group__3 )
+            // InternalPascal.g:3874:2: rule__TypeDefinitionPart__Group__2__Impl rule__TypeDefinitionPart__Group__3
             {
             pushFollow(FOLLOW_20);
             rule__TypeDefinitionPart__Group__2__Impl();
@@ -12940,20 +12904,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__Group__2__Impl"
-    // InternalPascal.g:3875:1: rule__TypeDefinitionPart__Group__2__Impl : ( ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )* ) ;
+    // InternalPascal.g:3881:1: rule__TypeDefinitionPart__Group__2__Impl : ( ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )* ) ;
     public final void rule__TypeDefinitionPart__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3879:1: ( ( ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )* ) )
-            // InternalPascal.g:3880:1: ( ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )* )
+            // InternalPascal.g:3885:1: ( ( ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )* ) )
+            // InternalPascal.g:3886:1: ( ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )* )
             {
-            // InternalPascal.g:3880:1: ( ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )* )
-            // InternalPascal.g:3881:2: ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )*
+            // InternalPascal.g:3886:1: ( ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )* )
+            // InternalPascal.g:3887:2: ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )*
             {
              before(grammarAccess.getTypeDefinitionPartAccess().getTypeDefinition1Assignment_2()); 
-            // InternalPascal.g:3882:2: ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )*
+            // InternalPascal.g:3888:2: ( rule__TypeDefinitionPart__TypeDefinition1Assignment_2 )*
             loop34:
             do {
                 int alt34=2;
@@ -12966,7 +12930,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt34) {
             	case 1 :
-            	    // InternalPascal.g:3882:3: rule__TypeDefinitionPart__TypeDefinition1Assignment_2
+            	    // InternalPascal.g:3888:3: rule__TypeDefinitionPart__TypeDefinition1Assignment_2
             	    {
             	    pushFollow(FOLLOW_13);
             	    rule__TypeDefinitionPart__TypeDefinition1Assignment_2();
@@ -13005,14 +12969,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__Group__3"
-    // InternalPascal.g:3890:1: rule__TypeDefinitionPart__Group__3 : rule__TypeDefinitionPart__Group__3__Impl ;
+    // InternalPascal.g:3896:1: rule__TypeDefinitionPart__Group__3 : rule__TypeDefinitionPart__Group__3__Impl ;
     public final void rule__TypeDefinitionPart__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3894:1: ( rule__TypeDefinitionPart__Group__3__Impl )
-            // InternalPascal.g:3895:2: rule__TypeDefinitionPart__Group__3__Impl
+            // InternalPascal.g:3900:1: ( rule__TypeDefinitionPart__Group__3__Impl )
+            // InternalPascal.g:3901:2: rule__TypeDefinitionPart__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__TypeDefinitionPart__Group__3__Impl();
@@ -13038,17 +13002,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__Group__3__Impl"
-    // InternalPascal.g:3901:1: rule__TypeDefinitionPart__Group__3__Impl : ( ';' ) ;
+    // InternalPascal.g:3907:1: rule__TypeDefinitionPart__Group__3__Impl : ( ';' ) ;
     public final void rule__TypeDefinitionPart__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3905:1: ( ( ';' ) )
-            // InternalPascal.g:3906:1: ( ';' )
+            // InternalPascal.g:3911:1: ( ( ';' ) )
+            // InternalPascal.g:3912:1: ( ';' )
             {
-            // InternalPascal.g:3906:1: ( ';' )
-            // InternalPascal.g:3907:2: ';'
+            // InternalPascal.g:3912:1: ( ';' )
+            // InternalPascal.g:3913:2: ';'
             {
              before(grammarAccess.getTypeDefinitionPartAccess().getSemicolonKeyword_3()); 
             match(input,37,FOLLOW_2); 
@@ -13075,14 +13039,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__Group__0"
-    // InternalPascal.g:3917:1: rule__TypeDefinition__Group__0 : rule__TypeDefinition__Group__0__Impl rule__TypeDefinition__Group__1 ;
+    // InternalPascal.g:3923:1: rule__TypeDefinition__Group__0 : rule__TypeDefinition__Group__0__Impl rule__TypeDefinition__Group__1 ;
     public final void rule__TypeDefinition__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3921:1: ( rule__TypeDefinition__Group__0__Impl rule__TypeDefinition__Group__1 )
-            // InternalPascal.g:3922:2: rule__TypeDefinition__Group__0__Impl rule__TypeDefinition__Group__1
+            // InternalPascal.g:3927:1: ( rule__TypeDefinition__Group__0__Impl rule__TypeDefinition__Group__1 )
+            // InternalPascal.g:3928:2: rule__TypeDefinition__Group__0__Impl rule__TypeDefinition__Group__1
             {
             pushFollow(FOLLOW_15);
             rule__TypeDefinition__Group__0__Impl();
@@ -13113,21 +13077,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__Group__0__Impl"
-    // InternalPascal.g:3929:1: rule__TypeDefinition__Group__0__Impl : ( ( rule__TypeDefinition__IdentifierAssignment_0 ) ) ;
+    // InternalPascal.g:3935:1: rule__TypeDefinition__Group__0__Impl : ( ( rule__TypeDefinition__IdentifierAssignment_0 ) ) ;
     public final void rule__TypeDefinition__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3933:1: ( ( ( rule__TypeDefinition__IdentifierAssignment_0 ) ) )
-            // InternalPascal.g:3934:1: ( ( rule__TypeDefinition__IdentifierAssignment_0 ) )
+            // InternalPascal.g:3939:1: ( ( ( rule__TypeDefinition__IdentifierAssignment_0 ) ) )
+            // InternalPascal.g:3940:1: ( ( rule__TypeDefinition__IdentifierAssignment_0 ) )
             {
-            // InternalPascal.g:3934:1: ( ( rule__TypeDefinition__IdentifierAssignment_0 ) )
-            // InternalPascal.g:3935:2: ( rule__TypeDefinition__IdentifierAssignment_0 )
+            // InternalPascal.g:3940:1: ( ( rule__TypeDefinition__IdentifierAssignment_0 ) )
+            // InternalPascal.g:3941:2: ( rule__TypeDefinition__IdentifierAssignment_0 )
             {
              before(grammarAccess.getTypeDefinitionAccess().getIdentifierAssignment_0()); 
-            // InternalPascal.g:3936:2: ( rule__TypeDefinition__IdentifierAssignment_0 )
-            // InternalPascal.g:3936:3: rule__TypeDefinition__IdentifierAssignment_0
+            // InternalPascal.g:3942:2: ( rule__TypeDefinition__IdentifierAssignment_0 )
+            // InternalPascal.g:3942:3: rule__TypeDefinition__IdentifierAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__TypeDefinition__IdentifierAssignment_0();
@@ -13160,14 +13124,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__Group__1"
-    // InternalPascal.g:3944:1: rule__TypeDefinition__Group__1 : rule__TypeDefinition__Group__1__Impl rule__TypeDefinition__Group__2 ;
+    // InternalPascal.g:3950:1: rule__TypeDefinition__Group__1 : rule__TypeDefinition__Group__1__Impl rule__TypeDefinition__Group__2 ;
     public final void rule__TypeDefinition__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3948:1: ( rule__TypeDefinition__Group__1__Impl rule__TypeDefinition__Group__2 )
-            // InternalPascal.g:3949:2: rule__TypeDefinition__Group__1__Impl rule__TypeDefinition__Group__2
+            // InternalPascal.g:3954:1: ( rule__TypeDefinition__Group__1__Impl rule__TypeDefinition__Group__2 )
+            // InternalPascal.g:3955:2: rule__TypeDefinition__Group__1__Impl rule__TypeDefinition__Group__2
             {
             pushFollow(FOLLOW_21);
             rule__TypeDefinition__Group__1__Impl();
@@ -13198,17 +13162,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__Group__1__Impl"
-    // InternalPascal.g:3956:1: rule__TypeDefinition__Group__1__Impl : ( '=' ) ;
+    // InternalPascal.g:3962:1: rule__TypeDefinition__Group__1__Impl : ( '=' ) ;
     public final void rule__TypeDefinition__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3960:1: ( ( '=' ) )
-            // InternalPascal.g:3961:1: ( '=' )
+            // InternalPascal.g:3966:1: ( ( '=' ) )
+            // InternalPascal.g:3967:1: ( '=' )
             {
-            // InternalPascal.g:3961:1: ( '=' )
-            // InternalPascal.g:3962:2: '='
+            // InternalPascal.g:3967:1: ( '=' )
+            // InternalPascal.g:3968:2: '='
             {
              before(grammarAccess.getTypeDefinitionAccess().getEqualsSignKeyword_1()); 
             match(input,21,FOLLOW_2); 
@@ -13235,14 +13199,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__Group__2"
-    // InternalPascal.g:3971:1: rule__TypeDefinition__Group__2 : rule__TypeDefinition__Group__2__Impl ;
+    // InternalPascal.g:3977:1: rule__TypeDefinition__Group__2 : rule__TypeDefinition__Group__2__Impl ;
     public final void rule__TypeDefinition__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3975:1: ( rule__TypeDefinition__Group__2__Impl )
-            // InternalPascal.g:3976:2: rule__TypeDefinition__Group__2__Impl
+            // InternalPascal.g:3981:1: ( rule__TypeDefinition__Group__2__Impl )
+            // InternalPascal.g:3982:2: rule__TypeDefinition__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__TypeDefinition__Group__2__Impl();
@@ -13268,21 +13232,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__Group__2__Impl"
-    // InternalPascal.g:3982:1: rule__TypeDefinition__Group__2__Impl : ( ( rule__TypeDefinition__Alternatives_2 ) ) ;
+    // InternalPascal.g:3988:1: rule__TypeDefinition__Group__2__Impl : ( ( rule__TypeDefinition__Alternatives_2 ) ) ;
     public final void rule__TypeDefinition__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:3986:1: ( ( ( rule__TypeDefinition__Alternatives_2 ) ) )
-            // InternalPascal.g:3987:1: ( ( rule__TypeDefinition__Alternatives_2 ) )
+            // InternalPascal.g:3992:1: ( ( ( rule__TypeDefinition__Alternatives_2 ) ) )
+            // InternalPascal.g:3993:1: ( ( rule__TypeDefinition__Alternatives_2 ) )
             {
-            // InternalPascal.g:3987:1: ( ( rule__TypeDefinition__Alternatives_2 ) )
-            // InternalPascal.g:3988:2: ( rule__TypeDefinition__Alternatives_2 )
+            // InternalPascal.g:3993:1: ( ( rule__TypeDefinition__Alternatives_2 ) )
+            // InternalPascal.g:3994:2: ( rule__TypeDefinition__Alternatives_2 )
             {
              before(grammarAccess.getTypeDefinitionAccess().getAlternatives_2()); 
-            // InternalPascal.g:3989:2: ( rule__TypeDefinition__Alternatives_2 )
-            // InternalPascal.g:3989:3: rule__TypeDefinition__Alternatives_2
+            // InternalPascal.g:3995:2: ( rule__TypeDefinition__Alternatives_2 )
+            // InternalPascal.g:3995:3: rule__TypeDefinition__Alternatives_2
             {
             pushFollow(FOLLOW_2);
             rule__TypeDefinition__Alternatives_2();
@@ -13315,14 +13279,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__Group__0"
-    // InternalPascal.g:3998:1: rule__FunctionType__Group__0 : rule__FunctionType__Group__0__Impl rule__FunctionType__Group__1 ;
+    // InternalPascal.g:4004:1: rule__FunctionType__Group__0 : rule__FunctionType__Group__0__Impl rule__FunctionType__Group__1 ;
     public final void rule__FunctionType__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4002:1: ( rule__FunctionType__Group__0__Impl rule__FunctionType__Group__1 )
-            // InternalPascal.g:4003:2: rule__FunctionType__Group__0__Impl rule__FunctionType__Group__1
+            // InternalPascal.g:4008:1: ( rule__FunctionType__Group__0__Impl rule__FunctionType__Group__1 )
+            // InternalPascal.g:4009:2: rule__FunctionType__Group__0__Impl rule__FunctionType__Group__1
             {
             pushFollow(FOLLOW_22);
             rule__FunctionType__Group__0__Impl();
@@ -13353,17 +13317,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__Group__0__Impl"
-    // InternalPascal.g:4010:1: rule__FunctionType__Group__0__Impl : ( 'function' ) ;
+    // InternalPascal.g:4016:1: rule__FunctionType__Group__0__Impl : ( 'function' ) ;
     public final void rule__FunctionType__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4014:1: ( ( 'function' ) )
-            // InternalPascal.g:4015:1: ( 'function' )
+            // InternalPascal.g:4020:1: ( ( 'function' ) )
+            // InternalPascal.g:4021:1: ( 'function' )
             {
-            // InternalPascal.g:4015:1: ( 'function' )
-            // InternalPascal.g:4016:2: 'function'
+            // InternalPascal.g:4021:1: ( 'function' )
+            // InternalPascal.g:4022:2: 'function'
             {
              before(grammarAccess.getFunctionTypeAccess().getFunctionKeyword_0()); 
             match(input,46,FOLLOW_2); 
@@ -13390,14 +13354,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__Group__1"
-    // InternalPascal.g:4025:1: rule__FunctionType__Group__1 : rule__FunctionType__Group__1__Impl rule__FunctionType__Group__2 ;
+    // InternalPascal.g:4031:1: rule__FunctionType__Group__1 : rule__FunctionType__Group__1__Impl rule__FunctionType__Group__2 ;
     public final void rule__FunctionType__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4029:1: ( rule__FunctionType__Group__1__Impl rule__FunctionType__Group__2 )
-            // InternalPascal.g:4030:2: rule__FunctionType__Group__1__Impl rule__FunctionType__Group__2
+            // InternalPascal.g:4035:1: ( rule__FunctionType__Group__1__Impl rule__FunctionType__Group__2 )
+            // InternalPascal.g:4036:2: rule__FunctionType__Group__1__Impl rule__FunctionType__Group__2
             {
             pushFollow(FOLLOW_22);
             rule__FunctionType__Group__1__Impl();
@@ -13428,20 +13392,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__Group__1__Impl"
-    // InternalPascal.g:4037:1: rule__FunctionType__Group__1__Impl : ( ( rule__FunctionType__FormalParameterListAssignment_1 )? ) ;
+    // InternalPascal.g:4043:1: rule__FunctionType__Group__1__Impl : ( ( rule__FunctionType__FormalParameterListAssignment_1 )? ) ;
     public final void rule__FunctionType__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4041:1: ( ( ( rule__FunctionType__FormalParameterListAssignment_1 )? ) )
-            // InternalPascal.g:4042:1: ( ( rule__FunctionType__FormalParameterListAssignment_1 )? )
+            // InternalPascal.g:4047:1: ( ( ( rule__FunctionType__FormalParameterListAssignment_1 )? ) )
+            // InternalPascal.g:4048:1: ( ( rule__FunctionType__FormalParameterListAssignment_1 )? )
             {
-            // InternalPascal.g:4042:1: ( ( rule__FunctionType__FormalParameterListAssignment_1 )? )
-            // InternalPascal.g:4043:2: ( rule__FunctionType__FormalParameterListAssignment_1 )?
+            // InternalPascal.g:4048:1: ( ( rule__FunctionType__FormalParameterListAssignment_1 )? )
+            // InternalPascal.g:4049:2: ( rule__FunctionType__FormalParameterListAssignment_1 )?
             {
              before(grammarAccess.getFunctionTypeAccess().getFormalParameterListAssignment_1()); 
-            // InternalPascal.g:4044:2: ( rule__FunctionType__FormalParameterListAssignment_1 )?
+            // InternalPascal.g:4050:2: ( rule__FunctionType__FormalParameterListAssignment_1 )?
             int alt35=2;
             int LA35_0 = input.LA(1);
 
@@ -13450,7 +13414,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt35) {
                 case 1 :
-                    // InternalPascal.g:4044:3: rule__FunctionType__FormalParameterListAssignment_1
+                    // InternalPascal.g:4050:3: rule__FunctionType__FormalParameterListAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__FunctionType__FormalParameterListAssignment_1();
@@ -13486,14 +13450,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__Group__2"
-    // InternalPascal.g:4052:1: rule__FunctionType__Group__2 : rule__FunctionType__Group__2__Impl rule__FunctionType__Group__3 ;
+    // InternalPascal.g:4058:1: rule__FunctionType__Group__2 : rule__FunctionType__Group__2__Impl rule__FunctionType__Group__3 ;
     public final void rule__FunctionType__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4056:1: ( rule__FunctionType__Group__2__Impl rule__FunctionType__Group__3 )
-            // InternalPascal.g:4057:2: rule__FunctionType__Group__2__Impl rule__FunctionType__Group__3
+            // InternalPascal.g:4062:1: ( rule__FunctionType__Group__2__Impl rule__FunctionType__Group__3 )
+            // InternalPascal.g:4063:2: rule__FunctionType__Group__2__Impl rule__FunctionType__Group__3
             {
             pushFollow(FOLLOW_23);
             rule__FunctionType__Group__2__Impl();
@@ -13524,17 +13488,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__Group__2__Impl"
-    // InternalPascal.g:4064:1: rule__FunctionType__Group__2__Impl : ( ':' ) ;
+    // InternalPascal.g:4070:1: rule__FunctionType__Group__2__Impl : ( ':' ) ;
     public final void rule__FunctionType__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4068:1: ( ( ':' ) )
-            // InternalPascal.g:4069:1: ( ':' )
+            // InternalPascal.g:4074:1: ( ( ':' ) )
+            // InternalPascal.g:4075:1: ( ':' )
             {
-            // InternalPascal.g:4069:1: ( ':' )
-            // InternalPascal.g:4070:2: ':'
+            // InternalPascal.g:4075:1: ( ':' )
+            // InternalPascal.g:4076:2: ':'
             {
              before(grammarAccess.getFunctionTypeAccess().getColonKeyword_2()); 
             match(input,47,FOLLOW_2); 
@@ -13561,14 +13525,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__Group__3"
-    // InternalPascal.g:4079:1: rule__FunctionType__Group__3 : rule__FunctionType__Group__3__Impl ;
+    // InternalPascal.g:4085:1: rule__FunctionType__Group__3 : rule__FunctionType__Group__3__Impl ;
     public final void rule__FunctionType__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4083:1: ( rule__FunctionType__Group__3__Impl )
-            // InternalPascal.g:4084:2: rule__FunctionType__Group__3__Impl
+            // InternalPascal.g:4089:1: ( rule__FunctionType__Group__3__Impl )
+            // InternalPascal.g:4090:2: rule__FunctionType__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FunctionType__Group__3__Impl();
@@ -13594,21 +13558,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__Group__3__Impl"
-    // InternalPascal.g:4090:1: rule__FunctionType__Group__3__Impl : ( ( rule__FunctionType__ResultTypeAssignment_3 ) ) ;
+    // InternalPascal.g:4096:1: rule__FunctionType__Group__3__Impl : ( ( rule__FunctionType__ResultTypeAssignment_3 ) ) ;
     public final void rule__FunctionType__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4094:1: ( ( ( rule__FunctionType__ResultTypeAssignment_3 ) ) )
-            // InternalPascal.g:4095:1: ( ( rule__FunctionType__ResultTypeAssignment_3 ) )
+            // InternalPascal.g:4100:1: ( ( ( rule__FunctionType__ResultTypeAssignment_3 ) ) )
+            // InternalPascal.g:4101:1: ( ( rule__FunctionType__ResultTypeAssignment_3 ) )
             {
-            // InternalPascal.g:4095:1: ( ( rule__FunctionType__ResultTypeAssignment_3 ) )
-            // InternalPascal.g:4096:2: ( rule__FunctionType__ResultTypeAssignment_3 )
+            // InternalPascal.g:4101:1: ( ( rule__FunctionType__ResultTypeAssignment_3 ) )
+            // InternalPascal.g:4102:2: ( rule__FunctionType__ResultTypeAssignment_3 )
             {
              before(grammarAccess.getFunctionTypeAccess().getResultTypeAssignment_3()); 
-            // InternalPascal.g:4097:2: ( rule__FunctionType__ResultTypeAssignment_3 )
-            // InternalPascal.g:4097:3: rule__FunctionType__ResultTypeAssignment_3
+            // InternalPascal.g:4103:2: ( rule__FunctionType__ResultTypeAssignment_3 )
+            // InternalPascal.g:4103:3: rule__FunctionType__ResultTypeAssignment_3
             {
             pushFollow(FOLLOW_2);
             rule__FunctionType__ResultTypeAssignment_3();
@@ -13641,14 +13605,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group__0"
-    // InternalPascal.g:4106:1: rule__FormalParameterList__Group__0 : rule__FormalParameterList__Group__0__Impl rule__FormalParameterList__Group__1 ;
+    // InternalPascal.g:4112:1: rule__FormalParameterList__Group__0 : rule__FormalParameterList__Group__0__Impl rule__FormalParameterList__Group__1 ;
     public final void rule__FormalParameterList__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4110:1: ( rule__FormalParameterList__Group__0__Impl rule__FormalParameterList__Group__1 )
-            // InternalPascal.g:4111:2: rule__FormalParameterList__Group__0__Impl rule__FormalParameterList__Group__1
+            // InternalPascal.g:4116:1: ( rule__FormalParameterList__Group__0__Impl rule__FormalParameterList__Group__1 )
+            // InternalPascal.g:4117:2: rule__FormalParameterList__Group__0__Impl rule__FormalParameterList__Group__1
             {
             pushFollow(FOLLOW_24);
             rule__FormalParameterList__Group__0__Impl();
@@ -13679,17 +13643,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group__0__Impl"
-    // InternalPascal.g:4118:1: rule__FormalParameterList__Group__0__Impl : ( '(' ) ;
+    // InternalPascal.g:4124:1: rule__FormalParameterList__Group__0__Impl : ( '(' ) ;
     public final void rule__FormalParameterList__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4122:1: ( ( '(' ) )
-            // InternalPascal.g:4123:1: ( '(' )
+            // InternalPascal.g:4128:1: ( ( '(' ) )
+            // InternalPascal.g:4129:1: ( '(' )
             {
-            // InternalPascal.g:4123:1: ( '(' )
-            // InternalPascal.g:4124:2: '('
+            // InternalPascal.g:4129:1: ( '(' )
+            // InternalPascal.g:4130:2: '('
             {
              before(grammarAccess.getFormalParameterListAccess().getLeftParenthesisKeyword_0()); 
             match(input,38,FOLLOW_2); 
@@ -13716,14 +13680,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group__1"
-    // InternalPascal.g:4133:1: rule__FormalParameterList__Group__1 : rule__FormalParameterList__Group__1__Impl rule__FormalParameterList__Group__2 ;
+    // InternalPascal.g:4139:1: rule__FormalParameterList__Group__1 : rule__FormalParameterList__Group__1__Impl rule__FormalParameterList__Group__2 ;
     public final void rule__FormalParameterList__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4137:1: ( rule__FormalParameterList__Group__1__Impl rule__FormalParameterList__Group__2 )
-            // InternalPascal.g:4138:2: rule__FormalParameterList__Group__1__Impl rule__FormalParameterList__Group__2
+            // InternalPascal.g:4143:1: ( rule__FormalParameterList__Group__1__Impl rule__FormalParameterList__Group__2 )
+            // InternalPascal.g:4144:2: rule__FormalParameterList__Group__1__Impl rule__FormalParameterList__Group__2
             {
             pushFollow(FOLLOW_25);
             rule__FormalParameterList__Group__1__Impl();
@@ -13754,21 +13718,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group__1__Impl"
-    // InternalPascal.g:4145:1: rule__FormalParameterList__Group__1__Impl : ( ( rule__FormalParameterList__FormalParameterSectionAssignment_1 ) ) ;
+    // InternalPascal.g:4151:1: rule__FormalParameterList__Group__1__Impl : ( ( rule__FormalParameterList__FormalParameterSectionAssignment_1 ) ) ;
     public final void rule__FormalParameterList__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4149:1: ( ( ( rule__FormalParameterList__FormalParameterSectionAssignment_1 ) ) )
-            // InternalPascal.g:4150:1: ( ( rule__FormalParameterList__FormalParameterSectionAssignment_1 ) )
+            // InternalPascal.g:4155:1: ( ( ( rule__FormalParameterList__FormalParameterSectionAssignment_1 ) ) )
+            // InternalPascal.g:4156:1: ( ( rule__FormalParameterList__FormalParameterSectionAssignment_1 ) )
             {
-            // InternalPascal.g:4150:1: ( ( rule__FormalParameterList__FormalParameterSectionAssignment_1 ) )
-            // InternalPascal.g:4151:2: ( rule__FormalParameterList__FormalParameterSectionAssignment_1 )
+            // InternalPascal.g:4156:1: ( ( rule__FormalParameterList__FormalParameterSectionAssignment_1 ) )
+            // InternalPascal.g:4157:2: ( rule__FormalParameterList__FormalParameterSectionAssignment_1 )
             {
              before(grammarAccess.getFormalParameterListAccess().getFormalParameterSectionAssignment_1()); 
-            // InternalPascal.g:4152:2: ( rule__FormalParameterList__FormalParameterSectionAssignment_1 )
-            // InternalPascal.g:4152:3: rule__FormalParameterList__FormalParameterSectionAssignment_1
+            // InternalPascal.g:4158:2: ( rule__FormalParameterList__FormalParameterSectionAssignment_1 )
+            // InternalPascal.g:4158:3: rule__FormalParameterList__FormalParameterSectionAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterList__FormalParameterSectionAssignment_1();
@@ -13801,14 +13765,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group__2"
-    // InternalPascal.g:4160:1: rule__FormalParameterList__Group__2 : rule__FormalParameterList__Group__2__Impl rule__FormalParameterList__Group__3 ;
+    // InternalPascal.g:4166:1: rule__FormalParameterList__Group__2 : rule__FormalParameterList__Group__2__Impl rule__FormalParameterList__Group__3 ;
     public final void rule__FormalParameterList__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4164:1: ( rule__FormalParameterList__Group__2__Impl rule__FormalParameterList__Group__3 )
-            // InternalPascal.g:4165:2: rule__FormalParameterList__Group__2__Impl rule__FormalParameterList__Group__3
+            // InternalPascal.g:4170:1: ( rule__FormalParameterList__Group__2__Impl rule__FormalParameterList__Group__3 )
+            // InternalPascal.g:4171:2: rule__FormalParameterList__Group__2__Impl rule__FormalParameterList__Group__3
             {
             pushFollow(FOLLOW_25);
             rule__FormalParameterList__Group__2__Impl();
@@ -13839,20 +13803,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group__2__Impl"
-    // InternalPascal.g:4172:1: rule__FormalParameterList__Group__2__Impl : ( ( rule__FormalParameterList__Group_2__0 )* ) ;
+    // InternalPascal.g:4178:1: rule__FormalParameterList__Group__2__Impl : ( ( rule__FormalParameterList__Group_2__0 )* ) ;
     public final void rule__FormalParameterList__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4176:1: ( ( ( rule__FormalParameterList__Group_2__0 )* ) )
-            // InternalPascal.g:4177:1: ( ( rule__FormalParameterList__Group_2__0 )* )
+            // InternalPascal.g:4182:1: ( ( ( rule__FormalParameterList__Group_2__0 )* ) )
+            // InternalPascal.g:4183:1: ( ( rule__FormalParameterList__Group_2__0 )* )
             {
-            // InternalPascal.g:4177:1: ( ( rule__FormalParameterList__Group_2__0 )* )
-            // InternalPascal.g:4178:2: ( rule__FormalParameterList__Group_2__0 )*
+            // InternalPascal.g:4183:1: ( ( rule__FormalParameterList__Group_2__0 )* )
+            // InternalPascal.g:4184:2: ( rule__FormalParameterList__Group_2__0 )*
             {
              before(grammarAccess.getFormalParameterListAccess().getGroup_2()); 
-            // InternalPascal.g:4179:2: ( rule__FormalParameterList__Group_2__0 )*
+            // InternalPascal.g:4185:2: ( rule__FormalParameterList__Group_2__0 )*
             loop36:
             do {
                 int alt36=2;
@@ -13865,7 +13829,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt36) {
             	case 1 :
-            	    // InternalPascal.g:4179:3: rule__FormalParameterList__Group_2__0
+            	    // InternalPascal.g:4185:3: rule__FormalParameterList__Group_2__0
             	    {
             	    pushFollow(FOLLOW_26);
             	    rule__FormalParameterList__Group_2__0();
@@ -13904,14 +13868,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group__3"
-    // InternalPascal.g:4187:1: rule__FormalParameterList__Group__3 : rule__FormalParameterList__Group__3__Impl ;
+    // InternalPascal.g:4193:1: rule__FormalParameterList__Group__3 : rule__FormalParameterList__Group__3__Impl ;
     public final void rule__FormalParameterList__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4191:1: ( rule__FormalParameterList__Group__3__Impl )
-            // InternalPascal.g:4192:2: rule__FormalParameterList__Group__3__Impl
+            // InternalPascal.g:4197:1: ( rule__FormalParameterList__Group__3__Impl )
+            // InternalPascal.g:4198:2: rule__FormalParameterList__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterList__Group__3__Impl();
@@ -13937,17 +13901,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group__3__Impl"
-    // InternalPascal.g:4198:1: rule__FormalParameterList__Group__3__Impl : ( ')' ) ;
+    // InternalPascal.g:4204:1: rule__FormalParameterList__Group__3__Impl : ( ')' ) ;
     public final void rule__FormalParameterList__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4202:1: ( ( ')' ) )
-            // InternalPascal.g:4203:1: ( ')' )
+            // InternalPascal.g:4208:1: ( ( ')' ) )
+            // InternalPascal.g:4209:1: ( ')' )
             {
-            // InternalPascal.g:4203:1: ( ')' )
-            // InternalPascal.g:4204:2: ')'
+            // InternalPascal.g:4209:1: ( ')' )
+            // InternalPascal.g:4210:2: ')'
             {
              before(grammarAccess.getFormalParameterListAccess().getRightParenthesisKeyword_3()); 
             match(input,39,FOLLOW_2); 
@@ -13974,14 +13938,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group_2__0"
-    // InternalPascal.g:4214:1: rule__FormalParameterList__Group_2__0 : rule__FormalParameterList__Group_2__0__Impl rule__FormalParameterList__Group_2__1 ;
+    // InternalPascal.g:4220:1: rule__FormalParameterList__Group_2__0 : rule__FormalParameterList__Group_2__0__Impl rule__FormalParameterList__Group_2__1 ;
     public final void rule__FormalParameterList__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4218:1: ( rule__FormalParameterList__Group_2__0__Impl rule__FormalParameterList__Group_2__1 )
-            // InternalPascal.g:4219:2: rule__FormalParameterList__Group_2__0__Impl rule__FormalParameterList__Group_2__1
+            // InternalPascal.g:4224:1: ( rule__FormalParameterList__Group_2__0__Impl rule__FormalParameterList__Group_2__1 )
+            // InternalPascal.g:4225:2: rule__FormalParameterList__Group_2__0__Impl rule__FormalParameterList__Group_2__1
             {
             pushFollow(FOLLOW_24);
             rule__FormalParameterList__Group_2__0__Impl();
@@ -14012,17 +13976,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group_2__0__Impl"
-    // InternalPascal.g:4226:1: rule__FormalParameterList__Group_2__0__Impl : ( ';' ) ;
+    // InternalPascal.g:4232:1: rule__FormalParameterList__Group_2__0__Impl : ( ';' ) ;
     public final void rule__FormalParameterList__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4230:1: ( ( ';' ) )
-            // InternalPascal.g:4231:1: ( ';' )
+            // InternalPascal.g:4236:1: ( ( ';' ) )
+            // InternalPascal.g:4237:1: ( ';' )
             {
-            // InternalPascal.g:4231:1: ( ';' )
-            // InternalPascal.g:4232:2: ';'
+            // InternalPascal.g:4237:1: ( ';' )
+            // InternalPascal.g:4238:2: ';'
             {
              before(grammarAccess.getFormalParameterListAccess().getSemicolonKeyword_2_0()); 
             match(input,37,FOLLOW_2); 
@@ -14049,14 +14013,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group_2__1"
-    // InternalPascal.g:4241:1: rule__FormalParameterList__Group_2__1 : rule__FormalParameterList__Group_2__1__Impl ;
+    // InternalPascal.g:4247:1: rule__FormalParameterList__Group_2__1 : rule__FormalParameterList__Group_2__1__Impl ;
     public final void rule__FormalParameterList__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4245:1: ( rule__FormalParameterList__Group_2__1__Impl )
-            // InternalPascal.g:4246:2: rule__FormalParameterList__Group_2__1__Impl
+            // InternalPascal.g:4251:1: ( rule__FormalParameterList__Group_2__1__Impl )
+            // InternalPascal.g:4252:2: rule__FormalParameterList__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterList__Group_2__1__Impl();
@@ -14082,21 +14046,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__Group_2__1__Impl"
-    // InternalPascal.g:4252:1: rule__FormalParameterList__Group_2__1__Impl : ( ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 ) ) ;
+    // InternalPascal.g:4258:1: rule__FormalParameterList__Group_2__1__Impl : ( ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 ) ) ;
     public final void rule__FormalParameterList__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4256:1: ( ( ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 ) ) )
-            // InternalPascal.g:4257:1: ( ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 ) )
+            // InternalPascal.g:4262:1: ( ( ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 ) ) )
+            // InternalPascal.g:4263:1: ( ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 ) )
             {
-            // InternalPascal.g:4257:1: ( ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 ) )
-            // InternalPascal.g:4258:2: ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 )
+            // InternalPascal.g:4263:1: ( ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 ) )
+            // InternalPascal.g:4264:2: ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 )
             {
              before(grammarAccess.getFormalParameterListAccess().getFormalParameterSection2Assignment_2_1()); 
-            // InternalPascal.g:4259:2: ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 )
-            // InternalPascal.g:4259:3: rule__FormalParameterList__FormalParameterSection2Assignment_2_1
+            // InternalPascal.g:4265:2: ( rule__FormalParameterList__FormalParameterSection2Assignment_2_1 )
+            // InternalPascal.g:4265:3: rule__FormalParameterList__FormalParameterSection2Assignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterList__FormalParameterSection2Assignment_2_1();
@@ -14129,14 +14093,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_1__0"
-    // InternalPascal.g:4268:1: rule__FormalParameterSection__Group_1__0 : rule__FormalParameterSection__Group_1__0__Impl rule__FormalParameterSection__Group_1__1 ;
+    // InternalPascal.g:4274:1: rule__FormalParameterSection__Group_1__0 : rule__FormalParameterSection__Group_1__0__Impl rule__FormalParameterSection__Group_1__1 ;
     public final void rule__FormalParameterSection__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4272:1: ( rule__FormalParameterSection__Group_1__0__Impl rule__FormalParameterSection__Group_1__1 )
-            // InternalPascal.g:4273:2: rule__FormalParameterSection__Group_1__0__Impl rule__FormalParameterSection__Group_1__1
+            // InternalPascal.g:4278:1: ( rule__FormalParameterSection__Group_1__0__Impl rule__FormalParameterSection__Group_1__1 )
+            // InternalPascal.g:4279:2: rule__FormalParameterSection__Group_1__0__Impl rule__FormalParameterSection__Group_1__1
             {
             pushFollow(FOLLOW_5);
             rule__FormalParameterSection__Group_1__0__Impl();
@@ -14167,17 +14131,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_1__0__Impl"
-    // InternalPascal.g:4280:1: rule__FormalParameterSection__Group_1__0__Impl : ( 'var' ) ;
+    // InternalPascal.g:4286:1: rule__FormalParameterSection__Group_1__0__Impl : ( 'var' ) ;
     public final void rule__FormalParameterSection__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4284:1: ( ( 'var' ) )
-            // InternalPascal.g:4285:1: ( 'var' )
+            // InternalPascal.g:4290:1: ( ( 'var' ) )
+            // InternalPascal.g:4291:1: ( 'var' )
             {
-            // InternalPascal.g:4285:1: ( 'var' )
-            // InternalPascal.g:4286:2: 'var'
+            // InternalPascal.g:4291:1: ( 'var' )
+            // InternalPascal.g:4292:2: 'var'
             {
              before(grammarAccess.getFormalParameterSectionAccess().getVarKeyword_1_0()); 
             match(input,48,FOLLOW_2); 
@@ -14204,14 +14168,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_1__1"
-    // InternalPascal.g:4295:1: rule__FormalParameterSection__Group_1__1 : rule__FormalParameterSection__Group_1__1__Impl ;
+    // InternalPascal.g:4301:1: rule__FormalParameterSection__Group_1__1 : rule__FormalParameterSection__Group_1__1__Impl ;
     public final void rule__FormalParameterSection__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4299:1: ( rule__FormalParameterSection__Group_1__1__Impl )
-            // InternalPascal.g:4300:2: rule__FormalParameterSection__Group_1__1__Impl
+            // InternalPascal.g:4305:1: ( rule__FormalParameterSection__Group_1__1__Impl )
+            // InternalPascal.g:4306:2: rule__FormalParameterSection__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterSection__Group_1__1__Impl();
@@ -14237,21 +14201,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_1__1__Impl"
-    // InternalPascal.g:4306:1: rule__FormalParameterSection__Group_1__1__Impl : ( ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 ) ) ;
+    // InternalPascal.g:4312:1: rule__FormalParameterSection__Group_1__1__Impl : ( ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 ) ) ;
     public final void rule__FormalParameterSection__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4310:1: ( ( ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 ) ) )
-            // InternalPascal.g:4311:1: ( ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 ) )
+            // InternalPascal.g:4316:1: ( ( ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 ) ) )
+            // InternalPascal.g:4317:1: ( ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 ) )
             {
-            // InternalPascal.g:4311:1: ( ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 ) )
-            // InternalPascal.g:4312:2: ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 )
+            // InternalPascal.g:4317:1: ( ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 ) )
+            // InternalPascal.g:4318:2: ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 )
             {
              before(grammarAccess.getFormalParameterSectionAccess().getParameterGroup2Assignment_1_1()); 
-            // InternalPascal.g:4313:2: ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 )
-            // InternalPascal.g:4313:3: rule__FormalParameterSection__ParameterGroup2Assignment_1_1
+            // InternalPascal.g:4319:2: ( rule__FormalParameterSection__ParameterGroup2Assignment_1_1 )
+            // InternalPascal.g:4319:3: rule__FormalParameterSection__ParameterGroup2Assignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterSection__ParameterGroup2Assignment_1_1();
@@ -14284,14 +14248,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_2__0"
-    // InternalPascal.g:4322:1: rule__FormalParameterSection__Group_2__0 : rule__FormalParameterSection__Group_2__0__Impl rule__FormalParameterSection__Group_2__1 ;
+    // InternalPascal.g:4328:1: rule__FormalParameterSection__Group_2__0 : rule__FormalParameterSection__Group_2__0__Impl rule__FormalParameterSection__Group_2__1 ;
     public final void rule__FormalParameterSection__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4326:1: ( rule__FormalParameterSection__Group_2__0__Impl rule__FormalParameterSection__Group_2__1 )
-            // InternalPascal.g:4327:2: rule__FormalParameterSection__Group_2__0__Impl rule__FormalParameterSection__Group_2__1
+            // InternalPascal.g:4332:1: ( rule__FormalParameterSection__Group_2__0__Impl rule__FormalParameterSection__Group_2__1 )
+            // InternalPascal.g:4333:2: rule__FormalParameterSection__Group_2__0__Impl rule__FormalParameterSection__Group_2__1
             {
             pushFollow(FOLLOW_5);
             rule__FormalParameterSection__Group_2__0__Impl();
@@ -14322,17 +14286,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_2__0__Impl"
-    // InternalPascal.g:4334:1: rule__FormalParameterSection__Group_2__0__Impl : ( 'function' ) ;
+    // InternalPascal.g:4340:1: rule__FormalParameterSection__Group_2__0__Impl : ( 'function' ) ;
     public final void rule__FormalParameterSection__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4338:1: ( ( 'function' ) )
-            // InternalPascal.g:4339:1: ( 'function' )
+            // InternalPascal.g:4344:1: ( ( 'function' ) )
+            // InternalPascal.g:4345:1: ( 'function' )
             {
-            // InternalPascal.g:4339:1: ( 'function' )
-            // InternalPascal.g:4340:2: 'function'
+            // InternalPascal.g:4345:1: ( 'function' )
+            // InternalPascal.g:4346:2: 'function'
             {
              before(grammarAccess.getFormalParameterSectionAccess().getFunctionKeyword_2_0()); 
             match(input,46,FOLLOW_2); 
@@ -14359,14 +14323,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_2__1"
-    // InternalPascal.g:4349:1: rule__FormalParameterSection__Group_2__1 : rule__FormalParameterSection__Group_2__1__Impl ;
+    // InternalPascal.g:4355:1: rule__FormalParameterSection__Group_2__1 : rule__FormalParameterSection__Group_2__1__Impl ;
     public final void rule__FormalParameterSection__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4353:1: ( rule__FormalParameterSection__Group_2__1__Impl )
-            // InternalPascal.g:4354:2: rule__FormalParameterSection__Group_2__1__Impl
+            // InternalPascal.g:4359:1: ( rule__FormalParameterSection__Group_2__1__Impl )
+            // InternalPascal.g:4360:2: rule__FormalParameterSection__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterSection__Group_2__1__Impl();
@@ -14392,21 +14356,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_2__1__Impl"
-    // InternalPascal.g:4360:1: rule__FormalParameterSection__Group_2__1__Impl : ( ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 ) ) ;
+    // InternalPascal.g:4366:1: rule__FormalParameterSection__Group_2__1__Impl : ( ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 ) ) ;
     public final void rule__FormalParameterSection__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4364:1: ( ( ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 ) ) )
-            // InternalPascal.g:4365:1: ( ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 ) )
+            // InternalPascal.g:4370:1: ( ( ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 ) ) )
+            // InternalPascal.g:4371:1: ( ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 ) )
             {
-            // InternalPascal.g:4365:1: ( ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 ) )
-            // InternalPascal.g:4366:2: ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 )
+            // InternalPascal.g:4371:1: ( ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 ) )
+            // InternalPascal.g:4372:2: ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 )
             {
              before(grammarAccess.getFormalParameterSectionAccess().getParameterGroup3Assignment_2_1()); 
-            // InternalPascal.g:4367:2: ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 )
-            // InternalPascal.g:4367:3: rule__FormalParameterSection__ParameterGroup3Assignment_2_1
+            // InternalPascal.g:4373:2: ( rule__FormalParameterSection__ParameterGroup3Assignment_2_1 )
+            // InternalPascal.g:4373:3: rule__FormalParameterSection__ParameterGroup3Assignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterSection__ParameterGroup3Assignment_2_1();
@@ -14439,14 +14403,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_3__0"
-    // InternalPascal.g:4376:1: rule__FormalParameterSection__Group_3__0 : rule__FormalParameterSection__Group_3__0__Impl rule__FormalParameterSection__Group_3__1 ;
+    // InternalPascal.g:4382:1: rule__FormalParameterSection__Group_3__0 : rule__FormalParameterSection__Group_3__0__Impl rule__FormalParameterSection__Group_3__1 ;
     public final void rule__FormalParameterSection__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4380:1: ( rule__FormalParameterSection__Group_3__0__Impl rule__FormalParameterSection__Group_3__1 )
-            // InternalPascal.g:4381:2: rule__FormalParameterSection__Group_3__0__Impl rule__FormalParameterSection__Group_3__1
+            // InternalPascal.g:4386:1: ( rule__FormalParameterSection__Group_3__0__Impl rule__FormalParameterSection__Group_3__1 )
+            // InternalPascal.g:4387:2: rule__FormalParameterSection__Group_3__0__Impl rule__FormalParameterSection__Group_3__1
             {
             pushFollow(FOLLOW_5);
             rule__FormalParameterSection__Group_3__0__Impl();
@@ -14477,17 +14441,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_3__0__Impl"
-    // InternalPascal.g:4388:1: rule__FormalParameterSection__Group_3__0__Impl : ( 'procedure' ) ;
+    // InternalPascal.g:4394:1: rule__FormalParameterSection__Group_3__0__Impl : ( 'procedure' ) ;
     public final void rule__FormalParameterSection__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4392:1: ( ( 'procedure' ) )
-            // InternalPascal.g:4393:1: ( 'procedure' )
+            // InternalPascal.g:4398:1: ( ( 'procedure' ) )
+            // InternalPascal.g:4399:1: ( 'procedure' )
             {
-            // InternalPascal.g:4393:1: ( 'procedure' )
-            // InternalPascal.g:4394:2: 'procedure'
+            // InternalPascal.g:4399:1: ( 'procedure' )
+            // InternalPascal.g:4400:2: 'procedure'
             {
              before(grammarAccess.getFormalParameterSectionAccess().getProcedureKeyword_3_0()); 
             match(input,49,FOLLOW_2); 
@@ -14514,14 +14478,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_3__1"
-    // InternalPascal.g:4403:1: rule__FormalParameterSection__Group_3__1 : rule__FormalParameterSection__Group_3__1__Impl ;
+    // InternalPascal.g:4409:1: rule__FormalParameterSection__Group_3__1 : rule__FormalParameterSection__Group_3__1__Impl ;
     public final void rule__FormalParameterSection__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4407:1: ( rule__FormalParameterSection__Group_3__1__Impl )
-            // InternalPascal.g:4408:2: rule__FormalParameterSection__Group_3__1__Impl
+            // InternalPascal.g:4413:1: ( rule__FormalParameterSection__Group_3__1__Impl )
+            // InternalPascal.g:4414:2: rule__FormalParameterSection__Group_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterSection__Group_3__1__Impl();
@@ -14547,21 +14511,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__Group_3__1__Impl"
-    // InternalPascal.g:4414:1: rule__FormalParameterSection__Group_3__1__Impl : ( ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 ) ) ;
+    // InternalPascal.g:4420:1: rule__FormalParameterSection__Group_3__1__Impl : ( ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 ) ) ;
     public final void rule__FormalParameterSection__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4418:1: ( ( ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 ) ) )
-            // InternalPascal.g:4419:1: ( ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 ) )
+            // InternalPascal.g:4424:1: ( ( ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 ) ) )
+            // InternalPascal.g:4425:1: ( ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 ) )
             {
-            // InternalPascal.g:4419:1: ( ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 ) )
-            // InternalPascal.g:4420:2: ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 )
+            // InternalPascal.g:4425:1: ( ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 ) )
+            // InternalPascal.g:4426:2: ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 )
             {
              before(grammarAccess.getFormalParameterSectionAccess().getParameterGroup4Assignment_3_1()); 
-            // InternalPascal.g:4421:2: ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 )
-            // InternalPascal.g:4421:3: rule__FormalParameterSection__ParameterGroup4Assignment_3_1
+            // InternalPascal.g:4427:2: ( rule__FormalParameterSection__ParameterGroup4Assignment_3_1 )
+            // InternalPascal.g:4427:3: rule__FormalParameterSection__ParameterGroup4Assignment_3_1
             {
             pushFollow(FOLLOW_2);
             rule__FormalParameterSection__ParameterGroup4Assignment_3_1();
@@ -14594,14 +14558,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterGroup__Group__0"
-    // InternalPascal.g:4430:1: rule__ParameterGroup__Group__0 : rule__ParameterGroup__Group__0__Impl rule__ParameterGroup__Group__1 ;
+    // InternalPascal.g:4436:1: rule__ParameterGroup__Group__0 : rule__ParameterGroup__Group__0__Impl rule__ParameterGroup__Group__1 ;
     public final void rule__ParameterGroup__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4434:1: ( rule__ParameterGroup__Group__0__Impl rule__ParameterGroup__Group__1 )
-            // InternalPascal.g:4435:2: rule__ParameterGroup__Group__0__Impl rule__ParameterGroup__Group__1
+            // InternalPascal.g:4440:1: ( rule__ParameterGroup__Group__0__Impl rule__ParameterGroup__Group__1 )
+            // InternalPascal.g:4441:2: rule__ParameterGroup__Group__0__Impl rule__ParameterGroup__Group__1
             {
             pushFollow(FOLLOW_27);
             rule__ParameterGroup__Group__0__Impl();
@@ -14632,21 +14596,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterGroup__Group__0__Impl"
-    // InternalPascal.g:4442:1: rule__ParameterGroup__Group__0__Impl : ( ( rule__ParameterGroup__IdentifierListAssignment_0 ) ) ;
+    // InternalPascal.g:4448:1: rule__ParameterGroup__Group__0__Impl : ( ( rule__ParameterGroup__IdentifierListAssignment_0 ) ) ;
     public final void rule__ParameterGroup__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4446:1: ( ( ( rule__ParameterGroup__IdentifierListAssignment_0 ) ) )
-            // InternalPascal.g:4447:1: ( ( rule__ParameterGroup__IdentifierListAssignment_0 ) )
+            // InternalPascal.g:4452:1: ( ( ( rule__ParameterGroup__IdentifierListAssignment_0 ) ) )
+            // InternalPascal.g:4453:1: ( ( rule__ParameterGroup__IdentifierListAssignment_0 ) )
             {
-            // InternalPascal.g:4447:1: ( ( rule__ParameterGroup__IdentifierListAssignment_0 ) )
-            // InternalPascal.g:4448:2: ( rule__ParameterGroup__IdentifierListAssignment_0 )
+            // InternalPascal.g:4453:1: ( ( rule__ParameterGroup__IdentifierListAssignment_0 ) )
+            // InternalPascal.g:4454:2: ( rule__ParameterGroup__IdentifierListAssignment_0 )
             {
              before(grammarAccess.getParameterGroupAccess().getIdentifierListAssignment_0()); 
-            // InternalPascal.g:4449:2: ( rule__ParameterGroup__IdentifierListAssignment_0 )
-            // InternalPascal.g:4449:3: rule__ParameterGroup__IdentifierListAssignment_0
+            // InternalPascal.g:4455:2: ( rule__ParameterGroup__IdentifierListAssignment_0 )
+            // InternalPascal.g:4455:3: rule__ParameterGroup__IdentifierListAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__ParameterGroup__IdentifierListAssignment_0();
@@ -14679,14 +14643,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterGroup__Group__1"
-    // InternalPascal.g:4457:1: rule__ParameterGroup__Group__1 : rule__ParameterGroup__Group__1__Impl rule__ParameterGroup__Group__2 ;
+    // InternalPascal.g:4463:1: rule__ParameterGroup__Group__1 : rule__ParameterGroup__Group__1__Impl rule__ParameterGroup__Group__2 ;
     public final void rule__ParameterGroup__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4461:1: ( rule__ParameterGroup__Group__1__Impl rule__ParameterGroup__Group__2 )
-            // InternalPascal.g:4462:2: rule__ParameterGroup__Group__1__Impl rule__ParameterGroup__Group__2
+            // InternalPascal.g:4467:1: ( rule__ParameterGroup__Group__1__Impl rule__ParameterGroup__Group__2 )
+            // InternalPascal.g:4468:2: rule__ParameterGroup__Group__1__Impl rule__ParameterGroup__Group__2
             {
             pushFollow(FOLLOW_23);
             rule__ParameterGroup__Group__1__Impl();
@@ -14717,17 +14681,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterGroup__Group__1__Impl"
-    // InternalPascal.g:4469:1: rule__ParameterGroup__Group__1__Impl : ( ':' ) ;
+    // InternalPascal.g:4475:1: rule__ParameterGroup__Group__1__Impl : ( ':' ) ;
     public final void rule__ParameterGroup__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4473:1: ( ( ':' ) )
-            // InternalPascal.g:4474:1: ( ':' )
+            // InternalPascal.g:4479:1: ( ( ':' ) )
+            // InternalPascal.g:4480:1: ( ':' )
             {
-            // InternalPascal.g:4474:1: ( ':' )
-            // InternalPascal.g:4475:2: ':'
+            // InternalPascal.g:4480:1: ( ':' )
+            // InternalPascal.g:4481:2: ':'
             {
              before(grammarAccess.getParameterGroupAccess().getColonKeyword_1()); 
             match(input,47,FOLLOW_2); 
@@ -14754,14 +14718,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterGroup__Group__2"
-    // InternalPascal.g:4484:1: rule__ParameterGroup__Group__2 : rule__ParameterGroup__Group__2__Impl ;
+    // InternalPascal.g:4490:1: rule__ParameterGroup__Group__2 : rule__ParameterGroup__Group__2__Impl ;
     public final void rule__ParameterGroup__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4488:1: ( rule__ParameterGroup__Group__2__Impl )
-            // InternalPascal.g:4489:2: rule__ParameterGroup__Group__2__Impl
+            // InternalPascal.g:4494:1: ( rule__ParameterGroup__Group__2__Impl )
+            // InternalPascal.g:4495:2: rule__ParameterGroup__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ParameterGroup__Group__2__Impl();
@@ -14787,21 +14751,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterGroup__Group__2__Impl"
-    // InternalPascal.g:4495:1: rule__ParameterGroup__Group__2__Impl : ( ( rule__ParameterGroup__TypeIdentifierAssignment_2 ) ) ;
+    // InternalPascal.g:4501:1: rule__ParameterGroup__Group__2__Impl : ( ( rule__ParameterGroup__TypeIdentifierAssignment_2 ) ) ;
     public final void rule__ParameterGroup__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4499:1: ( ( ( rule__ParameterGroup__TypeIdentifierAssignment_2 ) ) )
-            // InternalPascal.g:4500:1: ( ( rule__ParameterGroup__TypeIdentifierAssignment_2 ) )
+            // InternalPascal.g:4505:1: ( ( ( rule__ParameterGroup__TypeIdentifierAssignment_2 ) ) )
+            // InternalPascal.g:4506:1: ( ( rule__ParameterGroup__TypeIdentifierAssignment_2 ) )
             {
-            // InternalPascal.g:4500:1: ( ( rule__ParameterGroup__TypeIdentifierAssignment_2 ) )
-            // InternalPascal.g:4501:2: ( rule__ParameterGroup__TypeIdentifierAssignment_2 )
+            // InternalPascal.g:4506:1: ( ( rule__ParameterGroup__TypeIdentifierAssignment_2 ) )
+            // InternalPascal.g:4507:2: ( rule__ParameterGroup__TypeIdentifierAssignment_2 )
             {
              before(grammarAccess.getParameterGroupAccess().getTypeIdentifierAssignment_2()); 
-            // InternalPascal.g:4502:2: ( rule__ParameterGroup__TypeIdentifierAssignment_2 )
-            // InternalPascal.g:4502:3: rule__ParameterGroup__TypeIdentifierAssignment_2
+            // InternalPascal.g:4508:2: ( rule__ParameterGroup__TypeIdentifierAssignment_2 )
+            // InternalPascal.g:4508:3: rule__ParameterGroup__TypeIdentifierAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__ParameterGroup__TypeIdentifierAssignment_2();
@@ -14834,14 +14798,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureType__Group__0"
-    // InternalPascal.g:4511:1: rule__ProcedureType__Group__0 : rule__ProcedureType__Group__0__Impl rule__ProcedureType__Group__1 ;
+    // InternalPascal.g:4517:1: rule__ProcedureType__Group__0 : rule__ProcedureType__Group__0__Impl rule__ProcedureType__Group__1 ;
     public final void rule__ProcedureType__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4515:1: ( rule__ProcedureType__Group__0__Impl rule__ProcedureType__Group__1 )
-            // InternalPascal.g:4516:2: rule__ProcedureType__Group__0__Impl rule__ProcedureType__Group__1
+            // InternalPascal.g:4521:1: ( rule__ProcedureType__Group__0__Impl rule__ProcedureType__Group__1 )
+            // InternalPascal.g:4522:2: rule__ProcedureType__Group__0__Impl rule__ProcedureType__Group__1
             {
             pushFollow(FOLLOW_21);
             rule__ProcedureType__Group__0__Impl();
@@ -14872,21 +14836,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureType__Group__0__Impl"
-    // InternalPascal.g:4523:1: rule__ProcedureType__Group__0__Impl : ( () ) ;
+    // InternalPascal.g:4529:1: rule__ProcedureType__Group__0__Impl : ( () ) ;
     public final void rule__ProcedureType__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4527:1: ( ( () ) )
-            // InternalPascal.g:4528:1: ( () )
+            // InternalPascal.g:4533:1: ( ( () ) )
+            // InternalPascal.g:4534:1: ( () )
             {
-            // InternalPascal.g:4528:1: ( () )
-            // InternalPascal.g:4529:2: ()
+            // InternalPascal.g:4534:1: ( () )
+            // InternalPascal.g:4535:2: ()
             {
              before(grammarAccess.getProcedureTypeAccess().getProcedureTypeAction_0()); 
-            // InternalPascal.g:4530:2: ()
-            // InternalPascal.g:4530:3: 
+            // InternalPascal.g:4536:2: ()
+            // InternalPascal.g:4536:3: 
             {
             }
 
@@ -14909,14 +14873,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureType__Group__1"
-    // InternalPascal.g:4538:1: rule__ProcedureType__Group__1 : rule__ProcedureType__Group__1__Impl rule__ProcedureType__Group__2 ;
+    // InternalPascal.g:4544:1: rule__ProcedureType__Group__1 : rule__ProcedureType__Group__1__Impl rule__ProcedureType__Group__2 ;
     public final void rule__ProcedureType__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4542:1: ( rule__ProcedureType__Group__1__Impl rule__ProcedureType__Group__2 )
-            // InternalPascal.g:4543:2: rule__ProcedureType__Group__1__Impl rule__ProcedureType__Group__2
+            // InternalPascal.g:4548:1: ( rule__ProcedureType__Group__1__Impl rule__ProcedureType__Group__2 )
+            // InternalPascal.g:4549:2: rule__ProcedureType__Group__1__Impl rule__ProcedureType__Group__2
             {
             pushFollow(FOLLOW_18);
             rule__ProcedureType__Group__1__Impl();
@@ -14947,17 +14911,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureType__Group__1__Impl"
-    // InternalPascal.g:4550:1: rule__ProcedureType__Group__1__Impl : ( 'procedure' ) ;
+    // InternalPascal.g:4556:1: rule__ProcedureType__Group__1__Impl : ( 'procedure' ) ;
     public final void rule__ProcedureType__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4554:1: ( ( 'procedure' ) )
-            // InternalPascal.g:4555:1: ( 'procedure' )
+            // InternalPascal.g:4560:1: ( ( 'procedure' ) )
+            // InternalPascal.g:4561:1: ( 'procedure' )
             {
-            // InternalPascal.g:4555:1: ( 'procedure' )
-            // InternalPascal.g:4556:2: 'procedure'
+            // InternalPascal.g:4561:1: ( 'procedure' )
+            // InternalPascal.g:4562:2: 'procedure'
             {
              before(grammarAccess.getProcedureTypeAccess().getProcedureKeyword_1()); 
             match(input,49,FOLLOW_2); 
@@ -14984,14 +14948,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureType__Group__2"
-    // InternalPascal.g:4565:1: rule__ProcedureType__Group__2 : rule__ProcedureType__Group__2__Impl ;
+    // InternalPascal.g:4571:1: rule__ProcedureType__Group__2 : rule__ProcedureType__Group__2__Impl ;
     public final void rule__ProcedureType__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4569:1: ( rule__ProcedureType__Group__2__Impl )
-            // InternalPascal.g:4570:2: rule__ProcedureType__Group__2__Impl
+            // InternalPascal.g:4575:1: ( rule__ProcedureType__Group__2__Impl )
+            // InternalPascal.g:4576:2: rule__ProcedureType__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ProcedureType__Group__2__Impl();
@@ -15017,20 +14981,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureType__Group__2__Impl"
-    // InternalPascal.g:4576:1: rule__ProcedureType__Group__2__Impl : ( ( rule__ProcedureType__FormalParameterListAssignment_2 )? ) ;
+    // InternalPascal.g:4582:1: rule__ProcedureType__Group__2__Impl : ( ( rule__ProcedureType__FormalParameterListAssignment_2 )? ) ;
     public final void rule__ProcedureType__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4580:1: ( ( ( rule__ProcedureType__FormalParameterListAssignment_2 )? ) )
-            // InternalPascal.g:4581:1: ( ( rule__ProcedureType__FormalParameterListAssignment_2 )? )
+            // InternalPascal.g:4586:1: ( ( ( rule__ProcedureType__FormalParameterListAssignment_2 )? ) )
+            // InternalPascal.g:4587:1: ( ( rule__ProcedureType__FormalParameterListAssignment_2 )? )
             {
-            // InternalPascal.g:4581:1: ( ( rule__ProcedureType__FormalParameterListAssignment_2 )? )
-            // InternalPascal.g:4582:2: ( rule__ProcedureType__FormalParameterListAssignment_2 )?
+            // InternalPascal.g:4587:1: ( ( rule__ProcedureType__FormalParameterListAssignment_2 )? )
+            // InternalPascal.g:4588:2: ( rule__ProcedureType__FormalParameterListAssignment_2 )?
             {
              before(grammarAccess.getProcedureTypeAccess().getFormalParameterListAssignment_2()); 
-            // InternalPascal.g:4583:2: ( rule__ProcedureType__FormalParameterListAssignment_2 )?
+            // InternalPascal.g:4589:2: ( rule__ProcedureType__FormalParameterListAssignment_2 )?
             int alt37=2;
             int LA37_0 = input.LA(1);
 
@@ -15039,7 +15003,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt37) {
                 case 1 :
-                    // InternalPascal.g:4583:3: rule__ProcedureType__FormalParameterListAssignment_2
+                    // InternalPascal.g:4589:3: rule__ProcedureType__FormalParameterListAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__ProcedureType__FormalParameterListAssignment_2();
@@ -15075,14 +15039,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PointerType__Group__0"
-    // InternalPascal.g:4592:1: rule__PointerType__Group__0 : rule__PointerType__Group__0__Impl rule__PointerType__Group__1 ;
+    // InternalPascal.g:4598:1: rule__PointerType__Group__0 : rule__PointerType__Group__0__Impl rule__PointerType__Group__1 ;
     public final void rule__PointerType__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4596:1: ( rule__PointerType__Group__0__Impl rule__PointerType__Group__1 )
-            // InternalPascal.g:4597:2: rule__PointerType__Group__0__Impl rule__PointerType__Group__1
+            // InternalPascal.g:4602:1: ( rule__PointerType__Group__0__Impl rule__PointerType__Group__1 )
+            // InternalPascal.g:4603:2: rule__PointerType__Group__0__Impl rule__PointerType__Group__1
             {
             pushFollow(FOLLOW_23);
             rule__PointerType__Group__0__Impl();
@@ -15113,17 +15077,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PointerType__Group__0__Impl"
-    // InternalPascal.g:4604:1: rule__PointerType__Group__0__Impl : ( '^' ) ;
+    // InternalPascal.g:4610:1: rule__PointerType__Group__0__Impl : ( '^' ) ;
     public final void rule__PointerType__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4608:1: ( ( '^' ) )
-            // InternalPascal.g:4609:1: ( '^' )
+            // InternalPascal.g:4614:1: ( ( '^' ) )
+            // InternalPascal.g:4615:1: ( '^' )
             {
-            // InternalPascal.g:4609:1: ( '^' )
-            // InternalPascal.g:4610:2: '^'
+            // InternalPascal.g:4615:1: ( '^' )
+            // InternalPascal.g:4616:2: '^'
             {
              before(grammarAccess.getPointerTypeAccess().getCircumflexAccentKeyword_0()); 
             match(input,20,FOLLOW_2); 
@@ -15150,14 +15114,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PointerType__Group__1"
-    // InternalPascal.g:4619:1: rule__PointerType__Group__1 : rule__PointerType__Group__1__Impl ;
+    // InternalPascal.g:4625:1: rule__PointerType__Group__1 : rule__PointerType__Group__1__Impl ;
     public final void rule__PointerType__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4623:1: ( rule__PointerType__Group__1__Impl )
-            // InternalPascal.g:4624:2: rule__PointerType__Group__1__Impl
+            // InternalPascal.g:4629:1: ( rule__PointerType__Group__1__Impl )
+            // InternalPascal.g:4630:2: rule__PointerType__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__PointerType__Group__1__Impl();
@@ -15183,21 +15147,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PointerType__Group__1__Impl"
-    // InternalPascal.g:4630:1: rule__PointerType__Group__1__Impl : ( ( rule__PointerType__TypeIdentifierAssignment_1 ) ) ;
+    // InternalPascal.g:4636:1: rule__PointerType__Group__1__Impl : ( ( rule__PointerType__TypeIdentifierAssignment_1 ) ) ;
     public final void rule__PointerType__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4634:1: ( ( ( rule__PointerType__TypeIdentifierAssignment_1 ) ) )
-            // InternalPascal.g:4635:1: ( ( rule__PointerType__TypeIdentifierAssignment_1 ) )
+            // InternalPascal.g:4640:1: ( ( ( rule__PointerType__TypeIdentifierAssignment_1 ) ) )
+            // InternalPascal.g:4641:1: ( ( rule__PointerType__TypeIdentifierAssignment_1 ) )
             {
-            // InternalPascal.g:4635:1: ( ( rule__PointerType__TypeIdentifierAssignment_1 ) )
-            // InternalPascal.g:4636:2: ( rule__PointerType__TypeIdentifierAssignment_1 )
+            // InternalPascal.g:4641:1: ( ( rule__PointerType__TypeIdentifierAssignment_1 ) )
+            // InternalPascal.g:4642:2: ( rule__PointerType__TypeIdentifierAssignment_1 )
             {
              before(grammarAccess.getPointerTypeAccess().getTypeIdentifierAssignment_1()); 
-            // InternalPascal.g:4637:2: ( rule__PointerType__TypeIdentifierAssignment_1 )
-            // InternalPascal.g:4637:3: rule__PointerType__TypeIdentifierAssignment_1
+            // InternalPascal.g:4643:2: ( rule__PointerType__TypeIdentifierAssignment_1 )
+            // InternalPascal.g:4643:3: rule__PointerType__TypeIdentifierAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__PointerType__TypeIdentifierAssignment_1();
@@ -15230,14 +15194,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScalarType__Group__0"
-    // InternalPascal.g:4646:1: rule__ScalarType__Group__0 : rule__ScalarType__Group__0__Impl rule__ScalarType__Group__1 ;
+    // InternalPascal.g:4652:1: rule__ScalarType__Group__0 : rule__ScalarType__Group__0__Impl rule__ScalarType__Group__1 ;
     public final void rule__ScalarType__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4650:1: ( rule__ScalarType__Group__0__Impl rule__ScalarType__Group__1 )
-            // InternalPascal.g:4651:2: rule__ScalarType__Group__0__Impl rule__ScalarType__Group__1
+            // InternalPascal.g:4656:1: ( rule__ScalarType__Group__0__Impl rule__ScalarType__Group__1 )
+            // InternalPascal.g:4657:2: rule__ScalarType__Group__0__Impl rule__ScalarType__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__ScalarType__Group__0__Impl();
@@ -15268,17 +15232,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScalarType__Group__0__Impl"
-    // InternalPascal.g:4658:1: rule__ScalarType__Group__0__Impl : ( '(' ) ;
+    // InternalPascal.g:4664:1: rule__ScalarType__Group__0__Impl : ( '(' ) ;
     public final void rule__ScalarType__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4662:1: ( ( '(' ) )
-            // InternalPascal.g:4663:1: ( '(' )
+            // InternalPascal.g:4668:1: ( ( '(' ) )
+            // InternalPascal.g:4669:1: ( '(' )
             {
-            // InternalPascal.g:4663:1: ( '(' )
-            // InternalPascal.g:4664:2: '('
+            // InternalPascal.g:4669:1: ( '(' )
+            // InternalPascal.g:4670:2: '('
             {
              before(grammarAccess.getScalarTypeAccess().getLeftParenthesisKeyword_0()); 
             match(input,38,FOLLOW_2); 
@@ -15305,14 +15269,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScalarType__Group__1"
-    // InternalPascal.g:4673:1: rule__ScalarType__Group__1 : rule__ScalarType__Group__1__Impl rule__ScalarType__Group__2 ;
+    // InternalPascal.g:4679:1: rule__ScalarType__Group__1 : rule__ScalarType__Group__1__Impl rule__ScalarType__Group__2 ;
     public final void rule__ScalarType__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4677:1: ( rule__ScalarType__Group__1__Impl rule__ScalarType__Group__2 )
-            // InternalPascal.g:4678:2: rule__ScalarType__Group__1__Impl rule__ScalarType__Group__2
+            // InternalPascal.g:4683:1: ( rule__ScalarType__Group__1__Impl rule__ScalarType__Group__2 )
+            // InternalPascal.g:4684:2: rule__ScalarType__Group__1__Impl rule__ScalarType__Group__2
             {
             pushFollow(FOLLOW_7);
             rule__ScalarType__Group__1__Impl();
@@ -15343,21 +15307,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScalarType__Group__1__Impl"
-    // InternalPascal.g:4685:1: rule__ScalarType__Group__1__Impl : ( ( rule__ScalarType__IdentifierListAssignment_1 ) ) ;
+    // InternalPascal.g:4691:1: rule__ScalarType__Group__1__Impl : ( ( rule__ScalarType__IdentifierListAssignment_1 ) ) ;
     public final void rule__ScalarType__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4689:1: ( ( ( rule__ScalarType__IdentifierListAssignment_1 ) ) )
-            // InternalPascal.g:4690:1: ( ( rule__ScalarType__IdentifierListAssignment_1 ) )
+            // InternalPascal.g:4695:1: ( ( ( rule__ScalarType__IdentifierListAssignment_1 ) ) )
+            // InternalPascal.g:4696:1: ( ( rule__ScalarType__IdentifierListAssignment_1 ) )
             {
-            // InternalPascal.g:4690:1: ( ( rule__ScalarType__IdentifierListAssignment_1 ) )
-            // InternalPascal.g:4691:2: ( rule__ScalarType__IdentifierListAssignment_1 )
+            // InternalPascal.g:4696:1: ( ( rule__ScalarType__IdentifierListAssignment_1 ) )
+            // InternalPascal.g:4697:2: ( rule__ScalarType__IdentifierListAssignment_1 )
             {
              before(grammarAccess.getScalarTypeAccess().getIdentifierListAssignment_1()); 
-            // InternalPascal.g:4692:2: ( rule__ScalarType__IdentifierListAssignment_1 )
-            // InternalPascal.g:4692:3: rule__ScalarType__IdentifierListAssignment_1
+            // InternalPascal.g:4698:2: ( rule__ScalarType__IdentifierListAssignment_1 )
+            // InternalPascal.g:4698:3: rule__ScalarType__IdentifierListAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__ScalarType__IdentifierListAssignment_1();
@@ -15390,14 +15354,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScalarType__Group__2"
-    // InternalPascal.g:4700:1: rule__ScalarType__Group__2 : rule__ScalarType__Group__2__Impl ;
+    // InternalPascal.g:4706:1: rule__ScalarType__Group__2 : rule__ScalarType__Group__2__Impl ;
     public final void rule__ScalarType__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4704:1: ( rule__ScalarType__Group__2__Impl )
-            // InternalPascal.g:4705:2: rule__ScalarType__Group__2__Impl
+            // InternalPascal.g:4710:1: ( rule__ScalarType__Group__2__Impl )
+            // InternalPascal.g:4711:2: rule__ScalarType__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ScalarType__Group__2__Impl();
@@ -15423,17 +15387,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScalarType__Group__2__Impl"
-    // InternalPascal.g:4711:1: rule__ScalarType__Group__2__Impl : ( ')' ) ;
+    // InternalPascal.g:4717:1: rule__ScalarType__Group__2__Impl : ( ')' ) ;
     public final void rule__ScalarType__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4715:1: ( ( ')' ) )
-            // InternalPascal.g:4716:1: ( ')' )
+            // InternalPascal.g:4721:1: ( ( ')' ) )
+            // InternalPascal.g:4722:1: ( ')' )
             {
-            // InternalPascal.g:4716:1: ( ')' )
-            // InternalPascal.g:4717:2: ')'
+            // InternalPascal.g:4722:1: ( ')' )
+            // InternalPascal.g:4723:2: ')'
             {
              before(grammarAccess.getScalarTypeAccess().getRightParenthesisKeyword_2()); 
             match(input,39,FOLLOW_2); 
@@ -15460,14 +15424,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SubrangeType__Group__0"
-    // InternalPascal.g:4727:1: rule__SubrangeType__Group__0 : rule__SubrangeType__Group__0__Impl rule__SubrangeType__Group__1 ;
+    // InternalPascal.g:4733:1: rule__SubrangeType__Group__0 : rule__SubrangeType__Group__0__Impl rule__SubrangeType__Group__1 ;
     public final void rule__SubrangeType__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4731:1: ( rule__SubrangeType__Group__0__Impl rule__SubrangeType__Group__1 )
-            // InternalPascal.g:4732:2: rule__SubrangeType__Group__0__Impl rule__SubrangeType__Group__1
+            // InternalPascal.g:4737:1: ( rule__SubrangeType__Group__0__Impl rule__SubrangeType__Group__1 )
+            // InternalPascal.g:4738:2: rule__SubrangeType__Group__0__Impl rule__SubrangeType__Group__1
             {
             pushFollow(FOLLOW_28);
             rule__SubrangeType__Group__0__Impl();
@@ -15498,21 +15462,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SubrangeType__Group__0__Impl"
-    // InternalPascal.g:4739:1: rule__SubrangeType__Group__0__Impl : ( ( rule__SubrangeType__ConstantAssignment_0 ) ) ;
+    // InternalPascal.g:4745:1: rule__SubrangeType__Group__0__Impl : ( ( rule__SubrangeType__ConstantAssignment_0 ) ) ;
     public final void rule__SubrangeType__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4743:1: ( ( ( rule__SubrangeType__ConstantAssignment_0 ) ) )
-            // InternalPascal.g:4744:1: ( ( rule__SubrangeType__ConstantAssignment_0 ) )
+            // InternalPascal.g:4749:1: ( ( ( rule__SubrangeType__ConstantAssignment_0 ) ) )
+            // InternalPascal.g:4750:1: ( ( rule__SubrangeType__ConstantAssignment_0 ) )
             {
-            // InternalPascal.g:4744:1: ( ( rule__SubrangeType__ConstantAssignment_0 ) )
-            // InternalPascal.g:4745:2: ( rule__SubrangeType__ConstantAssignment_0 )
+            // InternalPascal.g:4750:1: ( ( rule__SubrangeType__ConstantAssignment_0 ) )
+            // InternalPascal.g:4751:2: ( rule__SubrangeType__ConstantAssignment_0 )
             {
              before(grammarAccess.getSubrangeTypeAccess().getConstantAssignment_0()); 
-            // InternalPascal.g:4746:2: ( rule__SubrangeType__ConstantAssignment_0 )
-            // InternalPascal.g:4746:3: rule__SubrangeType__ConstantAssignment_0
+            // InternalPascal.g:4752:2: ( rule__SubrangeType__ConstantAssignment_0 )
+            // InternalPascal.g:4752:3: rule__SubrangeType__ConstantAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__SubrangeType__ConstantAssignment_0();
@@ -15545,14 +15509,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SubrangeType__Group__1"
-    // InternalPascal.g:4754:1: rule__SubrangeType__Group__1 : rule__SubrangeType__Group__1__Impl rule__SubrangeType__Group__2 ;
+    // InternalPascal.g:4760:1: rule__SubrangeType__Group__1 : rule__SubrangeType__Group__1__Impl rule__SubrangeType__Group__2 ;
     public final void rule__SubrangeType__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4758:1: ( rule__SubrangeType__Group__1__Impl rule__SubrangeType__Group__2 )
-            // InternalPascal.g:4759:2: rule__SubrangeType__Group__1__Impl rule__SubrangeType__Group__2
+            // InternalPascal.g:4764:1: ( rule__SubrangeType__Group__1__Impl rule__SubrangeType__Group__2 )
+            // InternalPascal.g:4765:2: rule__SubrangeType__Group__1__Impl rule__SubrangeType__Group__2
             {
             pushFollow(FOLLOW_16);
             rule__SubrangeType__Group__1__Impl();
@@ -15583,17 +15547,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SubrangeType__Group__1__Impl"
-    // InternalPascal.g:4766:1: rule__SubrangeType__Group__1__Impl : ( '..' ) ;
+    // InternalPascal.g:4772:1: rule__SubrangeType__Group__1__Impl : ( '..' ) ;
     public final void rule__SubrangeType__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4770:1: ( ( '..' ) )
-            // InternalPascal.g:4771:1: ( '..' )
+            // InternalPascal.g:4776:1: ( ( '..' ) )
+            // InternalPascal.g:4777:1: ( '..' )
             {
-            // InternalPascal.g:4771:1: ( '..' )
-            // InternalPascal.g:4772:2: '..'
+            // InternalPascal.g:4777:1: ( '..' )
+            // InternalPascal.g:4778:2: '..'
             {
              before(grammarAccess.getSubrangeTypeAccess().getFullStopFullStopKeyword_1()); 
             match(input,50,FOLLOW_2); 
@@ -15620,14 +15584,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SubrangeType__Group__2"
-    // InternalPascal.g:4781:1: rule__SubrangeType__Group__2 : rule__SubrangeType__Group__2__Impl ;
+    // InternalPascal.g:4787:1: rule__SubrangeType__Group__2 : rule__SubrangeType__Group__2__Impl ;
     public final void rule__SubrangeType__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4785:1: ( rule__SubrangeType__Group__2__Impl )
-            // InternalPascal.g:4786:2: rule__SubrangeType__Group__2__Impl
+            // InternalPascal.g:4791:1: ( rule__SubrangeType__Group__2__Impl )
+            // InternalPascal.g:4792:2: rule__SubrangeType__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__SubrangeType__Group__2__Impl();
@@ -15653,21 +15617,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SubrangeType__Group__2__Impl"
-    // InternalPascal.g:4792:1: rule__SubrangeType__Group__2__Impl : ( ( rule__SubrangeType__Constant2Assignment_2 ) ) ;
+    // InternalPascal.g:4798:1: rule__SubrangeType__Group__2__Impl : ( ( rule__SubrangeType__Constant2Assignment_2 ) ) ;
     public final void rule__SubrangeType__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4796:1: ( ( ( rule__SubrangeType__Constant2Assignment_2 ) ) )
-            // InternalPascal.g:4797:1: ( ( rule__SubrangeType__Constant2Assignment_2 ) )
+            // InternalPascal.g:4802:1: ( ( ( rule__SubrangeType__Constant2Assignment_2 ) ) )
+            // InternalPascal.g:4803:1: ( ( rule__SubrangeType__Constant2Assignment_2 ) )
             {
-            // InternalPascal.g:4797:1: ( ( rule__SubrangeType__Constant2Assignment_2 ) )
-            // InternalPascal.g:4798:2: ( rule__SubrangeType__Constant2Assignment_2 )
+            // InternalPascal.g:4803:1: ( ( rule__SubrangeType__Constant2Assignment_2 ) )
+            // InternalPascal.g:4804:2: ( rule__SubrangeType__Constant2Assignment_2 )
             {
              before(grammarAccess.getSubrangeTypeAccess().getConstant2Assignment_2()); 
-            // InternalPascal.g:4799:2: ( rule__SubrangeType__Constant2Assignment_2 )
-            // InternalPascal.g:4799:3: rule__SubrangeType__Constant2Assignment_2
+            // InternalPascal.g:4805:2: ( rule__SubrangeType__Constant2Assignment_2 )
+            // InternalPascal.g:4805:3: rule__SubrangeType__Constant2Assignment_2
             {
             pushFollow(FOLLOW_2);
             rule__SubrangeType__Constant2Assignment_2();
@@ -15700,14 +15664,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredType__Group_0__0"
-    // InternalPascal.g:4808:1: rule__StructuredType__Group_0__0 : rule__StructuredType__Group_0__0__Impl rule__StructuredType__Group_0__1 ;
+    // InternalPascal.g:4814:1: rule__StructuredType__Group_0__0 : rule__StructuredType__Group_0__0__Impl rule__StructuredType__Group_0__1 ;
     public final void rule__StructuredType__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4812:1: ( rule__StructuredType__Group_0__0__Impl rule__StructuredType__Group_0__1 )
-            // InternalPascal.g:4813:2: rule__StructuredType__Group_0__0__Impl rule__StructuredType__Group_0__1
+            // InternalPascal.g:4818:1: ( rule__StructuredType__Group_0__0__Impl rule__StructuredType__Group_0__1 )
+            // InternalPascal.g:4819:2: rule__StructuredType__Group_0__0__Impl rule__StructuredType__Group_0__1
             {
             pushFollow(FOLLOW_29);
             rule__StructuredType__Group_0__0__Impl();
@@ -15738,17 +15702,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredType__Group_0__0__Impl"
-    // InternalPascal.g:4820:1: rule__StructuredType__Group_0__0__Impl : ( 'packed' ) ;
+    // InternalPascal.g:4826:1: rule__StructuredType__Group_0__0__Impl : ( 'packed' ) ;
     public final void rule__StructuredType__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4824:1: ( ( 'packed' ) )
-            // InternalPascal.g:4825:1: ( 'packed' )
+            // InternalPascal.g:4830:1: ( ( 'packed' ) )
+            // InternalPascal.g:4831:1: ( 'packed' )
             {
-            // InternalPascal.g:4825:1: ( 'packed' )
-            // InternalPascal.g:4826:2: 'packed'
+            // InternalPascal.g:4831:1: ( 'packed' )
+            // InternalPascal.g:4832:2: 'packed'
             {
              before(grammarAccess.getStructuredTypeAccess().getPackedKeyword_0_0()); 
             match(input,51,FOLLOW_2); 
@@ -15775,14 +15739,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredType__Group_0__1"
-    // InternalPascal.g:4835:1: rule__StructuredType__Group_0__1 : rule__StructuredType__Group_0__1__Impl ;
+    // InternalPascal.g:4841:1: rule__StructuredType__Group_0__1 : rule__StructuredType__Group_0__1__Impl ;
     public final void rule__StructuredType__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4839:1: ( rule__StructuredType__Group_0__1__Impl )
-            // InternalPascal.g:4840:2: rule__StructuredType__Group_0__1__Impl
+            // InternalPascal.g:4845:1: ( rule__StructuredType__Group_0__1__Impl )
+            // InternalPascal.g:4846:2: rule__StructuredType__Group_0__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__StructuredType__Group_0__1__Impl();
@@ -15808,21 +15772,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredType__Group_0__1__Impl"
-    // InternalPascal.g:4846:1: rule__StructuredType__Group_0__1__Impl : ( ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 ) ) ;
+    // InternalPascal.g:4852:1: rule__StructuredType__Group_0__1__Impl : ( ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 ) ) ;
     public final void rule__StructuredType__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4850:1: ( ( ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 ) ) )
-            // InternalPascal.g:4851:1: ( ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 ) )
+            // InternalPascal.g:4856:1: ( ( ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 ) ) )
+            // InternalPascal.g:4857:1: ( ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 ) )
             {
-            // InternalPascal.g:4851:1: ( ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 ) )
-            // InternalPascal.g:4852:2: ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 )
+            // InternalPascal.g:4857:1: ( ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 ) )
+            // InternalPascal.g:4858:2: ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 )
             {
              before(grammarAccess.getStructuredTypeAccess().getUnpackedStructuredTypeAssignment_0_1()); 
-            // InternalPascal.g:4853:2: ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 )
-            // InternalPascal.g:4853:3: rule__StructuredType__UnpackedStructuredTypeAssignment_0_1
+            // InternalPascal.g:4859:2: ( rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 )
+            // InternalPascal.g:4859:3: rule__StructuredType__UnpackedStructuredTypeAssignment_0_1
             {
             pushFollow(FOLLOW_2);
             rule__StructuredType__UnpackedStructuredTypeAssignment_0_1();
@@ -15855,14 +15819,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__Group__0"
-    // InternalPascal.g:4862:1: rule__Stringtype__Group__0 : rule__Stringtype__Group__0__Impl rule__Stringtype__Group__1 ;
+    // InternalPascal.g:4868:1: rule__Stringtype__Group__0 : rule__Stringtype__Group__0__Impl rule__Stringtype__Group__1 ;
     public final void rule__Stringtype__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4866:1: ( rule__Stringtype__Group__0__Impl rule__Stringtype__Group__1 )
-            // InternalPascal.g:4867:2: rule__Stringtype__Group__0__Impl rule__Stringtype__Group__1
+            // InternalPascal.g:4872:1: ( rule__Stringtype__Group__0__Impl rule__Stringtype__Group__1 )
+            // InternalPascal.g:4873:2: rule__Stringtype__Group__0__Impl rule__Stringtype__Group__1
             {
             pushFollow(FOLLOW_30);
             rule__Stringtype__Group__0__Impl();
@@ -15893,17 +15857,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__Group__0__Impl"
-    // InternalPascal.g:4874:1: rule__Stringtype__Group__0__Impl : ( 'string' ) ;
+    // InternalPascal.g:4880:1: rule__Stringtype__Group__0__Impl : ( 'string' ) ;
     public final void rule__Stringtype__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4878:1: ( ( 'string' ) )
-            // InternalPascal.g:4879:1: ( 'string' )
+            // InternalPascal.g:4884:1: ( ( 'string' ) )
+            // InternalPascal.g:4885:1: ( 'string' )
             {
-            // InternalPascal.g:4879:1: ( 'string' )
-            // InternalPascal.g:4880:2: 'string'
+            // InternalPascal.g:4885:1: ( 'string' )
+            // InternalPascal.g:4886:2: 'string'
             {
              before(grammarAccess.getStringtypeAccess().getStringKeyword_0()); 
             match(input,52,FOLLOW_2); 
@@ -15930,14 +15894,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__Group__1"
-    // InternalPascal.g:4889:1: rule__Stringtype__Group__1 : rule__Stringtype__Group__1__Impl rule__Stringtype__Group__2 ;
+    // InternalPascal.g:4895:1: rule__Stringtype__Group__1 : rule__Stringtype__Group__1__Impl rule__Stringtype__Group__2 ;
     public final void rule__Stringtype__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4893:1: ( rule__Stringtype__Group__1__Impl rule__Stringtype__Group__2 )
-            // InternalPascal.g:4894:2: rule__Stringtype__Group__1__Impl rule__Stringtype__Group__2
+            // InternalPascal.g:4899:1: ( rule__Stringtype__Group__1__Impl rule__Stringtype__Group__2 )
+            // InternalPascal.g:4900:2: rule__Stringtype__Group__1__Impl rule__Stringtype__Group__2
             {
             pushFollow(FOLLOW_31);
             rule__Stringtype__Group__1__Impl();
@@ -15968,17 +15932,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__Group__1__Impl"
-    // InternalPascal.g:4901:1: rule__Stringtype__Group__1__Impl : ( '[' ) ;
+    // InternalPascal.g:4907:1: rule__Stringtype__Group__1__Impl : ( '[' ) ;
     public final void rule__Stringtype__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4905:1: ( ( '[' ) )
-            // InternalPascal.g:4906:1: ( '[' )
+            // InternalPascal.g:4911:1: ( ( '[' ) )
+            // InternalPascal.g:4912:1: ( '[' )
             {
-            // InternalPascal.g:4906:1: ( '[' )
-            // InternalPascal.g:4907:2: '['
+            // InternalPascal.g:4912:1: ( '[' )
+            // InternalPascal.g:4913:2: '['
             {
              before(grammarAccess.getStringtypeAccess().getLeftSquareBracketKeyword_1()); 
             match(input,53,FOLLOW_2); 
@@ -16005,14 +15969,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__Group__2"
-    // InternalPascal.g:4916:1: rule__Stringtype__Group__2 : rule__Stringtype__Group__2__Impl rule__Stringtype__Group__3 ;
+    // InternalPascal.g:4922:1: rule__Stringtype__Group__2 : rule__Stringtype__Group__2__Impl rule__Stringtype__Group__3 ;
     public final void rule__Stringtype__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4920:1: ( rule__Stringtype__Group__2__Impl rule__Stringtype__Group__3 )
-            // InternalPascal.g:4921:2: rule__Stringtype__Group__2__Impl rule__Stringtype__Group__3
+            // InternalPascal.g:4926:1: ( rule__Stringtype__Group__2__Impl rule__Stringtype__Group__3 )
+            // InternalPascal.g:4927:2: rule__Stringtype__Group__2__Impl rule__Stringtype__Group__3
             {
             pushFollow(FOLLOW_32);
             rule__Stringtype__Group__2__Impl();
@@ -16043,21 +16007,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__Group__2__Impl"
-    // InternalPascal.g:4928:1: rule__Stringtype__Group__2__Impl : ( ( rule__Stringtype__Alternatives_2 ) ) ;
+    // InternalPascal.g:4934:1: rule__Stringtype__Group__2__Impl : ( ( rule__Stringtype__Alternatives_2 ) ) ;
     public final void rule__Stringtype__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4932:1: ( ( ( rule__Stringtype__Alternatives_2 ) ) )
-            // InternalPascal.g:4933:1: ( ( rule__Stringtype__Alternatives_2 ) )
+            // InternalPascal.g:4938:1: ( ( ( rule__Stringtype__Alternatives_2 ) ) )
+            // InternalPascal.g:4939:1: ( ( rule__Stringtype__Alternatives_2 ) )
             {
-            // InternalPascal.g:4933:1: ( ( rule__Stringtype__Alternatives_2 ) )
-            // InternalPascal.g:4934:2: ( rule__Stringtype__Alternatives_2 )
+            // InternalPascal.g:4939:1: ( ( rule__Stringtype__Alternatives_2 ) )
+            // InternalPascal.g:4940:2: ( rule__Stringtype__Alternatives_2 )
             {
              before(grammarAccess.getStringtypeAccess().getAlternatives_2()); 
-            // InternalPascal.g:4935:2: ( rule__Stringtype__Alternatives_2 )
-            // InternalPascal.g:4935:3: rule__Stringtype__Alternatives_2
+            // InternalPascal.g:4941:2: ( rule__Stringtype__Alternatives_2 )
+            // InternalPascal.g:4941:3: rule__Stringtype__Alternatives_2
             {
             pushFollow(FOLLOW_2);
             rule__Stringtype__Alternatives_2();
@@ -16090,14 +16054,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__Group__3"
-    // InternalPascal.g:4943:1: rule__Stringtype__Group__3 : rule__Stringtype__Group__3__Impl ;
+    // InternalPascal.g:4949:1: rule__Stringtype__Group__3 : rule__Stringtype__Group__3__Impl ;
     public final void rule__Stringtype__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4947:1: ( rule__Stringtype__Group__3__Impl )
-            // InternalPascal.g:4948:2: rule__Stringtype__Group__3__Impl
+            // InternalPascal.g:4953:1: ( rule__Stringtype__Group__3__Impl )
+            // InternalPascal.g:4954:2: rule__Stringtype__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Stringtype__Group__3__Impl();
@@ -16123,17 +16087,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__Group__3__Impl"
-    // InternalPascal.g:4954:1: rule__Stringtype__Group__3__Impl : ( ']' ) ;
+    // InternalPascal.g:4960:1: rule__Stringtype__Group__3__Impl : ( ']' ) ;
     public final void rule__Stringtype__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4958:1: ( ( ']' ) )
-            // InternalPascal.g:4959:1: ( ']' )
+            // InternalPascal.g:4964:1: ( ( ']' ) )
+            // InternalPascal.g:4965:1: ( ']' )
             {
-            // InternalPascal.g:4959:1: ( ']' )
-            // InternalPascal.g:4960:2: ']'
+            // InternalPascal.g:4965:1: ( ']' )
+            // InternalPascal.g:4966:2: ']'
             {
              before(grammarAccess.getStringtypeAccess().getRightSquareBracketKeyword_3()); 
             match(input,54,FOLLOW_2); 
@@ -16160,14 +16124,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordType__Group__0"
-    // InternalPascal.g:4970:1: rule__RecordType__Group__0 : rule__RecordType__Group__0__Impl rule__RecordType__Group__1 ;
+    // InternalPascal.g:4976:1: rule__RecordType__Group__0 : rule__RecordType__Group__0__Impl rule__RecordType__Group__1 ;
     public final void rule__RecordType__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4974:1: ( rule__RecordType__Group__0__Impl rule__RecordType__Group__1 )
-            // InternalPascal.g:4975:2: rule__RecordType__Group__0__Impl rule__RecordType__Group__1
+            // InternalPascal.g:4980:1: ( rule__RecordType__Group__0__Impl rule__RecordType__Group__1 )
+            // InternalPascal.g:4981:2: rule__RecordType__Group__0__Impl rule__RecordType__Group__1
             {
             pushFollow(FOLLOW_29);
             rule__RecordType__Group__0__Impl();
@@ -16198,21 +16162,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordType__Group__0__Impl"
-    // InternalPascal.g:4982:1: rule__RecordType__Group__0__Impl : ( () ) ;
+    // InternalPascal.g:4988:1: rule__RecordType__Group__0__Impl : ( () ) ;
     public final void rule__RecordType__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:4986:1: ( ( () ) )
-            // InternalPascal.g:4987:1: ( () )
+            // InternalPascal.g:4992:1: ( ( () ) )
+            // InternalPascal.g:4993:1: ( () )
             {
-            // InternalPascal.g:4987:1: ( () )
-            // InternalPascal.g:4988:2: ()
+            // InternalPascal.g:4993:1: ( () )
+            // InternalPascal.g:4994:2: ()
             {
              before(grammarAccess.getRecordTypeAccess().getRecordTypeAction_0()); 
-            // InternalPascal.g:4989:2: ()
-            // InternalPascal.g:4989:3: 
+            // InternalPascal.g:4995:2: ()
+            // InternalPascal.g:4995:3: 
             {
             }
 
@@ -16235,14 +16199,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordType__Group__1"
-    // InternalPascal.g:4997:1: rule__RecordType__Group__1 : rule__RecordType__Group__1__Impl rule__RecordType__Group__2 ;
+    // InternalPascal.g:5003:1: rule__RecordType__Group__1 : rule__RecordType__Group__1__Impl rule__RecordType__Group__2 ;
     public final void rule__RecordType__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5001:1: ( rule__RecordType__Group__1__Impl rule__RecordType__Group__2 )
-            // InternalPascal.g:5002:2: rule__RecordType__Group__1__Impl rule__RecordType__Group__2
+            // InternalPascal.g:5007:1: ( rule__RecordType__Group__1__Impl rule__RecordType__Group__2 )
+            // InternalPascal.g:5008:2: rule__RecordType__Group__1__Impl rule__RecordType__Group__2
             {
             pushFollow(FOLLOW_33);
             rule__RecordType__Group__1__Impl();
@@ -16273,17 +16237,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordType__Group__1__Impl"
-    // InternalPascal.g:5009:1: rule__RecordType__Group__1__Impl : ( 'record' ) ;
+    // InternalPascal.g:5015:1: rule__RecordType__Group__1__Impl : ( 'record' ) ;
     public final void rule__RecordType__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5013:1: ( ( 'record' ) )
-            // InternalPascal.g:5014:1: ( 'record' )
+            // InternalPascal.g:5019:1: ( ( 'record' ) )
+            // InternalPascal.g:5020:1: ( 'record' )
             {
-            // InternalPascal.g:5014:1: ( 'record' )
-            // InternalPascal.g:5015:2: 'record'
+            // InternalPascal.g:5020:1: ( 'record' )
+            // InternalPascal.g:5021:2: 'record'
             {
              before(grammarAccess.getRecordTypeAccess().getRecordKeyword_1()); 
             match(input,55,FOLLOW_2); 
@@ -16310,14 +16274,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordType__Group__2"
-    // InternalPascal.g:5024:1: rule__RecordType__Group__2 : rule__RecordType__Group__2__Impl rule__RecordType__Group__3 ;
+    // InternalPascal.g:5030:1: rule__RecordType__Group__2 : rule__RecordType__Group__2__Impl rule__RecordType__Group__3 ;
     public final void rule__RecordType__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5028:1: ( rule__RecordType__Group__2__Impl rule__RecordType__Group__3 )
-            // InternalPascal.g:5029:2: rule__RecordType__Group__2__Impl rule__RecordType__Group__3
+            // InternalPascal.g:5034:1: ( rule__RecordType__Group__2__Impl rule__RecordType__Group__3 )
+            // InternalPascal.g:5035:2: rule__RecordType__Group__2__Impl rule__RecordType__Group__3
             {
             pushFollow(FOLLOW_33);
             rule__RecordType__Group__2__Impl();
@@ -16348,20 +16312,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordType__Group__2__Impl"
-    // InternalPascal.g:5036:1: rule__RecordType__Group__2__Impl : ( ( rule__RecordType__FieldListAssignment_2 )? ) ;
+    // InternalPascal.g:5042:1: rule__RecordType__Group__2__Impl : ( ( rule__RecordType__FieldListAssignment_2 )? ) ;
     public final void rule__RecordType__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5040:1: ( ( ( rule__RecordType__FieldListAssignment_2 )? ) )
-            // InternalPascal.g:5041:1: ( ( rule__RecordType__FieldListAssignment_2 )? )
+            // InternalPascal.g:5046:1: ( ( ( rule__RecordType__FieldListAssignment_2 )? ) )
+            // InternalPascal.g:5047:1: ( ( rule__RecordType__FieldListAssignment_2 )? )
             {
-            // InternalPascal.g:5041:1: ( ( rule__RecordType__FieldListAssignment_2 )? )
-            // InternalPascal.g:5042:2: ( rule__RecordType__FieldListAssignment_2 )?
+            // InternalPascal.g:5047:1: ( ( rule__RecordType__FieldListAssignment_2 )? )
+            // InternalPascal.g:5048:2: ( rule__RecordType__FieldListAssignment_2 )?
             {
              before(grammarAccess.getRecordTypeAccess().getFieldListAssignment_2()); 
-            // InternalPascal.g:5043:2: ( rule__RecordType__FieldListAssignment_2 )?
+            // InternalPascal.g:5049:2: ( rule__RecordType__FieldListAssignment_2 )?
             int alt38=2;
             int LA38_0 = input.LA(1);
 
@@ -16370,7 +16334,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt38) {
                 case 1 :
-                    // InternalPascal.g:5043:3: rule__RecordType__FieldListAssignment_2
+                    // InternalPascal.g:5049:3: rule__RecordType__FieldListAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__RecordType__FieldListAssignment_2();
@@ -16406,14 +16370,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordType__Group__3"
-    // InternalPascal.g:5051:1: rule__RecordType__Group__3 : rule__RecordType__Group__3__Impl ;
+    // InternalPascal.g:5057:1: rule__RecordType__Group__3 : rule__RecordType__Group__3__Impl ;
     public final void rule__RecordType__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5055:1: ( rule__RecordType__Group__3__Impl )
-            // InternalPascal.g:5056:2: rule__RecordType__Group__3__Impl
+            // InternalPascal.g:5061:1: ( rule__RecordType__Group__3__Impl )
+            // InternalPascal.g:5062:2: rule__RecordType__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__RecordType__Group__3__Impl();
@@ -16439,17 +16403,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordType__Group__3__Impl"
-    // InternalPascal.g:5062:1: rule__RecordType__Group__3__Impl : ( 'end' ) ;
+    // InternalPascal.g:5068:1: rule__RecordType__Group__3__Impl : ( 'end' ) ;
     public final void rule__RecordType__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5066:1: ( ( 'end' ) )
-            // InternalPascal.g:5067:1: ( 'end' )
+            // InternalPascal.g:5072:1: ( ( 'end' ) )
+            // InternalPascal.g:5073:1: ( 'end' )
             {
-            // InternalPascal.g:5067:1: ( 'end' )
-            // InternalPascal.g:5068:2: 'end'
+            // InternalPascal.g:5073:1: ( 'end' )
+            // InternalPascal.g:5074:2: 'end'
             {
              before(grammarAccess.getRecordTypeAccess().getEndKeyword_3()); 
             match(input,56,FOLLOW_2); 
@@ -16476,14 +16440,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__Group_0__0"
-    // InternalPascal.g:5078:1: rule__FieldList__Group_0__0 : rule__FieldList__Group_0__0__Impl rule__FieldList__Group_0__1 ;
+    // InternalPascal.g:5084:1: rule__FieldList__Group_0__0 : rule__FieldList__Group_0__0__Impl rule__FieldList__Group_0__1 ;
     public final void rule__FieldList__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5082:1: ( rule__FieldList__Group_0__0__Impl rule__FieldList__Group_0__1 )
-            // InternalPascal.g:5083:2: rule__FieldList__Group_0__0__Impl rule__FieldList__Group_0__1
+            // InternalPascal.g:5088:1: ( rule__FieldList__Group_0__0__Impl rule__FieldList__Group_0__1 )
+            // InternalPascal.g:5089:2: rule__FieldList__Group_0__0__Impl rule__FieldList__Group_0__1
             {
             pushFollow(FOLLOW_14);
             rule__FieldList__Group_0__0__Impl();
@@ -16514,21 +16478,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__Group_0__0__Impl"
-    // InternalPascal.g:5090:1: rule__FieldList__Group_0__0__Impl : ( ( rule__FieldList__FixedPartAssignment_0_0 ) ) ;
+    // InternalPascal.g:5096:1: rule__FieldList__Group_0__0__Impl : ( ( rule__FieldList__FixedPartAssignment_0_0 ) ) ;
     public final void rule__FieldList__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5094:1: ( ( ( rule__FieldList__FixedPartAssignment_0_0 ) ) )
-            // InternalPascal.g:5095:1: ( ( rule__FieldList__FixedPartAssignment_0_0 ) )
+            // InternalPascal.g:5100:1: ( ( ( rule__FieldList__FixedPartAssignment_0_0 ) ) )
+            // InternalPascal.g:5101:1: ( ( rule__FieldList__FixedPartAssignment_0_0 ) )
             {
-            // InternalPascal.g:5095:1: ( ( rule__FieldList__FixedPartAssignment_0_0 ) )
-            // InternalPascal.g:5096:2: ( rule__FieldList__FixedPartAssignment_0_0 )
+            // InternalPascal.g:5101:1: ( ( rule__FieldList__FixedPartAssignment_0_0 ) )
+            // InternalPascal.g:5102:2: ( rule__FieldList__FixedPartAssignment_0_0 )
             {
              before(grammarAccess.getFieldListAccess().getFixedPartAssignment_0_0()); 
-            // InternalPascal.g:5097:2: ( rule__FieldList__FixedPartAssignment_0_0 )
-            // InternalPascal.g:5097:3: rule__FieldList__FixedPartAssignment_0_0
+            // InternalPascal.g:5103:2: ( rule__FieldList__FixedPartAssignment_0_0 )
+            // InternalPascal.g:5103:3: rule__FieldList__FixedPartAssignment_0_0
             {
             pushFollow(FOLLOW_2);
             rule__FieldList__FixedPartAssignment_0_0();
@@ -16561,14 +16525,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__Group_0__1"
-    // InternalPascal.g:5105:1: rule__FieldList__Group_0__1 : rule__FieldList__Group_0__1__Impl ;
+    // InternalPascal.g:5111:1: rule__FieldList__Group_0__1 : rule__FieldList__Group_0__1__Impl ;
     public final void rule__FieldList__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5109:1: ( rule__FieldList__Group_0__1__Impl )
-            // InternalPascal.g:5110:2: rule__FieldList__Group_0__1__Impl
+            // InternalPascal.g:5115:1: ( rule__FieldList__Group_0__1__Impl )
+            // InternalPascal.g:5116:2: rule__FieldList__Group_0__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FieldList__Group_0__1__Impl();
@@ -16594,20 +16558,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__Group_0__1__Impl"
-    // InternalPascal.g:5116:1: rule__FieldList__Group_0__1__Impl : ( ( rule__FieldList__Group_0_1__0 )? ) ;
+    // InternalPascal.g:5122:1: rule__FieldList__Group_0__1__Impl : ( ( rule__FieldList__Group_0_1__0 )? ) ;
     public final void rule__FieldList__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5120:1: ( ( ( rule__FieldList__Group_0_1__0 )? ) )
-            // InternalPascal.g:5121:1: ( ( rule__FieldList__Group_0_1__0 )? )
+            // InternalPascal.g:5126:1: ( ( ( rule__FieldList__Group_0_1__0 )? ) )
+            // InternalPascal.g:5127:1: ( ( rule__FieldList__Group_0_1__0 )? )
             {
-            // InternalPascal.g:5121:1: ( ( rule__FieldList__Group_0_1__0 )? )
-            // InternalPascal.g:5122:2: ( rule__FieldList__Group_0_1__0 )?
+            // InternalPascal.g:5127:1: ( ( rule__FieldList__Group_0_1__0 )? )
+            // InternalPascal.g:5128:2: ( rule__FieldList__Group_0_1__0 )?
             {
              before(grammarAccess.getFieldListAccess().getGroup_0_1()); 
-            // InternalPascal.g:5123:2: ( rule__FieldList__Group_0_1__0 )?
+            // InternalPascal.g:5129:2: ( rule__FieldList__Group_0_1__0 )?
             int alt39=2;
             int LA39_0 = input.LA(1);
 
@@ -16616,7 +16580,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt39) {
                 case 1 :
-                    // InternalPascal.g:5123:3: rule__FieldList__Group_0_1__0
+                    // InternalPascal.g:5129:3: rule__FieldList__Group_0_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__FieldList__Group_0_1__0();
@@ -16652,14 +16616,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__Group_0_1__0"
-    // InternalPascal.g:5132:1: rule__FieldList__Group_0_1__0 : rule__FieldList__Group_0_1__0__Impl rule__FieldList__Group_0_1__1 ;
+    // InternalPascal.g:5138:1: rule__FieldList__Group_0_1__0 : rule__FieldList__Group_0_1__0__Impl rule__FieldList__Group_0_1__1 ;
     public final void rule__FieldList__Group_0_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5136:1: ( rule__FieldList__Group_0_1__0__Impl rule__FieldList__Group_0_1__1 )
-            // InternalPascal.g:5137:2: rule__FieldList__Group_0_1__0__Impl rule__FieldList__Group_0_1__1
+            // InternalPascal.g:5142:1: ( rule__FieldList__Group_0_1__0__Impl rule__FieldList__Group_0_1__1 )
+            // InternalPascal.g:5143:2: rule__FieldList__Group_0_1__0__Impl rule__FieldList__Group_0_1__1
             {
             pushFollow(FOLLOW_34);
             rule__FieldList__Group_0_1__0__Impl();
@@ -16690,17 +16654,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__Group_0_1__0__Impl"
-    // InternalPascal.g:5144:1: rule__FieldList__Group_0_1__0__Impl : ( ';' ) ;
+    // InternalPascal.g:5150:1: rule__FieldList__Group_0_1__0__Impl : ( ';' ) ;
     public final void rule__FieldList__Group_0_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5148:1: ( ( ';' ) )
-            // InternalPascal.g:5149:1: ( ';' )
+            // InternalPascal.g:5154:1: ( ( ';' ) )
+            // InternalPascal.g:5155:1: ( ';' )
             {
-            // InternalPascal.g:5149:1: ( ';' )
-            // InternalPascal.g:5150:2: ';'
+            // InternalPascal.g:5155:1: ( ';' )
+            // InternalPascal.g:5156:2: ';'
             {
              before(grammarAccess.getFieldListAccess().getSemicolonKeyword_0_1_0()); 
             match(input,37,FOLLOW_2); 
@@ -16727,14 +16691,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__Group_0_1__1"
-    // InternalPascal.g:5159:1: rule__FieldList__Group_0_1__1 : rule__FieldList__Group_0_1__1__Impl ;
+    // InternalPascal.g:5165:1: rule__FieldList__Group_0_1__1 : rule__FieldList__Group_0_1__1__Impl ;
     public final void rule__FieldList__Group_0_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5163:1: ( rule__FieldList__Group_0_1__1__Impl )
-            // InternalPascal.g:5164:2: rule__FieldList__Group_0_1__1__Impl
+            // InternalPascal.g:5169:1: ( rule__FieldList__Group_0_1__1__Impl )
+            // InternalPascal.g:5170:2: rule__FieldList__Group_0_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FieldList__Group_0_1__1__Impl();
@@ -16760,21 +16724,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__Group_0_1__1__Impl"
-    // InternalPascal.g:5170:1: rule__FieldList__Group_0_1__1__Impl : ( ( rule__FieldList__VariantPartAssignment_0_1_1 ) ) ;
+    // InternalPascal.g:5176:1: rule__FieldList__Group_0_1__1__Impl : ( ( rule__FieldList__VariantPartAssignment_0_1_1 ) ) ;
     public final void rule__FieldList__Group_0_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5174:1: ( ( ( rule__FieldList__VariantPartAssignment_0_1_1 ) ) )
-            // InternalPascal.g:5175:1: ( ( rule__FieldList__VariantPartAssignment_0_1_1 ) )
+            // InternalPascal.g:5180:1: ( ( ( rule__FieldList__VariantPartAssignment_0_1_1 ) ) )
+            // InternalPascal.g:5181:1: ( ( rule__FieldList__VariantPartAssignment_0_1_1 ) )
             {
-            // InternalPascal.g:5175:1: ( ( rule__FieldList__VariantPartAssignment_0_1_1 ) )
-            // InternalPascal.g:5176:2: ( rule__FieldList__VariantPartAssignment_0_1_1 )
+            // InternalPascal.g:5181:1: ( ( rule__FieldList__VariantPartAssignment_0_1_1 ) )
+            // InternalPascal.g:5182:2: ( rule__FieldList__VariantPartAssignment_0_1_1 )
             {
              before(grammarAccess.getFieldListAccess().getVariantPartAssignment_0_1_1()); 
-            // InternalPascal.g:5177:2: ( rule__FieldList__VariantPartAssignment_0_1_1 )
-            // InternalPascal.g:5177:3: rule__FieldList__VariantPartAssignment_0_1_1
+            // InternalPascal.g:5183:2: ( rule__FieldList__VariantPartAssignment_0_1_1 )
+            // InternalPascal.g:5183:3: rule__FieldList__VariantPartAssignment_0_1_1
             {
             pushFollow(FOLLOW_2);
             rule__FieldList__VariantPartAssignment_0_1_1();
@@ -16807,14 +16771,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__Group__0"
-    // InternalPascal.g:5186:1: rule__FixedPart__Group__0 : rule__FixedPart__Group__0__Impl rule__FixedPart__Group__1 ;
+    // InternalPascal.g:5192:1: rule__FixedPart__Group__0 : rule__FixedPart__Group__0__Impl rule__FixedPart__Group__1 ;
     public final void rule__FixedPart__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5190:1: ( rule__FixedPart__Group__0__Impl rule__FixedPart__Group__1 )
-            // InternalPascal.g:5191:2: rule__FixedPart__Group__0__Impl rule__FixedPart__Group__1
+            // InternalPascal.g:5196:1: ( rule__FixedPart__Group__0__Impl rule__FixedPart__Group__1 )
+            // InternalPascal.g:5197:2: rule__FixedPart__Group__0__Impl rule__FixedPart__Group__1
             {
             pushFollow(FOLLOW_14);
             rule__FixedPart__Group__0__Impl();
@@ -16845,21 +16809,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__Group__0__Impl"
-    // InternalPascal.g:5198:1: rule__FixedPart__Group__0__Impl : ( ( rule__FixedPart__RecordSectionAssignment_0 ) ) ;
+    // InternalPascal.g:5204:1: rule__FixedPart__Group__0__Impl : ( ( rule__FixedPart__RecordSectionAssignment_0 ) ) ;
     public final void rule__FixedPart__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5202:1: ( ( ( rule__FixedPart__RecordSectionAssignment_0 ) ) )
-            // InternalPascal.g:5203:1: ( ( rule__FixedPart__RecordSectionAssignment_0 ) )
+            // InternalPascal.g:5208:1: ( ( ( rule__FixedPart__RecordSectionAssignment_0 ) ) )
+            // InternalPascal.g:5209:1: ( ( rule__FixedPart__RecordSectionAssignment_0 ) )
             {
-            // InternalPascal.g:5203:1: ( ( rule__FixedPart__RecordSectionAssignment_0 ) )
-            // InternalPascal.g:5204:2: ( rule__FixedPart__RecordSectionAssignment_0 )
+            // InternalPascal.g:5209:1: ( ( rule__FixedPart__RecordSectionAssignment_0 ) )
+            // InternalPascal.g:5210:2: ( rule__FixedPart__RecordSectionAssignment_0 )
             {
              before(grammarAccess.getFixedPartAccess().getRecordSectionAssignment_0()); 
-            // InternalPascal.g:5205:2: ( rule__FixedPart__RecordSectionAssignment_0 )
-            // InternalPascal.g:5205:3: rule__FixedPart__RecordSectionAssignment_0
+            // InternalPascal.g:5211:2: ( rule__FixedPart__RecordSectionAssignment_0 )
+            // InternalPascal.g:5211:3: rule__FixedPart__RecordSectionAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__FixedPart__RecordSectionAssignment_0();
@@ -16892,14 +16856,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__Group__1"
-    // InternalPascal.g:5213:1: rule__FixedPart__Group__1 : rule__FixedPart__Group__1__Impl ;
+    // InternalPascal.g:5219:1: rule__FixedPart__Group__1 : rule__FixedPart__Group__1__Impl ;
     public final void rule__FixedPart__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5217:1: ( rule__FixedPart__Group__1__Impl )
-            // InternalPascal.g:5218:2: rule__FixedPart__Group__1__Impl
+            // InternalPascal.g:5223:1: ( rule__FixedPart__Group__1__Impl )
+            // InternalPascal.g:5224:2: rule__FixedPart__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FixedPart__Group__1__Impl();
@@ -16925,20 +16889,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__Group__1__Impl"
-    // InternalPascal.g:5224:1: rule__FixedPart__Group__1__Impl : ( ( rule__FixedPart__Group_1__0 )* ) ;
+    // InternalPascal.g:5230:1: rule__FixedPart__Group__1__Impl : ( ( rule__FixedPart__Group_1__0 )* ) ;
     public final void rule__FixedPart__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5228:1: ( ( ( rule__FixedPart__Group_1__0 )* ) )
-            // InternalPascal.g:5229:1: ( ( rule__FixedPart__Group_1__0 )* )
+            // InternalPascal.g:5234:1: ( ( ( rule__FixedPart__Group_1__0 )* ) )
+            // InternalPascal.g:5235:1: ( ( rule__FixedPart__Group_1__0 )* )
             {
-            // InternalPascal.g:5229:1: ( ( rule__FixedPart__Group_1__0 )* )
-            // InternalPascal.g:5230:2: ( rule__FixedPart__Group_1__0 )*
+            // InternalPascal.g:5235:1: ( ( rule__FixedPart__Group_1__0 )* )
+            // InternalPascal.g:5236:2: ( rule__FixedPart__Group_1__0 )*
             {
              before(grammarAccess.getFixedPartAccess().getGroup_1()); 
-            // InternalPascal.g:5231:2: ( rule__FixedPart__Group_1__0 )*
+            // InternalPascal.g:5237:2: ( rule__FixedPart__Group_1__0 )*
             loop40:
             do {
                 int alt40=2;
@@ -16957,7 +16921,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt40) {
             	case 1 :
-            	    // InternalPascal.g:5231:3: rule__FixedPart__Group_1__0
+            	    // InternalPascal.g:5237:3: rule__FixedPart__Group_1__0
             	    {
             	    pushFollow(FOLLOW_26);
             	    rule__FixedPart__Group_1__0();
@@ -16996,14 +16960,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__Group_1__0"
-    // InternalPascal.g:5240:1: rule__FixedPart__Group_1__0 : rule__FixedPart__Group_1__0__Impl rule__FixedPart__Group_1__1 ;
+    // InternalPascal.g:5246:1: rule__FixedPart__Group_1__0 : rule__FixedPart__Group_1__0__Impl rule__FixedPart__Group_1__1 ;
     public final void rule__FixedPart__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5244:1: ( rule__FixedPart__Group_1__0__Impl rule__FixedPart__Group_1__1 )
-            // InternalPascal.g:5245:2: rule__FixedPart__Group_1__0__Impl rule__FixedPart__Group_1__1
+            // InternalPascal.g:5250:1: ( rule__FixedPart__Group_1__0__Impl rule__FixedPart__Group_1__1 )
+            // InternalPascal.g:5251:2: rule__FixedPart__Group_1__0__Impl rule__FixedPart__Group_1__1
             {
             pushFollow(FOLLOW_5);
             rule__FixedPart__Group_1__0__Impl();
@@ -17034,17 +16998,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__Group_1__0__Impl"
-    // InternalPascal.g:5252:1: rule__FixedPart__Group_1__0__Impl : ( ';' ) ;
+    // InternalPascal.g:5258:1: rule__FixedPart__Group_1__0__Impl : ( ';' ) ;
     public final void rule__FixedPart__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5256:1: ( ( ';' ) )
-            // InternalPascal.g:5257:1: ( ';' )
+            // InternalPascal.g:5262:1: ( ( ';' ) )
+            // InternalPascal.g:5263:1: ( ';' )
             {
-            // InternalPascal.g:5257:1: ( ';' )
-            // InternalPascal.g:5258:2: ';'
+            // InternalPascal.g:5263:1: ( ';' )
+            // InternalPascal.g:5264:2: ';'
             {
              before(grammarAccess.getFixedPartAccess().getSemicolonKeyword_1_0()); 
             match(input,37,FOLLOW_2); 
@@ -17071,14 +17035,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__Group_1__1"
-    // InternalPascal.g:5267:1: rule__FixedPart__Group_1__1 : rule__FixedPart__Group_1__1__Impl ;
+    // InternalPascal.g:5273:1: rule__FixedPart__Group_1__1 : rule__FixedPart__Group_1__1__Impl ;
     public final void rule__FixedPart__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5271:1: ( rule__FixedPart__Group_1__1__Impl )
-            // InternalPascal.g:5272:2: rule__FixedPart__Group_1__1__Impl
+            // InternalPascal.g:5277:1: ( rule__FixedPart__Group_1__1__Impl )
+            // InternalPascal.g:5278:2: rule__FixedPart__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FixedPart__Group_1__1__Impl();
@@ -17104,21 +17068,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__Group_1__1__Impl"
-    // InternalPascal.g:5278:1: rule__FixedPart__Group_1__1__Impl : ( ( rule__FixedPart__RecordSection1Assignment_1_1 ) ) ;
+    // InternalPascal.g:5284:1: rule__FixedPart__Group_1__1__Impl : ( ( rule__FixedPart__RecordSection1Assignment_1_1 ) ) ;
     public final void rule__FixedPart__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5282:1: ( ( ( rule__FixedPart__RecordSection1Assignment_1_1 ) ) )
-            // InternalPascal.g:5283:1: ( ( rule__FixedPart__RecordSection1Assignment_1_1 ) )
+            // InternalPascal.g:5288:1: ( ( ( rule__FixedPart__RecordSection1Assignment_1_1 ) ) )
+            // InternalPascal.g:5289:1: ( ( rule__FixedPart__RecordSection1Assignment_1_1 ) )
             {
-            // InternalPascal.g:5283:1: ( ( rule__FixedPart__RecordSection1Assignment_1_1 ) )
-            // InternalPascal.g:5284:2: ( rule__FixedPart__RecordSection1Assignment_1_1 )
+            // InternalPascal.g:5289:1: ( ( rule__FixedPart__RecordSection1Assignment_1_1 ) )
+            // InternalPascal.g:5290:2: ( rule__FixedPart__RecordSection1Assignment_1_1 )
             {
              before(grammarAccess.getFixedPartAccess().getRecordSection1Assignment_1_1()); 
-            // InternalPascal.g:5285:2: ( rule__FixedPart__RecordSection1Assignment_1_1 )
-            // InternalPascal.g:5285:3: rule__FixedPart__RecordSection1Assignment_1_1
+            // InternalPascal.g:5291:2: ( rule__FixedPart__RecordSection1Assignment_1_1 )
+            // InternalPascal.g:5291:3: rule__FixedPart__RecordSection1Assignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__FixedPart__RecordSection1Assignment_1_1();
@@ -17151,14 +17115,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordSection__Group__0"
-    // InternalPascal.g:5294:1: rule__RecordSection__Group__0 : rule__RecordSection__Group__0__Impl rule__RecordSection__Group__1 ;
+    // InternalPascal.g:5300:1: rule__RecordSection__Group__0 : rule__RecordSection__Group__0__Impl rule__RecordSection__Group__1 ;
     public final void rule__RecordSection__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5298:1: ( rule__RecordSection__Group__0__Impl rule__RecordSection__Group__1 )
-            // InternalPascal.g:5299:2: rule__RecordSection__Group__0__Impl rule__RecordSection__Group__1
+            // InternalPascal.g:5304:1: ( rule__RecordSection__Group__0__Impl rule__RecordSection__Group__1 )
+            // InternalPascal.g:5305:2: rule__RecordSection__Group__0__Impl rule__RecordSection__Group__1
             {
             pushFollow(FOLLOW_27);
             rule__RecordSection__Group__0__Impl();
@@ -17189,21 +17153,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordSection__Group__0__Impl"
-    // InternalPascal.g:5306:1: rule__RecordSection__Group__0__Impl : ( ( rule__RecordSection__IdentifierListAssignment_0 ) ) ;
+    // InternalPascal.g:5312:1: rule__RecordSection__Group__0__Impl : ( ( rule__RecordSection__IdentifierListAssignment_0 ) ) ;
     public final void rule__RecordSection__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5310:1: ( ( ( rule__RecordSection__IdentifierListAssignment_0 ) ) )
-            // InternalPascal.g:5311:1: ( ( rule__RecordSection__IdentifierListAssignment_0 ) )
+            // InternalPascal.g:5316:1: ( ( ( rule__RecordSection__IdentifierListAssignment_0 ) ) )
+            // InternalPascal.g:5317:1: ( ( rule__RecordSection__IdentifierListAssignment_0 ) )
             {
-            // InternalPascal.g:5311:1: ( ( rule__RecordSection__IdentifierListAssignment_0 ) )
-            // InternalPascal.g:5312:2: ( rule__RecordSection__IdentifierListAssignment_0 )
+            // InternalPascal.g:5317:1: ( ( rule__RecordSection__IdentifierListAssignment_0 ) )
+            // InternalPascal.g:5318:2: ( rule__RecordSection__IdentifierListAssignment_0 )
             {
              before(grammarAccess.getRecordSectionAccess().getIdentifierListAssignment_0()); 
-            // InternalPascal.g:5313:2: ( rule__RecordSection__IdentifierListAssignment_0 )
-            // InternalPascal.g:5313:3: rule__RecordSection__IdentifierListAssignment_0
+            // InternalPascal.g:5319:2: ( rule__RecordSection__IdentifierListAssignment_0 )
+            // InternalPascal.g:5319:3: rule__RecordSection__IdentifierListAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__RecordSection__IdentifierListAssignment_0();
@@ -17236,14 +17200,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordSection__Group__1"
-    // InternalPascal.g:5321:1: rule__RecordSection__Group__1 : rule__RecordSection__Group__1__Impl rule__RecordSection__Group__2 ;
+    // InternalPascal.g:5327:1: rule__RecordSection__Group__1 : rule__RecordSection__Group__1__Impl rule__RecordSection__Group__2 ;
     public final void rule__RecordSection__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5325:1: ( rule__RecordSection__Group__1__Impl rule__RecordSection__Group__2 )
-            // InternalPascal.g:5326:2: rule__RecordSection__Group__1__Impl rule__RecordSection__Group__2
+            // InternalPascal.g:5331:1: ( rule__RecordSection__Group__1__Impl rule__RecordSection__Group__2 )
+            // InternalPascal.g:5332:2: rule__RecordSection__Group__1__Impl rule__RecordSection__Group__2
             {
             pushFollow(FOLLOW_35);
             rule__RecordSection__Group__1__Impl();
@@ -17274,17 +17238,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordSection__Group__1__Impl"
-    // InternalPascal.g:5333:1: rule__RecordSection__Group__1__Impl : ( ':' ) ;
+    // InternalPascal.g:5339:1: rule__RecordSection__Group__1__Impl : ( ':' ) ;
     public final void rule__RecordSection__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5337:1: ( ( ':' ) )
-            // InternalPascal.g:5338:1: ( ':' )
+            // InternalPascal.g:5343:1: ( ( ':' ) )
+            // InternalPascal.g:5344:1: ( ':' )
             {
-            // InternalPascal.g:5338:1: ( ':' )
-            // InternalPascal.g:5339:2: ':'
+            // InternalPascal.g:5344:1: ( ':' )
+            // InternalPascal.g:5345:2: ':'
             {
              before(grammarAccess.getRecordSectionAccess().getColonKeyword_1()); 
             match(input,47,FOLLOW_2); 
@@ -17311,14 +17275,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordSection__Group__2"
-    // InternalPascal.g:5348:1: rule__RecordSection__Group__2 : rule__RecordSection__Group__2__Impl ;
+    // InternalPascal.g:5354:1: rule__RecordSection__Group__2 : rule__RecordSection__Group__2__Impl ;
     public final void rule__RecordSection__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5352:1: ( rule__RecordSection__Group__2__Impl )
-            // InternalPascal.g:5353:2: rule__RecordSection__Group__2__Impl
+            // InternalPascal.g:5358:1: ( rule__RecordSection__Group__2__Impl )
+            // InternalPascal.g:5359:2: rule__RecordSection__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__RecordSection__Group__2__Impl();
@@ -17344,21 +17308,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordSection__Group__2__Impl"
-    // InternalPascal.g:5359:1: rule__RecordSection__Group__2__Impl : ( ( rule__RecordSection__TypeAssignment_2 ) ) ;
+    // InternalPascal.g:5365:1: rule__RecordSection__Group__2__Impl : ( ( rule__RecordSection__TypeAssignment_2 ) ) ;
     public final void rule__RecordSection__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5363:1: ( ( ( rule__RecordSection__TypeAssignment_2 ) ) )
-            // InternalPascal.g:5364:1: ( ( rule__RecordSection__TypeAssignment_2 ) )
+            // InternalPascal.g:5369:1: ( ( ( rule__RecordSection__TypeAssignment_2 ) ) )
+            // InternalPascal.g:5370:1: ( ( rule__RecordSection__TypeAssignment_2 ) )
             {
-            // InternalPascal.g:5364:1: ( ( rule__RecordSection__TypeAssignment_2 ) )
-            // InternalPascal.g:5365:2: ( rule__RecordSection__TypeAssignment_2 )
+            // InternalPascal.g:5370:1: ( ( rule__RecordSection__TypeAssignment_2 ) )
+            // InternalPascal.g:5371:2: ( rule__RecordSection__TypeAssignment_2 )
             {
              before(grammarAccess.getRecordSectionAccess().getTypeAssignment_2()); 
-            // InternalPascal.g:5366:2: ( rule__RecordSection__TypeAssignment_2 )
-            // InternalPascal.g:5366:3: rule__RecordSection__TypeAssignment_2
+            // InternalPascal.g:5372:2: ( rule__RecordSection__TypeAssignment_2 )
+            // InternalPascal.g:5372:3: rule__RecordSection__TypeAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__RecordSection__TypeAssignment_2();
@@ -17391,14 +17355,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__0"
-    // InternalPascal.g:5375:1: rule__VariantPart__Group__0 : rule__VariantPart__Group__0__Impl rule__VariantPart__Group__1 ;
+    // InternalPascal.g:5381:1: rule__VariantPart__Group__0 : rule__VariantPart__Group__0__Impl rule__VariantPart__Group__1 ;
     public final void rule__VariantPart__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5379:1: ( rule__VariantPart__Group__0__Impl rule__VariantPart__Group__1 )
-            // InternalPascal.g:5380:2: rule__VariantPart__Group__0__Impl rule__VariantPart__Group__1
+            // InternalPascal.g:5385:1: ( rule__VariantPart__Group__0__Impl rule__VariantPart__Group__1 )
+            // InternalPascal.g:5386:2: rule__VariantPart__Group__0__Impl rule__VariantPart__Group__1
             {
             pushFollow(FOLLOW_23);
             rule__VariantPart__Group__0__Impl();
@@ -17429,17 +17393,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__0__Impl"
-    // InternalPascal.g:5387:1: rule__VariantPart__Group__0__Impl : ( 'case' ) ;
+    // InternalPascal.g:5393:1: rule__VariantPart__Group__0__Impl : ( 'case' ) ;
     public final void rule__VariantPart__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5391:1: ( ( 'case' ) )
-            // InternalPascal.g:5392:1: ( 'case' )
+            // InternalPascal.g:5397:1: ( ( 'case' ) )
+            // InternalPascal.g:5398:1: ( 'case' )
             {
-            // InternalPascal.g:5392:1: ( 'case' )
-            // InternalPascal.g:5393:2: 'case'
+            // InternalPascal.g:5398:1: ( 'case' )
+            // InternalPascal.g:5399:2: 'case'
             {
              before(grammarAccess.getVariantPartAccess().getCaseKeyword_0()); 
             match(input,57,FOLLOW_2); 
@@ -17466,14 +17430,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__1"
-    // InternalPascal.g:5402:1: rule__VariantPart__Group__1 : rule__VariantPart__Group__1__Impl rule__VariantPart__Group__2 ;
+    // InternalPascal.g:5408:1: rule__VariantPart__Group__1 : rule__VariantPart__Group__1__Impl rule__VariantPart__Group__2 ;
     public final void rule__VariantPart__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5406:1: ( rule__VariantPart__Group__1__Impl rule__VariantPart__Group__2 )
-            // InternalPascal.g:5407:2: rule__VariantPart__Group__1__Impl rule__VariantPart__Group__2
+            // InternalPascal.g:5412:1: ( rule__VariantPart__Group__1__Impl rule__VariantPart__Group__2 )
+            // InternalPascal.g:5413:2: rule__VariantPart__Group__1__Impl rule__VariantPart__Group__2
             {
             pushFollow(FOLLOW_36);
             rule__VariantPart__Group__1__Impl();
@@ -17504,21 +17468,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__1__Impl"
-    // InternalPascal.g:5414:1: rule__VariantPart__Group__1__Impl : ( ( rule__VariantPart__TagAssignment_1 ) ) ;
+    // InternalPascal.g:5420:1: rule__VariantPart__Group__1__Impl : ( ( rule__VariantPart__TagAssignment_1 ) ) ;
     public final void rule__VariantPart__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5418:1: ( ( ( rule__VariantPart__TagAssignment_1 ) ) )
-            // InternalPascal.g:5419:1: ( ( rule__VariantPart__TagAssignment_1 ) )
+            // InternalPascal.g:5424:1: ( ( ( rule__VariantPart__TagAssignment_1 ) ) )
+            // InternalPascal.g:5425:1: ( ( rule__VariantPart__TagAssignment_1 ) )
             {
-            // InternalPascal.g:5419:1: ( ( rule__VariantPart__TagAssignment_1 ) )
-            // InternalPascal.g:5420:2: ( rule__VariantPart__TagAssignment_1 )
+            // InternalPascal.g:5425:1: ( ( rule__VariantPart__TagAssignment_1 ) )
+            // InternalPascal.g:5426:2: ( rule__VariantPart__TagAssignment_1 )
             {
              before(grammarAccess.getVariantPartAccess().getTagAssignment_1()); 
-            // InternalPascal.g:5421:2: ( rule__VariantPart__TagAssignment_1 )
-            // InternalPascal.g:5421:3: rule__VariantPart__TagAssignment_1
+            // InternalPascal.g:5427:2: ( rule__VariantPart__TagAssignment_1 )
+            // InternalPascal.g:5427:3: rule__VariantPart__TagAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__VariantPart__TagAssignment_1();
@@ -17551,14 +17515,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__2"
-    // InternalPascal.g:5429:1: rule__VariantPart__Group__2 : rule__VariantPart__Group__2__Impl rule__VariantPart__Group__3 ;
+    // InternalPascal.g:5435:1: rule__VariantPart__Group__2 : rule__VariantPart__Group__2__Impl rule__VariantPart__Group__3 ;
     public final void rule__VariantPart__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5433:1: ( rule__VariantPart__Group__2__Impl rule__VariantPart__Group__3 )
-            // InternalPascal.g:5434:2: rule__VariantPart__Group__2__Impl rule__VariantPart__Group__3
+            // InternalPascal.g:5439:1: ( rule__VariantPart__Group__2__Impl rule__VariantPart__Group__3 )
+            // InternalPascal.g:5440:2: rule__VariantPart__Group__2__Impl rule__VariantPart__Group__3
             {
             pushFollow(FOLLOW_16);
             rule__VariantPart__Group__2__Impl();
@@ -17589,17 +17553,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__2__Impl"
-    // InternalPascal.g:5441:1: rule__VariantPart__Group__2__Impl : ( 'of' ) ;
+    // InternalPascal.g:5447:1: rule__VariantPart__Group__2__Impl : ( 'of' ) ;
     public final void rule__VariantPart__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5445:1: ( ( 'of' ) )
-            // InternalPascal.g:5446:1: ( 'of' )
+            // InternalPascal.g:5451:1: ( ( 'of' ) )
+            // InternalPascal.g:5452:1: ( 'of' )
             {
-            // InternalPascal.g:5446:1: ( 'of' )
-            // InternalPascal.g:5447:2: 'of'
+            // InternalPascal.g:5452:1: ( 'of' )
+            // InternalPascal.g:5453:2: 'of'
             {
              before(grammarAccess.getVariantPartAccess().getOfKeyword_2()); 
             match(input,58,FOLLOW_2); 
@@ -17626,14 +17590,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__3"
-    // InternalPascal.g:5456:1: rule__VariantPart__Group__3 : rule__VariantPart__Group__3__Impl rule__VariantPart__Group__4 ;
+    // InternalPascal.g:5462:1: rule__VariantPart__Group__3 : rule__VariantPart__Group__3__Impl rule__VariantPart__Group__4 ;
     public final void rule__VariantPart__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5460:1: ( rule__VariantPart__Group__3__Impl rule__VariantPart__Group__4 )
-            // InternalPascal.g:5461:2: rule__VariantPart__Group__3__Impl rule__VariantPart__Group__4
+            // InternalPascal.g:5466:1: ( rule__VariantPart__Group__3__Impl rule__VariantPart__Group__4 )
+            // InternalPascal.g:5467:2: rule__VariantPart__Group__3__Impl rule__VariantPart__Group__4
             {
             pushFollow(FOLLOW_14);
             rule__VariantPart__Group__3__Impl();
@@ -17664,21 +17628,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__3__Impl"
-    // InternalPascal.g:5468:1: rule__VariantPart__Group__3__Impl : ( ( rule__VariantPart__VariantAssignment_3 ) ) ;
+    // InternalPascal.g:5474:1: rule__VariantPart__Group__3__Impl : ( ( rule__VariantPart__VariantAssignment_3 ) ) ;
     public final void rule__VariantPart__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5472:1: ( ( ( rule__VariantPart__VariantAssignment_3 ) ) )
-            // InternalPascal.g:5473:1: ( ( rule__VariantPart__VariantAssignment_3 ) )
+            // InternalPascal.g:5478:1: ( ( ( rule__VariantPart__VariantAssignment_3 ) ) )
+            // InternalPascal.g:5479:1: ( ( rule__VariantPart__VariantAssignment_3 ) )
             {
-            // InternalPascal.g:5473:1: ( ( rule__VariantPart__VariantAssignment_3 ) )
-            // InternalPascal.g:5474:2: ( rule__VariantPart__VariantAssignment_3 )
+            // InternalPascal.g:5479:1: ( ( rule__VariantPart__VariantAssignment_3 ) )
+            // InternalPascal.g:5480:2: ( rule__VariantPart__VariantAssignment_3 )
             {
              before(grammarAccess.getVariantPartAccess().getVariantAssignment_3()); 
-            // InternalPascal.g:5475:2: ( rule__VariantPart__VariantAssignment_3 )
-            // InternalPascal.g:5475:3: rule__VariantPart__VariantAssignment_3
+            // InternalPascal.g:5481:2: ( rule__VariantPart__VariantAssignment_3 )
+            // InternalPascal.g:5481:3: rule__VariantPart__VariantAssignment_3
             {
             pushFollow(FOLLOW_2);
             rule__VariantPart__VariantAssignment_3();
@@ -17711,14 +17675,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__4"
-    // InternalPascal.g:5483:1: rule__VariantPart__Group__4 : rule__VariantPart__Group__4__Impl ;
+    // InternalPascal.g:5489:1: rule__VariantPart__Group__4 : rule__VariantPart__Group__4__Impl ;
     public final void rule__VariantPart__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5487:1: ( rule__VariantPart__Group__4__Impl )
-            // InternalPascal.g:5488:2: rule__VariantPart__Group__4__Impl
+            // InternalPascal.g:5493:1: ( rule__VariantPart__Group__4__Impl )
+            // InternalPascal.g:5494:2: rule__VariantPart__Group__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__VariantPart__Group__4__Impl();
@@ -17744,20 +17708,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group__4__Impl"
-    // InternalPascal.g:5494:1: rule__VariantPart__Group__4__Impl : ( ( rule__VariantPart__Group_4__0 )* ) ;
+    // InternalPascal.g:5500:1: rule__VariantPart__Group__4__Impl : ( ( rule__VariantPart__Group_4__0 )* ) ;
     public final void rule__VariantPart__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5498:1: ( ( ( rule__VariantPart__Group_4__0 )* ) )
-            // InternalPascal.g:5499:1: ( ( rule__VariantPart__Group_4__0 )* )
+            // InternalPascal.g:5504:1: ( ( ( rule__VariantPart__Group_4__0 )* ) )
+            // InternalPascal.g:5505:1: ( ( rule__VariantPart__Group_4__0 )* )
             {
-            // InternalPascal.g:5499:1: ( ( rule__VariantPart__Group_4__0 )* )
-            // InternalPascal.g:5500:2: ( rule__VariantPart__Group_4__0 )*
+            // InternalPascal.g:5505:1: ( ( rule__VariantPart__Group_4__0 )* )
+            // InternalPascal.g:5506:2: ( rule__VariantPart__Group_4__0 )*
             {
              before(grammarAccess.getVariantPartAccess().getGroup_4()); 
-            // InternalPascal.g:5501:2: ( rule__VariantPart__Group_4__0 )*
+            // InternalPascal.g:5507:2: ( rule__VariantPart__Group_4__0 )*
             loop41:
             do {
                 int alt41=2;
@@ -17770,7 +17734,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt41) {
             	case 1 :
-            	    // InternalPascal.g:5501:3: rule__VariantPart__Group_4__0
+            	    // InternalPascal.g:5507:3: rule__VariantPart__Group_4__0
             	    {
             	    pushFollow(FOLLOW_26);
             	    rule__VariantPart__Group_4__0();
@@ -17809,14 +17773,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group_4__0"
-    // InternalPascal.g:5510:1: rule__VariantPart__Group_4__0 : rule__VariantPart__Group_4__0__Impl rule__VariantPart__Group_4__1 ;
+    // InternalPascal.g:5516:1: rule__VariantPart__Group_4__0 : rule__VariantPart__Group_4__0__Impl rule__VariantPart__Group_4__1 ;
     public final void rule__VariantPart__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5514:1: ( rule__VariantPart__Group_4__0__Impl rule__VariantPart__Group_4__1 )
-            // InternalPascal.g:5515:2: rule__VariantPart__Group_4__0__Impl rule__VariantPart__Group_4__1
+            // InternalPascal.g:5520:1: ( rule__VariantPart__Group_4__0__Impl rule__VariantPart__Group_4__1 )
+            // InternalPascal.g:5521:2: rule__VariantPart__Group_4__0__Impl rule__VariantPart__Group_4__1
             {
             pushFollow(FOLLOW_16);
             rule__VariantPart__Group_4__0__Impl();
@@ -17847,17 +17811,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group_4__0__Impl"
-    // InternalPascal.g:5522:1: rule__VariantPart__Group_4__0__Impl : ( ';' ) ;
+    // InternalPascal.g:5528:1: rule__VariantPart__Group_4__0__Impl : ( ';' ) ;
     public final void rule__VariantPart__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5526:1: ( ( ';' ) )
-            // InternalPascal.g:5527:1: ( ';' )
+            // InternalPascal.g:5532:1: ( ( ';' ) )
+            // InternalPascal.g:5533:1: ( ';' )
             {
-            // InternalPascal.g:5527:1: ( ';' )
-            // InternalPascal.g:5528:2: ';'
+            // InternalPascal.g:5533:1: ( ';' )
+            // InternalPascal.g:5534:2: ';'
             {
              before(grammarAccess.getVariantPartAccess().getSemicolonKeyword_4_0()); 
             match(input,37,FOLLOW_2); 
@@ -17884,14 +17848,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group_4__1"
-    // InternalPascal.g:5537:1: rule__VariantPart__Group_4__1 : rule__VariantPart__Group_4__1__Impl ;
+    // InternalPascal.g:5543:1: rule__VariantPart__Group_4__1 : rule__VariantPart__Group_4__1__Impl ;
     public final void rule__VariantPart__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5541:1: ( rule__VariantPart__Group_4__1__Impl )
-            // InternalPascal.g:5542:2: rule__VariantPart__Group_4__1__Impl
+            // InternalPascal.g:5547:1: ( rule__VariantPart__Group_4__1__Impl )
+            // InternalPascal.g:5548:2: rule__VariantPart__Group_4__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__VariantPart__Group_4__1__Impl();
@@ -17917,21 +17881,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Group_4__1__Impl"
-    // InternalPascal.g:5548:1: rule__VariantPart__Group_4__1__Impl : ( ( rule__VariantPart__Variant1Assignment_4_1 ) ) ;
+    // InternalPascal.g:5554:1: rule__VariantPart__Group_4__1__Impl : ( ( rule__VariantPart__Variant1Assignment_4_1 ) ) ;
     public final void rule__VariantPart__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5552:1: ( ( ( rule__VariantPart__Variant1Assignment_4_1 ) ) )
-            // InternalPascal.g:5553:1: ( ( rule__VariantPart__Variant1Assignment_4_1 ) )
+            // InternalPascal.g:5558:1: ( ( ( rule__VariantPart__Variant1Assignment_4_1 ) ) )
+            // InternalPascal.g:5559:1: ( ( rule__VariantPart__Variant1Assignment_4_1 ) )
             {
-            // InternalPascal.g:5553:1: ( ( rule__VariantPart__Variant1Assignment_4_1 ) )
-            // InternalPascal.g:5554:2: ( rule__VariantPart__Variant1Assignment_4_1 )
+            // InternalPascal.g:5559:1: ( ( rule__VariantPart__Variant1Assignment_4_1 ) )
+            // InternalPascal.g:5560:2: ( rule__VariantPart__Variant1Assignment_4_1 )
             {
              before(grammarAccess.getVariantPartAccess().getVariant1Assignment_4_1()); 
-            // InternalPascal.g:5555:2: ( rule__VariantPart__Variant1Assignment_4_1 )
-            // InternalPascal.g:5555:3: rule__VariantPart__Variant1Assignment_4_1
+            // InternalPascal.g:5561:2: ( rule__VariantPart__Variant1Assignment_4_1 )
+            // InternalPascal.g:5561:3: rule__VariantPart__Variant1Assignment_4_1
             {
             pushFollow(FOLLOW_2);
             rule__VariantPart__Variant1Assignment_4_1();
@@ -17964,14 +17928,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__Group_0__0"
-    // InternalPascal.g:5564:1: rule__Tag__Group_0__0 : rule__Tag__Group_0__0__Impl rule__Tag__Group_0__1 ;
+    // InternalPascal.g:5570:1: rule__Tag__Group_0__0 : rule__Tag__Group_0__0__Impl rule__Tag__Group_0__1 ;
     public final void rule__Tag__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5568:1: ( rule__Tag__Group_0__0__Impl rule__Tag__Group_0__1 )
-            // InternalPascal.g:5569:2: rule__Tag__Group_0__0__Impl rule__Tag__Group_0__1
+            // InternalPascal.g:5574:1: ( rule__Tag__Group_0__0__Impl rule__Tag__Group_0__1 )
+            // InternalPascal.g:5575:2: rule__Tag__Group_0__0__Impl rule__Tag__Group_0__1
             {
             pushFollow(FOLLOW_27);
             rule__Tag__Group_0__0__Impl();
@@ -18002,21 +17966,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__Group_0__0__Impl"
-    // InternalPascal.g:5576:1: rule__Tag__Group_0__0__Impl : ( ( rule__Tag__IdentifierAssignment_0_0 ) ) ;
+    // InternalPascal.g:5582:1: rule__Tag__Group_0__0__Impl : ( ( rule__Tag__IdentifierAssignment_0_0 ) ) ;
     public final void rule__Tag__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5580:1: ( ( ( rule__Tag__IdentifierAssignment_0_0 ) ) )
-            // InternalPascal.g:5581:1: ( ( rule__Tag__IdentifierAssignment_0_0 ) )
+            // InternalPascal.g:5586:1: ( ( ( rule__Tag__IdentifierAssignment_0_0 ) ) )
+            // InternalPascal.g:5587:1: ( ( rule__Tag__IdentifierAssignment_0_0 ) )
             {
-            // InternalPascal.g:5581:1: ( ( rule__Tag__IdentifierAssignment_0_0 ) )
-            // InternalPascal.g:5582:2: ( rule__Tag__IdentifierAssignment_0_0 )
+            // InternalPascal.g:5587:1: ( ( rule__Tag__IdentifierAssignment_0_0 ) )
+            // InternalPascal.g:5588:2: ( rule__Tag__IdentifierAssignment_0_0 )
             {
              before(grammarAccess.getTagAccess().getIdentifierAssignment_0_0()); 
-            // InternalPascal.g:5583:2: ( rule__Tag__IdentifierAssignment_0_0 )
-            // InternalPascal.g:5583:3: rule__Tag__IdentifierAssignment_0_0
+            // InternalPascal.g:5589:2: ( rule__Tag__IdentifierAssignment_0_0 )
+            // InternalPascal.g:5589:3: rule__Tag__IdentifierAssignment_0_0
             {
             pushFollow(FOLLOW_2);
             rule__Tag__IdentifierAssignment_0_0();
@@ -18049,14 +18013,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__Group_0__1"
-    // InternalPascal.g:5591:1: rule__Tag__Group_0__1 : rule__Tag__Group_0__1__Impl rule__Tag__Group_0__2 ;
+    // InternalPascal.g:5597:1: rule__Tag__Group_0__1 : rule__Tag__Group_0__1__Impl rule__Tag__Group_0__2 ;
     public final void rule__Tag__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5595:1: ( rule__Tag__Group_0__1__Impl rule__Tag__Group_0__2 )
-            // InternalPascal.g:5596:2: rule__Tag__Group_0__1__Impl rule__Tag__Group_0__2
+            // InternalPascal.g:5601:1: ( rule__Tag__Group_0__1__Impl rule__Tag__Group_0__2 )
+            // InternalPascal.g:5602:2: rule__Tag__Group_0__1__Impl rule__Tag__Group_0__2
             {
             pushFollow(FOLLOW_23);
             rule__Tag__Group_0__1__Impl();
@@ -18087,17 +18051,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__Group_0__1__Impl"
-    // InternalPascal.g:5603:1: rule__Tag__Group_0__1__Impl : ( ':' ) ;
+    // InternalPascal.g:5609:1: rule__Tag__Group_0__1__Impl : ( ':' ) ;
     public final void rule__Tag__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5607:1: ( ( ':' ) )
-            // InternalPascal.g:5608:1: ( ':' )
+            // InternalPascal.g:5613:1: ( ( ':' ) )
+            // InternalPascal.g:5614:1: ( ':' )
             {
-            // InternalPascal.g:5608:1: ( ':' )
-            // InternalPascal.g:5609:2: ':'
+            // InternalPascal.g:5614:1: ( ':' )
+            // InternalPascal.g:5615:2: ':'
             {
              before(grammarAccess.getTagAccess().getColonKeyword_0_1()); 
             match(input,47,FOLLOW_2); 
@@ -18124,14 +18088,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__Group_0__2"
-    // InternalPascal.g:5618:1: rule__Tag__Group_0__2 : rule__Tag__Group_0__2__Impl ;
+    // InternalPascal.g:5624:1: rule__Tag__Group_0__2 : rule__Tag__Group_0__2__Impl ;
     public final void rule__Tag__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5622:1: ( rule__Tag__Group_0__2__Impl )
-            // InternalPascal.g:5623:2: rule__Tag__Group_0__2__Impl
+            // InternalPascal.g:5628:1: ( rule__Tag__Group_0__2__Impl )
+            // InternalPascal.g:5629:2: rule__Tag__Group_0__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Tag__Group_0__2__Impl();
@@ -18157,21 +18121,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__Group_0__2__Impl"
-    // InternalPascal.g:5629:1: rule__Tag__Group_0__2__Impl : ( ( rule__Tag__TypeIdentifierAssignment_0_2 ) ) ;
+    // InternalPascal.g:5635:1: rule__Tag__Group_0__2__Impl : ( ( rule__Tag__TypeIdentifierAssignment_0_2 ) ) ;
     public final void rule__Tag__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5633:1: ( ( ( rule__Tag__TypeIdentifierAssignment_0_2 ) ) )
-            // InternalPascal.g:5634:1: ( ( rule__Tag__TypeIdentifierAssignment_0_2 ) )
+            // InternalPascal.g:5639:1: ( ( ( rule__Tag__TypeIdentifierAssignment_0_2 ) ) )
+            // InternalPascal.g:5640:1: ( ( rule__Tag__TypeIdentifierAssignment_0_2 ) )
             {
-            // InternalPascal.g:5634:1: ( ( rule__Tag__TypeIdentifierAssignment_0_2 ) )
-            // InternalPascal.g:5635:2: ( rule__Tag__TypeIdentifierAssignment_0_2 )
+            // InternalPascal.g:5640:1: ( ( rule__Tag__TypeIdentifierAssignment_0_2 ) )
+            // InternalPascal.g:5641:2: ( rule__Tag__TypeIdentifierAssignment_0_2 )
             {
              before(grammarAccess.getTagAccess().getTypeIdentifierAssignment_0_2()); 
-            // InternalPascal.g:5636:2: ( rule__Tag__TypeIdentifierAssignment_0_2 )
-            // InternalPascal.g:5636:3: rule__Tag__TypeIdentifierAssignment_0_2
+            // InternalPascal.g:5642:2: ( rule__Tag__TypeIdentifierAssignment_0_2 )
+            // InternalPascal.g:5642:3: rule__Tag__TypeIdentifierAssignment_0_2
             {
             pushFollow(FOLLOW_2);
             rule__Tag__TypeIdentifierAssignment_0_2();
@@ -18204,16 +18168,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__0"
-    // InternalPascal.g:5645:1: rule__Variant__Group__0 : rule__Variant__Group__0__Impl rule__Variant__Group__1 ;
+    // InternalPascal.g:5651:1: rule__Variant__Group__0 : rule__Variant__Group__0__Impl rule__Variant__Group__1 ;
     public final void rule__Variant__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5649:1: ( rule__Variant__Group__0__Impl rule__Variant__Group__1 )
-            // InternalPascal.g:5650:2: rule__Variant__Group__0__Impl rule__Variant__Group__1
+            // InternalPascal.g:5655:1: ( rule__Variant__Group__0__Impl rule__Variant__Group__1 )
+            // InternalPascal.g:5656:2: rule__Variant__Group__0__Impl rule__Variant__Group__1
             {
-            pushFollow(FOLLOW_27);
+            pushFollow(FOLLOW_37);
             rule__Variant__Group__0__Impl();
 
             state._fsp--;
@@ -18242,17 +18206,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__0__Impl"
-    // InternalPascal.g:5657:1: rule__Variant__Group__0__Impl : ( ruleconstant ) ;
+    // InternalPascal.g:5663:1: rule__Variant__Group__0__Impl : ( ruleconstant ) ;
     public final void rule__Variant__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5661:1: ( ( ruleconstant ) )
-            // InternalPascal.g:5662:1: ( ruleconstant )
+            // InternalPascal.g:5667:1: ( ( ruleconstant ) )
+            // InternalPascal.g:5668:1: ( ruleconstant )
             {
-            // InternalPascal.g:5662:1: ( ruleconstant )
-            // InternalPascal.g:5663:2: ruleconstant
+            // InternalPascal.g:5668:1: ( ruleconstant )
+            // InternalPascal.g:5669:2: ruleconstant
             {
              before(grammarAccess.getVariantAccess().getConstantParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -18283,16 +18247,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__1"
-    // InternalPascal.g:5672:1: rule__Variant__Group__1 : rule__Variant__Group__1__Impl rule__Variant__Group__2 ;
+    // InternalPascal.g:5678:1: rule__Variant__Group__1 : rule__Variant__Group__1__Impl rule__Variant__Group__2 ;
     public final void rule__Variant__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5676:1: ( rule__Variant__Group__1__Impl rule__Variant__Group__2 )
-            // InternalPascal.g:5677:2: rule__Variant__Group__1__Impl rule__Variant__Group__2
+            // InternalPascal.g:5682:1: ( rule__Variant__Group__1__Impl rule__Variant__Group__2 )
+            // InternalPascal.g:5683:2: rule__Variant__Group__1__Impl rule__Variant__Group__2
             {
-            pushFollow(FOLLOW_27);
+            pushFollow(FOLLOW_37);
             rule__Variant__Group__1__Impl();
 
             state._fsp--;
@@ -18321,41 +18285,35 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__1__Impl"
-    // InternalPascal.g:5684:1: rule__Variant__Group__1__Impl : ( ( rule__Variant__Group_1__0 )* ) ;
+    // InternalPascal.g:5690:1: rule__Variant__Group__1__Impl : ( ( rule__Variant__Group_1__0 )* ) ;
     public final void rule__Variant__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5688:1: ( ( ( rule__Variant__Group_1__0 )* ) )
-            // InternalPascal.g:5689:1: ( ( rule__Variant__Group_1__0 )* )
+            // InternalPascal.g:5694:1: ( ( ( rule__Variant__Group_1__0 )* ) )
+            // InternalPascal.g:5695:1: ( ( rule__Variant__Group_1__0 )* )
             {
-            // InternalPascal.g:5689:1: ( ( rule__Variant__Group_1__0 )* )
-            // InternalPascal.g:5690:2: ( rule__Variant__Group_1__0 )*
+            // InternalPascal.g:5695:1: ( ( rule__Variant__Group_1__0 )* )
+            // InternalPascal.g:5696:2: ( rule__Variant__Group_1__0 )*
             {
              before(grammarAccess.getVariantAccess().getGroup_1()); 
-            // InternalPascal.g:5691:2: ( rule__Variant__Group_1__0 )*
+            // InternalPascal.g:5697:2: ( rule__Variant__Group_1__0 )*
             loop42:
             do {
                 int alt42=2;
                 int LA42_0 = input.LA(1);
 
-                if ( (LA42_0==47) ) {
-                    int LA42_1 = input.LA(2);
-
-                    if ( ((LA42_1>=RULE_NUM_REAL && LA42_1<=RULE_STRING_LITERAL)||(LA42_1>=18 && LA42_1<=19)||LA42_1==43) ) {
-                        alt42=1;
-                    }
-
-
+                if ( (LA42_0==37) ) {
+                    alt42=1;
                 }
 
 
                 switch (alt42) {
             	case 1 :
-            	    // InternalPascal.g:5691:3: rule__Variant__Group_1__0
+            	    // InternalPascal.g:5697:3: rule__Variant__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_37);
+            	    pushFollow(FOLLOW_26);
             	    rule__Variant__Group_1__0();
 
             	    state._fsp--;
@@ -18392,14 +18350,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__2"
-    // InternalPascal.g:5699:1: rule__Variant__Group__2 : rule__Variant__Group__2__Impl rule__Variant__Group__3 ;
+    // InternalPascal.g:5705:1: rule__Variant__Group__2 : rule__Variant__Group__2__Impl rule__Variant__Group__3 ;
     public final void rule__Variant__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5703:1: ( rule__Variant__Group__2__Impl rule__Variant__Group__3 )
-            // InternalPascal.g:5704:2: rule__Variant__Group__2__Impl rule__Variant__Group__3
+            // InternalPascal.g:5709:1: ( rule__Variant__Group__2__Impl rule__Variant__Group__3 )
+            // InternalPascal.g:5710:2: rule__Variant__Group__2__Impl rule__Variant__Group__3
             {
             pushFollow(FOLLOW_18);
             rule__Variant__Group__2__Impl();
@@ -18430,17 +18388,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__2__Impl"
-    // InternalPascal.g:5711:1: rule__Variant__Group__2__Impl : ( ':' ) ;
+    // InternalPascal.g:5717:1: rule__Variant__Group__2__Impl : ( ':' ) ;
     public final void rule__Variant__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5715:1: ( ( ':' ) )
-            // InternalPascal.g:5716:1: ( ':' )
+            // InternalPascal.g:5721:1: ( ( ':' ) )
+            // InternalPascal.g:5722:1: ( ':' )
             {
-            // InternalPascal.g:5716:1: ( ':' )
-            // InternalPascal.g:5717:2: ':'
+            // InternalPascal.g:5722:1: ( ':' )
+            // InternalPascal.g:5723:2: ':'
             {
              before(grammarAccess.getVariantAccess().getColonKeyword_2()); 
             match(input,47,FOLLOW_2); 
@@ -18467,14 +18425,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__3"
-    // InternalPascal.g:5726:1: rule__Variant__Group__3 : rule__Variant__Group__3__Impl rule__Variant__Group__4 ;
+    // InternalPascal.g:5732:1: rule__Variant__Group__3 : rule__Variant__Group__3__Impl rule__Variant__Group__4 ;
     public final void rule__Variant__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5730:1: ( rule__Variant__Group__3__Impl rule__Variant__Group__4 )
-            // InternalPascal.g:5731:2: rule__Variant__Group__3__Impl rule__Variant__Group__4
+            // InternalPascal.g:5736:1: ( rule__Variant__Group__3__Impl rule__Variant__Group__4 )
+            // InternalPascal.g:5737:2: rule__Variant__Group__3__Impl rule__Variant__Group__4
             {
             pushFollow(FOLLOW_34);
             rule__Variant__Group__3__Impl();
@@ -18505,17 +18463,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__3__Impl"
-    // InternalPascal.g:5738:1: rule__Variant__Group__3__Impl : ( '(' ) ;
+    // InternalPascal.g:5744:1: rule__Variant__Group__3__Impl : ( '(' ) ;
     public final void rule__Variant__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5742:1: ( ( '(' ) )
-            // InternalPascal.g:5743:1: ( '(' )
+            // InternalPascal.g:5748:1: ( ( '(' ) )
+            // InternalPascal.g:5749:1: ( '(' )
             {
-            // InternalPascal.g:5743:1: ( '(' )
-            // InternalPascal.g:5744:2: '('
+            // InternalPascal.g:5749:1: ( '(' )
+            // InternalPascal.g:5750:2: '('
             {
              before(grammarAccess.getVariantAccess().getLeftParenthesisKeyword_3()); 
             match(input,38,FOLLOW_2); 
@@ -18542,14 +18500,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__4"
-    // InternalPascal.g:5753:1: rule__Variant__Group__4 : rule__Variant__Group__4__Impl rule__Variant__Group__5 ;
+    // InternalPascal.g:5759:1: rule__Variant__Group__4 : rule__Variant__Group__4__Impl rule__Variant__Group__5 ;
     public final void rule__Variant__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5757:1: ( rule__Variant__Group__4__Impl rule__Variant__Group__5 )
-            // InternalPascal.g:5758:2: rule__Variant__Group__4__Impl rule__Variant__Group__5
+            // InternalPascal.g:5763:1: ( rule__Variant__Group__4__Impl rule__Variant__Group__5 )
+            // InternalPascal.g:5764:2: rule__Variant__Group__4__Impl rule__Variant__Group__5
             {
             pushFollow(FOLLOW_7);
             rule__Variant__Group__4__Impl();
@@ -18580,21 +18538,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__4__Impl"
-    // InternalPascal.g:5765:1: rule__Variant__Group__4__Impl : ( ( rule__Variant__FieldListAssignment_4 ) ) ;
+    // InternalPascal.g:5771:1: rule__Variant__Group__4__Impl : ( ( rule__Variant__FieldListAssignment_4 ) ) ;
     public final void rule__Variant__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5769:1: ( ( ( rule__Variant__FieldListAssignment_4 ) ) )
-            // InternalPascal.g:5770:1: ( ( rule__Variant__FieldListAssignment_4 ) )
+            // InternalPascal.g:5775:1: ( ( ( rule__Variant__FieldListAssignment_4 ) ) )
+            // InternalPascal.g:5776:1: ( ( rule__Variant__FieldListAssignment_4 ) )
             {
-            // InternalPascal.g:5770:1: ( ( rule__Variant__FieldListAssignment_4 ) )
-            // InternalPascal.g:5771:2: ( rule__Variant__FieldListAssignment_4 )
+            // InternalPascal.g:5776:1: ( ( rule__Variant__FieldListAssignment_4 ) )
+            // InternalPascal.g:5777:2: ( rule__Variant__FieldListAssignment_4 )
             {
              before(grammarAccess.getVariantAccess().getFieldListAssignment_4()); 
-            // InternalPascal.g:5772:2: ( rule__Variant__FieldListAssignment_4 )
-            // InternalPascal.g:5772:3: rule__Variant__FieldListAssignment_4
+            // InternalPascal.g:5778:2: ( rule__Variant__FieldListAssignment_4 )
+            // InternalPascal.g:5778:3: rule__Variant__FieldListAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Variant__FieldListAssignment_4();
@@ -18627,14 +18585,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__5"
-    // InternalPascal.g:5780:1: rule__Variant__Group__5 : rule__Variant__Group__5__Impl ;
+    // InternalPascal.g:5786:1: rule__Variant__Group__5 : rule__Variant__Group__5__Impl ;
     public final void rule__Variant__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5784:1: ( rule__Variant__Group__5__Impl )
-            // InternalPascal.g:5785:2: rule__Variant__Group__5__Impl
+            // InternalPascal.g:5790:1: ( rule__Variant__Group__5__Impl )
+            // InternalPascal.g:5791:2: rule__Variant__Group__5__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Variant__Group__5__Impl();
@@ -18660,17 +18618,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group__5__Impl"
-    // InternalPascal.g:5791:1: rule__Variant__Group__5__Impl : ( ')' ) ;
+    // InternalPascal.g:5797:1: rule__Variant__Group__5__Impl : ( ')' ) ;
     public final void rule__Variant__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5795:1: ( ( ')' ) )
-            // InternalPascal.g:5796:1: ( ')' )
+            // InternalPascal.g:5801:1: ( ( ')' ) )
+            // InternalPascal.g:5802:1: ( ')' )
             {
-            // InternalPascal.g:5796:1: ( ')' )
-            // InternalPascal.g:5797:2: ')'
+            // InternalPascal.g:5802:1: ( ')' )
+            // InternalPascal.g:5803:2: ')'
             {
              before(grammarAccess.getVariantAccess().getRightParenthesisKeyword_5()); 
             match(input,39,FOLLOW_2); 
@@ -18697,14 +18655,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group_1__0"
-    // InternalPascal.g:5807:1: rule__Variant__Group_1__0 : rule__Variant__Group_1__0__Impl rule__Variant__Group_1__1 ;
+    // InternalPascal.g:5813:1: rule__Variant__Group_1__0 : rule__Variant__Group_1__0__Impl rule__Variant__Group_1__1 ;
     public final void rule__Variant__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5811:1: ( rule__Variant__Group_1__0__Impl rule__Variant__Group_1__1 )
-            // InternalPascal.g:5812:2: rule__Variant__Group_1__0__Impl rule__Variant__Group_1__1
+            // InternalPascal.g:5817:1: ( rule__Variant__Group_1__0__Impl rule__Variant__Group_1__1 )
+            // InternalPascal.g:5818:2: rule__Variant__Group_1__0__Impl rule__Variant__Group_1__1
             {
             pushFollow(FOLLOW_16);
             rule__Variant__Group_1__0__Impl();
@@ -18735,21 +18693,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group_1__0__Impl"
-    // InternalPascal.g:5819:1: rule__Variant__Group_1__0__Impl : ( ':' ) ;
+    // InternalPascal.g:5825:1: rule__Variant__Group_1__0__Impl : ( ';' ) ;
     public final void rule__Variant__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5823:1: ( ( ':' ) )
-            // InternalPascal.g:5824:1: ( ':' )
+            // InternalPascal.g:5829:1: ( ( ';' ) )
+            // InternalPascal.g:5830:1: ( ';' )
             {
-            // InternalPascal.g:5824:1: ( ':' )
-            // InternalPascal.g:5825:2: ':'
+            // InternalPascal.g:5830:1: ( ';' )
+            // InternalPascal.g:5831:2: ';'
             {
-             before(grammarAccess.getVariantAccess().getColonKeyword_1_0()); 
-            match(input,47,FOLLOW_2); 
-             after(grammarAccess.getVariantAccess().getColonKeyword_1_0()); 
+             before(grammarAccess.getVariantAccess().getSemicolonKeyword_1_0()); 
+            match(input,37,FOLLOW_2); 
+             after(grammarAccess.getVariantAccess().getSemicolonKeyword_1_0()); 
 
             }
 
@@ -18772,14 +18730,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group_1__1"
-    // InternalPascal.g:5834:1: rule__Variant__Group_1__1 : rule__Variant__Group_1__1__Impl ;
+    // InternalPascal.g:5840:1: rule__Variant__Group_1__1 : rule__Variant__Group_1__1__Impl ;
     public final void rule__Variant__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5838:1: ( rule__Variant__Group_1__1__Impl )
-            // InternalPascal.g:5839:2: rule__Variant__Group_1__1__Impl
+            // InternalPascal.g:5844:1: ( rule__Variant__Group_1__1__Impl )
+            // InternalPascal.g:5845:2: rule__Variant__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Variant__Group_1__1__Impl();
@@ -18805,21 +18763,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__Group_1__1__Impl"
-    // InternalPascal.g:5845:1: rule__Variant__Group_1__1__Impl : ( ( rule__Variant__ConstantAssignment_1_1 ) ) ;
+    // InternalPascal.g:5851:1: rule__Variant__Group_1__1__Impl : ( ( rule__Variant__ConstantAssignment_1_1 ) ) ;
     public final void rule__Variant__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5849:1: ( ( ( rule__Variant__ConstantAssignment_1_1 ) ) )
-            // InternalPascal.g:5850:1: ( ( rule__Variant__ConstantAssignment_1_1 ) )
+            // InternalPascal.g:5855:1: ( ( ( rule__Variant__ConstantAssignment_1_1 ) ) )
+            // InternalPascal.g:5856:1: ( ( rule__Variant__ConstantAssignment_1_1 ) )
             {
-            // InternalPascal.g:5850:1: ( ( rule__Variant__ConstantAssignment_1_1 ) )
-            // InternalPascal.g:5851:2: ( rule__Variant__ConstantAssignment_1_1 )
+            // InternalPascal.g:5856:1: ( ( rule__Variant__ConstantAssignment_1_1 ) )
+            // InternalPascal.g:5857:2: ( rule__Variant__ConstantAssignment_1_1 )
             {
              before(grammarAccess.getVariantAccess().getConstantAssignment_1_1()); 
-            // InternalPascal.g:5852:2: ( rule__Variant__ConstantAssignment_1_1 )
-            // InternalPascal.g:5852:3: rule__Variant__ConstantAssignment_1_1
+            // InternalPascal.g:5858:2: ( rule__Variant__ConstantAssignment_1_1 )
+            // InternalPascal.g:5858:3: rule__Variant__ConstantAssignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Variant__ConstantAssignment_1_1();
@@ -18852,14 +18810,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__Group__0"
-    // InternalPascal.g:5861:1: rule__ConstList__Group__0 : rule__ConstList__Group__0__Impl rule__ConstList__Group__1 ;
+    // InternalPascal.g:5867:1: rule__ConstList__Group__0 : rule__ConstList__Group__0__Impl rule__ConstList__Group__1 ;
     public final void rule__ConstList__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5865:1: ( rule__ConstList__Group__0__Impl rule__ConstList__Group__1 )
-            // InternalPascal.g:5866:2: rule__ConstList__Group__0__Impl rule__ConstList__Group__1
+            // InternalPascal.g:5871:1: ( rule__ConstList__Group__0__Impl rule__ConstList__Group__1 )
+            // InternalPascal.g:5872:2: rule__ConstList__Group__0__Impl rule__ConstList__Group__1
             {
             pushFollow(FOLLOW_27);
             rule__ConstList__Group__0__Impl();
@@ -18890,21 +18848,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__Group__0__Impl"
-    // InternalPascal.g:5873:1: rule__ConstList__Group__0__Impl : ( ( rule__ConstList__ConstantAssignment_0 ) ) ;
+    // InternalPascal.g:5879:1: rule__ConstList__Group__0__Impl : ( ( rule__ConstList__ConstantAssignment_0 ) ) ;
     public final void rule__ConstList__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5877:1: ( ( ( rule__ConstList__ConstantAssignment_0 ) ) )
-            // InternalPascal.g:5878:1: ( ( rule__ConstList__ConstantAssignment_0 ) )
+            // InternalPascal.g:5883:1: ( ( ( rule__ConstList__ConstantAssignment_0 ) ) )
+            // InternalPascal.g:5884:1: ( ( rule__ConstList__ConstantAssignment_0 ) )
             {
-            // InternalPascal.g:5878:1: ( ( rule__ConstList__ConstantAssignment_0 ) )
-            // InternalPascal.g:5879:2: ( rule__ConstList__ConstantAssignment_0 )
+            // InternalPascal.g:5884:1: ( ( rule__ConstList__ConstantAssignment_0 ) )
+            // InternalPascal.g:5885:2: ( rule__ConstList__ConstantAssignment_0 )
             {
              before(grammarAccess.getConstListAccess().getConstantAssignment_0()); 
-            // InternalPascal.g:5880:2: ( rule__ConstList__ConstantAssignment_0 )
-            // InternalPascal.g:5880:3: rule__ConstList__ConstantAssignment_0
+            // InternalPascal.g:5886:2: ( rule__ConstList__ConstantAssignment_0 )
+            // InternalPascal.g:5886:3: rule__ConstList__ConstantAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__ConstList__ConstantAssignment_0();
@@ -18937,14 +18895,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__Group__1"
-    // InternalPascal.g:5888:1: rule__ConstList__Group__1 : rule__ConstList__Group__1__Impl ;
+    // InternalPascal.g:5894:1: rule__ConstList__Group__1 : rule__ConstList__Group__1__Impl ;
     public final void rule__ConstList__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5892:1: ( rule__ConstList__Group__1__Impl )
-            // InternalPascal.g:5893:2: rule__ConstList__Group__1__Impl
+            // InternalPascal.g:5898:1: ( rule__ConstList__Group__1__Impl )
+            // InternalPascal.g:5899:2: rule__ConstList__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ConstList__Group__1__Impl();
@@ -18970,20 +18928,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__Group__1__Impl"
-    // InternalPascal.g:5899:1: rule__ConstList__Group__1__Impl : ( ( rule__ConstList__Group_1__0 )* ) ;
+    // InternalPascal.g:5905:1: rule__ConstList__Group__1__Impl : ( ( rule__ConstList__Group_1__0 )* ) ;
     public final void rule__ConstList__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5903:1: ( ( ( rule__ConstList__Group_1__0 )* ) )
-            // InternalPascal.g:5904:1: ( ( rule__ConstList__Group_1__0 )* )
+            // InternalPascal.g:5909:1: ( ( ( rule__ConstList__Group_1__0 )* ) )
+            // InternalPascal.g:5910:1: ( ( rule__ConstList__Group_1__0 )* )
             {
-            // InternalPascal.g:5904:1: ( ( rule__ConstList__Group_1__0 )* )
-            // InternalPascal.g:5905:2: ( rule__ConstList__Group_1__0 )*
+            // InternalPascal.g:5910:1: ( ( rule__ConstList__Group_1__0 )* )
+            // InternalPascal.g:5911:2: ( rule__ConstList__Group_1__0 )*
             {
              before(grammarAccess.getConstListAccess().getGroup_1()); 
-            // InternalPascal.g:5906:2: ( rule__ConstList__Group_1__0 )*
+            // InternalPascal.g:5912:2: ( rule__ConstList__Group_1__0 )*
             loop43:
             do {
                 int alt43=2;
@@ -19002,11 +18960,24 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                         }
                         break;
+                    case RULE_NUM_REAL:
+                    case RULE_STRING_LITERAL:
+                    case RULE_BOOL:
+                    case 18:
+                    case 19:
+                    case 43:
+                        {
+                        alt43=1;
+                        }
+                        break;
                     case RULE_IDENT:
                         {
-                        int LA43_4 = input.LA(3);
+                        int LA43_5 = input.LA(3);
 
-                        if ( (LA43_4==EOF) ) {
+                        if ( (LA43_5==47) ) {
+                            alt43=1;
+                        }
+                        else if ( (LA43_5==EOF) ) {
                             int LA43_7 = input.LA(4);
 
                             if ( (LA43_7==EOF) ) {
@@ -19015,20 +18986,8 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
                         }
-                        else if ( (LA43_4==47) ) {
-                            alt43=1;
-                        }
 
 
-                        }
-                        break;
-                    case RULE_NUM_REAL:
-                    case RULE_STRING_LITERAL:
-                    case 18:
-                    case 19:
-                    case 43:
-                        {
-                        alt43=1;
                         }
                         break;
 
@@ -19039,9 +18998,9 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt43) {
             	case 1 :
-            	    // InternalPascal.g:5906:3: rule__ConstList__Group_1__0
+            	    // InternalPascal.g:5912:3: rule__ConstList__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_37);
+            	    pushFollow(FOLLOW_38);
             	    rule__ConstList__Group_1__0();
 
             	    state._fsp--;
@@ -19078,14 +19037,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__Group_1__0"
-    // InternalPascal.g:5915:1: rule__ConstList__Group_1__0 : rule__ConstList__Group_1__0__Impl rule__ConstList__Group_1__1 ;
+    // InternalPascal.g:5921:1: rule__ConstList__Group_1__0 : rule__ConstList__Group_1__0__Impl rule__ConstList__Group_1__1 ;
     public final void rule__ConstList__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5919:1: ( rule__ConstList__Group_1__0__Impl rule__ConstList__Group_1__1 )
-            // InternalPascal.g:5920:2: rule__ConstList__Group_1__0__Impl rule__ConstList__Group_1__1
+            // InternalPascal.g:5925:1: ( rule__ConstList__Group_1__0__Impl rule__ConstList__Group_1__1 )
+            // InternalPascal.g:5926:2: rule__ConstList__Group_1__0__Impl rule__ConstList__Group_1__1
             {
             pushFollow(FOLLOW_16);
             rule__ConstList__Group_1__0__Impl();
@@ -19116,17 +19075,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__Group_1__0__Impl"
-    // InternalPascal.g:5927:1: rule__ConstList__Group_1__0__Impl : ( ':' ) ;
+    // InternalPascal.g:5933:1: rule__ConstList__Group_1__0__Impl : ( ':' ) ;
     public final void rule__ConstList__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5931:1: ( ( ':' ) )
-            // InternalPascal.g:5932:1: ( ':' )
+            // InternalPascal.g:5937:1: ( ( ':' ) )
+            // InternalPascal.g:5938:1: ( ':' )
             {
-            // InternalPascal.g:5932:1: ( ':' )
-            // InternalPascal.g:5933:2: ':'
+            // InternalPascal.g:5938:1: ( ':' )
+            // InternalPascal.g:5939:2: ':'
             {
              before(grammarAccess.getConstListAccess().getColonKeyword_1_0()); 
             match(input,47,FOLLOW_2); 
@@ -19153,14 +19112,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__Group_1__1"
-    // InternalPascal.g:5942:1: rule__ConstList__Group_1__1 : rule__ConstList__Group_1__1__Impl ;
+    // InternalPascal.g:5948:1: rule__ConstList__Group_1__1 : rule__ConstList__Group_1__1__Impl ;
     public final void rule__ConstList__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5946:1: ( rule__ConstList__Group_1__1__Impl )
-            // InternalPascal.g:5947:2: rule__ConstList__Group_1__1__Impl
+            // InternalPascal.g:5952:1: ( rule__ConstList__Group_1__1__Impl )
+            // InternalPascal.g:5953:2: rule__ConstList__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ConstList__Group_1__1__Impl();
@@ -19186,21 +19145,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__Group_1__1__Impl"
-    // InternalPascal.g:5953:1: rule__ConstList__Group_1__1__Impl : ( ( rule__ConstList__Constant1Assignment_1_1 ) ) ;
+    // InternalPascal.g:5959:1: rule__ConstList__Group_1__1__Impl : ( ( rule__ConstList__Constant1Assignment_1_1 ) ) ;
     public final void rule__ConstList__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5957:1: ( ( ( rule__ConstList__Constant1Assignment_1_1 ) ) )
-            // InternalPascal.g:5958:1: ( ( rule__ConstList__Constant1Assignment_1_1 ) )
+            // InternalPascal.g:5963:1: ( ( ( rule__ConstList__Constant1Assignment_1_1 ) ) )
+            // InternalPascal.g:5964:1: ( ( rule__ConstList__Constant1Assignment_1_1 ) )
             {
-            // InternalPascal.g:5958:1: ( ( rule__ConstList__Constant1Assignment_1_1 ) )
-            // InternalPascal.g:5959:2: ( rule__ConstList__Constant1Assignment_1_1 )
+            // InternalPascal.g:5964:1: ( ( rule__ConstList__Constant1Assignment_1_1 ) )
+            // InternalPascal.g:5965:2: ( rule__ConstList__Constant1Assignment_1_1 )
             {
              before(grammarAccess.getConstListAccess().getConstant1Assignment_1_1()); 
-            // InternalPascal.g:5960:2: ( rule__ConstList__Constant1Assignment_1_1 )
-            // InternalPascal.g:5960:3: rule__ConstList__Constant1Assignment_1_1
+            // InternalPascal.g:5966:2: ( rule__ConstList__Constant1Assignment_1_1 )
+            // InternalPascal.g:5966:3: rule__ConstList__Constant1Assignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__ConstList__Constant1Assignment_1_1();
@@ -19233,14 +19192,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group__0"
-    // InternalPascal.g:5969:1: rule__VariableDeclarationPart__Group__0 : rule__VariableDeclarationPart__Group__0__Impl rule__VariableDeclarationPart__Group__1 ;
+    // InternalPascal.g:5975:1: rule__VariableDeclarationPart__Group__0 : rule__VariableDeclarationPart__Group__0__Impl rule__VariableDeclarationPart__Group__1 ;
     public final void rule__VariableDeclarationPart__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5973:1: ( rule__VariableDeclarationPart__Group__0__Impl rule__VariableDeclarationPart__Group__1 )
-            // InternalPascal.g:5974:2: rule__VariableDeclarationPart__Group__0__Impl rule__VariableDeclarationPart__Group__1
+            // InternalPascal.g:5979:1: ( rule__VariableDeclarationPart__Group__0__Impl rule__VariableDeclarationPart__Group__1 )
+            // InternalPascal.g:5980:2: rule__VariableDeclarationPart__Group__0__Impl rule__VariableDeclarationPart__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__VariableDeclarationPart__Group__0__Impl();
@@ -19271,17 +19230,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group__0__Impl"
-    // InternalPascal.g:5981:1: rule__VariableDeclarationPart__Group__0__Impl : ( 'var' ) ;
+    // InternalPascal.g:5987:1: rule__VariableDeclarationPart__Group__0__Impl : ( 'var' ) ;
     public final void rule__VariableDeclarationPart__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:5985:1: ( ( 'var' ) )
-            // InternalPascal.g:5986:1: ( 'var' )
+            // InternalPascal.g:5991:1: ( ( 'var' ) )
+            // InternalPascal.g:5992:1: ( 'var' )
             {
-            // InternalPascal.g:5986:1: ( 'var' )
-            // InternalPascal.g:5987:2: 'var'
+            // InternalPascal.g:5992:1: ( 'var' )
+            // InternalPascal.g:5993:2: 'var'
             {
              before(grammarAccess.getVariableDeclarationPartAccess().getVarKeyword_0()); 
             match(input,48,FOLLOW_2); 
@@ -19308,14 +19267,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group__1"
-    // InternalPascal.g:5996:1: rule__VariableDeclarationPart__Group__1 : rule__VariableDeclarationPart__Group__1__Impl rule__VariableDeclarationPart__Group__2 ;
+    // InternalPascal.g:6002:1: rule__VariableDeclarationPart__Group__1 : rule__VariableDeclarationPart__Group__1__Impl rule__VariableDeclarationPart__Group__2 ;
     public final void rule__VariableDeclarationPart__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6000:1: ( rule__VariableDeclarationPart__Group__1__Impl rule__VariableDeclarationPart__Group__2 )
-            // InternalPascal.g:6001:2: rule__VariableDeclarationPart__Group__1__Impl rule__VariableDeclarationPart__Group__2
+            // InternalPascal.g:6006:1: ( rule__VariableDeclarationPart__Group__1__Impl rule__VariableDeclarationPart__Group__2 )
+            // InternalPascal.g:6007:2: rule__VariableDeclarationPart__Group__1__Impl rule__VariableDeclarationPart__Group__2
             {
             pushFollow(FOLLOW_14);
             rule__VariableDeclarationPart__Group__1__Impl();
@@ -19346,21 +19305,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group__1__Impl"
-    // InternalPascal.g:6008:1: rule__VariableDeclarationPart__Group__1__Impl : ( ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 ) ) ;
+    // InternalPascal.g:6014:1: rule__VariableDeclarationPart__Group__1__Impl : ( ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 ) ) ;
     public final void rule__VariableDeclarationPart__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6012:1: ( ( ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 ) ) )
-            // InternalPascal.g:6013:1: ( ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 ) )
+            // InternalPascal.g:6018:1: ( ( ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 ) ) )
+            // InternalPascal.g:6019:1: ( ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 ) )
             {
-            // InternalPascal.g:6013:1: ( ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 ) )
-            // InternalPascal.g:6014:2: ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 )
+            // InternalPascal.g:6019:1: ( ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 ) )
+            // InternalPascal.g:6020:2: ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 )
             {
              before(grammarAccess.getVariableDeclarationPartAccess().getVariableDeclarationAssignment_1()); 
-            // InternalPascal.g:6015:2: ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 )
-            // InternalPascal.g:6015:3: rule__VariableDeclarationPart__VariableDeclarationAssignment_1
+            // InternalPascal.g:6021:2: ( rule__VariableDeclarationPart__VariableDeclarationAssignment_1 )
+            // InternalPascal.g:6021:3: rule__VariableDeclarationPart__VariableDeclarationAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__VariableDeclarationPart__VariableDeclarationAssignment_1();
@@ -19393,14 +19352,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group__2"
-    // InternalPascal.g:6023:1: rule__VariableDeclarationPart__Group__2 : rule__VariableDeclarationPart__Group__2__Impl rule__VariableDeclarationPart__Group__3 ;
+    // InternalPascal.g:6029:1: rule__VariableDeclarationPart__Group__2 : rule__VariableDeclarationPart__Group__2__Impl rule__VariableDeclarationPart__Group__3 ;
     public final void rule__VariableDeclarationPart__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6027:1: ( rule__VariableDeclarationPart__Group__2__Impl rule__VariableDeclarationPart__Group__3 )
-            // InternalPascal.g:6028:2: rule__VariableDeclarationPart__Group__2__Impl rule__VariableDeclarationPart__Group__3
+            // InternalPascal.g:6033:1: ( rule__VariableDeclarationPart__Group__2__Impl rule__VariableDeclarationPart__Group__3 )
+            // InternalPascal.g:6034:2: rule__VariableDeclarationPart__Group__2__Impl rule__VariableDeclarationPart__Group__3
             {
             pushFollow(FOLLOW_14);
             rule__VariableDeclarationPart__Group__2__Impl();
@@ -19431,20 +19390,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group__2__Impl"
-    // InternalPascal.g:6035:1: rule__VariableDeclarationPart__Group__2__Impl : ( ( rule__VariableDeclarationPart__Group_2__0 )* ) ;
+    // InternalPascal.g:6041:1: rule__VariableDeclarationPart__Group__2__Impl : ( ( rule__VariableDeclarationPart__Group_2__0 )* ) ;
     public final void rule__VariableDeclarationPart__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6039:1: ( ( ( rule__VariableDeclarationPart__Group_2__0 )* ) )
-            // InternalPascal.g:6040:1: ( ( rule__VariableDeclarationPart__Group_2__0 )* )
+            // InternalPascal.g:6045:1: ( ( ( rule__VariableDeclarationPart__Group_2__0 )* ) )
+            // InternalPascal.g:6046:1: ( ( rule__VariableDeclarationPart__Group_2__0 )* )
             {
-            // InternalPascal.g:6040:1: ( ( rule__VariableDeclarationPart__Group_2__0 )* )
-            // InternalPascal.g:6041:2: ( rule__VariableDeclarationPart__Group_2__0 )*
+            // InternalPascal.g:6046:1: ( ( rule__VariableDeclarationPart__Group_2__0 )* )
+            // InternalPascal.g:6047:2: ( rule__VariableDeclarationPart__Group_2__0 )*
             {
              before(grammarAccess.getVariableDeclarationPartAccess().getGroup_2()); 
-            // InternalPascal.g:6042:2: ( rule__VariableDeclarationPart__Group_2__0 )*
+            // InternalPascal.g:6048:2: ( rule__VariableDeclarationPart__Group_2__0 )*
             loop44:
             do {
                 int alt44=2;
@@ -19463,7 +19422,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt44) {
             	case 1 :
-            	    // InternalPascal.g:6042:3: rule__VariableDeclarationPart__Group_2__0
+            	    // InternalPascal.g:6048:3: rule__VariableDeclarationPart__Group_2__0
             	    {
             	    pushFollow(FOLLOW_26);
             	    rule__VariableDeclarationPart__Group_2__0();
@@ -19502,14 +19461,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group__3"
-    // InternalPascal.g:6050:1: rule__VariableDeclarationPart__Group__3 : rule__VariableDeclarationPart__Group__3__Impl ;
+    // InternalPascal.g:6056:1: rule__VariableDeclarationPart__Group__3 : rule__VariableDeclarationPart__Group__3__Impl ;
     public final void rule__VariableDeclarationPart__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6054:1: ( rule__VariableDeclarationPart__Group__3__Impl )
-            // InternalPascal.g:6055:2: rule__VariableDeclarationPart__Group__3__Impl
+            // InternalPascal.g:6060:1: ( rule__VariableDeclarationPart__Group__3__Impl )
+            // InternalPascal.g:6061:2: rule__VariableDeclarationPart__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__VariableDeclarationPart__Group__3__Impl();
@@ -19535,17 +19494,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group__3__Impl"
-    // InternalPascal.g:6061:1: rule__VariableDeclarationPart__Group__3__Impl : ( ';' ) ;
+    // InternalPascal.g:6067:1: rule__VariableDeclarationPart__Group__3__Impl : ( ';' ) ;
     public final void rule__VariableDeclarationPart__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6065:1: ( ( ';' ) )
-            // InternalPascal.g:6066:1: ( ';' )
+            // InternalPascal.g:6071:1: ( ( ';' ) )
+            // InternalPascal.g:6072:1: ( ';' )
             {
-            // InternalPascal.g:6066:1: ( ';' )
-            // InternalPascal.g:6067:2: ';'
+            // InternalPascal.g:6072:1: ( ';' )
+            // InternalPascal.g:6073:2: ';'
             {
              before(grammarAccess.getVariableDeclarationPartAccess().getSemicolonKeyword_3()); 
             match(input,37,FOLLOW_2); 
@@ -19572,14 +19531,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group_2__0"
-    // InternalPascal.g:6077:1: rule__VariableDeclarationPart__Group_2__0 : rule__VariableDeclarationPart__Group_2__0__Impl rule__VariableDeclarationPart__Group_2__1 ;
+    // InternalPascal.g:6083:1: rule__VariableDeclarationPart__Group_2__0 : rule__VariableDeclarationPart__Group_2__0__Impl rule__VariableDeclarationPart__Group_2__1 ;
     public final void rule__VariableDeclarationPart__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6081:1: ( rule__VariableDeclarationPart__Group_2__0__Impl rule__VariableDeclarationPart__Group_2__1 )
-            // InternalPascal.g:6082:2: rule__VariableDeclarationPart__Group_2__0__Impl rule__VariableDeclarationPart__Group_2__1
+            // InternalPascal.g:6087:1: ( rule__VariableDeclarationPart__Group_2__0__Impl rule__VariableDeclarationPart__Group_2__1 )
+            // InternalPascal.g:6088:2: rule__VariableDeclarationPart__Group_2__0__Impl rule__VariableDeclarationPart__Group_2__1
             {
             pushFollow(FOLLOW_5);
             rule__VariableDeclarationPart__Group_2__0__Impl();
@@ -19610,17 +19569,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group_2__0__Impl"
-    // InternalPascal.g:6089:1: rule__VariableDeclarationPart__Group_2__0__Impl : ( ';' ) ;
+    // InternalPascal.g:6095:1: rule__VariableDeclarationPart__Group_2__0__Impl : ( ';' ) ;
     public final void rule__VariableDeclarationPart__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6093:1: ( ( ';' ) )
-            // InternalPascal.g:6094:1: ( ';' )
+            // InternalPascal.g:6099:1: ( ( ';' ) )
+            // InternalPascal.g:6100:1: ( ';' )
             {
-            // InternalPascal.g:6094:1: ( ';' )
-            // InternalPascal.g:6095:2: ';'
+            // InternalPascal.g:6100:1: ( ';' )
+            // InternalPascal.g:6101:2: ';'
             {
              before(grammarAccess.getVariableDeclarationPartAccess().getSemicolonKeyword_2_0()); 
             match(input,37,FOLLOW_2); 
@@ -19647,14 +19606,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group_2__1"
-    // InternalPascal.g:6104:1: rule__VariableDeclarationPart__Group_2__1 : rule__VariableDeclarationPart__Group_2__1__Impl ;
+    // InternalPascal.g:6110:1: rule__VariableDeclarationPart__Group_2__1 : rule__VariableDeclarationPart__Group_2__1__Impl ;
     public final void rule__VariableDeclarationPart__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6108:1: ( rule__VariableDeclarationPart__Group_2__1__Impl )
-            // InternalPascal.g:6109:2: rule__VariableDeclarationPart__Group_2__1__Impl
+            // InternalPascal.g:6114:1: ( rule__VariableDeclarationPart__Group_2__1__Impl )
+            // InternalPascal.g:6115:2: rule__VariableDeclarationPart__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__VariableDeclarationPart__Group_2__1__Impl();
@@ -19680,21 +19639,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__Group_2__1__Impl"
-    // InternalPascal.g:6115:1: rule__VariableDeclarationPart__Group_2__1__Impl : ( ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 ) ) ;
+    // InternalPascal.g:6121:1: rule__VariableDeclarationPart__Group_2__1__Impl : ( ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 ) ) ;
     public final void rule__VariableDeclarationPart__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6119:1: ( ( ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 ) ) )
-            // InternalPascal.g:6120:1: ( ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 ) )
+            // InternalPascal.g:6125:1: ( ( ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 ) ) )
+            // InternalPascal.g:6126:1: ( ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 ) )
             {
-            // InternalPascal.g:6120:1: ( ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 ) )
-            // InternalPascal.g:6121:2: ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 )
+            // InternalPascal.g:6126:1: ( ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 ) )
+            // InternalPascal.g:6127:2: ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 )
             {
              before(grammarAccess.getVariableDeclarationPartAccess().getVariableDeclaration1Assignment_2_1()); 
-            // InternalPascal.g:6122:2: ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 )
-            // InternalPascal.g:6122:3: rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1
+            // InternalPascal.g:6128:2: ( rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 )
+            // InternalPascal.g:6128:3: rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1();
@@ -19727,14 +19686,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group__0"
-    // InternalPascal.g:6131:1: rule__VariableDeclaration__Group__0 : rule__VariableDeclaration__Group__0__Impl rule__VariableDeclaration__Group__1 ;
+    // InternalPascal.g:6137:1: rule__VariableDeclaration__Group__0 : rule__VariableDeclaration__Group__0__Impl rule__VariableDeclaration__Group__1 ;
     public final void rule__VariableDeclaration__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6135:1: ( rule__VariableDeclaration__Group__0__Impl rule__VariableDeclaration__Group__1 )
-            // InternalPascal.g:6136:2: rule__VariableDeclaration__Group__0__Impl rule__VariableDeclaration__Group__1
+            // InternalPascal.g:6141:1: ( rule__VariableDeclaration__Group__0__Impl rule__VariableDeclaration__Group__1 )
+            // InternalPascal.g:6142:2: rule__VariableDeclaration__Group__0__Impl rule__VariableDeclaration__Group__1
             {
             pushFollow(FOLLOW_27);
             rule__VariableDeclaration__Group__0__Impl();
@@ -19765,21 +19724,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group__0__Impl"
-    // InternalPascal.g:6143:1: rule__VariableDeclaration__Group__0__Impl : ( ( rule__VariableDeclaration__IdentifierListAssignment_0 ) ) ;
+    // InternalPascal.g:6149:1: rule__VariableDeclaration__Group__0__Impl : ( ( rule__VariableDeclaration__IdentifierListAssignment_0 ) ) ;
     public final void rule__VariableDeclaration__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6147:1: ( ( ( rule__VariableDeclaration__IdentifierListAssignment_0 ) ) )
-            // InternalPascal.g:6148:1: ( ( rule__VariableDeclaration__IdentifierListAssignment_0 ) )
+            // InternalPascal.g:6153:1: ( ( ( rule__VariableDeclaration__IdentifierListAssignment_0 ) ) )
+            // InternalPascal.g:6154:1: ( ( rule__VariableDeclaration__IdentifierListAssignment_0 ) )
             {
-            // InternalPascal.g:6148:1: ( ( rule__VariableDeclaration__IdentifierListAssignment_0 ) )
-            // InternalPascal.g:6149:2: ( rule__VariableDeclaration__IdentifierListAssignment_0 )
+            // InternalPascal.g:6154:1: ( ( rule__VariableDeclaration__IdentifierListAssignment_0 ) )
+            // InternalPascal.g:6155:2: ( rule__VariableDeclaration__IdentifierListAssignment_0 )
             {
              before(grammarAccess.getVariableDeclarationAccess().getIdentifierListAssignment_0()); 
-            // InternalPascal.g:6150:2: ( rule__VariableDeclaration__IdentifierListAssignment_0 )
-            // InternalPascal.g:6150:3: rule__VariableDeclaration__IdentifierListAssignment_0
+            // InternalPascal.g:6156:2: ( rule__VariableDeclaration__IdentifierListAssignment_0 )
+            // InternalPascal.g:6156:3: rule__VariableDeclaration__IdentifierListAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__VariableDeclaration__IdentifierListAssignment_0();
@@ -19812,14 +19771,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group__1"
-    // InternalPascal.g:6158:1: rule__VariableDeclaration__Group__1 : rule__VariableDeclaration__Group__1__Impl rule__VariableDeclaration__Group__2 ;
+    // InternalPascal.g:6164:1: rule__VariableDeclaration__Group__1 : rule__VariableDeclaration__Group__1__Impl rule__VariableDeclaration__Group__2 ;
     public final void rule__VariableDeclaration__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6162:1: ( rule__VariableDeclaration__Group__1__Impl rule__VariableDeclaration__Group__2 )
-            // InternalPascal.g:6163:2: rule__VariableDeclaration__Group__1__Impl rule__VariableDeclaration__Group__2
+            // InternalPascal.g:6168:1: ( rule__VariableDeclaration__Group__1__Impl rule__VariableDeclaration__Group__2 )
+            // InternalPascal.g:6169:2: rule__VariableDeclaration__Group__1__Impl rule__VariableDeclaration__Group__2
             {
             pushFollow(FOLLOW_35);
             rule__VariableDeclaration__Group__1__Impl();
@@ -19850,17 +19809,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group__1__Impl"
-    // InternalPascal.g:6170:1: rule__VariableDeclaration__Group__1__Impl : ( ':' ) ;
+    // InternalPascal.g:6176:1: rule__VariableDeclaration__Group__1__Impl : ( ':' ) ;
     public final void rule__VariableDeclaration__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6174:1: ( ( ':' ) )
-            // InternalPascal.g:6175:1: ( ':' )
+            // InternalPascal.g:6180:1: ( ( ':' ) )
+            // InternalPascal.g:6181:1: ( ':' )
             {
-            // InternalPascal.g:6175:1: ( ':' )
-            // InternalPascal.g:6176:2: ':'
+            // InternalPascal.g:6181:1: ( ':' )
+            // InternalPascal.g:6182:2: ':'
             {
              before(grammarAccess.getVariableDeclarationAccess().getColonKeyword_1()); 
             match(input,47,FOLLOW_2); 
@@ -19887,14 +19846,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group__2"
-    // InternalPascal.g:6185:1: rule__VariableDeclaration__Group__2 : rule__VariableDeclaration__Group__2__Impl rule__VariableDeclaration__Group__3 ;
+    // InternalPascal.g:6191:1: rule__VariableDeclaration__Group__2 : rule__VariableDeclaration__Group__2__Impl rule__VariableDeclaration__Group__3 ;
     public final void rule__VariableDeclaration__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6189:1: ( rule__VariableDeclaration__Group__2__Impl rule__VariableDeclaration__Group__3 )
-            // InternalPascal.g:6190:2: rule__VariableDeclaration__Group__2__Impl rule__VariableDeclaration__Group__3
+            // InternalPascal.g:6195:1: ( rule__VariableDeclaration__Group__2__Impl rule__VariableDeclaration__Group__3 )
+            // InternalPascal.g:6196:2: rule__VariableDeclaration__Group__2__Impl rule__VariableDeclaration__Group__3
             {
             pushFollow(FOLLOW_15);
             rule__VariableDeclaration__Group__2__Impl();
@@ -19925,21 +19884,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group__2__Impl"
-    // InternalPascal.g:6197:1: rule__VariableDeclaration__Group__2__Impl : ( ( rule__VariableDeclaration__TypeAssignment_2 ) ) ;
+    // InternalPascal.g:6203:1: rule__VariableDeclaration__Group__2__Impl : ( ( rule__VariableDeclaration__TypeAssignment_2 ) ) ;
     public final void rule__VariableDeclaration__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6201:1: ( ( ( rule__VariableDeclaration__TypeAssignment_2 ) ) )
-            // InternalPascal.g:6202:1: ( ( rule__VariableDeclaration__TypeAssignment_2 ) )
+            // InternalPascal.g:6207:1: ( ( ( rule__VariableDeclaration__TypeAssignment_2 ) ) )
+            // InternalPascal.g:6208:1: ( ( rule__VariableDeclaration__TypeAssignment_2 ) )
             {
-            // InternalPascal.g:6202:1: ( ( rule__VariableDeclaration__TypeAssignment_2 ) )
-            // InternalPascal.g:6203:2: ( rule__VariableDeclaration__TypeAssignment_2 )
+            // InternalPascal.g:6208:1: ( ( rule__VariableDeclaration__TypeAssignment_2 ) )
+            // InternalPascal.g:6209:2: ( rule__VariableDeclaration__TypeAssignment_2 )
             {
              before(grammarAccess.getVariableDeclarationAccess().getTypeAssignment_2()); 
-            // InternalPascal.g:6204:2: ( rule__VariableDeclaration__TypeAssignment_2 )
-            // InternalPascal.g:6204:3: rule__VariableDeclaration__TypeAssignment_2
+            // InternalPascal.g:6210:2: ( rule__VariableDeclaration__TypeAssignment_2 )
+            // InternalPascal.g:6210:3: rule__VariableDeclaration__TypeAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__VariableDeclaration__TypeAssignment_2();
@@ -19972,14 +19931,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group__3"
-    // InternalPascal.g:6212:1: rule__VariableDeclaration__Group__3 : rule__VariableDeclaration__Group__3__Impl ;
+    // InternalPascal.g:6218:1: rule__VariableDeclaration__Group__3 : rule__VariableDeclaration__Group__3__Impl ;
     public final void rule__VariableDeclaration__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6216:1: ( rule__VariableDeclaration__Group__3__Impl )
-            // InternalPascal.g:6217:2: rule__VariableDeclaration__Group__3__Impl
+            // InternalPascal.g:6222:1: ( rule__VariableDeclaration__Group__3__Impl )
+            // InternalPascal.g:6223:2: rule__VariableDeclaration__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__VariableDeclaration__Group__3__Impl();
@@ -20005,20 +19964,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group__3__Impl"
-    // InternalPascal.g:6223:1: rule__VariableDeclaration__Group__3__Impl : ( ( rule__VariableDeclaration__Group_3__0 )? ) ;
+    // InternalPascal.g:6229:1: rule__VariableDeclaration__Group__3__Impl : ( ( rule__VariableDeclaration__Group_3__0 )? ) ;
     public final void rule__VariableDeclaration__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6227:1: ( ( ( rule__VariableDeclaration__Group_3__0 )? ) )
-            // InternalPascal.g:6228:1: ( ( rule__VariableDeclaration__Group_3__0 )? )
+            // InternalPascal.g:6233:1: ( ( ( rule__VariableDeclaration__Group_3__0 )? ) )
+            // InternalPascal.g:6234:1: ( ( rule__VariableDeclaration__Group_3__0 )? )
             {
-            // InternalPascal.g:6228:1: ( ( rule__VariableDeclaration__Group_3__0 )? )
-            // InternalPascal.g:6229:2: ( rule__VariableDeclaration__Group_3__0 )?
+            // InternalPascal.g:6234:1: ( ( rule__VariableDeclaration__Group_3__0 )? )
+            // InternalPascal.g:6235:2: ( rule__VariableDeclaration__Group_3__0 )?
             {
              before(grammarAccess.getVariableDeclarationAccess().getGroup_3()); 
-            // InternalPascal.g:6230:2: ( rule__VariableDeclaration__Group_3__0 )?
+            // InternalPascal.g:6236:2: ( rule__VariableDeclaration__Group_3__0 )?
             int alt45=2;
             int LA45_0 = input.LA(1);
 
@@ -20027,7 +19986,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt45) {
                 case 1 :
-                    // InternalPascal.g:6230:3: rule__VariableDeclaration__Group_3__0
+                    // InternalPascal.g:6236:3: rule__VariableDeclaration__Group_3__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__VariableDeclaration__Group_3__0();
@@ -20063,16 +20022,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group_3__0"
-    // InternalPascal.g:6239:1: rule__VariableDeclaration__Group_3__0 : rule__VariableDeclaration__Group_3__0__Impl rule__VariableDeclaration__Group_3__1 ;
+    // InternalPascal.g:6245:1: rule__VariableDeclaration__Group_3__0 : rule__VariableDeclaration__Group_3__0__Impl rule__VariableDeclaration__Group_3__1 ;
     public final void rule__VariableDeclaration__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6243:1: ( rule__VariableDeclaration__Group_3__0__Impl rule__VariableDeclaration__Group_3__1 )
-            // InternalPascal.g:6244:2: rule__VariableDeclaration__Group_3__0__Impl rule__VariableDeclaration__Group_3__1
+            // InternalPascal.g:6249:1: ( rule__VariableDeclaration__Group_3__0__Impl rule__VariableDeclaration__Group_3__1 )
+            // InternalPascal.g:6250:2: rule__VariableDeclaration__Group_3__0__Impl rule__VariableDeclaration__Group_3__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__VariableDeclaration__Group_3__0__Impl();
 
             state._fsp--;
@@ -20101,17 +20060,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group_3__0__Impl"
-    // InternalPascal.g:6251:1: rule__VariableDeclaration__Group_3__0__Impl : ( '=' ) ;
+    // InternalPascal.g:6257:1: rule__VariableDeclaration__Group_3__0__Impl : ( '=' ) ;
     public final void rule__VariableDeclaration__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6255:1: ( ( '=' ) )
-            // InternalPascal.g:6256:1: ( '=' )
+            // InternalPascal.g:6261:1: ( ( '=' ) )
+            // InternalPascal.g:6262:1: ( '=' )
             {
-            // InternalPascal.g:6256:1: ( '=' )
-            // InternalPascal.g:6257:2: '='
+            // InternalPascal.g:6262:1: ( '=' )
+            // InternalPascal.g:6263:2: '='
             {
              before(grammarAccess.getVariableDeclarationAccess().getEqualsSignKeyword_3_0()); 
             match(input,21,FOLLOW_2); 
@@ -20138,14 +20097,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group_3__1"
-    // InternalPascal.g:6266:1: rule__VariableDeclaration__Group_3__1 : rule__VariableDeclaration__Group_3__1__Impl ;
+    // InternalPascal.g:6272:1: rule__VariableDeclaration__Group_3__1 : rule__VariableDeclaration__Group_3__1__Impl ;
     public final void rule__VariableDeclaration__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6270:1: ( rule__VariableDeclaration__Group_3__1__Impl )
-            // InternalPascal.g:6271:2: rule__VariableDeclaration__Group_3__1__Impl
+            // InternalPascal.g:6276:1: ( rule__VariableDeclaration__Group_3__1__Impl )
+            // InternalPascal.g:6277:2: rule__VariableDeclaration__Group_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__VariableDeclaration__Group_3__1__Impl();
@@ -20171,21 +20130,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__Group_3__1__Impl"
-    // InternalPascal.g:6277:1: rule__VariableDeclaration__Group_3__1__Impl : ( ( rule__VariableDeclaration__ExpressionAssignment_3_1 ) ) ;
+    // InternalPascal.g:6283:1: rule__VariableDeclaration__Group_3__1__Impl : ( ( rule__VariableDeclaration__ExpressionAssignment_3_1 ) ) ;
     public final void rule__VariableDeclaration__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6281:1: ( ( ( rule__VariableDeclaration__ExpressionAssignment_3_1 ) ) )
-            // InternalPascal.g:6282:1: ( ( rule__VariableDeclaration__ExpressionAssignment_3_1 ) )
+            // InternalPascal.g:6287:1: ( ( ( rule__VariableDeclaration__ExpressionAssignment_3_1 ) ) )
+            // InternalPascal.g:6288:1: ( ( rule__VariableDeclaration__ExpressionAssignment_3_1 ) )
             {
-            // InternalPascal.g:6282:1: ( ( rule__VariableDeclaration__ExpressionAssignment_3_1 ) )
-            // InternalPascal.g:6283:2: ( rule__VariableDeclaration__ExpressionAssignment_3_1 )
+            // InternalPascal.g:6288:1: ( ( rule__VariableDeclaration__ExpressionAssignment_3_1 ) )
+            // InternalPascal.g:6289:2: ( rule__VariableDeclaration__ExpressionAssignment_3_1 )
             {
              before(grammarAccess.getVariableDeclarationAccess().getExpressionAssignment_3_1()); 
-            // InternalPascal.g:6284:2: ( rule__VariableDeclaration__ExpressionAssignment_3_1 )
-            // InternalPascal.g:6284:3: rule__VariableDeclaration__ExpressionAssignment_3_1
+            // InternalPascal.g:6290:2: ( rule__VariableDeclaration__ExpressionAssignment_3_1 )
+            // InternalPascal.g:6290:3: rule__VariableDeclaration__ExpressionAssignment_3_1
             {
             pushFollow(FOLLOW_2);
             rule__VariableDeclaration__ExpressionAssignment_3_1();
@@ -20218,14 +20177,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureAndFunctionDeclarationPart__Group__0"
-    // InternalPascal.g:6293:1: rule__ProcedureAndFunctionDeclarationPart__Group__0 : rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl rule__ProcedureAndFunctionDeclarationPart__Group__1 ;
+    // InternalPascal.g:6299:1: rule__ProcedureAndFunctionDeclarationPart__Group__0 : rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl rule__ProcedureAndFunctionDeclarationPart__Group__1 ;
     public final void rule__ProcedureAndFunctionDeclarationPart__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6297:1: ( rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl rule__ProcedureAndFunctionDeclarationPart__Group__1 )
-            // InternalPascal.g:6298:2: rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl rule__ProcedureAndFunctionDeclarationPart__Group__1
+            // InternalPascal.g:6303:1: ( rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl rule__ProcedureAndFunctionDeclarationPart__Group__1 )
+            // InternalPascal.g:6304:2: rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl rule__ProcedureAndFunctionDeclarationPart__Group__1
             {
             pushFollow(FOLLOW_14);
             rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl();
@@ -20256,21 +20215,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl"
-    // InternalPascal.g:6305:1: rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl : ( ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 ) ) ;
+    // InternalPascal.g:6311:1: rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl : ( ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 ) ) ;
     public final void rule__ProcedureAndFunctionDeclarationPart__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6309:1: ( ( ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 ) ) )
-            // InternalPascal.g:6310:1: ( ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 ) )
+            // InternalPascal.g:6315:1: ( ( ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 ) ) )
+            // InternalPascal.g:6316:1: ( ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 ) )
             {
-            // InternalPascal.g:6310:1: ( ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 ) )
-            // InternalPascal.g:6311:2: ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 )
+            // InternalPascal.g:6316:1: ( ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 ) )
+            // InternalPascal.g:6317:2: ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 )
             {
              before(grammarAccess.getProcedureAndFunctionDeclarationPartAccess().getProcedureOrFunctionDeclarationAssignment_0()); 
-            // InternalPascal.g:6312:2: ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 )
-            // InternalPascal.g:6312:3: rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0
+            // InternalPascal.g:6318:2: ( rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 )
+            // InternalPascal.g:6318:3: rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0();
@@ -20303,14 +20262,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureAndFunctionDeclarationPart__Group__1"
-    // InternalPascal.g:6320:1: rule__ProcedureAndFunctionDeclarationPart__Group__1 : rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl ;
+    // InternalPascal.g:6326:1: rule__ProcedureAndFunctionDeclarationPart__Group__1 : rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl ;
     public final void rule__ProcedureAndFunctionDeclarationPart__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6324:1: ( rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl )
-            // InternalPascal.g:6325:2: rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl
+            // InternalPascal.g:6330:1: ( rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl )
+            // InternalPascal.g:6331:2: rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl();
@@ -20336,17 +20295,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl"
-    // InternalPascal.g:6331:1: rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl : ( ';' ) ;
+    // InternalPascal.g:6337:1: rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl : ( ';' ) ;
     public final void rule__ProcedureAndFunctionDeclarationPart__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6335:1: ( ( ';' ) )
-            // InternalPascal.g:6336:1: ( ';' )
+            // InternalPascal.g:6341:1: ( ( ';' ) )
+            // InternalPascal.g:6342:1: ( ';' )
             {
-            // InternalPascal.g:6336:1: ( ';' )
-            // InternalPascal.g:6337:2: ';'
+            // InternalPascal.g:6342:1: ( ';' )
+            // InternalPascal.g:6343:2: ';'
             {
              before(grammarAccess.getProcedureAndFunctionDeclarationPartAccess().getSemicolonKeyword_1()); 
             match(input,37,FOLLOW_2); 
@@ -20373,14 +20332,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__0"
-    // InternalPascal.g:6347:1: rule__ProcedureDeclaration__Group__0 : rule__ProcedureDeclaration__Group__0__Impl rule__ProcedureDeclaration__Group__1 ;
+    // InternalPascal.g:6353:1: rule__ProcedureDeclaration__Group__0 : rule__ProcedureDeclaration__Group__0__Impl rule__ProcedureDeclaration__Group__1 ;
     public final void rule__ProcedureDeclaration__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6351:1: ( rule__ProcedureDeclaration__Group__0__Impl rule__ProcedureDeclaration__Group__1 )
-            // InternalPascal.g:6352:2: rule__ProcedureDeclaration__Group__0__Impl rule__ProcedureDeclaration__Group__1
+            // InternalPascal.g:6357:1: ( rule__ProcedureDeclaration__Group__0__Impl rule__ProcedureDeclaration__Group__1 )
+            // InternalPascal.g:6358:2: rule__ProcedureDeclaration__Group__0__Impl rule__ProcedureDeclaration__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__ProcedureDeclaration__Group__0__Impl();
@@ -20411,17 +20370,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__0__Impl"
-    // InternalPascal.g:6359:1: rule__ProcedureDeclaration__Group__0__Impl : ( 'procedure' ) ;
+    // InternalPascal.g:6365:1: rule__ProcedureDeclaration__Group__0__Impl : ( 'procedure' ) ;
     public final void rule__ProcedureDeclaration__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6363:1: ( ( 'procedure' ) )
-            // InternalPascal.g:6364:1: ( 'procedure' )
+            // InternalPascal.g:6369:1: ( ( 'procedure' ) )
+            // InternalPascal.g:6370:1: ( 'procedure' )
             {
-            // InternalPascal.g:6364:1: ( 'procedure' )
-            // InternalPascal.g:6365:2: 'procedure'
+            // InternalPascal.g:6370:1: ( 'procedure' )
+            // InternalPascal.g:6371:2: 'procedure'
             {
              before(grammarAccess.getProcedureDeclarationAccess().getProcedureKeyword_0()); 
             match(input,49,FOLLOW_2); 
@@ -20448,14 +20407,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__1"
-    // InternalPascal.g:6374:1: rule__ProcedureDeclaration__Group__1 : rule__ProcedureDeclaration__Group__1__Impl rule__ProcedureDeclaration__Group__2 ;
+    // InternalPascal.g:6380:1: rule__ProcedureDeclaration__Group__1 : rule__ProcedureDeclaration__Group__1__Impl rule__ProcedureDeclaration__Group__2 ;
     public final void rule__ProcedureDeclaration__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6378:1: ( rule__ProcedureDeclaration__Group__1__Impl rule__ProcedureDeclaration__Group__2 )
-            // InternalPascal.g:6379:2: rule__ProcedureDeclaration__Group__1__Impl rule__ProcedureDeclaration__Group__2
+            // InternalPascal.g:6384:1: ( rule__ProcedureDeclaration__Group__1__Impl rule__ProcedureDeclaration__Group__2 )
+            // InternalPascal.g:6385:2: rule__ProcedureDeclaration__Group__1__Impl rule__ProcedureDeclaration__Group__2
             {
             pushFollow(FOLLOW_6);
             rule__ProcedureDeclaration__Group__1__Impl();
@@ -20486,21 +20445,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__1__Impl"
-    // InternalPascal.g:6386:1: rule__ProcedureDeclaration__Group__1__Impl : ( ( rule__ProcedureDeclaration__IdentifierAssignment_1 ) ) ;
+    // InternalPascal.g:6392:1: rule__ProcedureDeclaration__Group__1__Impl : ( ( rule__ProcedureDeclaration__IdentifierAssignment_1 ) ) ;
     public final void rule__ProcedureDeclaration__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6390:1: ( ( ( rule__ProcedureDeclaration__IdentifierAssignment_1 ) ) )
-            // InternalPascal.g:6391:1: ( ( rule__ProcedureDeclaration__IdentifierAssignment_1 ) )
+            // InternalPascal.g:6396:1: ( ( ( rule__ProcedureDeclaration__IdentifierAssignment_1 ) ) )
+            // InternalPascal.g:6397:1: ( ( rule__ProcedureDeclaration__IdentifierAssignment_1 ) )
             {
-            // InternalPascal.g:6391:1: ( ( rule__ProcedureDeclaration__IdentifierAssignment_1 ) )
-            // InternalPascal.g:6392:2: ( rule__ProcedureDeclaration__IdentifierAssignment_1 )
+            // InternalPascal.g:6397:1: ( ( rule__ProcedureDeclaration__IdentifierAssignment_1 ) )
+            // InternalPascal.g:6398:2: ( rule__ProcedureDeclaration__IdentifierAssignment_1 )
             {
              before(grammarAccess.getProcedureDeclarationAccess().getIdentifierAssignment_1()); 
-            // InternalPascal.g:6393:2: ( rule__ProcedureDeclaration__IdentifierAssignment_1 )
-            // InternalPascal.g:6393:3: rule__ProcedureDeclaration__IdentifierAssignment_1
+            // InternalPascal.g:6399:2: ( rule__ProcedureDeclaration__IdentifierAssignment_1 )
+            // InternalPascal.g:6399:3: rule__ProcedureDeclaration__IdentifierAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__ProcedureDeclaration__IdentifierAssignment_1();
@@ -20533,14 +20492,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__2"
-    // InternalPascal.g:6401:1: rule__ProcedureDeclaration__Group__2 : rule__ProcedureDeclaration__Group__2__Impl rule__ProcedureDeclaration__Group__3 ;
+    // InternalPascal.g:6407:1: rule__ProcedureDeclaration__Group__2 : rule__ProcedureDeclaration__Group__2__Impl rule__ProcedureDeclaration__Group__3 ;
     public final void rule__ProcedureDeclaration__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6405:1: ( rule__ProcedureDeclaration__Group__2__Impl rule__ProcedureDeclaration__Group__3 )
-            // InternalPascal.g:6406:2: rule__ProcedureDeclaration__Group__2__Impl rule__ProcedureDeclaration__Group__3
+            // InternalPascal.g:6411:1: ( rule__ProcedureDeclaration__Group__2__Impl rule__ProcedureDeclaration__Group__3 )
+            // InternalPascal.g:6412:2: rule__ProcedureDeclaration__Group__2__Impl rule__ProcedureDeclaration__Group__3
             {
             pushFollow(FOLLOW_6);
             rule__ProcedureDeclaration__Group__2__Impl();
@@ -20571,20 +20530,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__2__Impl"
-    // InternalPascal.g:6413:1: rule__ProcedureDeclaration__Group__2__Impl : ( ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )? ) ;
+    // InternalPascal.g:6419:1: rule__ProcedureDeclaration__Group__2__Impl : ( ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )? ) ;
     public final void rule__ProcedureDeclaration__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6417:1: ( ( ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )? ) )
-            // InternalPascal.g:6418:1: ( ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )? )
+            // InternalPascal.g:6423:1: ( ( ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )? ) )
+            // InternalPascal.g:6424:1: ( ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )? )
             {
-            // InternalPascal.g:6418:1: ( ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )? )
-            // InternalPascal.g:6419:2: ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )?
+            // InternalPascal.g:6424:1: ( ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )? )
+            // InternalPascal.g:6425:2: ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )?
             {
              before(grammarAccess.getProcedureDeclarationAccess().getFormalParameterListAssignment_2()); 
-            // InternalPascal.g:6420:2: ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )?
+            // InternalPascal.g:6426:2: ( rule__ProcedureDeclaration__FormalParameterListAssignment_2 )?
             int alt46=2;
             int LA46_0 = input.LA(1);
 
@@ -20593,7 +20552,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt46) {
                 case 1 :
-                    // InternalPascal.g:6420:3: rule__ProcedureDeclaration__FormalParameterListAssignment_2
+                    // InternalPascal.g:6426:3: rule__ProcedureDeclaration__FormalParameterListAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__ProcedureDeclaration__FormalParameterListAssignment_2();
@@ -20629,14 +20588,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__3"
-    // InternalPascal.g:6428:1: rule__ProcedureDeclaration__Group__3 : rule__ProcedureDeclaration__Group__3__Impl rule__ProcedureDeclaration__Group__4 ;
+    // InternalPascal.g:6434:1: rule__ProcedureDeclaration__Group__3 : rule__ProcedureDeclaration__Group__3__Impl rule__ProcedureDeclaration__Group__4 ;
     public final void rule__ProcedureDeclaration__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6432:1: ( rule__ProcedureDeclaration__Group__3__Impl rule__ProcedureDeclaration__Group__4 )
-            // InternalPascal.g:6433:2: rule__ProcedureDeclaration__Group__3__Impl rule__ProcedureDeclaration__Group__4
+            // InternalPascal.g:6438:1: ( rule__ProcedureDeclaration__Group__3__Impl rule__ProcedureDeclaration__Group__4 )
+            // InternalPascal.g:6439:2: rule__ProcedureDeclaration__Group__3__Impl rule__ProcedureDeclaration__Group__4
             {
             pushFollow(FOLLOW_3);
             rule__ProcedureDeclaration__Group__3__Impl();
@@ -20667,17 +20626,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__3__Impl"
-    // InternalPascal.g:6440:1: rule__ProcedureDeclaration__Group__3__Impl : ( ';' ) ;
+    // InternalPascal.g:6446:1: rule__ProcedureDeclaration__Group__3__Impl : ( ';' ) ;
     public final void rule__ProcedureDeclaration__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6444:1: ( ( ';' ) )
-            // InternalPascal.g:6445:1: ( ';' )
+            // InternalPascal.g:6450:1: ( ( ';' ) )
+            // InternalPascal.g:6451:1: ( ';' )
             {
-            // InternalPascal.g:6445:1: ( ';' )
-            // InternalPascal.g:6446:2: ';'
+            // InternalPascal.g:6451:1: ( ';' )
+            // InternalPascal.g:6452:2: ';'
             {
              before(grammarAccess.getProcedureDeclarationAccess().getSemicolonKeyword_3()); 
             match(input,37,FOLLOW_2); 
@@ -20704,14 +20663,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__4"
-    // InternalPascal.g:6455:1: rule__ProcedureDeclaration__Group__4 : rule__ProcedureDeclaration__Group__4__Impl ;
+    // InternalPascal.g:6461:1: rule__ProcedureDeclaration__Group__4 : rule__ProcedureDeclaration__Group__4__Impl ;
     public final void rule__ProcedureDeclaration__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6459:1: ( rule__ProcedureDeclaration__Group__4__Impl )
-            // InternalPascal.g:6460:2: rule__ProcedureDeclaration__Group__4__Impl
+            // InternalPascal.g:6465:1: ( rule__ProcedureDeclaration__Group__4__Impl )
+            // InternalPascal.g:6466:2: rule__ProcedureDeclaration__Group__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ProcedureDeclaration__Group__4__Impl();
@@ -20737,21 +20696,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__Group__4__Impl"
-    // InternalPascal.g:6466:1: rule__ProcedureDeclaration__Group__4__Impl : ( ( rule__ProcedureDeclaration__BlockAssignment_4 ) ) ;
+    // InternalPascal.g:6472:1: rule__ProcedureDeclaration__Group__4__Impl : ( ( rule__ProcedureDeclaration__BlockAssignment_4 ) ) ;
     public final void rule__ProcedureDeclaration__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6470:1: ( ( ( rule__ProcedureDeclaration__BlockAssignment_4 ) ) )
-            // InternalPascal.g:6471:1: ( ( rule__ProcedureDeclaration__BlockAssignment_4 ) )
+            // InternalPascal.g:6476:1: ( ( ( rule__ProcedureDeclaration__BlockAssignment_4 ) ) )
+            // InternalPascal.g:6477:1: ( ( rule__ProcedureDeclaration__BlockAssignment_4 ) )
             {
-            // InternalPascal.g:6471:1: ( ( rule__ProcedureDeclaration__BlockAssignment_4 ) )
-            // InternalPascal.g:6472:2: ( rule__ProcedureDeclaration__BlockAssignment_4 )
+            // InternalPascal.g:6477:1: ( ( rule__ProcedureDeclaration__BlockAssignment_4 ) )
+            // InternalPascal.g:6478:2: ( rule__ProcedureDeclaration__BlockAssignment_4 )
             {
              before(grammarAccess.getProcedureDeclarationAccess().getBlockAssignment_4()); 
-            // InternalPascal.g:6473:2: ( rule__ProcedureDeclaration__BlockAssignment_4 )
-            // InternalPascal.g:6473:3: rule__ProcedureDeclaration__BlockAssignment_4
+            // InternalPascal.g:6479:2: ( rule__ProcedureDeclaration__BlockAssignment_4 )
+            // InternalPascal.g:6479:3: rule__ProcedureDeclaration__BlockAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__ProcedureDeclaration__BlockAssignment_4();
@@ -20784,14 +20743,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__0"
-    // InternalPascal.g:6482:1: rule__FunctionDeclaration__Group__0 : rule__FunctionDeclaration__Group__0__Impl rule__FunctionDeclaration__Group__1 ;
+    // InternalPascal.g:6488:1: rule__FunctionDeclaration__Group__0 : rule__FunctionDeclaration__Group__0__Impl rule__FunctionDeclaration__Group__1 ;
     public final void rule__FunctionDeclaration__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6486:1: ( rule__FunctionDeclaration__Group__0__Impl rule__FunctionDeclaration__Group__1 )
-            // InternalPascal.g:6487:2: rule__FunctionDeclaration__Group__0__Impl rule__FunctionDeclaration__Group__1
+            // InternalPascal.g:6492:1: ( rule__FunctionDeclaration__Group__0__Impl rule__FunctionDeclaration__Group__1 )
+            // InternalPascal.g:6493:2: rule__FunctionDeclaration__Group__0__Impl rule__FunctionDeclaration__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__FunctionDeclaration__Group__0__Impl();
@@ -20822,17 +20781,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__0__Impl"
-    // InternalPascal.g:6494:1: rule__FunctionDeclaration__Group__0__Impl : ( 'function' ) ;
+    // InternalPascal.g:6500:1: rule__FunctionDeclaration__Group__0__Impl : ( 'function' ) ;
     public final void rule__FunctionDeclaration__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6498:1: ( ( 'function' ) )
-            // InternalPascal.g:6499:1: ( 'function' )
+            // InternalPascal.g:6504:1: ( ( 'function' ) )
+            // InternalPascal.g:6505:1: ( 'function' )
             {
-            // InternalPascal.g:6499:1: ( 'function' )
-            // InternalPascal.g:6500:2: 'function'
+            // InternalPascal.g:6505:1: ( 'function' )
+            // InternalPascal.g:6506:2: 'function'
             {
              before(grammarAccess.getFunctionDeclarationAccess().getFunctionKeyword_0()); 
             match(input,46,FOLLOW_2); 
@@ -20859,14 +20818,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__1"
-    // InternalPascal.g:6509:1: rule__FunctionDeclaration__Group__1 : rule__FunctionDeclaration__Group__1__Impl rule__FunctionDeclaration__Group__2 ;
+    // InternalPascal.g:6515:1: rule__FunctionDeclaration__Group__1 : rule__FunctionDeclaration__Group__1__Impl rule__FunctionDeclaration__Group__2 ;
     public final void rule__FunctionDeclaration__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6513:1: ( rule__FunctionDeclaration__Group__1__Impl rule__FunctionDeclaration__Group__2 )
-            // InternalPascal.g:6514:2: rule__FunctionDeclaration__Group__1__Impl rule__FunctionDeclaration__Group__2
+            // InternalPascal.g:6519:1: ( rule__FunctionDeclaration__Group__1__Impl rule__FunctionDeclaration__Group__2 )
+            // InternalPascal.g:6520:2: rule__FunctionDeclaration__Group__1__Impl rule__FunctionDeclaration__Group__2
             {
             pushFollow(FOLLOW_22);
             rule__FunctionDeclaration__Group__1__Impl();
@@ -20897,21 +20856,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__1__Impl"
-    // InternalPascal.g:6521:1: rule__FunctionDeclaration__Group__1__Impl : ( ( rule__FunctionDeclaration__IdentifierAssignment_1 ) ) ;
+    // InternalPascal.g:6527:1: rule__FunctionDeclaration__Group__1__Impl : ( ( rule__FunctionDeclaration__IdentifierAssignment_1 ) ) ;
     public final void rule__FunctionDeclaration__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6525:1: ( ( ( rule__FunctionDeclaration__IdentifierAssignment_1 ) ) )
-            // InternalPascal.g:6526:1: ( ( rule__FunctionDeclaration__IdentifierAssignment_1 ) )
+            // InternalPascal.g:6531:1: ( ( ( rule__FunctionDeclaration__IdentifierAssignment_1 ) ) )
+            // InternalPascal.g:6532:1: ( ( rule__FunctionDeclaration__IdentifierAssignment_1 ) )
             {
-            // InternalPascal.g:6526:1: ( ( rule__FunctionDeclaration__IdentifierAssignment_1 ) )
-            // InternalPascal.g:6527:2: ( rule__FunctionDeclaration__IdentifierAssignment_1 )
+            // InternalPascal.g:6532:1: ( ( rule__FunctionDeclaration__IdentifierAssignment_1 ) )
+            // InternalPascal.g:6533:2: ( rule__FunctionDeclaration__IdentifierAssignment_1 )
             {
              before(grammarAccess.getFunctionDeclarationAccess().getIdentifierAssignment_1()); 
-            // InternalPascal.g:6528:2: ( rule__FunctionDeclaration__IdentifierAssignment_1 )
-            // InternalPascal.g:6528:3: rule__FunctionDeclaration__IdentifierAssignment_1
+            // InternalPascal.g:6534:2: ( rule__FunctionDeclaration__IdentifierAssignment_1 )
+            // InternalPascal.g:6534:3: rule__FunctionDeclaration__IdentifierAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__FunctionDeclaration__IdentifierAssignment_1();
@@ -20944,14 +20903,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__2"
-    // InternalPascal.g:6536:1: rule__FunctionDeclaration__Group__2 : rule__FunctionDeclaration__Group__2__Impl rule__FunctionDeclaration__Group__3 ;
+    // InternalPascal.g:6542:1: rule__FunctionDeclaration__Group__2 : rule__FunctionDeclaration__Group__2__Impl rule__FunctionDeclaration__Group__3 ;
     public final void rule__FunctionDeclaration__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6540:1: ( rule__FunctionDeclaration__Group__2__Impl rule__FunctionDeclaration__Group__3 )
-            // InternalPascal.g:6541:2: rule__FunctionDeclaration__Group__2__Impl rule__FunctionDeclaration__Group__3
+            // InternalPascal.g:6546:1: ( rule__FunctionDeclaration__Group__2__Impl rule__FunctionDeclaration__Group__3 )
+            // InternalPascal.g:6547:2: rule__FunctionDeclaration__Group__2__Impl rule__FunctionDeclaration__Group__3
             {
             pushFollow(FOLLOW_22);
             rule__FunctionDeclaration__Group__2__Impl();
@@ -20982,20 +20941,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__2__Impl"
-    // InternalPascal.g:6548:1: rule__FunctionDeclaration__Group__2__Impl : ( ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )? ) ;
+    // InternalPascal.g:6554:1: rule__FunctionDeclaration__Group__2__Impl : ( ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )? ) ;
     public final void rule__FunctionDeclaration__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6552:1: ( ( ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )? ) )
-            // InternalPascal.g:6553:1: ( ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )? )
+            // InternalPascal.g:6558:1: ( ( ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )? ) )
+            // InternalPascal.g:6559:1: ( ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )? )
             {
-            // InternalPascal.g:6553:1: ( ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )? )
-            // InternalPascal.g:6554:2: ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )?
+            // InternalPascal.g:6559:1: ( ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )? )
+            // InternalPascal.g:6560:2: ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )?
             {
              before(grammarAccess.getFunctionDeclarationAccess().getFormalParameterListAssignment_2()); 
-            // InternalPascal.g:6555:2: ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )?
+            // InternalPascal.g:6561:2: ( rule__FunctionDeclaration__FormalParameterListAssignment_2 )?
             int alt47=2;
             int LA47_0 = input.LA(1);
 
@@ -21004,7 +20963,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt47) {
                 case 1 :
-                    // InternalPascal.g:6555:3: rule__FunctionDeclaration__FormalParameterListAssignment_2
+                    // InternalPascal.g:6561:3: rule__FunctionDeclaration__FormalParameterListAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__FunctionDeclaration__FormalParameterListAssignment_2();
@@ -21040,14 +20999,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__3"
-    // InternalPascal.g:6563:1: rule__FunctionDeclaration__Group__3 : rule__FunctionDeclaration__Group__3__Impl rule__FunctionDeclaration__Group__4 ;
+    // InternalPascal.g:6569:1: rule__FunctionDeclaration__Group__3 : rule__FunctionDeclaration__Group__3__Impl rule__FunctionDeclaration__Group__4 ;
     public final void rule__FunctionDeclaration__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6567:1: ( rule__FunctionDeclaration__Group__3__Impl rule__FunctionDeclaration__Group__4 )
-            // InternalPascal.g:6568:2: rule__FunctionDeclaration__Group__3__Impl rule__FunctionDeclaration__Group__4
+            // InternalPascal.g:6573:1: ( rule__FunctionDeclaration__Group__3__Impl rule__FunctionDeclaration__Group__4 )
+            // InternalPascal.g:6574:2: rule__FunctionDeclaration__Group__3__Impl rule__FunctionDeclaration__Group__4
             {
             pushFollow(FOLLOW_23);
             rule__FunctionDeclaration__Group__3__Impl();
@@ -21078,17 +21037,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__3__Impl"
-    // InternalPascal.g:6575:1: rule__FunctionDeclaration__Group__3__Impl : ( ':' ) ;
+    // InternalPascal.g:6581:1: rule__FunctionDeclaration__Group__3__Impl : ( ':' ) ;
     public final void rule__FunctionDeclaration__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6579:1: ( ( ':' ) )
-            // InternalPascal.g:6580:1: ( ':' )
+            // InternalPascal.g:6585:1: ( ( ':' ) )
+            // InternalPascal.g:6586:1: ( ':' )
             {
-            // InternalPascal.g:6580:1: ( ':' )
-            // InternalPascal.g:6581:2: ':'
+            // InternalPascal.g:6586:1: ( ':' )
+            // InternalPascal.g:6587:2: ':'
             {
              before(grammarAccess.getFunctionDeclarationAccess().getColonKeyword_3()); 
             match(input,47,FOLLOW_2); 
@@ -21115,14 +21074,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__4"
-    // InternalPascal.g:6590:1: rule__FunctionDeclaration__Group__4 : rule__FunctionDeclaration__Group__4__Impl rule__FunctionDeclaration__Group__5 ;
+    // InternalPascal.g:6596:1: rule__FunctionDeclaration__Group__4 : rule__FunctionDeclaration__Group__4__Impl rule__FunctionDeclaration__Group__5 ;
     public final void rule__FunctionDeclaration__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6594:1: ( rule__FunctionDeclaration__Group__4__Impl rule__FunctionDeclaration__Group__5 )
-            // InternalPascal.g:6595:2: rule__FunctionDeclaration__Group__4__Impl rule__FunctionDeclaration__Group__5
+            // InternalPascal.g:6600:1: ( rule__FunctionDeclaration__Group__4__Impl rule__FunctionDeclaration__Group__5 )
+            // InternalPascal.g:6601:2: rule__FunctionDeclaration__Group__4__Impl rule__FunctionDeclaration__Group__5
             {
             pushFollow(FOLLOW_14);
             rule__FunctionDeclaration__Group__4__Impl();
@@ -21153,21 +21112,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__4__Impl"
-    // InternalPascal.g:6602:1: rule__FunctionDeclaration__Group__4__Impl : ( ( rule__FunctionDeclaration__ResultTypeAssignment_4 ) ) ;
+    // InternalPascal.g:6608:1: rule__FunctionDeclaration__Group__4__Impl : ( ( rule__FunctionDeclaration__ResultTypeAssignment_4 ) ) ;
     public final void rule__FunctionDeclaration__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6606:1: ( ( ( rule__FunctionDeclaration__ResultTypeAssignment_4 ) ) )
-            // InternalPascal.g:6607:1: ( ( rule__FunctionDeclaration__ResultTypeAssignment_4 ) )
+            // InternalPascal.g:6612:1: ( ( ( rule__FunctionDeclaration__ResultTypeAssignment_4 ) ) )
+            // InternalPascal.g:6613:1: ( ( rule__FunctionDeclaration__ResultTypeAssignment_4 ) )
             {
-            // InternalPascal.g:6607:1: ( ( rule__FunctionDeclaration__ResultTypeAssignment_4 ) )
-            // InternalPascal.g:6608:2: ( rule__FunctionDeclaration__ResultTypeAssignment_4 )
+            // InternalPascal.g:6613:1: ( ( rule__FunctionDeclaration__ResultTypeAssignment_4 ) )
+            // InternalPascal.g:6614:2: ( rule__FunctionDeclaration__ResultTypeAssignment_4 )
             {
              before(grammarAccess.getFunctionDeclarationAccess().getResultTypeAssignment_4()); 
-            // InternalPascal.g:6609:2: ( rule__FunctionDeclaration__ResultTypeAssignment_4 )
-            // InternalPascal.g:6609:3: rule__FunctionDeclaration__ResultTypeAssignment_4
+            // InternalPascal.g:6615:2: ( rule__FunctionDeclaration__ResultTypeAssignment_4 )
+            // InternalPascal.g:6615:3: rule__FunctionDeclaration__ResultTypeAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__FunctionDeclaration__ResultTypeAssignment_4();
@@ -21200,14 +21159,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__5"
-    // InternalPascal.g:6617:1: rule__FunctionDeclaration__Group__5 : rule__FunctionDeclaration__Group__5__Impl rule__FunctionDeclaration__Group__6 ;
+    // InternalPascal.g:6623:1: rule__FunctionDeclaration__Group__5 : rule__FunctionDeclaration__Group__5__Impl rule__FunctionDeclaration__Group__6 ;
     public final void rule__FunctionDeclaration__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6621:1: ( rule__FunctionDeclaration__Group__5__Impl rule__FunctionDeclaration__Group__6 )
-            // InternalPascal.g:6622:2: rule__FunctionDeclaration__Group__5__Impl rule__FunctionDeclaration__Group__6
+            // InternalPascal.g:6627:1: ( rule__FunctionDeclaration__Group__5__Impl rule__FunctionDeclaration__Group__6 )
+            // InternalPascal.g:6628:2: rule__FunctionDeclaration__Group__5__Impl rule__FunctionDeclaration__Group__6
             {
             pushFollow(FOLLOW_3);
             rule__FunctionDeclaration__Group__5__Impl();
@@ -21238,17 +21197,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__5__Impl"
-    // InternalPascal.g:6629:1: rule__FunctionDeclaration__Group__5__Impl : ( ';' ) ;
+    // InternalPascal.g:6635:1: rule__FunctionDeclaration__Group__5__Impl : ( ';' ) ;
     public final void rule__FunctionDeclaration__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6633:1: ( ( ';' ) )
-            // InternalPascal.g:6634:1: ( ';' )
+            // InternalPascal.g:6639:1: ( ( ';' ) )
+            // InternalPascal.g:6640:1: ( ';' )
             {
-            // InternalPascal.g:6634:1: ( ';' )
-            // InternalPascal.g:6635:2: ';'
+            // InternalPascal.g:6640:1: ( ';' )
+            // InternalPascal.g:6641:2: ';'
             {
              before(grammarAccess.getFunctionDeclarationAccess().getSemicolonKeyword_5()); 
             match(input,37,FOLLOW_2); 
@@ -21275,14 +21234,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__6"
-    // InternalPascal.g:6644:1: rule__FunctionDeclaration__Group__6 : rule__FunctionDeclaration__Group__6__Impl ;
+    // InternalPascal.g:6650:1: rule__FunctionDeclaration__Group__6 : rule__FunctionDeclaration__Group__6__Impl ;
     public final void rule__FunctionDeclaration__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6648:1: ( rule__FunctionDeclaration__Group__6__Impl )
-            // InternalPascal.g:6649:2: rule__FunctionDeclaration__Group__6__Impl
+            // InternalPascal.g:6654:1: ( rule__FunctionDeclaration__Group__6__Impl )
+            // InternalPascal.g:6655:2: rule__FunctionDeclaration__Group__6__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FunctionDeclaration__Group__6__Impl();
@@ -21308,21 +21267,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__Group__6__Impl"
-    // InternalPascal.g:6655:1: rule__FunctionDeclaration__Group__6__Impl : ( ( rule__FunctionDeclaration__BlockAssignment_6 ) ) ;
+    // InternalPascal.g:6661:1: rule__FunctionDeclaration__Group__6__Impl : ( ( rule__FunctionDeclaration__BlockAssignment_6 ) ) ;
     public final void rule__FunctionDeclaration__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6659:1: ( ( ( rule__FunctionDeclaration__BlockAssignment_6 ) ) )
-            // InternalPascal.g:6660:1: ( ( rule__FunctionDeclaration__BlockAssignment_6 ) )
+            // InternalPascal.g:6665:1: ( ( ( rule__FunctionDeclaration__BlockAssignment_6 ) ) )
+            // InternalPascal.g:6666:1: ( ( rule__FunctionDeclaration__BlockAssignment_6 ) )
             {
-            // InternalPascal.g:6660:1: ( ( rule__FunctionDeclaration__BlockAssignment_6 ) )
-            // InternalPascal.g:6661:2: ( rule__FunctionDeclaration__BlockAssignment_6 )
+            // InternalPascal.g:6666:1: ( ( rule__FunctionDeclaration__BlockAssignment_6 ) )
+            // InternalPascal.g:6667:2: ( rule__FunctionDeclaration__BlockAssignment_6 )
             {
              before(grammarAccess.getFunctionDeclarationAccess().getBlockAssignment_6()); 
-            // InternalPascal.g:6662:2: ( rule__FunctionDeclaration__BlockAssignment_6 )
-            // InternalPascal.g:6662:3: rule__FunctionDeclaration__BlockAssignment_6
+            // InternalPascal.g:6668:2: ( rule__FunctionDeclaration__BlockAssignment_6 )
+            // InternalPascal.g:6668:3: rule__FunctionDeclaration__BlockAssignment_6
             {
             pushFollow(FOLLOW_2);
             rule__FunctionDeclaration__BlockAssignment_6();
@@ -21355,14 +21314,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statement__Group_0__0"
-    // InternalPascal.g:6671:1: rule__Statement__Group_0__0 : rule__Statement__Group_0__0__Impl rule__Statement__Group_0__1 ;
+    // InternalPascal.g:6677:1: rule__Statement__Group_0__0 : rule__Statement__Group_0__0__Impl rule__Statement__Group_0__1 ;
     public final void rule__Statement__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6675:1: ( rule__Statement__Group_0__0__Impl rule__Statement__Group_0__1 )
-            // InternalPascal.g:6676:2: rule__Statement__Group_0__0__Impl rule__Statement__Group_0__1
+            // InternalPascal.g:6681:1: ( rule__Statement__Group_0__0__Impl rule__Statement__Group_0__1 )
+            // InternalPascal.g:6682:2: rule__Statement__Group_0__0__Impl rule__Statement__Group_0__1
             {
             pushFollow(FOLLOW_27);
             rule__Statement__Group_0__0__Impl();
@@ -21393,17 +21352,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statement__Group_0__0__Impl"
-    // InternalPascal.g:6683:1: rule__Statement__Group_0__0__Impl : ( rulelabel ) ;
+    // InternalPascal.g:6689:1: rule__Statement__Group_0__0__Impl : ( rulelabel ) ;
     public final void rule__Statement__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6687:1: ( ( rulelabel ) )
-            // InternalPascal.g:6688:1: ( rulelabel )
+            // InternalPascal.g:6693:1: ( ( rulelabel ) )
+            // InternalPascal.g:6694:1: ( rulelabel )
             {
-            // InternalPascal.g:6688:1: ( rulelabel )
-            // InternalPascal.g:6689:2: rulelabel
+            // InternalPascal.g:6694:1: ( rulelabel )
+            // InternalPascal.g:6695:2: rulelabel
             {
              before(grammarAccess.getStatementAccess().getLabelParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -21434,16 +21393,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statement__Group_0__1"
-    // InternalPascal.g:6698:1: rule__Statement__Group_0__1 : rule__Statement__Group_0__1__Impl rule__Statement__Group_0__2 ;
+    // InternalPascal.g:6704:1: rule__Statement__Group_0__1 : rule__Statement__Group_0__1__Impl rule__Statement__Group_0__2 ;
     public final void rule__Statement__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6702:1: ( rule__Statement__Group_0__1__Impl rule__Statement__Group_0__2 )
-            // InternalPascal.g:6703:2: rule__Statement__Group_0__1__Impl rule__Statement__Group_0__2
+            // InternalPascal.g:6708:1: ( rule__Statement__Group_0__1__Impl rule__Statement__Group_0__2 )
+            // InternalPascal.g:6709:2: rule__Statement__Group_0__1__Impl rule__Statement__Group_0__2
             {
-            pushFollow(FOLLOW_39);
+            pushFollow(FOLLOW_40);
             rule__Statement__Group_0__1__Impl();
 
             state._fsp--;
@@ -21472,17 +21431,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statement__Group_0__1__Impl"
-    // InternalPascal.g:6710:1: rule__Statement__Group_0__1__Impl : ( ':' ) ;
+    // InternalPascal.g:6716:1: rule__Statement__Group_0__1__Impl : ( ':' ) ;
     public final void rule__Statement__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6714:1: ( ( ':' ) )
-            // InternalPascal.g:6715:1: ( ':' )
+            // InternalPascal.g:6720:1: ( ( ':' ) )
+            // InternalPascal.g:6721:1: ( ':' )
             {
-            // InternalPascal.g:6715:1: ( ':' )
-            // InternalPascal.g:6716:2: ':'
+            // InternalPascal.g:6721:1: ( ':' )
+            // InternalPascal.g:6722:2: ':'
             {
              before(grammarAccess.getStatementAccess().getColonKeyword_0_1()); 
             match(input,47,FOLLOW_2); 
@@ -21509,14 +21468,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statement__Group_0__2"
-    // InternalPascal.g:6725:1: rule__Statement__Group_0__2 : rule__Statement__Group_0__2__Impl ;
+    // InternalPascal.g:6731:1: rule__Statement__Group_0__2 : rule__Statement__Group_0__2__Impl ;
     public final void rule__Statement__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6729:1: ( rule__Statement__Group_0__2__Impl )
-            // InternalPascal.g:6730:2: rule__Statement__Group_0__2__Impl
+            // InternalPascal.g:6735:1: ( rule__Statement__Group_0__2__Impl )
+            // InternalPascal.g:6736:2: rule__Statement__Group_0__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Statement__Group_0__2__Impl();
@@ -21542,21 +21501,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statement__Group_0__2__Impl"
-    // InternalPascal.g:6736:1: rule__Statement__Group_0__2__Impl : ( ( rule__Statement__UnlabelledStatementAssignment_0_2 ) ) ;
+    // InternalPascal.g:6742:1: rule__Statement__Group_0__2__Impl : ( ( rule__Statement__UnlabelledStatementAssignment_0_2 ) ) ;
     public final void rule__Statement__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6740:1: ( ( ( rule__Statement__UnlabelledStatementAssignment_0_2 ) ) )
-            // InternalPascal.g:6741:1: ( ( rule__Statement__UnlabelledStatementAssignment_0_2 ) )
+            // InternalPascal.g:6746:1: ( ( ( rule__Statement__UnlabelledStatementAssignment_0_2 ) ) )
+            // InternalPascal.g:6747:1: ( ( rule__Statement__UnlabelledStatementAssignment_0_2 ) )
             {
-            // InternalPascal.g:6741:1: ( ( rule__Statement__UnlabelledStatementAssignment_0_2 ) )
-            // InternalPascal.g:6742:2: ( rule__Statement__UnlabelledStatementAssignment_0_2 )
+            // InternalPascal.g:6747:1: ( ( rule__Statement__UnlabelledStatementAssignment_0_2 ) )
+            // InternalPascal.g:6748:2: ( rule__Statement__UnlabelledStatementAssignment_0_2 )
             {
              before(grammarAccess.getStatementAccess().getUnlabelledStatementAssignment_0_2()); 
-            // InternalPascal.g:6743:2: ( rule__Statement__UnlabelledStatementAssignment_0_2 )
-            // InternalPascal.g:6743:3: rule__Statement__UnlabelledStatementAssignment_0_2
+            // InternalPascal.g:6749:2: ( rule__Statement__UnlabelledStatementAssignment_0_2 )
+            // InternalPascal.g:6749:3: rule__Statement__UnlabelledStatementAssignment_0_2
             {
             pushFollow(FOLLOW_2);
             rule__Statement__UnlabelledStatementAssignment_0_2();
@@ -21589,14 +21548,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2__0"
-    // InternalPascal.g:6752:1: rule__UnlabelledStatement__Group_2__0 : rule__UnlabelledStatement__Group_2__0__Impl rule__UnlabelledStatement__Group_2__1 ;
+    // InternalPascal.g:6758:1: rule__UnlabelledStatement__Group_2__0 : rule__UnlabelledStatement__Group_2__0__Impl rule__UnlabelledStatement__Group_2__1 ;
     public final void rule__UnlabelledStatement__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6756:1: ( rule__UnlabelledStatement__Group_2__0__Impl rule__UnlabelledStatement__Group_2__1 )
-            // InternalPascal.g:6757:2: rule__UnlabelledStatement__Group_2__0__Impl rule__UnlabelledStatement__Group_2__1
+            // InternalPascal.g:6762:1: ( rule__UnlabelledStatement__Group_2__0__Impl rule__UnlabelledStatement__Group_2__1 )
+            // InternalPascal.g:6763:2: rule__UnlabelledStatement__Group_2__0__Impl rule__UnlabelledStatement__Group_2__1
             {
             pushFollow(FOLLOW_18);
             rule__UnlabelledStatement__Group_2__0__Impl();
@@ -21627,21 +21586,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2__0__Impl"
-    // InternalPascal.g:6764:1: rule__UnlabelledStatement__Group_2__0__Impl : ( ( rule__UnlabelledStatement__IdentifierAssignment_2_0 ) ) ;
+    // InternalPascal.g:6770:1: rule__UnlabelledStatement__Group_2__0__Impl : ( ( rule__UnlabelledStatement__IdentifierAssignment_2_0 ) ) ;
     public final void rule__UnlabelledStatement__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6768:1: ( ( ( rule__UnlabelledStatement__IdentifierAssignment_2_0 ) ) )
-            // InternalPascal.g:6769:1: ( ( rule__UnlabelledStatement__IdentifierAssignment_2_0 ) )
+            // InternalPascal.g:6774:1: ( ( ( rule__UnlabelledStatement__IdentifierAssignment_2_0 ) ) )
+            // InternalPascal.g:6775:1: ( ( rule__UnlabelledStatement__IdentifierAssignment_2_0 ) )
             {
-            // InternalPascal.g:6769:1: ( ( rule__UnlabelledStatement__IdentifierAssignment_2_0 ) )
-            // InternalPascal.g:6770:2: ( rule__UnlabelledStatement__IdentifierAssignment_2_0 )
+            // InternalPascal.g:6775:1: ( ( rule__UnlabelledStatement__IdentifierAssignment_2_0 ) )
+            // InternalPascal.g:6776:2: ( rule__UnlabelledStatement__IdentifierAssignment_2_0 )
             {
              before(grammarAccess.getUnlabelledStatementAccess().getIdentifierAssignment_2_0()); 
-            // InternalPascal.g:6771:2: ( rule__UnlabelledStatement__IdentifierAssignment_2_0 )
-            // InternalPascal.g:6771:3: rule__UnlabelledStatement__IdentifierAssignment_2_0
+            // InternalPascal.g:6777:2: ( rule__UnlabelledStatement__IdentifierAssignment_2_0 )
+            // InternalPascal.g:6777:3: rule__UnlabelledStatement__IdentifierAssignment_2_0
             {
             pushFollow(FOLLOW_2);
             rule__UnlabelledStatement__IdentifierAssignment_2_0();
@@ -21674,14 +21633,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2__1"
-    // InternalPascal.g:6779:1: rule__UnlabelledStatement__Group_2__1 : rule__UnlabelledStatement__Group_2__1__Impl ;
+    // InternalPascal.g:6785:1: rule__UnlabelledStatement__Group_2__1 : rule__UnlabelledStatement__Group_2__1__Impl ;
     public final void rule__UnlabelledStatement__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6783:1: ( rule__UnlabelledStatement__Group_2__1__Impl )
-            // InternalPascal.g:6784:2: rule__UnlabelledStatement__Group_2__1__Impl
+            // InternalPascal.g:6789:1: ( rule__UnlabelledStatement__Group_2__1__Impl )
+            // InternalPascal.g:6790:2: rule__UnlabelledStatement__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__UnlabelledStatement__Group_2__1__Impl();
@@ -21707,20 +21666,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2__1__Impl"
-    // InternalPascal.g:6790:1: rule__UnlabelledStatement__Group_2__1__Impl : ( ( rule__UnlabelledStatement__Group_2_1__0 )? ) ;
+    // InternalPascal.g:6796:1: rule__UnlabelledStatement__Group_2__1__Impl : ( ( rule__UnlabelledStatement__Group_2_1__0 )? ) ;
     public final void rule__UnlabelledStatement__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6794:1: ( ( ( rule__UnlabelledStatement__Group_2_1__0 )? ) )
-            // InternalPascal.g:6795:1: ( ( rule__UnlabelledStatement__Group_2_1__0 )? )
+            // InternalPascal.g:6800:1: ( ( ( rule__UnlabelledStatement__Group_2_1__0 )? ) )
+            // InternalPascal.g:6801:1: ( ( rule__UnlabelledStatement__Group_2_1__0 )? )
             {
-            // InternalPascal.g:6795:1: ( ( rule__UnlabelledStatement__Group_2_1__0 )? )
-            // InternalPascal.g:6796:2: ( rule__UnlabelledStatement__Group_2_1__0 )?
+            // InternalPascal.g:6801:1: ( ( rule__UnlabelledStatement__Group_2_1__0 )? )
+            // InternalPascal.g:6802:2: ( rule__UnlabelledStatement__Group_2_1__0 )?
             {
              before(grammarAccess.getUnlabelledStatementAccess().getGroup_2_1()); 
-            // InternalPascal.g:6797:2: ( rule__UnlabelledStatement__Group_2_1__0 )?
+            // InternalPascal.g:6803:2: ( rule__UnlabelledStatement__Group_2_1__0 )?
             int alt48=2;
             int LA48_0 = input.LA(1);
 
@@ -21729,7 +21688,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt48) {
                 case 1 :
-                    // InternalPascal.g:6797:3: rule__UnlabelledStatement__Group_2_1__0
+                    // InternalPascal.g:6803:3: rule__UnlabelledStatement__Group_2_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__UnlabelledStatement__Group_2_1__0();
@@ -21765,16 +21724,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2_1__0"
-    // InternalPascal.g:6806:1: rule__UnlabelledStatement__Group_2_1__0 : rule__UnlabelledStatement__Group_2_1__0__Impl rule__UnlabelledStatement__Group_2_1__1 ;
+    // InternalPascal.g:6812:1: rule__UnlabelledStatement__Group_2_1__0 : rule__UnlabelledStatement__Group_2_1__0__Impl rule__UnlabelledStatement__Group_2_1__1 ;
     public final void rule__UnlabelledStatement__Group_2_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6810:1: ( rule__UnlabelledStatement__Group_2_1__0__Impl rule__UnlabelledStatement__Group_2_1__1 )
-            // InternalPascal.g:6811:2: rule__UnlabelledStatement__Group_2_1__0__Impl rule__UnlabelledStatement__Group_2_1__1
+            // InternalPascal.g:6816:1: ( rule__UnlabelledStatement__Group_2_1__0__Impl rule__UnlabelledStatement__Group_2_1__1 )
+            // InternalPascal.g:6817:2: rule__UnlabelledStatement__Group_2_1__0__Impl rule__UnlabelledStatement__Group_2_1__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__UnlabelledStatement__Group_2_1__0__Impl();
 
             state._fsp--;
@@ -21803,17 +21762,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2_1__0__Impl"
-    // InternalPascal.g:6818:1: rule__UnlabelledStatement__Group_2_1__0__Impl : ( '(' ) ;
+    // InternalPascal.g:6824:1: rule__UnlabelledStatement__Group_2_1__0__Impl : ( '(' ) ;
     public final void rule__UnlabelledStatement__Group_2_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6822:1: ( ( '(' ) )
-            // InternalPascal.g:6823:1: ( '(' )
+            // InternalPascal.g:6828:1: ( ( '(' ) )
+            // InternalPascal.g:6829:1: ( '(' )
             {
-            // InternalPascal.g:6823:1: ( '(' )
-            // InternalPascal.g:6824:2: '('
+            // InternalPascal.g:6829:1: ( '(' )
+            // InternalPascal.g:6830:2: '('
             {
              before(grammarAccess.getUnlabelledStatementAccess().getLeftParenthesisKeyword_2_1_0()); 
             match(input,38,FOLLOW_2); 
@@ -21840,14 +21799,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2_1__1"
-    // InternalPascal.g:6833:1: rule__UnlabelledStatement__Group_2_1__1 : rule__UnlabelledStatement__Group_2_1__1__Impl rule__UnlabelledStatement__Group_2_1__2 ;
+    // InternalPascal.g:6839:1: rule__UnlabelledStatement__Group_2_1__1 : rule__UnlabelledStatement__Group_2_1__1__Impl rule__UnlabelledStatement__Group_2_1__2 ;
     public final void rule__UnlabelledStatement__Group_2_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6837:1: ( rule__UnlabelledStatement__Group_2_1__1__Impl rule__UnlabelledStatement__Group_2_1__2 )
-            // InternalPascal.g:6838:2: rule__UnlabelledStatement__Group_2_1__1__Impl rule__UnlabelledStatement__Group_2_1__2
+            // InternalPascal.g:6843:1: ( rule__UnlabelledStatement__Group_2_1__1__Impl rule__UnlabelledStatement__Group_2_1__2 )
+            // InternalPascal.g:6844:2: rule__UnlabelledStatement__Group_2_1__1__Impl rule__UnlabelledStatement__Group_2_1__2
             {
             pushFollow(FOLLOW_7);
             rule__UnlabelledStatement__Group_2_1__1__Impl();
@@ -21878,21 +21837,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2_1__1__Impl"
-    // InternalPascal.g:6845:1: rule__UnlabelledStatement__Group_2_1__1__Impl : ( ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 ) ) ;
+    // InternalPascal.g:6851:1: rule__UnlabelledStatement__Group_2_1__1__Impl : ( ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 ) ) ;
     public final void rule__UnlabelledStatement__Group_2_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6849:1: ( ( ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 ) ) )
-            // InternalPascal.g:6850:1: ( ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 ) )
+            // InternalPascal.g:6855:1: ( ( ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 ) ) )
+            // InternalPascal.g:6856:1: ( ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 ) )
             {
-            // InternalPascal.g:6850:1: ( ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 ) )
-            // InternalPascal.g:6851:2: ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 )
+            // InternalPascal.g:6856:1: ( ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 ) )
+            // InternalPascal.g:6857:2: ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 )
             {
              before(grammarAccess.getUnlabelledStatementAccess().getParameterListAssignment_2_1_1()); 
-            // InternalPascal.g:6852:2: ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 )
-            // InternalPascal.g:6852:3: rule__UnlabelledStatement__ParameterListAssignment_2_1_1
+            // InternalPascal.g:6858:2: ( rule__UnlabelledStatement__ParameterListAssignment_2_1_1 )
+            // InternalPascal.g:6858:3: rule__UnlabelledStatement__ParameterListAssignment_2_1_1
             {
             pushFollow(FOLLOW_2);
             rule__UnlabelledStatement__ParameterListAssignment_2_1_1();
@@ -21925,14 +21884,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2_1__2"
-    // InternalPascal.g:6860:1: rule__UnlabelledStatement__Group_2_1__2 : rule__UnlabelledStatement__Group_2_1__2__Impl ;
+    // InternalPascal.g:6866:1: rule__UnlabelledStatement__Group_2_1__2 : rule__UnlabelledStatement__Group_2_1__2__Impl ;
     public final void rule__UnlabelledStatement__Group_2_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6864:1: ( rule__UnlabelledStatement__Group_2_1__2__Impl )
-            // InternalPascal.g:6865:2: rule__UnlabelledStatement__Group_2_1__2__Impl
+            // InternalPascal.g:6870:1: ( rule__UnlabelledStatement__Group_2_1__2__Impl )
+            // InternalPascal.g:6871:2: rule__UnlabelledStatement__Group_2_1__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__UnlabelledStatement__Group_2_1__2__Impl();
@@ -21958,17 +21917,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__Group_2_1__2__Impl"
-    // InternalPascal.g:6871:1: rule__UnlabelledStatement__Group_2_1__2__Impl : ( ')' ) ;
+    // InternalPascal.g:6877:1: rule__UnlabelledStatement__Group_2_1__2__Impl : ( ')' ) ;
     public final void rule__UnlabelledStatement__Group_2_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6875:1: ( ( ')' ) )
-            // InternalPascal.g:6876:1: ( ')' )
+            // InternalPascal.g:6881:1: ( ( ')' ) )
+            // InternalPascal.g:6882:1: ( ')' )
             {
-            // InternalPascal.g:6876:1: ( ')' )
-            // InternalPascal.g:6877:2: ')'
+            // InternalPascal.g:6882:1: ( ')' )
+            // InternalPascal.g:6883:2: ')'
             {
              before(grammarAccess.getUnlabelledStatementAccess().getRightParenthesisKeyword_2_1_2()); 
             match(input,39,FOLLOW_2); 
@@ -21995,16 +21954,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleStatement__Group__0"
-    // InternalPascal.g:6887:1: rule__SimpleStatement__Group__0 : rule__SimpleStatement__Group__0__Impl rule__SimpleStatement__Group__1 ;
+    // InternalPascal.g:6893:1: rule__SimpleStatement__Group__0 : rule__SimpleStatement__Group__0__Impl rule__SimpleStatement__Group__1 ;
     public final void rule__SimpleStatement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6891:1: ( rule__SimpleStatement__Group__0__Impl rule__SimpleStatement__Group__1 )
-            // InternalPascal.g:6892:2: rule__SimpleStatement__Group__0__Impl rule__SimpleStatement__Group__1
+            // InternalPascal.g:6897:1: ( rule__SimpleStatement__Group__0__Impl rule__SimpleStatement__Group__1 )
+            // InternalPascal.g:6898:2: rule__SimpleStatement__Group__0__Impl rule__SimpleStatement__Group__1
             {
-            pushFollow(FOLLOW_40);
+            pushFollow(FOLLOW_41);
             rule__SimpleStatement__Group__0__Impl();
 
             state._fsp--;
@@ -22033,21 +21992,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleStatement__Group__0__Impl"
-    // InternalPascal.g:6899:1: rule__SimpleStatement__Group__0__Impl : ( () ) ;
+    // InternalPascal.g:6905:1: rule__SimpleStatement__Group__0__Impl : ( () ) ;
     public final void rule__SimpleStatement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6903:1: ( ( () ) )
-            // InternalPascal.g:6904:1: ( () )
+            // InternalPascal.g:6909:1: ( ( () ) )
+            // InternalPascal.g:6910:1: ( () )
             {
-            // InternalPascal.g:6904:1: ( () )
-            // InternalPascal.g:6905:2: ()
+            // InternalPascal.g:6910:1: ( () )
+            // InternalPascal.g:6911:2: ()
             {
              before(grammarAccess.getSimpleStatementAccess().getSimpleStatementAction_0()); 
-            // InternalPascal.g:6906:2: ()
-            // InternalPascal.g:6906:3: 
+            // InternalPascal.g:6912:2: ()
+            // InternalPascal.g:6912:3: 
             {
             }
 
@@ -22070,14 +22029,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleStatement__Group__1"
-    // InternalPascal.g:6914:1: rule__SimpleStatement__Group__1 : rule__SimpleStatement__Group__1__Impl ;
+    // InternalPascal.g:6920:1: rule__SimpleStatement__Group__1 : rule__SimpleStatement__Group__1__Impl ;
     public final void rule__SimpleStatement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6918:1: ( rule__SimpleStatement__Group__1__Impl )
-            // InternalPascal.g:6919:2: rule__SimpleStatement__Group__1__Impl
+            // InternalPascal.g:6924:1: ( rule__SimpleStatement__Group__1__Impl )
+            // InternalPascal.g:6925:2: rule__SimpleStatement__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__SimpleStatement__Group__1__Impl();
@@ -22103,20 +22062,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleStatement__Group__1__Impl"
-    // InternalPascal.g:6925:1: rule__SimpleStatement__Group__1__Impl : ( ( rule__SimpleStatement__Alternatives_1 )? ) ;
+    // InternalPascal.g:6931:1: rule__SimpleStatement__Group__1__Impl : ( ( rule__SimpleStatement__Alternatives_1 )? ) ;
     public final void rule__SimpleStatement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6929:1: ( ( ( rule__SimpleStatement__Alternatives_1 )? ) )
-            // InternalPascal.g:6930:1: ( ( rule__SimpleStatement__Alternatives_1 )? )
+            // InternalPascal.g:6935:1: ( ( ( rule__SimpleStatement__Alternatives_1 )? ) )
+            // InternalPascal.g:6936:1: ( ( rule__SimpleStatement__Alternatives_1 )? )
             {
-            // InternalPascal.g:6930:1: ( ( rule__SimpleStatement__Alternatives_1 )? )
-            // InternalPascal.g:6931:2: ( rule__SimpleStatement__Alternatives_1 )?
+            // InternalPascal.g:6936:1: ( ( rule__SimpleStatement__Alternatives_1 )? )
+            // InternalPascal.g:6937:2: ( rule__SimpleStatement__Alternatives_1 )?
             {
              before(grammarAccess.getSimpleStatementAccess().getAlternatives_1()); 
-            // InternalPascal.g:6932:2: ( rule__SimpleStatement__Alternatives_1 )?
+            // InternalPascal.g:6938:2: ( rule__SimpleStatement__Alternatives_1 )?
             int alt49=2;
             int LA49_0 = input.LA(1);
 
@@ -22125,7 +22084,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt49) {
                 case 1 :
-                    // InternalPascal.g:6932:3: rule__SimpleStatement__Alternatives_1
+                    // InternalPascal.g:6938:3: rule__SimpleStatement__Alternatives_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__SimpleStatement__Alternatives_1();
@@ -22161,16 +22120,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignmentStatement__Group__0"
-    // InternalPascal.g:6941:1: rule__AssignmentStatement__Group__0 : rule__AssignmentStatement__Group__0__Impl rule__AssignmentStatement__Group__1 ;
+    // InternalPascal.g:6947:1: rule__AssignmentStatement__Group__0 : rule__AssignmentStatement__Group__0__Impl rule__AssignmentStatement__Group__1 ;
     public final void rule__AssignmentStatement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6945:1: ( rule__AssignmentStatement__Group__0__Impl rule__AssignmentStatement__Group__1 )
-            // InternalPascal.g:6946:2: rule__AssignmentStatement__Group__0__Impl rule__AssignmentStatement__Group__1
+            // InternalPascal.g:6951:1: ( rule__AssignmentStatement__Group__0__Impl rule__AssignmentStatement__Group__1 )
+            // InternalPascal.g:6952:2: rule__AssignmentStatement__Group__0__Impl rule__AssignmentStatement__Group__1
             {
-            pushFollow(FOLLOW_41);
+            pushFollow(FOLLOW_42);
             rule__AssignmentStatement__Group__0__Impl();
 
             state._fsp--;
@@ -22199,21 +22158,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignmentStatement__Group__0__Impl"
-    // InternalPascal.g:6953:1: rule__AssignmentStatement__Group__0__Impl : ( ( rule__AssignmentStatement__VariableAssignment_0 ) ) ;
+    // InternalPascal.g:6959:1: rule__AssignmentStatement__Group__0__Impl : ( ( rule__AssignmentStatement__VariableAssignment_0 ) ) ;
     public final void rule__AssignmentStatement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6957:1: ( ( ( rule__AssignmentStatement__VariableAssignment_0 ) ) )
-            // InternalPascal.g:6958:1: ( ( rule__AssignmentStatement__VariableAssignment_0 ) )
+            // InternalPascal.g:6963:1: ( ( ( rule__AssignmentStatement__VariableAssignment_0 ) ) )
+            // InternalPascal.g:6964:1: ( ( rule__AssignmentStatement__VariableAssignment_0 ) )
             {
-            // InternalPascal.g:6958:1: ( ( rule__AssignmentStatement__VariableAssignment_0 ) )
-            // InternalPascal.g:6959:2: ( rule__AssignmentStatement__VariableAssignment_0 )
+            // InternalPascal.g:6964:1: ( ( rule__AssignmentStatement__VariableAssignment_0 ) )
+            // InternalPascal.g:6965:2: ( rule__AssignmentStatement__VariableAssignment_0 )
             {
              before(grammarAccess.getAssignmentStatementAccess().getVariableAssignment_0()); 
-            // InternalPascal.g:6960:2: ( rule__AssignmentStatement__VariableAssignment_0 )
-            // InternalPascal.g:6960:3: rule__AssignmentStatement__VariableAssignment_0
+            // InternalPascal.g:6966:2: ( rule__AssignmentStatement__VariableAssignment_0 )
+            // InternalPascal.g:6966:3: rule__AssignmentStatement__VariableAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__AssignmentStatement__VariableAssignment_0();
@@ -22246,16 +22205,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignmentStatement__Group__1"
-    // InternalPascal.g:6968:1: rule__AssignmentStatement__Group__1 : rule__AssignmentStatement__Group__1__Impl rule__AssignmentStatement__Group__2 ;
+    // InternalPascal.g:6974:1: rule__AssignmentStatement__Group__1 : rule__AssignmentStatement__Group__1__Impl rule__AssignmentStatement__Group__2 ;
     public final void rule__AssignmentStatement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6972:1: ( rule__AssignmentStatement__Group__1__Impl rule__AssignmentStatement__Group__2 )
-            // InternalPascal.g:6973:2: rule__AssignmentStatement__Group__1__Impl rule__AssignmentStatement__Group__2
+            // InternalPascal.g:6978:1: ( rule__AssignmentStatement__Group__1__Impl rule__AssignmentStatement__Group__2 )
+            // InternalPascal.g:6979:2: rule__AssignmentStatement__Group__1__Impl rule__AssignmentStatement__Group__2
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__AssignmentStatement__Group__1__Impl();
 
             state._fsp--;
@@ -22284,17 +22243,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignmentStatement__Group__1__Impl"
-    // InternalPascal.g:6980:1: rule__AssignmentStatement__Group__1__Impl : ( ':=' ) ;
+    // InternalPascal.g:6986:1: rule__AssignmentStatement__Group__1__Impl : ( ':=' ) ;
     public final void rule__AssignmentStatement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6984:1: ( ( ':=' ) )
-            // InternalPascal.g:6985:1: ( ':=' )
+            // InternalPascal.g:6990:1: ( ( ':=' ) )
+            // InternalPascal.g:6991:1: ( ':=' )
             {
-            // InternalPascal.g:6985:1: ( ':=' )
-            // InternalPascal.g:6986:2: ':='
+            // InternalPascal.g:6991:1: ( ':=' )
+            // InternalPascal.g:6992:2: ':='
             {
              before(grammarAccess.getAssignmentStatementAccess().getColonEqualsSignKeyword_1()); 
             match(input,59,FOLLOW_2); 
@@ -22321,14 +22280,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignmentStatement__Group__2"
-    // InternalPascal.g:6995:1: rule__AssignmentStatement__Group__2 : rule__AssignmentStatement__Group__2__Impl ;
+    // InternalPascal.g:7001:1: rule__AssignmentStatement__Group__2 : rule__AssignmentStatement__Group__2__Impl ;
     public final void rule__AssignmentStatement__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:6999:1: ( rule__AssignmentStatement__Group__2__Impl )
-            // InternalPascal.g:7000:2: rule__AssignmentStatement__Group__2__Impl
+            // InternalPascal.g:7005:1: ( rule__AssignmentStatement__Group__2__Impl )
+            // InternalPascal.g:7006:2: rule__AssignmentStatement__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__AssignmentStatement__Group__2__Impl();
@@ -22354,21 +22313,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignmentStatement__Group__2__Impl"
-    // InternalPascal.g:7006:1: rule__AssignmentStatement__Group__2__Impl : ( ( rule__AssignmentStatement__ExpressionAssignment_2 ) ) ;
+    // InternalPascal.g:7012:1: rule__AssignmentStatement__Group__2__Impl : ( ( rule__AssignmentStatement__ExpressionAssignment_2 ) ) ;
     public final void rule__AssignmentStatement__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7010:1: ( ( ( rule__AssignmentStatement__ExpressionAssignment_2 ) ) )
-            // InternalPascal.g:7011:1: ( ( rule__AssignmentStatement__ExpressionAssignment_2 ) )
+            // InternalPascal.g:7016:1: ( ( ( rule__AssignmentStatement__ExpressionAssignment_2 ) ) )
+            // InternalPascal.g:7017:1: ( ( rule__AssignmentStatement__ExpressionAssignment_2 ) )
             {
-            // InternalPascal.g:7011:1: ( ( rule__AssignmentStatement__ExpressionAssignment_2 ) )
-            // InternalPascal.g:7012:2: ( rule__AssignmentStatement__ExpressionAssignment_2 )
+            // InternalPascal.g:7017:1: ( ( rule__AssignmentStatement__ExpressionAssignment_2 ) )
+            // InternalPascal.g:7018:2: ( rule__AssignmentStatement__ExpressionAssignment_2 )
             {
              before(grammarAccess.getAssignmentStatementAccess().getExpressionAssignment_2()); 
-            // InternalPascal.g:7013:2: ( rule__AssignmentStatement__ExpressionAssignment_2 )
-            // InternalPascal.g:7013:3: rule__AssignmentStatement__ExpressionAssignment_2
+            // InternalPascal.g:7019:2: ( rule__AssignmentStatement__ExpressionAssignment_2 )
+            // InternalPascal.g:7019:3: rule__AssignmentStatement__ExpressionAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__AssignmentStatement__ExpressionAssignment_2();
@@ -22401,16 +22360,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group__0"
-    // InternalPascal.g:7022:1: rule__Variable__Group__0 : rule__Variable__Group__0__Impl rule__Variable__Group__1 ;
+    // InternalPascal.g:7028:1: rule__Variable__Group__0 : rule__Variable__Group__0__Impl rule__Variable__Group__1 ;
     public final void rule__Variable__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7026:1: ( rule__Variable__Group__0__Impl rule__Variable__Group__1 )
-            // InternalPascal.g:7027:2: rule__Variable__Group__0__Impl rule__Variable__Group__1
+            // InternalPascal.g:7032:1: ( rule__Variable__Group__0__Impl rule__Variable__Group__1 )
+            // InternalPascal.g:7033:2: rule__Variable__Group__0__Impl rule__Variable__Group__1
             {
-            pushFollow(FOLLOW_42);
+            pushFollow(FOLLOW_43);
             rule__Variable__Group__0__Impl();
 
             state._fsp--;
@@ -22439,21 +22398,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group__0__Impl"
-    // InternalPascal.g:7034:1: rule__Variable__Group__0__Impl : ( ( rule__Variable__Alternatives_0 ) ) ;
+    // InternalPascal.g:7040:1: rule__Variable__Group__0__Impl : ( ( rule__Variable__Alternatives_0 ) ) ;
     public final void rule__Variable__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7038:1: ( ( ( rule__Variable__Alternatives_0 ) ) )
-            // InternalPascal.g:7039:1: ( ( rule__Variable__Alternatives_0 ) )
+            // InternalPascal.g:7044:1: ( ( ( rule__Variable__Alternatives_0 ) ) )
+            // InternalPascal.g:7045:1: ( ( rule__Variable__Alternatives_0 ) )
             {
-            // InternalPascal.g:7039:1: ( ( rule__Variable__Alternatives_0 ) )
-            // InternalPascal.g:7040:2: ( rule__Variable__Alternatives_0 )
+            // InternalPascal.g:7045:1: ( ( rule__Variable__Alternatives_0 ) )
+            // InternalPascal.g:7046:2: ( rule__Variable__Alternatives_0 )
             {
              before(grammarAccess.getVariableAccess().getAlternatives_0()); 
-            // InternalPascal.g:7041:2: ( rule__Variable__Alternatives_0 )
-            // InternalPascal.g:7041:3: rule__Variable__Alternatives_0
+            // InternalPascal.g:7047:2: ( rule__Variable__Alternatives_0 )
+            // InternalPascal.g:7047:3: rule__Variable__Alternatives_0
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Alternatives_0();
@@ -22486,14 +22445,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group__1"
-    // InternalPascal.g:7049:1: rule__Variable__Group__1 : rule__Variable__Group__1__Impl ;
+    // InternalPascal.g:7055:1: rule__Variable__Group__1 : rule__Variable__Group__1__Impl ;
     public final void rule__Variable__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7053:1: ( rule__Variable__Group__1__Impl )
-            // InternalPascal.g:7054:2: rule__Variable__Group__1__Impl
+            // InternalPascal.g:7059:1: ( rule__Variable__Group__1__Impl )
+            // InternalPascal.g:7060:2: rule__Variable__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Group__1__Impl();
@@ -22519,20 +22478,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group__1__Impl"
-    // InternalPascal.g:7060:1: rule__Variable__Group__1__Impl : ( ( rule__Variable__Alternatives_1 )* ) ;
+    // InternalPascal.g:7066:1: rule__Variable__Group__1__Impl : ( ( rule__Variable__Alternatives_1 )* ) ;
     public final void rule__Variable__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7064:1: ( ( ( rule__Variable__Alternatives_1 )* ) )
-            // InternalPascal.g:7065:1: ( ( rule__Variable__Alternatives_1 )* )
+            // InternalPascal.g:7070:1: ( ( ( rule__Variable__Alternatives_1 )* ) )
+            // InternalPascal.g:7071:1: ( ( rule__Variable__Alternatives_1 )* )
             {
-            // InternalPascal.g:7065:1: ( ( rule__Variable__Alternatives_1 )* )
-            // InternalPascal.g:7066:2: ( rule__Variable__Alternatives_1 )*
+            // InternalPascal.g:7071:1: ( ( rule__Variable__Alternatives_1 )* )
+            // InternalPascal.g:7072:2: ( rule__Variable__Alternatives_1 )*
             {
              before(grammarAccess.getVariableAccess().getAlternatives_1()); 
-            // InternalPascal.g:7067:2: ( rule__Variable__Alternatives_1 )*
+            // InternalPascal.g:7073:2: ( rule__Variable__Alternatives_1 )*
             loop50:
             do {
                 int alt50=2;
@@ -22545,9 +22504,9 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt50) {
             	case 1 :
-            	    // InternalPascal.g:7067:3: rule__Variable__Alternatives_1
+            	    // InternalPascal.g:7073:3: rule__Variable__Alternatives_1
             	    {
-            	    pushFollow(FOLLOW_43);
+            	    pushFollow(FOLLOW_44);
             	    rule__Variable__Alternatives_1();
 
             	    state._fsp--;
@@ -22584,14 +22543,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_0_0__0"
-    // InternalPascal.g:7076:1: rule__Variable__Group_0_0__0 : rule__Variable__Group_0_0__0__Impl rule__Variable__Group_0_0__1 ;
+    // InternalPascal.g:7082:1: rule__Variable__Group_0_0__0 : rule__Variable__Group_0_0__0__Impl rule__Variable__Group_0_0__1 ;
     public final void rule__Variable__Group_0_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7080:1: ( rule__Variable__Group_0_0__0__Impl rule__Variable__Group_0_0__1 )
-            // InternalPascal.g:7081:2: rule__Variable__Group_0_0__0__Impl rule__Variable__Group_0_0__1
+            // InternalPascal.g:7086:1: ( rule__Variable__Group_0_0__0__Impl rule__Variable__Group_0_0__1 )
+            // InternalPascal.g:7087:2: rule__Variable__Group_0_0__0__Impl rule__Variable__Group_0_0__1
             {
             pushFollow(FOLLOW_5);
             rule__Variable__Group_0_0__0__Impl();
@@ -22622,17 +22581,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_0_0__0__Impl"
-    // InternalPascal.g:7088:1: rule__Variable__Group_0_0__0__Impl : ( '@' ) ;
+    // InternalPascal.g:7094:1: rule__Variable__Group_0_0__0__Impl : ( '@' ) ;
     public final void rule__Variable__Group_0_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7092:1: ( ( '@' ) )
-            // InternalPascal.g:7093:1: ( '@' )
+            // InternalPascal.g:7098:1: ( ( '@' ) )
+            // InternalPascal.g:7099:1: ( '@' )
             {
-            // InternalPascal.g:7093:1: ( '@' )
-            // InternalPascal.g:7094:2: '@'
+            // InternalPascal.g:7099:1: ( '@' )
+            // InternalPascal.g:7100:2: '@'
             {
              before(grammarAccess.getVariableAccess().getCommercialAtKeyword_0_0_0()); 
             match(input,60,FOLLOW_2); 
@@ -22659,14 +22618,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_0_0__1"
-    // InternalPascal.g:7103:1: rule__Variable__Group_0_0__1 : rule__Variable__Group_0_0__1__Impl ;
+    // InternalPascal.g:7109:1: rule__Variable__Group_0_0__1 : rule__Variable__Group_0_0__1__Impl ;
     public final void rule__Variable__Group_0_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7107:1: ( rule__Variable__Group_0_0__1__Impl )
-            // InternalPascal.g:7108:2: rule__Variable__Group_0_0__1__Impl
+            // InternalPascal.g:7113:1: ( rule__Variable__Group_0_0__1__Impl )
+            // InternalPascal.g:7114:2: rule__Variable__Group_0_0__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Group_0_0__1__Impl();
@@ -22692,21 +22651,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_0_0__1__Impl"
-    // InternalPascal.g:7114:1: rule__Variable__Group_0_0__1__Impl : ( ( rule__Variable__IdentifierAssignment_0_0_1 ) ) ;
+    // InternalPascal.g:7120:1: rule__Variable__Group_0_0__1__Impl : ( ( rule__Variable__IdentifierAssignment_0_0_1 ) ) ;
     public final void rule__Variable__Group_0_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7118:1: ( ( ( rule__Variable__IdentifierAssignment_0_0_1 ) ) )
-            // InternalPascal.g:7119:1: ( ( rule__Variable__IdentifierAssignment_0_0_1 ) )
+            // InternalPascal.g:7124:1: ( ( ( rule__Variable__IdentifierAssignment_0_0_1 ) ) )
+            // InternalPascal.g:7125:1: ( ( rule__Variable__IdentifierAssignment_0_0_1 ) )
             {
-            // InternalPascal.g:7119:1: ( ( rule__Variable__IdentifierAssignment_0_0_1 ) )
-            // InternalPascal.g:7120:2: ( rule__Variable__IdentifierAssignment_0_0_1 )
+            // InternalPascal.g:7125:1: ( ( rule__Variable__IdentifierAssignment_0_0_1 ) )
+            // InternalPascal.g:7126:2: ( rule__Variable__IdentifierAssignment_0_0_1 )
             {
              before(grammarAccess.getVariableAccess().getIdentifierAssignment_0_0_1()); 
-            // InternalPascal.g:7121:2: ( rule__Variable__IdentifierAssignment_0_0_1 )
-            // InternalPascal.g:7121:3: rule__Variable__IdentifierAssignment_0_0_1
+            // InternalPascal.g:7127:2: ( rule__Variable__IdentifierAssignment_0_0_1 )
+            // InternalPascal.g:7127:3: rule__Variable__IdentifierAssignment_0_0_1
             {
             pushFollow(FOLLOW_2);
             rule__Variable__IdentifierAssignment_0_0_1();
@@ -22739,16 +22698,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0__0"
-    // InternalPascal.g:7130:1: rule__Variable__Group_1_0__0 : rule__Variable__Group_1_0__0__Impl rule__Variable__Group_1_0__1 ;
+    // InternalPascal.g:7136:1: rule__Variable__Group_1_0__0 : rule__Variable__Group_1_0__0__Impl rule__Variable__Group_1_0__1 ;
     public final void rule__Variable__Group_1_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7134:1: ( rule__Variable__Group_1_0__0__Impl rule__Variable__Group_1_0__1 )
-            // InternalPascal.g:7135:2: rule__Variable__Group_1_0__0__Impl rule__Variable__Group_1_0__1
+            // InternalPascal.g:7140:1: ( rule__Variable__Group_1_0__0__Impl rule__Variable__Group_1_0__1 )
+            // InternalPascal.g:7141:2: rule__Variable__Group_1_0__0__Impl rule__Variable__Group_1_0__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__Variable__Group_1_0__0__Impl();
 
             state._fsp--;
@@ -22777,17 +22736,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0__0__Impl"
-    // InternalPascal.g:7142:1: rule__Variable__Group_1_0__0__Impl : ( '[' ) ;
+    // InternalPascal.g:7148:1: rule__Variable__Group_1_0__0__Impl : ( '[' ) ;
     public final void rule__Variable__Group_1_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7146:1: ( ( '[' ) )
-            // InternalPascal.g:7147:1: ( '[' )
+            // InternalPascal.g:7152:1: ( ( '[' ) )
+            // InternalPascal.g:7153:1: ( '[' )
             {
-            // InternalPascal.g:7147:1: ( '[' )
-            // InternalPascal.g:7148:2: '['
+            // InternalPascal.g:7153:1: ( '[' )
+            // InternalPascal.g:7154:2: '['
             {
              before(grammarAccess.getVariableAccess().getLeftSquareBracketKeyword_1_0_0()); 
             match(input,53,FOLLOW_2); 
@@ -22814,16 +22773,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0__1"
-    // InternalPascal.g:7157:1: rule__Variable__Group_1_0__1 : rule__Variable__Group_1_0__1__Impl rule__Variable__Group_1_0__2 ;
+    // InternalPascal.g:7163:1: rule__Variable__Group_1_0__1 : rule__Variable__Group_1_0__1__Impl rule__Variable__Group_1_0__2 ;
     public final void rule__Variable__Group_1_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7161:1: ( rule__Variable__Group_1_0__1__Impl rule__Variable__Group_1_0__2 )
-            // InternalPascal.g:7162:2: rule__Variable__Group_1_0__1__Impl rule__Variable__Group_1_0__2
+            // InternalPascal.g:7167:1: ( rule__Variable__Group_1_0__1__Impl rule__Variable__Group_1_0__2 )
+            // InternalPascal.g:7168:2: rule__Variable__Group_1_0__1__Impl rule__Variable__Group_1_0__2
             {
-            pushFollow(FOLLOW_44);
+            pushFollow(FOLLOW_45);
             rule__Variable__Group_1_0__1__Impl();
 
             state._fsp--;
@@ -22852,21 +22811,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0__1__Impl"
-    // InternalPascal.g:7169:1: rule__Variable__Group_1_0__1__Impl : ( ( rule__Variable__ExpressionAssignment_1_0_1 ) ) ;
+    // InternalPascal.g:7175:1: rule__Variable__Group_1_0__1__Impl : ( ( rule__Variable__ExpressionAssignment_1_0_1 ) ) ;
     public final void rule__Variable__Group_1_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7173:1: ( ( ( rule__Variable__ExpressionAssignment_1_0_1 ) ) )
-            // InternalPascal.g:7174:1: ( ( rule__Variable__ExpressionAssignment_1_0_1 ) )
+            // InternalPascal.g:7179:1: ( ( ( rule__Variable__ExpressionAssignment_1_0_1 ) ) )
+            // InternalPascal.g:7180:1: ( ( rule__Variable__ExpressionAssignment_1_0_1 ) )
             {
-            // InternalPascal.g:7174:1: ( ( rule__Variable__ExpressionAssignment_1_0_1 ) )
-            // InternalPascal.g:7175:2: ( rule__Variable__ExpressionAssignment_1_0_1 )
+            // InternalPascal.g:7180:1: ( ( rule__Variable__ExpressionAssignment_1_0_1 ) )
+            // InternalPascal.g:7181:2: ( rule__Variable__ExpressionAssignment_1_0_1 )
             {
              before(grammarAccess.getVariableAccess().getExpressionAssignment_1_0_1()); 
-            // InternalPascal.g:7176:2: ( rule__Variable__ExpressionAssignment_1_0_1 )
-            // InternalPascal.g:7176:3: rule__Variable__ExpressionAssignment_1_0_1
+            // InternalPascal.g:7182:2: ( rule__Variable__ExpressionAssignment_1_0_1 )
+            // InternalPascal.g:7182:3: rule__Variable__ExpressionAssignment_1_0_1
             {
             pushFollow(FOLLOW_2);
             rule__Variable__ExpressionAssignment_1_0_1();
@@ -22899,16 +22858,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0__2"
-    // InternalPascal.g:7184:1: rule__Variable__Group_1_0__2 : rule__Variable__Group_1_0__2__Impl rule__Variable__Group_1_0__3 ;
+    // InternalPascal.g:7190:1: rule__Variable__Group_1_0__2 : rule__Variable__Group_1_0__2__Impl rule__Variable__Group_1_0__3 ;
     public final void rule__Variable__Group_1_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7188:1: ( rule__Variable__Group_1_0__2__Impl rule__Variable__Group_1_0__3 )
-            // InternalPascal.g:7189:2: rule__Variable__Group_1_0__2__Impl rule__Variable__Group_1_0__3
+            // InternalPascal.g:7194:1: ( rule__Variable__Group_1_0__2__Impl rule__Variable__Group_1_0__3 )
+            // InternalPascal.g:7195:2: rule__Variable__Group_1_0__2__Impl rule__Variable__Group_1_0__3
             {
-            pushFollow(FOLLOW_44);
+            pushFollow(FOLLOW_45);
             rule__Variable__Group_1_0__2__Impl();
 
             state._fsp--;
@@ -22937,20 +22896,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0__2__Impl"
-    // InternalPascal.g:7196:1: rule__Variable__Group_1_0__2__Impl : ( ( rule__Variable__Group_1_0_2__0 )* ) ;
+    // InternalPascal.g:7202:1: rule__Variable__Group_1_0__2__Impl : ( ( rule__Variable__Group_1_0_2__0 )* ) ;
     public final void rule__Variable__Group_1_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7200:1: ( ( ( rule__Variable__Group_1_0_2__0 )* ) )
-            // InternalPascal.g:7201:1: ( ( rule__Variable__Group_1_0_2__0 )* )
+            // InternalPascal.g:7206:1: ( ( ( rule__Variable__Group_1_0_2__0 )* ) )
+            // InternalPascal.g:7207:1: ( ( rule__Variable__Group_1_0_2__0 )* )
             {
-            // InternalPascal.g:7201:1: ( ( rule__Variable__Group_1_0_2__0 )* )
-            // InternalPascal.g:7202:2: ( rule__Variable__Group_1_0_2__0 )*
+            // InternalPascal.g:7207:1: ( ( rule__Variable__Group_1_0_2__0 )* )
+            // InternalPascal.g:7208:2: ( rule__Variable__Group_1_0_2__0 )*
             {
              before(grammarAccess.getVariableAccess().getGroup_1_0_2()); 
-            // InternalPascal.g:7203:2: ( rule__Variable__Group_1_0_2__0 )*
+            // InternalPascal.g:7209:2: ( rule__Variable__Group_1_0_2__0 )*
             loop51:
             do {
                 int alt51=2;
@@ -22963,7 +22922,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt51) {
             	case 1 :
-            	    // InternalPascal.g:7203:3: rule__Variable__Group_1_0_2__0
+            	    // InternalPascal.g:7209:3: rule__Variable__Group_1_0_2__0
             	    {
             	    pushFollow(FOLLOW_9);
             	    rule__Variable__Group_1_0_2__0();
@@ -23002,14 +22961,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0__3"
-    // InternalPascal.g:7211:1: rule__Variable__Group_1_0__3 : rule__Variable__Group_1_0__3__Impl ;
+    // InternalPascal.g:7217:1: rule__Variable__Group_1_0__3 : rule__Variable__Group_1_0__3__Impl ;
     public final void rule__Variable__Group_1_0__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7215:1: ( rule__Variable__Group_1_0__3__Impl )
-            // InternalPascal.g:7216:2: rule__Variable__Group_1_0__3__Impl
+            // InternalPascal.g:7221:1: ( rule__Variable__Group_1_0__3__Impl )
+            // InternalPascal.g:7222:2: rule__Variable__Group_1_0__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Group_1_0__3__Impl();
@@ -23035,17 +22994,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0__3__Impl"
-    // InternalPascal.g:7222:1: rule__Variable__Group_1_0__3__Impl : ( ']' ) ;
+    // InternalPascal.g:7228:1: rule__Variable__Group_1_0__3__Impl : ( ']' ) ;
     public final void rule__Variable__Group_1_0__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7226:1: ( ( ']' ) )
-            // InternalPascal.g:7227:1: ( ']' )
+            // InternalPascal.g:7232:1: ( ( ']' ) )
+            // InternalPascal.g:7233:1: ( ']' )
             {
-            // InternalPascal.g:7227:1: ( ']' )
-            // InternalPascal.g:7228:2: ']'
+            // InternalPascal.g:7233:1: ( ']' )
+            // InternalPascal.g:7234:2: ']'
             {
              before(grammarAccess.getVariableAccess().getRightSquareBracketKeyword_1_0_3()); 
             match(input,54,FOLLOW_2); 
@@ -23072,16 +23031,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0_2__0"
-    // InternalPascal.g:7238:1: rule__Variable__Group_1_0_2__0 : rule__Variable__Group_1_0_2__0__Impl rule__Variable__Group_1_0_2__1 ;
+    // InternalPascal.g:7244:1: rule__Variable__Group_1_0_2__0 : rule__Variable__Group_1_0_2__0__Impl rule__Variable__Group_1_0_2__1 ;
     public final void rule__Variable__Group_1_0_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7242:1: ( rule__Variable__Group_1_0_2__0__Impl rule__Variable__Group_1_0_2__1 )
-            // InternalPascal.g:7243:2: rule__Variable__Group_1_0_2__0__Impl rule__Variable__Group_1_0_2__1
+            // InternalPascal.g:7248:1: ( rule__Variable__Group_1_0_2__0__Impl rule__Variable__Group_1_0_2__1 )
+            // InternalPascal.g:7249:2: rule__Variable__Group_1_0_2__0__Impl rule__Variable__Group_1_0_2__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__Variable__Group_1_0_2__0__Impl();
 
             state._fsp--;
@@ -23110,17 +23069,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0_2__0__Impl"
-    // InternalPascal.g:7250:1: rule__Variable__Group_1_0_2__0__Impl : ( ',' ) ;
+    // InternalPascal.g:7256:1: rule__Variable__Group_1_0_2__0__Impl : ( ',' ) ;
     public final void rule__Variable__Group_1_0_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7254:1: ( ( ',' ) )
-            // InternalPascal.g:7255:1: ( ',' )
+            // InternalPascal.g:7260:1: ( ( ',' ) )
+            // InternalPascal.g:7261:1: ( ',' )
             {
-            // InternalPascal.g:7255:1: ( ',' )
-            // InternalPascal.g:7256:2: ','
+            // InternalPascal.g:7261:1: ( ',' )
+            // InternalPascal.g:7262:2: ','
             {
              before(grammarAccess.getVariableAccess().getCommaKeyword_1_0_2_0()); 
             match(input,40,FOLLOW_2); 
@@ -23147,14 +23106,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0_2__1"
-    // InternalPascal.g:7265:1: rule__Variable__Group_1_0_2__1 : rule__Variable__Group_1_0_2__1__Impl ;
+    // InternalPascal.g:7271:1: rule__Variable__Group_1_0_2__1 : rule__Variable__Group_1_0_2__1__Impl ;
     public final void rule__Variable__Group_1_0_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7269:1: ( rule__Variable__Group_1_0_2__1__Impl )
-            // InternalPascal.g:7270:2: rule__Variable__Group_1_0_2__1__Impl
+            // InternalPascal.g:7275:1: ( rule__Variable__Group_1_0_2__1__Impl )
+            // InternalPascal.g:7276:2: rule__Variable__Group_1_0_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Group_1_0_2__1__Impl();
@@ -23180,21 +23139,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_0_2__1__Impl"
-    // InternalPascal.g:7276:1: rule__Variable__Group_1_0_2__1__Impl : ( ( rule__Variable__Expression1Assignment_1_0_2_1 ) ) ;
+    // InternalPascal.g:7282:1: rule__Variable__Group_1_0_2__1__Impl : ( ( rule__Variable__Expression1Assignment_1_0_2_1 ) ) ;
     public final void rule__Variable__Group_1_0_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7280:1: ( ( ( rule__Variable__Expression1Assignment_1_0_2_1 ) ) )
-            // InternalPascal.g:7281:1: ( ( rule__Variable__Expression1Assignment_1_0_2_1 ) )
+            // InternalPascal.g:7286:1: ( ( ( rule__Variable__Expression1Assignment_1_0_2_1 ) ) )
+            // InternalPascal.g:7287:1: ( ( rule__Variable__Expression1Assignment_1_0_2_1 ) )
             {
-            // InternalPascal.g:7281:1: ( ( rule__Variable__Expression1Assignment_1_0_2_1 ) )
-            // InternalPascal.g:7282:2: ( rule__Variable__Expression1Assignment_1_0_2_1 )
+            // InternalPascal.g:7287:1: ( ( rule__Variable__Expression1Assignment_1_0_2_1 ) )
+            // InternalPascal.g:7288:2: ( rule__Variable__Expression1Assignment_1_0_2_1 )
             {
              before(grammarAccess.getVariableAccess().getExpression1Assignment_1_0_2_1()); 
-            // InternalPascal.g:7283:2: ( rule__Variable__Expression1Assignment_1_0_2_1 )
-            // InternalPascal.g:7283:3: rule__Variable__Expression1Assignment_1_0_2_1
+            // InternalPascal.g:7289:2: ( rule__Variable__Expression1Assignment_1_0_2_1 )
+            // InternalPascal.g:7289:3: rule__Variable__Expression1Assignment_1_0_2_1
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Expression1Assignment_1_0_2_1();
@@ -23227,16 +23186,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1__0"
-    // InternalPascal.g:7292:1: rule__Variable__Group_1_1__0 : rule__Variable__Group_1_1__0__Impl rule__Variable__Group_1_1__1 ;
+    // InternalPascal.g:7298:1: rule__Variable__Group_1_1__0 : rule__Variable__Group_1_1__0__Impl rule__Variable__Group_1_1__1 ;
     public final void rule__Variable__Group_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7296:1: ( rule__Variable__Group_1_1__0__Impl rule__Variable__Group_1_1__1 )
-            // InternalPascal.g:7297:2: rule__Variable__Group_1_1__0__Impl rule__Variable__Group_1_1__1
+            // InternalPascal.g:7302:1: ( rule__Variable__Group_1_1__0__Impl rule__Variable__Group_1_1__1 )
+            // InternalPascal.g:7303:2: rule__Variable__Group_1_1__0__Impl rule__Variable__Group_1_1__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__Variable__Group_1_1__0__Impl();
 
             state._fsp--;
@@ -23265,17 +23224,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1__0__Impl"
-    // InternalPascal.g:7304:1: rule__Variable__Group_1_1__0__Impl : ( '(.' ) ;
+    // InternalPascal.g:7310:1: rule__Variable__Group_1_1__0__Impl : ( '(.' ) ;
     public final void rule__Variable__Group_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7308:1: ( ( '(.' ) )
-            // InternalPascal.g:7309:1: ( '(.' )
+            // InternalPascal.g:7314:1: ( ( '(.' ) )
+            // InternalPascal.g:7315:1: ( '(.' )
             {
-            // InternalPascal.g:7309:1: ( '(.' )
-            // InternalPascal.g:7310:2: '(.'
+            // InternalPascal.g:7315:1: ( '(.' )
+            // InternalPascal.g:7316:2: '(.'
             {
              before(grammarAccess.getVariableAccess().getLeftParenthesisFullStopKeyword_1_1_0()); 
             match(input,61,FOLLOW_2); 
@@ -23302,16 +23261,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1__1"
-    // InternalPascal.g:7319:1: rule__Variable__Group_1_1__1 : rule__Variable__Group_1_1__1__Impl rule__Variable__Group_1_1__2 ;
+    // InternalPascal.g:7325:1: rule__Variable__Group_1_1__1 : rule__Variable__Group_1_1__1__Impl rule__Variable__Group_1_1__2 ;
     public final void rule__Variable__Group_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7323:1: ( rule__Variable__Group_1_1__1__Impl rule__Variable__Group_1_1__2 )
-            // InternalPascal.g:7324:2: rule__Variable__Group_1_1__1__Impl rule__Variable__Group_1_1__2
+            // InternalPascal.g:7329:1: ( rule__Variable__Group_1_1__1__Impl rule__Variable__Group_1_1__2 )
+            // InternalPascal.g:7330:2: rule__Variable__Group_1_1__1__Impl rule__Variable__Group_1_1__2
             {
-            pushFollow(FOLLOW_45);
+            pushFollow(FOLLOW_46);
             rule__Variable__Group_1_1__1__Impl();
 
             state._fsp--;
@@ -23340,21 +23299,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1__1__Impl"
-    // InternalPascal.g:7331:1: rule__Variable__Group_1_1__1__Impl : ( ( rule__Variable__Expression2Assignment_1_1_1 ) ) ;
+    // InternalPascal.g:7337:1: rule__Variable__Group_1_1__1__Impl : ( ( rule__Variable__Expression2Assignment_1_1_1 ) ) ;
     public final void rule__Variable__Group_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7335:1: ( ( ( rule__Variable__Expression2Assignment_1_1_1 ) ) )
-            // InternalPascal.g:7336:1: ( ( rule__Variable__Expression2Assignment_1_1_1 ) )
+            // InternalPascal.g:7341:1: ( ( ( rule__Variable__Expression2Assignment_1_1_1 ) ) )
+            // InternalPascal.g:7342:1: ( ( rule__Variable__Expression2Assignment_1_1_1 ) )
             {
-            // InternalPascal.g:7336:1: ( ( rule__Variable__Expression2Assignment_1_1_1 ) )
-            // InternalPascal.g:7337:2: ( rule__Variable__Expression2Assignment_1_1_1 )
+            // InternalPascal.g:7342:1: ( ( rule__Variable__Expression2Assignment_1_1_1 ) )
+            // InternalPascal.g:7343:2: ( rule__Variable__Expression2Assignment_1_1_1 )
             {
              before(grammarAccess.getVariableAccess().getExpression2Assignment_1_1_1()); 
-            // InternalPascal.g:7338:2: ( rule__Variable__Expression2Assignment_1_1_1 )
-            // InternalPascal.g:7338:3: rule__Variable__Expression2Assignment_1_1_1
+            // InternalPascal.g:7344:2: ( rule__Variable__Expression2Assignment_1_1_1 )
+            // InternalPascal.g:7344:3: rule__Variable__Expression2Assignment_1_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Expression2Assignment_1_1_1();
@@ -23387,16 +23346,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1__2"
-    // InternalPascal.g:7346:1: rule__Variable__Group_1_1__2 : rule__Variable__Group_1_1__2__Impl rule__Variable__Group_1_1__3 ;
+    // InternalPascal.g:7352:1: rule__Variable__Group_1_1__2 : rule__Variable__Group_1_1__2__Impl rule__Variable__Group_1_1__3 ;
     public final void rule__Variable__Group_1_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7350:1: ( rule__Variable__Group_1_1__2__Impl rule__Variable__Group_1_1__3 )
-            // InternalPascal.g:7351:2: rule__Variable__Group_1_1__2__Impl rule__Variable__Group_1_1__3
+            // InternalPascal.g:7356:1: ( rule__Variable__Group_1_1__2__Impl rule__Variable__Group_1_1__3 )
+            // InternalPascal.g:7357:2: rule__Variable__Group_1_1__2__Impl rule__Variable__Group_1_1__3
             {
-            pushFollow(FOLLOW_45);
+            pushFollow(FOLLOW_46);
             rule__Variable__Group_1_1__2__Impl();
 
             state._fsp--;
@@ -23425,20 +23384,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1__2__Impl"
-    // InternalPascal.g:7358:1: rule__Variable__Group_1_1__2__Impl : ( ( rule__Variable__Group_1_1_2__0 )* ) ;
+    // InternalPascal.g:7364:1: rule__Variable__Group_1_1__2__Impl : ( ( rule__Variable__Group_1_1_2__0 )* ) ;
     public final void rule__Variable__Group_1_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7362:1: ( ( ( rule__Variable__Group_1_1_2__0 )* ) )
-            // InternalPascal.g:7363:1: ( ( rule__Variable__Group_1_1_2__0 )* )
+            // InternalPascal.g:7368:1: ( ( ( rule__Variable__Group_1_1_2__0 )* ) )
+            // InternalPascal.g:7369:1: ( ( rule__Variable__Group_1_1_2__0 )* )
             {
-            // InternalPascal.g:7363:1: ( ( rule__Variable__Group_1_1_2__0 )* )
-            // InternalPascal.g:7364:2: ( rule__Variable__Group_1_1_2__0 )*
+            // InternalPascal.g:7369:1: ( ( rule__Variable__Group_1_1_2__0 )* )
+            // InternalPascal.g:7370:2: ( rule__Variable__Group_1_1_2__0 )*
             {
              before(grammarAccess.getVariableAccess().getGroup_1_1_2()); 
-            // InternalPascal.g:7365:2: ( rule__Variable__Group_1_1_2__0 )*
+            // InternalPascal.g:7371:2: ( rule__Variable__Group_1_1_2__0 )*
             loop52:
             do {
                 int alt52=2;
@@ -23451,7 +23410,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt52) {
             	case 1 :
-            	    // InternalPascal.g:7365:3: rule__Variable__Group_1_1_2__0
+            	    // InternalPascal.g:7371:3: rule__Variable__Group_1_1_2__0
             	    {
             	    pushFollow(FOLLOW_9);
             	    rule__Variable__Group_1_1_2__0();
@@ -23490,14 +23449,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1__3"
-    // InternalPascal.g:7373:1: rule__Variable__Group_1_1__3 : rule__Variable__Group_1_1__3__Impl ;
+    // InternalPascal.g:7379:1: rule__Variable__Group_1_1__3 : rule__Variable__Group_1_1__3__Impl ;
     public final void rule__Variable__Group_1_1__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7377:1: ( rule__Variable__Group_1_1__3__Impl )
-            // InternalPascal.g:7378:2: rule__Variable__Group_1_1__3__Impl
+            // InternalPascal.g:7383:1: ( rule__Variable__Group_1_1__3__Impl )
+            // InternalPascal.g:7384:2: rule__Variable__Group_1_1__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Group_1_1__3__Impl();
@@ -23523,17 +23482,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1__3__Impl"
-    // InternalPascal.g:7384:1: rule__Variable__Group_1_1__3__Impl : ( '.)' ) ;
+    // InternalPascal.g:7390:1: rule__Variable__Group_1_1__3__Impl : ( '.)' ) ;
     public final void rule__Variable__Group_1_1__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7388:1: ( ( '.)' ) )
-            // InternalPascal.g:7389:1: ( '.)' )
+            // InternalPascal.g:7394:1: ( ( '.)' ) )
+            // InternalPascal.g:7395:1: ( '.)' )
             {
-            // InternalPascal.g:7389:1: ( '.)' )
-            // InternalPascal.g:7390:2: '.)'
+            // InternalPascal.g:7395:1: ( '.)' )
+            // InternalPascal.g:7396:2: '.)'
             {
              before(grammarAccess.getVariableAccess().getFullStopRightParenthesisKeyword_1_1_3()); 
             match(input,62,FOLLOW_2); 
@@ -23560,16 +23519,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1_2__0"
-    // InternalPascal.g:7400:1: rule__Variable__Group_1_1_2__0 : rule__Variable__Group_1_1_2__0__Impl rule__Variable__Group_1_1_2__1 ;
+    // InternalPascal.g:7406:1: rule__Variable__Group_1_1_2__0 : rule__Variable__Group_1_1_2__0__Impl rule__Variable__Group_1_1_2__1 ;
     public final void rule__Variable__Group_1_1_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7404:1: ( rule__Variable__Group_1_1_2__0__Impl rule__Variable__Group_1_1_2__1 )
-            // InternalPascal.g:7405:2: rule__Variable__Group_1_1_2__0__Impl rule__Variable__Group_1_1_2__1
+            // InternalPascal.g:7410:1: ( rule__Variable__Group_1_1_2__0__Impl rule__Variable__Group_1_1_2__1 )
+            // InternalPascal.g:7411:2: rule__Variable__Group_1_1_2__0__Impl rule__Variable__Group_1_1_2__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__Variable__Group_1_1_2__0__Impl();
 
             state._fsp--;
@@ -23598,17 +23557,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1_2__0__Impl"
-    // InternalPascal.g:7412:1: rule__Variable__Group_1_1_2__0__Impl : ( ',' ) ;
+    // InternalPascal.g:7418:1: rule__Variable__Group_1_1_2__0__Impl : ( ',' ) ;
     public final void rule__Variable__Group_1_1_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7416:1: ( ( ',' ) )
-            // InternalPascal.g:7417:1: ( ',' )
+            // InternalPascal.g:7422:1: ( ( ',' ) )
+            // InternalPascal.g:7423:1: ( ',' )
             {
-            // InternalPascal.g:7417:1: ( ',' )
-            // InternalPascal.g:7418:2: ','
+            // InternalPascal.g:7423:1: ( ',' )
+            // InternalPascal.g:7424:2: ','
             {
              before(grammarAccess.getVariableAccess().getCommaKeyword_1_1_2_0()); 
             match(input,40,FOLLOW_2); 
@@ -23635,14 +23594,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1_2__1"
-    // InternalPascal.g:7427:1: rule__Variable__Group_1_1_2__1 : rule__Variable__Group_1_1_2__1__Impl ;
+    // InternalPascal.g:7433:1: rule__Variable__Group_1_1_2__1 : rule__Variable__Group_1_1_2__1__Impl ;
     public final void rule__Variable__Group_1_1_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7431:1: ( rule__Variable__Group_1_1_2__1__Impl )
-            // InternalPascal.g:7432:2: rule__Variable__Group_1_1_2__1__Impl
+            // InternalPascal.g:7437:1: ( rule__Variable__Group_1_1_2__1__Impl )
+            // InternalPascal.g:7438:2: rule__Variable__Group_1_1_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Group_1_1_2__1__Impl();
@@ -23668,21 +23627,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_1_2__1__Impl"
-    // InternalPascal.g:7438:1: rule__Variable__Group_1_1_2__1__Impl : ( ( rule__Variable__Expression3Assignment_1_1_2_1 ) ) ;
+    // InternalPascal.g:7444:1: rule__Variable__Group_1_1_2__1__Impl : ( ( rule__Variable__Expression3Assignment_1_1_2_1 ) ) ;
     public final void rule__Variable__Group_1_1_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7442:1: ( ( ( rule__Variable__Expression3Assignment_1_1_2_1 ) ) )
-            // InternalPascal.g:7443:1: ( ( rule__Variable__Expression3Assignment_1_1_2_1 ) )
+            // InternalPascal.g:7448:1: ( ( ( rule__Variable__Expression3Assignment_1_1_2_1 ) ) )
+            // InternalPascal.g:7449:1: ( ( rule__Variable__Expression3Assignment_1_1_2_1 ) )
             {
-            // InternalPascal.g:7443:1: ( ( rule__Variable__Expression3Assignment_1_1_2_1 ) )
-            // InternalPascal.g:7444:2: ( rule__Variable__Expression3Assignment_1_1_2_1 )
+            // InternalPascal.g:7449:1: ( ( rule__Variable__Expression3Assignment_1_1_2_1 ) )
+            // InternalPascal.g:7450:2: ( rule__Variable__Expression3Assignment_1_1_2_1 )
             {
              before(grammarAccess.getVariableAccess().getExpression3Assignment_1_1_2_1()); 
-            // InternalPascal.g:7445:2: ( rule__Variable__Expression3Assignment_1_1_2_1 )
-            // InternalPascal.g:7445:3: rule__Variable__Expression3Assignment_1_1_2_1
+            // InternalPascal.g:7451:2: ( rule__Variable__Expression3Assignment_1_1_2_1 )
+            // InternalPascal.g:7451:3: rule__Variable__Expression3Assignment_1_1_2_1
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Expression3Assignment_1_1_2_1();
@@ -23715,14 +23674,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_2__0"
-    // InternalPascal.g:7454:1: rule__Variable__Group_1_2__0 : rule__Variable__Group_1_2__0__Impl rule__Variable__Group_1_2__1 ;
+    // InternalPascal.g:7460:1: rule__Variable__Group_1_2__0 : rule__Variable__Group_1_2__0__Impl rule__Variable__Group_1_2__1 ;
     public final void rule__Variable__Group_1_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7458:1: ( rule__Variable__Group_1_2__0__Impl rule__Variable__Group_1_2__1 )
-            // InternalPascal.g:7459:2: rule__Variable__Group_1_2__0__Impl rule__Variable__Group_1_2__1
+            // InternalPascal.g:7464:1: ( rule__Variable__Group_1_2__0__Impl rule__Variable__Group_1_2__1 )
+            // InternalPascal.g:7465:2: rule__Variable__Group_1_2__0__Impl rule__Variable__Group_1_2__1
             {
             pushFollow(FOLLOW_5);
             rule__Variable__Group_1_2__0__Impl();
@@ -23753,17 +23712,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_2__0__Impl"
-    // InternalPascal.g:7466:1: rule__Variable__Group_1_2__0__Impl : ( '.' ) ;
+    // InternalPascal.g:7472:1: rule__Variable__Group_1_2__0__Impl : ( '.' ) ;
     public final void rule__Variable__Group_1_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7470:1: ( ( '.' ) )
-            // InternalPascal.g:7471:1: ( '.' )
+            // InternalPascal.g:7476:1: ( ( '.' ) )
+            // InternalPascal.g:7477:1: ( '.' )
             {
-            // InternalPascal.g:7471:1: ( '.' )
-            // InternalPascal.g:7472:2: '.'
+            // InternalPascal.g:7477:1: ( '.' )
+            // InternalPascal.g:7478:2: '.'
             {
              before(grammarAccess.getVariableAccess().getFullStopKeyword_1_2_0()); 
             match(input,35,FOLLOW_2); 
@@ -23790,14 +23749,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_2__1"
-    // InternalPascal.g:7481:1: rule__Variable__Group_1_2__1 : rule__Variable__Group_1_2__1__Impl ;
+    // InternalPascal.g:7487:1: rule__Variable__Group_1_2__1 : rule__Variable__Group_1_2__1__Impl ;
     public final void rule__Variable__Group_1_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7485:1: ( rule__Variable__Group_1_2__1__Impl )
-            // InternalPascal.g:7486:2: rule__Variable__Group_1_2__1__Impl
+            // InternalPascal.g:7491:1: ( rule__Variable__Group_1_2__1__Impl )
+            // InternalPascal.g:7492:2: rule__Variable__Group_1_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Group_1_2__1__Impl();
@@ -23823,21 +23782,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Group_1_2__1__Impl"
-    // InternalPascal.g:7492:1: rule__Variable__Group_1_2__1__Impl : ( ( rule__Variable__Identifier2Assignment_1_2_1 ) ) ;
+    // InternalPascal.g:7498:1: rule__Variable__Group_1_2__1__Impl : ( ( rule__Variable__Identifier2Assignment_1_2_1 ) ) ;
     public final void rule__Variable__Group_1_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7496:1: ( ( ( rule__Variable__Identifier2Assignment_1_2_1 ) ) )
-            // InternalPascal.g:7497:1: ( ( rule__Variable__Identifier2Assignment_1_2_1 ) )
+            // InternalPascal.g:7502:1: ( ( ( rule__Variable__Identifier2Assignment_1_2_1 ) ) )
+            // InternalPascal.g:7503:1: ( ( rule__Variable__Identifier2Assignment_1_2_1 ) )
             {
-            // InternalPascal.g:7497:1: ( ( rule__Variable__Identifier2Assignment_1_2_1 ) )
-            // InternalPascal.g:7498:2: ( rule__Variable__Identifier2Assignment_1_2_1 )
+            // InternalPascal.g:7503:1: ( ( rule__Variable__Identifier2Assignment_1_2_1 ) )
+            // InternalPascal.g:7504:2: ( rule__Variable__Identifier2Assignment_1_2_1 )
             {
              before(grammarAccess.getVariableAccess().getIdentifier2Assignment_1_2_1()); 
-            // InternalPascal.g:7499:2: ( rule__Variable__Identifier2Assignment_1_2_1 )
-            // InternalPascal.g:7499:3: rule__Variable__Identifier2Assignment_1_2_1
+            // InternalPascal.g:7505:2: ( rule__Variable__Identifier2Assignment_1_2_1 )
+            // InternalPascal.g:7505:3: rule__Variable__Identifier2Assignment_1_2_1
             {
             pushFollow(FOLLOW_2);
             rule__Variable__Identifier2Assignment_1_2_1();
@@ -23870,16 +23829,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__Group__0"
-    // InternalPascal.g:7508:1: rule__Expression__Group__0 : rule__Expression__Group__0__Impl rule__Expression__Group__1 ;
+    // InternalPascal.g:7514:1: rule__Expression__Group__0 : rule__Expression__Group__0__Impl rule__Expression__Group__1 ;
     public final void rule__Expression__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7512:1: ( rule__Expression__Group__0__Impl rule__Expression__Group__1 )
-            // InternalPascal.g:7513:2: rule__Expression__Group__0__Impl rule__Expression__Group__1
+            // InternalPascal.g:7518:1: ( rule__Expression__Group__0__Impl rule__Expression__Group__1 )
+            // InternalPascal.g:7519:2: rule__Expression__Group__0__Impl rule__Expression__Group__1
             {
-            pushFollow(FOLLOW_46);
+            pushFollow(FOLLOW_47);
             rule__Expression__Group__0__Impl();
 
             state._fsp--;
@@ -23908,21 +23867,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__Group__0__Impl"
-    // InternalPascal.g:7520:1: rule__Expression__Group__0__Impl : ( ( rule__Expression__SimpleExpressionAssignment_0 ) ) ;
+    // InternalPascal.g:7526:1: rule__Expression__Group__0__Impl : ( ( rule__Expression__SimpleExpressionAssignment_0 ) ) ;
     public final void rule__Expression__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7524:1: ( ( ( rule__Expression__SimpleExpressionAssignment_0 ) ) )
-            // InternalPascal.g:7525:1: ( ( rule__Expression__SimpleExpressionAssignment_0 ) )
+            // InternalPascal.g:7530:1: ( ( ( rule__Expression__SimpleExpressionAssignment_0 ) ) )
+            // InternalPascal.g:7531:1: ( ( rule__Expression__SimpleExpressionAssignment_0 ) )
             {
-            // InternalPascal.g:7525:1: ( ( rule__Expression__SimpleExpressionAssignment_0 ) )
-            // InternalPascal.g:7526:2: ( rule__Expression__SimpleExpressionAssignment_0 )
+            // InternalPascal.g:7531:1: ( ( rule__Expression__SimpleExpressionAssignment_0 ) )
+            // InternalPascal.g:7532:2: ( rule__Expression__SimpleExpressionAssignment_0 )
             {
              before(grammarAccess.getExpressionAccess().getSimpleExpressionAssignment_0()); 
-            // InternalPascal.g:7527:2: ( rule__Expression__SimpleExpressionAssignment_0 )
-            // InternalPascal.g:7527:3: rule__Expression__SimpleExpressionAssignment_0
+            // InternalPascal.g:7533:2: ( rule__Expression__SimpleExpressionAssignment_0 )
+            // InternalPascal.g:7533:3: rule__Expression__SimpleExpressionAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Expression__SimpleExpressionAssignment_0();
@@ -23955,14 +23914,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__Group__1"
-    // InternalPascal.g:7535:1: rule__Expression__Group__1 : rule__Expression__Group__1__Impl ;
+    // InternalPascal.g:7541:1: rule__Expression__Group__1 : rule__Expression__Group__1__Impl ;
     public final void rule__Expression__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7539:1: ( rule__Expression__Group__1__Impl )
-            // InternalPascal.g:7540:2: rule__Expression__Group__1__Impl
+            // InternalPascal.g:7545:1: ( rule__Expression__Group__1__Impl )
+            // InternalPascal.g:7546:2: rule__Expression__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Expression__Group__1__Impl();
@@ -23988,20 +23947,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__Group__1__Impl"
-    // InternalPascal.g:7546:1: rule__Expression__Group__1__Impl : ( ( rule__Expression__Group_1__0 )? ) ;
+    // InternalPascal.g:7552:1: rule__Expression__Group__1__Impl : ( ( rule__Expression__Group_1__0 )? ) ;
     public final void rule__Expression__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7550:1: ( ( ( rule__Expression__Group_1__0 )? ) )
-            // InternalPascal.g:7551:1: ( ( rule__Expression__Group_1__0 )? )
+            // InternalPascal.g:7556:1: ( ( ( rule__Expression__Group_1__0 )? ) )
+            // InternalPascal.g:7557:1: ( ( rule__Expression__Group_1__0 )? )
             {
-            // InternalPascal.g:7551:1: ( ( rule__Expression__Group_1__0 )? )
-            // InternalPascal.g:7552:2: ( rule__Expression__Group_1__0 )?
+            // InternalPascal.g:7557:1: ( ( rule__Expression__Group_1__0 )? )
+            // InternalPascal.g:7558:2: ( rule__Expression__Group_1__0 )?
             {
              before(grammarAccess.getExpressionAccess().getGroup_1()); 
-            // InternalPascal.g:7553:2: ( rule__Expression__Group_1__0 )?
+            // InternalPascal.g:7559:2: ( rule__Expression__Group_1__0 )?
             int alt53=2;
             int LA53_0 = input.LA(1);
 
@@ -24010,7 +23969,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt53) {
                 case 1 :
-                    // InternalPascal.g:7553:3: rule__Expression__Group_1__0
+                    // InternalPascal.g:7559:3: rule__Expression__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Expression__Group_1__0();
@@ -24046,16 +24005,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__Group_1__0"
-    // InternalPascal.g:7562:1: rule__Expression__Group_1__0 : rule__Expression__Group_1__0__Impl rule__Expression__Group_1__1 ;
+    // InternalPascal.g:7568:1: rule__Expression__Group_1__0 : rule__Expression__Group_1__0__Impl rule__Expression__Group_1__1 ;
     public final void rule__Expression__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7566:1: ( rule__Expression__Group_1__0__Impl rule__Expression__Group_1__1 )
-            // InternalPascal.g:7567:2: rule__Expression__Group_1__0__Impl rule__Expression__Group_1__1
+            // InternalPascal.g:7572:1: ( rule__Expression__Group_1__0__Impl rule__Expression__Group_1__1 )
+            // InternalPascal.g:7573:2: rule__Expression__Group_1__0__Impl rule__Expression__Group_1__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__Expression__Group_1__0__Impl();
 
             state._fsp--;
@@ -24084,21 +24043,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__Group_1__0__Impl"
-    // InternalPascal.g:7574:1: rule__Expression__Group_1__0__Impl : ( ( rule__Expression__RelationaloperatorAssignment_1_0 ) ) ;
+    // InternalPascal.g:7580:1: rule__Expression__Group_1__0__Impl : ( ( rule__Expression__RelationaloperatorAssignment_1_0 ) ) ;
     public final void rule__Expression__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7578:1: ( ( ( rule__Expression__RelationaloperatorAssignment_1_0 ) ) )
-            // InternalPascal.g:7579:1: ( ( rule__Expression__RelationaloperatorAssignment_1_0 ) )
+            // InternalPascal.g:7584:1: ( ( ( rule__Expression__RelationaloperatorAssignment_1_0 ) ) )
+            // InternalPascal.g:7585:1: ( ( rule__Expression__RelationaloperatorAssignment_1_0 ) )
             {
-            // InternalPascal.g:7579:1: ( ( rule__Expression__RelationaloperatorAssignment_1_0 ) )
-            // InternalPascal.g:7580:2: ( rule__Expression__RelationaloperatorAssignment_1_0 )
+            // InternalPascal.g:7585:1: ( ( rule__Expression__RelationaloperatorAssignment_1_0 ) )
+            // InternalPascal.g:7586:2: ( rule__Expression__RelationaloperatorAssignment_1_0 )
             {
              before(grammarAccess.getExpressionAccess().getRelationaloperatorAssignment_1_0()); 
-            // InternalPascal.g:7581:2: ( rule__Expression__RelationaloperatorAssignment_1_0 )
-            // InternalPascal.g:7581:3: rule__Expression__RelationaloperatorAssignment_1_0
+            // InternalPascal.g:7587:2: ( rule__Expression__RelationaloperatorAssignment_1_0 )
+            // InternalPascal.g:7587:3: rule__Expression__RelationaloperatorAssignment_1_0
             {
             pushFollow(FOLLOW_2);
             rule__Expression__RelationaloperatorAssignment_1_0();
@@ -24131,14 +24090,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__Group_1__1"
-    // InternalPascal.g:7589:1: rule__Expression__Group_1__1 : rule__Expression__Group_1__1__Impl ;
+    // InternalPascal.g:7595:1: rule__Expression__Group_1__1 : rule__Expression__Group_1__1__Impl ;
     public final void rule__Expression__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7593:1: ( rule__Expression__Group_1__1__Impl )
-            // InternalPascal.g:7594:2: rule__Expression__Group_1__1__Impl
+            // InternalPascal.g:7599:1: ( rule__Expression__Group_1__1__Impl )
+            // InternalPascal.g:7600:2: rule__Expression__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Expression__Group_1__1__Impl();
@@ -24164,21 +24123,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__Group_1__1__Impl"
-    // InternalPascal.g:7600:1: rule__Expression__Group_1__1__Impl : ( ( rule__Expression__ExpressionAssignment_1_1 ) ) ;
+    // InternalPascal.g:7606:1: rule__Expression__Group_1__1__Impl : ( ( rule__Expression__ExpressionAssignment_1_1 ) ) ;
     public final void rule__Expression__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7604:1: ( ( ( rule__Expression__ExpressionAssignment_1_1 ) ) )
-            // InternalPascal.g:7605:1: ( ( rule__Expression__ExpressionAssignment_1_1 ) )
+            // InternalPascal.g:7610:1: ( ( ( rule__Expression__ExpressionAssignment_1_1 ) ) )
+            // InternalPascal.g:7611:1: ( ( rule__Expression__ExpressionAssignment_1_1 ) )
             {
-            // InternalPascal.g:7605:1: ( ( rule__Expression__ExpressionAssignment_1_1 ) )
-            // InternalPascal.g:7606:2: ( rule__Expression__ExpressionAssignment_1_1 )
+            // InternalPascal.g:7611:1: ( ( rule__Expression__ExpressionAssignment_1_1 ) )
+            // InternalPascal.g:7612:2: ( rule__Expression__ExpressionAssignment_1_1 )
             {
              before(grammarAccess.getExpressionAccess().getExpressionAssignment_1_1()); 
-            // InternalPascal.g:7607:2: ( rule__Expression__ExpressionAssignment_1_1 )
-            // InternalPascal.g:7607:3: rule__Expression__ExpressionAssignment_1_1
+            // InternalPascal.g:7613:2: ( rule__Expression__ExpressionAssignment_1_1 )
+            // InternalPascal.g:7613:3: rule__Expression__ExpressionAssignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Expression__ExpressionAssignment_1_1();
@@ -24211,16 +24170,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__Group__0"
-    // InternalPascal.g:7616:1: rule__SimpleExpression__Group__0 : rule__SimpleExpression__Group__0__Impl rule__SimpleExpression__Group__1 ;
+    // InternalPascal.g:7622:1: rule__SimpleExpression__Group__0 : rule__SimpleExpression__Group__0__Impl rule__SimpleExpression__Group__1 ;
     public final void rule__SimpleExpression__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7620:1: ( rule__SimpleExpression__Group__0__Impl rule__SimpleExpression__Group__1 )
-            // InternalPascal.g:7621:2: rule__SimpleExpression__Group__0__Impl rule__SimpleExpression__Group__1
+            // InternalPascal.g:7626:1: ( rule__SimpleExpression__Group__0__Impl rule__SimpleExpression__Group__1 )
+            // InternalPascal.g:7627:2: rule__SimpleExpression__Group__0__Impl rule__SimpleExpression__Group__1
             {
-            pushFollow(FOLLOW_47);
+            pushFollow(FOLLOW_48);
             rule__SimpleExpression__Group__0__Impl();
 
             state._fsp--;
@@ -24249,21 +24208,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__Group__0__Impl"
-    // InternalPascal.g:7628:1: rule__SimpleExpression__Group__0__Impl : ( ( rule__SimpleExpression__TermAssignment_0 ) ) ;
+    // InternalPascal.g:7634:1: rule__SimpleExpression__Group__0__Impl : ( ( rule__SimpleExpression__TermAssignment_0 ) ) ;
     public final void rule__SimpleExpression__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7632:1: ( ( ( rule__SimpleExpression__TermAssignment_0 ) ) )
-            // InternalPascal.g:7633:1: ( ( rule__SimpleExpression__TermAssignment_0 ) )
+            // InternalPascal.g:7638:1: ( ( ( rule__SimpleExpression__TermAssignment_0 ) ) )
+            // InternalPascal.g:7639:1: ( ( rule__SimpleExpression__TermAssignment_0 ) )
             {
-            // InternalPascal.g:7633:1: ( ( rule__SimpleExpression__TermAssignment_0 ) )
-            // InternalPascal.g:7634:2: ( rule__SimpleExpression__TermAssignment_0 )
+            // InternalPascal.g:7639:1: ( ( rule__SimpleExpression__TermAssignment_0 ) )
+            // InternalPascal.g:7640:2: ( rule__SimpleExpression__TermAssignment_0 )
             {
              before(grammarAccess.getSimpleExpressionAccess().getTermAssignment_0()); 
-            // InternalPascal.g:7635:2: ( rule__SimpleExpression__TermAssignment_0 )
-            // InternalPascal.g:7635:3: rule__SimpleExpression__TermAssignment_0
+            // InternalPascal.g:7641:2: ( rule__SimpleExpression__TermAssignment_0 )
+            // InternalPascal.g:7641:3: rule__SimpleExpression__TermAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__SimpleExpression__TermAssignment_0();
@@ -24296,14 +24255,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__Group__1"
-    // InternalPascal.g:7643:1: rule__SimpleExpression__Group__1 : rule__SimpleExpression__Group__1__Impl ;
+    // InternalPascal.g:7649:1: rule__SimpleExpression__Group__1 : rule__SimpleExpression__Group__1__Impl ;
     public final void rule__SimpleExpression__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7647:1: ( rule__SimpleExpression__Group__1__Impl )
-            // InternalPascal.g:7648:2: rule__SimpleExpression__Group__1__Impl
+            // InternalPascal.g:7653:1: ( rule__SimpleExpression__Group__1__Impl )
+            // InternalPascal.g:7654:2: rule__SimpleExpression__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__SimpleExpression__Group__1__Impl();
@@ -24329,20 +24288,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__Group__1__Impl"
-    // InternalPascal.g:7654:1: rule__SimpleExpression__Group__1__Impl : ( ( rule__SimpleExpression__Group_1__0 )? ) ;
+    // InternalPascal.g:7660:1: rule__SimpleExpression__Group__1__Impl : ( ( rule__SimpleExpression__Group_1__0 )? ) ;
     public final void rule__SimpleExpression__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7658:1: ( ( ( rule__SimpleExpression__Group_1__0 )? ) )
-            // InternalPascal.g:7659:1: ( ( rule__SimpleExpression__Group_1__0 )? )
+            // InternalPascal.g:7664:1: ( ( ( rule__SimpleExpression__Group_1__0 )? ) )
+            // InternalPascal.g:7665:1: ( ( rule__SimpleExpression__Group_1__0 )? )
             {
-            // InternalPascal.g:7659:1: ( ( rule__SimpleExpression__Group_1__0 )? )
-            // InternalPascal.g:7660:2: ( rule__SimpleExpression__Group_1__0 )?
+            // InternalPascal.g:7665:1: ( ( rule__SimpleExpression__Group_1__0 )? )
+            // InternalPascal.g:7666:2: ( rule__SimpleExpression__Group_1__0 )?
             {
              before(grammarAccess.getSimpleExpressionAccess().getGroup_1()); 
-            // InternalPascal.g:7661:2: ( rule__SimpleExpression__Group_1__0 )?
+            // InternalPascal.g:7667:2: ( rule__SimpleExpression__Group_1__0 )?
             int alt54=2;
             int LA54_0 = input.LA(1);
 
@@ -24351,7 +24310,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt54) {
                 case 1 :
-                    // InternalPascal.g:7661:3: rule__SimpleExpression__Group_1__0
+                    // InternalPascal.g:7667:3: rule__SimpleExpression__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__SimpleExpression__Group_1__0();
@@ -24387,16 +24346,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__Group_1__0"
-    // InternalPascal.g:7670:1: rule__SimpleExpression__Group_1__0 : rule__SimpleExpression__Group_1__0__Impl rule__SimpleExpression__Group_1__1 ;
+    // InternalPascal.g:7676:1: rule__SimpleExpression__Group_1__0 : rule__SimpleExpression__Group_1__0__Impl rule__SimpleExpression__Group_1__1 ;
     public final void rule__SimpleExpression__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7674:1: ( rule__SimpleExpression__Group_1__0__Impl rule__SimpleExpression__Group_1__1 )
-            // InternalPascal.g:7675:2: rule__SimpleExpression__Group_1__0__Impl rule__SimpleExpression__Group_1__1
+            // InternalPascal.g:7680:1: ( rule__SimpleExpression__Group_1__0__Impl rule__SimpleExpression__Group_1__1 )
+            // InternalPascal.g:7681:2: rule__SimpleExpression__Group_1__0__Impl rule__SimpleExpression__Group_1__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__SimpleExpression__Group_1__0__Impl();
 
             state._fsp--;
@@ -24425,21 +24384,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__Group_1__0__Impl"
-    // InternalPascal.g:7682:1: rule__SimpleExpression__Group_1__0__Impl : ( ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 ) ) ;
+    // InternalPascal.g:7688:1: rule__SimpleExpression__Group_1__0__Impl : ( ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 ) ) ;
     public final void rule__SimpleExpression__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7686:1: ( ( ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 ) ) )
-            // InternalPascal.g:7687:1: ( ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 ) )
+            // InternalPascal.g:7692:1: ( ( ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 ) ) )
+            // InternalPascal.g:7693:1: ( ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 ) )
             {
-            // InternalPascal.g:7687:1: ( ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 ) )
-            // InternalPascal.g:7688:2: ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 )
+            // InternalPascal.g:7693:1: ( ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 ) )
+            // InternalPascal.g:7694:2: ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 )
             {
              before(grammarAccess.getSimpleExpressionAccess().getAdditiveoperatorAssignment_1_0()); 
-            // InternalPascal.g:7689:2: ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 )
-            // InternalPascal.g:7689:3: rule__SimpleExpression__AdditiveoperatorAssignment_1_0
+            // InternalPascal.g:7695:2: ( rule__SimpleExpression__AdditiveoperatorAssignment_1_0 )
+            // InternalPascal.g:7695:3: rule__SimpleExpression__AdditiveoperatorAssignment_1_0
             {
             pushFollow(FOLLOW_2);
             rule__SimpleExpression__AdditiveoperatorAssignment_1_0();
@@ -24472,14 +24431,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__Group_1__1"
-    // InternalPascal.g:7697:1: rule__SimpleExpression__Group_1__1 : rule__SimpleExpression__Group_1__1__Impl ;
+    // InternalPascal.g:7703:1: rule__SimpleExpression__Group_1__1 : rule__SimpleExpression__Group_1__1__Impl ;
     public final void rule__SimpleExpression__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7701:1: ( rule__SimpleExpression__Group_1__1__Impl )
-            // InternalPascal.g:7702:2: rule__SimpleExpression__Group_1__1__Impl
+            // InternalPascal.g:7707:1: ( rule__SimpleExpression__Group_1__1__Impl )
+            // InternalPascal.g:7708:2: rule__SimpleExpression__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__SimpleExpression__Group_1__1__Impl();
@@ -24505,21 +24464,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__Group_1__1__Impl"
-    // InternalPascal.g:7708:1: rule__SimpleExpression__Group_1__1__Impl : ( ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 ) ) ;
+    // InternalPascal.g:7714:1: rule__SimpleExpression__Group_1__1__Impl : ( ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 ) ) ;
     public final void rule__SimpleExpression__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7712:1: ( ( ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 ) ) )
-            // InternalPascal.g:7713:1: ( ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 ) )
+            // InternalPascal.g:7718:1: ( ( ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 ) ) )
+            // InternalPascal.g:7719:1: ( ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 ) )
             {
-            // InternalPascal.g:7713:1: ( ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 ) )
-            // InternalPascal.g:7714:2: ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 )
+            // InternalPascal.g:7719:1: ( ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 ) )
+            // InternalPascal.g:7720:2: ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 )
             {
              before(grammarAccess.getSimpleExpressionAccess().getSimpleExpressionAssignment_1_1()); 
-            // InternalPascal.g:7715:2: ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 )
-            // InternalPascal.g:7715:3: rule__SimpleExpression__SimpleExpressionAssignment_1_1
+            // InternalPascal.g:7721:2: ( rule__SimpleExpression__SimpleExpressionAssignment_1_1 )
+            // InternalPascal.g:7721:3: rule__SimpleExpression__SimpleExpressionAssignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__SimpleExpression__SimpleExpressionAssignment_1_1();
@@ -24552,16 +24511,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__Group__0"
-    // InternalPascal.g:7724:1: rule__Term__Group__0 : rule__Term__Group__0__Impl rule__Term__Group__1 ;
+    // InternalPascal.g:7730:1: rule__Term__Group__0 : rule__Term__Group__0__Impl rule__Term__Group__1 ;
     public final void rule__Term__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7728:1: ( rule__Term__Group__0__Impl rule__Term__Group__1 )
-            // InternalPascal.g:7729:2: rule__Term__Group__0__Impl rule__Term__Group__1
+            // InternalPascal.g:7734:1: ( rule__Term__Group__0__Impl rule__Term__Group__1 )
+            // InternalPascal.g:7735:2: rule__Term__Group__0__Impl rule__Term__Group__1
             {
-            pushFollow(FOLLOW_48);
+            pushFollow(FOLLOW_49);
             rule__Term__Group__0__Impl();
 
             state._fsp--;
@@ -24590,21 +24549,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__Group__0__Impl"
-    // InternalPascal.g:7736:1: rule__Term__Group__0__Impl : ( ( rule__Term__SignedFactorAssignment_0 ) ) ;
+    // InternalPascal.g:7742:1: rule__Term__Group__0__Impl : ( ( rule__Term__SignedFactorAssignment_0 ) ) ;
     public final void rule__Term__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7740:1: ( ( ( rule__Term__SignedFactorAssignment_0 ) ) )
-            // InternalPascal.g:7741:1: ( ( rule__Term__SignedFactorAssignment_0 ) )
+            // InternalPascal.g:7746:1: ( ( ( rule__Term__SignedFactorAssignment_0 ) ) )
+            // InternalPascal.g:7747:1: ( ( rule__Term__SignedFactorAssignment_0 ) )
             {
-            // InternalPascal.g:7741:1: ( ( rule__Term__SignedFactorAssignment_0 ) )
-            // InternalPascal.g:7742:2: ( rule__Term__SignedFactorAssignment_0 )
+            // InternalPascal.g:7747:1: ( ( rule__Term__SignedFactorAssignment_0 ) )
+            // InternalPascal.g:7748:2: ( rule__Term__SignedFactorAssignment_0 )
             {
              before(grammarAccess.getTermAccess().getSignedFactorAssignment_0()); 
-            // InternalPascal.g:7743:2: ( rule__Term__SignedFactorAssignment_0 )
-            // InternalPascal.g:7743:3: rule__Term__SignedFactorAssignment_0
+            // InternalPascal.g:7749:2: ( rule__Term__SignedFactorAssignment_0 )
+            // InternalPascal.g:7749:3: rule__Term__SignedFactorAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Term__SignedFactorAssignment_0();
@@ -24637,14 +24596,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__Group__1"
-    // InternalPascal.g:7751:1: rule__Term__Group__1 : rule__Term__Group__1__Impl ;
+    // InternalPascal.g:7757:1: rule__Term__Group__1 : rule__Term__Group__1__Impl ;
     public final void rule__Term__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7755:1: ( rule__Term__Group__1__Impl )
-            // InternalPascal.g:7756:2: rule__Term__Group__1__Impl
+            // InternalPascal.g:7761:1: ( rule__Term__Group__1__Impl )
+            // InternalPascal.g:7762:2: rule__Term__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Term__Group__1__Impl();
@@ -24670,20 +24629,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__Group__1__Impl"
-    // InternalPascal.g:7762:1: rule__Term__Group__1__Impl : ( ( rule__Term__Group_1__0 )? ) ;
+    // InternalPascal.g:7768:1: rule__Term__Group__1__Impl : ( ( rule__Term__Group_1__0 )? ) ;
     public final void rule__Term__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7766:1: ( ( ( rule__Term__Group_1__0 )? ) )
-            // InternalPascal.g:7767:1: ( ( rule__Term__Group_1__0 )? )
+            // InternalPascal.g:7772:1: ( ( ( rule__Term__Group_1__0 )? ) )
+            // InternalPascal.g:7773:1: ( ( rule__Term__Group_1__0 )? )
             {
-            // InternalPascal.g:7767:1: ( ( rule__Term__Group_1__0 )? )
-            // InternalPascal.g:7768:2: ( rule__Term__Group_1__0 )?
+            // InternalPascal.g:7773:1: ( ( rule__Term__Group_1__0 )? )
+            // InternalPascal.g:7774:2: ( rule__Term__Group_1__0 )?
             {
              before(grammarAccess.getTermAccess().getGroup_1()); 
-            // InternalPascal.g:7769:2: ( rule__Term__Group_1__0 )?
+            // InternalPascal.g:7775:2: ( rule__Term__Group_1__0 )?
             int alt55=2;
             int LA55_0 = input.LA(1);
 
@@ -24692,7 +24651,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt55) {
                 case 1 :
-                    // InternalPascal.g:7769:3: rule__Term__Group_1__0
+                    // InternalPascal.g:7775:3: rule__Term__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Term__Group_1__0();
@@ -24728,16 +24687,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__Group_1__0"
-    // InternalPascal.g:7778:1: rule__Term__Group_1__0 : rule__Term__Group_1__0__Impl rule__Term__Group_1__1 ;
+    // InternalPascal.g:7784:1: rule__Term__Group_1__0 : rule__Term__Group_1__0__Impl rule__Term__Group_1__1 ;
     public final void rule__Term__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7782:1: ( rule__Term__Group_1__0__Impl rule__Term__Group_1__1 )
-            // InternalPascal.g:7783:2: rule__Term__Group_1__0__Impl rule__Term__Group_1__1
+            // InternalPascal.g:7788:1: ( rule__Term__Group_1__0__Impl rule__Term__Group_1__1 )
+            // InternalPascal.g:7789:2: rule__Term__Group_1__0__Impl rule__Term__Group_1__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__Term__Group_1__0__Impl();
 
             state._fsp--;
@@ -24766,21 +24725,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__Group_1__0__Impl"
-    // InternalPascal.g:7790:1: rule__Term__Group_1__0__Impl : ( ( rule__Term__MultiplicativeoperatorAssignment_1_0 ) ) ;
+    // InternalPascal.g:7796:1: rule__Term__Group_1__0__Impl : ( ( rule__Term__MultiplicativeoperatorAssignment_1_0 ) ) ;
     public final void rule__Term__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7794:1: ( ( ( rule__Term__MultiplicativeoperatorAssignment_1_0 ) ) )
-            // InternalPascal.g:7795:1: ( ( rule__Term__MultiplicativeoperatorAssignment_1_0 ) )
+            // InternalPascal.g:7800:1: ( ( ( rule__Term__MultiplicativeoperatorAssignment_1_0 ) ) )
+            // InternalPascal.g:7801:1: ( ( rule__Term__MultiplicativeoperatorAssignment_1_0 ) )
             {
-            // InternalPascal.g:7795:1: ( ( rule__Term__MultiplicativeoperatorAssignment_1_0 ) )
-            // InternalPascal.g:7796:2: ( rule__Term__MultiplicativeoperatorAssignment_1_0 )
+            // InternalPascal.g:7801:1: ( ( rule__Term__MultiplicativeoperatorAssignment_1_0 ) )
+            // InternalPascal.g:7802:2: ( rule__Term__MultiplicativeoperatorAssignment_1_0 )
             {
              before(grammarAccess.getTermAccess().getMultiplicativeoperatorAssignment_1_0()); 
-            // InternalPascal.g:7797:2: ( rule__Term__MultiplicativeoperatorAssignment_1_0 )
-            // InternalPascal.g:7797:3: rule__Term__MultiplicativeoperatorAssignment_1_0
+            // InternalPascal.g:7803:2: ( rule__Term__MultiplicativeoperatorAssignment_1_0 )
+            // InternalPascal.g:7803:3: rule__Term__MultiplicativeoperatorAssignment_1_0
             {
             pushFollow(FOLLOW_2);
             rule__Term__MultiplicativeoperatorAssignment_1_0();
@@ -24813,14 +24772,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__Group_1__1"
-    // InternalPascal.g:7805:1: rule__Term__Group_1__1 : rule__Term__Group_1__1__Impl ;
+    // InternalPascal.g:7811:1: rule__Term__Group_1__1 : rule__Term__Group_1__1__Impl ;
     public final void rule__Term__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7809:1: ( rule__Term__Group_1__1__Impl )
-            // InternalPascal.g:7810:2: rule__Term__Group_1__1__Impl
+            // InternalPascal.g:7815:1: ( rule__Term__Group_1__1__Impl )
+            // InternalPascal.g:7816:2: rule__Term__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Term__Group_1__1__Impl();
@@ -24846,21 +24805,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__Group_1__1__Impl"
-    // InternalPascal.g:7816:1: rule__Term__Group_1__1__Impl : ( ( rule__Term__TermAssignment_1_1 ) ) ;
+    // InternalPascal.g:7822:1: rule__Term__Group_1__1__Impl : ( ( rule__Term__TermAssignment_1_1 ) ) ;
     public final void rule__Term__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7820:1: ( ( ( rule__Term__TermAssignment_1_1 ) ) )
-            // InternalPascal.g:7821:1: ( ( rule__Term__TermAssignment_1_1 ) )
+            // InternalPascal.g:7826:1: ( ( ( rule__Term__TermAssignment_1_1 ) ) )
+            // InternalPascal.g:7827:1: ( ( rule__Term__TermAssignment_1_1 ) )
             {
-            // InternalPascal.g:7821:1: ( ( rule__Term__TermAssignment_1_1 ) )
-            // InternalPascal.g:7822:2: ( rule__Term__TermAssignment_1_1 )
+            // InternalPascal.g:7827:1: ( ( rule__Term__TermAssignment_1_1 ) )
+            // InternalPascal.g:7828:2: ( rule__Term__TermAssignment_1_1 )
             {
              before(grammarAccess.getTermAccess().getTermAssignment_1_1()); 
-            // InternalPascal.g:7823:2: ( rule__Term__TermAssignment_1_1 )
-            // InternalPascal.g:7823:3: rule__Term__TermAssignment_1_1
+            // InternalPascal.g:7829:2: ( rule__Term__TermAssignment_1_1 )
+            // InternalPascal.g:7829:3: rule__Term__TermAssignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Term__TermAssignment_1_1();
@@ -24893,16 +24852,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SignedFactor__Group__0"
-    // InternalPascal.g:7832:1: rule__SignedFactor__Group__0 : rule__SignedFactor__Group__0__Impl rule__SignedFactor__Group__1 ;
+    // InternalPascal.g:7838:1: rule__SignedFactor__Group__0 : rule__SignedFactor__Group__0__Impl rule__SignedFactor__Group__1 ;
     public final void rule__SignedFactor__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7836:1: ( rule__SignedFactor__Group__0__Impl rule__SignedFactor__Group__1 )
-            // InternalPascal.g:7837:2: rule__SignedFactor__Group__0__Impl rule__SignedFactor__Group__1
+            // InternalPascal.g:7842:1: ( rule__SignedFactor__Group__0__Impl rule__SignedFactor__Group__1 )
+            // InternalPascal.g:7843:2: rule__SignedFactor__Group__0__Impl rule__SignedFactor__Group__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__SignedFactor__Group__0__Impl();
 
             state._fsp--;
@@ -24931,20 +24890,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SignedFactor__Group__0__Impl"
-    // InternalPascal.g:7844:1: rule__SignedFactor__Group__0__Impl : ( ( rule__SignedFactor__Alternatives_0 )? ) ;
+    // InternalPascal.g:7850:1: rule__SignedFactor__Group__0__Impl : ( ( rule__SignedFactor__Alternatives_0 )? ) ;
     public final void rule__SignedFactor__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7848:1: ( ( ( rule__SignedFactor__Alternatives_0 )? ) )
-            // InternalPascal.g:7849:1: ( ( rule__SignedFactor__Alternatives_0 )? )
+            // InternalPascal.g:7854:1: ( ( ( rule__SignedFactor__Alternatives_0 )? ) )
+            // InternalPascal.g:7855:1: ( ( rule__SignedFactor__Alternatives_0 )? )
             {
-            // InternalPascal.g:7849:1: ( ( rule__SignedFactor__Alternatives_0 )? )
-            // InternalPascal.g:7850:2: ( rule__SignedFactor__Alternatives_0 )?
+            // InternalPascal.g:7855:1: ( ( rule__SignedFactor__Alternatives_0 )? )
+            // InternalPascal.g:7856:2: ( rule__SignedFactor__Alternatives_0 )?
             {
              before(grammarAccess.getSignedFactorAccess().getAlternatives_0()); 
-            // InternalPascal.g:7851:2: ( rule__SignedFactor__Alternatives_0 )?
+            // InternalPascal.g:7857:2: ( rule__SignedFactor__Alternatives_0 )?
             int alt56=2;
             int LA56_0 = input.LA(1);
 
@@ -24953,7 +24912,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt56) {
                 case 1 :
-                    // InternalPascal.g:7851:3: rule__SignedFactor__Alternatives_0
+                    // InternalPascal.g:7857:3: rule__SignedFactor__Alternatives_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__SignedFactor__Alternatives_0();
@@ -24989,14 +24948,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SignedFactor__Group__1"
-    // InternalPascal.g:7859:1: rule__SignedFactor__Group__1 : rule__SignedFactor__Group__1__Impl ;
+    // InternalPascal.g:7865:1: rule__SignedFactor__Group__1 : rule__SignedFactor__Group__1__Impl ;
     public final void rule__SignedFactor__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7863:1: ( rule__SignedFactor__Group__1__Impl )
-            // InternalPascal.g:7864:2: rule__SignedFactor__Group__1__Impl
+            // InternalPascal.g:7869:1: ( rule__SignedFactor__Group__1__Impl )
+            // InternalPascal.g:7870:2: rule__SignedFactor__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__SignedFactor__Group__1__Impl();
@@ -25022,21 +24981,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SignedFactor__Group__1__Impl"
-    // InternalPascal.g:7870:1: rule__SignedFactor__Group__1__Impl : ( ( rule__SignedFactor__FactorAssignment_1 ) ) ;
+    // InternalPascal.g:7876:1: rule__SignedFactor__Group__1__Impl : ( ( rule__SignedFactor__FactorAssignment_1 ) ) ;
     public final void rule__SignedFactor__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7874:1: ( ( ( rule__SignedFactor__FactorAssignment_1 ) ) )
-            // InternalPascal.g:7875:1: ( ( rule__SignedFactor__FactorAssignment_1 ) )
+            // InternalPascal.g:7880:1: ( ( ( rule__SignedFactor__FactorAssignment_1 ) ) )
+            // InternalPascal.g:7881:1: ( ( rule__SignedFactor__FactorAssignment_1 ) )
             {
-            // InternalPascal.g:7875:1: ( ( rule__SignedFactor__FactorAssignment_1 ) )
-            // InternalPascal.g:7876:2: ( rule__SignedFactor__FactorAssignment_1 )
+            // InternalPascal.g:7881:1: ( ( rule__SignedFactor__FactorAssignment_1 ) )
+            // InternalPascal.g:7882:2: ( rule__SignedFactor__FactorAssignment_1 )
             {
              before(grammarAccess.getSignedFactorAccess().getFactorAssignment_1()); 
-            // InternalPascal.g:7877:2: ( rule__SignedFactor__FactorAssignment_1 )
-            // InternalPascal.g:7877:3: rule__SignedFactor__FactorAssignment_1
+            // InternalPascal.g:7883:2: ( rule__SignedFactor__FactorAssignment_1 )
+            // InternalPascal.g:7883:3: rule__SignedFactor__FactorAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__SignedFactor__FactorAssignment_1();
@@ -25069,16 +25028,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_0__0"
-    // InternalPascal.g:7886:1: rule__Factor__Group_0__0 : rule__Factor__Group_0__0__Impl rule__Factor__Group_0__1 ;
+    // InternalPascal.g:7892:1: rule__Factor__Group_0__0 : rule__Factor__Group_0__0__Impl rule__Factor__Group_0__1 ;
     public final void rule__Factor__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7890:1: ( rule__Factor__Group_0__0__Impl rule__Factor__Group_0__1 )
-            // InternalPascal.g:7891:2: rule__Factor__Group_0__0__Impl rule__Factor__Group_0__1
+            // InternalPascal.g:7896:1: ( rule__Factor__Group_0__0__Impl rule__Factor__Group_0__1 )
+            // InternalPascal.g:7897:2: rule__Factor__Group_0__0__Impl rule__Factor__Group_0__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__Factor__Group_0__0__Impl();
 
             state._fsp--;
@@ -25107,17 +25066,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_0__0__Impl"
-    // InternalPascal.g:7898:1: rule__Factor__Group_0__0__Impl : ( '(' ) ;
+    // InternalPascal.g:7904:1: rule__Factor__Group_0__0__Impl : ( '(' ) ;
     public final void rule__Factor__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7902:1: ( ( '(' ) )
-            // InternalPascal.g:7903:1: ( '(' )
+            // InternalPascal.g:7908:1: ( ( '(' ) )
+            // InternalPascal.g:7909:1: ( '(' )
             {
-            // InternalPascal.g:7903:1: ( '(' )
-            // InternalPascal.g:7904:2: '('
+            // InternalPascal.g:7909:1: ( '(' )
+            // InternalPascal.g:7910:2: '('
             {
              before(grammarAccess.getFactorAccess().getLeftParenthesisKeyword_0_0()); 
             match(input,38,FOLLOW_2); 
@@ -25144,14 +25103,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_0__1"
-    // InternalPascal.g:7913:1: rule__Factor__Group_0__1 : rule__Factor__Group_0__1__Impl rule__Factor__Group_0__2 ;
+    // InternalPascal.g:7919:1: rule__Factor__Group_0__1 : rule__Factor__Group_0__1__Impl rule__Factor__Group_0__2 ;
     public final void rule__Factor__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7917:1: ( rule__Factor__Group_0__1__Impl rule__Factor__Group_0__2 )
-            // InternalPascal.g:7918:2: rule__Factor__Group_0__1__Impl rule__Factor__Group_0__2
+            // InternalPascal.g:7923:1: ( rule__Factor__Group_0__1__Impl rule__Factor__Group_0__2 )
+            // InternalPascal.g:7924:2: rule__Factor__Group_0__1__Impl rule__Factor__Group_0__2
             {
             pushFollow(FOLLOW_7);
             rule__Factor__Group_0__1__Impl();
@@ -25182,21 +25141,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_0__1__Impl"
-    // InternalPascal.g:7925:1: rule__Factor__Group_0__1__Impl : ( ( rule__Factor__ExpressionAssignment_0_1 ) ) ;
+    // InternalPascal.g:7931:1: rule__Factor__Group_0__1__Impl : ( ( rule__Factor__ExpressionAssignment_0_1 ) ) ;
     public final void rule__Factor__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7929:1: ( ( ( rule__Factor__ExpressionAssignment_0_1 ) ) )
-            // InternalPascal.g:7930:1: ( ( rule__Factor__ExpressionAssignment_0_1 ) )
+            // InternalPascal.g:7935:1: ( ( ( rule__Factor__ExpressionAssignment_0_1 ) ) )
+            // InternalPascal.g:7936:1: ( ( rule__Factor__ExpressionAssignment_0_1 ) )
             {
-            // InternalPascal.g:7930:1: ( ( rule__Factor__ExpressionAssignment_0_1 ) )
-            // InternalPascal.g:7931:2: ( rule__Factor__ExpressionAssignment_0_1 )
+            // InternalPascal.g:7936:1: ( ( rule__Factor__ExpressionAssignment_0_1 ) )
+            // InternalPascal.g:7937:2: ( rule__Factor__ExpressionAssignment_0_1 )
             {
              before(grammarAccess.getFactorAccess().getExpressionAssignment_0_1()); 
-            // InternalPascal.g:7932:2: ( rule__Factor__ExpressionAssignment_0_1 )
-            // InternalPascal.g:7932:3: rule__Factor__ExpressionAssignment_0_1
+            // InternalPascal.g:7938:2: ( rule__Factor__ExpressionAssignment_0_1 )
+            // InternalPascal.g:7938:3: rule__Factor__ExpressionAssignment_0_1
             {
             pushFollow(FOLLOW_2);
             rule__Factor__ExpressionAssignment_0_1();
@@ -25229,14 +25188,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_0__2"
-    // InternalPascal.g:7940:1: rule__Factor__Group_0__2 : rule__Factor__Group_0__2__Impl ;
+    // InternalPascal.g:7946:1: rule__Factor__Group_0__2 : rule__Factor__Group_0__2__Impl ;
     public final void rule__Factor__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7944:1: ( rule__Factor__Group_0__2__Impl )
-            // InternalPascal.g:7945:2: rule__Factor__Group_0__2__Impl
+            // InternalPascal.g:7950:1: ( rule__Factor__Group_0__2__Impl )
+            // InternalPascal.g:7951:2: rule__Factor__Group_0__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Factor__Group_0__2__Impl();
@@ -25262,17 +25221,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_0__2__Impl"
-    // InternalPascal.g:7951:1: rule__Factor__Group_0__2__Impl : ( ')' ) ;
+    // InternalPascal.g:7957:1: rule__Factor__Group_0__2__Impl : ( ')' ) ;
     public final void rule__Factor__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7955:1: ( ( ')' ) )
-            // InternalPascal.g:7956:1: ( ')' )
+            // InternalPascal.g:7961:1: ( ( ')' ) )
+            // InternalPascal.g:7962:1: ( ')' )
             {
-            // InternalPascal.g:7956:1: ( ')' )
-            // InternalPascal.g:7957:2: ')'
+            // InternalPascal.g:7962:1: ( ')' )
+            // InternalPascal.g:7963:2: ')'
             {
              before(grammarAccess.getFactorAccess().getRightParenthesisKeyword_0_2()); 
             match(input,39,FOLLOW_2); 
@@ -25299,16 +25258,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_2__0"
-    // InternalPascal.g:7967:1: rule__Factor__Group_2__0 : rule__Factor__Group_2__0__Impl rule__Factor__Group_2__1 ;
+    // InternalPascal.g:7973:1: rule__Factor__Group_2__0 : rule__Factor__Group_2__0__Impl rule__Factor__Group_2__1 ;
     public final void rule__Factor__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7971:1: ( rule__Factor__Group_2__0__Impl rule__Factor__Group_2__1 )
-            // InternalPascal.g:7972:2: rule__Factor__Group_2__0__Impl rule__Factor__Group_2__1
+            // InternalPascal.g:7977:1: ( rule__Factor__Group_2__0__Impl rule__Factor__Group_2__1 )
+            // InternalPascal.g:7978:2: rule__Factor__Group_2__0__Impl rule__Factor__Group_2__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__Factor__Group_2__0__Impl();
 
             state._fsp--;
@@ -25337,17 +25296,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_2__0__Impl"
-    // InternalPascal.g:7979:1: rule__Factor__Group_2__0__Impl : ( 'not' ) ;
+    // InternalPascal.g:7985:1: rule__Factor__Group_2__0__Impl : ( 'not' ) ;
     public final void rule__Factor__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7983:1: ( ( 'not' ) )
-            // InternalPascal.g:7984:1: ( 'not' )
+            // InternalPascal.g:7989:1: ( ( 'not' ) )
+            // InternalPascal.g:7990:1: ( 'not' )
             {
-            // InternalPascal.g:7984:1: ( 'not' )
-            // InternalPascal.g:7985:2: 'not'
+            // InternalPascal.g:7990:1: ( 'not' )
+            // InternalPascal.g:7991:2: 'not'
             {
              before(grammarAccess.getFactorAccess().getNotKeyword_2_0()); 
             match(input,63,FOLLOW_2); 
@@ -25374,14 +25333,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_2__1"
-    // InternalPascal.g:7994:1: rule__Factor__Group_2__1 : rule__Factor__Group_2__1__Impl ;
+    // InternalPascal.g:8000:1: rule__Factor__Group_2__1 : rule__Factor__Group_2__1__Impl ;
     public final void rule__Factor__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:7998:1: ( rule__Factor__Group_2__1__Impl )
-            // InternalPascal.g:7999:2: rule__Factor__Group_2__1__Impl
+            // InternalPascal.g:8004:1: ( rule__Factor__Group_2__1__Impl )
+            // InternalPascal.g:8005:2: rule__Factor__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Factor__Group_2__1__Impl();
@@ -25407,21 +25366,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__Group_2__1__Impl"
-    // InternalPascal.g:8005:1: rule__Factor__Group_2__1__Impl : ( ( rule__Factor__FactorAssignment_2_1 ) ) ;
+    // InternalPascal.g:8011:1: rule__Factor__Group_2__1__Impl : ( ( rule__Factor__FactorAssignment_2_1 ) ) ;
     public final void rule__Factor__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8009:1: ( ( ( rule__Factor__FactorAssignment_2_1 ) ) )
-            // InternalPascal.g:8010:1: ( ( rule__Factor__FactorAssignment_2_1 ) )
+            // InternalPascal.g:8015:1: ( ( ( rule__Factor__FactorAssignment_2_1 ) ) )
+            // InternalPascal.g:8016:1: ( ( rule__Factor__FactorAssignment_2_1 ) )
             {
-            // InternalPascal.g:8010:1: ( ( rule__Factor__FactorAssignment_2_1 ) )
-            // InternalPascal.g:8011:2: ( rule__Factor__FactorAssignment_2_1 )
+            // InternalPascal.g:8016:1: ( ( rule__Factor__FactorAssignment_2_1 ) )
+            // InternalPascal.g:8017:2: ( rule__Factor__FactorAssignment_2_1 )
             {
              before(grammarAccess.getFactorAccess().getFactorAssignment_2_1()); 
-            // InternalPascal.g:8012:2: ( rule__Factor__FactorAssignment_2_1 )
-            // InternalPascal.g:8012:3: rule__Factor__FactorAssignment_2_1
+            // InternalPascal.g:8018:2: ( rule__Factor__FactorAssignment_2_1 )
+            // InternalPascal.g:8018:3: rule__Factor__FactorAssignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__Factor__FactorAssignment_2_1();
@@ -25454,16 +25413,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedConstant__Group_3__0"
-    // InternalPascal.g:8021:1: rule__UnsignedConstant__Group_3__0 : rule__UnsignedConstant__Group_3__0__Impl rule__UnsignedConstant__Group_3__1 ;
+    // InternalPascal.g:8027:1: rule__UnsignedConstant__Group_3__0 : rule__UnsignedConstant__Group_3__0__Impl rule__UnsignedConstant__Group_3__1 ;
     public final void rule__UnsignedConstant__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8025:1: ( rule__UnsignedConstant__Group_3__0__Impl rule__UnsignedConstant__Group_3__1 )
-            // InternalPascal.g:8026:2: rule__UnsignedConstant__Group_3__0__Impl rule__UnsignedConstant__Group_3__1
+            // InternalPascal.g:8031:1: ( rule__UnsignedConstant__Group_3__0__Impl rule__UnsignedConstant__Group_3__1 )
+            // InternalPascal.g:8032:2: rule__UnsignedConstant__Group_3__0__Impl rule__UnsignedConstant__Group_3__1
             {
-            pushFollow(FOLLOW_49);
+            pushFollow(FOLLOW_50);
             rule__UnsignedConstant__Group_3__0__Impl();
 
             state._fsp--;
@@ -25492,21 +25451,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedConstant__Group_3__0__Impl"
-    // InternalPascal.g:8033:1: rule__UnsignedConstant__Group_3__0__Impl : ( () ) ;
+    // InternalPascal.g:8039:1: rule__UnsignedConstant__Group_3__0__Impl : ( () ) ;
     public final void rule__UnsignedConstant__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8037:1: ( ( () ) )
-            // InternalPascal.g:8038:1: ( () )
+            // InternalPascal.g:8043:1: ( ( () ) )
+            // InternalPascal.g:8044:1: ( () )
             {
-            // InternalPascal.g:8038:1: ( () )
-            // InternalPascal.g:8039:2: ()
+            // InternalPascal.g:8044:1: ( () )
+            // InternalPascal.g:8045:2: ()
             {
              before(grammarAccess.getUnsignedConstantAccess().getUnsignedConstantAction_3_0()); 
-            // InternalPascal.g:8040:2: ()
-            // InternalPascal.g:8040:3: 
+            // InternalPascal.g:8046:2: ()
+            // InternalPascal.g:8046:3: 
             {
             }
 
@@ -25529,14 +25488,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedConstant__Group_3__1"
-    // InternalPascal.g:8048:1: rule__UnsignedConstant__Group_3__1 : rule__UnsignedConstant__Group_3__1__Impl ;
+    // InternalPascal.g:8054:1: rule__UnsignedConstant__Group_3__1 : rule__UnsignedConstant__Group_3__1__Impl ;
     public final void rule__UnsignedConstant__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8052:1: ( rule__UnsignedConstant__Group_3__1__Impl )
-            // InternalPascal.g:8053:2: rule__UnsignedConstant__Group_3__1__Impl
+            // InternalPascal.g:8058:1: ( rule__UnsignedConstant__Group_3__1__Impl )
+            // InternalPascal.g:8059:2: rule__UnsignedConstant__Group_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__UnsignedConstant__Group_3__1__Impl();
@@ -25562,17 +25521,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedConstant__Group_3__1__Impl"
-    // InternalPascal.g:8059:1: rule__UnsignedConstant__Group_3__1__Impl : ( 'nil' ) ;
+    // InternalPascal.g:8065:1: rule__UnsignedConstant__Group_3__1__Impl : ( 'nil' ) ;
     public final void rule__UnsignedConstant__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8063:1: ( ( 'nil' ) )
-            // InternalPascal.g:8064:1: ( 'nil' )
+            // InternalPascal.g:8069:1: ( ( 'nil' ) )
+            // InternalPascal.g:8070:1: ( 'nil' )
             {
-            // InternalPascal.g:8064:1: ( 'nil' )
-            // InternalPascal.g:8065:2: 'nil'
+            // InternalPascal.g:8070:1: ( 'nil' )
+            // InternalPascal.g:8071:2: 'nil'
             {
              before(grammarAccess.getUnsignedConstantAccess().getNilKeyword_3_1()); 
             match(input,64,FOLLOW_2); 
@@ -25599,14 +25558,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__Group__0"
-    // InternalPascal.g:8075:1: rule__FunctionDesignator__Group__0 : rule__FunctionDesignator__Group__0__Impl rule__FunctionDesignator__Group__1 ;
+    // InternalPascal.g:8081:1: rule__FunctionDesignator__Group__0 : rule__FunctionDesignator__Group__0__Impl rule__FunctionDesignator__Group__1 ;
     public final void rule__FunctionDesignator__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8079:1: ( rule__FunctionDesignator__Group__0__Impl rule__FunctionDesignator__Group__1 )
-            // InternalPascal.g:8080:2: rule__FunctionDesignator__Group__0__Impl rule__FunctionDesignator__Group__1
+            // InternalPascal.g:8085:1: ( rule__FunctionDesignator__Group__0__Impl rule__FunctionDesignator__Group__1 )
+            // InternalPascal.g:8086:2: rule__FunctionDesignator__Group__0__Impl rule__FunctionDesignator__Group__1
             {
             pushFollow(FOLLOW_18);
             rule__FunctionDesignator__Group__0__Impl();
@@ -25637,21 +25596,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__Group__0__Impl"
-    // InternalPascal.g:8087:1: rule__FunctionDesignator__Group__0__Impl : ( ( rule__FunctionDesignator__IdentifierAssignment_0 ) ) ;
+    // InternalPascal.g:8093:1: rule__FunctionDesignator__Group__0__Impl : ( ( rule__FunctionDesignator__IdentifierAssignment_0 ) ) ;
     public final void rule__FunctionDesignator__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8091:1: ( ( ( rule__FunctionDesignator__IdentifierAssignment_0 ) ) )
-            // InternalPascal.g:8092:1: ( ( rule__FunctionDesignator__IdentifierAssignment_0 ) )
+            // InternalPascal.g:8097:1: ( ( ( rule__FunctionDesignator__IdentifierAssignment_0 ) ) )
+            // InternalPascal.g:8098:1: ( ( rule__FunctionDesignator__IdentifierAssignment_0 ) )
             {
-            // InternalPascal.g:8092:1: ( ( rule__FunctionDesignator__IdentifierAssignment_0 ) )
-            // InternalPascal.g:8093:2: ( rule__FunctionDesignator__IdentifierAssignment_0 )
+            // InternalPascal.g:8098:1: ( ( rule__FunctionDesignator__IdentifierAssignment_0 ) )
+            // InternalPascal.g:8099:2: ( rule__FunctionDesignator__IdentifierAssignment_0 )
             {
              before(grammarAccess.getFunctionDesignatorAccess().getIdentifierAssignment_0()); 
-            // InternalPascal.g:8094:2: ( rule__FunctionDesignator__IdentifierAssignment_0 )
-            // InternalPascal.g:8094:3: rule__FunctionDesignator__IdentifierAssignment_0
+            // InternalPascal.g:8100:2: ( rule__FunctionDesignator__IdentifierAssignment_0 )
+            // InternalPascal.g:8100:3: rule__FunctionDesignator__IdentifierAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__FunctionDesignator__IdentifierAssignment_0();
@@ -25684,16 +25643,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__Group__1"
-    // InternalPascal.g:8102:1: rule__FunctionDesignator__Group__1 : rule__FunctionDesignator__Group__1__Impl rule__FunctionDesignator__Group__2 ;
+    // InternalPascal.g:8108:1: rule__FunctionDesignator__Group__1 : rule__FunctionDesignator__Group__1__Impl rule__FunctionDesignator__Group__2 ;
     public final void rule__FunctionDesignator__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8106:1: ( rule__FunctionDesignator__Group__1__Impl rule__FunctionDesignator__Group__2 )
-            // InternalPascal.g:8107:2: rule__FunctionDesignator__Group__1__Impl rule__FunctionDesignator__Group__2
+            // InternalPascal.g:8112:1: ( rule__FunctionDesignator__Group__1__Impl rule__FunctionDesignator__Group__2 )
+            // InternalPascal.g:8113:2: rule__FunctionDesignator__Group__1__Impl rule__FunctionDesignator__Group__2
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__FunctionDesignator__Group__1__Impl();
 
             state._fsp--;
@@ -25722,17 +25681,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__Group__1__Impl"
-    // InternalPascal.g:8114:1: rule__FunctionDesignator__Group__1__Impl : ( '(' ) ;
+    // InternalPascal.g:8120:1: rule__FunctionDesignator__Group__1__Impl : ( '(' ) ;
     public final void rule__FunctionDesignator__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8118:1: ( ( '(' ) )
-            // InternalPascal.g:8119:1: ( '(' )
+            // InternalPascal.g:8124:1: ( ( '(' ) )
+            // InternalPascal.g:8125:1: ( '(' )
             {
-            // InternalPascal.g:8119:1: ( '(' )
-            // InternalPascal.g:8120:2: '('
+            // InternalPascal.g:8125:1: ( '(' )
+            // InternalPascal.g:8126:2: '('
             {
              before(grammarAccess.getFunctionDesignatorAccess().getLeftParenthesisKeyword_1()); 
             match(input,38,FOLLOW_2); 
@@ -25759,14 +25718,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__Group__2"
-    // InternalPascal.g:8129:1: rule__FunctionDesignator__Group__2 : rule__FunctionDesignator__Group__2__Impl rule__FunctionDesignator__Group__3 ;
+    // InternalPascal.g:8135:1: rule__FunctionDesignator__Group__2 : rule__FunctionDesignator__Group__2__Impl rule__FunctionDesignator__Group__3 ;
     public final void rule__FunctionDesignator__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8133:1: ( rule__FunctionDesignator__Group__2__Impl rule__FunctionDesignator__Group__3 )
-            // InternalPascal.g:8134:2: rule__FunctionDesignator__Group__2__Impl rule__FunctionDesignator__Group__3
+            // InternalPascal.g:8139:1: ( rule__FunctionDesignator__Group__2__Impl rule__FunctionDesignator__Group__3 )
+            // InternalPascal.g:8140:2: rule__FunctionDesignator__Group__2__Impl rule__FunctionDesignator__Group__3
             {
             pushFollow(FOLLOW_7);
             rule__FunctionDesignator__Group__2__Impl();
@@ -25797,21 +25756,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__Group__2__Impl"
-    // InternalPascal.g:8141:1: rule__FunctionDesignator__Group__2__Impl : ( ( rule__FunctionDesignator__ParameterListAssignment_2 ) ) ;
+    // InternalPascal.g:8147:1: rule__FunctionDesignator__Group__2__Impl : ( ( rule__FunctionDesignator__ParameterListAssignment_2 ) ) ;
     public final void rule__FunctionDesignator__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8145:1: ( ( ( rule__FunctionDesignator__ParameterListAssignment_2 ) ) )
-            // InternalPascal.g:8146:1: ( ( rule__FunctionDesignator__ParameterListAssignment_2 ) )
+            // InternalPascal.g:8151:1: ( ( ( rule__FunctionDesignator__ParameterListAssignment_2 ) ) )
+            // InternalPascal.g:8152:1: ( ( rule__FunctionDesignator__ParameterListAssignment_2 ) )
             {
-            // InternalPascal.g:8146:1: ( ( rule__FunctionDesignator__ParameterListAssignment_2 ) )
-            // InternalPascal.g:8147:2: ( rule__FunctionDesignator__ParameterListAssignment_2 )
+            // InternalPascal.g:8152:1: ( ( rule__FunctionDesignator__ParameterListAssignment_2 ) )
+            // InternalPascal.g:8153:2: ( rule__FunctionDesignator__ParameterListAssignment_2 )
             {
              before(grammarAccess.getFunctionDesignatorAccess().getParameterListAssignment_2()); 
-            // InternalPascal.g:8148:2: ( rule__FunctionDesignator__ParameterListAssignment_2 )
-            // InternalPascal.g:8148:3: rule__FunctionDesignator__ParameterListAssignment_2
+            // InternalPascal.g:8154:2: ( rule__FunctionDesignator__ParameterListAssignment_2 )
+            // InternalPascal.g:8154:3: rule__FunctionDesignator__ParameterListAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__FunctionDesignator__ParameterListAssignment_2();
@@ -25844,14 +25803,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__Group__3"
-    // InternalPascal.g:8156:1: rule__FunctionDesignator__Group__3 : rule__FunctionDesignator__Group__3__Impl ;
+    // InternalPascal.g:8162:1: rule__FunctionDesignator__Group__3 : rule__FunctionDesignator__Group__3__Impl ;
     public final void rule__FunctionDesignator__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8160:1: ( rule__FunctionDesignator__Group__3__Impl )
-            // InternalPascal.g:8161:2: rule__FunctionDesignator__Group__3__Impl
+            // InternalPascal.g:8166:1: ( rule__FunctionDesignator__Group__3__Impl )
+            // InternalPascal.g:8167:2: rule__FunctionDesignator__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__FunctionDesignator__Group__3__Impl();
@@ -25877,17 +25836,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__Group__3__Impl"
-    // InternalPascal.g:8167:1: rule__FunctionDesignator__Group__3__Impl : ( ')' ) ;
+    // InternalPascal.g:8173:1: rule__FunctionDesignator__Group__3__Impl : ( ')' ) ;
     public final void rule__FunctionDesignator__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8171:1: ( ( ')' ) )
-            // InternalPascal.g:8172:1: ( ')' )
+            // InternalPascal.g:8177:1: ( ( ')' ) )
+            // InternalPascal.g:8178:1: ( ')' )
             {
-            // InternalPascal.g:8172:1: ( ')' )
-            // InternalPascal.g:8173:2: ')'
+            // InternalPascal.g:8178:1: ( ')' )
+            // InternalPascal.g:8179:2: ')'
             {
              before(grammarAccess.getFunctionDesignatorAccess().getRightParenthesisKeyword_3()); 
             match(input,39,FOLLOW_2); 
@@ -25914,14 +25873,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterList__Group__0"
-    // InternalPascal.g:8183:1: rule__ParameterList__Group__0 : rule__ParameterList__Group__0__Impl rule__ParameterList__Group__1 ;
+    // InternalPascal.g:8189:1: rule__ParameterList__Group__0 : rule__ParameterList__Group__0__Impl rule__ParameterList__Group__1 ;
     public final void rule__ParameterList__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8187:1: ( rule__ParameterList__Group__0__Impl rule__ParameterList__Group__1 )
-            // InternalPascal.g:8188:2: rule__ParameterList__Group__0__Impl rule__ParameterList__Group__1
+            // InternalPascal.g:8193:1: ( rule__ParameterList__Group__0__Impl rule__ParameterList__Group__1 )
+            // InternalPascal.g:8194:2: rule__ParameterList__Group__0__Impl rule__ParameterList__Group__1
             {
             pushFollow(FOLLOW_8);
             rule__ParameterList__Group__0__Impl();
@@ -25952,17 +25911,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterList__Group__0__Impl"
-    // InternalPascal.g:8195:1: rule__ParameterList__Group__0__Impl : ( ruleactualParameter ) ;
+    // InternalPascal.g:8201:1: rule__ParameterList__Group__0__Impl : ( ruleactualParameter ) ;
     public final void rule__ParameterList__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8199:1: ( ( ruleactualParameter ) )
-            // InternalPascal.g:8200:1: ( ruleactualParameter )
+            // InternalPascal.g:8205:1: ( ( ruleactualParameter ) )
+            // InternalPascal.g:8206:1: ( ruleactualParameter )
             {
-            // InternalPascal.g:8200:1: ( ruleactualParameter )
-            // InternalPascal.g:8201:2: ruleactualParameter
+            // InternalPascal.g:8206:1: ( ruleactualParameter )
+            // InternalPascal.g:8207:2: ruleactualParameter
             {
              before(grammarAccess.getParameterListAccess().getActualParameterParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -25993,14 +25952,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterList__Group__1"
-    // InternalPascal.g:8210:1: rule__ParameterList__Group__1 : rule__ParameterList__Group__1__Impl ;
+    // InternalPascal.g:8216:1: rule__ParameterList__Group__1 : rule__ParameterList__Group__1__Impl ;
     public final void rule__ParameterList__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8214:1: ( rule__ParameterList__Group__1__Impl )
-            // InternalPascal.g:8215:2: rule__ParameterList__Group__1__Impl
+            // InternalPascal.g:8220:1: ( rule__ParameterList__Group__1__Impl )
+            // InternalPascal.g:8221:2: rule__ParameterList__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ParameterList__Group__1__Impl();
@@ -26026,20 +25985,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterList__Group__1__Impl"
-    // InternalPascal.g:8221:1: rule__ParameterList__Group__1__Impl : ( ( rule__ParameterList__Group_1__0 )* ) ;
+    // InternalPascal.g:8227:1: rule__ParameterList__Group__1__Impl : ( ( rule__ParameterList__Group_1__0 )* ) ;
     public final void rule__ParameterList__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8225:1: ( ( ( rule__ParameterList__Group_1__0 )* ) )
-            // InternalPascal.g:8226:1: ( ( rule__ParameterList__Group_1__0 )* )
+            // InternalPascal.g:8231:1: ( ( ( rule__ParameterList__Group_1__0 )* ) )
+            // InternalPascal.g:8232:1: ( ( rule__ParameterList__Group_1__0 )* )
             {
-            // InternalPascal.g:8226:1: ( ( rule__ParameterList__Group_1__0 )* )
-            // InternalPascal.g:8227:2: ( rule__ParameterList__Group_1__0 )*
+            // InternalPascal.g:8232:1: ( ( rule__ParameterList__Group_1__0 )* )
+            // InternalPascal.g:8233:2: ( rule__ParameterList__Group_1__0 )*
             {
              before(grammarAccess.getParameterListAccess().getGroup_1()); 
-            // InternalPascal.g:8228:2: ( rule__ParameterList__Group_1__0 )*
+            // InternalPascal.g:8234:2: ( rule__ParameterList__Group_1__0 )*
             loop57:
             do {
                 int alt57=2;
@@ -26052,7 +26011,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt57) {
             	case 1 :
-            	    // InternalPascal.g:8228:3: rule__ParameterList__Group_1__0
+            	    // InternalPascal.g:8234:3: rule__ParameterList__Group_1__0
             	    {
             	    pushFollow(FOLLOW_9);
             	    rule__ParameterList__Group_1__0();
@@ -26091,16 +26050,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterList__Group_1__0"
-    // InternalPascal.g:8237:1: rule__ParameterList__Group_1__0 : rule__ParameterList__Group_1__0__Impl rule__ParameterList__Group_1__1 ;
+    // InternalPascal.g:8243:1: rule__ParameterList__Group_1__0 : rule__ParameterList__Group_1__0__Impl rule__ParameterList__Group_1__1 ;
     public final void rule__ParameterList__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8241:1: ( rule__ParameterList__Group_1__0__Impl rule__ParameterList__Group_1__1 )
-            // InternalPascal.g:8242:2: rule__ParameterList__Group_1__0__Impl rule__ParameterList__Group_1__1
+            // InternalPascal.g:8247:1: ( rule__ParameterList__Group_1__0__Impl rule__ParameterList__Group_1__1 )
+            // InternalPascal.g:8248:2: rule__ParameterList__Group_1__0__Impl rule__ParameterList__Group_1__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__ParameterList__Group_1__0__Impl();
 
             state._fsp--;
@@ -26129,17 +26088,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterList__Group_1__0__Impl"
-    // InternalPascal.g:8249:1: rule__ParameterList__Group_1__0__Impl : ( ',' ) ;
+    // InternalPascal.g:8255:1: rule__ParameterList__Group_1__0__Impl : ( ',' ) ;
     public final void rule__ParameterList__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8253:1: ( ( ',' ) )
-            // InternalPascal.g:8254:1: ( ',' )
+            // InternalPascal.g:8259:1: ( ( ',' ) )
+            // InternalPascal.g:8260:1: ( ',' )
             {
-            // InternalPascal.g:8254:1: ( ',' )
-            // InternalPascal.g:8255:2: ','
+            // InternalPascal.g:8260:1: ( ',' )
+            // InternalPascal.g:8261:2: ','
             {
              before(grammarAccess.getParameterListAccess().getCommaKeyword_1_0()); 
             match(input,40,FOLLOW_2); 
@@ -26166,14 +26125,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterList__Group_1__1"
-    // InternalPascal.g:8264:1: rule__ParameterList__Group_1__1 : rule__ParameterList__Group_1__1__Impl ;
+    // InternalPascal.g:8270:1: rule__ParameterList__Group_1__1 : rule__ParameterList__Group_1__1__Impl ;
     public final void rule__ParameterList__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8268:1: ( rule__ParameterList__Group_1__1__Impl )
-            // InternalPascal.g:8269:2: rule__ParameterList__Group_1__1__Impl
+            // InternalPascal.g:8274:1: ( rule__ParameterList__Group_1__1__Impl )
+            // InternalPascal.g:8275:2: rule__ParameterList__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ParameterList__Group_1__1__Impl();
@@ -26199,21 +26158,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterList__Group_1__1__Impl"
-    // InternalPascal.g:8275:1: rule__ParameterList__Group_1__1__Impl : ( ( rule__ParameterList__ActualParameterAssignment_1_1 ) ) ;
+    // InternalPascal.g:8281:1: rule__ParameterList__Group_1__1__Impl : ( ( rule__ParameterList__ActualParameterAssignment_1_1 ) ) ;
     public final void rule__ParameterList__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8279:1: ( ( ( rule__ParameterList__ActualParameterAssignment_1_1 ) ) )
-            // InternalPascal.g:8280:1: ( ( rule__ParameterList__ActualParameterAssignment_1_1 ) )
+            // InternalPascal.g:8285:1: ( ( ( rule__ParameterList__ActualParameterAssignment_1_1 ) ) )
+            // InternalPascal.g:8286:1: ( ( rule__ParameterList__ActualParameterAssignment_1_1 ) )
             {
-            // InternalPascal.g:8280:1: ( ( rule__ParameterList__ActualParameterAssignment_1_1 ) )
-            // InternalPascal.g:8281:2: ( rule__ParameterList__ActualParameterAssignment_1_1 )
+            // InternalPascal.g:8286:1: ( ( rule__ParameterList__ActualParameterAssignment_1_1 ) )
+            // InternalPascal.g:8287:2: ( rule__ParameterList__ActualParameterAssignment_1_1 )
             {
              before(grammarAccess.getParameterListAccess().getActualParameterAssignment_1_1()); 
-            // InternalPascal.g:8282:2: ( rule__ParameterList__ActualParameterAssignment_1_1 )
-            // InternalPascal.g:8282:3: rule__ParameterList__ActualParameterAssignment_1_1
+            // InternalPascal.g:8288:2: ( rule__ParameterList__ActualParameterAssignment_1_1 )
+            // InternalPascal.g:8288:3: rule__ParameterList__ActualParameterAssignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__ParameterList__ActualParameterAssignment_1_1();
@@ -26246,14 +26205,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GotoStatement__Group__0"
-    // InternalPascal.g:8291:1: rule__GotoStatement__Group__0 : rule__GotoStatement__Group__0__Impl rule__GotoStatement__Group__1 ;
+    // InternalPascal.g:8297:1: rule__GotoStatement__Group__0 : rule__GotoStatement__Group__0__Impl rule__GotoStatement__Group__1 ;
     public final void rule__GotoStatement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8295:1: ( rule__GotoStatement__Group__0__Impl rule__GotoStatement__Group__1 )
-            // InternalPascal.g:8296:2: rule__GotoStatement__Group__0__Impl rule__GotoStatement__Group__1
+            // InternalPascal.g:8301:1: ( rule__GotoStatement__Group__0__Impl rule__GotoStatement__Group__1 )
+            // InternalPascal.g:8302:2: rule__GotoStatement__Group__0__Impl rule__GotoStatement__Group__1
             {
             pushFollow(FOLLOW_11);
             rule__GotoStatement__Group__0__Impl();
@@ -26284,17 +26243,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GotoStatement__Group__0__Impl"
-    // InternalPascal.g:8303:1: rule__GotoStatement__Group__0__Impl : ( 'goto' ) ;
+    // InternalPascal.g:8309:1: rule__GotoStatement__Group__0__Impl : ( 'goto' ) ;
     public final void rule__GotoStatement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8307:1: ( ( 'goto' ) )
-            // InternalPascal.g:8308:1: ( 'goto' )
+            // InternalPascal.g:8313:1: ( ( 'goto' ) )
+            // InternalPascal.g:8314:1: ( 'goto' )
             {
-            // InternalPascal.g:8308:1: ( 'goto' )
-            // InternalPascal.g:8309:2: 'goto'
+            // InternalPascal.g:8314:1: ( 'goto' )
+            // InternalPascal.g:8315:2: 'goto'
             {
              before(grammarAccess.getGotoStatementAccess().getGotoKeyword_0()); 
             match(input,65,FOLLOW_2); 
@@ -26321,14 +26280,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GotoStatement__Group__1"
-    // InternalPascal.g:8318:1: rule__GotoStatement__Group__1 : rule__GotoStatement__Group__1__Impl ;
+    // InternalPascal.g:8324:1: rule__GotoStatement__Group__1 : rule__GotoStatement__Group__1__Impl ;
     public final void rule__GotoStatement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8322:1: ( rule__GotoStatement__Group__1__Impl )
-            // InternalPascal.g:8323:2: rule__GotoStatement__Group__1__Impl
+            // InternalPascal.g:8328:1: ( rule__GotoStatement__Group__1__Impl )
+            // InternalPascal.g:8329:2: rule__GotoStatement__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__GotoStatement__Group__1__Impl();
@@ -26354,21 +26313,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GotoStatement__Group__1__Impl"
-    // InternalPascal.g:8329:1: rule__GotoStatement__Group__1__Impl : ( ( rule__GotoStatement__LabelAssignment_1 ) ) ;
+    // InternalPascal.g:8335:1: rule__GotoStatement__Group__1__Impl : ( ( rule__GotoStatement__LabelAssignment_1 ) ) ;
     public final void rule__GotoStatement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8333:1: ( ( ( rule__GotoStatement__LabelAssignment_1 ) ) )
-            // InternalPascal.g:8334:1: ( ( rule__GotoStatement__LabelAssignment_1 ) )
+            // InternalPascal.g:8339:1: ( ( ( rule__GotoStatement__LabelAssignment_1 ) ) )
+            // InternalPascal.g:8340:1: ( ( rule__GotoStatement__LabelAssignment_1 ) )
             {
-            // InternalPascal.g:8334:1: ( ( rule__GotoStatement__LabelAssignment_1 ) )
-            // InternalPascal.g:8335:2: ( rule__GotoStatement__LabelAssignment_1 )
+            // InternalPascal.g:8340:1: ( ( rule__GotoStatement__LabelAssignment_1 ) )
+            // InternalPascal.g:8341:2: ( rule__GotoStatement__LabelAssignment_1 )
             {
              before(grammarAccess.getGotoStatementAccess().getLabelAssignment_1()); 
-            // InternalPascal.g:8336:2: ( rule__GotoStatement__LabelAssignment_1 )
-            // InternalPascal.g:8336:3: rule__GotoStatement__LabelAssignment_1
+            // InternalPascal.g:8342:2: ( rule__GotoStatement__LabelAssignment_1 )
+            // InternalPascal.g:8342:3: rule__GotoStatement__LabelAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__GotoStatement__LabelAssignment_1();
@@ -26401,16 +26360,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CompoundStatement__Group__0"
-    // InternalPascal.g:8345:1: rule__CompoundStatement__Group__0 : rule__CompoundStatement__Group__0__Impl rule__CompoundStatement__Group__1 ;
+    // InternalPascal.g:8351:1: rule__CompoundStatement__Group__0 : rule__CompoundStatement__Group__0__Impl rule__CompoundStatement__Group__1 ;
     public final void rule__CompoundStatement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8349:1: ( rule__CompoundStatement__Group__0__Impl rule__CompoundStatement__Group__1 )
-            // InternalPascal.g:8350:2: rule__CompoundStatement__Group__0__Impl rule__CompoundStatement__Group__1
+            // InternalPascal.g:8355:1: ( rule__CompoundStatement__Group__0__Impl rule__CompoundStatement__Group__1 )
+            // InternalPascal.g:8356:2: rule__CompoundStatement__Group__0__Impl rule__CompoundStatement__Group__1
             {
-            pushFollow(FOLLOW_39);
+            pushFollow(FOLLOW_40);
             rule__CompoundStatement__Group__0__Impl();
 
             state._fsp--;
@@ -26439,17 +26398,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CompoundStatement__Group__0__Impl"
-    // InternalPascal.g:8357:1: rule__CompoundStatement__Group__0__Impl : ( 'begin' ) ;
+    // InternalPascal.g:8363:1: rule__CompoundStatement__Group__0__Impl : ( 'begin' ) ;
     public final void rule__CompoundStatement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8361:1: ( ( 'begin' ) )
-            // InternalPascal.g:8362:1: ( 'begin' )
+            // InternalPascal.g:8367:1: ( ( 'begin' ) )
+            // InternalPascal.g:8368:1: ( 'begin' )
             {
-            // InternalPascal.g:8362:1: ( 'begin' )
-            // InternalPascal.g:8363:2: 'begin'
+            // InternalPascal.g:8368:1: ( 'begin' )
+            // InternalPascal.g:8369:2: 'begin'
             {
              before(grammarAccess.getCompoundStatementAccess().getBeginKeyword_0()); 
             match(input,66,FOLLOW_2); 
@@ -26476,16 +26435,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CompoundStatement__Group__1"
-    // InternalPascal.g:8372:1: rule__CompoundStatement__Group__1 : rule__CompoundStatement__Group__1__Impl rule__CompoundStatement__Group__2 ;
+    // InternalPascal.g:8378:1: rule__CompoundStatement__Group__1 : rule__CompoundStatement__Group__1__Impl rule__CompoundStatement__Group__2 ;
     public final void rule__CompoundStatement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8376:1: ( rule__CompoundStatement__Group__1__Impl rule__CompoundStatement__Group__2 )
-            // InternalPascal.g:8377:2: rule__CompoundStatement__Group__1__Impl rule__CompoundStatement__Group__2
+            // InternalPascal.g:8382:1: ( rule__CompoundStatement__Group__1__Impl rule__CompoundStatement__Group__2 )
+            // InternalPascal.g:8383:2: rule__CompoundStatement__Group__1__Impl rule__CompoundStatement__Group__2
             {
-            pushFollow(FOLLOW_50);
+            pushFollow(FOLLOW_51);
             rule__CompoundStatement__Group__1__Impl();
 
             state._fsp--;
@@ -26514,25 +26473,31 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CompoundStatement__Group__1__Impl"
-    // InternalPascal.g:8384:1: rule__CompoundStatement__Group__1__Impl : ( rulestatements ) ;
+    // InternalPascal.g:8390:1: rule__CompoundStatement__Group__1__Impl : ( ( rule__CompoundStatement__StatementsAssignment_1 ) ) ;
     public final void rule__CompoundStatement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8388:1: ( ( rulestatements ) )
-            // InternalPascal.g:8389:1: ( rulestatements )
+            // InternalPascal.g:8394:1: ( ( ( rule__CompoundStatement__StatementsAssignment_1 ) ) )
+            // InternalPascal.g:8395:1: ( ( rule__CompoundStatement__StatementsAssignment_1 ) )
             {
-            // InternalPascal.g:8389:1: ( rulestatements )
-            // InternalPascal.g:8390:2: rulestatements
+            // InternalPascal.g:8395:1: ( ( rule__CompoundStatement__StatementsAssignment_1 ) )
+            // InternalPascal.g:8396:2: ( rule__CompoundStatement__StatementsAssignment_1 )
             {
-             before(grammarAccess.getCompoundStatementAccess().getStatementsParserRuleCall_1()); 
+             before(grammarAccess.getCompoundStatementAccess().getStatementsAssignment_1()); 
+            // InternalPascal.g:8397:2: ( rule__CompoundStatement__StatementsAssignment_1 )
+            // InternalPascal.g:8397:3: rule__CompoundStatement__StatementsAssignment_1
+            {
             pushFollow(FOLLOW_2);
-            rulestatements();
+            rule__CompoundStatement__StatementsAssignment_1();
 
             state._fsp--;
 
-             after(grammarAccess.getCompoundStatementAccess().getStatementsParserRuleCall_1()); 
+
+            }
+
+             after(grammarAccess.getCompoundStatementAccess().getStatementsAssignment_1()); 
 
             }
 
@@ -26555,14 +26520,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CompoundStatement__Group__2"
-    // InternalPascal.g:8399:1: rule__CompoundStatement__Group__2 : rule__CompoundStatement__Group__2__Impl ;
+    // InternalPascal.g:8405:1: rule__CompoundStatement__Group__2 : rule__CompoundStatement__Group__2__Impl ;
     public final void rule__CompoundStatement__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8403:1: ( rule__CompoundStatement__Group__2__Impl )
-            // InternalPascal.g:8404:2: rule__CompoundStatement__Group__2__Impl
+            // InternalPascal.g:8409:1: ( rule__CompoundStatement__Group__2__Impl )
+            // InternalPascal.g:8410:2: rule__CompoundStatement__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__CompoundStatement__Group__2__Impl();
@@ -26588,17 +26553,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CompoundStatement__Group__2__Impl"
-    // InternalPascal.g:8410:1: rule__CompoundStatement__Group__2__Impl : ( 'end' ) ;
+    // InternalPascal.g:8416:1: rule__CompoundStatement__Group__2__Impl : ( 'end' ) ;
     public final void rule__CompoundStatement__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8414:1: ( ( 'end' ) )
-            // InternalPascal.g:8415:1: ( 'end' )
+            // InternalPascal.g:8420:1: ( ( 'end' ) )
+            // InternalPascal.g:8421:1: ( 'end' )
             {
-            // InternalPascal.g:8415:1: ( 'end' )
-            // InternalPascal.g:8416:2: 'end'
+            // InternalPascal.g:8421:1: ( 'end' )
+            // InternalPascal.g:8422:2: 'end'
             {
              before(grammarAccess.getCompoundStatementAccess().getEndKeyword_2()); 
             match(input,56,FOLLOW_2); 
@@ -26625,14 +26590,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statements__Group__0"
-    // InternalPascal.g:8426:1: rule__Statements__Group__0 : rule__Statements__Group__0__Impl rule__Statements__Group__1 ;
+    // InternalPascal.g:8432:1: rule__Statements__Group__0 : rule__Statements__Group__0__Impl rule__Statements__Group__1 ;
     public final void rule__Statements__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8430:1: ( rule__Statements__Group__0__Impl rule__Statements__Group__1 )
-            // InternalPascal.g:8431:2: rule__Statements__Group__0__Impl rule__Statements__Group__1
+            // InternalPascal.g:8436:1: ( rule__Statements__Group__0__Impl rule__Statements__Group__1 )
+            // InternalPascal.g:8437:2: rule__Statements__Group__0__Impl rule__Statements__Group__1
             {
             pushFollow(FOLLOW_14);
             rule__Statements__Group__0__Impl();
@@ -26663,21 +26628,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statements__Group__0__Impl"
-    // InternalPascal.g:8438:1: rule__Statements__Group__0__Impl : ( ( rule__Statements__StatementAssignment_0 ) ) ;
+    // InternalPascal.g:8444:1: rule__Statements__Group__0__Impl : ( ( rule__Statements__StatementAssignment_0 ) ) ;
     public final void rule__Statements__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8442:1: ( ( ( rule__Statements__StatementAssignment_0 ) ) )
-            // InternalPascal.g:8443:1: ( ( rule__Statements__StatementAssignment_0 ) )
+            // InternalPascal.g:8448:1: ( ( ( rule__Statements__StatementAssignment_0 ) ) )
+            // InternalPascal.g:8449:1: ( ( rule__Statements__StatementAssignment_0 ) )
             {
-            // InternalPascal.g:8443:1: ( ( rule__Statements__StatementAssignment_0 ) )
-            // InternalPascal.g:8444:2: ( rule__Statements__StatementAssignment_0 )
+            // InternalPascal.g:8449:1: ( ( rule__Statements__StatementAssignment_0 ) )
+            // InternalPascal.g:8450:2: ( rule__Statements__StatementAssignment_0 )
             {
              before(grammarAccess.getStatementsAccess().getStatementAssignment_0()); 
-            // InternalPascal.g:8445:2: ( rule__Statements__StatementAssignment_0 )
-            // InternalPascal.g:8445:3: rule__Statements__StatementAssignment_0
+            // InternalPascal.g:8451:2: ( rule__Statements__StatementAssignment_0 )
+            // InternalPascal.g:8451:3: rule__Statements__StatementAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Statements__StatementAssignment_0();
@@ -26710,14 +26675,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statements__Group__1"
-    // InternalPascal.g:8453:1: rule__Statements__Group__1 : rule__Statements__Group__1__Impl ;
+    // InternalPascal.g:8459:1: rule__Statements__Group__1 : rule__Statements__Group__1__Impl ;
     public final void rule__Statements__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8457:1: ( rule__Statements__Group__1__Impl )
-            // InternalPascal.g:8458:2: rule__Statements__Group__1__Impl
+            // InternalPascal.g:8463:1: ( rule__Statements__Group__1__Impl )
+            // InternalPascal.g:8464:2: rule__Statements__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Statements__Group__1__Impl();
@@ -26743,20 +26708,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statements__Group__1__Impl"
-    // InternalPascal.g:8464:1: rule__Statements__Group__1__Impl : ( ( rule__Statements__Group_1__0 )* ) ;
+    // InternalPascal.g:8470:1: rule__Statements__Group__1__Impl : ( ( rule__Statements__Group_1__0 )* ) ;
     public final void rule__Statements__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8468:1: ( ( ( rule__Statements__Group_1__0 )* ) )
-            // InternalPascal.g:8469:1: ( ( rule__Statements__Group_1__0 )* )
+            // InternalPascal.g:8474:1: ( ( ( rule__Statements__Group_1__0 )* ) )
+            // InternalPascal.g:8475:1: ( ( rule__Statements__Group_1__0 )* )
             {
-            // InternalPascal.g:8469:1: ( ( rule__Statements__Group_1__0 )* )
-            // InternalPascal.g:8470:2: ( rule__Statements__Group_1__0 )*
+            // InternalPascal.g:8475:1: ( ( rule__Statements__Group_1__0 )* )
+            // InternalPascal.g:8476:2: ( rule__Statements__Group_1__0 )*
             {
              before(grammarAccess.getStatementsAccess().getGroup_1()); 
-            // InternalPascal.g:8471:2: ( rule__Statements__Group_1__0 )*
+            // InternalPascal.g:8477:2: ( rule__Statements__Group_1__0 )*
             loop58:
             do {
                 int alt58=2;
@@ -26769,7 +26734,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt58) {
             	case 1 :
-            	    // InternalPascal.g:8471:3: rule__Statements__Group_1__0
+            	    // InternalPascal.g:8477:3: rule__Statements__Group_1__0
             	    {
             	    pushFollow(FOLLOW_26);
             	    rule__Statements__Group_1__0();
@@ -26808,16 +26773,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statements__Group_1__0"
-    // InternalPascal.g:8480:1: rule__Statements__Group_1__0 : rule__Statements__Group_1__0__Impl rule__Statements__Group_1__1 ;
+    // InternalPascal.g:8486:1: rule__Statements__Group_1__0 : rule__Statements__Group_1__0__Impl rule__Statements__Group_1__1 ;
     public final void rule__Statements__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8484:1: ( rule__Statements__Group_1__0__Impl rule__Statements__Group_1__1 )
-            // InternalPascal.g:8485:2: rule__Statements__Group_1__0__Impl rule__Statements__Group_1__1
+            // InternalPascal.g:8490:1: ( rule__Statements__Group_1__0__Impl rule__Statements__Group_1__1 )
+            // InternalPascal.g:8491:2: rule__Statements__Group_1__0__Impl rule__Statements__Group_1__1
             {
-            pushFollow(FOLLOW_39);
+            pushFollow(FOLLOW_40);
             rule__Statements__Group_1__0__Impl();
 
             state._fsp--;
@@ -26846,17 +26811,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statements__Group_1__0__Impl"
-    // InternalPascal.g:8492:1: rule__Statements__Group_1__0__Impl : ( ';' ) ;
+    // InternalPascal.g:8498:1: rule__Statements__Group_1__0__Impl : ( ';' ) ;
     public final void rule__Statements__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8496:1: ( ( ';' ) )
-            // InternalPascal.g:8497:1: ( ';' )
+            // InternalPascal.g:8502:1: ( ( ';' ) )
+            // InternalPascal.g:8503:1: ( ';' )
             {
-            // InternalPascal.g:8497:1: ( ';' )
-            // InternalPascal.g:8498:2: ';'
+            // InternalPascal.g:8503:1: ( ';' )
+            // InternalPascal.g:8504:2: ';'
             {
              before(grammarAccess.getStatementsAccess().getSemicolonKeyword_1_0()); 
             match(input,37,FOLLOW_2); 
@@ -26883,14 +26848,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statements__Group_1__1"
-    // InternalPascal.g:8507:1: rule__Statements__Group_1__1 : rule__Statements__Group_1__1__Impl ;
+    // InternalPascal.g:8513:1: rule__Statements__Group_1__1 : rule__Statements__Group_1__1__Impl ;
     public final void rule__Statements__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8511:1: ( rule__Statements__Group_1__1__Impl )
-            // InternalPascal.g:8512:2: rule__Statements__Group_1__1__Impl
+            // InternalPascal.g:8517:1: ( rule__Statements__Group_1__1__Impl )
+            // InternalPascal.g:8518:2: rule__Statements__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Statements__Group_1__1__Impl();
@@ -26916,21 +26881,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statements__Group_1__1__Impl"
-    // InternalPascal.g:8518:1: rule__Statements__Group_1__1__Impl : ( ( rule__Statements__StatementAssignment_1_1 ) ) ;
+    // InternalPascal.g:8524:1: rule__Statements__Group_1__1__Impl : ( ( rule__Statements__StatementAssignment_1_1 ) ) ;
     public final void rule__Statements__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8522:1: ( ( ( rule__Statements__StatementAssignment_1_1 ) ) )
-            // InternalPascal.g:8523:1: ( ( rule__Statements__StatementAssignment_1_1 ) )
+            // InternalPascal.g:8528:1: ( ( ( rule__Statements__StatementAssignment_1_1 ) ) )
+            // InternalPascal.g:8529:1: ( ( rule__Statements__StatementAssignment_1_1 ) )
             {
-            // InternalPascal.g:8523:1: ( ( rule__Statements__StatementAssignment_1_1 ) )
-            // InternalPascal.g:8524:2: ( rule__Statements__StatementAssignment_1_1 )
+            // InternalPascal.g:8529:1: ( ( rule__Statements__StatementAssignment_1_1 ) )
+            // InternalPascal.g:8530:2: ( rule__Statements__StatementAssignment_1_1 )
             {
              before(grammarAccess.getStatementsAccess().getStatementAssignment_1_1()); 
-            // InternalPascal.g:8525:2: ( rule__Statements__StatementAssignment_1_1 )
-            // InternalPascal.g:8525:3: rule__Statements__StatementAssignment_1_1
+            // InternalPascal.g:8531:2: ( rule__Statements__StatementAssignment_1_1 )
+            // InternalPascal.g:8531:3: rule__Statements__StatementAssignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Statements__StatementAssignment_1_1();
@@ -26963,16 +26928,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__0"
-    // InternalPascal.g:8534:1: rule__CaseStatement__Group__0 : rule__CaseStatement__Group__0__Impl rule__CaseStatement__Group__1 ;
+    // InternalPascal.g:8540:1: rule__CaseStatement__Group__0 : rule__CaseStatement__Group__0__Impl rule__CaseStatement__Group__1 ;
     public final void rule__CaseStatement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8538:1: ( rule__CaseStatement__Group__0__Impl rule__CaseStatement__Group__1 )
-            // InternalPascal.g:8539:2: rule__CaseStatement__Group__0__Impl rule__CaseStatement__Group__1
+            // InternalPascal.g:8544:1: ( rule__CaseStatement__Group__0__Impl rule__CaseStatement__Group__1 )
+            // InternalPascal.g:8545:2: rule__CaseStatement__Group__0__Impl rule__CaseStatement__Group__1
             {
-            pushFollow(FOLLOW_38);
+            pushFollow(FOLLOW_39);
             rule__CaseStatement__Group__0__Impl();
 
             state._fsp--;
@@ -27001,17 +26966,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__0__Impl"
-    // InternalPascal.g:8546:1: rule__CaseStatement__Group__0__Impl : ( 'case' ) ;
+    // InternalPascal.g:8552:1: rule__CaseStatement__Group__0__Impl : ( 'case' ) ;
     public final void rule__CaseStatement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8550:1: ( ( 'case' ) )
-            // InternalPascal.g:8551:1: ( 'case' )
+            // InternalPascal.g:8556:1: ( ( 'case' ) )
+            // InternalPascal.g:8557:1: ( 'case' )
             {
-            // InternalPascal.g:8551:1: ( 'case' )
-            // InternalPascal.g:8552:2: 'case'
+            // InternalPascal.g:8557:1: ( 'case' )
+            // InternalPascal.g:8558:2: 'case'
             {
              before(grammarAccess.getCaseStatementAccess().getCaseKeyword_0()); 
             match(input,57,FOLLOW_2); 
@@ -27038,14 +27003,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__1"
-    // InternalPascal.g:8561:1: rule__CaseStatement__Group__1 : rule__CaseStatement__Group__1__Impl rule__CaseStatement__Group__2 ;
+    // InternalPascal.g:8567:1: rule__CaseStatement__Group__1 : rule__CaseStatement__Group__1__Impl rule__CaseStatement__Group__2 ;
     public final void rule__CaseStatement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8565:1: ( rule__CaseStatement__Group__1__Impl rule__CaseStatement__Group__2 )
-            // InternalPascal.g:8566:2: rule__CaseStatement__Group__1__Impl rule__CaseStatement__Group__2
+            // InternalPascal.g:8571:1: ( rule__CaseStatement__Group__1__Impl rule__CaseStatement__Group__2 )
+            // InternalPascal.g:8572:2: rule__CaseStatement__Group__1__Impl rule__CaseStatement__Group__2
             {
             pushFollow(FOLLOW_36);
             rule__CaseStatement__Group__1__Impl();
@@ -27076,21 +27041,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__1__Impl"
-    // InternalPascal.g:8573:1: rule__CaseStatement__Group__1__Impl : ( ( rule__CaseStatement__ExpressionAssignment_1 ) ) ;
+    // InternalPascal.g:8579:1: rule__CaseStatement__Group__1__Impl : ( ( rule__CaseStatement__ExpressionAssignment_1 ) ) ;
     public final void rule__CaseStatement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8577:1: ( ( ( rule__CaseStatement__ExpressionAssignment_1 ) ) )
-            // InternalPascal.g:8578:1: ( ( rule__CaseStatement__ExpressionAssignment_1 ) )
+            // InternalPascal.g:8583:1: ( ( ( rule__CaseStatement__ExpressionAssignment_1 ) ) )
+            // InternalPascal.g:8584:1: ( ( rule__CaseStatement__ExpressionAssignment_1 ) )
             {
-            // InternalPascal.g:8578:1: ( ( rule__CaseStatement__ExpressionAssignment_1 ) )
-            // InternalPascal.g:8579:2: ( rule__CaseStatement__ExpressionAssignment_1 )
+            // InternalPascal.g:8584:1: ( ( rule__CaseStatement__ExpressionAssignment_1 ) )
+            // InternalPascal.g:8585:2: ( rule__CaseStatement__ExpressionAssignment_1 )
             {
              before(grammarAccess.getCaseStatementAccess().getExpressionAssignment_1()); 
-            // InternalPascal.g:8580:2: ( rule__CaseStatement__ExpressionAssignment_1 )
-            // InternalPascal.g:8580:3: rule__CaseStatement__ExpressionAssignment_1
+            // InternalPascal.g:8586:2: ( rule__CaseStatement__ExpressionAssignment_1 )
+            // InternalPascal.g:8586:3: rule__CaseStatement__ExpressionAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__CaseStatement__ExpressionAssignment_1();
@@ -27123,14 +27088,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__2"
-    // InternalPascal.g:8588:1: rule__CaseStatement__Group__2 : rule__CaseStatement__Group__2__Impl rule__CaseStatement__Group__3 ;
+    // InternalPascal.g:8594:1: rule__CaseStatement__Group__2 : rule__CaseStatement__Group__2__Impl rule__CaseStatement__Group__3 ;
     public final void rule__CaseStatement__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8592:1: ( rule__CaseStatement__Group__2__Impl rule__CaseStatement__Group__3 )
-            // InternalPascal.g:8593:2: rule__CaseStatement__Group__2__Impl rule__CaseStatement__Group__3
+            // InternalPascal.g:8598:1: ( rule__CaseStatement__Group__2__Impl rule__CaseStatement__Group__3 )
+            // InternalPascal.g:8599:2: rule__CaseStatement__Group__2__Impl rule__CaseStatement__Group__3
             {
             pushFollow(FOLLOW_16);
             rule__CaseStatement__Group__2__Impl();
@@ -27161,17 +27126,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__2__Impl"
-    // InternalPascal.g:8600:1: rule__CaseStatement__Group__2__Impl : ( 'of' ) ;
+    // InternalPascal.g:8606:1: rule__CaseStatement__Group__2__Impl : ( 'of' ) ;
     public final void rule__CaseStatement__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8604:1: ( ( 'of' ) )
-            // InternalPascal.g:8605:1: ( 'of' )
+            // InternalPascal.g:8610:1: ( ( 'of' ) )
+            // InternalPascal.g:8611:1: ( 'of' )
             {
-            // InternalPascal.g:8605:1: ( 'of' )
-            // InternalPascal.g:8606:2: 'of'
+            // InternalPascal.g:8611:1: ( 'of' )
+            // InternalPascal.g:8612:2: 'of'
             {
              before(grammarAccess.getCaseStatementAccess().getOfKeyword_2()); 
             match(input,58,FOLLOW_2); 
@@ -27198,16 +27163,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__3"
-    // InternalPascal.g:8615:1: rule__CaseStatement__Group__3 : rule__CaseStatement__Group__3__Impl rule__CaseStatement__Group__4 ;
+    // InternalPascal.g:8621:1: rule__CaseStatement__Group__3 : rule__CaseStatement__Group__3__Impl rule__CaseStatement__Group__4 ;
     public final void rule__CaseStatement__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8619:1: ( rule__CaseStatement__Group__3__Impl rule__CaseStatement__Group__4 )
-            // InternalPascal.g:8620:2: rule__CaseStatement__Group__3__Impl rule__CaseStatement__Group__4
+            // InternalPascal.g:8625:1: ( rule__CaseStatement__Group__3__Impl rule__CaseStatement__Group__4 )
+            // InternalPascal.g:8626:2: rule__CaseStatement__Group__3__Impl rule__CaseStatement__Group__4
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_52);
             rule__CaseStatement__Group__3__Impl();
 
             state._fsp--;
@@ -27236,21 +27201,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__3__Impl"
-    // InternalPascal.g:8627:1: rule__CaseStatement__Group__3__Impl : ( ( rule__CaseStatement__CaseListElementAssignment_3 ) ) ;
+    // InternalPascal.g:8633:1: rule__CaseStatement__Group__3__Impl : ( ( rule__CaseStatement__CaseListElementAssignment_3 ) ) ;
     public final void rule__CaseStatement__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8631:1: ( ( ( rule__CaseStatement__CaseListElementAssignment_3 ) ) )
-            // InternalPascal.g:8632:1: ( ( rule__CaseStatement__CaseListElementAssignment_3 ) )
+            // InternalPascal.g:8637:1: ( ( ( rule__CaseStatement__CaseListElementAssignment_3 ) ) )
+            // InternalPascal.g:8638:1: ( ( rule__CaseStatement__CaseListElementAssignment_3 ) )
             {
-            // InternalPascal.g:8632:1: ( ( rule__CaseStatement__CaseListElementAssignment_3 ) )
-            // InternalPascal.g:8633:2: ( rule__CaseStatement__CaseListElementAssignment_3 )
+            // InternalPascal.g:8638:1: ( ( rule__CaseStatement__CaseListElementAssignment_3 ) )
+            // InternalPascal.g:8639:2: ( rule__CaseStatement__CaseListElementAssignment_3 )
             {
              before(grammarAccess.getCaseStatementAccess().getCaseListElementAssignment_3()); 
-            // InternalPascal.g:8634:2: ( rule__CaseStatement__CaseListElementAssignment_3 )
-            // InternalPascal.g:8634:3: rule__CaseStatement__CaseListElementAssignment_3
+            // InternalPascal.g:8640:2: ( rule__CaseStatement__CaseListElementAssignment_3 )
+            // InternalPascal.g:8640:3: rule__CaseStatement__CaseListElementAssignment_3
             {
             pushFollow(FOLLOW_2);
             rule__CaseStatement__CaseListElementAssignment_3();
@@ -27283,16 +27248,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__4"
-    // InternalPascal.g:8642:1: rule__CaseStatement__Group__4 : rule__CaseStatement__Group__4__Impl rule__CaseStatement__Group__5 ;
+    // InternalPascal.g:8648:1: rule__CaseStatement__Group__4 : rule__CaseStatement__Group__4__Impl rule__CaseStatement__Group__5 ;
     public final void rule__CaseStatement__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8646:1: ( rule__CaseStatement__Group__4__Impl rule__CaseStatement__Group__5 )
-            // InternalPascal.g:8647:2: rule__CaseStatement__Group__4__Impl rule__CaseStatement__Group__5
+            // InternalPascal.g:8652:1: ( rule__CaseStatement__Group__4__Impl rule__CaseStatement__Group__5 )
+            // InternalPascal.g:8653:2: rule__CaseStatement__Group__4__Impl rule__CaseStatement__Group__5
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_52);
             rule__CaseStatement__Group__4__Impl();
 
             state._fsp--;
@@ -27321,20 +27286,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__4__Impl"
-    // InternalPascal.g:8654:1: rule__CaseStatement__Group__4__Impl : ( ( rule__CaseStatement__Group_4__0 )* ) ;
+    // InternalPascal.g:8660:1: rule__CaseStatement__Group__4__Impl : ( ( rule__CaseStatement__Group_4__0 )* ) ;
     public final void rule__CaseStatement__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8658:1: ( ( ( rule__CaseStatement__Group_4__0 )* ) )
-            // InternalPascal.g:8659:1: ( ( rule__CaseStatement__Group_4__0 )* )
+            // InternalPascal.g:8664:1: ( ( ( rule__CaseStatement__Group_4__0 )* ) )
+            // InternalPascal.g:8665:1: ( ( rule__CaseStatement__Group_4__0 )* )
             {
-            // InternalPascal.g:8659:1: ( ( rule__CaseStatement__Group_4__0 )* )
-            // InternalPascal.g:8660:2: ( rule__CaseStatement__Group_4__0 )*
+            // InternalPascal.g:8665:1: ( ( rule__CaseStatement__Group_4__0 )* )
+            // InternalPascal.g:8666:2: ( rule__CaseStatement__Group_4__0 )*
             {
              before(grammarAccess.getCaseStatementAccess().getGroup_4()); 
-            // InternalPascal.g:8661:2: ( rule__CaseStatement__Group_4__0 )*
+            // InternalPascal.g:8667:2: ( rule__CaseStatement__Group_4__0 )*
             loop59:
             do {
                 int alt59=2;
@@ -27343,7 +27308,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
                 if ( (LA59_0==37) ) {
                     int LA59_1 = input.LA(2);
 
-                    if ( ((LA59_1>=RULE_NUM_REAL && LA59_1<=RULE_STRING_LITERAL)||(LA59_1>=18 && LA59_1<=19)||LA59_1==43) ) {
+                    if ( ((LA59_1>=RULE_NUM_REAL && LA59_1<=RULE_BOOL)||(LA59_1>=18 && LA59_1<=19)||LA59_1==43) ) {
                         alt59=1;
                     }
 
@@ -27353,7 +27318,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
                 switch (alt59) {
             	case 1 :
-            	    // InternalPascal.g:8661:3: rule__CaseStatement__Group_4__0
+            	    // InternalPascal.g:8667:3: rule__CaseStatement__Group_4__0
             	    {
             	    pushFollow(FOLLOW_26);
             	    rule__CaseStatement__Group_4__0();
@@ -27392,16 +27357,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__5"
-    // InternalPascal.g:8669:1: rule__CaseStatement__Group__5 : rule__CaseStatement__Group__5__Impl rule__CaseStatement__Group__6 ;
+    // InternalPascal.g:8675:1: rule__CaseStatement__Group__5 : rule__CaseStatement__Group__5__Impl rule__CaseStatement__Group__6 ;
     public final void rule__CaseStatement__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8673:1: ( rule__CaseStatement__Group__5__Impl rule__CaseStatement__Group__6 )
-            // InternalPascal.g:8674:2: rule__CaseStatement__Group__5__Impl rule__CaseStatement__Group__6
+            // InternalPascal.g:8679:1: ( rule__CaseStatement__Group__5__Impl rule__CaseStatement__Group__6 )
+            // InternalPascal.g:8680:2: rule__CaseStatement__Group__5__Impl rule__CaseStatement__Group__6
             {
-            pushFollow(FOLLOW_51);
+            pushFollow(FOLLOW_52);
             rule__CaseStatement__Group__5__Impl();
 
             state._fsp--;
@@ -27430,20 +27395,20 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__5__Impl"
-    // InternalPascal.g:8681:1: rule__CaseStatement__Group__5__Impl : ( ( rule__CaseStatement__Group_5__0 )? ) ;
+    // InternalPascal.g:8687:1: rule__CaseStatement__Group__5__Impl : ( ( rule__CaseStatement__Group_5__0 )? ) ;
     public final void rule__CaseStatement__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8685:1: ( ( ( rule__CaseStatement__Group_5__0 )? ) )
-            // InternalPascal.g:8686:1: ( ( rule__CaseStatement__Group_5__0 )? )
+            // InternalPascal.g:8691:1: ( ( ( rule__CaseStatement__Group_5__0 )? ) )
+            // InternalPascal.g:8692:1: ( ( rule__CaseStatement__Group_5__0 )? )
             {
-            // InternalPascal.g:8686:1: ( ( rule__CaseStatement__Group_5__0 )? )
-            // InternalPascal.g:8687:2: ( rule__CaseStatement__Group_5__0 )?
+            // InternalPascal.g:8692:1: ( ( rule__CaseStatement__Group_5__0 )? )
+            // InternalPascal.g:8693:2: ( rule__CaseStatement__Group_5__0 )?
             {
              before(grammarAccess.getCaseStatementAccess().getGroup_5()); 
-            // InternalPascal.g:8688:2: ( rule__CaseStatement__Group_5__0 )?
+            // InternalPascal.g:8694:2: ( rule__CaseStatement__Group_5__0 )?
             int alt60=2;
             int LA60_0 = input.LA(1);
 
@@ -27452,7 +27417,7 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
             }
             switch (alt60) {
                 case 1 :
-                    // InternalPascal.g:8688:3: rule__CaseStatement__Group_5__0
+                    // InternalPascal.g:8694:3: rule__CaseStatement__Group_5__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__CaseStatement__Group_5__0();
@@ -27488,14 +27453,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__6"
-    // InternalPascal.g:8696:1: rule__CaseStatement__Group__6 : rule__CaseStatement__Group__6__Impl ;
+    // InternalPascal.g:8702:1: rule__CaseStatement__Group__6 : rule__CaseStatement__Group__6__Impl ;
     public final void rule__CaseStatement__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8700:1: ( rule__CaseStatement__Group__6__Impl )
-            // InternalPascal.g:8701:2: rule__CaseStatement__Group__6__Impl
+            // InternalPascal.g:8706:1: ( rule__CaseStatement__Group__6__Impl )
+            // InternalPascal.g:8707:2: rule__CaseStatement__Group__6__Impl
             {
             pushFollow(FOLLOW_2);
             rule__CaseStatement__Group__6__Impl();
@@ -27521,17 +27486,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group__6__Impl"
-    // InternalPascal.g:8707:1: rule__CaseStatement__Group__6__Impl : ( 'end' ) ;
+    // InternalPascal.g:8713:1: rule__CaseStatement__Group__6__Impl : ( 'end' ) ;
     public final void rule__CaseStatement__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8711:1: ( ( 'end' ) )
-            // InternalPascal.g:8712:1: ( 'end' )
+            // InternalPascal.g:8717:1: ( ( 'end' ) )
+            // InternalPascal.g:8718:1: ( 'end' )
             {
-            // InternalPascal.g:8712:1: ( 'end' )
-            // InternalPascal.g:8713:2: 'end'
+            // InternalPascal.g:8718:1: ( 'end' )
+            // InternalPascal.g:8719:2: 'end'
             {
              before(grammarAccess.getCaseStatementAccess().getEndKeyword_6()); 
             match(input,56,FOLLOW_2); 
@@ -27558,14 +27523,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_4__0"
-    // InternalPascal.g:8723:1: rule__CaseStatement__Group_4__0 : rule__CaseStatement__Group_4__0__Impl rule__CaseStatement__Group_4__1 ;
+    // InternalPascal.g:8729:1: rule__CaseStatement__Group_4__0 : rule__CaseStatement__Group_4__0__Impl rule__CaseStatement__Group_4__1 ;
     public final void rule__CaseStatement__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8727:1: ( rule__CaseStatement__Group_4__0__Impl rule__CaseStatement__Group_4__1 )
-            // InternalPascal.g:8728:2: rule__CaseStatement__Group_4__0__Impl rule__CaseStatement__Group_4__1
+            // InternalPascal.g:8733:1: ( rule__CaseStatement__Group_4__0__Impl rule__CaseStatement__Group_4__1 )
+            // InternalPascal.g:8734:2: rule__CaseStatement__Group_4__0__Impl rule__CaseStatement__Group_4__1
             {
             pushFollow(FOLLOW_16);
             rule__CaseStatement__Group_4__0__Impl();
@@ -27596,17 +27561,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_4__0__Impl"
-    // InternalPascal.g:8735:1: rule__CaseStatement__Group_4__0__Impl : ( ';' ) ;
+    // InternalPascal.g:8741:1: rule__CaseStatement__Group_4__0__Impl : ( ';' ) ;
     public final void rule__CaseStatement__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8739:1: ( ( ';' ) )
-            // InternalPascal.g:8740:1: ( ';' )
+            // InternalPascal.g:8745:1: ( ( ';' ) )
+            // InternalPascal.g:8746:1: ( ';' )
             {
-            // InternalPascal.g:8740:1: ( ';' )
-            // InternalPascal.g:8741:2: ';'
+            // InternalPascal.g:8746:1: ( ';' )
+            // InternalPascal.g:8747:2: ';'
             {
              before(grammarAccess.getCaseStatementAccess().getSemicolonKeyword_4_0()); 
             match(input,37,FOLLOW_2); 
@@ -27633,14 +27598,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_4__1"
-    // InternalPascal.g:8750:1: rule__CaseStatement__Group_4__1 : rule__CaseStatement__Group_4__1__Impl ;
+    // InternalPascal.g:8756:1: rule__CaseStatement__Group_4__1 : rule__CaseStatement__Group_4__1__Impl ;
     public final void rule__CaseStatement__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8754:1: ( rule__CaseStatement__Group_4__1__Impl )
-            // InternalPascal.g:8755:2: rule__CaseStatement__Group_4__1__Impl
+            // InternalPascal.g:8760:1: ( rule__CaseStatement__Group_4__1__Impl )
+            // InternalPascal.g:8761:2: rule__CaseStatement__Group_4__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__CaseStatement__Group_4__1__Impl();
@@ -27666,21 +27631,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_4__1__Impl"
-    // InternalPascal.g:8761:1: rule__CaseStatement__Group_4__1__Impl : ( ( rule__CaseStatement__CaseListElement1Assignment_4_1 ) ) ;
+    // InternalPascal.g:8767:1: rule__CaseStatement__Group_4__1__Impl : ( ( rule__CaseStatement__CaseListElement1Assignment_4_1 ) ) ;
     public final void rule__CaseStatement__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8765:1: ( ( ( rule__CaseStatement__CaseListElement1Assignment_4_1 ) ) )
-            // InternalPascal.g:8766:1: ( ( rule__CaseStatement__CaseListElement1Assignment_4_1 ) )
+            // InternalPascal.g:8771:1: ( ( ( rule__CaseStatement__CaseListElement1Assignment_4_1 ) ) )
+            // InternalPascal.g:8772:1: ( ( rule__CaseStatement__CaseListElement1Assignment_4_1 ) )
             {
-            // InternalPascal.g:8766:1: ( ( rule__CaseStatement__CaseListElement1Assignment_4_1 ) )
-            // InternalPascal.g:8767:2: ( rule__CaseStatement__CaseListElement1Assignment_4_1 )
+            // InternalPascal.g:8772:1: ( ( rule__CaseStatement__CaseListElement1Assignment_4_1 ) )
+            // InternalPascal.g:8773:2: ( rule__CaseStatement__CaseListElement1Assignment_4_1 )
             {
              before(grammarAccess.getCaseStatementAccess().getCaseListElement1Assignment_4_1()); 
-            // InternalPascal.g:8768:2: ( rule__CaseStatement__CaseListElement1Assignment_4_1 )
-            // InternalPascal.g:8768:3: rule__CaseStatement__CaseListElement1Assignment_4_1
+            // InternalPascal.g:8774:2: ( rule__CaseStatement__CaseListElement1Assignment_4_1 )
+            // InternalPascal.g:8774:3: rule__CaseStatement__CaseListElement1Assignment_4_1
             {
             pushFollow(FOLLOW_2);
             rule__CaseStatement__CaseListElement1Assignment_4_1();
@@ -27713,16 +27678,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_5__0"
-    // InternalPascal.g:8777:1: rule__CaseStatement__Group_5__0 : rule__CaseStatement__Group_5__0__Impl rule__CaseStatement__Group_5__1 ;
+    // InternalPascal.g:8783:1: rule__CaseStatement__Group_5__0 : rule__CaseStatement__Group_5__0__Impl rule__CaseStatement__Group_5__1 ;
     public final void rule__CaseStatement__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8781:1: ( rule__CaseStatement__Group_5__0__Impl rule__CaseStatement__Group_5__1 )
-            // InternalPascal.g:8782:2: rule__CaseStatement__Group_5__0__Impl rule__CaseStatement__Group_5__1
+            // InternalPascal.g:8787:1: ( rule__CaseStatement__Group_5__0__Impl rule__CaseStatement__Group_5__1 )
+            // InternalPascal.g:8788:2: rule__CaseStatement__Group_5__0__Impl rule__CaseStatement__Group_5__1
             {
-            pushFollow(FOLLOW_52);
+            pushFollow(FOLLOW_53);
             rule__CaseStatement__Group_5__0__Impl();
 
             state._fsp--;
@@ -27751,17 +27716,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_5__0__Impl"
-    // InternalPascal.g:8789:1: rule__CaseStatement__Group_5__0__Impl : ( ';' ) ;
+    // InternalPascal.g:8795:1: rule__CaseStatement__Group_5__0__Impl : ( ';' ) ;
     public final void rule__CaseStatement__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8793:1: ( ( ';' ) )
-            // InternalPascal.g:8794:1: ( ';' )
+            // InternalPascal.g:8799:1: ( ( ';' ) )
+            // InternalPascal.g:8800:1: ( ';' )
             {
-            // InternalPascal.g:8794:1: ( ';' )
-            // InternalPascal.g:8795:2: ';'
+            // InternalPascal.g:8800:1: ( ';' )
+            // InternalPascal.g:8801:2: ';'
             {
              before(grammarAccess.getCaseStatementAccess().getSemicolonKeyword_5_0()); 
             match(input,37,FOLLOW_2); 
@@ -27788,16 +27753,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_5__1"
-    // InternalPascal.g:8804:1: rule__CaseStatement__Group_5__1 : rule__CaseStatement__Group_5__1__Impl rule__CaseStatement__Group_5__2 ;
+    // InternalPascal.g:8810:1: rule__CaseStatement__Group_5__1 : rule__CaseStatement__Group_5__1__Impl rule__CaseStatement__Group_5__2 ;
     public final void rule__CaseStatement__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8808:1: ( rule__CaseStatement__Group_5__1__Impl rule__CaseStatement__Group_5__2 )
-            // InternalPascal.g:8809:2: rule__CaseStatement__Group_5__1__Impl rule__CaseStatement__Group_5__2
+            // InternalPascal.g:8814:1: ( rule__CaseStatement__Group_5__1__Impl rule__CaseStatement__Group_5__2 )
+            // InternalPascal.g:8815:2: rule__CaseStatement__Group_5__1__Impl rule__CaseStatement__Group_5__2
             {
-            pushFollow(FOLLOW_39);
+            pushFollow(FOLLOW_40);
             rule__CaseStatement__Group_5__1__Impl();
 
             state._fsp--;
@@ -27826,17 +27791,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_5__1__Impl"
-    // InternalPascal.g:8816:1: rule__CaseStatement__Group_5__1__Impl : ( 'else' ) ;
+    // InternalPascal.g:8822:1: rule__CaseStatement__Group_5__1__Impl : ( 'else' ) ;
     public final void rule__CaseStatement__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8820:1: ( ( 'else' ) )
-            // InternalPascal.g:8821:1: ( 'else' )
+            // InternalPascal.g:8826:1: ( ( 'else' ) )
+            // InternalPascal.g:8827:1: ( 'else' )
             {
-            // InternalPascal.g:8821:1: ( 'else' )
-            // InternalPascal.g:8822:2: 'else'
+            // InternalPascal.g:8827:1: ( 'else' )
+            // InternalPascal.g:8828:2: 'else'
             {
              before(grammarAccess.getCaseStatementAccess().getElseKeyword_5_1()); 
             match(input,67,FOLLOW_2); 
@@ -27863,14 +27828,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_5__2"
-    // InternalPascal.g:8831:1: rule__CaseStatement__Group_5__2 : rule__CaseStatement__Group_5__2__Impl ;
+    // InternalPascal.g:8837:1: rule__CaseStatement__Group_5__2 : rule__CaseStatement__Group_5__2__Impl ;
     public final void rule__CaseStatement__Group_5__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8835:1: ( rule__CaseStatement__Group_5__2__Impl )
-            // InternalPascal.g:8836:2: rule__CaseStatement__Group_5__2__Impl
+            // InternalPascal.g:8841:1: ( rule__CaseStatement__Group_5__2__Impl )
+            // InternalPascal.g:8842:2: rule__CaseStatement__Group_5__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__CaseStatement__Group_5__2__Impl();
@@ -27896,21 +27861,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__Group_5__2__Impl"
-    // InternalPascal.g:8842:1: rule__CaseStatement__Group_5__2__Impl : ( ( rule__CaseStatement__StatementsAssignment_5_2 ) ) ;
+    // InternalPascal.g:8848:1: rule__CaseStatement__Group_5__2__Impl : ( ( rule__CaseStatement__StatementsAssignment_5_2 ) ) ;
     public final void rule__CaseStatement__Group_5__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8846:1: ( ( ( rule__CaseStatement__StatementsAssignment_5_2 ) ) )
-            // InternalPascal.g:8847:1: ( ( rule__CaseStatement__StatementsAssignment_5_2 ) )
+            // InternalPascal.g:8852:1: ( ( ( rule__CaseStatement__StatementsAssignment_5_2 ) ) )
+            // InternalPascal.g:8853:1: ( ( rule__CaseStatement__StatementsAssignment_5_2 ) )
             {
-            // InternalPascal.g:8847:1: ( ( rule__CaseStatement__StatementsAssignment_5_2 ) )
-            // InternalPascal.g:8848:2: ( rule__CaseStatement__StatementsAssignment_5_2 )
+            // InternalPascal.g:8853:1: ( ( rule__CaseStatement__StatementsAssignment_5_2 ) )
+            // InternalPascal.g:8854:2: ( rule__CaseStatement__StatementsAssignment_5_2 )
             {
              before(grammarAccess.getCaseStatementAccess().getStatementsAssignment_5_2()); 
-            // InternalPascal.g:8849:2: ( rule__CaseStatement__StatementsAssignment_5_2 )
-            // InternalPascal.g:8849:3: rule__CaseStatement__StatementsAssignment_5_2
+            // InternalPascal.g:8855:2: ( rule__CaseStatement__StatementsAssignment_5_2 )
+            // InternalPascal.g:8855:3: rule__CaseStatement__StatementsAssignment_5_2
             {
             pushFollow(FOLLOW_2);
             rule__CaseStatement__StatementsAssignment_5_2();
@@ -27943,14 +27908,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseListElement__Group__0"
-    // InternalPascal.g:8858:1: rule__CaseListElement__Group__0 : rule__CaseListElement__Group__0__Impl rule__CaseListElement__Group__1 ;
+    // InternalPascal.g:8864:1: rule__CaseListElement__Group__0 : rule__CaseListElement__Group__0__Impl rule__CaseListElement__Group__1 ;
     public final void rule__CaseListElement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8862:1: ( rule__CaseListElement__Group__0__Impl rule__CaseListElement__Group__1 )
-            // InternalPascal.g:8863:2: rule__CaseListElement__Group__0__Impl rule__CaseListElement__Group__1
+            // InternalPascal.g:8868:1: ( rule__CaseListElement__Group__0__Impl rule__CaseListElement__Group__1 )
+            // InternalPascal.g:8869:2: rule__CaseListElement__Group__0__Impl rule__CaseListElement__Group__1
             {
             pushFollow(FOLLOW_27);
             rule__CaseListElement__Group__0__Impl();
@@ -27981,21 +27946,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseListElement__Group__0__Impl"
-    // InternalPascal.g:8870:1: rule__CaseListElement__Group__0__Impl : ( ( rule__CaseListElement__ConstListAssignment_0 ) ) ;
+    // InternalPascal.g:8876:1: rule__CaseListElement__Group__0__Impl : ( ( rule__CaseListElement__ConstListAssignment_0 ) ) ;
     public final void rule__CaseListElement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8874:1: ( ( ( rule__CaseListElement__ConstListAssignment_0 ) ) )
-            // InternalPascal.g:8875:1: ( ( rule__CaseListElement__ConstListAssignment_0 ) )
+            // InternalPascal.g:8880:1: ( ( ( rule__CaseListElement__ConstListAssignment_0 ) ) )
+            // InternalPascal.g:8881:1: ( ( rule__CaseListElement__ConstListAssignment_0 ) )
             {
-            // InternalPascal.g:8875:1: ( ( rule__CaseListElement__ConstListAssignment_0 ) )
-            // InternalPascal.g:8876:2: ( rule__CaseListElement__ConstListAssignment_0 )
+            // InternalPascal.g:8881:1: ( ( rule__CaseListElement__ConstListAssignment_0 ) )
+            // InternalPascal.g:8882:2: ( rule__CaseListElement__ConstListAssignment_0 )
             {
              before(grammarAccess.getCaseListElementAccess().getConstListAssignment_0()); 
-            // InternalPascal.g:8877:2: ( rule__CaseListElement__ConstListAssignment_0 )
-            // InternalPascal.g:8877:3: rule__CaseListElement__ConstListAssignment_0
+            // InternalPascal.g:8883:2: ( rule__CaseListElement__ConstListAssignment_0 )
+            // InternalPascal.g:8883:3: rule__CaseListElement__ConstListAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__CaseListElement__ConstListAssignment_0();
@@ -28028,16 +27993,16 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseListElement__Group__1"
-    // InternalPascal.g:8885:1: rule__CaseListElement__Group__1 : rule__CaseListElement__Group__1__Impl rule__CaseListElement__Group__2 ;
+    // InternalPascal.g:8891:1: rule__CaseListElement__Group__1 : rule__CaseListElement__Group__1__Impl rule__CaseListElement__Group__2 ;
     public final void rule__CaseListElement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8889:1: ( rule__CaseListElement__Group__1__Impl rule__CaseListElement__Group__2 )
-            // InternalPascal.g:8890:2: rule__CaseListElement__Group__1__Impl rule__CaseListElement__Group__2
+            // InternalPascal.g:8895:1: ( rule__CaseListElement__Group__1__Impl rule__CaseListElement__Group__2 )
+            // InternalPascal.g:8896:2: rule__CaseListElement__Group__1__Impl rule__CaseListElement__Group__2
             {
-            pushFollow(FOLLOW_39);
+            pushFollow(FOLLOW_40);
             rule__CaseListElement__Group__1__Impl();
 
             state._fsp--;
@@ -28066,17 +28031,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseListElement__Group__1__Impl"
-    // InternalPascal.g:8897:1: rule__CaseListElement__Group__1__Impl : ( ':' ) ;
+    // InternalPascal.g:8903:1: rule__CaseListElement__Group__1__Impl : ( ':' ) ;
     public final void rule__CaseListElement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8901:1: ( ( ':' ) )
-            // InternalPascal.g:8902:1: ( ':' )
+            // InternalPascal.g:8907:1: ( ( ':' ) )
+            // InternalPascal.g:8908:1: ( ':' )
             {
-            // InternalPascal.g:8902:1: ( ':' )
-            // InternalPascal.g:8903:2: ':'
+            // InternalPascal.g:8908:1: ( ':' )
+            // InternalPascal.g:8909:2: ':'
             {
              before(grammarAccess.getCaseListElementAccess().getColonKeyword_1()); 
             match(input,47,FOLLOW_2); 
@@ -28103,14 +28068,14 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseListElement__Group__2"
-    // InternalPascal.g:8912:1: rule__CaseListElement__Group__2 : rule__CaseListElement__Group__2__Impl ;
+    // InternalPascal.g:8918:1: rule__CaseListElement__Group__2 : rule__CaseListElement__Group__2__Impl ;
     public final void rule__CaseListElement__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8916:1: ( rule__CaseListElement__Group__2__Impl )
-            // InternalPascal.g:8917:2: rule__CaseListElement__Group__2__Impl
+            // InternalPascal.g:8922:1: ( rule__CaseListElement__Group__2__Impl )
+            // InternalPascal.g:8923:2: rule__CaseListElement__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__CaseListElement__Group__2__Impl();
@@ -28136,21 +28101,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseListElement__Group__2__Impl"
-    // InternalPascal.g:8923:1: rule__CaseListElement__Group__2__Impl : ( ( rule__CaseListElement__StatementAssignment_2 ) ) ;
+    // InternalPascal.g:8929:1: rule__CaseListElement__Group__2__Impl : ( ( rule__CaseListElement__StatementAssignment_2 ) ) ;
     public final void rule__CaseListElement__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8927:1: ( ( ( rule__CaseListElement__StatementAssignment_2 ) ) )
-            // InternalPascal.g:8928:1: ( ( rule__CaseListElement__StatementAssignment_2 ) )
+            // InternalPascal.g:8933:1: ( ( ( rule__CaseListElement__StatementAssignment_2 ) ) )
+            // InternalPascal.g:8934:1: ( ( rule__CaseListElement__StatementAssignment_2 ) )
             {
-            // InternalPascal.g:8928:1: ( ( rule__CaseListElement__StatementAssignment_2 ) )
-            // InternalPascal.g:8929:2: ( rule__CaseListElement__StatementAssignment_2 )
+            // InternalPascal.g:8934:1: ( ( rule__CaseListElement__StatementAssignment_2 ) )
+            // InternalPascal.g:8935:2: ( rule__CaseListElement__StatementAssignment_2 )
             {
              before(grammarAccess.getCaseListElementAccess().getStatementAssignment_2()); 
-            // InternalPascal.g:8930:2: ( rule__CaseListElement__StatementAssignment_2 )
-            // InternalPascal.g:8930:3: rule__CaseListElement__StatementAssignment_2
+            // InternalPascal.g:8936:2: ( rule__CaseListElement__StatementAssignment_2 )
+            // InternalPascal.g:8936:3: rule__CaseListElement__StatementAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__CaseListElement__StatementAssignment_2();
@@ -28183,17 +28148,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Pascal__ProgramAssignment"
-    // InternalPascal.g:8939:1: rule__Pascal__ProgramAssignment : ( ruleprogram ) ;
+    // InternalPascal.g:8945:1: rule__Pascal__ProgramAssignment : ( ruleprogram ) ;
     public final void rule__Pascal__ProgramAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8943:1: ( ( ruleprogram ) )
-            // InternalPascal.g:8944:2: ( ruleprogram )
+            // InternalPascal.g:8949:1: ( ( ruleprogram ) )
+            // InternalPascal.g:8950:2: ( ruleprogram )
             {
-            // InternalPascal.g:8944:2: ( ruleprogram )
-            // InternalPascal.g:8945:3: ruleprogram
+            // InternalPascal.g:8950:2: ( ruleprogram )
+            // InternalPascal.g:8951:3: ruleprogram
             {
              before(grammarAccess.getPascalAccess().getProgramProgramParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -28224,17 +28189,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__HeadAssignment_0"
-    // InternalPascal.g:8954:1: rule__Program__HeadAssignment_0 : ( ruleprogramHeading ) ;
+    // InternalPascal.g:8960:1: rule__Program__HeadAssignment_0 : ( ruleprogramHeading ) ;
     public final void rule__Program__HeadAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8958:1: ( ( ruleprogramHeading ) )
-            // InternalPascal.g:8959:2: ( ruleprogramHeading )
+            // InternalPascal.g:8964:1: ( ( ruleprogramHeading ) )
+            // InternalPascal.g:8965:2: ( ruleprogramHeading )
             {
-            // InternalPascal.g:8959:2: ( ruleprogramHeading )
-            // InternalPascal.g:8960:3: ruleprogramHeading
+            // InternalPascal.g:8965:2: ( ruleprogramHeading )
+            // InternalPascal.g:8966:3: ruleprogramHeading
             {
              before(grammarAccess.getProgramAccess().getHeadProgramHeadingParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -28265,17 +28230,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Program__BlockAssignment_2"
-    // InternalPascal.g:8969:1: rule__Program__BlockAssignment_2 : ( ruleblock ) ;
+    // InternalPascal.g:8975:1: rule__Program__BlockAssignment_2 : ( ruleblock ) ;
     public final void rule__Program__BlockAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8973:1: ( ( ruleblock ) )
-            // InternalPascal.g:8974:2: ( ruleblock )
+            // InternalPascal.g:8979:1: ( ( ruleblock ) )
+            // InternalPascal.g:8980:2: ( ruleblock )
             {
-            // InternalPascal.g:8974:2: ( ruleblock )
-            // InternalPascal.g:8975:3: ruleblock
+            // InternalPascal.g:8980:2: ( ruleblock )
+            // InternalPascal.g:8981:3: ruleblock
             {
              before(grammarAccess.getProgramAccess().getBlockBlockParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -28306,17 +28271,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__IdentiferAssignment_1"
-    // InternalPascal.g:8984:1: rule__ProgramHeading__IdentiferAssignment_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:8990:1: rule__ProgramHeading__IdentiferAssignment_1 : ( ruleidentifier ) ;
     public final void rule__ProgramHeading__IdentiferAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:8988:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:8989:2: ( ruleidentifier )
+            // InternalPascal.g:8994:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:8995:2: ( ruleidentifier )
             {
-            // InternalPascal.g:8989:2: ( ruleidentifier )
-            // InternalPascal.g:8990:3: ruleidentifier
+            // InternalPascal.g:8995:2: ( ruleidentifier )
+            // InternalPascal.g:8996:3: ruleidentifier
             {
              before(grammarAccess.getProgramHeadingAccess().getIdentiferIdentifierParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28347,17 +28312,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProgramHeading__IdentifierListAssignment_2_1"
-    // InternalPascal.g:8999:1: rule__ProgramHeading__IdentifierListAssignment_2_1 : ( ruleidentifierList ) ;
+    // InternalPascal.g:9005:1: rule__ProgramHeading__IdentifierListAssignment_2_1 : ( ruleidentifierList ) ;
     public final void rule__ProgramHeading__IdentifierListAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9003:1: ( ( ruleidentifierList ) )
-            // InternalPascal.g:9004:2: ( ruleidentifierList )
+            // InternalPascal.g:9009:1: ( ( ruleidentifierList ) )
+            // InternalPascal.g:9010:2: ( ruleidentifierList )
             {
-            // InternalPascal.g:9004:2: ( ruleidentifierList )
-            // InternalPascal.g:9005:3: ruleidentifierList
+            // InternalPascal.g:9010:2: ( ruleidentifierList )
+            // InternalPascal.g:9011:3: ruleidentifierList
             {
              before(grammarAccess.getProgramHeadingAccess().getIdentifierListIdentifierListParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28388,17 +28353,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__IdentifierAssignment_1"
-    // InternalPascal.g:9014:1: rule__IdentifierList__IdentifierAssignment_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:9020:1: rule__IdentifierList__IdentifierAssignment_1 : ( ruleidentifier ) ;
     public final void rule__IdentifierList__IdentifierAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9018:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:9019:2: ( ruleidentifier )
+            // InternalPascal.g:9024:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:9025:2: ( ruleidentifier )
             {
-            // InternalPascal.g:9019:2: ( ruleidentifier )
-            // InternalPascal.g:9020:3: ruleidentifier
+            // InternalPascal.g:9025:2: ( ruleidentifier )
+            // InternalPascal.g:9026:3: ruleidentifier
             {
              before(grammarAccess.getIdentifierListAccess().getIdentifierIdentifierParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28429,17 +28394,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IdentifierList__IdentifierList1Assignment_2_1"
-    // InternalPascal.g:9029:1: rule__IdentifierList__IdentifierList1Assignment_2_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:9035:1: rule__IdentifierList__IdentifierList1Assignment_2_1 : ( ruleidentifier ) ;
     public final void rule__IdentifierList__IdentifierList1Assignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9033:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:9034:2: ( ruleidentifier )
+            // InternalPascal.g:9039:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:9040:2: ( ruleidentifier )
             {
-            // InternalPascal.g:9034:2: ( ruleidentifier )
-            // InternalPascal.g:9035:3: ruleidentifier
+            // InternalPascal.g:9040:2: ( ruleidentifier )
+            // InternalPascal.g:9041:3: ruleidentifier
             {
              before(grammarAccess.getIdentifierListAccess().getIdentifierList1IdentifierParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28470,17 +28435,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Identifier__IdentifierAssignment"
-    // InternalPascal.g:9044:1: rule__Identifier__IdentifierAssignment : ( RULE_IDENT ) ;
+    // InternalPascal.g:9050:1: rule__Identifier__IdentifierAssignment : ( RULE_IDENT ) ;
     public final void rule__Identifier__IdentifierAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9048:1: ( ( RULE_IDENT ) )
-            // InternalPascal.g:9049:2: ( RULE_IDENT )
+            // InternalPascal.g:9054:1: ( ( RULE_IDENT ) )
+            // InternalPascal.g:9055:2: ( RULE_IDENT )
             {
-            // InternalPascal.g:9049:2: ( RULE_IDENT )
-            // InternalPascal.g:9050:3: RULE_IDENT
+            // InternalPascal.g:9055:2: ( RULE_IDENT )
+            // InternalPascal.g:9056:3: RULE_IDENT
             {
              before(grammarAccess.getIdentifierAccess().getIdentifierIDENTTerminalRuleCall_0()); 
             match(input,RULE_IDENT,FOLLOW_2); 
@@ -28507,17 +28472,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Block__LabelAssignment_1_0"
-    // InternalPascal.g:9059:1: rule__Block__LabelAssignment_1_0 : ( rulelabel_declaration_part ) ;
+    // InternalPascal.g:9065:1: rule__Block__LabelAssignment_1_0 : ( rulelabel_declaration_part ) ;
     public final void rule__Block__LabelAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9063:1: ( ( rulelabel_declaration_part ) )
-            // InternalPascal.g:9064:2: ( rulelabel_declaration_part )
+            // InternalPascal.g:9069:1: ( ( rulelabel_declaration_part ) )
+            // InternalPascal.g:9070:2: ( rulelabel_declaration_part )
             {
-            // InternalPascal.g:9064:2: ( rulelabel_declaration_part )
-            // InternalPascal.g:9065:3: rulelabel_declaration_part
+            // InternalPascal.g:9070:2: ( rulelabel_declaration_part )
+            // InternalPascal.g:9071:3: rulelabel_declaration_part
             {
              before(grammarAccess.getBlockAccess().getLabelLabel_declaration_partParserRuleCall_1_0_0()); 
             pushFollow(FOLLOW_2);
@@ -28547,26 +28512,26 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Block__LabelAssignment_1_0"
 
 
-    // $ANTLR start "rule__Block__ConstantDefinitionPartAssignment_1_1"
-    // InternalPascal.g:9074:1: rule__Block__ConstantDefinitionPartAssignment_1_1 : ( ruleconstantDefinitionPart ) ;
-    public final void rule__Block__ConstantDefinitionPartAssignment_1_1() throws RecognitionException {
+    // $ANTLR start "rule__Block__ConstantDefinitionPartsAssignment_1_1"
+    // InternalPascal.g:9080:1: rule__Block__ConstantDefinitionPartsAssignment_1_1 : ( ruleconstantDefinitionPart ) ;
+    public final void rule__Block__ConstantDefinitionPartsAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9078:1: ( ( ruleconstantDefinitionPart ) )
-            // InternalPascal.g:9079:2: ( ruleconstantDefinitionPart )
+            // InternalPascal.g:9084:1: ( ( ruleconstantDefinitionPart ) )
+            // InternalPascal.g:9085:2: ( ruleconstantDefinitionPart )
             {
-            // InternalPascal.g:9079:2: ( ruleconstantDefinitionPart )
-            // InternalPascal.g:9080:3: ruleconstantDefinitionPart
+            // InternalPascal.g:9085:2: ( ruleconstantDefinitionPart )
+            // InternalPascal.g:9086:3: ruleconstantDefinitionPart
             {
-             before(grammarAccess.getBlockAccess().getConstantDefinitionPartConstantDefinitionPartParserRuleCall_1_1_0()); 
+             before(grammarAccess.getBlockAccess().getConstantDefinitionPartsConstantDefinitionPartParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
             ruleconstantDefinitionPart();
 
             state._fsp--;
 
-             after(grammarAccess.getBlockAccess().getConstantDefinitionPartConstantDefinitionPartParserRuleCall_1_1_0()); 
+             after(grammarAccess.getBlockAccess().getConstantDefinitionPartsConstantDefinitionPartParserRuleCall_1_1_0()); 
 
             }
 
@@ -28585,29 +28550,29 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Block__ConstantDefinitionPartAssignment_1_1"
+    // $ANTLR end "rule__Block__ConstantDefinitionPartsAssignment_1_1"
 
 
-    // $ANTLR start "rule__Block__TypeDefinitionPartAssignment_1_2"
-    // InternalPascal.g:9089:1: rule__Block__TypeDefinitionPartAssignment_1_2 : ( ruletypeDefinitionPart ) ;
-    public final void rule__Block__TypeDefinitionPartAssignment_1_2() throws RecognitionException {
+    // $ANTLR start "rule__Block__TypeDefinitionPartsAssignment_1_2"
+    // InternalPascal.g:9095:1: rule__Block__TypeDefinitionPartsAssignment_1_2 : ( ruletypeDefinitionPart ) ;
+    public final void rule__Block__TypeDefinitionPartsAssignment_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9093:1: ( ( ruletypeDefinitionPart ) )
-            // InternalPascal.g:9094:2: ( ruletypeDefinitionPart )
+            // InternalPascal.g:9099:1: ( ( ruletypeDefinitionPart ) )
+            // InternalPascal.g:9100:2: ( ruletypeDefinitionPart )
             {
-            // InternalPascal.g:9094:2: ( ruletypeDefinitionPart )
-            // InternalPascal.g:9095:3: ruletypeDefinitionPart
+            // InternalPascal.g:9100:2: ( ruletypeDefinitionPart )
+            // InternalPascal.g:9101:3: ruletypeDefinitionPart
             {
-             before(grammarAccess.getBlockAccess().getTypeDefinitionPartTypeDefinitionPartParserRuleCall_1_2_0()); 
+             before(grammarAccess.getBlockAccess().getTypeDefinitionPartsTypeDefinitionPartParserRuleCall_1_2_0()); 
             pushFollow(FOLLOW_2);
             ruletypeDefinitionPart();
 
             state._fsp--;
 
-             after(grammarAccess.getBlockAccess().getTypeDefinitionPartTypeDefinitionPartParserRuleCall_1_2_0()); 
+             after(grammarAccess.getBlockAccess().getTypeDefinitionPartsTypeDefinitionPartParserRuleCall_1_2_0()); 
 
             }
 
@@ -28626,29 +28591,29 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Block__TypeDefinitionPartAssignment_1_2"
+    // $ANTLR end "rule__Block__TypeDefinitionPartsAssignment_1_2"
 
 
-    // $ANTLR start "rule__Block__VariableDeclarationPartAssignment_1_3"
-    // InternalPascal.g:9104:1: rule__Block__VariableDeclarationPartAssignment_1_3 : ( rulevariableDeclarationPart ) ;
-    public final void rule__Block__VariableDeclarationPartAssignment_1_3() throws RecognitionException {
+    // $ANTLR start "rule__Block__VariableDeclarationPartsAssignment_1_3"
+    // InternalPascal.g:9110:1: rule__Block__VariableDeclarationPartsAssignment_1_3 : ( rulevariableDeclarationPart ) ;
+    public final void rule__Block__VariableDeclarationPartsAssignment_1_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9108:1: ( ( rulevariableDeclarationPart ) )
-            // InternalPascal.g:9109:2: ( rulevariableDeclarationPart )
+            // InternalPascal.g:9114:1: ( ( rulevariableDeclarationPart ) )
+            // InternalPascal.g:9115:2: ( rulevariableDeclarationPart )
             {
-            // InternalPascal.g:9109:2: ( rulevariableDeclarationPart )
-            // InternalPascal.g:9110:3: rulevariableDeclarationPart
+            // InternalPascal.g:9115:2: ( rulevariableDeclarationPart )
+            // InternalPascal.g:9116:3: rulevariableDeclarationPart
             {
-             before(grammarAccess.getBlockAccess().getVariableDeclarationPartVariableDeclarationPartParserRuleCall_1_3_0()); 
+             before(grammarAccess.getBlockAccess().getVariableDeclarationPartsVariableDeclarationPartParserRuleCall_1_3_0()); 
             pushFollow(FOLLOW_2);
             rulevariableDeclarationPart();
 
             state._fsp--;
 
-             after(grammarAccess.getBlockAccess().getVariableDeclarationPartVariableDeclarationPartParserRuleCall_1_3_0()); 
+             after(grammarAccess.getBlockAccess().getVariableDeclarationPartsVariableDeclarationPartParserRuleCall_1_3_0()); 
 
             }
 
@@ -28667,29 +28632,29 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Block__VariableDeclarationPartAssignment_1_3"
+    // $ANTLR end "rule__Block__VariableDeclarationPartsAssignment_1_3"
 
 
-    // $ANTLR start "rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4"
-    // InternalPascal.g:9119:1: rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4 : ( ruleprocedureAndFunctionDeclarationPart ) ;
-    public final void rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4() throws RecognitionException {
+    // $ANTLR start "rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4"
+    // InternalPascal.g:9125:1: rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4 : ( ruleprocedureAndFunctionDeclarationPart ) ;
+    public final void rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9123:1: ( ( ruleprocedureAndFunctionDeclarationPart ) )
-            // InternalPascal.g:9124:2: ( ruleprocedureAndFunctionDeclarationPart )
+            // InternalPascal.g:9129:1: ( ( ruleprocedureAndFunctionDeclarationPart ) )
+            // InternalPascal.g:9130:2: ( ruleprocedureAndFunctionDeclarationPart )
             {
-            // InternalPascal.g:9124:2: ( ruleprocedureAndFunctionDeclarationPart )
-            // InternalPascal.g:9125:3: ruleprocedureAndFunctionDeclarationPart
+            // InternalPascal.g:9130:2: ( ruleprocedureAndFunctionDeclarationPart )
+            // InternalPascal.g:9131:3: ruleprocedureAndFunctionDeclarationPart
             {
-             before(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartProcedureAndFunctionDeclarationPartParserRuleCall_1_4_0()); 
+             before(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartsProcedureAndFunctionDeclarationPartParserRuleCall_1_4_0()); 
             pushFollow(FOLLOW_2);
             ruleprocedureAndFunctionDeclarationPart();
 
             state._fsp--;
 
-             after(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartProcedureAndFunctionDeclarationPartParserRuleCall_1_4_0()); 
+             after(grammarAccess.getBlockAccess().getProcedureAndFunctionDeclarationPartsProcedureAndFunctionDeclarationPartParserRuleCall_1_4_0()); 
 
             }
 
@@ -28708,29 +28673,29 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Block__ProcedureAndFunctionDeclarationPartAssignment_1_4"
+    // $ANTLR end "rule__Block__ProcedureAndFunctionDeclarationPartsAssignment_1_4"
 
 
-    // $ANTLR start "rule__Block__UsesUnitsPartAssignment_1_5"
-    // InternalPascal.g:9134:1: rule__Block__UsesUnitsPartAssignment_1_5 : ( ruleusesUnitsPart ) ;
-    public final void rule__Block__UsesUnitsPartAssignment_1_5() throws RecognitionException {
+    // $ANTLR start "rule__Block__UsesUnitsPartsAssignment_1_5"
+    // InternalPascal.g:9140:1: rule__Block__UsesUnitsPartsAssignment_1_5 : ( ruleusesUnitsPart ) ;
+    public final void rule__Block__UsesUnitsPartsAssignment_1_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9138:1: ( ( ruleusesUnitsPart ) )
-            // InternalPascal.g:9139:2: ( ruleusesUnitsPart )
+            // InternalPascal.g:9144:1: ( ( ruleusesUnitsPart ) )
+            // InternalPascal.g:9145:2: ( ruleusesUnitsPart )
             {
-            // InternalPascal.g:9139:2: ( ruleusesUnitsPart )
-            // InternalPascal.g:9140:3: ruleusesUnitsPart
+            // InternalPascal.g:9145:2: ( ruleusesUnitsPart )
+            // InternalPascal.g:9146:3: ruleusesUnitsPart
             {
-             before(grammarAccess.getBlockAccess().getUsesUnitsPartUsesUnitsPartParserRuleCall_1_5_0()); 
+             before(grammarAccess.getBlockAccess().getUsesUnitsPartsUsesUnitsPartParserRuleCall_1_5_0()); 
             pushFollow(FOLLOW_2);
             ruleusesUnitsPart();
 
             state._fsp--;
 
-             after(grammarAccess.getBlockAccess().getUsesUnitsPartUsesUnitsPartParserRuleCall_1_5_0()); 
+             after(grammarAccess.getBlockAccess().getUsesUnitsPartsUsesUnitsPartParserRuleCall_1_5_0()); 
 
             }
 
@@ -28749,21 +28714,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Block__UsesUnitsPartAssignment_1_5"
+    // $ANTLR end "rule__Block__UsesUnitsPartsAssignment_1_5"
 
 
     // $ANTLR start "rule__Block__CompoundStatementAssignment_2"
-    // InternalPascal.g:9149:1: rule__Block__CompoundStatementAssignment_2 : ( rulecompoundStatement ) ;
+    // InternalPascal.g:9155:1: rule__Block__CompoundStatementAssignment_2 : ( rulecompoundStatement ) ;
     public final void rule__Block__CompoundStatementAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9153:1: ( ( rulecompoundStatement ) )
-            // InternalPascal.g:9154:2: ( rulecompoundStatement )
+            // InternalPascal.g:9159:1: ( ( rulecompoundStatement ) )
+            // InternalPascal.g:9160:2: ( rulecompoundStatement )
             {
-            // InternalPascal.g:9154:2: ( rulecompoundStatement )
-            // InternalPascal.g:9155:3: rulecompoundStatement
+            // InternalPascal.g:9160:2: ( rulecompoundStatement )
+            // InternalPascal.g:9161:3: rulecompoundStatement
             {
              before(grammarAccess.getBlockAccess().getCompoundStatementCompoundStatementParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -28794,17 +28759,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label_declaration_part__LabelAssignment_2_1"
-    // InternalPascal.g:9164:1: rule__Label_declaration_part__LabelAssignment_2_1 : ( rulelabel ) ;
+    // InternalPascal.g:9170:1: rule__Label_declaration_part__LabelAssignment_2_1 : ( rulelabel ) ;
     public final void rule__Label_declaration_part__LabelAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9168:1: ( ( rulelabel ) )
-            // InternalPascal.g:9169:2: ( rulelabel )
+            // InternalPascal.g:9174:1: ( ( rulelabel ) )
+            // InternalPascal.g:9175:2: ( rulelabel )
             {
-            // InternalPascal.g:9169:2: ( rulelabel )
-            // InternalPascal.g:9170:3: rulelabel
+            // InternalPascal.g:9175:2: ( rulelabel )
+            // InternalPascal.g:9176:3: rulelabel
             {
              before(grammarAccess.getLabel_declaration_partAccess().getLabelLabelParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28835,17 +28800,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label__UnsignedIntegerAssignment_0"
-    // InternalPascal.g:9179:1: rule__Label__UnsignedIntegerAssignment_0 : ( ruleunsignedInteger ) ;
+    // InternalPascal.g:9185:1: rule__Label__UnsignedIntegerAssignment_0 : ( ruleunsignedInteger ) ;
     public final void rule__Label__UnsignedIntegerAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9183:1: ( ( ruleunsignedInteger ) )
-            // InternalPascal.g:9184:2: ( ruleunsignedInteger )
+            // InternalPascal.g:9189:1: ( ( ruleunsignedInteger ) )
+            // InternalPascal.g:9190:2: ( ruleunsignedInteger )
             {
-            // InternalPascal.g:9184:2: ( ruleunsignedInteger )
-            // InternalPascal.g:9185:3: ruleunsignedInteger
+            // InternalPascal.g:9190:2: ( ruleunsignedInteger )
+            // InternalPascal.g:9191:3: ruleunsignedInteger
             {
              before(grammarAccess.getLabelAccess().getUnsignedIntegerUnsignedIntegerParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -28876,17 +28841,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Label__IdentifierAssignment_1"
-    // InternalPascal.g:9194:1: rule__Label__IdentifierAssignment_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:9200:1: rule__Label__IdentifierAssignment_1 : ( ruleidentifier ) ;
     public final void rule__Label__IdentifierAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9198:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:9199:2: ( ruleidentifier )
+            // InternalPascal.g:9204:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:9205:2: ( ruleidentifier )
             {
-            // InternalPascal.g:9199:2: ( ruleidentifier )
-            // InternalPascal.g:9200:3: ruleidentifier
+            // InternalPascal.g:9205:2: ( ruleidentifier )
+            // InternalPascal.g:9206:3: ruleidentifier
             {
              before(grammarAccess.getLabelAccess().getIdentifierIdentifierParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -28917,17 +28882,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedInteger__NumberAssignment"
-    // InternalPascal.g:9209:1: rule__UnsignedInteger__NumberAssignment : ( RULE_NUM ) ;
+    // InternalPascal.g:9215:1: rule__UnsignedInteger__NumberAssignment : ( RULE_NUM ) ;
     public final void rule__UnsignedInteger__NumberAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9213:1: ( ( RULE_NUM ) )
-            // InternalPascal.g:9214:2: ( RULE_NUM )
+            // InternalPascal.g:9219:1: ( ( RULE_NUM ) )
+            // InternalPascal.g:9220:2: ( RULE_NUM )
             {
-            // InternalPascal.g:9214:2: ( RULE_NUM )
-            // InternalPascal.g:9215:3: RULE_NUM
+            // InternalPascal.g:9220:2: ( RULE_NUM )
+            // InternalPascal.g:9221:3: RULE_NUM
             {
              before(grammarAccess.getUnsignedIntegerAccess().getNumberNUMTerminalRuleCall_0()); 
             match(input,RULE_NUM,FOLLOW_2); 
@@ -28954,17 +28919,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0"
-    // InternalPascal.g:9224:1: rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 : ( ruleconstantDefinition ) ;
+    // InternalPascal.g:9230:1: rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0 : ( ruleconstantDefinition ) ;
     public final void rule__ConstantDefinitionPart__ConstantDefinitionAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9228:1: ( ( ruleconstantDefinition ) )
-            // InternalPascal.g:9229:2: ( ruleconstantDefinition )
+            // InternalPascal.g:9234:1: ( ( ruleconstantDefinition ) )
+            // InternalPascal.g:9235:2: ( ruleconstantDefinition )
             {
-            // InternalPascal.g:9229:2: ( ruleconstantDefinition )
-            // InternalPascal.g:9230:3: ruleconstantDefinition
+            // InternalPascal.g:9235:2: ( ruleconstantDefinition )
+            // InternalPascal.g:9236:3: ruleconstantDefinition
             {
              before(grammarAccess.getConstantDefinitionPartAccess().getConstantDefinitionConstantDefinitionParserRuleCall_1_0_0()); 
             pushFollow(FOLLOW_2);
@@ -28995,17 +28960,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinition__IdentifierAssignment_0"
-    // InternalPascal.g:9239:1: rule__ConstantDefinition__IdentifierAssignment_0 : ( ruleidentifier ) ;
+    // InternalPascal.g:9245:1: rule__ConstantDefinition__IdentifierAssignment_0 : ( ruleidentifier ) ;
     public final void rule__ConstantDefinition__IdentifierAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9243:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:9244:2: ( ruleidentifier )
+            // InternalPascal.g:9249:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:9250:2: ( ruleidentifier )
             {
-            // InternalPascal.g:9244:2: ( ruleidentifier )
-            // InternalPascal.g:9245:3: ruleidentifier
+            // InternalPascal.g:9250:2: ( ruleidentifier )
+            // InternalPascal.g:9251:3: ruleidentifier
             {
              before(grammarAccess.getConstantDefinitionAccess().getIdentifierIdentifierParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -29036,17 +29001,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstantDefinition__ConstantAssignment_2"
-    // InternalPascal.g:9254:1: rule__ConstantDefinition__ConstantAssignment_2 : ( ruleconstant ) ;
+    // InternalPascal.g:9260:1: rule__ConstantDefinition__ConstantAssignment_2 : ( ruleconstant ) ;
     public final void rule__ConstantDefinition__ConstantAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9258:1: ( ( ruleconstant ) )
-            // InternalPascal.g:9259:2: ( ruleconstant )
+            // InternalPascal.g:9264:1: ( ( ruleconstant ) )
+            // InternalPascal.g:9265:2: ( ruleconstant )
             {
-            // InternalPascal.g:9259:2: ( ruleconstant )
-            // InternalPascal.g:9260:3: ruleconstant
+            // InternalPascal.g:9265:2: ( ruleconstant )
+            // InternalPascal.g:9266:3: ruleconstant
             {
              before(grammarAccess.getConstantDefinitionAccess().getConstantConstantParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -29077,17 +29042,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__NumberAssignment_0"
-    // InternalPascal.g:9269:1: rule__Constant__NumberAssignment_0 : ( ruleunsignedNumber ) ;
+    // InternalPascal.g:9275:1: rule__Constant__NumberAssignment_0 : ( ruleunsignedNumber ) ;
     public final void rule__Constant__NumberAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9273:1: ( ( ruleunsignedNumber ) )
-            // InternalPascal.g:9274:2: ( ruleunsignedNumber )
+            // InternalPascal.g:9279:1: ( ( ruleunsignedNumber ) )
+            // InternalPascal.g:9280:2: ( ruleunsignedNumber )
             {
-            // InternalPascal.g:9274:2: ( ruleunsignedNumber )
-            // InternalPascal.g:9275:3: ruleunsignedNumber
+            // InternalPascal.g:9280:2: ( ruleunsignedNumber )
+            // InternalPascal.g:9281:3: ruleunsignedNumber
             {
              before(grammarAccess.getConstantAccess().getNumberUnsignedNumberParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -29118,17 +29083,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__SignAssignment_1_0"
-    // InternalPascal.g:9284:1: rule__Constant__SignAssignment_1_0 : ( rulesign ) ;
+    // InternalPascal.g:9290:1: rule__Constant__SignAssignment_1_0 : ( rulesign ) ;
     public final void rule__Constant__SignAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9288:1: ( ( rulesign ) )
-            // InternalPascal.g:9289:2: ( rulesign )
+            // InternalPascal.g:9294:1: ( ( rulesign ) )
+            // InternalPascal.g:9295:2: ( rulesign )
             {
-            // InternalPascal.g:9289:2: ( rulesign )
-            // InternalPascal.g:9290:3: rulesign
+            // InternalPascal.g:9295:2: ( rulesign )
+            // InternalPascal.g:9296:3: rulesign
             {
              before(grammarAccess.getConstantAccess().getSignSignParserRuleCall_1_0_0()); 
             pushFollow(FOLLOW_2);
@@ -29159,17 +29124,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Number1Assignment_1_1"
-    // InternalPascal.g:9299:1: rule__Constant__Number1Assignment_1_1 : ( ruleunsignedNumber ) ;
+    // InternalPascal.g:9305:1: rule__Constant__Number1Assignment_1_1 : ( ruleunsignedNumber ) ;
     public final void rule__Constant__Number1Assignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9303:1: ( ( ruleunsignedNumber ) )
-            // InternalPascal.g:9304:2: ( ruleunsignedNumber )
+            // InternalPascal.g:9309:1: ( ( ruleunsignedNumber ) )
+            // InternalPascal.g:9310:2: ( ruleunsignedNumber )
             {
-            // InternalPascal.g:9304:2: ( ruleunsignedNumber )
-            // InternalPascal.g:9305:3: ruleunsignedNumber
+            // InternalPascal.g:9310:2: ( ruleunsignedNumber )
+            // InternalPascal.g:9311:3: ruleunsignedNumber
             {
              before(grammarAccess.getConstantAccess().getNumber1UnsignedNumberParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29200,17 +29165,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__IdentifierAssignment_2"
-    // InternalPascal.g:9314:1: rule__Constant__IdentifierAssignment_2 : ( ruleidentifier ) ;
+    // InternalPascal.g:9320:1: rule__Constant__IdentifierAssignment_2 : ( ruleidentifier ) ;
     public final void rule__Constant__IdentifierAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9318:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:9319:2: ( ruleidentifier )
+            // InternalPascal.g:9324:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:9325:2: ( ruleidentifier )
             {
-            // InternalPascal.g:9319:2: ( ruleidentifier )
-            // InternalPascal.g:9320:3: ruleidentifier
+            // InternalPascal.g:9325:2: ( ruleidentifier )
+            // InternalPascal.g:9326:3: ruleidentifier
             {
              before(grammarAccess.getConstantAccess().getIdentifierIdentifierParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -29241,17 +29206,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__STRING_LITERALAssignment_3"
-    // InternalPascal.g:9329:1: rule__Constant__STRING_LITERALAssignment_3 : ( RULE_STRING_LITERAL ) ;
+    // InternalPascal.g:9335:1: rule__Constant__STRING_LITERALAssignment_3 : ( RULE_STRING_LITERAL ) ;
     public final void rule__Constant__STRING_LITERALAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9333:1: ( ( RULE_STRING_LITERAL ) )
-            // InternalPascal.g:9334:2: ( RULE_STRING_LITERAL )
+            // InternalPascal.g:9339:1: ( ( RULE_STRING_LITERAL ) )
+            // InternalPascal.g:9340:2: ( RULE_STRING_LITERAL )
             {
-            // InternalPascal.g:9334:2: ( RULE_STRING_LITERAL )
-            // InternalPascal.g:9335:3: RULE_STRING_LITERAL
+            // InternalPascal.g:9340:2: ( RULE_STRING_LITERAL )
+            // InternalPascal.g:9341:3: RULE_STRING_LITERAL
             {
              before(grammarAccess.getConstantAccess().getSTRING_LITERALSTRING_LITERALTerminalRuleCall_3_0()); 
             match(input,RULE_STRING_LITERAL,FOLLOW_2); 
@@ -29278,17 +29243,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Sign2Assignment_4_0"
-    // InternalPascal.g:9344:1: rule__Constant__Sign2Assignment_4_0 : ( rulesign ) ;
+    // InternalPascal.g:9350:1: rule__Constant__Sign2Assignment_4_0 : ( rulesign ) ;
     public final void rule__Constant__Sign2Assignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9348:1: ( ( rulesign ) )
-            // InternalPascal.g:9349:2: ( rulesign )
+            // InternalPascal.g:9354:1: ( ( rulesign ) )
+            // InternalPascal.g:9355:2: ( rulesign )
             {
-            // InternalPascal.g:9349:2: ( rulesign )
-            // InternalPascal.g:9350:3: rulesign
+            // InternalPascal.g:9355:2: ( rulesign )
+            // InternalPascal.g:9356:3: rulesign
             {
              before(grammarAccess.getConstantAccess().getSign2SignParserRuleCall_4_0_0()); 
             pushFollow(FOLLOW_2);
@@ -29319,17 +29284,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__Identifier1Assignment_4_1"
-    // InternalPascal.g:9359:1: rule__Constant__Identifier1Assignment_4_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:9365:1: rule__Constant__Identifier1Assignment_4_1 : ( ruleidentifier ) ;
     public final void rule__Constant__Identifier1Assignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9363:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:9364:2: ( ruleidentifier )
+            // InternalPascal.g:9369:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:9370:2: ( ruleidentifier )
             {
-            // InternalPascal.g:9364:2: ( ruleidentifier )
-            // InternalPascal.g:9365:3: ruleidentifier
+            // InternalPascal.g:9370:2: ( ruleidentifier )
+            // InternalPascal.g:9371:3: ruleidentifier
             {
              before(grammarAccess.getConstantAccess().getIdentifier1IdentifierParserRuleCall_4_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29360,17 +29325,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constant__ConstantChrAssignment_5"
-    // InternalPascal.g:9374:1: rule__Constant__ConstantChrAssignment_5 : ( ruleconstantChr ) ;
+    // InternalPascal.g:9380:1: rule__Constant__ConstantChrAssignment_5 : ( ruleconstantChr ) ;
     public final void rule__Constant__ConstantChrAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9378:1: ( ( ruleconstantChr ) )
-            // InternalPascal.g:9379:2: ( ruleconstantChr )
+            // InternalPascal.g:9384:1: ( ( ruleconstantChr ) )
+            // InternalPascal.g:9385:2: ( ruleconstantChr )
             {
-            // InternalPascal.g:9379:2: ( ruleconstantChr )
-            // InternalPascal.g:9380:3: ruleconstantChr
+            // InternalPascal.g:9385:2: ( ruleconstantChr )
+            // InternalPascal.g:9386:3: ruleconstantChr
             {
              before(grammarAccess.getConstantAccess().getConstantChrConstantChrParserRuleCall_5_0()); 
             pushFollow(FOLLOW_2);
@@ -29400,18 +29365,55 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Constant__ConstantChrAssignment_5"
 
 
+    // $ANTLR start "rule__Constant__BoolAssignment_6"
+    // InternalPascal.g:9395:1: rule__Constant__BoolAssignment_6 : ( RULE_BOOL ) ;
+    public final void rule__Constant__BoolAssignment_6() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalPascal.g:9399:1: ( ( RULE_BOOL ) )
+            // InternalPascal.g:9400:2: ( RULE_BOOL )
+            {
+            // InternalPascal.g:9400:2: ( RULE_BOOL )
+            // InternalPascal.g:9401:3: RULE_BOOL
+            {
+             before(grammarAccess.getConstantAccess().getBoolBOOLTerminalRuleCall_6_0()); 
+            match(input,RULE_BOOL,FOLLOW_2); 
+             after(grammarAccess.getConstantAccess().getBoolBOOLTerminalRuleCall_6_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Constant__BoolAssignment_6"
+
+
     // $ANTLR start "rule__ConstantChr__UnsignedIntegerAssignment_2"
-    // InternalPascal.g:9389:1: rule__ConstantChr__UnsignedIntegerAssignment_2 : ( ruleunsignedInteger ) ;
+    // InternalPascal.g:9410:1: rule__ConstantChr__UnsignedIntegerAssignment_2 : ( ruleunsignedInteger ) ;
     public final void rule__ConstantChr__UnsignedIntegerAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9393:1: ( ( ruleunsignedInteger ) )
-            // InternalPascal.g:9394:2: ( ruleunsignedInteger )
+            // InternalPascal.g:9414:1: ( ( ruleunsignedInteger ) )
+            // InternalPascal.g:9415:2: ( ruleunsignedInteger )
             {
-            // InternalPascal.g:9394:2: ( ruleunsignedInteger )
-            // InternalPascal.g:9395:3: ruleunsignedInteger
+            // InternalPascal.g:9415:2: ( ruleunsignedInteger )
+            // InternalPascal.g:9416:3: ruleunsignedInteger
             {
              before(grammarAccess.getConstantChrAccess().getUnsignedIntegerUnsignedIntegerParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -29442,17 +29444,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedNumber__UnsignedIntegerAssignment_0"
-    // InternalPascal.g:9404:1: rule__UnsignedNumber__UnsignedIntegerAssignment_0 : ( ruleunsignedInteger ) ;
+    // InternalPascal.g:9425:1: rule__UnsignedNumber__UnsignedIntegerAssignment_0 : ( ruleunsignedInteger ) ;
     public final void rule__UnsignedNumber__UnsignedIntegerAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9408:1: ( ( ruleunsignedInteger ) )
-            // InternalPascal.g:9409:2: ( ruleunsignedInteger )
+            // InternalPascal.g:9429:1: ( ( ruleunsignedInteger ) )
+            // InternalPascal.g:9430:2: ( ruleunsignedInteger )
             {
-            // InternalPascal.g:9409:2: ( ruleunsignedInteger )
-            // InternalPascal.g:9410:3: ruleunsignedInteger
+            // InternalPascal.g:9430:2: ( ruleunsignedInteger )
+            // InternalPascal.g:9431:3: ruleunsignedInteger
             {
              before(grammarAccess.getUnsignedNumberAccess().getUnsignedIntegerUnsignedIntegerParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -29483,17 +29485,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedNumber__UnsignedRealAssignment_1"
-    // InternalPascal.g:9419:1: rule__UnsignedNumber__UnsignedRealAssignment_1 : ( ruleunsignedReal ) ;
+    // InternalPascal.g:9440:1: rule__UnsignedNumber__UnsignedRealAssignment_1 : ( ruleunsignedReal ) ;
     public final void rule__UnsignedNumber__UnsignedRealAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9423:1: ( ( ruleunsignedReal ) )
-            // InternalPascal.g:9424:2: ( ruleunsignedReal )
+            // InternalPascal.g:9444:1: ( ( ruleunsignedReal ) )
+            // InternalPascal.g:9445:2: ( ruleunsignedReal )
             {
-            // InternalPascal.g:9424:2: ( ruleunsignedReal )
-            // InternalPascal.g:9425:3: ruleunsignedReal
+            // InternalPascal.g:9445:2: ( ruleunsignedReal )
+            // InternalPascal.g:9446:3: ruleunsignedReal
             {
              before(grammarAccess.getUnsignedNumberAccess().getUnsignedRealUnsignedRealParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29524,17 +29526,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UsesUnitsPart__IdentifierListAssignment_1"
-    // InternalPascal.g:9434:1: rule__UsesUnitsPart__IdentifierListAssignment_1 : ( ruleidentifierList ) ;
+    // InternalPascal.g:9455:1: rule__UsesUnitsPart__IdentifierListAssignment_1 : ( ruleidentifierList ) ;
     public final void rule__UsesUnitsPart__IdentifierListAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9438:1: ( ( ruleidentifierList ) )
-            // InternalPascal.g:9439:2: ( ruleidentifierList )
+            // InternalPascal.g:9459:1: ( ( ruleidentifierList ) )
+            // InternalPascal.g:9460:2: ( ruleidentifierList )
             {
-            // InternalPascal.g:9439:2: ( ruleidentifierList )
-            // InternalPascal.g:9440:3: ruleidentifierList
+            // InternalPascal.g:9460:2: ( ruleidentifierList )
+            // InternalPascal.g:9461:3: ruleidentifierList
             {
              before(grammarAccess.getUsesUnitsPartAccess().getIdentifierListIdentifierListParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29565,17 +29567,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__TypeDefinitionAssignment_1"
-    // InternalPascal.g:9449:1: rule__TypeDefinitionPart__TypeDefinitionAssignment_1 : ( ruletypeDefinition ) ;
+    // InternalPascal.g:9470:1: rule__TypeDefinitionPart__TypeDefinitionAssignment_1 : ( ruletypeDefinition ) ;
     public final void rule__TypeDefinitionPart__TypeDefinitionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9453:1: ( ( ruletypeDefinition ) )
-            // InternalPascal.g:9454:2: ( ruletypeDefinition )
+            // InternalPascal.g:9474:1: ( ( ruletypeDefinition ) )
+            // InternalPascal.g:9475:2: ( ruletypeDefinition )
             {
-            // InternalPascal.g:9454:2: ( ruletypeDefinition )
-            // InternalPascal.g:9455:3: ruletypeDefinition
+            // InternalPascal.g:9475:2: ( ruletypeDefinition )
+            // InternalPascal.g:9476:3: ruletypeDefinition
             {
              before(grammarAccess.getTypeDefinitionPartAccess().getTypeDefinitionTypeDefinitionParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29606,17 +29608,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinitionPart__TypeDefinition1Assignment_2"
-    // InternalPascal.g:9464:1: rule__TypeDefinitionPart__TypeDefinition1Assignment_2 : ( ruletypeDefinition ) ;
+    // InternalPascal.g:9485:1: rule__TypeDefinitionPart__TypeDefinition1Assignment_2 : ( ruletypeDefinition ) ;
     public final void rule__TypeDefinitionPart__TypeDefinition1Assignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9468:1: ( ( ruletypeDefinition ) )
-            // InternalPascal.g:9469:2: ( ruletypeDefinition )
+            // InternalPascal.g:9489:1: ( ( ruletypeDefinition ) )
+            // InternalPascal.g:9490:2: ( ruletypeDefinition )
             {
-            // InternalPascal.g:9469:2: ( ruletypeDefinition )
-            // InternalPascal.g:9470:3: ruletypeDefinition
+            // InternalPascal.g:9490:2: ( ruletypeDefinition )
+            // InternalPascal.g:9491:3: ruletypeDefinition
             {
              before(grammarAccess.getTypeDefinitionPartAccess().getTypeDefinition1TypeDefinitionParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -29647,17 +29649,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__IdentifierAssignment_0"
-    // InternalPascal.g:9479:1: rule__TypeDefinition__IdentifierAssignment_0 : ( ruleidentifier ) ;
+    // InternalPascal.g:9500:1: rule__TypeDefinition__IdentifierAssignment_0 : ( ruleidentifier ) ;
     public final void rule__TypeDefinition__IdentifierAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9483:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:9484:2: ( ruleidentifier )
+            // InternalPascal.g:9504:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:9505:2: ( ruleidentifier )
             {
-            // InternalPascal.g:9484:2: ( ruleidentifier )
-            // InternalPascal.g:9485:3: ruleidentifier
+            // InternalPascal.g:9505:2: ( ruleidentifier )
+            // InternalPascal.g:9506:3: ruleidentifier
             {
              before(grammarAccess.getTypeDefinitionAccess().getIdentifierIdentifierParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -29688,17 +29690,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__TypeAssignment_2_0"
-    // InternalPascal.g:9494:1: rule__TypeDefinition__TypeAssignment_2_0 : ( ruletype ) ;
+    // InternalPascal.g:9515:1: rule__TypeDefinition__TypeAssignment_2_0 : ( ruletype ) ;
     public final void rule__TypeDefinition__TypeAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9498:1: ( ( ruletype ) )
-            // InternalPascal.g:9499:2: ( ruletype )
+            // InternalPascal.g:9519:1: ( ( ruletype ) )
+            // InternalPascal.g:9520:2: ( ruletype )
             {
-            // InternalPascal.g:9499:2: ( ruletype )
-            // InternalPascal.g:9500:3: ruletype
+            // InternalPascal.g:9520:2: ( ruletype )
+            // InternalPascal.g:9521:3: ruletype
             {
              before(grammarAccess.getTypeDefinitionAccess().getTypeTypeParserRuleCall_2_0_0()); 
             pushFollow(FOLLOW_2);
@@ -29729,17 +29731,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__FunctionTypeAssignment_2_1"
-    // InternalPascal.g:9509:1: rule__TypeDefinition__FunctionTypeAssignment_2_1 : ( rulefunctionType ) ;
+    // InternalPascal.g:9530:1: rule__TypeDefinition__FunctionTypeAssignment_2_1 : ( rulefunctionType ) ;
     public final void rule__TypeDefinition__FunctionTypeAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9513:1: ( ( rulefunctionType ) )
-            // InternalPascal.g:9514:2: ( rulefunctionType )
+            // InternalPascal.g:9534:1: ( ( rulefunctionType ) )
+            // InternalPascal.g:9535:2: ( rulefunctionType )
             {
-            // InternalPascal.g:9514:2: ( rulefunctionType )
-            // InternalPascal.g:9515:3: rulefunctionType
+            // InternalPascal.g:9535:2: ( rulefunctionType )
+            // InternalPascal.g:9536:3: rulefunctionType
             {
              before(grammarAccess.getTypeDefinitionAccess().getFunctionTypeFunctionTypeParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29770,17 +29772,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeDefinition__ProcedureTypeAssignment_2_2"
-    // InternalPascal.g:9524:1: rule__TypeDefinition__ProcedureTypeAssignment_2_2 : ( ruleprocedureType ) ;
+    // InternalPascal.g:9545:1: rule__TypeDefinition__ProcedureTypeAssignment_2_2 : ( ruleprocedureType ) ;
     public final void rule__TypeDefinition__ProcedureTypeAssignment_2_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9528:1: ( ( ruleprocedureType ) )
-            // InternalPascal.g:9529:2: ( ruleprocedureType )
+            // InternalPascal.g:9549:1: ( ( ruleprocedureType ) )
+            // InternalPascal.g:9550:2: ( ruleprocedureType )
             {
-            // InternalPascal.g:9529:2: ( ruleprocedureType )
-            // InternalPascal.g:9530:3: ruleprocedureType
+            // InternalPascal.g:9550:2: ( ruleprocedureType )
+            // InternalPascal.g:9551:3: ruleprocedureType
             {
              before(grammarAccess.getTypeDefinitionAccess().getProcedureTypeProcedureTypeParserRuleCall_2_2_0()); 
             pushFollow(FOLLOW_2);
@@ -29811,17 +29813,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__FormalParameterListAssignment_1"
-    // InternalPascal.g:9539:1: rule__FunctionType__FormalParameterListAssignment_1 : ( ruleformalParameterList ) ;
+    // InternalPascal.g:9560:1: rule__FunctionType__FormalParameterListAssignment_1 : ( ruleformalParameterList ) ;
     public final void rule__FunctionType__FormalParameterListAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9543:1: ( ( ruleformalParameterList ) )
-            // InternalPascal.g:9544:2: ( ruleformalParameterList )
+            // InternalPascal.g:9564:1: ( ( ruleformalParameterList ) )
+            // InternalPascal.g:9565:2: ( ruleformalParameterList )
             {
-            // InternalPascal.g:9544:2: ( ruleformalParameterList )
-            // InternalPascal.g:9545:3: ruleformalParameterList
+            // InternalPascal.g:9565:2: ( ruleformalParameterList )
+            // InternalPascal.g:9566:3: ruleformalParameterList
             {
              before(grammarAccess.getFunctionTypeAccess().getFormalParameterListFormalParameterListParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29852,17 +29854,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionType__ResultTypeAssignment_3"
-    // InternalPascal.g:9554:1: rule__FunctionType__ResultTypeAssignment_3 : ( ruleresultType ) ;
+    // InternalPascal.g:9575:1: rule__FunctionType__ResultTypeAssignment_3 : ( ruleresultType ) ;
     public final void rule__FunctionType__ResultTypeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9558:1: ( ( ruleresultType ) )
-            // InternalPascal.g:9559:2: ( ruleresultType )
+            // InternalPascal.g:9579:1: ( ( ruleresultType ) )
+            // InternalPascal.g:9580:2: ( ruleresultType )
             {
-            // InternalPascal.g:9559:2: ( ruleresultType )
-            // InternalPascal.g:9560:3: ruleresultType
+            // InternalPascal.g:9580:2: ( ruleresultType )
+            // InternalPascal.g:9581:3: ruleresultType
             {
              before(grammarAccess.getFunctionTypeAccess().getResultTypeResultTypeParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -29893,17 +29895,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__FormalParameterSectionAssignment_1"
-    // InternalPascal.g:9569:1: rule__FormalParameterList__FormalParameterSectionAssignment_1 : ( ruleformalParameterSection ) ;
+    // InternalPascal.g:9590:1: rule__FormalParameterList__FormalParameterSectionAssignment_1 : ( ruleformalParameterSection ) ;
     public final void rule__FormalParameterList__FormalParameterSectionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9573:1: ( ( ruleformalParameterSection ) )
-            // InternalPascal.g:9574:2: ( ruleformalParameterSection )
+            // InternalPascal.g:9594:1: ( ( ruleformalParameterSection ) )
+            // InternalPascal.g:9595:2: ( ruleformalParameterSection )
             {
-            // InternalPascal.g:9574:2: ( ruleformalParameterSection )
-            // InternalPascal.g:9575:3: ruleformalParameterSection
+            // InternalPascal.g:9595:2: ( ruleformalParameterSection )
+            // InternalPascal.g:9596:3: ruleformalParameterSection
             {
              before(grammarAccess.getFormalParameterListAccess().getFormalParameterSectionFormalParameterSectionParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29934,17 +29936,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterList__FormalParameterSection2Assignment_2_1"
-    // InternalPascal.g:9584:1: rule__FormalParameterList__FormalParameterSection2Assignment_2_1 : ( ruleformalParameterSection ) ;
+    // InternalPascal.g:9605:1: rule__FormalParameterList__FormalParameterSection2Assignment_2_1 : ( ruleformalParameterSection ) ;
     public final void rule__FormalParameterList__FormalParameterSection2Assignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9588:1: ( ( ruleformalParameterSection ) )
-            // InternalPascal.g:9589:2: ( ruleformalParameterSection )
+            // InternalPascal.g:9609:1: ( ( ruleformalParameterSection ) )
+            // InternalPascal.g:9610:2: ( ruleformalParameterSection )
             {
-            // InternalPascal.g:9589:2: ( ruleformalParameterSection )
-            // InternalPascal.g:9590:3: ruleformalParameterSection
+            // InternalPascal.g:9610:2: ( ruleformalParameterSection )
+            // InternalPascal.g:9611:3: ruleformalParameterSection
             {
              before(grammarAccess.getFormalParameterListAccess().getFormalParameterSection2FormalParameterSectionParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -29975,17 +29977,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__ParameterGroupAssignment_0"
-    // InternalPascal.g:9599:1: rule__FormalParameterSection__ParameterGroupAssignment_0 : ( ruleparameterGroup ) ;
+    // InternalPascal.g:9620:1: rule__FormalParameterSection__ParameterGroupAssignment_0 : ( ruleparameterGroup ) ;
     public final void rule__FormalParameterSection__ParameterGroupAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9603:1: ( ( ruleparameterGroup ) )
-            // InternalPascal.g:9604:2: ( ruleparameterGroup )
+            // InternalPascal.g:9624:1: ( ( ruleparameterGroup ) )
+            // InternalPascal.g:9625:2: ( ruleparameterGroup )
             {
-            // InternalPascal.g:9604:2: ( ruleparameterGroup )
-            // InternalPascal.g:9605:3: ruleparameterGroup
+            // InternalPascal.g:9625:2: ( ruleparameterGroup )
+            // InternalPascal.g:9626:3: ruleparameterGroup
             {
              before(grammarAccess.getFormalParameterSectionAccess().getParameterGroupParameterGroupParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -30016,17 +30018,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__ParameterGroup2Assignment_1_1"
-    // InternalPascal.g:9614:1: rule__FormalParameterSection__ParameterGroup2Assignment_1_1 : ( ruleparameterGroup ) ;
+    // InternalPascal.g:9635:1: rule__FormalParameterSection__ParameterGroup2Assignment_1_1 : ( ruleparameterGroup ) ;
     public final void rule__FormalParameterSection__ParameterGroup2Assignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9618:1: ( ( ruleparameterGroup ) )
-            // InternalPascal.g:9619:2: ( ruleparameterGroup )
+            // InternalPascal.g:9639:1: ( ( ruleparameterGroup ) )
+            // InternalPascal.g:9640:2: ( ruleparameterGroup )
             {
-            // InternalPascal.g:9619:2: ( ruleparameterGroup )
-            // InternalPascal.g:9620:3: ruleparameterGroup
+            // InternalPascal.g:9640:2: ( ruleparameterGroup )
+            // InternalPascal.g:9641:3: ruleparameterGroup
             {
              before(grammarAccess.getFormalParameterSectionAccess().getParameterGroup2ParameterGroupParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30057,17 +30059,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__ParameterGroup3Assignment_2_1"
-    // InternalPascal.g:9629:1: rule__FormalParameterSection__ParameterGroup3Assignment_2_1 : ( ruleparameterGroup ) ;
+    // InternalPascal.g:9650:1: rule__FormalParameterSection__ParameterGroup3Assignment_2_1 : ( ruleparameterGroup ) ;
     public final void rule__FormalParameterSection__ParameterGroup3Assignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9633:1: ( ( ruleparameterGroup ) )
-            // InternalPascal.g:9634:2: ( ruleparameterGroup )
+            // InternalPascal.g:9654:1: ( ( ruleparameterGroup ) )
+            // InternalPascal.g:9655:2: ( ruleparameterGroup )
             {
-            // InternalPascal.g:9634:2: ( ruleparameterGroup )
-            // InternalPascal.g:9635:3: ruleparameterGroup
+            // InternalPascal.g:9655:2: ( ruleparameterGroup )
+            // InternalPascal.g:9656:3: ruleparameterGroup
             {
              before(grammarAccess.getFormalParameterSectionAccess().getParameterGroup3ParameterGroupParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30098,17 +30100,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FormalParameterSection__ParameterGroup4Assignment_3_1"
-    // InternalPascal.g:9644:1: rule__FormalParameterSection__ParameterGroup4Assignment_3_1 : ( ruleparameterGroup ) ;
+    // InternalPascal.g:9665:1: rule__FormalParameterSection__ParameterGroup4Assignment_3_1 : ( ruleparameterGroup ) ;
     public final void rule__FormalParameterSection__ParameterGroup4Assignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9648:1: ( ( ruleparameterGroup ) )
-            // InternalPascal.g:9649:2: ( ruleparameterGroup )
+            // InternalPascal.g:9669:1: ( ( ruleparameterGroup ) )
+            // InternalPascal.g:9670:2: ( ruleparameterGroup )
             {
-            // InternalPascal.g:9649:2: ( ruleparameterGroup )
-            // InternalPascal.g:9650:3: ruleparameterGroup
+            // InternalPascal.g:9670:2: ( ruleparameterGroup )
+            // InternalPascal.g:9671:3: ruleparameterGroup
             {
              before(grammarAccess.getFormalParameterSectionAccess().getParameterGroup4ParameterGroupParserRuleCall_3_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30139,17 +30141,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterGroup__IdentifierListAssignment_0"
-    // InternalPascal.g:9659:1: rule__ParameterGroup__IdentifierListAssignment_0 : ( ruleidentifierList ) ;
+    // InternalPascal.g:9680:1: rule__ParameterGroup__IdentifierListAssignment_0 : ( ruleidentifierList ) ;
     public final void rule__ParameterGroup__IdentifierListAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9663:1: ( ( ruleidentifierList ) )
-            // InternalPascal.g:9664:2: ( ruleidentifierList )
+            // InternalPascal.g:9684:1: ( ( ruleidentifierList ) )
+            // InternalPascal.g:9685:2: ( ruleidentifierList )
             {
-            // InternalPascal.g:9664:2: ( ruleidentifierList )
-            // InternalPascal.g:9665:3: ruleidentifierList
+            // InternalPascal.g:9685:2: ( ruleidentifierList )
+            // InternalPascal.g:9686:3: ruleidentifierList
             {
              before(grammarAccess.getParameterGroupAccess().getIdentifierListIdentifierListParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -30180,17 +30182,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterGroup__TypeIdentifierAssignment_2"
-    // InternalPascal.g:9674:1: rule__ParameterGroup__TypeIdentifierAssignment_2 : ( ruletypeIdentifier ) ;
+    // InternalPascal.g:9695:1: rule__ParameterGroup__TypeIdentifierAssignment_2 : ( ruletypeIdentifier ) ;
     public final void rule__ParameterGroup__TypeIdentifierAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9678:1: ( ( ruletypeIdentifier ) )
-            // InternalPascal.g:9679:2: ( ruletypeIdentifier )
+            // InternalPascal.g:9699:1: ( ( ruletypeIdentifier ) )
+            // InternalPascal.g:9700:2: ( ruletypeIdentifier )
             {
-            // InternalPascal.g:9679:2: ( ruletypeIdentifier )
-            // InternalPascal.g:9680:3: ruletypeIdentifier
+            // InternalPascal.g:9700:2: ( ruletypeIdentifier )
+            // InternalPascal.g:9701:3: ruletypeIdentifier
             {
              before(grammarAccess.getParameterGroupAccess().getTypeIdentifierTypeIdentifierParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -30221,17 +30223,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeIdentifier__IdentifierAssignment_0"
-    // InternalPascal.g:9689:1: rule__TypeIdentifier__IdentifierAssignment_0 : ( ruleidentifier ) ;
+    // InternalPascal.g:9710:1: rule__TypeIdentifier__IdentifierAssignment_0 : ( ruleidentifier ) ;
     public final void rule__TypeIdentifier__IdentifierAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9693:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:9694:2: ( ruleidentifier )
+            // InternalPascal.g:9714:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:9715:2: ( ruleidentifier )
             {
-            // InternalPascal.g:9694:2: ( ruleidentifier )
-            // InternalPascal.g:9695:3: ruleidentifier
+            // InternalPascal.g:9715:2: ( ruleidentifier )
+            // InternalPascal.g:9716:3: ruleidentifier
             {
              before(grammarAccess.getTypeIdentifierAccess().getIdentifierIdentifierParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -30262,21 +30264,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeIdentifier__CharAssignment_1"
-    // InternalPascal.g:9704:1: rule__TypeIdentifier__CharAssignment_1 : ( ( 'char' ) ) ;
+    // InternalPascal.g:9725:1: rule__TypeIdentifier__CharAssignment_1 : ( ( 'char' ) ) ;
     public final void rule__TypeIdentifier__CharAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9708:1: ( ( ( 'char' ) ) )
-            // InternalPascal.g:9709:2: ( ( 'char' ) )
+            // InternalPascal.g:9729:1: ( ( ( 'char' ) ) )
+            // InternalPascal.g:9730:2: ( ( 'char' ) )
             {
-            // InternalPascal.g:9709:2: ( ( 'char' ) )
-            // InternalPascal.g:9710:3: ( 'char' )
+            // InternalPascal.g:9730:2: ( ( 'char' ) )
+            // InternalPascal.g:9731:3: ( 'char' )
             {
              before(grammarAccess.getTypeIdentifierAccess().getCharCharKeyword_1_0()); 
-            // InternalPascal.g:9711:3: ( 'char' )
-            // InternalPascal.g:9712:4: 'char'
+            // InternalPascal.g:9732:3: ( 'char' )
+            // InternalPascal.g:9733:4: 'char'
             {
              before(grammarAccess.getTypeIdentifierAccess().getCharCharKeyword_1_0()); 
             match(input,68,FOLLOW_2); 
@@ -30307,21 +30309,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeIdentifier__BooleanAssignment_2"
-    // InternalPascal.g:9723:1: rule__TypeIdentifier__BooleanAssignment_2 : ( ( 'boolean' ) ) ;
+    // InternalPascal.g:9744:1: rule__TypeIdentifier__BooleanAssignment_2 : ( ( 'boolean' ) ) ;
     public final void rule__TypeIdentifier__BooleanAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9727:1: ( ( ( 'boolean' ) ) )
-            // InternalPascal.g:9728:2: ( ( 'boolean' ) )
+            // InternalPascal.g:9748:1: ( ( ( 'boolean' ) ) )
+            // InternalPascal.g:9749:2: ( ( 'boolean' ) )
             {
-            // InternalPascal.g:9728:2: ( ( 'boolean' ) )
-            // InternalPascal.g:9729:3: ( 'boolean' )
+            // InternalPascal.g:9749:2: ( ( 'boolean' ) )
+            // InternalPascal.g:9750:3: ( 'boolean' )
             {
              before(grammarAccess.getTypeIdentifierAccess().getBooleanBooleanKeyword_2_0()); 
-            // InternalPascal.g:9730:3: ( 'boolean' )
-            // InternalPascal.g:9731:4: 'boolean'
+            // InternalPascal.g:9751:3: ( 'boolean' )
+            // InternalPascal.g:9752:4: 'boolean'
             {
              before(grammarAccess.getTypeIdentifierAccess().getBooleanBooleanKeyword_2_0()); 
             match(input,69,FOLLOW_2); 
@@ -30352,21 +30354,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeIdentifier__IntegerAssignment_3"
-    // InternalPascal.g:9742:1: rule__TypeIdentifier__IntegerAssignment_3 : ( ( 'integer' ) ) ;
+    // InternalPascal.g:9763:1: rule__TypeIdentifier__IntegerAssignment_3 : ( ( 'integer' ) ) ;
     public final void rule__TypeIdentifier__IntegerAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9746:1: ( ( ( 'integer' ) ) )
-            // InternalPascal.g:9747:2: ( ( 'integer' ) )
+            // InternalPascal.g:9767:1: ( ( ( 'integer' ) ) )
+            // InternalPascal.g:9768:2: ( ( 'integer' ) )
             {
-            // InternalPascal.g:9747:2: ( ( 'integer' ) )
-            // InternalPascal.g:9748:3: ( 'integer' )
+            // InternalPascal.g:9768:2: ( ( 'integer' ) )
+            // InternalPascal.g:9769:3: ( 'integer' )
             {
              before(grammarAccess.getTypeIdentifierAccess().getIntegerIntegerKeyword_3_0()); 
-            // InternalPascal.g:9749:3: ( 'integer' )
-            // InternalPascal.g:9750:4: 'integer'
+            // InternalPascal.g:9770:3: ( 'integer' )
+            // InternalPascal.g:9771:4: 'integer'
             {
              before(grammarAccess.getTypeIdentifierAccess().getIntegerIntegerKeyword_3_0()); 
             match(input,70,FOLLOW_2); 
@@ -30397,21 +30399,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeIdentifier__RealAssignment_4"
-    // InternalPascal.g:9761:1: rule__TypeIdentifier__RealAssignment_4 : ( ( 'real' ) ) ;
+    // InternalPascal.g:9782:1: rule__TypeIdentifier__RealAssignment_4 : ( ( 'real' ) ) ;
     public final void rule__TypeIdentifier__RealAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9765:1: ( ( ( 'real' ) ) )
-            // InternalPascal.g:9766:2: ( ( 'real' ) )
+            // InternalPascal.g:9786:1: ( ( ( 'real' ) ) )
+            // InternalPascal.g:9787:2: ( ( 'real' ) )
             {
-            // InternalPascal.g:9766:2: ( ( 'real' ) )
-            // InternalPascal.g:9767:3: ( 'real' )
+            // InternalPascal.g:9787:2: ( ( 'real' ) )
+            // InternalPascal.g:9788:3: ( 'real' )
             {
              before(grammarAccess.getTypeIdentifierAccess().getRealRealKeyword_4_0()); 
-            // InternalPascal.g:9768:3: ( 'real' )
-            // InternalPascal.g:9769:4: 'real'
+            // InternalPascal.g:9789:3: ( 'real' )
+            // InternalPascal.g:9790:4: 'real'
             {
              before(grammarAccess.getTypeIdentifierAccess().getRealRealKeyword_4_0()); 
             match(input,71,FOLLOW_2); 
@@ -30442,21 +30444,21 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeIdentifier__StringAssignment_5"
-    // InternalPascal.g:9780:1: rule__TypeIdentifier__StringAssignment_5 : ( ( 'string' ) ) ;
+    // InternalPascal.g:9801:1: rule__TypeIdentifier__StringAssignment_5 : ( ( 'string' ) ) ;
     public final void rule__TypeIdentifier__StringAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9784:1: ( ( ( 'string' ) ) )
-            // InternalPascal.g:9785:2: ( ( 'string' ) )
+            // InternalPascal.g:9805:1: ( ( ( 'string' ) ) )
+            // InternalPascal.g:9806:2: ( ( 'string' ) )
             {
-            // InternalPascal.g:9785:2: ( ( 'string' ) )
-            // InternalPascal.g:9786:3: ( 'string' )
+            // InternalPascal.g:9806:2: ( ( 'string' ) )
+            // InternalPascal.g:9807:3: ( 'string' )
             {
              before(grammarAccess.getTypeIdentifierAccess().getStringStringKeyword_5_0()); 
-            // InternalPascal.g:9787:3: ( 'string' )
-            // InternalPascal.g:9788:4: 'string'
+            // InternalPascal.g:9808:3: ( 'string' )
+            // InternalPascal.g:9809:4: 'string'
             {
              before(grammarAccess.getTypeIdentifierAccess().getStringStringKeyword_5_0()); 
             match(input,52,FOLLOW_2); 
@@ -30487,17 +30489,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureType__FormalParameterListAssignment_2"
-    // InternalPascal.g:9799:1: rule__ProcedureType__FormalParameterListAssignment_2 : ( ruleformalParameterList ) ;
+    // InternalPascal.g:9820:1: rule__ProcedureType__FormalParameterListAssignment_2 : ( ruleformalParameterList ) ;
     public final void rule__ProcedureType__FormalParameterListAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9803:1: ( ( ruleformalParameterList ) )
-            // InternalPascal.g:9804:2: ( ruleformalParameterList )
+            // InternalPascal.g:9824:1: ( ( ruleformalParameterList ) )
+            // InternalPascal.g:9825:2: ( ruleformalParameterList )
             {
-            // InternalPascal.g:9804:2: ( ruleformalParameterList )
-            // InternalPascal.g:9805:3: ruleformalParameterList
+            // InternalPascal.g:9825:2: ( ruleformalParameterList )
+            // InternalPascal.g:9826:3: ruleformalParameterList
             {
              before(grammarAccess.getProcedureTypeAccess().getFormalParameterListFormalParameterListParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -30528,17 +30530,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Type__SimpleTypeAssignment_0"
-    // InternalPascal.g:9814:1: rule__Type__SimpleTypeAssignment_0 : ( rulesimpleType ) ;
+    // InternalPascal.g:9835:1: rule__Type__SimpleTypeAssignment_0 : ( rulesimpleType ) ;
     public final void rule__Type__SimpleTypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9818:1: ( ( rulesimpleType ) )
-            // InternalPascal.g:9819:2: ( rulesimpleType )
+            // InternalPascal.g:9839:1: ( ( rulesimpleType ) )
+            // InternalPascal.g:9840:2: ( rulesimpleType )
             {
-            // InternalPascal.g:9819:2: ( rulesimpleType )
-            // InternalPascal.g:9820:3: rulesimpleType
+            // InternalPascal.g:9840:2: ( rulesimpleType )
+            // InternalPascal.g:9841:3: rulesimpleType
             {
              before(grammarAccess.getTypeAccess().getSimpleTypeSimpleTypeParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -30569,17 +30571,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Type__StructuredTypeAssignment_1"
-    // InternalPascal.g:9829:1: rule__Type__StructuredTypeAssignment_1 : ( rulestructuredType ) ;
+    // InternalPascal.g:9850:1: rule__Type__StructuredTypeAssignment_1 : ( rulestructuredType ) ;
     public final void rule__Type__StructuredTypeAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9833:1: ( ( rulestructuredType ) )
-            // InternalPascal.g:9834:2: ( rulestructuredType )
+            // InternalPascal.g:9854:1: ( ( rulestructuredType ) )
+            // InternalPascal.g:9855:2: ( rulestructuredType )
             {
-            // InternalPascal.g:9834:2: ( rulestructuredType )
-            // InternalPascal.g:9835:3: rulestructuredType
+            // InternalPascal.g:9855:2: ( rulestructuredType )
+            // InternalPascal.g:9856:3: rulestructuredType
             {
              before(grammarAccess.getTypeAccess().getStructuredTypeStructuredTypeParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30610,17 +30612,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Type__PointerTypeAssignment_2"
-    // InternalPascal.g:9844:1: rule__Type__PointerTypeAssignment_2 : ( rulepointerType ) ;
+    // InternalPascal.g:9865:1: rule__Type__PointerTypeAssignment_2 : ( rulepointerType ) ;
     public final void rule__Type__PointerTypeAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9848:1: ( ( rulepointerType ) )
-            // InternalPascal.g:9849:2: ( rulepointerType )
+            // InternalPascal.g:9869:1: ( ( rulepointerType ) )
+            // InternalPascal.g:9870:2: ( rulepointerType )
             {
-            // InternalPascal.g:9849:2: ( rulepointerType )
-            // InternalPascal.g:9850:3: rulepointerType
+            // InternalPascal.g:9870:2: ( rulepointerType )
+            // InternalPascal.g:9871:3: rulepointerType
             {
              before(grammarAccess.getTypeAccess().getPointerTypePointerTypeParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -30651,17 +30653,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PointerType__TypeIdentifierAssignment_1"
-    // InternalPascal.g:9859:1: rule__PointerType__TypeIdentifierAssignment_1 : ( ruletypeIdentifier ) ;
+    // InternalPascal.g:9880:1: rule__PointerType__TypeIdentifierAssignment_1 : ( ruletypeIdentifier ) ;
     public final void rule__PointerType__TypeIdentifierAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9863:1: ( ( ruletypeIdentifier ) )
-            // InternalPascal.g:9864:2: ( ruletypeIdentifier )
+            // InternalPascal.g:9884:1: ( ( ruletypeIdentifier ) )
+            // InternalPascal.g:9885:2: ( ruletypeIdentifier )
             {
-            // InternalPascal.g:9864:2: ( ruletypeIdentifier )
-            // InternalPascal.g:9865:3: ruletypeIdentifier
+            // InternalPascal.g:9885:2: ( ruletypeIdentifier )
+            // InternalPascal.g:9886:3: ruletypeIdentifier
             {
              before(grammarAccess.getPointerTypeAccess().getTypeIdentifierTypeIdentifierParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30692,17 +30694,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleType__ScalarTypeAssignment_0"
-    // InternalPascal.g:9874:1: rule__SimpleType__ScalarTypeAssignment_0 : ( rulescalarType ) ;
+    // InternalPascal.g:9895:1: rule__SimpleType__ScalarTypeAssignment_0 : ( rulescalarType ) ;
     public final void rule__SimpleType__ScalarTypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9878:1: ( ( rulescalarType ) )
-            // InternalPascal.g:9879:2: ( rulescalarType )
+            // InternalPascal.g:9899:1: ( ( rulescalarType ) )
+            // InternalPascal.g:9900:2: ( rulescalarType )
             {
-            // InternalPascal.g:9879:2: ( rulescalarType )
-            // InternalPascal.g:9880:3: rulescalarType
+            // InternalPascal.g:9900:2: ( rulescalarType )
+            // InternalPascal.g:9901:3: rulescalarType
             {
              before(grammarAccess.getSimpleTypeAccess().getScalarTypeScalarTypeParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -30733,17 +30735,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleType__SubrangeTypeAssignment_1"
-    // InternalPascal.g:9889:1: rule__SimpleType__SubrangeTypeAssignment_1 : ( rulesubrangeType ) ;
+    // InternalPascal.g:9910:1: rule__SimpleType__SubrangeTypeAssignment_1 : ( rulesubrangeType ) ;
     public final void rule__SimpleType__SubrangeTypeAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9893:1: ( ( rulesubrangeType ) )
-            // InternalPascal.g:9894:2: ( rulesubrangeType )
+            // InternalPascal.g:9914:1: ( ( rulesubrangeType ) )
+            // InternalPascal.g:9915:2: ( rulesubrangeType )
             {
-            // InternalPascal.g:9894:2: ( rulesubrangeType )
-            // InternalPascal.g:9895:3: rulesubrangeType
+            // InternalPascal.g:9915:2: ( rulesubrangeType )
+            // InternalPascal.g:9916:3: rulesubrangeType
             {
              before(grammarAccess.getSimpleTypeAccess().getSubrangeTypeSubrangeTypeParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30774,17 +30776,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleType__TypeIdentifierAssignment_2"
-    // InternalPascal.g:9904:1: rule__SimpleType__TypeIdentifierAssignment_2 : ( ruletypeIdentifier ) ;
+    // InternalPascal.g:9925:1: rule__SimpleType__TypeIdentifierAssignment_2 : ( ruletypeIdentifier ) ;
     public final void rule__SimpleType__TypeIdentifierAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9908:1: ( ( ruletypeIdentifier ) )
-            // InternalPascal.g:9909:2: ( ruletypeIdentifier )
+            // InternalPascal.g:9929:1: ( ( ruletypeIdentifier ) )
+            // InternalPascal.g:9930:2: ( ruletypeIdentifier )
             {
-            // InternalPascal.g:9909:2: ( ruletypeIdentifier )
-            // InternalPascal.g:9910:3: ruletypeIdentifier
+            // InternalPascal.g:9930:2: ( ruletypeIdentifier )
+            // InternalPascal.g:9931:3: ruletypeIdentifier
             {
              before(grammarAccess.getSimpleTypeAccess().getTypeIdentifierTypeIdentifierParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -30815,17 +30817,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleType__StringtypeAssignment_3"
-    // InternalPascal.g:9919:1: rule__SimpleType__StringtypeAssignment_3 : ( rulestringtype ) ;
+    // InternalPascal.g:9940:1: rule__SimpleType__StringtypeAssignment_3 : ( rulestringtype ) ;
     public final void rule__SimpleType__StringtypeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9923:1: ( ( rulestringtype ) )
-            // InternalPascal.g:9924:2: ( rulestringtype )
+            // InternalPascal.g:9944:1: ( ( rulestringtype ) )
+            // InternalPascal.g:9945:2: ( rulestringtype )
             {
-            // InternalPascal.g:9924:2: ( rulestringtype )
-            // InternalPascal.g:9925:3: rulestringtype
+            // InternalPascal.g:9945:2: ( rulestringtype )
+            // InternalPascal.g:9946:3: rulestringtype
             {
              before(grammarAccess.getSimpleTypeAccess().getStringtypeStringtypeParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -30856,17 +30858,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScalarType__IdentifierListAssignment_1"
-    // InternalPascal.g:9934:1: rule__ScalarType__IdentifierListAssignment_1 : ( ruleidentifierList ) ;
+    // InternalPascal.g:9955:1: rule__ScalarType__IdentifierListAssignment_1 : ( ruleidentifierList ) ;
     public final void rule__ScalarType__IdentifierListAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9938:1: ( ( ruleidentifierList ) )
-            // InternalPascal.g:9939:2: ( ruleidentifierList )
+            // InternalPascal.g:9959:1: ( ( ruleidentifierList ) )
+            // InternalPascal.g:9960:2: ( ruleidentifierList )
             {
-            // InternalPascal.g:9939:2: ( ruleidentifierList )
-            // InternalPascal.g:9940:3: ruleidentifierList
+            // InternalPascal.g:9960:2: ( ruleidentifierList )
+            // InternalPascal.g:9961:3: ruleidentifierList
             {
              before(grammarAccess.getScalarTypeAccess().getIdentifierListIdentifierListParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -30897,17 +30899,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SubrangeType__ConstantAssignment_0"
-    // InternalPascal.g:9949:1: rule__SubrangeType__ConstantAssignment_0 : ( ruleconstant ) ;
+    // InternalPascal.g:9970:1: rule__SubrangeType__ConstantAssignment_0 : ( ruleconstant ) ;
     public final void rule__SubrangeType__ConstantAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9953:1: ( ( ruleconstant ) )
-            // InternalPascal.g:9954:2: ( ruleconstant )
+            // InternalPascal.g:9974:1: ( ( ruleconstant ) )
+            // InternalPascal.g:9975:2: ( ruleconstant )
             {
-            // InternalPascal.g:9954:2: ( ruleconstant )
-            // InternalPascal.g:9955:3: ruleconstant
+            // InternalPascal.g:9975:2: ( ruleconstant )
+            // InternalPascal.g:9976:3: ruleconstant
             {
              before(grammarAccess.getSubrangeTypeAccess().getConstantConstantParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -30938,17 +30940,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SubrangeType__Constant2Assignment_2"
-    // InternalPascal.g:9964:1: rule__SubrangeType__Constant2Assignment_2 : ( ruleconstant ) ;
+    // InternalPascal.g:9985:1: rule__SubrangeType__Constant2Assignment_2 : ( ruleconstant ) ;
     public final void rule__SubrangeType__Constant2Assignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9968:1: ( ( ruleconstant ) )
-            // InternalPascal.g:9969:2: ( ruleconstant )
+            // InternalPascal.g:9989:1: ( ( ruleconstant ) )
+            // InternalPascal.g:9990:2: ( ruleconstant )
             {
-            // InternalPascal.g:9969:2: ( ruleconstant )
-            // InternalPascal.g:9970:3: ruleconstant
+            // InternalPascal.g:9990:2: ( ruleconstant )
+            // InternalPascal.g:9991:3: ruleconstant
             {
              before(grammarAccess.getSubrangeTypeAccess().getConstant2ConstantParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -30979,17 +30981,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredType__UnpackedStructuredTypeAssignment_0_1"
-    // InternalPascal.g:9979:1: rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 : ( ruleunpackedStructuredType ) ;
+    // InternalPascal.g:10000:1: rule__StructuredType__UnpackedStructuredTypeAssignment_0_1 : ( ruleunpackedStructuredType ) ;
     public final void rule__StructuredType__UnpackedStructuredTypeAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9983:1: ( ( ruleunpackedStructuredType ) )
-            // InternalPascal.g:9984:2: ( ruleunpackedStructuredType )
+            // InternalPascal.g:10004:1: ( ( ruleunpackedStructuredType ) )
+            // InternalPascal.g:10005:2: ( ruleunpackedStructuredType )
             {
-            // InternalPascal.g:9984:2: ( ruleunpackedStructuredType )
-            // InternalPascal.g:9985:3: ruleunpackedStructuredType
+            // InternalPascal.g:10005:2: ( ruleunpackedStructuredType )
+            // InternalPascal.g:10006:3: ruleunpackedStructuredType
             {
              before(grammarAccess.getStructuredTypeAccess().getUnpackedStructuredTypeUnpackedStructuredTypeParserRuleCall_0_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31020,17 +31022,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredType__UnpackedStructuredType1Assignment_1"
-    // InternalPascal.g:9994:1: rule__StructuredType__UnpackedStructuredType1Assignment_1 : ( ruleunpackedStructuredType ) ;
+    // InternalPascal.g:10015:1: rule__StructuredType__UnpackedStructuredType1Assignment_1 : ( ruleunpackedStructuredType ) ;
     public final void rule__StructuredType__UnpackedStructuredType1Assignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:9998:1: ( ( ruleunpackedStructuredType ) )
-            // InternalPascal.g:9999:2: ( ruleunpackedStructuredType )
+            // InternalPascal.g:10019:1: ( ( ruleunpackedStructuredType ) )
+            // InternalPascal.g:10020:2: ( ruleunpackedStructuredType )
             {
-            // InternalPascal.g:9999:2: ( ruleunpackedStructuredType )
-            // InternalPascal.g:10000:3: ruleunpackedStructuredType
+            // InternalPascal.g:10020:2: ( ruleunpackedStructuredType )
+            // InternalPascal.g:10021:3: ruleunpackedStructuredType
             {
              before(grammarAccess.getStructuredTypeAccess().getUnpackedStructuredType1UnpackedStructuredTypeParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31061,17 +31063,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnpackedStructuredType__RecordTypeAssignment"
-    // InternalPascal.g:10009:1: rule__UnpackedStructuredType__RecordTypeAssignment : ( rulerecordType ) ;
+    // InternalPascal.g:10030:1: rule__UnpackedStructuredType__RecordTypeAssignment : ( rulerecordType ) ;
     public final void rule__UnpackedStructuredType__RecordTypeAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10013:1: ( ( rulerecordType ) )
-            // InternalPascal.g:10014:2: ( rulerecordType )
+            // InternalPascal.g:10034:1: ( ( rulerecordType ) )
+            // InternalPascal.g:10035:2: ( rulerecordType )
             {
-            // InternalPascal.g:10014:2: ( rulerecordType )
-            // InternalPascal.g:10015:3: rulerecordType
+            // InternalPascal.g:10035:2: ( rulerecordType )
+            // InternalPascal.g:10036:3: rulerecordType
             {
              before(grammarAccess.getUnpackedStructuredTypeAccess().getRecordTypeRecordTypeParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -31102,17 +31104,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__IdentifierAssignment_2_0"
-    // InternalPascal.g:10024:1: rule__Stringtype__IdentifierAssignment_2_0 : ( ruleidentifier ) ;
+    // InternalPascal.g:10045:1: rule__Stringtype__IdentifierAssignment_2_0 : ( ruleidentifier ) ;
     public final void rule__Stringtype__IdentifierAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10028:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:10029:2: ( ruleidentifier )
+            // InternalPascal.g:10049:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:10050:2: ( ruleidentifier )
             {
-            // InternalPascal.g:10029:2: ( ruleidentifier )
-            // InternalPascal.g:10030:3: ruleidentifier
+            // InternalPascal.g:10050:2: ( ruleidentifier )
+            // InternalPascal.g:10051:3: ruleidentifier
             {
              before(grammarAccess.getStringtypeAccess().getIdentifierIdentifierParserRuleCall_2_0_0()); 
             pushFollow(FOLLOW_2);
@@ -31143,17 +31145,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Stringtype__UnsignedNumberAssignment_2_1"
-    // InternalPascal.g:10039:1: rule__Stringtype__UnsignedNumberAssignment_2_1 : ( ruleunsignedNumber ) ;
+    // InternalPascal.g:10060:1: rule__Stringtype__UnsignedNumberAssignment_2_1 : ( ruleunsignedNumber ) ;
     public final void rule__Stringtype__UnsignedNumberAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10043:1: ( ( ruleunsignedNumber ) )
-            // InternalPascal.g:10044:2: ( ruleunsignedNumber )
+            // InternalPascal.g:10064:1: ( ( ruleunsignedNumber ) )
+            // InternalPascal.g:10065:2: ( ruleunsignedNumber )
             {
-            // InternalPascal.g:10044:2: ( ruleunsignedNumber )
-            // InternalPascal.g:10045:3: ruleunsignedNumber
+            // InternalPascal.g:10065:2: ( ruleunsignedNumber )
+            // InternalPascal.g:10066:3: ruleunsignedNumber
             {
              before(grammarAccess.getStringtypeAccess().getUnsignedNumberUnsignedNumberParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31184,17 +31186,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordType__FieldListAssignment_2"
-    // InternalPascal.g:10054:1: rule__RecordType__FieldListAssignment_2 : ( rulefieldList ) ;
+    // InternalPascal.g:10075:1: rule__RecordType__FieldListAssignment_2 : ( rulefieldList ) ;
     public final void rule__RecordType__FieldListAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10058:1: ( ( rulefieldList ) )
-            // InternalPascal.g:10059:2: ( rulefieldList )
+            // InternalPascal.g:10079:1: ( ( rulefieldList ) )
+            // InternalPascal.g:10080:2: ( rulefieldList )
             {
-            // InternalPascal.g:10059:2: ( rulefieldList )
-            // InternalPascal.g:10060:3: rulefieldList
+            // InternalPascal.g:10080:2: ( rulefieldList )
+            // InternalPascal.g:10081:3: rulefieldList
             {
              before(grammarAccess.getRecordTypeAccess().getFieldListFieldListParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -31225,17 +31227,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__FixedPartAssignment_0_0"
-    // InternalPascal.g:10069:1: rule__FieldList__FixedPartAssignment_0_0 : ( rulefixedPart ) ;
+    // InternalPascal.g:10090:1: rule__FieldList__FixedPartAssignment_0_0 : ( rulefixedPart ) ;
     public final void rule__FieldList__FixedPartAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10073:1: ( ( rulefixedPart ) )
-            // InternalPascal.g:10074:2: ( rulefixedPart )
+            // InternalPascal.g:10094:1: ( ( rulefixedPart ) )
+            // InternalPascal.g:10095:2: ( rulefixedPart )
             {
-            // InternalPascal.g:10074:2: ( rulefixedPart )
-            // InternalPascal.g:10075:3: rulefixedPart
+            // InternalPascal.g:10095:2: ( rulefixedPart )
+            // InternalPascal.g:10096:3: rulefixedPart
             {
              before(grammarAccess.getFieldListAccess().getFixedPartFixedPartParserRuleCall_0_0_0()); 
             pushFollow(FOLLOW_2);
@@ -31266,17 +31268,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__VariantPartAssignment_0_1_1"
-    // InternalPascal.g:10084:1: rule__FieldList__VariantPartAssignment_0_1_1 : ( rulevariantPart ) ;
+    // InternalPascal.g:10105:1: rule__FieldList__VariantPartAssignment_0_1_1 : ( rulevariantPart ) ;
     public final void rule__FieldList__VariantPartAssignment_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10088:1: ( ( rulevariantPart ) )
-            // InternalPascal.g:10089:2: ( rulevariantPart )
+            // InternalPascal.g:10109:1: ( ( rulevariantPart ) )
+            // InternalPascal.g:10110:2: ( rulevariantPart )
             {
-            // InternalPascal.g:10089:2: ( rulevariantPart )
-            // InternalPascal.g:10090:3: rulevariantPart
+            // InternalPascal.g:10110:2: ( rulevariantPart )
+            // InternalPascal.g:10111:3: rulevariantPart
             {
              before(grammarAccess.getFieldListAccess().getVariantPartVariantPartParserRuleCall_0_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31307,17 +31309,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FieldList__VariantPart1Assignment_1"
-    // InternalPascal.g:10099:1: rule__FieldList__VariantPart1Assignment_1 : ( rulevariantPart ) ;
+    // InternalPascal.g:10120:1: rule__FieldList__VariantPart1Assignment_1 : ( rulevariantPart ) ;
     public final void rule__FieldList__VariantPart1Assignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10103:1: ( ( rulevariantPart ) )
-            // InternalPascal.g:10104:2: ( rulevariantPart )
+            // InternalPascal.g:10124:1: ( ( rulevariantPart ) )
+            // InternalPascal.g:10125:2: ( rulevariantPart )
             {
-            // InternalPascal.g:10104:2: ( rulevariantPart )
-            // InternalPascal.g:10105:3: rulevariantPart
+            // InternalPascal.g:10125:2: ( rulevariantPart )
+            // InternalPascal.g:10126:3: rulevariantPart
             {
              before(grammarAccess.getFieldListAccess().getVariantPart1VariantPartParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31348,17 +31350,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__RecordSectionAssignment_0"
-    // InternalPascal.g:10114:1: rule__FixedPart__RecordSectionAssignment_0 : ( rulerecordSection ) ;
+    // InternalPascal.g:10135:1: rule__FixedPart__RecordSectionAssignment_0 : ( rulerecordSection ) ;
     public final void rule__FixedPart__RecordSectionAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10118:1: ( ( rulerecordSection ) )
-            // InternalPascal.g:10119:2: ( rulerecordSection )
+            // InternalPascal.g:10139:1: ( ( rulerecordSection ) )
+            // InternalPascal.g:10140:2: ( rulerecordSection )
             {
-            // InternalPascal.g:10119:2: ( rulerecordSection )
-            // InternalPascal.g:10120:3: rulerecordSection
+            // InternalPascal.g:10140:2: ( rulerecordSection )
+            // InternalPascal.g:10141:3: rulerecordSection
             {
              before(grammarAccess.getFixedPartAccess().getRecordSectionRecordSectionParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -31389,17 +31391,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FixedPart__RecordSection1Assignment_1_1"
-    // InternalPascal.g:10129:1: rule__FixedPart__RecordSection1Assignment_1_1 : ( rulerecordSection ) ;
+    // InternalPascal.g:10150:1: rule__FixedPart__RecordSection1Assignment_1_1 : ( rulerecordSection ) ;
     public final void rule__FixedPart__RecordSection1Assignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10133:1: ( ( rulerecordSection ) )
-            // InternalPascal.g:10134:2: ( rulerecordSection )
+            // InternalPascal.g:10154:1: ( ( rulerecordSection ) )
+            // InternalPascal.g:10155:2: ( rulerecordSection )
             {
-            // InternalPascal.g:10134:2: ( rulerecordSection )
-            // InternalPascal.g:10135:3: rulerecordSection
+            // InternalPascal.g:10155:2: ( rulerecordSection )
+            // InternalPascal.g:10156:3: rulerecordSection
             {
              before(grammarAccess.getFixedPartAccess().getRecordSection1RecordSectionParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31430,17 +31432,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordSection__IdentifierListAssignment_0"
-    // InternalPascal.g:10144:1: rule__RecordSection__IdentifierListAssignment_0 : ( ruleidentifierList ) ;
+    // InternalPascal.g:10165:1: rule__RecordSection__IdentifierListAssignment_0 : ( ruleidentifierList ) ;
     public final void rule__RecordSection__IdentifierListAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10148:1: ( ( ruleidentifierList ) )
-            // InternalPascal.g:10149:2: ( ruleidentifierList )
+            // InternalPascal.g:10169:1: ( ( ruleidentifierList ) )
+            // InternalPascal.g:10170:2: ( ruleidentifierList )
             {
-            // InternalPascal.g:10149:2: ( ruleidentifierList )
-            // InternalPascal.g:10150:3: ruleidentifierList
+            // InternalPascal.g:10170:2: ( ruleidentifierList )
+            // InternalPascal.g:10171:3: ruleidentifierList
             {
              before(grammarAccess.getRecordSectionAccess().getIdentifierListIdentifierListParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -31471,17 +31473,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RecordSection__TypeAssignment_2"
-    // InternalPascal.g:10159:1: rule__RecordSection__TypeAssignment_2 : ( ruletype ) ;
+    // InternalPascal.g:10180:1: rule__RecordSection__TypeAssignment_2 : ( ruletype ) ;
     public final void rule__RecordSection__TypeAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10163:1: ( ( ruletype ) )
-            // InternalPascal.g:10164:2: ( ruletype )
+            // InternalPascal.g:10184:1: ( ( ruletype ) )
+            // InternalPascal.g:10185:2: ( ruletype )
             {
-            // InternalPascal.g:10164:2: ( ruletype )
-            // InternalPascal.g:10165:3: ruletype
+            // InternalPascal.g:10185:2: ( ruletype )
+            // InternalPascal.g:10186:3: ruletype
             {
              before(grammarAccess.getRecordSectionAccess().getTypeTypeParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -31512,17 +31514,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__TagAssignment_1"
-    // InternalPascal.g:10174:1: rule__VariantPart__TagAssignment_1 : ( ruletag ) ;
+    // InternalPascal.g:10195:1: rule__VariantPart__TagAssignment_1 : ( ruletag ) ;
     public final void rule__VariantPart__TagAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10178:1: ( ( ruletag ) )
-            // InternalPascal.g:10179:2: ( ruletag )
+            // InternalPascal.g:10199:1: ( ( ruletag ) )
+            // InternalPascal.g:10200:2: ( ruletag )
             {
-            // InternalPascal.g:10179:2: ( ruletag )
-            // InternalPascal.g:10180:3: ruletag
+            // InternalPascal.g:10200:2: ( ruletag )
+            // InternalPascal.g:10201:3: ruletag
             {
              before(grammarAccess.getVariantPartAccess().getTagTagParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31553,17 +31555,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__VariantAssignment_3"
-    // InternalPascal.g:10189:1: rule__VariantPart__VariantAssignment_3 : ( rulevariant ) ;
+    // InternalPascal.g:10210:1: rule__VariantPart__VariantAssignment_3 : ( rulevariant ) ;
     public final void rule__VariantPart__VariantAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10193:1: ( ( rulevariant ) )
-            // InternalPascal.g:10194:2: ( rulevariant )
+            // InternalPascal.g:10214:1: ( ( rulevariant ) )
+            // InternalPascal.g:10215:2: ( rulevariant )
             {
-            // InternalPascal.g:10194:2: ( rulevariant )
-            // InternalPascal.g:10195:3: rulevariant
+            // InternalPascal.g:10215:2: ( rulevariant )
+            // InternalPascal.g:10216:3: rulevariant
             {
              before(grammarAccess.getVariantPartAccess().getVariantVariantParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -31594,17 +31596,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariantPart__Variant1Assignment_4_1"
-    // InternalPascal.g:10204:1: rule__VariantPart__Variant1Assignment_4_1 : ( rulevariant ) ;
+    // InternalPascal.g:10225:1: rule__VariantPart__Variant1Assignment_4_1 : ( rulevariant ) ;
     public final void rule__VariantPart__Variant1Assignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10208:1: ( ( rulevariant ) )
-            // InternalPascal.g:10209:2: ( rulevariant )
+            // InternalPascal.g:10229:1: ( ( rulevariant ) )
+            // InternalPascal.g:10230:2: ( rulevariant )
             {
-            // InternalPascal.g:10209:2: ( rulevariant )
-            // InternalPascal.g:10210:3: rulevariant
+            // InternalPascal.g:10230:2: ( rulevariant )
+            // InternalPascal.g:10231:3: rulevariant
             {
              before(grammarAccess.getVariantPartAccess().getVariant1VariantParserRuleCall_4_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31635,17 +31637,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__IdentifierAssignment_0_0"
-    // InternalPascal.g:10219:1: rule__Tag__IdentifierAssignment_0_0 : ( ruleidentifier ) ;
+    // InternalPascal.g:10240:1: rule__Tag__IdentifierAssignment_0_0 : ( ruleidentifier ) ;
     public final void rule__Tag__IdentifierAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10223:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:10224:2: ( ruleidentifier )
+            // InternalPascal.g:10244:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:10245:2: ( ruleidentifier )
             {
-            // InternalPascal.g:10224:2: ( ruleidentifier )
-            // InternalPascal.g:10225:3: ruleidentifier
+            // InternalPascal.g:10245:2: ( ruleidentifier )
+            // InternalPascal.g:10246:3: ruleidentifier
             {
              before(grammarAccess.getTagAccess().getIdentifierIdentifierParserRuleCall_0_0_0()); 
             pushFollow(FOLLOW_2);
@@ -31676,17 +31678,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__TypeIdentifierAssignment_0_2"
-    // InternalPascal.g:10234:1: rule__Tag__TypeIdentifierAssignment_0_2 : ( ruletypeIdentifier ) ;
+    // InternalPascal.g:10255:1: rule__Tag__TypeIdentifierAssignment_0_2 : ( ruletypeIdentifier ) ;
     public final void rule__Tag__TypeIdentifierAssignment_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10238:1: ( ( ruletypeIdentifier ) )
-            // InternalPascal.g:10239:2: ( ruletypeIdentifier )
+            // InternalPascal.g:10259:1: ( ( ruletypeIdentifier ) )
+            // InternalPascal.g:10260:2: ( ruletypeIdentifier )
             {
-            // InternalPascal.g:10239:2: ( ruletypeIdentifier )
-            // InternalPascal.g:10240:3: ruletypeIdentifier
+            // InternalPascal.g:10260:2: ( ruletypeIdentifier )
+            // InternalPascal.g:10261:3: ruletypeIdentifier
             {
              before(grammarAccess.getTagAccess().getTypeIdentifierTypeIdentifierParserRuleCall_0_2_0()); 
             pushFollow(FOLLOW_2);
@@ -31717,17 +31719,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Tag__TypeIdentifier1Assignment_1"
-    // InternalPascal.g:10249:1: rule__Tag__TypeIdentifier1Assignment_1 : ( ruletypeIdentifier ) ;
+    // InternalPascal.g:10270:1: rule__Tag__TypeIdentifier1Assignment_1 : ( ruletypeIdentifier ) ;
     public final void rule__Tag__TypeIdentifier1Assignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10253:1: ( ( ruletypeIdentifier ) )
-            // InternalPascal.g:10254:2: ( ruletypeIdentifier )
+            // InternalPascal.g:10274:1: ( ( ruletypeIdentifier ) )
+            // InternalPascal.g:10275:2: ( ruletypeIdentifier )
             {
-            // InternalPascal.g:10254:2: ( ruletypeIdentifier )
-            // InternalPascal.g:10255:3: ruletypeIdentifier
+            // InternalPascal.g:10275:2: ( ruletypeIdentifier )
+            // InternalPascal.g:10276:3: ruletypeIdentifier
             {
              before(grammarAccess.getTagAccess().getTypeIdentifier1TypeIdentifierParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31758,17 +31760,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__ConstantAssignment_1_1"
-    // InternalPascal.g:10264:1: rule__Variant__ConstantAssignment_1_1 : ( ruleconstant ) ;
+    // InternalPascal.g:10285:1: rule__Variant__ConstantAssignment_1_1 : ( ruleconstant ) ;
     public final void rule__Variant__ConstantAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10268:1: ( ( ruleconstant ) )
-            // InternalPascal.g:10269:2: ( ruleconstant )
+            // InternalPascal.g:10289:1: ( ( ruleconstant ) )
+            // InternalPascal.g:10290:2: ( ruleconstant )
             {
-            // InternalPascal.g:10269:2: ( ruleconstant )
-            // InternalPascal.g:10270:3: ruleconstant
+            // InternalPascal.g:10290:2: ( ruleconstant )
+            // InternalPascal.g:10291:3: ruleconstant
             {
              before(grammarAccess.getVariantAccess().getConstantConstantParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31799,17 +31801,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variant__FieldListAssignment_4"
-    // InternalPascal.g:10279:1: rule__Variant__FieldListAssignment_4 : ( rulefieldList ) ;
+    // InternalPascal.g:10300:1: rule__Variant__FieldListAssignment_4 : ( rulefieldList ) ;
     public final void rule__Variant__FieldListAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10283:1: ( ( rulefieldList ) )
-            // InternalPascal.g:10284:2: ( rulefieldList )
+            // InternalPascal.g:10304:1: ( ( rulefieldList ) )
+            // InternalPascal.g:10305:2: ( rulefieldList )
             {
-            // InternalPascal.g:10284:2: ( rulefieldList )
-            // InternalPascal.g:10285:3: rulefieldList
+            // InternalPascal.g:10305:2: ( rulefieldList )
+            // InternalPascal.g:10306:3: rulefieldList
             {
              before(grammarAccess.getVariantAccess().getFieldListFieldListParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -31840,17 +31842,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__ConstantAssignment_0"
-    // InternalPascal.g:10294:1: rule__ConstList__ConstantAssignment_0 : ( ruleconstant ) ;
+    // InternalPascal.g:10315:1: rule__ConstList__ConstantAssignment_0 : ( ruleconstant ) ;
     public final void rule__ConstList__ConstantAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10298:1: ( ( ruleconstant ) )
-            // InternalPascal.g:10299:2: ( ruleconstant )
+            // InternalPascal.g:10319:1: ( ( ruleconstant ) )
+            // InternalPascal.g:10320:2: ( ruleconstant )
             {
-            // InternalPascal.g:10299:2: ( ruleconstant )
-            // InternalPascal.g:10300:3: ruleconstant
+            // InternalPascal.g:10320:2: ( ruleconstant )
+            // InternalPascal.g:10321:3: ruleconstant
             {
              before(grammarAccess.getConstListAccess().getConstantConstantParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -31881,17 +31883,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConstList__Constant1Assignment_1_1"
-    // InternalPascal.g:10309:1: rule__ConstList__Constant1Assignment_1_1 : ( ruleconstant ) ;
+    // InternalPascal.g:10330:1: rule__ConstList__Constant1Assignment_1_1 : ( ruleconstant ) ;
     public final void rule__ConstList__Constant1Assignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10313:1: ( ( ruleconstant ) )
-            // InternalPascal.g:10314:2: ( ruleconstant )
+            // InternalPascal.g:10334:1: ( ( ruleconstant ) )
+            // InternalPascal.g:10335:2: ( ruleconstant )
             {
-            // InternalPascal.g:10314:2: ( ruleconstant )
-            // InternalPascal.g:10315:3: ruleconstant
+            // InternalPascal.g:10335:2: ( ruleconstant )
+            // InternalPascal.g:10336:3: ruleconstant
             {
              before(grammarAccess.getConstListAccess().getConstant1ConstantParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31922,17 +31924,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__VariableDeclarationAssignment_1"
-    // InternalPascal.g:10324:1: rule__VariableDeclarationPart__VariableDeclarationAssignment_1 : ( rulevariableDeclaration ) ;
+    // InternalPascal.g:10345:1: rule__VariableDeclarationPart__VariableDeclarationAssignment_1 : ( rulevariableDeclaration ) ;
     public final void rule__VariableDeclarationPart__VariableDeclarationAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10328:1: ( ( rulevariableDeclaration ) )
-            // InternalPascal.g:10329:2: ( rulevariableDeclaration )
+            // InternalPascal.g:10349:1: ( ( rulevariableDeclaration ) )
+            // InternalPascal.g:10350:2: ( rulevariableDeclaration )
             {
-            // InternalPascal.g:10329:2: ( rulevariableDeclaration )
-            // InternalPascal.g:10330:3: rulevariableDeclaration
+            // InternalPascal.g:10350:2: ( rulevariableDeclaration )
+            // InternalPascal.g:10351:3: rulevariableDeclaration
             {
              before(grammarAccess.getVariableDeclarationPartAccess().getVariableDeclarationVariableDeclarationParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -31963,17 +31965,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1"
-    // InternalPascal.g:10339:1: rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 : ( rulevariableDeclaration ) ;
+    // InternalPascal.g:10360:1: rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1 : ( rulevariableDeclaration ) ;
     public final void rule__VariableDeclarationPart__VariableDeclaration1Assignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10343:1: ( ( rulevariableDeclaration ) )
-            // InternalPascal.g:10344:2: ( rulevariableDeclaration )
+            // InternalPascal.g:10364:1: ( ( rulevariableDeclaration ) )
+            // InternalPascal.g:10365:2: ( rulevariableDeclaration )
             {
-            // InternalPascal.g:10344:2: ( rulevariableDeclaration )
-            // InternalPascal.g:10345:3: rulevariableDeclaration
+            // InternalPascal.g:10365:2: ( rulevariableDeclaration )
+            // InternalPascal.g:10366:3: rulevariableDeclaration
             {
              before(grammarAccess.getVariableDeclarationPartAccess().getVariableDeclaration1VariableDeclarationParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32004,17 +32006,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__IdentifierListAssignment_0"
-    // InternalPascal.g:10354:1: rule__VariableDeclaration__IdentifierListAssignment_0 : ( ruleidentifierList ) ;
+    // InternalPascal.g:10375:1: rule__VariableDeclaration__IdentifierListAssignment_0 : ( ruleidentifierList ) ;
     public final void rule__VariableDeclaration__IdentifierListAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10358:1: ( ( ruleidentifierList ) )
-            // InternalPascal.g:10359:2: ( ruleidentifierList )
+            // InternalPascal.g:10379:1: ( ( ruleidentifierList ) )
+            // InternalPascal.g:10380:2: ( ruleidentifierList )
             {
-            // InternalPascal.g:10359:2: ( ruleidentifierList )
-            // InternalPascal.g:10360:3: ruleidentifierList
+            // InternalPascal.g:10380:2: ( ruleidentifierList )
+            // InternalPascal.g:10381:3: ruleidentifierList
             {
              before(grammarAccess.getVariableDeclarationAccess().getIdentifierListIdentifierListParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -32045,17 +32047,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__TypeAssignment_2"
-    // InternalPascal.g:10369:1: rule__VariableDeclaration__TypeAssignment_2 : ( ruletype ) ;
+    // InternalPascal.g:10390:1: rule__VariableDeclaration__TypeAssignment_2 : ( ruletype ) ;
     public final void rule__VariableDeclaration__TypeAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10373:1: ( ( ruletype ) )
-            // InternalPascal.g:10374:2: ( ruletype )
+            // InternalPascal.g:10394:1: ( ( ruletype ) )
+            // InternalPascal.g:10395:2: ( ruletype )
             {
-            // InternalPascal.g:10374:2: ( ruletype )
-            // InternalPascal.g:10375:3: ruletype
+            // InternalPascal.g:10395:2: ( ruletype )
+            // InternalPascal.g:10396:3: ruletype
             {
              before(grammarAccess.getVariableDeclarationAccess().getTypeTypeParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -32086,17 +32088,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VariableDeclaration__ExpressionAssignment_3_1"
-    // InternalPascal.g:10384:1: rule__VariableDeclaration__ExpressionAssignment_3_1 : ( ruleexpression ) ;
+    // InternalPascal.g:10405:1: rule__VariableDeclaration__ExpressionAssignment_3_1 : ( ruleexpression ) ;
     public final void rule__VariableDeclaration__ExpressionAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10388:1: ( ( ruleexpression ) )
-            // InternalPascal.g:10389:2: ( ruleexpression )
+            // InternalPascal.g:10409:1: ( ( ruleexpression ) )
+            // InternalPascal.g:10410:2: ( ruleexpression )
             {
-            // InternalPascal.g:10389:2: ( ruleexpression )
-            // InternalPascal.g:10390:3: ruleexpression
+            // InternalPascal.g:10410:2: ( ruleexpression )
+            // InternalPascal.g:10411:3: ruleexpression
             {
              before(grammarAccess.getVariableDeclarationAccess().getExpressionExpressionParserRuleCall_3_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32127,17 +32129,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0"
-    // InternalPascal.g:10399:1: rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 : ( ruleprocedureOrFunctionDeclaration ) ;
+    // InternalPascal.g:10420:1: rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0 : ( ruleprocedureOrFunctionDeclaration ) ;
     public final void rule__ProcedureAndFunctionDeclarationPart__ProcedureOrFunctionDeclarationAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10403:1: ( ( ruleprocedureOrFunctionDeclaration ) )
-            // InternalPascal.g:10404:2: ( ruleprocedureOrFunctionDeclaration )
+            // InternalPascal.g:10424:1: ( ( ruleprocedureOrFunctionDeclaration ) )
+            // InternalPascal.g:10425:2: ( ruleprocedureOrFunctionDeclaration )
             {
-            // InternalPascal.g:10404:2: ( ruleprocedureOrFunctionDeclaration )
-            // InternalPascal.g:10405:3: ruleprocedureOrFunctionDeclaration
+            // InternalPascal.g:10425:2: ( ruleprocedureOrFunctionDeclaration )
+            // InternalPascal.g:10426:3: ruleprocedureOrFunctionDeclaration
             {
              before(grammarAccess.getProcedureAndFunctionDeclarationPartAccess().getProcedureOrFunctionDeclarationProcedureOrFunctionDeclarationParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -32168,17 +32170,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0"
-    // InternalPascal.g:10414:1: rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 : ( ruleprocedureDeclaration ) ;
+    // InternalPascal.g:10435:1: rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0 : ( ruleprocedureDeclaration ) ;
     public final void rule__ProcedureOrFunctionDeclaration__ProcedureDeclarationAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10418:1: ( ( ruleprocedureDeclaration ) )
-            // InternalPascal.g:10419:2: ( ruleprocedureDeclaration )
+            // InternalPascal.g:10439:1: ( ( ruleprocedureDeclaration ) )
+            // InternalPascal.g:10440:2: ( ruleprocedureDeclaration )
             {
-            // InternalPascal.g:10419:2: ( ruleprocedureDeclaration )
-            // InternalPascal.g:10420:3: ruleprocedureDeclaration
+            // InternalPascal.g:10440:2: ( ruleprocedureDeclaration )
+            // InternalPascal.g:10441:3: ruleprocedureDeclaration
             {
              before(grammarAccess.getProcedureOrFunctionDeclarationAccess().getProcedureDeclarationProcedureDeclarationParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -32209,17 +32211,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1"
-    // InternalPascal.g:10429:1: rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 : ( rulefunctionDeclaration ) ;
+    // InternalPascal.g:10450:1: rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1 : ( rulefunctionDeclaration ) ;
     public final void rule__ProcedureOrFunctionDeclaration__FunctionDeclarationAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10433:1: ( ( rulefunctionDeclaration ) )
-            // InternalPascal.g:10434:2: ( rulefunctionDeclaration )
+            // InternalPascal.g:10454:1: ( ( rulefunctionDeclaration ) )
+            // InternalPascal.g:10455:2: ( rulefunctionDeclaration )
             {
-            // InternalPascal.g:10434:2: ( rulefunctionDeclaration )
-            // InternalPascal.g:10435:3: rulefunctionDeclaration
+            // InternalPascal.g:10455:2: ( rulefunctionDeclaration )
+            // InternalPascal.g:10456:3: rulefunctionDeclaration
             {
              before(grammarAccess.getProcedureOrFunctionDeclarationAccess().getFunctionDeclarationFunctionDeclarationParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32250,17 +32252,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__IdentifierAssignment_1"
-    // InternalPascal.g:10444:1: rule__ProcedureDeclaration__IdentifierAssignment_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:10465:1: rule__ProcedureDeclaration__IdentifierAssignment_1 : ( ruleidentifier ) ;
     public final void rule__ProcedureDeclaration__IdentifierAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10448:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:10449:2: ( ruleidentifier )
+            // InternalPascal.g:10469:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:10470:2: ( ruleidentifier )
             {
-            // InternalPascal.g:10449:2: ( ruleidentifier )
-            // InternalPascal.g:10450:3: ruleidentifier
+            // InternalPascal.g:10470:2: ( ruleidentifier )
+            // InternalPascal.g:10471:3: ruleidentifier
             {
              before(grammarAccess.getProcedureDeclarationAccess().getIdentifierIdentifierParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32291,17 +32293,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__FormalParameterListAssignment_2"
-    // InternalPascal.g:10459:1: rule__ProcedureDeclaration__FormalParameterListAssignment_2 : ( ruleformalParameterList ) ;
+    // InternalPascal.g:10480:1: rule__ProcedureDeclaration__FormalParameterListAssignment_2 : ( ruleformalParameterList ) ;
     public final void rule__ProcedureDeclaration__FormalParameterListAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10463:1: ( ( ruleformalParameterList ) )
-            // InternalPascal.g:10464:2: ( ruleformalParameterList )
+            // InternalPascal.g:10484:1: ( ( ruleformalParameterList ) )
+            // InternalPascal.g:10485:2: ( ruleformalParameterList )
             {
-            // InternalPascal.g:10464:2: ( ruleformalParameterList )
-            // InternalPascal.g:10465:3: ruleformalParameterList
+            // InternalPascal.g:10485:2: ( ruleformalParameterList )
+            // InternalPascal.g:10486:3: ruleformalParameterList
             {
              before(grammarAccess.getProcedureDeclarationAccess().getFormalParameterListFormalParameterListParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -32332,17 +32334,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ProcedureDeclaration__BlockAssignment_4"
-    // InternalPascal.g:10474:1: rule__ProcedureDeclaration__BlockAssignment_4 : ( ruleblock ) ;
+    // InternalPascal.g:10495:1: rule__ProcedureDeclaration__BlockAssignment_4 : ( ruleblock ) ;
     public final void rule__ProcedureDeclaration__BlockAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10478:1: ( ( ruleblock ) )
-            // InternalPascal.g:10479:2: ( ruleblock )
+            // InternalPascal.g:10499:1: ( ( ruleblock ) )
+            // InternalPascal.g:10500:2: ( ruleblock )
             {
-            // InternalPascal.g:10479:2: ( ruleblock )
-            // InternalPascal.g:10480:3: ruleblock
+            // InternalPascal.g:10500:2: ( ruleblock )
+            // InternalPascal.g:10501:3: ruleblock
             {
              before(grammarAccess.getProcedureDeclarationAccess().getBlockBlockParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -32373,17 +32375,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__IdentifierAssignment_1"
-    // InternalPascal.g:10489:1: rule__FunctionDeclaration__IdentifierAssignment_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:10510:1: rule__FunctionDeclaration__IdentifierAssignment_1 : ( ruleidentifier ) ;
     public final void rule__FunctionDeclaration__IdentifierAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10493:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:10494:2: ( ruleidentifier )
+            // InternalPascal.g:10514:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:10515:2: ( ruleidentifier )
             {
-            // InternalPascal.g:10494:2: ( ruleidentifier )
-            // InternalPascal.g:10495:3: ruleidentifier
+            // InternalPascal.g:10515:2: ( ruleidentifier )
+            // InternalPascal.g:10516:3: ruleidentifier
             {
              before(grammarAccess.getFunctionDeclarationAccess().getIdentifierIdentifierParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32414,17 +32416,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__FormalParameterListAssignment_2"
-    // InternalPascal.g:10504:1: rule__FunctionDeclaration__FormalParameterListAssignment_2 : ( ruleformalParameterList ) ;
+    // InternalPascal.g:10525:1: rule__FunctionDeclaration__FormalParameterListAssignment_2 : ( ruleformalParameterList ) ;
     public final void rule__FunctionDeclaration__FormalParameterListAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10508:1: ( ( ruleformalParameterList ) )
-            // InternalPascal.g:10509:2: ( ruleformalParameterList )
+            // InternalPascal.g:10529:1: ( ( ruleformalParameterList ) )
+            // InternalPascal.g:10530:2: ( ruleformalParameterList )
             {
-            // InternalPascal.g:10509:2: ( ruleformalParameterList )
-            // InternalPascal.g:10510:3: ruleformalParameterList
+            // InternalPascal.g:10530:2: ( ruleformalParameterList )
+            // InternalPascal.g:10531:3: ruleformalParameterList
             {
              before(grammarAccess.getFunctionDeclarationAccess().getFormalParameterListFormalParameterListParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -32455,17 +32457,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__ResultTypeAssignment_4"
-    // InternalPascal.g:10519:1: rule__FunctionDeclaration__ResultTypeAssignment_4 : ( ruleresultType ) ;
+    // InternalPascal.g:10540:1: rule__FunctionDeclaration__ResultTypeAssignment_4 : ( ruleresultType ) ;
     public final void rule__FunctionDeclaration__ResultTypeAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10523:1: ( ( ruleresultType ) )
-            // InternalPascal.g:10524:2: ( ruleresultType )
+            // InternalPascal.g:10544:1: ( ( ruleresultType ) )
+            // InternalPascal.g:10545:2: ( ruleresultType )
             {
-            // InternalPascal.g:10524:2: ( ruleresultType )
-            // InternalPascal.g:10525:3: ruleresultType
+            // InternalPascal.g:10545:2: ( ruleresultType )
+            // InternalPascal.g:10546:3: ruleresultType
             {
              before(grammarAccess.getFunctionDeclarationAccess().getResultTypeResultTypeParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -32496,17 +32498,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDeclaration__BlockAssignment_6"
-    // InternalPascal.g:10534:1: rule__FunctionDeclaration__BlockAssignment_6 : ( ruleblock ) ;
+    // InternalPascal.g:10555:1: rule__FunctionDeclaration__BlockAssignment_6 : ( ruleblock ) ;
     public final void rule__FunctionDeclaration__BlockAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10538:1: ( ( ruleblock ) )
-            // InternalPascal.g:10539:2: ( ruleblock )
+            // InternalPascal.g:10559:1: ( ( ruleblock ) )
+            // InternalPascal.g:10560:2: ( ruleblock )
             {
-            // InternalPascal.g:10539:2: ( ruleblock )
-            // InternalPascal.g:10540:3: ruleblock
+            // InternalPascal.g:10560:2: ( ruleblock )
+            // InternalPascal.g:10561:3: ruleblock
             {
              before(grammarAccess.getFunctionDeclarationAccess().getBlockBlockParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
@@ -32537,17 +32539,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statement__UnlabelledStatementAssignment_0_2"
-    // InternalPascal.g:10549:1: rule__Statement__UnlabelledStatementAssignment_0_2 : ( ruleunlabelledStatement ) ;
+    // InternalPascal.g:10570:1: rule__Statement__UnlabelledStatementAssignment_0_2 : ( ruleunlabelledStatement ) ;
     public final void rule__Statement__UnlabelledStatementAssignment_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10553:1: ( ( ruleunlabelledStatement ) )
-            // InternalPascal.g:10554:2: ( ruleunlabelledStatement )
+            // InternalPascal.g:10574:1: ( ( ruleunlabelledStatement ) )
+            // InternalPascal.g:10575:2: ( ruleunlabelledStatement )
             {
-            // InternalPascal.g:10554:2: ( ruleunlabelledStatement )
-            // InternalPascal.g:10555:3: ruleunlabelledStatement
+            // InternalPascal.g:10575:2: ( ruleunlabelledStatement )
+            // InternalPascal.g:10576:3: ruleunlabelledStatement
             {
              before(grammarAccess.getStatementAccess().getUnlabelledStatementUnlabelledStatementParserRuleCall_0_2_0()); 
             pushFollow(FOLLOW_2);
@@ -32578,17 +32580,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statement__UnlabelledStatementAssignment_1"
-    // InternalPascal.g:10564:1: rule__Statement__UnlabelledStatementAssignment_1 : ( ruleunlabelledStatement ) ;
+    // InternalPascal.g:10585:1: rule__Statement__UnlabelledStatementAssignment_1 : ( ruleunlabelledStatement ) ;
     public final void rule__Statement__UnlabelledStatementAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10568:1: ( ( ruleunlabelledStatement ) )
-            // InternalPascal.g:10569:2: ( ruleunlabelledStatement )
+            // InternalPascal.g:10589:1: ( ( ruleunlabelledStatement ) )
+            // InternalPascal.g:10590:2: ( ruleunlabelledStatement )
             {
-            // InternalPascal.g:10569:2: ( ruleunlabelledStatement )
-            // InternalPascal.g:10570:3: ruleunlabelledStatement
+            // InternalPascal.g:10590:2: ( ruleunlabelledStatement )
+            // InternalPascal.g:10591:3: ruleunlabelledStatement
             {
              before(grammarAccess.getStatementAccess().getUnlabelledStatementUnlabelledStatementParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32619,17 +32621,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__SimpleStatementAssignment_0"
-    // InternalPascal.g:10579:1: rule__UnlabelledStatement__SimpleStatementAssignment_0 : ( rulesimpleStatement ) ;
+    // InternalPascal.g:10600:1: rule__UnlabelledStatement__SimpleStatementAssignment_0 : ( rulesimpleStatement ) ;
     public final void rule__UnlabelledStatement__SimpleStatementAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10583:1: ( ( rulesimpleStatement ) )
-            // InternalPascal.g:10584:2: ( rulesimpleStatement )
+            // InternalPascal.g:10604:1: ( ( rulesimpleStatement ) )
+            // InternalPascal.g:10605:2: ( rulesimpleStatement )
             {
-            // InternalPascal.g:10584:2: ( rulesimpleStatement )
-            // InternalPascal.g:10585:3: rulesimpleStatement
+            // InternalPascal.g:10605:2: ( rulesimpleStatement )
+            // InternalPascal.g:10606:3: rulesimpleStatement
             {
              before(grammarAccess.getUnlabelledStatementAccess().getSimpleStatementSimpleStatementParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -32660,17 +32662,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__StructuredStatementAssignment_1"
-    // InternalPascal.g:10594:1: rule__UnlabelledStatement__StructuredStatementAssignment_1 : ( rulestructuredStatement ) ;
+    // InternalPascal.g:10615:1: rule__UnlabelledStatement__StructuredStatementAssignment_1 : ( rulestructuredStatement ) ;
     public final void rule__UnlabelledStatement__StructuredStatementAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10598:1: ( ( rulestructuredStatement ) )
-            // InternalPascal.g:10599:2: ( rulestructuredStatement )
+            // InternalPascal.g:10619:1: ( ( rulestructuredStatement ) )
+            // InternalPascal.g:10620:2: ( rulestructuredStatement )
             {
-            // InternalPascal.g:10599:2: ( rulestructuredStatement )
-            // InternalPascal.g:10600:3: rulestructuredStatement
+            // InternalPascal.g:10620:2: ( rulestructuredStatement )
+            // InternalPascal.g:10621:3: rulestructuredStatement
             {
              before(grammarAccess.getUnlabelledStatementAccess().getStructuredStatementStructuredStatementParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32701,17 +32703,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__IdentifierAssignment_2_0"
-    // InternalPascal.g:10609:1: rule__UnlabelledStatement__IdentifierAssignment_2_0 : ( ruleidentifier ) ;
+    // InternalPascal.g:10630:1: rule__UnlabelledStatement__IdentifierAssignment_2_0 : ( ruleidentifier ) ;
     public final void rule__UnlabelledStatement__IdentifierAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10613:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:10614:2: ( ruleidentifier )
+            // InternalPascal.g:10634:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:10635:2: ( ruleidentifier )
             {
-            // InternalPascal.g:10614:2: ( ruleidentifier )
-            // InternalPascal.g:10615:3: ruleidentifier
+            // InternalPascal.g:10635:2: ( ruleidentifier )
+            // InternalPascal.g:10636:3: ruleidentifier
             {
              before(grammarAccess.getUnlabelledStatementAccess().getIdentifierIdentifierParserRuleCall_2_0_0()); 
             pushFollow(FOLLOW_2);
@@ -32742,17 +32744,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnlabelledStatement__ParameterListAssignment_2_1_1"
-    // InternalPascal.g:10624:1: rule__UnlabelledStatement__ParameterListAssignment_2_1_1 : ( ruleparameterList ) ;
+    // InternalPascal.g:10645:1: rule__UnlabelledStatement__ParameterListAssignment_2_1_1 : ( ruleparameterList ) ;
     public final void rule__UnlabelledStatement__ParameterListAssignment_2_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10628:1: ( ( ruleparameterList ) )
-            // InternalPascal.g:10629:2: ( ruleparameterList )
+            // InternalPascal.g:10649:1: ( ( ruleparameterList ) )
+            // InternalPascal.g:10650:2: ( ruleparameterList )
             {
-            // InternalPascal.g:10629:2: ( ruleparameterList )
-            // InternalPascal.g:10630:3: ruleparameterList
+            // InternalPascal.g:10650:2: ( ruleparameterList )
+            // InternalPascal.g:10651:3: ruleparameterList
             {
              before(grammarAccess.getUnlabelledStatementAccess().getParameterListParameterListParserRuleCall_2_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32783,17 +32785,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleStatement__GotoStatementAssignment_1_0"
-    // InternalPascal.g:10639:1: rule__SimpleStatement__GotoStatementAssignment_1_0 : ( rulegotoStatement ) ;
+    // InternalPascal.g:10660:1: rule__SimpleStatement__GotoStatementAssignment_1_0 : ( rulegotoStatement ) ;
     public final void rule__SimpleStatement__GotoStatementAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10643:1: ( ( rulegotoStatement ) )
-            // InternalPascal.g:10644:2: ( rulegotoStatement )
+            // InternalPascal.g:10664:1: ( ( rulegotoStatement ) )
+            // InternalPascal.g:10665:2: ( rulegotoStatement )
             {
-            // InternalPascal.g:10644:2: ( rulegotoStatement )
-            // InternalPascal.g:10645:3: rulegotoStatement
+            // InternalPascal.g:10665:2: ( rulegotoStatement )
+            // InternalPascal.g:10666:3: rulegotoStatement
             {
              before(grammarAccess.getSimpleStatementAccess().getGotoStatementGotoStatementParserRuleCall_1_0_0()); 
             pushFollow(FOLLOW_2);
@@ -32824,17 +32826,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleStatement__AssignmentStatementAssignment_1_1"
-    // InternalPascal.g:10654:1: rule__SimpleStatement__AssignmentStatementAssignment_1_1 : ( ruleassignmentStatement ) ;
+    // InternalPascal.g:10675:1: rule__SimpleStatement__AssignmentStatementAssignment_1_1 : ( ruleassignmentStatement ) ;
     public final void rule__SimpleStatement__AssignmentStatementAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10658:1: ( ( ruleassignmentStatement ) )
-            // InternalPascal.g:10659:2: ( ruleassignmentStatement )
+            // InternalPascal.g:10679:1: ( ( ruleassignmentStatement ) )
+            // InternalPascal.g:10680:2: ( ruleassignmentStatement )
             {
-            // InternalPascal.g:10659:2: ( ruleassignmentStatement )
-            // InternalPascal.g:10660:3: ruleassignmentStatement
+            // InternalPascal.g:10680:2: ( ruleassignmentStatement )
+            // InternalPascal.g:10681:3: ruleassignmentStatement
             {
              before(grammarAccess.getSimpleStatementAccess().getAssignmentStatementAssignmentStatementParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32865,17 +32867,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignmentStatement__VariableAssignment_0"
-    // InternalPascal.g:10669:1: rule__AssignmentStatement__VariableAssignment_0 : ( rulevariable ) ;
+    // InternalPascal.g:10690:1: rule__AssignmentStatement__VariableAssignment_0 : ( rulevariable ) ;
     public final void rule__AssignmentStatement__VariableAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10673:1: ( ( rulevariable ) )
-            // InternalPascal.g:10674:2: ( rulevariable )
+            // InternalPascal.g:10694:1: ( ( rulevariable ) )
+            // InternalPascal.g:10695:2: ( rulevariable )
             {
-            // InternalPascal.g:10674:2: ( rulevariable )
-            // InternalPascal.g:10675:3: rulevariable
+            // InternalPascal.g:10695:2: ( rulevariable )
+            // InternalPascal.g:10696:3: rulevariable
             {
              before(grammarAccess.getAssignmentStatementAccess().getVariableVariableParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -32906,17 +32908,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignmentStatement__ExpressionAssignment_2"
-    // InternalPascal.g:10684:1: rule__AssignmentStatement__ExpressionAssignment_2 : ( ruleexpression ) ;
+    // InternalPascal.g:10705:1: rule__AssignmentStatement__ExpressionAssignment_2 : ( ruleexpression ) ;
     public final void rule__AssignmentStatement__ExpressionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10688:1: ( ( ruleexpression ) )
-            // InternalPascal.g:10689:2: ( ruleexpression )
+            // InternalPascal.g:10709:1: ( ( ruleexpression ) )
+            // InternalPascal.g:10710:2: ( ruleexpression )
             {
-            // InternalPascal.g:10689:2: ( ruleexpression )
-            // InternalPascal.g:10690:3: ruleexpression
+            // InternalPascal.g:10710:2: ( ruleexpression )
+            // InternalPascal.g:10711:3: ruleexpression
             {
              before(grammarAccess.getAssignmentStatementAccess().getExpressionExpressionParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -32947,17 +32949,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__IdentifierAssignment_0_0_1"
-    // InternalPascal.g:10699:1: rule__Variable__IdentifierAssignment_0_0_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:10720:1: rule__Variable__IdentifierAssignment_0_0_1 : ( ruleidentifier ) ;
     public final void rule__Variable__IdentifierAssignment_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10703:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:10704:2: ( ruleidentifier )
+            // InternalPascal.g:10724:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:10725:2: ( ruleidentifier )
             {
-            // InternalPascal.g:10704:2: ( ruleidentifier )
-            // InternalPascal.g:10705:3: ruleidentifier
+            // InternalPascal.g:10725:2: ( ruleidentifier )
+            // InternalPascal.g:10726:3: ruleidentifier
             {
              before(grammarAccess.getVariableAccess().getIdentifierIdentifierParserRuleCall_0_0_1_0()); 
             pushFollow(FOLLOW_2);
@@ -32988,17 +32990,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__IdentifierAssignment_0_1"
-    // InternalPascal.g:10714:1: rule__Variable__IdentifierAssignment_0_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:10735:1: rule__Variable__IdentifierAssignment_0_1 : ( ruleidentifier ) ;
     public final void rule__Variable__IdentifierAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10718:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:10719:2: ( ruleidentifier )
+            // InternalPascal.g:10739:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:10740:2: ( ruleidentifier )
             {
-            // InternalPascal.g:10719:2: ( ruleidentifier )
-            // InternalPascal.g:10720:3: ruleidentifier
+            // InternalPascal.g:10740:2: ( ruleidentifier )
+            // InternalPascal.g:10741:3: ruleidentifier
             {
              before(grammarAccess.getVariableAccess().getIdentifierIdentifierParserRuleCall_0_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33029,17 +33031,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__ExpressionAssignment_1_0_1"
-    // InternalPascal.g:10729:1: rule__Variable__ExpressionAssignment_1_0_1 : ( ruleexpression ) ;
+    // InternalPascal.g:10750:1: rule__Variable__ExpressionAssignment_1_0_1 : ( ruleexpression ) ;
     public final void rule__Variable__ExpressionAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10733:1: ( ( ruleexpression ) )
-            // InternalPascal.g:10734:2: ( ruleexpression )
+            // InternalPascal.g:10754:1: ( ( ruleexpression ) )
+            // InternalPascal.g:10755:2: ( ruleexpression )
             {
-            // InternalPascal.g:10734:2: ( ruleexpression )
-            // InternalPascal.g:10735:3: ruleexpression
+            // InternalPascal.g:10755:2: ( ruleexpression )
+            // InternalPascal.g:10756:3: ruleexpression
             {
              before(grammarAccess.getVariableAccess().getExpressionExpressionParserRuleCall_1_0_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33070,17 +33072,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Expression1Assignment_1_0_2_1"
-    // InternalPascal.g:10744:1: rule__Variable__Expression1Assignment_1_0_2_1 : ( ruleexpression ) ;
+    // InternalPascal.g:10765:1: rule__Variable__Expression1Assignment_1_0_2_1 : ( ruleexpression ) ;
     public final void rule__Variable__Expression1Assignment_1_0_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10748:1: ( ( ruleexpression ) )
-            // InternalPascal.g:10749:2: ( ruleexpression )
+            // InternalPascal.g:10769:1: ( ( ruleexpression ) )
+            // InternalPascal.g:10770:2: ( ruleexpression )
             {
-            // InternalPascal.g:10749:2: ( ruleexpression )
-            // InternalPascal.g:10750:3: ruleexpression
+            // InternalPascal.g:10770:2: ( ruleexpression )
+            // InternalPascal.g:10771:3: ruleexpression
             {
              before(grammarAccess.getVariableAccess().getExpression1ExpressionParserRuleCall_1_0_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33111,17 +33113,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Expression2Assignment_1_1_1"
-    // InternalPascal.g:10759:1: rule__Variable__Expression2Assignment_1_1_1 : ( ruleexpression ) ;
+    // InternalPascal.g:10780:1: rule__Variable__Expression2Assignment_1_1_1 : ( ruleexpression ) ;
     public final void rule__Variable__Expression2Assignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10763:1: ( ( ruleexpression ) )
-            // InternalPascal.g:10764:2: ( ruleexpression )
+            // InternalPascal.g:10784:1: ( ( ruleexpression ) )
+            // InternalPascal.g:10785:2: ( ruleexpression )
             {
-            // InternalPascal.g:10764:2: ( ruleexpression )
-            // InternalPascal.g:10765:3: ruleexpression
+            // InternalPascal.g:10785:2: ( ruleexpression )
+            // InternalPascal.g:10786:3: ruleexpression
             {
              before(grammarAccess.getVariableAccess().getExpression2ExpressionParserRuleCall_1_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33152,17 +33154,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Expression3Assignment_1_1_2_1"
-    // InternalPascal.g:10774:1: rule__Variable__Expression3Assignment_1_1_2_1 : ( ruleexpression ) ;
+    // InternalPascal.g:10795:1: rule__Variable__Expression3Assignment_1_1_2_1 : ( ruleexpression ) ;
     public final void rule__Variable__Expression3Assignment_1_1_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10778:1: ( ( ruleexpression ) )
-            // InternalPascal.g:10779:2: ( ruleexpression )
+            // InternalPascal.g:10799:1: ( ( ruleexpression ) )
+            // InternalPascal.g:10800:2: ( ruleexpression )
             {
-            // InternalPascal.g:10779:2: ( ruleexpression )
-            // InternalPascal.g:10780:3: ruleexpression
+            // InternalPascal.g:10800:2: ( ruleexpression )
+            // InternalPascal.g:10801:3: ruleexpression
             {
              before(grammarAccess.getVariableAccess().getExpression3ExpressionParserRuleCall_1_1_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33193,17 +33195,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__Identifier2Assignment_1_2_1"
-    // InternalPascal.g:10789:1: rule__Variable__Identifier2Assignment_1_2_1 : ( ruleidentifier ) ;
+    // InternalPascal.g:10810:1: rule__Variable__Identifier2Assignment_1_2_1 : ( ruleidentifier ) ;
     public final void rule__Variable__Identifier2Assignment_1_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10793:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:10794:2: ( ruleidentifier )
+            // InternalPascal.g:10814:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:10815:2: ( ruleidentifier )
             {
-            // InternalPascal.g:10794:2: ( ruleidentifier )
-            // InternalPascal.g:10795:3: ruleidentifier
+            // InternalPascal.g:10815:2: ( ruleidentifier )
+            // InternalPascal.g:10816:3: ruleidentifier
             {
              before(grammarAccess.getVariableAccess().getIdentifier2IdentifierParserRuleCall_1_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33234,17 +33236,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__SimpleExpressionAssignment_0"
-    // InternalPascal.g:10804:1: rule__Expression__SimpleExpressionAssignment_0 : ( rulesimpleExpression ) ;
+    // InternalPascal.g:10825:1: rule__Expression__SimpleExpressionAssignment_0 : ( rulesimpleExpression ) ;
     public final void rule__Expression__SimpleExpressionAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10808:1: ( ( rulesimpleExpression ) )
-            // InternalPascal.g:10809:2: ( rulesimpleExpression )
+            // InternalPascal.g:10829:1: ( ( rulesimpleExpression ) )
+            // InternalPascal.g:10830:2: ( rulesimpleExpression )
             {
-            // InternalPascal.g:10809:2: ( rulesimpleExpression )
-            // InternalPascal.g:10810:3: rulesimpleExpression
+            // InternalPascal.g:10830:2: ( rulesimpleExpression )
+            // InternalPascal.g:10831:3: rulesimpleExpression
             {
              before(grammarAccess.getExpressionAccess().getSimpleExpressionSimpleExpressionParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -33275,17 +33277,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__RelationaloperatorAssignment_1_0"
-    // InternalPascal.g:10819:1: rule__Expression__RelationaloperatorAssignment_1_0 : ( rulerelationaloperator ) ;
+    // InternalPascal.g:10840:1: rule__Expression__RelationaloperatorAssignment_1_0 : ( rulerelationaloperator ) ;
     public final void rule__Expression__RelationaloperatorAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10823:1: ( ( rulerelationaloperator ) )
-            // InternalPascal.g:10824:2: ( rulerelationaloperator )
+            // InternalPascal.g:10844:1: ( ( rulerelationaloperator ) )
+            // InternalPascal.g:10845:2: ( rulerelationaloperator )
             {
-            // InternalPascal.g:10824:2: ( rulerelationaloperator )
-            // InternalPascal.g:10825:3: rulerelationaloperator
+            // InternalPascal.g:10845:2: ( rulerelationaloperator )
+            // InternalPascal.g:10846:3: rulerelationaloperator
             {
              before(grammarAccess.getExpressionAccess().getRelationaloperatorRelationaloperatorParserRuleCall_1_0_0()); 
             pushFollow(FOLLOW_2);
@@ -33316,17 +33318,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expression__ExpressionAssignment_1_1"
-    // InternalPascal.g:10834:1: rule__Expression__ExpressionAssignment_1_1 : ( ruleexpression ) ;
+    // InternalPascal.g:10855:1: rule__Expression__ExpressionAssignment_1_1 : ( ruleexpression ) ;
     public final void rule__Expression__ExpressionAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10838:1: ( ( ruleexpression ) )
-            // InternalPascal.g:10839:2: ( ruleexpression )
+            // InternalPascal.g:10859:1: ( ( ruleexpression ) )
+            // InternalPascal.g:10860:2: ( ruleexpression )
             {
-            // InternalPascal.g:10839:2: ( ruleexpression )
-            // InternalPascal.g:10840:3: ruleexpression
+            // InternalPascal.g:10860:2: ( ruleexpression )
+            // InternalPascal.g:10861:3: ruleexpression
             {
              before(grammarAccess.getExpressionAccess().getExpressionExpressionParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33357,17 +33359,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__TermAssignment_0"
-    // InternalPascal.g:10849:1: rule__SimpleExpression__TermAssignment_0 : ( ruleterm ) ;
+    // InternalPascal.g:10870:1: rule__SimpleExpression__TermAssignment_0 : ( ruleterm ) ;
     public final void rule__SimpleExpression__TermAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10853:1: ( ( ruleterm ) )
-            // InternalPascal.g:10854:2: ( ruleterm )
+            // InternalPascal.g:10874:1: ( ( ruleterm ) )
+            // InternalPascal.g:10875:2: ( ruleterm )
             {
-            // InternalPascal.g:10854:2: ( ruleterm )
-            // InternalPascal.g:10855:3: ruleterm
+            // InternalPascal.g:10875:2: ( ruleterm )
+            // InternalPascal.g:10876:3: ruleterm
             {
              before(grammarAccess.getSimpleExpressionAccess().getTermTermParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -33398,17 +33400,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__AdditiveoperatorAssignment_1_0"
-    // InternalPascal.g:10864:1: rule__SimpleExpression__AdditiveoperatorAssignment_1_0 : ( ruleadditiveoperator ) ;
+    // InternalPascal.g:10885:1: rule__SimpleExpression__AdditiveoperatorAssignment_1_0 : ( ruleadditiveoperator ) ;
     public final void rule__SimpleExpression__AdditiveoperatorAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10868:1: ( ( ruleadditiveoperator ) )
-            // InternalPascal.g:10869:2: ( ruleadditiveoperator )
+            // InternalPascal.g:10889:1: ( ( ruleadditiveoperator ) )
+            // InternalPascal.g:10890:2: ( ruleadditiveoperator )
             {
-            // InternalPascal.g:10869:2: ( ruleadditiveoperator )
-            // InternalPascal.g:10870:3: ruleadditiveoperator
+            // InternalPascal.g:10890:2: ( ruleadditiveoperator )
+            // InternalPascal.g:10891:3: ruleadditiveoperator
             {
              before(grammarAccess.getSimpleExpressionAccess().getAdditiveoperatorAdditiveoperatorParserRuleCall_1_0_0()); 
             pushFollow(FOLLOW_2);
@@ -33439,17 +33441,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpression__SimpleExpressionAssignment_1_1"
-    // InternalPascal.g:10879:1: rule__SimpleExpression__SimpleExpressionAssignment_1_1 : ( rulesimpleExpression ) ;
+    // InternalPascal.g:10900:1: rule__SimpleExpression__SimpleExpressionAssignment_1_1 : ( rulesimpleExpression ) ;
     public final void rule__SimpleExpression__SimpleExpressionAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10883:1: ( ( rulesimpleExpression ) )
-            // InternalPascal.g:10884:2: ( rulesimpleExpression )
+            // InternalPascal.g:10904:1: ( ( rulesimpleExpression ) )
+            // InternalPascal.g:10905:2: ( rulesimpleExpression )
             {
-            // InternalPascal.g:10884:2: ( rulesimpleExpression )
-            // InternalPascal.g:10885:3: rulesimpleExpression
+            // InternalPascal.g:10905:2: ( rulesimpleExpression )
+            // InternalPascal.g:10906:3: rulesimpleExpression
             {
              before(grammarAccess.getSimpleExpressionAccess().getSimpleExpressionSimpleExpressionParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33480,17 +33482,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__SignedFactorAssignment_0"
-    // InternalPascal.g:10894:1: rule__Term__SignedFactorAssignment_0 : ( rulesignedFactor ) ;
+    // InternalPascal.g:10915:1: rule__Term__SignedFactorAssignment_0 : ( rulesignedFactor ) ;
     public final void rule__Term__SignedFactorAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10898:1: ( ( rulesignedFactor ) )
-            // InternalPascal.g:10899:2: ( rulesignedFactor )
+            // InternalPascal.g:10919:1: ( ( rulesignedFactor ) )
+            // InternalPascal.g:10920:2: ( rulesignedFactor )
             {
-            // InternalPascal.g:10899:2: ( rulesignedFactor )
-            // InternalPascal.g:10900:3: rulesignedFactor
+            // InternalPascal.g:10920:2: ( rulesignedFactor )
+            // InternalPascal.g:10921:3: rulesignedFactor
             {
              before(grammarAccess.getTermAccess().getSignedFactorSignedFactorParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -33521,17 +33523,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__MultiplicativeoperatorAssignment_1_0"
-    // InternalPascal.g:10909:1: rule__Term__MultiplicativeoperatorAssignment_1_0 : ( rulemultiplicativeoperator ) ;
+    // InternalPascal.g:10930:1: rule__Term__MultiplicativeoperatorAssignment_1_0 : ( rulemultiplicativeoperator ) ;
     public final void rule__Term__MultiplicativeoperatorAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10913:1: ( ( rulemultiplicativeoperator ) )
-            // InternalPascal.g:10914:2: ( rulemultiplicativeoperator )
+            // InternalPascal.g:10934:1: ( ( rulemultiplicativeoperator ) )
+            // InternalPascal.g:10935:2: ( rulemultiplicativeoperator )
             {
-            // InternalPascal.g:10914:2: ( rulemultiplicativeoperator )
-            // InternalPascal.g:10915:3: rulemultiplicativeoperator
+            // InternalPascal.g:10935:2: ( rulemultiplicativeoperator )
+            // InternalPascal.g:10936:3: rulemultiplicativeoperator
             {
              before(grammarAccess.getTermAccess().getMultiplicativeoperatorMultiplicativeoperatorParserRuleCall_1_0_0()); 
             pushFollow(FOLLOW_2);
@@ -33562,17 +33564,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Term__TermAssignment_1_1"
-    // InternalPascal.g:10924:1: rule__Term__TermAssignment_1_1 : ( ruleterm ) ;
+    // InternalPascal.g:10945:1: rule__Term__TermAssignment_1_1 : ( ruleterm ) ;
     public final void rule__Term__TermAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10928:1: ( ( ruleterm ) )
-            // InternalPascal.g:10929:2: ( ruleterm )
+            // InternalPascal.g:10949:1: ( ( ruleterm ) )
+            // InternalPascal.g:10950:2: ( ruleterm )
             {
-            // InternalPascal.g:10929:2: ( ruleterm )
-            // InternalPascal.g:10930:3: ruleterm
+            // InternalPascal.g:10950:2: ( ruleterm )
+            // InternalPascal.g:10951:3: ruleterm
             {
              before(grammarAccess.getTermAccess().getTermTermParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33603,17 +33605,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SignedFactor__FactorAssignment_1"
-    // InternalPascal.g:10939:1: rule__SignedFactor__FactorAssignment_1 : ( rulefactor ) ;
+    // InternalPascal.g:10960:1: rule__SignedFactor__FactorAssignment_1 : ( rulefactor ) ;
     public final void rule__SignedFactor__FactorAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10943:1: ( ( rulefactor ) )
-            // InternalPascal.g:10944:2: ( rulefactor )
+            // InternalPascal.g:10964:1: ( ( rulefactor ) )
+            // InternalPascal.g:10965:2: ( rulefactor )
             {
-            // InternalPascal.g:10944:2: ( rulefactor )
-            // InternalPascal.g:10945:3: rulefactor
+            // InternalPascal.g:10965:2: ( rulefactor )
+            // InternalPascal.g:10966:3: rulefactor
             {
              before(grammarAccess.getSignedFactorAccess().getFactorFactorParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33644,17 +33646,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__ExpressionAssignment_0_1"
-    // InternalPascal.g:10954:1: rule__Factor__ExpressionAssignment_0_1 : ( ruleexpression ) ;
+    // InternalPascal.g:10975:1: rule__Factor__ExpressionAssignment_0_1 : ( ruleexpression ) ;
     public final void rule__Factor__ExpressionAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10958:1: ( ( ruleexpression ) )
-            // InternalPascal.g:10959:2: ( ruleexpression )
+            // InternalPascal.g:10979:1: ( ( ruleexpression ) )
+            // InternalPascal.g:10980:2: ( ruleexpression )
             {
-            // InternalPascal.g:10959:2: ( ruleexpression )
-            // InternalPascal.g:10960:3: ruleexpression
+            // InternalPascal.g:10980:2: ( ruleexpression )
+            // InternalPascal.g:10981:3: ruleexpression
             {
              before(grammarAccess.getFactorAccess().getExpressionExpressionParserRuleCall_0_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33685,17 +33687,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__UnsignedConstantAssignment_1"
-    // InternalPascal.g:10969:1: rule__Factor__UnsignedConstantAssignment_1 : ( ruleunsignedConstant ) ;
+    // InternalPascal.g:10990:1: rule__Factor__UnsignedConstantAssignment_1 : ( ruleunsignedConstant ) ;
     public final void rule__Factor__UnsignedConstantAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10973:1: ( ( ruleunsignedConstant ) )
-            // InternalPascal.g:10974:2: ( ruleunsignedConstant )
+            // InternalPascal.g:10994:1: ( ( ruleunsignedConstant ) )
+            // InternalPascal.g:10995:2: ( ruleunsignedConstant )
             {
-            // InternalPascal.g:10974:2: ( ruleunsignedConstant )
-            // InternalPascal.g:10975:3: ruleunsignedConstant
+            // InternalPascal.g:10995:2: ( ruleunsignedConstant )
+            // InternalPascal.g:10996:3: ruleunsignedConstant
             {
              before(grammarAccess.getFactorAccess().getUnsignedConstantUnsignedConstantParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33726,17 +33728,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__FactorAssignment_2_1"
-    // InternalPascal.g:10984:1: rule__Factor__FactorAssignment_2_1 : ( rulefactor ) ;
+    // InternalPascal.g:11005:1: rule__Factor__FactorAssignment_2_1 : ( rulefactor ) ;
     public final void rule__Factor__FactorAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:10988:1: ( ( rulefactor ) )
-            // InternalPascal.g:10989:2: ( rulefactor )
+            // InternalPascal.g:11009:1: ( ( rulefactor ) )
+            // InternalPascal.g:11010:2: ( rulefactor )
             {
-            // InternalPascal.g:10989:2: ( rulefactor )
-            // InternalPascal.g:10990:3: rulefactor
+            // InternalPascal.g:11010:2: ( rulefactor )
+            // InternalPascal.g:11011:3: rulefactor
             {
              before(grammarAccess.getFactorAccess().getFactorFactorParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -33767,17 +33769,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__BoolAssignment_3"
-    // InternalPascal.g:10999:1: rule__Factor__BoolAssignment_3 : ( RULE_BOOL ) ;
+    // InternalPascal.g:11020:1: rule__Factor__BoolAssignment_3 : ( RULE_BOOL ) ;
     public final void rule__Factor__BoolAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11003:1: ( ( RULE_BOOL ) )
-            // InternalPascal.g:11004:2: ( RULE_BOOL )
+            // InternalPascal.g:11024:1: ( ( RULE_BOOL ) )
+            // InternalPascal.g:11025:2: ( RULE_BOOL )
             {
-            // InternalPascal.g:11004:2: ( RULE_BOOL )
-            // InternalPascal.g:11005:3: RULE_BOOL
+            // InternalPascal.g:11025:2: ( RULE_BOOL )
+            // InternalPascal.g:11026:3: RULE_BOOL
             {
              before(grammarAccess.getFactorAccess().getBoolBOOLTerminalRuleCall_3_0()); 
             match(input,RULE_BOOL,FOLLOW_2); 
@@ -33804,17 +33806,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__FunctionDesignatorAssignment_4"
-    // InternalPascal.g:11014:1: rule__Factor__FunctionDesignatorAssignment_4 : ( rulefunctionDesignator ) ;
+    // InternalPascal.g:11035:1: rule__Factor__FunctionDesignatorAssignment_4 : ( rulefunctionDesignator ) ;
     public final void rule__Factor__FunctionDesignatorAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11018:1: ( ( rulefunctionDesignator ) )
-            // InternalPascal.g:11019:2: ( rulefunctionDesignator )
+            // InternalPascal.g:11039:1: ( ( rulefunctionDesignator ) )
+            // InternalPascal.g:11040:2: ( rulefunctionDesignator )
             {
-            // InternalPascal.g:11019:2: ( rulefunctionDesignator )
-            // InternalPascal.g:11020:3: rulefunctionDesignator
+            // InternalPascal.g:11040:2: ( rulefunctionDesignator )
+            // InternalPascal.g:11041:3: rulefunctionDesignator
             {
              before(grammarAccess.getFactorAccess().getFunctionDesignatorFunctionDesignatorParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -33845,17 +33847,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Factor__VariableAssignment_5"
-    // InternalPascal.g:11029:1: rule__Factor__VariableAssignment_5 : ( rulevariable ) ;
+    // InternalPascal.g:11050:1: rule__Factor__VariableAssignment_5 : ( rulevariable ) ;
     public final void rule__Factor__VariableAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11033:1: ( ( rulevariable ) )
-            // InternalPascal.g:11034:2: ( rulevariable )
+            // InternalPascal.g:11054:1: ( ( rulevariable ) )
+            // InternalPascal.g:11055:2: ( rulevariable )
             {
-            // InternalPascal.g:11034:2: ( rulevariable )
-            // InternalPascal.g:11035:3: rulevariable
+            // InternalPascal.g:11055:2: ( rulevariable )
+            // InternalPascal.g:11056:3: rulevariable
             {
              before(grammarAccess.getFactorAccess().getVariableVariableParserRuleCall_5_0()); 
             pushFollow(FOLLOW_2);
@@ -33886,17 +33888,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedConstant__UnsignedNumberAssignment_0"
-    // InternalPascal.g:11044:1: rule__UnsignedConstant__UnsignedNumberAssignment_0 : ( ruleunsignedNumber ) ;
+    // InternalPascal.g:11065:1: rule__UnsignedConstant__UnsignedNumberAssignment_0 : ( ruleunsignedNumber ) ;
     public final void rule__UnsignedConstant__UnsignedNumberAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11048:1: ( ( ruleunsignedNumber ) )
-            // InternalPascal.g:11049:2: ( ruleunsignedNumber )
+            // InternalPascal.g:11069:1: ( ( ruleunsignedNumber ) )
+            // InternalPascal.g:11070:2: ( ruleunsignedNumber )
             {
-            // InternalPascal.g:11049:2: ( ruleunsignedNumber )
-            // InternalPascal.g:11050:3: ruleunsignedNumber
+            // InternalPascal.g:11070:2: ( ruleunsignedNumber )
+            // InternalPascal.g:11071:3: ruleunsignedNumber
             {
              before(grammarAccess.getUnsignedConstantAccess().getUnsignedNumberUnsignedNumberParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -33927,17 +33929,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedConstant__String_literalAssignment_1"
-    // InternalPascal.g:11059:1: rule__UnsignedConstant__String_literalAssignment_1 : ( RULE_STRING_LITERAL ) ;
+    // InternalPascal.g:11080:1: rule__UnsignedConstant__String_literalAssignment_1 : ( RULE_STRING_LITERAL ) ;
     public final void rule__UnsignedConstant__String_literalAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11063:1: ( ( RULE_STRING_LITERAL ) )
-            // InternalPascal.g:11064:2: ( RULE_STRING_LITERAL )
+            // InternalPascal.g:11084:1: ( ( RULE_STRING_LITERAL ) )
+            // InternalPascal.g:11085:2: ( RULE_STRING_LITERAL )
             {
-            // InternalPascal.g:11064:2: ( RULE_STRING_LITERAL )
-            // InternalPascal.g:11065:3: RULE_STRING_LITERAL
+            // InternalPascal.g:11085:2: ( RULE_STRING_LITERAL )
+            // InternalPascal.g:11086:3: RULE_STRING_LITERAL
             {
              before(grammarAccess.getUnsignedConstantAccess().getString_literalSTRING_LITERALTerminalRuleCall_1_0()); 
             match(input,RULE_STRING_LITERAL,FOLLOW_2); 
@@ -33964,17 +33966,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnsignedConstant__ConstantChrAssignment_2"
-    // InternalPascal.g:11074:1: rule__UnsignedConstant__ConstantChrAssignment_2 : ( ruleconstantChr ) ;
+    // InternalPascal.g:11095:1: rule__UnsignedConstant__ConstantChrAssignment_2 : ( ruleconstantChr ) ;
     public final void rule__UnsignedConstant__ConstantChrAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11078:1: ( ( ruleconstantChr ) )
-            // InternalPascal.g:11079:2: ( ruleconstantChr )
+            // InternalPascal.g:11099:1: ( ( ruleconstantChr ) )
+            // InternalPascal.g:11100:2: ( ruleconstantChr )
             {
-            // InternalPascal.g:11079:2: ( ruleconstantChr )
-            // InternalPascal.g:11080:3: ruleconstantChr
+            // InternalPascal.g:11100:2: ( ruleconstantChr )
+            // InternalPascal.g:11101:3: ruleconstantChr
             {
              before(grammarAccess.getUnsignedConstantAccess().getConstantChrConstantChrParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -34005,17 +34007,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__IdentifierAssignment_0"
-    // InternalPascal.g:11089:1: rule__FunctionDesignator__IdentifierAssignment_0 : ( ruleidentifier ) ;
+    // InternalPascal.g:11110:1: rule__FunctionDesignator__IdentifierAssignment_0 : ( ruleidentifier ) ;
     public final void rule__FunctionDesignator__IdentifierAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11093:1: ( ( ruleidentifier ) )
-            // InternalPascal.g:11094:2: ( ruleidentifier )
+            // InternalPascal.g:11114:1: ( ( ruleidentifier ) )
+            // InternalPascal.g:11115:2: ( ruleidentifier )
             {
-            // InternalPascal.g:11094:2: ( ruleidentifier )
-            // InternalPascal.g:11095:3: ruleidentifier
+            // InternalPascal.g:11115:2: ( ruleidentifier )
+            // InternalPascal.g:11116:3: ruleidentifier
             {
              before(grammarAccess.getFunctionDesignatorAccess().getIdentifierIdentifierParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -34046,17 +34048,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FunctionDesignator__ParameterListAssignment_2"
-    // InternalPascal.g:11104:1: rule__FunctionDesignator__ParameterListAssignment_2 : ( ruleparameterList ) ;
+    // InternalPascal.g:11125:1: rule__FunctionDesignator__ParameterListAssignment_2 : ( ruleparameterList ) ;
     public final void rule__FunctionDesignator__ParameterListAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11108:1: ( ( ruleparameterList ) )
-            // InternalPascal.g:11109:2: ( ruleparameterList )
+            // InternalPascal.g:11129:1: ( ( ruleparameterList ) )
+            // InternalPascal.g:11130:2: ( ruleparameterList )
             {
-            // InternalPascal.g:11109:2: ( ruleparameterList )
-            // InternalPascal.g:11110:3: ruleparameterList
+            // InternalPascal.g:11130:2: ( ruleparameterList )
+            // InternalPascal.g:11131:3: ruleparameterList
             {
              before(grammarAccess.getFunctionDesignatorAccess().getParameterListParameterListParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -34087,17 +34089,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParameterList__ActualParameterAssignment_1_1"
-    // InternalPascal.g:11119:1: rule__ParameterList__ActualParameterAssignment_1_1 : ( ruleactualParameter ) ;
+    // InternalPascal.g:11140:1: rule__ParameterList__ActualParameterAssignment_1_1 : ( ruleactualParameter ) ;
     public final void rule__ParameterList__ActualParameterAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11123:1: ( ( ruleactualParameter ) )
-            // InternalPascal.g:11124:2: ( ruleactualParameter )
+            // InternalPascal.g:11144:1: ( ( ruleactualParameter ) )
+            // InternalPascal.g:11145:2: ( ruleactualParameter )
             {
-            // InternalPascal.g:11124:2: ( ruleactualParameter )
-            // InternalPascal.g:11125:3: ruleactualParameter
+            // InternalPascal.g:11145:2: ( ruleactualParameter )
+            // InternalPascal.g:11146:3: ruleactualParameter
             {
              before(grammarAccess.getParameterListAccess().getActualParameterActualParameterParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -34128,17 +34130,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ActualParameter__ExpressionAssignment"
-    // InternalPascal.g:11134:1: rule__ActualParameter__ExpressionAssignment : ( ruleexpression ) ;
+    // InternalPascal.g:11155:1: rule__ActualParameter__ExpressionAssignment : ( ruleexpression ) ;
     public final void rule__ActualParameter__ExpressionAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11138:1: ( ( ruleexpression ) )
-            // InternalPascal.g:11139:2: ( ruleexpression )
+            // InternalPascal.g:11159:1: ( ( ruleexpression ) )
+            // InternalPascal.g:11160:2: ( ruleexpression )
             {
-            // InternalPascal.g:11139:2: ( ruleexpression )
-            // InternalPascal.g:11140:3: ruleexpression
+            // InternalPascal.g:11160:2: ( ruleexpression )
+            // InternalPascal.g:11161:3: ruleexpression
             {
              before(grammarAccess.getActualParameterAccess().getExpressionExpressionParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -34169,17 +34171,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GotoStatement__LabelAssignment_1"
-    // InternalPascal.g:11149:1: rule__GotoStatement__LabelAssignment_1 : ( rulelabel ) ;
+    // InternalPascal.g:11170:1: rule__GotoStatement__LabelAssignment_1 : ( rulelabel ) ;
     public final void rule__GotoStatement__LabelAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11153:1: ( ( rulelabel ) )
-            // InternalPascal.g:11154:2: ( rulelabel )
+            // InternalPascal.g:11174:1: ( ( rulelabel ) )
+            // InternalPascal.g:11175:2: ( rulelabel )
             {
-            // InternalPascal.g:11154:2: ( rulelabel )
-            // InternalPascal.g:11155:3: rulelabel
+            // InternalPascal.g:11175:2: ( rulelabel )
+            // InternalPascal.g:11176:3: rulelabel
             {
              before(grammarAccess.getGotoStatementAccess().getLabelLabelParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -34210,17 +34212,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredStatement__CompoundStatementAssignment_0"
-    // InternalPascal.g:11164:1: rule__StructuredStatement__CompoundStatementAssignment_0 : ( rulecompoundStatement ) ;
+    // InternalPascal.g:11185:1: rule__StructuredStatement__CompoundStatementAssignment_0 : ( rulecompoundStatement ) ;
     public final void rule__StructuredStatement__CompoundStatementAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11168:1: ( ( rulecompoundStatement ) )
-            // InternalPascal.g:11169:2: ( rulecompoundStatement )
+            // InternalPascal.g:11189:1: ( ( rulecompoundStatement ) )
+            // InternalPascal.g:11190:2: ( rulecompoundStatement )
             {
-            // InternalPascal.g:11169:2: ( rulecompoundStatement )
-            // InternalPascal.g:11170:3: rulecompoundStatement
+            // InternalPascal.g:11190:2: ( rulecompoundStatement )
+            // InternalPascal.g:11191:3: rulecompoundStatement
             {
              before(grammarAccess.getStructuredStatementAccess().getCompoundStatementCompoundStatementParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -34251,17 +34253,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StructuredStatement__ConditionalStatementAssignment_1"
-    // InternalPascal.g:11179:1: rule__StructuredStatement__ConditionalStatementAssignment_1 : ( ruleconditionalStatement ) ;
+    // InternalPascal.g:11200:1: rule__StructuredStatement__ConditionalStatementAssignment_1 : ( ruleconditionalStatement ) ;
     public final void rule__StructuredStatement__ConditionalStatementAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11183:1: ( ( ruleconditionalStatement ) )
-            // InternalPascal.g:11184:2: ( ruleconditionalStatement )
+            // InternalPascal.g:11204:1: ( ( ruleconditionalStatement ) )
+            // InternalPascal.g:11205:2: ( ruleconditionalStatement )
             {
-            // InternalPascal.g:11184:2: ( ruleconditionalStatement )
-            // InternalPascal.g:11185:3: ruleconditionalStatement
+            // InternalPascal.g:11205:2: ( ruleconditionalStatement )
+            // InternalPascal.g:11206:3: ruleconditionalStatement
             {
              before(grammarAccess.getStructuredStatementAccess().getConditionalStatementConditionalStatementParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -34291,18 +34293,59 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__StructuredStatement__ConditionalStatementAssignment_1"
 
 
+    // $ANTLR start "rule__CompoundStatement__StatementsAssignment_1"
+    // InternalPascal.g:11215:1: rule__CompoundStatement__StatementsAssignment_1 : ( rulestatements ) ;
+    public final void rule__CompoundStatement__StatementsAssignment_1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalPascal.g:11219:1: ( ( rulestatements ) )
+            // InternalPascal.g:11220:2: ( rulestatements )
+            {
+            // InternalPascal.g:11220:2: ( rulestatements )
+            // InternalPascal.g:11221:3: rulestatements
+            {
+             before(grammarAccess.getCompoundStatementAccess().getStatementsStatementsParserRuleCall_1_0()); 
+            pushFollow(FOLLOW_2);
+            rulestatements();
+
+            state._fsp--;
+
+             after(grammarAccess.getCompoundStatementAccess().getStatementsStatementsParserRuleCall_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__CompoundStatement__StatementsAssignment_1"
+
+
     // $ANTLR start "rule__Statements__StatementAssignment_0"
-    // InternalPascal.g:11194:1: rule__Statements__StatementAssignment_0 : ( rulestatement ) ;
+    // InternalPascal.g:11230:1: rule__Statements__StatementAssignment_0 : ( rulestatement ) ;
     public final void rule__Statements__StatementAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11198:1: ( ( rulestatement ) )
-            // InternalPascal.g:11199:2: ( rulestatement )
+            // InternalPascal.g:11234:1: ( ( rulestatement ) )
+            // InternalPascal.g:11235:2: ( rulestatement )
             {
-            // InternalPascal.g:11199:2: ( rulestatement )
-            // InternalPascal.g:11200:3: rulestatement
+            // InternalPascal.g:11235:2: ( rulestatement )
+            // InternalPascal.g:11236:3: rulestatement
             {
              before(grammarAccess.getStatementsAccess().getStatementStatementParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -34333,17 +34376,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Statements__StatementAssignment_1_1"
-    // InternalPascal.g:11209:1: rule__Statements__StatementAssignment_1_1 : ( rulestatement ) ;
+    // InternalPascal.g:11245:1: rule__Statements__StatementAssignment_1_1 : ( rulestatement ) ;
     public final void rule__Statements__StatementAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11213:1: ( ( rulestatement ) )
-            // InternalPascal.g:11214:2: ( rulestatement )
+            // InternalPascal.g:11249:1: ( ( rulestatement ) )
+            // InternalPascal.g:11250:2: ( rulestatement )
             {
-            // InternalPascal.g:11214:2: ( rulestatement )
-            // InternalPascal.g:11215:3: rulestatement
+            // InternalPascal.g:11250:2: ( rulestatement )
+            // InternalPascal.g:11251:3: rulestatement
             {
              before(grammarAccess.getStatementsAccess().getStatementStatementParserRuleCall_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -34374,17 +34417,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConditionalStatement__CaseStatementAssignment"
-    // InternalPascal.g:11224:1: rule__ConditionalStatement__CaseStatementAssignment : ( rulecaseStatement ) ;
+    // InternalPascal.g:11260:1: rule__ConditionalStatement__CaseStatementAssignment : ( rulecaseStatement ) ;
     public final void rule__ConditionalStatement__CaseStatementAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11228:1: ( ( rulecaseStatement ) )
-            // InternalPascal.g:11229:2: ( rulecaseStatement )
+            // InternalPascal.g:11264:1: ( ( rulecaseStatement ) )
+            // InternalPascal.g:11265:2: ( rulecaseStatement )
             {
-            // InternalPascal.g:11229:2: ( rulecaseStatement )
-            // InternalPascal.g:11230:3: rulecaseStatement
+            // InternalPascal.g:11265:2: ( rulecaseStatement )
+            // InternalPascal.g:11266:3: rulecaseStatement
             {
              before(grammarAccess.getConditionalStatementAccess().getCaseStatementCaseStatementParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -34415,17 +34458,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__ExpressionAssignment_1"
-    // InternalPascal.g:11239:1: rule__CaseStatement__ExpressionAssignment_1 : ( ruleexpression ) ;
+    // InternalPascal.g:11275:1: rule__CaseStatement__ExpressionAssignment_1 : ( ruleexpression ) ;
     public final void rule__CaseStatement__ExpressionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11243:1: ( ( ruleexpression ) )
-            // InternalPascal.g:11244:2: ( ruleexpression )
+            // InternalPascal.g:11279:1: ( ( ruleexpression ) )
+            // InternalPascal.g:11280:2: ( ruleexpression )
             {
-            // InternalPascal.g:11244:2: ( ruleexpression )
-            // InternalPascal.g:11245:3: ruleexpression
+            // InternalPascal.g:11280:2: ( ruleexpression )
+            // InternalPascal.g:11281:3: ruleexpression
             {
              before(grammarAccess.getCaseStatementAccess().getExpressionExpressionParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -34456,17 +34499,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__CaseListElementAssignment_3"
-    // InternalPascal.g:11254:1: rule__CaseStatement__CaseListElementAssignment_3 : ( rulecaseListElement ) ;
+    // InternalPascal.g:11290:1: rule__CaseStatement__CaseListElementAssignment_3 : ( rulecaseListElement ) ;
     public final void rule__CaseStatement__CaseListElementAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11258:1: ( ( rulecaseListElement ) )
-            // InternalPascal.g:11259:2: ( rulecaseListElement )
+            // InternalPascal.g:11294:1: ( ( rulecaseListElement ) )
+            // InternalPascal.g:11295:2: ( rulecaseListElement )
             {
-            // InternalPascal.g:11259:2: ( rulecaseListElement )
-            // InternalPascal.g:11260:3: rulecaseListElement
+            // InternalPascal.g:11295:2: ( rulecaseListElement )
+            // InternalPascal.g:11296:3: rulecaseListElement
             {
              before(grammarAccess.getCaseStatementAccess().getCaseListElementCaseListElementParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -34497,17 +34540,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__CaseListElement1Assignment_4_1"
-    // InternalPascal.g:11269:1: rule__CaseStatement__CaseListElement1Assignment_4_1 : ( rulecaseListElement ) ;
+    // InternalPascal.g:11305:1: rule__CaseStatement__CaseListElement1Assignment_4_1 : ( rulecaseListElement ) ;
     public final void rule__CaseStatement__CaseListElement1Assignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11273:1: ( ( rulecaseListElement ) )
-            // InternalPascal.g:11274:2: ( rulecaseListElement )
+            // InternalPascal.g:11309:1: ( ( rulecaseListElement ) )
+            // InternalPascal.g:11310:2: ( rulecaseListElement )
             {
-            // InternalPascal.g:11274:2: ( rulecaseListElement )
-            // InternalPascal.g:11275:3: rulecaseListElement
+            // InternalPascal.g:11310:2: ( rulecaseListElement )
+            // InternalPascal.g:11311:3: rulecaseListElement
             {
              before(grammarAccess.getCaseStatementAccess().getCaseListElement1CaseListElementParserRuleCall_4_1_0()); 
             pushFollow(FOLLOW_2);
@@ -34538,17 +34581,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseStatement__StatementsAssignment_5_2"
-    // InternalPascal.g:11284:1: rule__CaseStatement__StatementsAssignment_5_2 : ( rulestatements ) ;
+    // InternalPascal.g:11320:1: rule__CaseStatement__StatementsAssignment_5_2 : ( rulestatements ) ;
     public final void rule__CaseStatement__StatementsAssignment_5_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11288:1: ( ( rulestatements ) )
-            // InternalPascal.g:11289:2: ( rulestatements )
+            // InternalPascal.g:11324:1: ( ( rulestatements ) )
+            // InternalPascal.g:11325:2: ( rulestatements )
             {
-            // InternalPascal.g:11289:2: ( rulestatements )
-            // InternalPascal.g:11290:3: rulestatements
+            // InternalPascal.g:11325:2: ( rulestatements )
+            // InternalPascal.g:11326:3: rulestatements
             {
              before(grammarAccess.getCaseStatementAccess().getStatementsStatementsParserRuleCall_5_2_0()); 
             pushFollow(FOLLOW_2);
@@ -34579,17 +34622,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseListElement__ConstListAssignment_0"
-    // InternalPascal.g:11299:1: rule__CaseListElement__ConstListAssignment_0 : ( ruleconstList ) ;
+    // InternalPascal.g:11335:1: rule__CaseListElement__ConstListAssignment_0 : ( ruleconstList ) ;
     public final void rule__CaseListElement__ConstListAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11303:1: ( ( ruleconstList ) )
-            // InternalPascal.g:11304:2: ( ruleconstList )
+            // InternalPascal.g:11339:1: ( ( ruleconstList ) )
+            // InternalPascal.g:11340:2: ( ruleconstList )
             {
-            // InternalPascal.g:11304:2: ( ruleconstList )
-            // InternalPascal.g:11305:3: ruleconstList
+            // InternalPascal.g:11340:2: ( ruleconstList )
+            // InternalPascal.g:11341:3: ruleconstList
             {
              before(grammarAccess.getCaseListElementAccess().getConstListConstListParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -34620,17 +34663,17 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CaseListElement__StatementAssignment_2"
-    // InternalPascal.g:11314:1: rule__CaseListElement__StatementAssignment_2 : ( rulestatement ) ;
+    // InternalPascal.g:11350:1: rule__CaseListElement__StatementAssignment_2 : ( rulestatement ) ;
     public final void rule__CaseListElement__StatementAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPascal.g:11318:1: ( ( rulestatement ) )
-            // InternalPascal.g:11319:2: ( rulestatement )
+            // InternalPascal.g:11354:1: ( ( rulestatement ) )
+            // InternalPascal.g:11355:2: ( rulestatement )
             {
-            // InternalPascal.g:11319:2: ( rulestatement )
-            // InternalPascal.g:11320:3: rulestatement
+            // InternalPascal.g:11355:2: ( rulestatement )
+            // InternalPascal.g:11356:3: rulestatement
             {
              before(grammarAccess.getCaseListElementAccess().getStatementStatementParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -34662,6 +34705,49 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
     // Delegated rules
 
 
+    protected DFA3 dfa3 = new DFA3(this);
+    static final String dfa_1s = "\12\uffff";
+    static final String dfa_2s = "\1\4\1\uffff\2\4\6\uffff";
+    static final String dfa_3s = "\1\53\1\uffff\2\6\6\uffff";
+    static final String dfa_4s = "\1\uffff\1\1\2\uffff\1\3\1\4\1\6\1\7\1\2\1\5";
+    static final String dfa_5s = "\12\uffff}>";
+    static final String[] dfa_6s = {
+            "\1\1\1\4\1\1\1\5\1\7\11\uffff\1\2\1\3\27\uffff\1\6",
+            "",
+            "\1\10\1\11\1\10",
+            "\1\10\1\11\1\10",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+    };
+
+    static final short[] dfa_1 = DFA.unpackEncodedString(dfa_1s);
+    static final char[] dfa_2 = DFA.unpackEncodedStringToUnsignedChars(dfa_2s);
+    static final char[] dfa_3 = DFA.unpackEncodedStringToUnsignedChars(dfa_3s);
+    static final short[] dfa_4 = DFA.unpackEncodedString(dfa_4s);
+    static final short[] dfa_5 = DFA.unpackEncodedString(dfa_5s);
+    static final short[][] dfa_6 = unpackEncodedStringArray(dfa_6s);
+
+    class DFA3 extends DFA {
+
+        public DFA3(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 3;
+            this.eot = dfa_1;
+            this.eof = dfa_1;
+            this.min = dfa_2;
+            this.max = dfa_3;
+            this.accept = dfa_4;
+            this.special = dfa_5;
+            this.transition = dfa_6;
+        }
+        public String getDescription() {
+            return "1924:1: rule__Constant__Alternatives : ( ( ( rule__Constant__NumberAssignment_0 ) ) | ( ( rule__Constant__Group_1__0 ) ) | ( ( rule__Constant__IdentifierAssignment_2 ) ) | ( ( rule__Constant__STRING_LITERALAssignment_3 ) ) | ( ( rule__Constant__Group_4__0 ) ) | ( ( rule__Constant__ConstantChrAssignment_5 ) ) | ( ( rule__Constant__BoolAssignment_6 ) ) );";
+        }
+    }
  
 
     public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
@@ -34679,12 +34765,12 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000022L});
     public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000002000000000L});
     public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x00000800000C00F0L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x00000800000C01F0L});
     public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000000000050L});
     public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000004000000000L});
     public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000000000040L});
     public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000002000000020L});
-    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x009A4840001C00F0L,0x00000000000000F0L});
+    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x009A4840001C01F0L,0x00000000000000F0L});
     public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000804000000000L});
     public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0010000000000020L,0x00000000000000F0L});
     public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0003400000000020L});
@@ -34698,23 +34784,24 @@ public class InternalPascalParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0040000000000000L});
     public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0300000000000020L});
     public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0200000000000020L});
-    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x00980840001C00F0L,0x00000000000000F0L});
+    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x00980840001C01F0L,0x00000000000000F0L});
     public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0400000000000000L});
-    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0000800000000002L});
-    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x90000840000C01F0L,0x0000000000000001L});
-    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x92037E44000E01F0L,0x0000000000000007L});
-    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x90000840000C01F0L,0x0000000000000003L});
-    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x0800000000000000L});
-    public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x2020000800100000L});
-    public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x2020000800100002L});
-    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x0040010000000000L});
-    public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x4000010000000000L});
-    public static final BitSet FOLLOW_46 = new BitSet(new long[]{0x000000000FE00000L});
-    public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x00000000100C0000L});
-    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x00000003E0000000L});
-    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x00000800000C00F0L,0x0000000000000001L});
-    public static final BitSet FOLLOW_50 = new BitSet(new long[]{0x0100000000000000L});
-    public static final BitSet FOLLOW_51 = new BitSet(new long[]{0x0100002000000000L});
-    public static final BitSet FOLLOW_52 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
+    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0000802000000000L});
+    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x0000800000000002L});
+    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x90000840000C01F0L,0x0000000000000001L});
+    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x92037E44000E01F0L,0x0000000000000007L});
+    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x90000840000C01F0L,0x0000000000000003L});
+    public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x0800000000000000L});
+    public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x2020000800100000L});
+    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x2020000800100002L});
+    public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x0040010000000000L});
+    public static final BitSet FOLLOW_46 = new BitSet(new long[]{0x4000010000000000L});
+    public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x000000000FE00000L});
+    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x00000000100C0000L});
+    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x00000003E0000000L});
+    public static final BitSet FOLLOW_50 = new BitSet(new long[]{0x00000800000000D0L,0x0000000000000001L});
+    public static final BitSet FOLLOW_51 = new BitSet(new long[]{0x0100000000000000L});
+    public static final BitSet FOLLOW_52 = new BitSet(new long[]{0x0100002000000000L});
+    public static final BitSet FOLLOW_53 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
 
 }

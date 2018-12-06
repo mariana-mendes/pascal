@@ -10,6 +10,12 @@ import org.eclipse.emf.ecore.EObject;
  * A representation of the model object '<em><b>compound Statement</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link compilador.pascal.compoundStatement#getStatements <em>Statements</em>}</li>
+ * </ul>
+ * </p>
  *
  * @see compilador.pascal.PascalPackage#getcompoundStatement()
  * @model
@@ -17,4 +23,30 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface compoundStatement extends EObject
 {
+  /**
+   * Returns the value of the '<em><b>Statements</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Statements</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Statements</em>' containment reference.
+   * @see #setStatements(statements)
+   * @see compilador.pascal.PascalPackage#getcompoundStatement_Statements()
+   * @model containment="true"
+   * @generated
+   */
+  statements getStatements();
+
+  /**
+   * Sets the value of the '{@link compilador.pascal.compoundStatement#getStatements <em>Statements</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Statements</em>' containment reference.
+   * @see #getStatements()
+   * @generated
+   */
+  void setStatements(statements value);
+
 } // compoundStatement
