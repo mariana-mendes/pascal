@@ -3,6 +3,7 @@
  */
 package compilador.validation;
 
+import compilador.pascal.assignmentStatement;
 import compilador.pascal.block;
 import compilador.pascal.caseListElement;
 import compilador.pascal.caseStatement;
@@ -37,7 +38,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.validation.Check;
-import org.eclipse.xtext.xbase.lib.InputOutput;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
 /**
@@ -87,7 +87,6 @@ public class PascalValidator extends AbstractPascalValidator {
     boolean _xblockexpression = false;
     {
       String tipoCriado = definition.getIdentifier().getIdentifier();
-      InputOutput.<String>println(tipoCriado);
       boolean _xifexpression = false;
       boolean _contains = this.tiposCriados.contains(tipoCriado);
       if (_contains) {
@@ -305,7 +304,6 @@ public class PascalValidator extends AbstractPascalValidator {
     }
     String tipoCaseUnico = this.getCaseListUnico(caseStatement.getCaseListElement());
     boolean listaTodaValida = this.checkCaseList(caseStatement.getCaseListElement1(), tipoCaseUnico);
-    InputOutput.<String>println(("caseUnico " + Boolean.valueOf(listaTodaValida)));
     if (((tipoCaseUnico.isEmpty() || (!listaTodaValida)) || (tipoCaseUnico != expType))) {
       this.error("Tipos incompativeis", null);
     }
@@ -314,11 +312,8 @@ public class PascalValidator extends AbstractPascalValidator {
   public boolean checkCaseList(final EList<caseListElement> list, final String expType) {
     boolean isValido = true;
     for (final caseListElement e : list) {
-      {
-        InputOutput.<String>println(this.getCaseListUnico(e));
-        if ((this.getCaseListUnico(e).isEmpty() || (this.getCaseListUnico(e) != expType))) {
-          isValido = false;
-        }
+      if ((this.getCaseListUnico(e).isEmpty() || (this.getCaseListUnico(e) != expType))) {
+        isValido = false;
       }
     }
     return isValido;
@@ -360,7 +355,7 @@ public class PascalValidator extends AbstractPascalValidator {
     String _bool = c.getBool();
     boolean _tripleNotEquals_2 = (_bool != null);
     if (_tripleNotEquals_2) {
-      return "bool";
+      return "boolean";
     }
     identifier _identifier = c.getIdentifier();
     boolean _tripleNotEquals_3 = (_identifier != null);
@@ -433,14 +428,6 @@ public class PascalValidator extends AbstractPascalValidator {
     if (_tripleNotEquals_8) {
       tipoExp = "integer";
     }
-    compilador.pascal.expression _expression_1 = simple.getExpression();
-    boolean _tripleNotEquals_9 = (_expression_1 != null);
-    if (_tripleNotEquals_9) {
-      String nextExpr = this.checkExpressionType(simple.getExpression());
-      if ((tipoExp != nextExpr)) {
-        this.error("Tipos não conferem", null);
-      }
-    }
     return tipoExp;
   }
   
@@ -484,21 +471,82 @@ public class PascalValidator extends AbstractPascalValidator {
   
   @Check
   public boolean checkRelationalExpression(final expression exp) {
-    String expType = this.checkExpressionType(exp);
+    String expType = this.checkRelationOperands(exp);
     expression _expression = exp.getExpression();
     boolean _tripleNotEquals = (_expression != null);
     if (_tripleNotEquals) {
-      InputOutput.<String>println(this.checkExpressionType(exp.getExpression()));
-      InputOutput.<String>println(expType);
-      String _checkExpressionType = this.checkExpressionType(exp.getExpression());
-      boolean _tripleNotEquals_1 = (expType != _checkExpressionType);
+      String _relationaloperator = exp.getRelationaloperator();
+      boolean _tripleNotEquals_1 = (_relationaloperator != null);
       if (_tripleNotEquals_1) {
+        String rightExp = this.checkRelationOperands(exp.getExpression());
+        boolean _equals = expType.equals(rightExp);
+        if (_equals) {
+          return this.checkRelationalExpression(exp.getExpression());
+        }
         this.error("Tipos não conferem", null);
         return false;
       }
-      return this.checkRelationalExpression(exp.getExpression());
     }
     return true;
+  }
+  
+  public String checkRelationOperands(final expression expression) {
+    String tipoExp = "";
+    factor simple = expression.getSimpleExpression().getTerm().getSignedFactor().getFactor();
+    unsignedConstant _unsignedConstant = simple.getUnsignedConstant();
+    boolean _tripleNotEquals = (_unsignedConstant != null);
+    if (_tripleNotEquals) {
+      tipoExp = this.getTypeUnsignedConst(simple.getUnsignedConstant());
+    }
+    factor _factor = simple.getFactor();
+    boolean _tripleNotEquals_1 = (_factor != null);
+    if (_tripleNotEquals_1) {
+      tipoExp = "boolean";
+    }
+    String _bool = simple.getBool();
+    boolean _tripleNotEquals_2 = (_bool != null);
+    if (_tripleNotEquals_2) {
+      tipoExp = "boolean";
+    }
+    functionDesignator _functionDesignator = simple.getFunctionDesignator();
+    boolean _tripleNotEquals_3 = (_functionDesignator != null);
+    if (_tripleNotEquals_3) {
+      String funcao = this.funcoesCriadas.get(simple.getFunctionDesignator().getIdentifier().getIdentifier());
+      if (((funcao != null) && (!funcao.isEmpty()))) {
+        tipoExp = funcao;
+      } else {
+        this.error("funcao nao declarada", null);
+        return "";
+      }
+    }
+    variable _variable = simple.getVariable();
+    boolean _tripleNotEquals_4 = (_variable != null);
+    if (_tripleNotEquals_4) {
+      tipoExp = this.getTypeVariable(simple.getVariable());
+    }
+    compilador.pascal.expression _expression = simple.getExpression();
+    boolean _tripleNotEquals_5 = (_expression != null);
+    if (_tripleNotEquals_5) {
+      tipoExp = this.checkExpressionType(simple.getExpression());
+    }
+    return tipoExp;
+  }
+  
+  @Check
+  public void checkAssignmentStatement(final assignmentStatement assign) {
+    variable vari = assign.getVariable();
+    boolean _containsKey = this.variaveisDeclaradas.containsKey(vari.getIdentifier().getIdentifier());
+    if (_containsKey) {
+      String varType = this.variaveisTipo.get(vari.getIdentifier().getIdentifier());
+      String expType = this.checkExpressionType(assign.getExpression());
+      boolean _equals = varType.equals(expType);
+      boolean _not = (!_equals);
+      if (_not) {
+        this.error("Variavel declarada com tipo diferente", null);
+      }
+    } else {
+      this.error("Variavel não declarada", null);
+    }
   }
   
   @Check

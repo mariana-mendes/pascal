@@ -33,6 +33,7 @@ class PascalValidator extends AbstractPascalValidator {
 	var tiposCriados = new HashSet<String>();
 	var funcoesCriadas = new HashMap<String, String>();
 
+
 	@Check
 	def restart(program init) {
 		variaveisDeclaradas.clear();
@@ -59,7 +60,7 @@ class PascalValidator extends AbstractPascalValidator {
 
 	def checkDefTipo(typeDefinition definition) {
 		var tipoCriado = definition.identifier.identifier;
-		println(tipoCriado);
+
 		if (tiposCriados.contains(tipoCriado)) {
 			error("um tipo ja foi criado com id " + tipoCriado, null);
 		} else {
@@ -223,9 +224,7 @@ class PascalValidator extends AbstractPascalValidator {
 		}
 
 		var String tipoCaseUnico = getCaseListUnico(caseStatement.caseListElement);
-
 		var boolean listaTodaValida = checkCaseList(caseStatement.caseListElement1, tipoCaseUnico);
-		println("caseUnico " + listaTodaValida);
 
 		if (tipoCaseUnico.isEmpty() || !listaTodaValida || tipoCaseUnico !== expType) {
 			error("Tipos incompativeis", null);
@@ -236,7 +235,6 @@ class PascalValidator extends AbstractPascalValidator {
 	def boolean checkCaseList(EList<caseListElement> list, String expType) {
 		var boolean isValido = true;
 		for (caseListElement e : list) {
-			println(getCaseListUnico(e));
 			if (getCaseListUnico(e).isEmpty() || getCaseListUnico(e) !== expType) {
 				isValido = false;
 			}
@@ -280,7 +278,7 @@ class PascalValidator extends AbstractPascalValidator {
 		}
 
 		if (c.bool !== null) {
-			return "bool";
+			return "boolean";
 		}
 
 		if (c.identifier !== null) {
@@ -341,18 +339,10 @@ class PascalValidator extends AbstractPascalValidator {
 		if (expression.simpleExpression.term.multiplicativeoperator !== null) {
 			tipoExp = "integer";
 		}
-
-		if (simple.expression !== null) {
-			var nextExpr = checkExpressionType(simple.expression);
-			if (tipoExp !== nextExpr) {
-				error("Tipos não conferem", null);
-			}
-		}
-
+		
 		return tipoExp;
 
 	}
-
 	def String getTypeUnsignedConst(unsignedConstant constant) {
 		if (constant.unsignedNumber !== null) {
 			if (constant.unsignedNumber.unsignedInteger !== null) {
@@ -385,22 +375,74 @@ class PascalValidator extends AbstractPascalValidator {
 
 	@Check
 	def boolean checkRelationalExpression(expression exp) {
-
-		var expType = checkExpressionType(exp);
+		var expType = checkRelationOperands(exp);
 
 		if (exp.expression !== null) {
-			println(checkExpressionType(exp.expression));
-			println(expType);
-			if (expType !== checkExpressionType(exp.expression)) {
+			if (exp.relationaloperator !== null) {
+				var rightExp = checkRelationOperands(exp.expression);
+				if (expType.equals(rightExp)) {
+					return checkRelationalExpression(exp.expression);
+				}
 				error("Tipos não conferem", null);
 				return false;
+
 			}
-			return checkRelationalExpression(exp.expression);
+
+		}
+		return true;
+
+	}
+	
+	def String checkRelationOperands(expression expression) {
+		var String tipoExp = "";
+		var simple = expression.simpleExpression.term.signedFactor.factor;
+
+		if (simple.unsignedConstant !== null) {
+			tipoExp = getTypeUnsignedConst(simple.unsignedConstant);
+		}
+
+		if (simple.factor !== null) {
+			tipoExp = "boolean";
+		}
+
+		if (simple.bool !== null) {
+			tipoExp = "boolean";
+		}
+
+		if (simple.functionDesignator !== null) {
+			var funcao = funcoesCriadas.get(simple.functionDesignator.identifier.identifier);
+			if (funcao !== null && !funcao.isEmpty()) {
+				tipoExp = funcao;
+			} else {
+				error("funcao nao declarada", null);
+				return "";
+			}
+		}
+
+		if (simple.variable !== null) {
+			tipoExp = getTypeVariable(simple.variable);
+		}
+
+		if (simple.expression !== null) {
+			tipoExp = checkExpressionType(simple.expression);
+		}
+
+		return tipoExp;
+	}
+	
+	@Check
+	def checkAssignmentStatement(assignmentStatement assign) {
+		var vari = assign.variable;
+		if (variaveisDeclaradas.containsKey(vari.identifier.identifier)) {
+			var varType = variaveisTipo.get(vari.identifier.identifier);
+			var expType = checkExpressionType(assign.expression);
 			
-
-		} return true;
-		
-
+			if (!varType.equals(expType)) {
+				error("Variavel declarada com tipo diferente", null);
+			}
+		} else {
+			error("Variavel não declarada", null)
+		}
 	}
 
 	@Check
@@ -411,6 +453,8 @@ class PascalValidator extends AbstractPascalValidator {
 			funcoesCriadas.put(funcDecl.identifier.identifier, getTypeTypeIdentifier(funcDecl.typeIdentifier))
 		}
 	}
+
+
 
 	@Check
 	def runChecks(block b) {
